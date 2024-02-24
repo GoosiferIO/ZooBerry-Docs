@@ -11,17 +11,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.zooberry.org/emu/emu_console/</loc>
+         <loc>https://docs.zooberry.org/emu/emu-console/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.zooberry.org/emu/emu_scripts/</loc>
+         <loc>https://docs.zooberry.org/emu/emu-scripts/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.zooberry.org/emu/getting_started/</loc>
+         <loc>https://docs.zooberry.org/emu/getting-started/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -31,22 +31,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.zooberry.org/zt1/introduction/</loc>
+         <loc>https://docs.zooberry.org/zt1/file-formats/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.zooberry.org/zt1/Reference/entity_ids/</loc>
+         <loc>https://docs.zooberry.org/zt1/Reference/entity-ids/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.zooberry.org/zt1/Reference/scenario_files/</loc>
+         <loc>https://docs.zooberry.org/zt1/Reference/mod-installation/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.zooberry.org/zt1/Reference/scenery_files/</loc>
+         <loc>https://docs.zooberry.org/zt1/Reference/scenario-files/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/scenery-files/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>

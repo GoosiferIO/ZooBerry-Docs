@@ -1,6 +1,19 @@
 site_name: ZooBerry Docs
 theme:
-  name: readthedocs
+  name: material
+  palette:
+    - scheme: default
+      primary: deep_orange
+      accent: amber
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
 nav:
   - Home: index.md
   - ucb: about.md

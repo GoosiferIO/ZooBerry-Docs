@@ -316,98 +316,98 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 
 ### Foliage
 
-| Entity Name                | ID     |
-|----------------------------|--------|
-| Acacia Caffra Tree         | `7000` |
-| Thorn Acacia Tree          | `7001` |
-| Wild Olive Tree            | `7004` |
-| Ulmo Tree                  | `7005` |
-| Elm Tree                   | `7006` |
-| Pacific Dogwood Tree       | `7007` |
-| Cherry Tree                | `7008` |
-| Lodgepole Pine Tree        | `7009` |
-| Palm Tree                  | `7010` |
-| Maple Tree                 | `7011` |
-| Fir Tree                   | `7012` |
-| Pine Tree                  | `7013` |
-| Mangrove Tree              | `7014` |
-| Elephant Ear Tree          | `7015` |
-| Bamboo                     | `7016` |
-| Eucalyptus Tree            | `7017` |
-| Foxtail Palm Tree          | `7018` |
-| Hard Quandong Tree         | `7019` |
-| Thornless Mesquite Tree    | `7020` |
-| Yew Tree                   | `7021` |
-| Birch Tree                 | `7022` |
-| Spruce Tree                | `7023` |
-| Yellow Cedar Tree          | `7024` |
-| Western Larch Tree         | `7025` |
-| Trembling Aspen Tree       | `7026` |
-| Globe Willow Tree          | `7028` |
-| Joshua Tree                | `7029` |
-| Red Gum Tree               | `7030` |
-| Quiver Tree                | `7033` |
-| Japanese Maple Tree        | `7035` |
-| Grass Tree                 | `7063` |
-| Paper Birch Tree           | `7064` |
-| Kapok Tree                 | `7065` |
-| Weeping Willow Tree        | `7066` |
-| White Oak Tree             | `7067` |
-| Western Red Cedar Tree     | `7068` |
-| Chinese Fir Tree           | `7069` |
-| Himalayan Birch Tree       | `7070` |
-| Western Juniper Tree       | `7071` |
-| Himalayan Pine Tree        | `7072` |
-| Sage Bush                  | `7073` |
-| Broadleaf Bush             | `7074` |
-| Pine Bush                  | `7075` |
-| Khejri Tree                | `7076` |
-| Holiday Tree               | `7077` |
-| Club Moss Shrub            | `7080` |
-| Walchian Conifer Tree      | `7081` |
-| Thouarsus Cycad Tree       | `7082` |
-| Bald Cypress Tree          | `7083` |
-| Dawn Redwood Tree          | `7084` |
-| Fern Bush                  | `7085` |
-| Gingko Tree                | `7086` |
-| Glossopteris Tree          | `7087` |
-| Horsetail                  | `7088` |
-| Lepidodendron Tree         | `7089` |
-| Tube Worm                  | `7420` |
-| Stove Pipe Sponge          | `7419` |
-| Sea Sponge                 | `7418` |
-| Sea Star                   | `7415` |
-| Sea Cucumber               | `7414` |
-| Sea Anemone                | `7400` |
-| Sand Dollar                | `7413` |
-| Sargassum                  | `7412` |
-| Red Gorgonian              | `7411` |
-| Sea Lettuce                | `7410` |
-| Kelp                       | `7409` |
-| Fire Coral                 | `7408` |
-| Feather Duster Worm        | `7407` |
-| Divercate Tree Coral       | `7406` |
-| Orange Cup Coral           | `7405` |
-| Clam Bed                   | `7404` |
-| Brittle Sea Star           | `7403` |
-| Beach Grass                | `7402` |
-| Barnacles                  | `7401` |
-| Yucca Tree                 | `7435` |
-| Durian Tree                | `7434` |
-| Giant Ficus Tree           | `7433` |
-| Rafflesia                  | `7432` |
-| Snowbell Tree              | `7431` |
-| Bonsai                     | `7430` |
-| Rainforest Stump           | `7429` |
-| Rainforest Flowers         | `7428` |
-| Fallen Rainforest Tree     | `7427` |
-| Senegal Date Palm          | `7426` |
-| Savannah Flowers           | `7425` |
-| Snowy Grass                | `7424` |
-| Snowy Bush                 | `7423` |
-| Snowy Tree                 | `7422` |
-| Purple Sea Urchin          | `7421` |
-| Agave Cactus               | `7436` |
+| Entity Name                | ID     | Codename  |
+|----------------------------|--------|-----------|
+| Acacia Caffra Tree         | `7000` | acacia    |
+| Thorn Acacia Tree          | `7001` | whtthrna  |
+| Wild Olive Tree            | `7004` | wolive    |
+| Ulmo Tree                  | `7005` | ulmo      |
+| Elm Tree                   | `7006` | elm       |
+| Pacific Dogwood Tree       | `7007` | pdogwood  |
+| Cherry Tree                | `7008` | cherry    |
+| Lodgepole Pine Tree        | `7009` | lodgpine  |
+| Palm Tree                  | `7010` | palm      |
+| Maple Tree                 | `7011` | maple     |
+| Fir Tree                   | `7012` | fir       |
+| Pine Tree                  | `7013` | pine      |
+| Mangrove Tree              | `7014` | mangrove  |
+| Elephant Ear Tree          | `7015` | eleear    |
+| Bamboo                     | `7016` | bamboo    |
+| Eucalyptus Tree            | `7017` | eucalyp   |
+| Foxtail Palm Tree          | `7018` | foxtail   |
+| Hard Quandong Tree         | `7019` | hquandon  |
+| Thornless Mesquite Tree    | `7020` | tmesquit  |
+| Yew Tree                   | `7021` | yew       |
+| Birch Tree                 | `7022` | birch     |
+| Spruce Tree                | `7023` | wspruce   |
+| Yellow Cedar Tree          | `7024` | westceda  |
+| Western Larch Tree         | `7025` | glarch    |
+| Trembling Aspen Tree       | `7026` | taspen    |
+| Globe Willow Tree          | `7028` | willow    |
+| Joshua Tree                | `7029` | joshua    |
+| Red Gum Tree               | `7030` | redgum    |
+| Quiver Tree                | `7033` | quiver    |
+| Japanese Maple Tree        | `7035` | jmaple    |
+| Grass Tree                 | `7063` | grasstr   |
+| Paper Birch Tree           | `7064` | pbirch    |
+| Kapok Tree                 | `7065` | kapok     |
+| Weeping Willow Tree        | `7066` | weepwill  |
+| White Oak Tree             | `7067` | woak      |
+| Western Red Cedar Tree     | `7068` | wrcedar   |
+| Chinese Fir Tree           | `7069` | cfir      |
+| Himalayan Birch Tree       | `7070` | hbirch    |
+| Western Juniper Tree       | `7071` | wjuniper  |
+| Himalayan Pine Tree        | `7072` | hpine     |
+| Sage Bush                  | `7073` | sage      |
+| Broadleaf Bush             | `7074` | grshrub   |
+| Pine Bush                  | `7075` | pineshrb  |
+| Khejri Tree                | `7076` | khejri    |
+| Holiday Tree               | `7077` | xmastree  |
+| Club Moss Shrub            | `7080` | clubmoss  |
+| Walchian Conifer Tree      | `7081` | conifer   |
+| Thouarsus Cycad Tree       | `7082` | cycad     |
+| Bald Cypress Tree          | `7083` | cypress   |
+| Dawn Redwood Tree          | `7084` | dawnred   |
+| Fern Bush                  | `7085` | fernbush  |
+| Gingko Tree                | `7086` | gingkos   |
+| Glossopteris Tree          | `7087` | glossop   |
+| Horsetail                  | `7088` | horstail  |
+| Lepidodendron Tree         | `7089` | lepidod   |
+| Tube Worm                  | `7420` | tubeworm  |
+| Stove Pipe Sponge          | `7419` | stovpipe  |
+| Sea Sponge                 | `7418` | sponge    |
+| Sea Star                   | `7415` | seastar   |
+| Sea Cucumber               | `7414` | seacuke   |
+| Sea Anemone                | `7400` | anemone   |
+| Sand Dollar                | `7413` | sdollar   |
+| Sargassum                  | `7412` | sargass   |
+| Red Gorgonian              | `7411` | redgorgo  |
+| Sea Lettuce                | `7410` | lettuce   |
+| Kelp                       | `7409` | kelp      |
+| Fire Coral                 | `7408` | fircoral  |
+| Feather Duster Worm        | `7407` | fdstworm  |
+| Divercate Tree Coral       | `7406` | dtcoral   |
+| Orange Cup Coral           | `7405` | cupcoral  |
+| Clam Bed                   | `7404` | clambed   |
+| Brittle Sea Star           | `7403` | britstar  |
+| Beach Grass                | `7402` | bchgrass  |
+| Barnacles                  | `7401` | barnacle  |
+| Yucca Tree                 | `7435` | mexyucca  |
+| Durian Tree                | `7434` | asiduria  |
+| Giant Ficus Tree           | `7433` | asitree   |
+| Rafflesia                  | `7432` | asiflow   |
+| Snowbell Tree              | `7431` | japtree   |
+| Bonsai                     | `7430` | japbush   |
+| Rainforest Stump           | `7429` | junstump  |
+| Rainforest Flowers         | `7428` | junflowr  |
+| Fallen Rainforest Tree     | `7427` | juntree   |
+| Senegal Date Palm          | `7426` | aftree    |
+| Savannah Flowers           | `7425` | afflower  |
+| Snowy Grass                | `7424` | snograss  |
+| Snowy Bush                 | `7423` | snowbush  |
+| Snowy Tree                 | `7422` | snowtree  |
+| Purple Sea Urchin          | `7421` | urchin    |
+| Agave Cactus               | `7436` | mexagave  |
 
 ### Shelters
 

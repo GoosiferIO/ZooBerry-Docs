@@ -1,9 +1,11 @@
 !!! note "Incomplete"
     This page is incomplete. Pull requests welcome.
 
-# .ucb and .ai Configuration Documentation
+# Scenery Documentation
 
-Usually found inside an entity's `.ucb` or `.ai` file, the following tables describe attributes that can  be given to object entities. Example files can be found in a respective `/scenery/other` directory.
+Scenery includes buildings, foliage, rocks, terrain, toys, zoos, and other zoo utilities.
+
+Usually found inside an entity's `.ucb` or `.ai` file, the following tables describe attributes that can  be given to the entities mentioned. Example files can be found in a respective `/scenery` directory.
 
 ## `[Icon]`
 
@@ -13,7 +15,7 @@ Usually found inside an entity's `.ucb` or `.ai` file, the following tables desc
 |----------------------|------|-----|
 | `Icon` | `<dir>` | Directory to the icon graphic |
 
-Example:
+<h3>Example</h3>
 
 ```INI
 [Icon]
@@ -54,6 +56,33 @@ This isn't comprehensive, but here are a few:
 | `cUsedThought` | `<int>` | A user's thought after using the entity. Works similar in concept to other key/value strings above. |   
 | `cHideUser` | `<0/1>` | Should a user be hidden when using entity? |
 
+<h3>Example</h3>
+```INI
+[Characteristics/Integers]
+cPurchaseCost = 2000
+cFootprintX = 12
+cFootprintY = 6
+cHabitat = 9414
+cHeight = 3
+cHelpID = 32610
+cNameID = 2610
+cCommerce = 1
+cSelectable = 1
+cNeedsConfirm = 1
+cAdultChange = 10
+cChildChange = 15
+cEnergyChange = -100
+cHideUser = 1
+cHideBuilding = 0
+cUserStaysOutside = 0
+cCapacity = 10
+cTimeInside = 12
+cUsedThought = 8761
+cIsColorReplaced = 0
+cMoveable = 1
+cSwims = 1
+```
+
 ## `[EstheticBonus]`
 
 `[EstheticBonus]` defines how much a guest will enjoy looking at an entity. There's a different value for each type of guest. Every value maps a guest entity type with an esthetic bonus value. Please see [Entity IDs](./entity_ids.md#guests) for guest entity definitions.
@@ -62,7 +91,7 @@ This isn't comprehensive, but here are a few:
 
 Simply tweak the second `v` attribute for each to your preference.
 
-Example (from `carousal.ai`):
+<h3>Example (from `carousal.ai`)</h3>
 
 ```INI
 [EstheticBonus]
@@ -91,7 +120,7 @@ An (incomplete) list of possible values:
 - `bathroom`
 - `fun`
 
-Example (from `carousal.ai`):
+<h3>Example (from `carousal.ai`):</h3>
 
 ```INI
 [Satisfies]
@@ -110,7 +139,7 @@ Defines a playable sound for the entity.
 | `name` | `<string dir>` | Directory of sound file to play. |
 | `attenuation` | `<int>` | Volume of sound. |
 
-Example (from `carousal.ai`):
+<h3>Example (from `carousal.ai`)</h3>
 
 ```INI
 [UseSound]

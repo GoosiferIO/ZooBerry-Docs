@@ -1,4 +1,5 @@
 site_name: ZooBerry Docs
+site_url: https://docs.zooberry.org/
 theme:
   name: material
   palette:
@@ -40,7 +41,8 @@ nav:
   - Reference:
     - Zoo Tycoon 1:
         - Configuration Files: zt1/introduction.md
-        - .ucb and .ai Files: zt1/Reference/ucb_ai_files.md
+        - Scenery Configuration: zt1/Reference/scenery_files.md
+        - Scenario Configuration: zt1/Reference/scenario_files.md
         - Entity IDs: zt1/Reference/entity_ids.md
   - EMU API:
       - Getting Started: emu/getting_started.md

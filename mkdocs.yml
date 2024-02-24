@@ -16,7 +16,47 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    # - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.path
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - navigation.footer
+    - content.action.edit
+    # - search.highlight
 nav:
   - Home: index.md
-  - ucb: about.md
-  - Contact: contact.md
+  - Zoo Tycoon 1: 
+      Reference:
+        - Introduction: zt1/introduction.md
+        - .ucb and .ai Files: zt1/Reference/ucb_ai_files.md
+        - Entity IDs: zt1/Reference/entity_ids.md
+  - EMU API: emu/introduction.md
+
+extra:
+  social:
+    - icon: material/github
+      link: https://github.com/GoosiferIO/ZooBerry-Docs
+  generator: false
+copyright: Copyright &copy; 2024 Goosifer.IO
+repo_url: https://github.com/GoosiferIO/ZooBerry-Docs
+edit_uri: edit/main/docs/
+plugins:
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: true
+  - git-committers:
+      repository: GoosiferIO/ZooBerry-Docs
+      branch: main
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

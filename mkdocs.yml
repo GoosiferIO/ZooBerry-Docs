@@ -32,6 +32,7 @@ theme:
     - search.suggest
     - navigation.footer
     - content.action.edit
+    - content.action.view
     - content.footnote.tooltips
     # - search.highlight
 nav:
@@ -58,6 +59,7 @@ extra:
   generator: false
 copyright: Copyright &copy; 2024 Goosifer.IO
 repo_url: https://github.com/GoosiferIO/ZooBerry-Docs
+repo_name: GoosiferIO/ZooBerry-Docs
 edit_uri: edit/main/docs/
 plugins:
   - git-revision-date-localized:

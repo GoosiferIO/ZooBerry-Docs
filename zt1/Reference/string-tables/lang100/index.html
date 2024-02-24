@@ -1,0 +1,5833 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.zooberry.org/zt1/Reference/String-Tables/lang100/">
+      
+      
+        <link rel="prev" href="../lang021/">
+      
+      
+        <link rel="next" href="../lang200/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+    
+    
+      
+        <title>lang100 - ZooBerry Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep_orange" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lang100" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="ZooBerry Docs" class="md-header__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ZooBerry Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              lang100
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep_orange" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GoosiferIO/ZooBerry-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GoosiferIO/ZooBerry-Docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../file-formats/" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../emu/getting-started/" class="md-tabs__link">
+          
+  
+  EMU API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../panda/getting_started.md" class="md-tabs__link">
+          
+  
+  PANDA Loader
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="ZooBerry Docs" class="md-nav__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ZooBerry Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GoosiferIO/ZooBerry-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GoosiferIO/ZooBerry-Docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to ZooBerry Docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../attributions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Attributions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Zoo Tycoon 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Zoo Tycoon 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../file-formats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Formats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scenery-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scenery Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scenario-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scenario Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entity-ids/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notable String IDs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mod-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mod Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_6" id="__nav_2_1_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Official String Tables
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            Official String Tables
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang001/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang001
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang002/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang002
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang007/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang007
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang008/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang008
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang009/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang009
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang010/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang010
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang012/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang012
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang013/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang013
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang015/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang015
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang016/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang016
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang017/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang017
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang018/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang018
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang019/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang019
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang020/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang020
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang021/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang021
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    lang100
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang200/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang200
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang300/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang300
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_7" id="__nav_2_1_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Unofficial String Tables
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            Unofficial String Tables
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--ZTCDD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZTCDD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--ZooTek/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZooTek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--ZKL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZKL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--ZBorsato/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZBorsato
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--Jane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--Jane
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--JBL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--JBL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--fern-Tek.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--fern-Tek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/langZA01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    langZA01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/langZA02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    langZA02
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/langZA03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    langZA03
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    EMU API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            EMU API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../emu/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../emu/emu-console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EMU Command Console
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../emu/emu-scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lua Scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PANDA Loader
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            PANDA Loader
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../panda/getting_started.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/edit/main/docs/zt1/Reference/String-Tables/lang100.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/raw/main/docs/zt1/Reference/String-Tables/lang100.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="lang100"><code>lang100</code></h1>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>String</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>107</td>
+<td>Zoo Tycoon - Dinosaur Digs</td>
+</tr>
+<tr>
+<td>314</td>
+<td>Zoo Tycoon: Dinosaur Digs CD Required</td>
+</tr>
+<tr>
+<td>315</td>
+<td>Please insert your Zoo Tycoon: Dinosaur Digs CD-ROM.</td>
+</tr>
+<tr>
+<td>600</td>
+<td>YY</td>
+</tr>
+<tr>
+<td>601</td>
+<td>NN</td>
+</tr>
+<tr>
+<td>602</td>
+<td>CC</td>
+</tr>
+<tr>
+<td>603</td>
+<td>DD</td>
+</tr>
+<tr>
+<td>604</td>
+<td>HH</td>
+</tr>
+<tr>
+<td>605</td>
+<td>BB</td>
+</tr>
+<tr>
+<td>606</td>
+<td>MM</td>
+</tr>
+<tr>
+<td>607</td>
+<td>FF</td>
+</tr>
+<tr>
+<td>608</td>
+<td>OO</td>
+</tr>
+<tr>
+<td>609</td>
+<td>ZZ</td>
+</tr>
+<tr>
+<td>610</td>
+<td>GG</td>
+</tr>
+<tr>
+<td>611</td>
+<td>EE</td>
+</tr>
+<tr>
+<td>612</td>
+<td>AA</td>
+</tr>
+<tr>
+<td>613</td>
+<td>SS</td>
+</tr>
+<tr>
+<td>614</td>
+<td>RR</td>
+</tr>
+<tr>
+<td>615</td>
+<td>XX</td>
+</tr>
+<tr>
+<td>1025</td>
+<td>Clear</td>
+</tr>
+<tr>
+<td>1065</td>
+<td>Show foliage</td>
+</tr>
+<tr>
+<td>1066</td>
+<td>Hide foliage</td>
+</tr>
+<tr>
+<td>1067</td>
+<td>Hide buildings</td>
+</tr>
+<tr>
+<td>1068</td>
+<td>Hide guests</td>
+</tr>
+<tr>
+<td>1069</td>
+<td>Show buildings</td>
+</tr>
+<tr>
+<td>1070</td>
+<td>Show guests</td>
+</tr>
+<tr>
+<td>1402</td>
+<td>Recovery Building</td>
+</tr>
+<tr>
+<td>1405</td>
+<td>Track Chopper</td>
+</tr>
+<tr>
+<td>1406</td>
+<td>Upkeep</td>
+</tr>
+<tr>
+<td>1408</td>
+<td>Recoveries</td>
+</tr>
+<tr>
+<td>1410</td>
+<td>Current Duty</td>
+</tr>
+<tr>
+<td>1412</td>
+<td>Training</td>
+</tr>
+<tr>
+<td>1514</td>
+<td>Map Scroll Speed</td>
+</tr>
+<tr>
+<td>1530</td>
+<td>Advanced Options</td>
+</tr>
+<tr>
+<td>1539</td>
+<td>High</td>
+</tr>
+<tr>
+<td>1543</td>
+<td>Tool Tip Options</td>
+</tr>
+<tr>
+<td>1546</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>1547</td>
+<td>Video Quality</td>
+</tr>
+<tr>
+<td>1548</td>
+<td>Sound Quality</td>
+</tr>
+<tr>
+<td>1551</td>
+<td>16 Bit</td>
+</tr>
+<tr>
+<td>1552</td>
+<td>8 Bit</td>
+</tr>
+<tr>
+<td>1553</td>
+<td>Mouse Mode</td>
+</tr>
+<tr>
+<td>1555</td>
+<td>Colored</td>
+</tr>
+<tr>
+<td>1556</td>
+<td>Mono</td>
+</tr>
+<tr>
+<td>1557</td>
+<td>Displays more frames of animation (uses more memory).</td>
+</tr>
+<tr>
+<td>1558</td>
+<td>Displays fewer frames of animation (uses less memory).</td>
+</tr>
+<tr>
+<td>1559</td>
+<td>Play sound at 16 bit.</td>
+</tr>
+<tr>
+<td>1566</td>
+<td>Change to full windowed mode</td>
+</tr>
+<tr>
+<td>1567</td>
+<td>Change to full screen</td>
+</tr>
+<tr>
+<td>1575</td>
+<td>Adjust the map scroll speed</td>
+</tr>
+<tr>
+<td>1578</td>
+<td>Play sound at 8 bit.</td>
+</tr>
+<tr>
+<td>1579</td>
+<td>Display colored mouse cursors (may cause cursor to blink).</td>
+</tr>
+<tr>
+<td>1582</td>
+<td>Display monochromatic mouse cursors.</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>Animals</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>Dinosaurs</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>Creatures</td>
+</tr>
+<tr>
+<td>2130</td>
+<td>Click to import files from your hard drive or CD-ROM.</td>
+</tr>
+<tr>
+<td>2303</td>
+<td>Top</td>
+</tr>
+<tr>
+<td>2304</td>
+<td>Dino</td>
+</tr>
+<tr>
+<td>2305</td>
+<td>Trunk</td>
+</tr>
+<tr>
+<td>3124</td>
+<td>Scientist Recommendations</td>
+</tr>
+<tr>
+<td>3199</td>
+<td>Exhibit Information</td>
+</tr>
+<tr>
+<td>3317</td>
+<td>Click and drag to level hills and valleys.</td>
+</tr>
+<tr>
+<td>3318</td>
+<td>Click and drag to level cliffs and moats.</td>
+</tr>
+<tr>
+<td>3614</td>
+<td>Cares for animals and cleans their exhibits</td>
+</tr>
+<tr>
+<td>3615</td>
+<td>Informs guests about the exhibits in the zoo</td>
+</tr>
+<tr>
+<td>3616</td>
+<td>Cleans zoo grounds and repairs fences</td>
+</tr>
+<tr>
+<td>3678</td>
+<td>Tranquilizes escaped dinosaurs</td>
+</tr>
+<tr>
+<td>3679</td>
+<td>Cares for dinosaurs and cleans their exhibits</td>
+</tr>
+<tr>
+<td>3697</td>
+<td>Staff</td>
+</tr>
+<tr>
+<td>3843</td>
+<td>Animal Hunger</td>
+</tr>
+<tr>
+<td>3844</td>
+<td>Exhibit Suitability</td>
+</tr>
+<tr>
+<td>4162</td>
+<td>Commerce Building List</td>
+</tr>
+<tr>
+<td>4172</td>
+<td>Arial</td>
+</tr>
+<tr>
+<td>4173</td>
+<td>10</td>
+</tr>
+<tr>
+<td>4175</td>
+<td>Sort by building type</td>
+</tr>
+<tr>
+<td>4176</td>
+<td>Sort by months in operation</td>
+</tr>
+<tr>
+<td>4177</td>
+<td>Sort by total visitors</td>
+</tr>
+<tr>
+<td>4178</td>
+<td>Sort by total profit</td>
+</tr>
+<tr>
+<td>4179</td>
+<td>Sort by average profit</td>
+</tr>
+<tr>
+<td>4180</td>
+<td>Commerce Building List</td>
+</tr>
+<tr>
+<td>4184</td>
+<td>Building Name</td>
+</tr>
+<tr>
+<td>4185</td>
+<td>Months</td>
+</tr>
+<tr>
+<td>4186</td>
+<td>Visitors</td>
+</tr>
+<tr>
+<td>4187</td>
+<td>Profit</td>
+</tr>
+<tr>
+<td>4188</td>
+<td>Avg Profit</td>
+</tr>
+<tr>
+<td>4196</td>
+<td>Arial Bold</td>
+</tr>
+<tr>
+<td>4197</td>
+<td>8</td>
+</tr>
+<tr>
+<td>4240</td>
+<td>Show scientists in the above list.</td>
+</tr>
+<tr>
+<td>4241</td>
+<td>Scientists</td>
+</tr>
+<tr>
+<td>4242</td>
+<td>Show DRT choppers in the above list.</td>
+</tr>
+<tr>
+<td>4243</td>
+<td>DRT Choppers</td>
+</tr>
+<tr>
+<td>4350</td>
+<td>Staff Assigned:</td>
+</tr>
+<tr>
+<td>5085</td>
+<td>Tyrannosaurus rex</td>
+</tr>
+<tr>
+<td>5086</td>
+<td>Saber-toothed Cat</td>
+</tr>
+<tr>
+<td>5087</td>
+<td>Ankylosaurus</td>
+</tr>
+<tr>
+<td>5088</td>
+<td>Gallimimus</td>
+</tr>
+<tr>
+<td>5089</td>
+<td>Iguanodon</td>
+</tr>
+<tr>
+<td>5090</td>
+<td>Lambeosaurus</td>
+</tr>
+<tr>
+<td>5091</td>
+<td>Spinosaurus</td>
+</tr>
+<tr>
+<td>5092</td>
+<td>Styracosaurus</td>
+</tr>
+<tr>
+<td>5093</td>
+<td>Velociraptor</td>
+</tr>
+<tr>
+<td>5094</td>
+<td>Allosaurus</td>
+</tr>
+<tr>
+<td>5095</td>
+<td>Camptosaurus</td>
+</tr>
+<tr>
+<td>5096</td>
+<td>Caudipteryx</td>
+</tr>
+<tr>
+<td>5097</td>
+<td>Kentrosaurus</td>
+</tr>
+<tr>
+<td>5098</td>
+<td>Plesiosaurus</td>
+</tr>
+<tr>
+<td>5099</td>
+<td>Stegosaurus</td>
+</tr>
+<tr>
+<td>5135</td>
+<td>Tyrannosaurus</td>
+</tr>
+<tr>
+<td>5136</td>
+<td>Saber-toothed Cat</td>
+</tr>
+<tr>
+<td>5137</td>
+<td>Ankylosaurus</td>
+</tr>
+<tr>
+<td>5138</td>
+<td>Gallimimus</td>
+</tr>
+<tr>
+<td>5139</td>
+<td>Iguanodon</td>
+</tr>
+<tr>
+<td>5140</td>
+<td>Lambeosaurus</td>
+</tr>
+<tr>
+<td>5141</td>
+<td>Spinosaurus</td>
+</tr>
+<tr>
+<td>5142</td>
+<td>Styracosaurus</td>
+</tr>
+<tr>
+<td>5143</td>
+<td>Velociraptor</td>
+</tr>
+<tr>
+<td>5144</td>
+<td>Allosaurus</td>
+</tr>
+<tr>
+<td>5145</td>
+<td>Camptosaurus</td>
+</tr>
+<tr>
+<td>5146</td>
+<td>Caudipteryx</td>
+</tr>
+<tr>
+<td>5147</td>
+<td>Kentrosaurus</td>
+</tr>
+<tr>
+<td>5148</td>
+<td>Plesiosaurus</td>
+</tr>
+<tr>
+<td>5149</td>
+<td>Stegosaurus</td>
+</tr>
+<tr>
+<td>5150</td>
+<td>Apatosaurus</td>
+</tr>
+<tr>
+<td>5151</td>
+<td>Coelophysis</td>
+</tr>
+<tr>
+<td>5152</td>
+<td>Herrerasaurus</td>
+</tr>
+<tr>
+<td>5153</td>
+<td>Plateosaurus</td>
+</tr>
+<tr>
+<td>5154</td>
+<td>Mammuthus</td>
+</tr>
+<tr>
+<td>5155</td>
+<td>Coelodonta</td>
+</tr>
+<tr>
+<td>5156</td>
+<td>Meiolania</td>
+</tr>
+<tr>
+<td>5157</td>
+<td>Triceratops</td>
+</tr>
+<tr>
+<td>5158</td>
+<td>Deinosuchus</td>
+</tr>
+<tr>
+<td>5216</td>
+<td>Dinosaur</td>
+</tr>
+<tr>
+<td>5325</td>
+<td>Apatosaurus</td>
+</tr>
+<tr>
+<td>5326</td>
+<td>Coelophysis</td>
+</tr>
+<tr>
+<td>5327</td>
+<td>Herrerasaurus</td>
+</tr>
+<tr>
+<td>5328</td>
+<td>Plateosaurus</td>
+</tr>
+<tr>
+<td>5329</td>
+<td>Wooly Mammoth</td>
+</tr>
+<tr>
+<td>5330</td>
+<td>Wooly Rhino</td>
+</tr>
+<tr>
+<td>5331</td>
+<td>Giant Tortoise</td>
+</tr>
+<tr>
+<td>5332</td>
+<td>Deinosuchus</td>
+</tr>
+<tr>
+<td>6058</td>
+<td>Meat %s</td>
+</tr>
+<tr>
+<td>6059</td>
+<td>Empty Meat</td>
+</tr>
+<tr>
+<td>6060</td>
+<td>Hay %s</td>
+</tr>
+<tr>
+<td>6061</td>
+<td>Empty Hay</td>
+</tr>
+<tr>
+<td>6064</td>
+<td>1/2 Full Meat</td>
+</tr>
+<tr>
+<td>6065</td>
+<td>1/2 Full Hay</td>
+</tr>
+<tr>
+<td>6080</td>
+<td>Buildings</td>
+</tr>
+<tr>
+<td>6081</td>
+<td>Scenery</td>
+</tr>
+<tr>
+<td>6094</td>
+<td>Dinosaur Poo</td>
+</tr>
+<tr>
+<td>6095</td>
+<td>Giant Dinosaur Poo</td>
+</tr>
+<tr>
+<td>6096</td>
+<td>Small Dinosaur Poo</td>
+</tr>
+<tr>
+<td>6161</td>
+<td>Laboratory</td>
+</tr>
+<tr>
+<td>6162</td>
+<td>Road Paint</td>
+</tr>
+<tr>
+<td>6163</td>
+<td>Road Paint</td>
+</tr>
+<tr>
+<td>6164</td>
+<td>Road Paint</td>
+</tr>
+<tr>
+<td>6166</td>
+<td>Airplane</td>
+</tr>
+<tr>
+<td>6167</td>
+<td>Genetic Laboratory Vehicle</td>
+</tr>
+<tr>
+<td>6168</td>
+<td>Oil Drum</td>
+</tr>
+<tr>
+<td>6175</td>
+<td>Cliff</td>
+</tr>
+<tr>
+<td>6176</td>
+<td>Cliff</td>
+</tr>
+<tr>
+<td>6177</td>
+<td>Cliff</td>
+</tr>
+<tr>
+<td>6178</td>
+<td>Cliff</td>
+</tr>
+<tr>
+<td>6179</td>
+<td>Cliff</td>
+</tr>
+<tr>
+<td>6180</td>
+<td>Cliff</td>
+</tr>
+<tr>
+<td>6181</td>
+<td>Building</td>
+</tr>
+<tr>
+<td>6182</td>
+<td>Tent</td>
+</tr>
+<tr>
+<td>6183</td>
+<td>Parking Meter</td>
+</tr>
+<tr>
+<td>6184</td>
+<td>Dumpster</td>
+</tr>
+<tr>
+<td>6204</td>
+<td>Paths</td>
+</tr>
+<tr>
+<td>6205</td>
+<td>Toys</td>
+</tr>
+<tr>
+<td>6207</td>
+<td>Shelters</td>
+</tr>
+<tr>
+<td>6309</td>
+<td>Zoo T-shirt</td>
+</tr>
+<tr>
+<td>6312</td>
+<td>Fruits and vegetables %s</td>
+</tr>
+<tr>
+<td>6313</td>
+<td>Fish %s</td>
+</tr>
+<tr>
+<td>6314</td>
+<td>Bamboo shoots %s</td>
+</tr>
+<tr>
+<td>6315</td>
+<td>Grass and branches %s</td>
+</tr>
+<tr>
+<td>6316</td>
+<td>Dinosaur Mug</td>
+</tr>
+<tr>
+<td>6317</td>
+<td>Dinosaur T-shirt</td>
+</tr>
+<tr>
+<td>6318</td>
+<td>Plastic Dinosaur</td>
+</tr>
+<tr>
+<td>6319</td>
+<td>Stuffed Dinosaur</td>
+</tr>
+<tr>
+<td>6320</td>
+<td>Dinosaur Puzzle</td>
+</tr>
+<tr>
+<td>6400</td>
+<td>Small Torch</td>
+</tr>
+<tr>
+<td>6401</td>
+<td>T. rex Statue</td>
+</tr>
+<tr>
+<td>6402</td>
+<td>Velociraptor Statue</td>
+</tr>
+<tr>
+<td>6403</td>
+<td>Triceratops Statue</td>
+</tr>
+<tr>
+<td>6404</td>
+<td>Giant Tortoise Fountain</td>
+</tr>
+<tr>
+<td>6405</td>
+<td>Lava Archway</td>
+</tr>
+<tr>
+<td>6406</td>
+<td>Stone Archway</td>
+</tr>
+<tr>
+<td>6407</td>
+<td>Insectivore Chow %s</td>
+</tr>
+<tr>
+<td>6408</td>
+<td>Wooly Mammoth Fountain</td>
+</tr>
+<tr>
+<td>6412</td>
+<td>Wooden Observation Area</td>
+</tr>
+<tr>
+<td>6415</td>
+<td>Large Meat Chow %s</td>
+</tr>
+<tr>
+<td>6416</td>
+<td>Large Grass and Leaves Chow %s</td>
+</tr>
+<tr>
+<td>6420</td>
+<td>Triceratops Skeleton</td>
+</tr>
+<tr>
+<td>6422</td>
+<td>Small Fossil Wall</td>
+</tr>
+<tr>
+<td>6423</td>
+<td>Medium Fossil Wall</td>
+</tr>
+<tr>
+<td>6424</td>
+<td>Large Fossil Wall</td>
+</tr>
+<tr>
+<td>6425</td>
+<td>T. rex Skeleton</td>
+</tr>
+<tr>
+<td>6426</td>
+<td>Bone Bed</td>
+</tr>
+<tr>
+<td>6427</td>
+<td>Large Stone Torch</td>
+</tr>
+<tr>
+<td>6428</td>
+<td>Stone Bench</td>
+</tr>
+<tr>
+<td>6430</td>
+<td>Dinosaur Zoo Entrance</td>
+</tr>
+<tr>
+<td>6431</td>
+<td>Dinosaur Admission Booth</td>
+</tr>
+<tr>
+<td>6432</td>
+<td>Dinosaur Admission Booth</td>
+</tr>
+<tr>
+<td>6433</td>
+<td>Dinosaur Zoo Wall</td>
+</tr>
+<tr>
+<td>6436</td>
+<td>Velociraptor Skeleton</td>
+</tr>
+<tr>
+<td>6437</td>
+<td>Iron Bar Observation Area</td>
+</tr>
+<tr>
+<td>6438</td>
+<td>Tar Pit</td>
+</tr>
+<tr>
+<td>6439</td>
+<td>Lava Pit</td>
+</tr>
+<tr>
+<td>6440</td>
+<td>Reinforced Observation Area</td>
+</tr>
+<tr>
+<td>6441</td>
+<td>Ice Age Observation Area</td>
+</tr>
+<tr>
+<td>6442</td>
+<td>Marble Observation Area</td>
+</tr>
+<tr>
+<td>6443</td>
+<td>Small Volcano</td>
+</tr>
+<tr>
+<td>6444</td>
+<td>Large Volcano</td>
+</tr>
+<tr>
+<td>6445</td>
+<td>Large Geyser</td>
+</tr>
+<tr>
+<td>6446</td>
+<td>Small Geyser</td>
+</tr>
+<tr>
+<td>6447</td>
+<td>Steam Vent</td>
+</tr>
+<tr>
+<td>6450</td>
+<td>(almost empty)</td>
+</tr>
+<tr>
+<td>6451</td>
+<td>(half full)</td>
+</tr>
+<tr>
+<td>6452</td>
+<td>(full)</td>
+</tr>
+<tr>
+<td>7000</td>
+<td>Acacia Caffra Tree</td>
+</tr>
+<tr>
+<td>7080</td>
+<td>Club Moss Shrub</td>
+</tr>
+<tr>
+<td>7081</td>
+<td>Walchian Conifer Tree</td>
+</tr>
+<tr>
+<td>7082</td>
+<td>Thouarsus Cycad Tree</td>
+</tr>
+<tr>
+<td>7083</td>
+<td>Bald Cypress Tree</td>
+</tr>
+<tr>
+<td>7084</td>
+<td>Dawn Redwood Tree</td>
+</tr>
+<tr>
+<td>7085</td>
+<td>Fern Bush</td>
+</tr>
+<tr>
+<td>7086</td>
+<td>Gingko Tree</td>
+</tr>
+<tr>
+<td>7087</td>
+<td>Glossopteris Tree</td>
+</tr>
+<tr>
+<td>7088</td>
+<td>Horsetail</td>
+</tr>
+<tr>
+<td>7089</td>
+<td>Lepidodendron Tree</td>
+</tr>
+<tr>
+<td>7090</td>
+<td>Leptocycas Tree</td>
+</tr>
+<tr>
+<td>7091</td>
+<td>Magnolia Tree</td>
+</tr>
+<tr>
+<td>7092</td>
+<td>Monkey Puzzle Tree</td>
+</tr>
+<tr>
+<td>7093</td>
+<td>Norfolk Island Pine Tree</td>
+</tr>
+<tr>
+<td>7094</td>
+<td>Sigillaria Tree</td>
+</tr>
+<tr>
+<td>7095</td>
+<td>Williamsonia Tree</td>
+</tr>
+<tr>
+<td>7096</td>
+<td>Arctic Birch Tree</td>
+</tr>
+<tr>
+<td>7097</td>
+<td>Arctic Grass</td>
+</tr>
+<tr>
+<td>7098</td>
+<td>Arctic Bush</td>
+</tr>
+<tr>
+<td>7124</td>
+<td>Get new Zoo Tycoon items from the Internet or local drive.</td>
+</tr>
+<tr>
+<td>8011</td>
+<td>Animal Theater</td>
+</tr>
+<tr>
+<td>8027</td>
+<td>Dinosaur Gift Shop</td>
+</tr>
+<tr>
+<td>8028</td>
+<td>Pteranodon House</td>
+</tr>
+<tr>
+<td>8029</td>
+<td>Lepospondyl House</td>
+</tr>
+<tr>
+<td>8030</td>
+<td>Dinosaur Cinema</td>
+</tr>
+<tr>
+<td>8031</td>
+<td>DRT Base</td>
+</tr>
+<tr>
+<td>8032</td>
+<td>Dinosaur Gift Stand</td>
+</tr>
+<tr>
+<td>8033</td>
+<td>Bronto Burger Stand</td>
+</tr>
+<tr>
+<td>8034</td>
+<td>Stego Putt</td>
+</tr>
+<tr>
+<td>8035</td>
+<td>Bouncy Ride</td>
+</tr>
+<tr>
+<td>8036</td>
+<td>Dino Slide</td>
+</tr>
+<tr>
+<td>8037</td>
+<td>Tree Swing</td>
+</tr>
+<tr>
+<td>8038</td>
+<td>Mammoth Cones Stand</td>
+</tr>
+<tr>
+<td>8040</td>
+<td>Fancy Burger Stand</td>
+</tr>
+<tr>
+<td>8041</td>
+<td>Fancy Drink Stand</td>
+</tr>
+<tr>
+<td>8042</td>
+<td>Fancy Hot Dog Stand</td>
+</tr>
+<tr>
+<td>8043</td>
+<td>Fancy Family Bathroom</td>
+</tr>
+<tr>
+<td>8044</td>
+<td>Fancy Ice Cream Stand</td>
+</tr>
+<tr>
+<td>8045</td>
+<td>Fancy Pizza Stand</td>
+</tr>
+<tr>
+<td>8128</td>
+<td>Dinosaur Cave</td>
+</tr>
+<tr>
+<td>8129</td>
+<td>Dinosaur Burrow</td>
+</tr>
+<tr>
+<td>8130</td>
+<td>Ice Age Cave</td>
+</tr>
+<tr>
+<td>9205</td>
+<td>Medium Rock</td>
+</tr>
+<tr>
+<td>9210</td>
+<td>Highland Rock Formation</td>
+</tr>
+<tr>
+<td>9211</td>
+<td>Snowy Rock Formation</td>
+</tr>
+<tr>
+<td>9212</td>
+<td>Savannah Rock Formation</td>
+</tr>
+<tr>
+<td>9213</td>
+<td>Waterfall Rock Formation</td>
+</tr>
+<tr>
+<td>9217</td>
+<td>Jungle Rock Formation</td>
+</tr>
+<tr>
+<td>9218</td>
+<td>Medium Snowy Rock</td>
+</tr>
+<tr>
+<td>9222</td>
+<td>Desert Rock Formation</td>
+</tr>
+<tr>
+<td>9223</td>
+<td>Deciduous Forest Rock Formation</td>
+</tr>
+<tr>
+<td>9224</td>
+<td>Large Highland Rock</td>
+</tr>
+<tr>
+<td>9225</td>
+<td>Coniferous Forest Rock Formation</td>
+</tr>
+<tr>
+<td>9226</td>
+<td>Rainforest Rock Formation</td>
+</tr>
+<tr>
+<td>9230</td>
+<td>Medium Desert Rock</td>
+</tr>
+<tr>
+<td>9231</td>
+<td>Medium Highland Rock</td>
+</tr>
+<tr>
+<td>9232</td>
+<td>Medium Savannah Rock</td>
+</tr>
+<tr>
+<td>9233</td>
+<td>Medium Aquatic Rock</td>
+</tr>
+<tr>
+<td>9234</td>
+<td>Medium Coniferous Rock</td>
+</tr>
+<tr>
+<td>9304</td>
+<td>Rock Wall Fence</td>
+</tr>
+<tr>
+<td>9307</td>
+<td>Brick Wall Fence</td>
+</tr>
+<tr>
+<td>9320</td>
+<td>Low Rock Wall Fence</td>
+</tr>
+<tr>
+<td>9328</td>
+<td>Stick Pole Window Fence</td>
+</tr>
+<tr>
+<td>9329</td>
+<td>Rock Window Fence</td>
+</tr>
+<tr>
+<td>9330</td>
+<td>Wooden Slat Window Fence</td>
+</tr>
+<tr>
+<td>9331</td>
+<td>Concrete and Iron Bar Fence</td>
+</tr>
+<tr>
+<td>9332</td>
+<td>Reinforced Concrete Fence</td>
+</tr>
+<tr>
+<td>9333</td>
+<td>Reinforced Concrete and Glass Fence</td>
+</tr>
+<tr>
+<td>9334</td>
+<td>Electrified Chain-link Fence</td>
+</tr>
+<tr>
+<td>9335</td>
+<td>Electrified Iron Bar Fence</td>
+</tr>
+<tr>
+<td>9405</td>
+<td>Rainforest</td>
+</tr>
+<tr>
+<td>9413</td>
+<td>Aquatic</td>
+</tr>
+<tr>
+<td>9550</td>
+<td>DRT Base</td>
+</tr>
+<tr>
+<td>9551</td>
+<td>Scientist</td>
+</tr>
+<tr>
+<td>9620</td>
+<td>Triassic</td>
+</tr>
+<tr>
+<td>9621</td>
+<td>Jurassic</td>
+</tr>
+<tr>
+<td>9622</td>
+<td>Cretaceous</td>
+</tr>
+<tr>
+<td>9623</td>
+<td>Ice Age</td>
+</tr>
+<tr>
+<td>9918</td>
+<td>%s prefers an exhibit with more cliffs or hills.</td>
+</tr>
+<tr>
+<td>9964</td>
+<td>Note: an egg requires the care of a scientist.</td>
+</tr>
+<tr>
+<td>10098</td>
+<td>%s looks overjoyed.</td>
+</tr>
+<tr>
+<td>10099</td>
+<td>%s looks really furious.</td>
+</tr>
+<tr>
+<td>10101</td>
+<td>Dinosaurs have been donated to your zoo.</td>
+</tr>
+<tr>
+<td>10249</td>
+<td>Yow! I just got electrocuted by %s, this place is dangerous.</td>
+</tr>
+<tr>
+<td>10250</td>
+<td>Look at that %s egg! How cool is that?</td>
+</tr>
+<tr>
+<td>10260</td>
+<td>How handy -- a gift stand!</td>
+</tr>
+<tr>
+<td>10261</td>
+<td>Cool, a bouncy ride.</td>
+</tr>
+<tr>
+<td>10262</td>
+<td>I love a good slide!</td>
+</tr>
+<tr>
+<td>10263</td>
+<td>A dinosaur cinema, I like movies.</td>
+</tr>
+<tr>
+<td>10264</td>
+<td>A mini-golf course. Great, I can brush up on my putting!</td>
+</tr>
+<tr>
+<td>10265</td>
+<td>Wow! A swing! I like to swing!</td>
+</tr>
+<tr>
+<td>10266</td>
+<td>Look, there's the Pteranodon Aviary.  That's where they keep all of the prehistoric birds!</td>
+</tr>
+<tr>
+<td>10267</td>
+<td>Ooh, there's the Lepospondyl House! Rrrribit!</td>
+</tr>
+<tr>
+<td>10268</td>
+<td>I wonder who sculpted this statue?  It's cool!</td>
+</tr>
+<tr>
+<td>10269</td>
+<td>This skelton looks neat!</td>
+</tr>
+<tr>
+<td>10270</td>
+<td>I wonder who dug this up?</td>
+</tr>
+<tr>
+<td>10271</td>
+<td>These fossils are very interesting to look at.</td>
+</tr>
+<tr>
+<td>10272</td>
+<td>A hamburger stand! Great, I'm hungry!</td>
+</tr>
+<tr>
+<td>10273</td>
+<td>I want an ice cream! I'm hungry!</td>
+</tr>
+<tr>
+<td>10274</td>
+<td>A stuffed dinosaur. Cool!.</td>
+</tr>
+<tr>
+<td>10275</td>
+<td>I can't wait to put this puzzle together.</td>
+</tr>
+<tr>
+<td>10276</td>
+<td>This mug is really neat.</td>
+</tr>
+<tr>
+<td>10277</td>
+<td>I really like this dinosaur T-shirt.</td>
+</tr>
+<tr>
+<td>10278</td>
+<td>Grrrrr...I can't wait to play with these dinosaur toys.</td>
+</tr>
+<tr>
+<td>10279</td>
+<td>Bronto burgers rock!.</td>
+</tr>
+<tr>
+<td>10280</td>
+<td>Mmmmm... ice cream.</td>
+</tr>
+<tr>
+<td>10281</td>
+<td>%s looks happy.</td>
+</tr>
+<tr>
+<td>10282</td>
+<td>%s looks somewhat pleased.</td>
+</tr>
+<tr>
+<td>10283</td>
+<td>%s looks angry.</td>
+</tr>
+<tr>
+<td>10284</td>
+<td>%s looks upset.</td>
+</tr>
+<tr>
+<td>10285</td>
+<td>Ohh, I don't feel so good. I think I'm going to ...</td>
+</tr>
+<tr>
+<td>10286</td>
+<td>The Dinosaur souvenir shop has some really cool gifts!</td>
+</tr>
+<tr>
+<td>10316</td>
+<td>Waiting at base</td>
+</tr>
+<tr>
+<td>10317</td>
+<td>Landing</td>
+</tr>
+<tr>
+<td>10318</td>
+<td>Takeoff</td>
+</tr>
+<tr>
+<td>10319</td>
+<td>Returning to base</td>
+</tr>
+<tr>
+<td>10320</td>
+<td>Zookeepers can only be assigned to animal exhibits</td>
+</tr>
+<tr>
+<td>10321</td>
+<td>Visiting eggs</td>
+</tr>
+<tr>
+<td>10322</td>
+<td>Congratulations! %s has hatched</td>
+</tr>
+<tr>
+<td>10323</td>
+<td>The exhibit is too small for keepers to visit</td>
+</tr>
+<tr>
+<td>10324</td>
+<td>Scientists can only be assigned to dinosaur exhibits</td>
+</tr>
+<tr>
+<td>10512</td>
+<td>Rubble of %s</td>
+</tr>
+<tr>
+<td>10513</td>
+<td>Rubble</td>
+</tr>
+<tr>
+<td>10514</td>
+<td>Cleaning poo</td>
+</tr>
+<tr>
+<td>11000</td>
+<td>Zoo staff are having trouble getting to %s.</td>
+</tr>
+<tr>
+<td>11001</td>
+<td>The gate to %s is blocked and is not accessible to zoo staff.</td>
+</tr>
+<tr>
+<td>11002</td>
+<td>%1s has been eaten by %2s.</td>
+</tr>
+<tr>
+<td>11003</td>
+<td>No items to display.</td>
+</tr>
+<tr>
+<td>11645</td>
+<td>An error occurred while saving the game.  Please try again.</td>
+</tr>
+<tr>
+<td>11648</td>
+<td>Corrupted file detected. Aborting download...</td>
+</tr>
+<tr>
+<td>11700</td>
+<td>You must restart Zoo Tycoon for the video and sound option changes to take full effect.</td>
+</tr>
+<tr>
+<td>16019</td>
+<td>TUTORIAL 4 - Dinosaur Digs Tutorial</td>
+</tr>
+<tr>
+<td>16020</td>
+<td>Dinosaur Digs: Ice Age Animal Zoo (Beginner)</td>
+</tr>
+<tr>
+<td>16021</td>
+<td>Dinosaur Digs: Jurassic Zoo (Intermediate)</td>
+</tr>
+<tr>
+<td>16023</td>
+<td>Dinosaur Digs: Valley of the Dinosaurs (Intermediate)</td>
+</tr>
+<tr>
+<td>16024</td>
+<td>Dinosaur Digs: Dinosaur Island Research Lab (Advanced)</td>
+</tr>
+<tr>
+<td>16025</td>
+<td>Dinosaur Digs: Return to Dinosaur Island Research Lab (Very Advanced)</td>
+</tr>
+<tr>
+<td>16026</td>
+<td>Dinosaur Digs: Breeding the T. rex (Very Advanced)</td>
+</tr>
+<tr>
+<td>17000</td>
+<td>Food cost: %d</td>
+</tr>
+<tr>
+<td>17001</td>
+<td>Healing cost: %d</td>
+</tr>
+<tr>
+<td>17002</td>
+<td>Purchase cost: %d</td>
+</tr>
+<tr>
+<td>17003</td>
+<td>Construction cost: %d</td>
+</tr>
+<tr>
+<td>17004</td>
+<td>Admissions: %d.</td>
+</tr>
+<tr>
+<td>17005</td>
+<td>Admissions income: %d</td>
+</tr>
+<tr>
+<td>17006</td>
+<td>Food income: %d</td>
+</tr>
+<tr>
+<td>17007</td>
+<td>Drink income: %d</td>
+</tr>
+<tr>
+<td>17008</td>
+<td>Increase donations to %d</td>
+</tr>
+<tr>
+<td>17009</td>
+<td>Construction refund: %d</td>
+</tr>
+<tr>
+<td>17010</td>
+<td>Animal refund: %d</td>
+</tr>
+<tr>
+<td>17011</td>
+<td>Zookeeper wages: %d</td>
+</tr>
+<tr>
+<td>17012</td>
+<td>Tour guide wages: %d</td>
+</tr>
+<tr>
+<td>17013</td>
+<td>Maintenance worker wages: %d</td>
+</tr>
+<tr>
+<td>17014</td>
+<td>Net income: %d</td>
+</tr>
+<tr>
+<td>17015</td>
+<td>Achieve a zoo value of %m</td>
+</tr>
+<tr>
+<td>17107</td>
+<td>Exhibit at least %d different dinosaur or prehistoric animal species.</td>
+</tr>
+<tr>
+<td>17500</td>
+<td>Earn an exhibit suitability rating of at least %d for all exhibits.</td>
+</tr>
+<tr>
+<td>17501</td>
+<td>Earn an exhibit suitability rating of at least %d for all %r exhibits.</td>
+</tr>
+<tr>
+<td>17502</td>
+<td>Earn an exhibit suitability rating of at least %d for all %r exhibits.</td>
+</tr>
+<tr>
+<td>17503</td>
+<td>Earn an exhibit suitability rating of at least %d for all %r exhibits.</td>
+</tr>
+<tr>
+<td>17504</td>
+<td>Earn an exhibit suitability rating of at least %d for all %r exhibits.</td>
+</tr>
+<tr>
+<td>17505</td>
+<td>Earn an exhibit suitability rating of at least %d for all %r exhibits.</td>
+</tr>
+<tr>
+<td>17506</td>
+<td>Earn an exhibit suitability rating of at least %d for all %r exhibits.</td>
+</tr>
+<tr>
+<td>17600</td>
+<td>Earn an exhibit suitability rating of at least %d for %d exhibits.</td>
+</tr>
+<tr>
+<td>17601</td>
+<td>Earn an exhibit suitability rating of at least %d for %d %r exhibits.</td>
+</tr>
+<tr>
+<td>17602</td>
+<td>Earn an exhibit suitability rating of at least %d for %d %r exhibits.</td>
+</tr>
+<tr>
+<td>17603</td>
+<td>Earn an exhibit suitability rating of at least %d for %d %r exhibits.</td>
+</tr>
+<tr>
+<td>17604</td>
+<td>Earn an exhibit suitability rating of at least %d for %d %r exhibits.</td>
+</tr>
+<tr>
+<td>17605</td>
+<td>Earn an exhibit suitability rating of at least %d for %d %r exhibits.</td>
+</tr>
+<tr>
+<td>17606</td>
+<td>Earn an exhibit suitability rating of at least %d for %d %r exhibits.</td>
+</tr>
+<tr>
+<td>17700</td>
+<td>Time goal - month: %d</td>
+</tr>
+<tr>
+<td>17701</td>
+<td>Time goal - year: %d</td>
+</tr>
+<tr>
+<td>17702</td>
+<td>Time goal - months passed: %d</td>
+</tr>
+<tr>
+<td>17742</td>
+<td>Exhibit at least %d animal of species %r.</td>
+</tr>
+<tr>
+<td>17743</td>
+<td>Earn an exhibit suitability rating of at least %d for %d %r exhibit.</td>
+</tr>
+<tr>
+<td>17744</td>
+<td>Adopt %d %r.</td>
+</tr>
+<tr>
+<td>18000</td>
+<td>Months to complete: %d</td>
+</tr>
+<tr>
+<td>18049</td>
+<td>Filter game content by Dinosaur Digs.</td>
+</tr>
+<tr>
+<td>18050</td>
+<td>Construct a dinosaur exhibit using an electric fence.</td>
+</tr>
+<tr>
+<td>18051</td>
+<td>Place an Allosaurus egg in the exhibit.</td>
+</tr>
+<tr>
+<td>18067</td>
+<td>Contain all dinosaurs in suitable exhibits.</td>
+</tr>
+<tr>
+<td>18070</td>
+<td>Exhibit a baby Tyrannosaurus rex.</td>
+</tr>
+<tr>
+<td>18073</td>
+<td>Hire a scientist to care for the egg.</td>
+</tr>
+<tr>
+<td>18074</td>
+<td>Place a Dinosaur Recovery Team building near the exhibit.</td>
+</tr>
+<tr>
+<td>18075</td>
+<td>Sort the data by average profit.</td>
+</tr>
+<tr>
+<td>18076</td>
+<td>View the new Research and Conservation programs.</td>
+</tr>
+<tr>
+<td>18077</td>
+<td>Toggle the show/hide guest button.</td>
+</tr>
+<tr>
+<td>18078</td>
+<td>Toggle the show/hide foliage button.</td>
+</tr>
+<tr>
+<td>18079</td>
+<td>Toggle the show/hide buildings button.</td>
+</tr>
+<tr>
+<td>18080</td>
+<td>Set the Allosaurus free.</td>
+</tr>
+<tr>
+<td>18081</td>
+<td>When the Allosaurus hatches, create a suitable exhibit for it.</td>
+</tr>
+<tr>
+<td>22005</td>
+<td>http://www.microsoft.com/games/dinodigs/autoupdate/autoupdate_eng.idx</td>
+</tr>
+<tr>
+<td>22022</td>
+<td>Software\Microsoft\Microsoft Games\Zoo Tycoon\1.1</td>
+</tr>
+<tr>
+<td>22023</td>
+<td>EULAXP1.RTF</td>
+</tr>
+<tr>
+<td>22024</td>
+<td>WRTYXP1.RTF</td>
+</tr>
+<tr>
+<td>22025</td>
+<td>Eulaxp1.dll</td>
+</tr>
+<tr>
+<td>22200</td>
+<td>Admissions</td>
+</tr>
+<tr>
+<td>22201</td>
+<td>Admissions Income</td>
+</tr>
+<tr>
+<td>22202</td>
+<td>Construction Cost</td>
+</tr>
+<tr>
+<td>22203</td>
+<td>Animal Cost</td>
+</tr>
+<tr>
+<td>22204</td>
+<td>Zoo Upkeep Cost</td>
+</tr>
+<tr>
+<td>22205</td>
+<td>Concessions Income</td>
+</tr>
+<tr>
+<td>22206</td>
+<td>Wages Cost</td>
+</tr>
+<tr>
+<td>22207</td>
+<td>Donations Income</td>
+</tr>
+<tr>
+<td>22208</td>
+<td>Refunds Income</td>
+</tr>
+<tr>
+<td>22209</td>
+<td>Research Cost</td>
+</tr>
+<tr>
+<td>22210</td>
+<td>Marketing Cost</td>
+</tr>
+<tr>
+<td>22900</td>
+<td>All</td>
+</tr>
+<tr>
+<td>22901</td>
+<td>Zoo Tycoon</td>
+</tr>
+<tr>
+<td>22902</td>
+<td>Dinosaur Digs</td>
+</tr>
+<tr>
+<td>22999</td>
+<td>Click to choose: Dinosaur Digs, Zoo Tycoon, or all content.</td>
+</tr>
+<tr>
+<td>23210</td>
+<td>Dinosaur Houses</td>
+</tr>
+<tr>
+<td>23211</td>
+<td>Dinosaur Care</td>
+</tr>
+<tr>
+<td>23212</td>
+<td>T. rex Care</td>
+</tr>
+<tr>
+<td>23213</td>
+<td>Genetic Research</td>
+</tr>
+<tr>
+<td>23214</td>
+<td>Dinosaur Foliage</td>
+</tr>
+<tr>
+<td>23215</td>
+<td>Scientist Training</td>
+</tr>
+<tr>
+<td>23216</td>
+<td>Genetic Research</td>
+</tr>
+<tr>
+<td>23365</td>
+<td>Pteranodon House</td>
+</tr>
+<tr>
+<td>23366</td>
+<td>Lepospondyl House</td>
+</tr>
+<tr>
+<td>23367</td>
+<td>Pterodactylus of the late Jurassic</td>
+</tr>
+<tr>
+<td>23368</td>
+<td>Ramphorhyncus of the late Jurassic</td>
+</tr>
+<tr>
+<td>23369</td>
+<td>Dimorphodon of the early Jurassic</td>
+</tr>
+<tr>
+<td>23370</td>
+<td>Triadobatrachus of the Triassic</td>
+</tr>
+<tr>
+<td>23371</td>
+<td>Karaurus of the Jurassic</td>
+</tr>
+<tr>
+<td>23372</td>
+<td>Diplocaulus of the Permian</td>
+</tr>
+<tr>
+<td>23373</td>
+<td>Nutritional Dinosaur Food</td>
+</tr>
+<tr>
+<td>23374</td>
+<td>Reduced Dinosaur Food Costs</td>
+</tr>
+<tr>
+<td>23375</td>
+<td>Dinosaur Antibiotics</td>
+</tr>
+<tr>
+<td>23376</td>
+<td>Dinosaur Longevity</td>
+</tr>
+<tr>
+<td>23377</td>
+<td>Tyrannosaurus rex Enrichment</td>
+</tr>
+<tr>
+<td>23378</td>
+<td>Tyrannosaurus rex Inoculations</td>
+</tr>
+<tr>
+<td>23379</td>
+<td>Tyrannosaurus rex Temperament Adjustment</td>
+</tr>
+<tr>
+<td>23380</td>
+<td>Tyrannosaurus rex</td>
+</tr>
+<tr>
+<td>23381</td>
+<td>Spinosaurus</td>
+</tr>
+<tr>
+<td>23383</td>
+<td>Kentrosaurus</td>
+</tr>
+<tr>
+<td>23384</td>
+<td>Wooly Mammoth</td>
+</tr>
+<tr>
+<td>23385</td>
+<td>Plesiosaurus</td>
+</tr>
+<tr>
+<td>23386</td>
+<td>Velociraptor</td>
+</tr>
+<tr>
+<td>23387</td>
+<td>Ankylosaurus</td>
+</tr>
+<tr>
+<td>23388</td>
+<td>Coelophysis</td>
+</tr>
+<tr>
+<td>23389</td>
+<td>Apatosaurus</td>
+</tr>
+<tr>
+<td>23390</td>
+<td>Monkey Puzzle Tree</td>
+</tr>
+<tr>
+<td>23391</td>
+<td>Thouarsus Cycad</td>
+</tr>
+<tr>
+<td>23392</td>
+<td>Glossopteris Tree</td>
+</tr>
+<tr>
+<td>23393</td>
+<td>Club Moss Shrub</td>
+</tr>
+<tr>
+<td>23394</td>
+<td>Horsetail</td>
+</tr>
+<tr>
+<td>23395</td>
+<td>Bald Cypress Tree</td>
+</tr>
+<tr>
+<td>23396</td>
+<td>Dawn Redwood Tree</td>
+</tr>
+<tr>
+<td>23397</td>
+<td>Norfolk Island Pine Tree</td>
+</tr>
+<tr>
+<td>23398</td>
+<td>Arctic Birch Tree</td>
+</tr>
+<tr>
+<td>23399</td>
+<td>Scientist Training 1</td>
+</tr>
+<tr>
+<td>23400</td>
+<td>Scientist Training 2</td>
+</tr>
+<tr>
+<td>23401</td>
+<td>Scientist Training 3</td>
+</tr>
+<tr>
+<td>23565</td>
+<td>Funding this conservation program will allow you to purchase a Pteranodon House.</td>
+</tr>
+<tr>
+<td>23566</td>
+<td>Funding this conservation program will allow you to purchase a Lepospondyl House.</td>
+</tr>
+<tr>
+<td>23567</td>
+<td>Funding this conservation program will allow you to select Pterodactylus of the late Jurassic for the Pteranodon House.</td>
+</tr>
+<tr>
+<td>23568</td>
+<td>Funding this conservation program will allow you to select Ramphorhyncus of the late Jurassic for the Pteranodon House.</td>
+</tr>
+<tr>
+<td>23569</td>
+<td>Funding this conservation program will allow you to select Dimorphodon of the early Jurassic for the Pteranodon House.</td>
+</tr>
+<tr>
+<td>23570</td>
+<td>Funding this conservation program will allow you to select Triadobatrachus of the Triassic for the Lepospondyl House.</td>
+</tr>
+<tr>
+<td>23571</td>
+<td>Funding this conservation program will allow you to select Karaurus of the Jurassic for the Lepospondyl House.</td>
+</tr>
+<tr>
+<td>23572</td>
+<td>Funding this conservation program will allow you to select Diplocaulus of the Permian for the Lepospondyl House.</td>
+</tr>
+<tr>
+<td>23573</td>
+<td>Researching this project will increase the nutritional value of the dinosaur's food.</td>
+</tr>
+<tr>
+<td>23574</td>
+<td>Researching this project will reduce the cost of the dinosaurs' food.</td>
+</tr>
+<tr>
+<td>23575</td>
+<td>Researching this project will introduce an inoculation program for the dinosaurs making them less likely to catch diseases.</td>
+</tr>
+<tr>
+<td>23576</td>
+<td>Researching this project will introduce measures that allow dinosaurs to live longer.</td>
+</tr>
+<tr>
+<td>23577</td>
+<td>Tyrannosaurus rex will become happier when a scientist enters their exhibit.</td>
+</tr>
+<tr>
+<td>23578</td>
+<td>Researching this project will introduce an inoculation program for Tyrannosaurus rex, making them less likely to catch diseases.</td>
+</tr>
+<tr>
+<td>23579</td>
+<td>Researching this project will make Tryannosaurus rex tolerant of more T. rex in its exhibit.</td>
+</tr>
+<tr>
+<td>23580</td>
+<td>Researching this project will allow you to purchase a tyrannosaurus rex.</td>
+</tr>
+<tr>
+<td>23581</td>
+<td>Researching this project will allow you to purchase a spinosaurus.</td>
+</tr>
+<tr>
+<td>23583</td>
+<td>Researching this project will allow you to purchase a kentrosaurus.</td>
+</tr>
+<tr>
+<td>23584</td>
+<td>Researching this project will allow you to purchase a wooly mammoth.</td>
+</tr>
+<tr>
+<td>23585</td>
+<td>Researching this project will allow you to purchase a plesiosaurus.</td>
+</tr>
+<tr>
+<td>23586</td>
+<td>Researching this project will allow you to purchase a velociraptor.</td>
+</tr>
+<tr>
+<td>23587</td>
+<td>Researching this project will allow you to purchase an ankylosaurus.</td>
+</tr>
+<tr>
+<td>23588</td>
+<td>Researching this project will allow you to purchase a coelophysis.</td>
+</tr>
+<tr>
+<td>23589</td>
+<td>Researching this project will allow you to purchase an apatosaurus.</td>
+</tr>
+<tr>
+<td>23590</td>
+<td>Researching this project will allow you to grow monkey puzzle trees, which are favored by the Tyrannosaurus rex.</td>
+</tr>
+<tr>
+<td>23591</td>
+<td>Researching this project will allow you to grow thouarsus cycads, which are favored by the Coelophysis.</td>
+</tr>
+<tr>
+<td>23592</td>
+<td>Researching this project will allow you to grow glossopteris trees, which are favored by the Plateosaurus.</td>
+</tr>
+<tr>
+<td>23593</td>
+<td>Researching this project will allow you to grow club moss shrubs, which are favored by the Kentrosaurus.</td>
+</tr>
+<tr>
+<td>23594</td>
+<td>Researching this project will allow you to grow horsetails, which are favored by the Plesiosaurus.</td>
+</tr>
+<tr>
+<td>23595</td>
+<td>Researching this project will allow you to grow bald cypress trees, which are favored by the Ankylosaurus.</td>
+</tr>
+<tr>
+<td>23596</td>
+<td>Researching this project will allow you to grow dawn redwood trees, which are favored by Velociraptors.</td>
+</tr>
+<tr>
+<td>23597</td>
+<td>Researching this project will allow you to grow Norfolk Island pine trees, which are favored by Spinosaurs.</td>
+</tr>
+<tr>
+<td>23598</td>
+<td>Researching this project will allow you to grow arctic birch trees, which are favored by Wooly Mammoths.</td>
+</tr>
+<tr>
+<td>23599</td>
+<td>Dinosaurs will become happier when a scientist enters their exhibit.</td>
+</tr>
+<tr>
+<td>23600</td>
+<td>Scientists will be able to distribute more food upon each exhibit visit.</td>
+</tr>
+<tr>
+<td>23601</td>
+<td>Scientists will be able to walk faster.</td>
+</tr>
+<tr>
+<td>24210</td>
+<td>Dinosaur Houses</td>
+</tr>
+<tr>
+<td>24211</td>
+<td>Dinosaur Care</td>
+</tr>
+<tr>
+<td>24212</td>
+<td>T. rex Care</td>
+</tr>
+<tr>
+<td>24213</td>
+<td>Genetic Research</td>
+</tr>
+<tr>
+<td>24214</td>
+<td>Dinosaur Foliage</td>
+</tr>
+<tr>
+<td>24215</td>
+<td>Scientist Training</td>
+</tr>
+<tr>
+<td>24216</td>
+<td>Genetic Research</td>
+</tr>
+<tr>
+<td>24285</td>
+<td>Pteranodon House</td>
+</tr>
+<tr>
+<td>24286</td>
+<td>Lepospondyl House</td>
+</tr>
+<tr>
+<td>24287</td>
+<td>Pterodactylus of the late Jurassic</td>
+</tr>
+<tr>
+<td>24288</td>
+<td>Ramphorhyncus of the late Jurassic</td>
+</tr>
+<tr>
+<td>24289</td>
+<td>Dimorphodon of the early Jurassic</td>
+</tr>
+<tr>
+<td>24290</td>
+<td>Triadobatrachus of the Triassic</td>
+</tr>
+<tr>
+<td>24291</td>
+<td>Karaurus of the Jurassic</td>
+</tr>
+<tr>
+<td>24292</td>
+<td>Diplocaulus of the Permian</td>
+</tr>
+<tr>
+<td>24293</td>
+<td>Nutritional Dinosaur Food</td>
+</tr>
+<tr>
+<td>24294</td>
+<td>Reduced Dinosaur Food Costs</td>
+</tr>
+<tr>
+<td>24295</td>
+<td>Dinosaur Antibiotics</td>
+</tr>
+<tr>
+<td>24296</td>
+<td>Dinosaur Longevity</td>
+</tr>
+<tr>
+<td>24297</td>
+<td>Tyrannosaurus rex Enrichment</td>
+</tr>
+<tr>
+<td>24298</td>
+<td>Tyrannosaurus rex Inoculations</td>
+</tr>
+<tr>
+<td>24299</td>
+<td>Tyrannosaurus rex Temperament Adjustment</td>
+</tr>
+<tr>
+<td>24300</td>
+<td>Tyrannosaurus rex</td>
+</tr>
+<tr>
+<td>24301</td>
+<td>Spinosaurus</td>
+</tr>
+<tr>
+<td>24303</td>
+<td>Kentrosaurus</td>
+</tr>
+<tr>
+<td>24304</td>
+<td>Wooly Mammoth</td>
+</tr>
+<tr>
+<td>24305</td>
+<td>Plesiosaurus</td>
+</tr>
+<tr>
+<td>24306</td>
+<td>Velociraptor</td>
+</tr>
+<tr>
+<td>24307</td>
+<td>Ankylosaurus</td>
+</tr>
+<tr>
+<td>24308</td>
+<td>Coelophysis</td>
+</tr>
+<tr>
+<td>24309</td>
+<td>Apatosaurus</td>
+</tr>
+<tr>
+<td>24310</td>
+<td>Monkey Puzzle Tree</td>
+</tr>
+<tr>
+<td>24311</td>
+<td>Thouarsus Cycad</td>
+</tr>
+<tr>
+<td>24312</td>
+<td>Glossopteris Tree</td>
+</tr>
+<tr>
+<td>24313</td>
+<td>Club Moss Shrub</td>
+</tr>
+<tr>
+<td>24314</td>
+<td>Horsetail</td>
+</tr>
+<tr>
+<td>24315</td>
+<td>Bald Cypress Tree</td>
+</tr>
+<tr>
+<td>24316</td>
+<td>Dawn Redwood Tree</td>
+</tr>
+<tr>
+<td>24317</td>
+<td>Norfolk Island Pine Tree</td>
+</tr>
+<tr>
+<td>24318</td>
+<td>Arctic Birch Tree</td>
+</tr>
+<tr>
+<td>24319</td>
+<td>Scientist Training 1</td>
+</tr>
+<tr>
+<td>24320</td>
+<td>Scientist Training 2</td>
+</tr>
+<tr>
+<td>24321</td>
+<td>Scientist Training 3</td>
+</tr>
+<tr>
+<td>26021</td>
+<td>Scientist Recommendations</td>
+</tr>
+<tr>
+<td>27051</td>
+<td>Dinosaur Digs: Basic Map (Small)</td>
+</tr>
+<tr>
+<td>27052</td>
+<td>Dinosaur Digs: Basic Map (Medium)</td>
+</tr>
+<tr>
+<td>27053</td>
+<td>Dinosaur Digs: Basic Map (Large)</td>
+</tr>
+<tr>
+<td>27054</td>
+<td>Dinosaur Digs: Airport Resort Map (Medium)</td>
+</tr>
+<tr>
+<td>27055</td>
+<td>Dinosaur Digs: Lavaland Map (Medium)</td>
+</tr>
+<tr>
+<td>28001</td>
+<td>F1 Help</td>
+</tr>
+<tr>
+<td>28123</td>
+<td>Adding dinos to your zoo</td>
+</tr>
+<tr>
+<td>28124</td>
+<td>Animation settings</td>
+</tr>
+<tr>
+<td>28125</td>
+<td>Building List</td>
+</tr>
+<tr>
+<td>28126</td>
+<td>Dinosaur attacks</td>
+</tr>
+<tr>
+<td>28127</td>
+<td>Dinosaur capture</td>
+</tr>
+<tr>
+<td>28128</td>
+<td>Dinosaur eggs</td>
+</tr>
+<tr>
+<td>28129</td>
+<td>Dinosaur exhibits</td>
+</tr>
+<tr>
+<td>28130</td>
+<td>Dinosaur rampage</td>
+</tr>
+<tr>
+<td>28131</td>
+<td>Epochs</td>
+</tr>
+<tr>
+<td>28132</td>
+<td>Expansion pack filter</td>
+</tr>
+<tr>
+<td>28133</td>
+<td>Fences and dinosaurs</td>
+</tr>
+<tr>
+<td>28134</td>
+<td>Hide features</td>
+</tr>
+<tr>
+<td>28135</td>
+<td>Hotkeys</td>
+</tr>
+<tr>
+<td>28136</td>
+<td>Objects and dinosaurs</td>
+</tr>
+<tr>
+<td>28137</td>
+<td>Scientist</td>
+</tr>
+<tr>
+<td>28138</td>
+<td>Sound settings</td>
+</tr>
+<tr>
+<td>28139</td>
+<td>Trampled terrain</td>
+</tr>
+<tr>
+<td>28140</td>
+<td>Recommendations</td>
+</tr>
+<tr>
+<td>28141</td>
+<td>Technical Support</td>
+</tr>
+<tr>
+<td>29013</td>
+<td>Excellence in Dinosaur Exhibit Design - Gold Cup</td>
+</tr>
+<tr>
+<td>29014</td>
+<td>Complete Ice Age Zoo - Gold Mammoth</td>
+</tr>
+<tr>
+<td>29015</td>
+<td>Quality Dinosaur Care - Blue Ribbon</td>
+</tr>
+<tr>
+<td>29016</td>
+<td>Tyrannosaurus rex Birth - Gold Rex</td>
+</tr>
+<tr>
+<td>29017</td>
+<td>Outstanding Animal Health Plaque</td>
+</tr>
+<tr>
+<td>29018</td>
+<td>Complete Jurassic Zoo - Gold Stegosaurus</td>
+</tr>
+<tr>
+<td>31000</td>
+<td>Adopt Animals.  Adopt animals, view animal information, or purchase animal toys and shelters.</td>
+</tr>
+<tr>
+<td>31001</td>
+<td>Structures.  Buy zoo buildings and scenery.</td>
+</tr>
+<tr>
+<td>31002</td>
+<td>Construction.  Construct exhibits, modify terrain, or buy foliage and rocks.</td>
+</tr>
+<tr>
+<td>31005</td>
+<td>Hire Staff.  Hire zookeepers, scientists, maintenance workers, tour guides or a DRT base.</td>
+</tr>
+<tr>
+<td>31006</td>
+<td>Messages.  Show or expand the list of messages at the top of the screen.</td>
+</tr>
+<tr>
+<td>31007</td>
+<td>Zoom in.  Increase magnification.</td>
+</tr>
+<tr>
+<td>31008</td>
+<td>Rotate World Counter-clockwise.</td>
+</tr>
+<tr>
+<td>31009</td>
+<td>Rotate World Clockwise.</td>
+</tr>
+<tr>
+<td>31010</td>
+<td>Animal List.  View lists of animals in the zoo.</td>
+</tr>
+<tr>
+<td>31012</td>
+<td>Guest List.  View lists of guests in the zoo.</td>
+</tr>
+<tr>
+<td>31014</td>
+<td>Zoo Status.  View zoo information, finances, building information, awards and ratings.</td>
+</tr>
+<tr>
+<td>31019</td>
+<td>Research and Conservation. Manage funding of research on zoo items and the conservation of zoo animals.</td>
+</tr>
+<tr>
+<td>31023</td>
+<td>Zoom out.  Decrease magnification.</td>
+</tr>
+<tr>
+<td>31025</td>
+<td>Clear.  Remove objects and receive a partial refund.</td>
+</tr>
+<tr>
+<td>31050</td>
+<td>Exhibit List.  View lists of zoo exhibits.</td>
+</tr>
+<tr>
+<td>31051</td>
+<td>Staff List.  View lists of zoo staff.</td>
+</tr>
+<tr>
+<td>31065</td>
+<td>Click to show foliage in the game area.</td>
+</tr>
+<tr>
+<td>31066</td>
+<td>Click to hide foliage in the game area.</td>
+</tr>
+<tr>
+<td>31067</td>
+<td>Click to hide buildings in the game area.</td>
+</tr>
+<tr>
+<td>31068</td>
+<td>Click to hide guests in the game area.</td>
+</tr>
+<tr>
+<td>31069</td>
+<td>Click to show buildings in the game area.</td>
+</tr>
+<tr>
+<td>31070</td>
+<td>Click to show guests in the game area.</td>
+</tr>
+<tr>
+<td>31071</td>
+<td>Pause game.</td>
+</tr>
+<tr>
+<td>31072</td>
+<td>Resume game.</td>
+</tr>
+<tr>
+<td>31075</td>
+<td>Undo last action.</td>
+</tr>
+<tr>
+<td>31530</td>
+<td>Advanced Options.  Decreasing sound or video quality may help to improve game performance.</td>
+</tr>
+<tr>
+<td>31541</td>
+<td>Click to access game options. Save and load games, return to the main menu or exit Zoo Tycoon.</td>
+</tr>
+<tr>
+<td>31543</td>
+<td>Click to access tool tip options.  Switch tool tip type and adjust the speed at which tool tips appear.</td>
+</tr>
+<tr>
+<td>31544</td>
+<td>About.  Click to access help and about.</td>
+</tr>
+<tr>
+<td>31560</td>
+<td>Load.  Click to load a save game.</td>
+</tr>
+<tr>
+<td>31561</td>
+<td>Save.  Click to save your game.</td>
+</tr>
+<tr>
+<td>31562</td>
+<td>Main Menu.  Click to go to the Main Menu.</td>
+</tr>
+<tr>
+<td>31563</td>
+<td>Exit.  Click to Exit Zoo Tycoon.</td>
+</tr>
+<tr>
+<td>31566</td>
+<td>Click to change the video mode to windowed.</td>
+</tr>
+<tr>
+<td>31567</td>
+<td>Click to change the video mode to full screen.</td>
+</tr>
+<tr>
+<td>31575</td>
+<td>Slide left to right to adjust the map scroll speed</td>
+</tr>
+<tr>
+<td>33124</td>
+<td>Scientist recommendations.  Click to view the scientist's recommendations on improving exhibit suitability.</td>
+</tr>
+<tr>
+<td>33199</td>
+<td>Exhibit information.  Lists exhibit popularity, construction date, upkeep costs and if a scientist is assigned.</td>
+</tr>
+<tr>
+<td>33240</td>
+<td>Click to manually choose where to place the gate along an exhibit's fence.</td>
+</tr>
+<tr>
+<td>33302</td>
+<td>Accept all terrain changes since opening this menu tab.</td>
+</tr>
+<tr>
+<td>33310</td>
+<td>Increase tool size.  The tool is used to apply terrain type or height changes onto land.  Click the plus (+) button to increase shovel size.</td>
+</tr>
+<tr>
+<td>33314</td>
+<td>Decrease tool size.  The tool is used to apply terrain type or height changes onto land.  Click the minus (-) button to decrease shovel size.</td>
+</tr>
+<tr>
+<td>33317</td>
+<td>Click and drag to level hills and valleys.  Allows faster application of hills and valleys.</td>
+</tr>
+<tr>
+<td>33318</td>
+<td>Click and drag to level cliffs and moats.  Allows faster application of cliffs and moats.</td>
+</tr>
+<tr>
+<td>33361</td>
+<td>Terrain Height.  Animals require different terrain heights, depending on their preferred habitats.</td>
+</tr>
+<tr>
+<td>33365</td>
+<td>Grass.  Suitable exhibit terrain for grassland animals. Many animals like a small amount of grass in their exhibits.</td>
+</tr>
+<tr>
+<td>33578</td>
+<td>Click to add exhibits to the staff member's schedule, then move the cursor over an exhibit and click again.</td>
+</tr>
+<tr>
+<td>33579</td>
+<td>Click to remove selected exhibit from the staff member's schedule.</td>
+</tr>
+<tr>
+<td>33580</td>
+<td>Click to remove all exhibits from the staff member's schedule.  Staff member will not have any assigned exhibits.</td>
+</tr>
+<tr>
+<td>33590</td>
+<td>Click to add this exhibit to the staff member's schedule.</td>
+</tr>
+<tr>
+<td>33819</td>
+<td>Show sick animals in the above list.  Sick animals will quickly need the attention of a staff member.</td>
+</tr>
+<tr>
+<td>33821</td>
+<td>Show hungry animals in the above list.  Animals will become hungry if there are no staff assigned to their exhibit.</td>
+</tr>
+<tr>
+<td>33843</td>
+<td>Animal hunger.  Assign scientists to exhibits of hungry animals.</td>
+</tr>
+<tr>
+<td>33844</td>
+<td>Exhibit suitability.  Click Scientist Recommendations to get advice on improving exhibit suitability.</td>
+</tr>
+<tr>
+<td>34107</td>
+<td>Scenario information.  Lists each scenario's objectives and status.</td>
+</tr>
+<tr>
+<td>34153</td>
+<td>Zoo graphs.  Graphs the zoo's ratings, donations, profits, and attendance.</td>
+</tr>
+<tr>
+<td>34154</td>
+<td>Income/Expenses.  Lists information about the zoo's income and expenses.</td>
+</tr>
+<tr>
+<td>34175</td>
+<td>Click to sort by building type.  This is ideal for grouping buildings of the same type together.</td>
+</tr>
+<tr>
+<td>34176</td>
+<td>Click to sort by number of months in operation.  This is ideal for seeing which buildings have been around the longest.</td>
+</tr>
+<tr>
+<td>34177</td>
+<td>Click to sort by frequency of guest use.  This is ideal for seeing which buildings the guests visit the most.</td>
+</tr>
+<tr>
+<td>34178</td>
+<td>Click to sort by profit.  This is ideal for seeing which buildings bring in the most money.</td>
+</tr>
+<tr>
+<td>34179</td>
+<td>Click to sort by average profit.  This is ideal for seeing which buildings bring in the most money.</td>
+</tr>
+<tr>
+<td>34180</td>
+<td>Building list.  Lists all commerce buildings and summarizes important building information.</td>
+</tr>
+<tr>
+<td>34310</td>
+<td>Exhibit status. Lists exhibit construction date, upkeep costs, and if staff are assigned.</td>
+</tr>
+<tr>
+<td>35002</td>
+<td>Adopt a polar bear.  Polar bears live alone or in small groups. Polar bears are carnivores that mainly eat seals in the wild.</td>
+</tr>
+<tr>
+<td>35046</td>
+<td>Adopt a Triceratops (tri-SER-uh-tops).  Triceratops move in great herds. When threatened, triceratops charge at their aggressors with their three powerful, large horns.</td>
+</tr>
+<tr>
+<td>35081</td>
+<td>Adopt an Asian elephant. Asian elephants live in medium-sized herds. Asian elephants prefer the foxtail palm tree.</td>
+</tr>
+<tr>
+<td>35085</td>
+<td>Adopt a Tyrannosaurus rex (ti-RAN-o-SAWR-us reks). The T. rex is an extremely violent animal that prefers living alone. Only the strongest enclosures can hold the T. rex. T. rex eats meat, preferably live meat.</td>
+</tr>
+<tr>
+<td>35086</td>
+<td>Adopt a Saber-toothed Cat. Saber-toothed Cats live in small to medium-sized families called prides. Saber-toothed Cats use their saber-like canine teeth to hunt fast moving animals.</td>
+</tr>
+<tr>
+<td>35087</td>
+<td>Adopt an Ankylosaurus (ANG-ki-lo-SAWR-us). Ankylosaurs live in medium to large-sized herds. Ankylosaurs are peaceful herbivores that use the bony club at the end of their tails for defense.</td>
+</tr>
+<tr>
+<td>35088</td>
+<td>Adopt a Gallimimus (GAL-i-MIEM-us). Gallimimuses live in medium to large-sized herds. Gallimimuses are omnivores that need a nearby source of fresh water.</td>
+</tr>
+<tr>
+<td>35089</td>
+<td>Adopt an Iguanodon (i-GWAHN-o-don). Iguanodons live in small to medium-sized herds. Iguanodons are gentle herbivores that need a shelter.</td>
+</tr>
+<tr>
+<td>35090</td>
+<td>Adopt a Lambeosaurus (LAM-bee-o-SAWR-us). Lambeosaurs live in small to medium-sized herds. Lambeosaurs are large, gentle herbivores.</td>
+</tr>
+<tr>
+<td>35091</td>
+<td>Adopt a Spinosaurus (SPIEN-o-SAWR-us). Spinosaurs live in small family groups. Spinosaurs are large, voracious carnivores.</td>
+</tr>
+<tr>
+<td>35092</td>
+<td>Adopt a Styracosaurus (STIHR-a-ko-SAWR-us). Styracosaurs live in medium to large-sized herds. Styracosaurs are grazing herbivores.</td>
+</tr>
+<tr>
+<td>35093</td>
+<td>Adopt a Velociraptor (vee-LOHS-i-RAP-tor). Velociraptors live in small to medium-sized hunting packs. Velociraptors are cunning predators who hunt any form of living meat.</td>
+</tr>
+<tr>
+<td>35094</td>
+<td>Adopt an Allosaurus (AL-o-SAWR-us). Allosaurs live alone or in small family groups. Allosaurs are voracious carnivores with an appetite for living food.</td>
+</tr>
+<tr>
+<td>35095</td>
+<td>Adopt a Camptosaurus (KAMP-to-SAWR-us). Camptosaurs live alone or in small family groups. Camptosaurs are gentle herbivores.</td>
+</tr>
+<tr>
+<td>35096</td>
+<td>Adopt a Caudipteryx (kaw-DIP-ter-iks). Caudipteryx live in medium to large-sized herds. Caudipteryx are insectivores.</td>
+</tr>
+<tr>
+<td>35097</td>
+<td>Adopt a Kentrosaurus (KEN-tro-SAWR-us). Kentrosaurs live in small to medium-sized herds. Kentrosaurs are grazing herbivores.</td>
+</tr>
+<tr>
+<td>35098</td>
+<td>Adopt a Plesiosaurus (PLEE-sio-SAWR-us). Plesiosaurs live in small family groups. Plesiosaurs are aquatic carnivores.</td>
+</tr>
+<tr>
+<td>35099</td>
+<td>Adopt a Stegosaurus (STEG-o-SAWR-us). Stegosaurs live in small to medium-sized herds. Stegosaurs are grazing herbivores.</td>
+</tr>
+<tr>
+<td>35325</td>
+<td>Adopt an Apatosaurus (a-PAT-o-SAWR-us). Apatosaurs live alone or in small family groups. Apatosaurs are large, slow moving herbivores.</td>
+</tr>
+<tr>
+<td>35326</td>
+<td>Adopt a Coelophysis (SEEL-o-FIE-sis). Coelophysises live alone or in small family groups. Coelophysises dart among rainforest trees and steal eggs from other dinosaurs.</td>
+</tr>
+<tr>
+<td>35327</td>
+<td>Adopt a Herrerasaurus (he-RER-a-SAWR-us). Herrerasaurs live alone or in small family groups. Herrerasaurs are skilled hunters that live in the rainforest.</td>
+</tr>
+<tr>
+<td>35328</td>
+<td>Adopt a Plateosaurus (PLAT-ee-o-SAWR-us). Plateosaurs live alone or in small family groups. Plateosaurs are gentle herbivores.</td>
+</tr>
+<tr>
+<td>35329</td>
+<td>Adopt a Wooly Mammoth. Wooly Mammoths live in small to medium-sized herds. Its thick, wooly hair is ideal to help the Wooly Mammoth survive harsh tundra winters.</td>
+</tr>
+<tr>
+<td>35330</td>
+<td>Adopt a Wooly Rhinoceros. Wooly rhinos live in small family groups. The thick, wooly hair of the wooly rhino helps it survive the harsh climate in which it lives.</td>
+</tr>
+<tr>
+<td>35331</td>
+<td>Adopt a Giant Tortoise.  Giant tortoises live in small family groups. The thick shell of the giant tortoise protects it from the elements and dangerous predators.</td>
+</tr>
+<tr>
+<td>35332</td>
+<td>Adopt a Deinosuchus (die-no-SUE-kus).  Deinosuchuses live alone or in small family groups. Deinosuchuses are vicious predators that eat fish and some small dinosaurs.</td>
+</tr>
+<tr>
+<td>36012</td>
+<td>Purchase an iron bar exhibit fence. Very strong. Animals cannot climb out or jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>36026</td>
+<td>Purchase a flowerbed.  Guests will appreciate the beautiful flowers growing in it.</td>
+</tr>
+<tr>
+<td>36031</td>
+<td>Purchase a large flowerbed.  Guests will appreciate the many beautiful flowers growing in it.</td>
+</tr>
+<tr>
+<td>36058</td>
+<td>Full Platter of Carnivore Chow</td>
+</tr>
+<tr>
+<td>36059</td>
+<td>Empty Platter of Carnivore Chow</td>
+</tr>
+<tr>
+<td>36060</td>
+<td>Full Platter of Herbivore Chow</td>
+</tr>
+<tr>
+<td>36061</td>
+<td>Empty Platter of Herbivore Chow</td>
+</tr>
+<tr>
+<td>36064</td>
+<td>Partially Full Platter of Carnivore Chow</td>
+</tr>
+<tr>
+<td>36065</td>
+<td>Partially Full Platter of Herbivore Chow</td>
+</tr>
+<tr>
+<td>36094</td>
+<td>Large pile of dinosaur poo</td>
+</tr>
+<tr>
+<td>36109</td>
+<td>Large Lion Rock.  Lions will really enjoy sunning themselves on this large rock.</td>
+</tr>
+<tr>
+<td>36161</td>
+<td>Purchase a Laboratory.</td>
+</tr>
+<tr>
+<td>36162</td>
+<td>Purchase Road Paint 1.</td>
+</tr>
+<tr>
+<td>36163</td>
+<td>Purchase Road Paint 2.</td>
+</tr>
+<tr>
+<td>36164</td>
+<td>Purchase Road Paint 3.</td>
+</tr>
+<tr>
+<td>36165</td>
+<td>Purchase a Lava Pit.</td>
+</tr>
+<tr>
+<td>36166</td>
+<td>Purchase an Airplane.</td>
+</tr>
+<tr>
+<td>36167</td>
+<td>Purchase a Genetic Laboratory Vehicle.</td>
+</tr>
+<tr>
+<td>36168</td>
+<td>Purchase an Oil Drum.</td>
+</tr>
+<tr>
+<td>36301</td>
+<td>Pizza. To satisfy their hunger, guests can purchase pizza at pizza stands or restaurants.</td>
+</tr>
+<tr>
+<td>36303</td>
+<td>Hot dog.  To satisfy their hunger, guests can purchase hot dogs at hot dog stands or restaurants.</td>
+</tr>
+<tr>
+<td>36304</td>
+<td>Soda.  To satisfy their thirst, guests can purchase sodas at drink stands or restaurants.</td>
+</tr>
+<tr>
+<td>36312</td>
+<td>Pile of Fruit Chow</td>
+</tr>
+<tr>
+<td>36313</td>
+<td>Pile of Fish Chow</td>
+</tr>
+<tr>
+<td>36314</td>
+<td>Pile of Bamboo Chow</td>
+</tr>
+<tr>
+<td>36315</td>
+<td>Pile of Grass Chow</td>
+</tr>
+<tr>
+<td>36316</td>
+<td>Guests love to buy the dinosaur mug for their coffee or tea.</td>
+</tr>
+<tr>
+<td>36317</td>
+<td>Guests love to buy dinosaur T-shirts to show that they visited the dinosaur zoo.</td>
+</tr>
+<tr>
+<td>36318</td>
+<td>Guests love to buy the plastic dinosaurs to play with.</td>
+</tr>
+<tr>
+<td>36319</td>
+<td>Guests love to buy the cuddly stuffed Styracosaurus toy.</td>
+</tr>
+<tr>
+<td>36320</td>
+<td>Guests love to buy the dinosaur puzzle to assemble.</td>
+</tr>
+<tr>
+<td>36400</td>
+<td>Purchase a small stone torch.  Guests will find that the small stone torch gives the zoo a pleasantly wild setting.</td>
+</tr>
+<tr>
+<td>36401</td>
+<td>Purchase a T. rex statue.  Guests will be fascinated by the statue of the Tyrannosaurus rex.</td>
+</tr>
+<tr>
+<td>36402</td>
+<td>Purchase a velociraptor statue.  Guests will be fascinated by the statue of the velociraptor.</td>
+</tr>
+<tr>
+<td>36403</td>
+<td>Purchase a triceratops statue.  Guests will be fascinated by the statue of the triceratops.</td>
+</tr>
+<tr>
+<td>36404</td>
+<td>Purchase a giant tortoise fountain.  Guests will enjoy the beautiful fountain featuring the giant prehistoric tortoise.</td>
+</tr>
+<tr>
+<td>36405</td>
+<td>Purchase a lava archway.  Guests will enjoy walking through the lava archway.</td>
+</tr>
+<tr>
+<td>36406</td>
+<td>Purchase a stone archway.  Guests will enjoy walking through the stone archway.</td>
+</tr>
+<tr>
+<td>36407</td>
+<td>Pile of insectivore chow</td>
+</tr>
+<tr>
+<td>36408</td>
+<td>Purchase a wooly mammoth fountain.  Guests will enjoy the beautiful fountain featuring the giant prehistoric elephant.</td>
+</tr>
+<tr>
+<td>36412</td>
+<td>Purchase a wooden observation area.  Guests will appreciate the observation areas and walk under them to view dinosaurs and animals in exhibits.</td>
+</tr>
+<tr>
+<td>36415</td>
+<td>Pile of dinosaur carnivore chow</td>
+</tr>
+<tr>
+<td>36416</td>
+<td>Pile of dinosaur herbivore chow</td>
+</tr>
+<tr>
+<td>36420</td>
+<td>Purchase a triceratops skeleton.  Guests will find the addition of a triceratops skeleton to your zoo very attractive.</td>
+</tr>
+<tr>
+<td>36422</td>
+<td>Purchase a small fossil wall.  Guests will enjoy the informative fossil wall.</td>
+</tr>
+<tr>
+<td>36423</td>
+<td>Purchase a medium fossil wall.  Guests will enjoy the fossil wall.</td>
+</tr>
+<tr>
+<td>36424</td>
+<td>Purchase a large fossil wall.  Guests will enjoy the awe-inspiring large fossil wall.</td>
+</tr>
+<tr>
+<td>36425</td>
+<td>Purchase a Tyrannosaurus rex skeleton.  Guests will find the addition of a T. rex skeleton to your zoo very attractive.</td>
+</tr>
+<tr>
+<td>36426</td>
+<td>Purchase a bone bed.  Guests will marvel at a recreation of a real dinosaur dig.</td>
+</tr>
+<tr>
+<td>36427</td>
+<td>Purchase a large stone torch.  Guests will find that the large stone torch gives the zoo a suitably wild feel.</td>
+</tr>
+<tr>
+<td>36428</td>
+<td>Purchase a stone bench.  Guests will rest easy on the dinosaur-themed stone bench.</td>
+</tr>
+<tr>
+<td>36430</td>
+<td>Purchase a dinosaur zoo entrance.  Zoo Entrances are required for a zoo to open.</td>
+</tr>
+<tr>
+<td>36431</td>
+<td>Purchase a right dinosaur admission booth.</td>
+</tr>
+<tr>
+<td>36432</td>
+<td>Purchase a left dinosaur admission booth.</td>
+</tr>
+<tr>
+<td>36433</td>
+<td>Purchase a dinosaur zoo wall.</td>
+</tr>
+<tr>
+<td>36434</td>
+<td>Purchase a steam vent.</td>
+</tr>
+<tr>
+<td>36436</td>
+<td>Purchase a velociraptor skeleton.  Guests will find the addition of a velociraptor skeleton to your zoo very attractive.</td>
+</tr>
+<tr>
+<td>36437</td>
+<td>Purchase an iron bar observation area.  Guests will enjoy standing under your iron bar observation area to view animals or dinosaurs.</td>
+</tr>
+<tr>
+<td>36438</td>
+<td>Purchase a tar pit. Guests will be fascinated by the gurgling, stinky tar pit.</td>
+</tr>
+<tr>
+<td>36439</td>
+<td>Purchase a lava pit. Guests will be fascinated by the molten hot lava.</td>
+</tr>
+<tr>
+<td>36440</td>
+<td>Purchase a reinforced observation area. Guests will appreciate the observation areas and walk under them to view dinosaurs or animals in exhibits.</td>
+</tr>
+<tr>
+<td>36441</td>
+<td>Purchase an ice age observation area. Guests will appreciate the observation areas and walk under them to view dinosaurs or animals in exhibits.</td>
+</tr>
+<tr>
+<td>36442</td>
+<td>Purchase a marble observation area. Guests will appreciate the observation areas and walk under them to view dinosaurs or animals in exhibits.</td>
+</tr>
+<tr>
+<td>36443</td>
+<td>Purchase a small volcano. Guests will be awed by the lava flowing from the small volcano.</td>
+</tr>
+<tr>
+<td>36444</td>
+<td>Purchase a large volcano. Guests will be awed by the lava flowing from the large volcano.</td>
+</tr>
+<tr>
+<td>36445</td>
+<td>Purchase a large geyser. Guests will really enjoy the sudden rush of water from the large geyser.</td>
+</tr>
+<tr>
+<td>36446</td>
+<td>Purchase a small geyser. Guests will really enjoy the sudden rush of water from the small geyser.</td>
+</tr>
+<tr>
+<td>36447</td>
+<td>Purchase a steam vent. Guests will enjoy the steam rising from the steam vent.</td>
+</tr>
+<tr>
+<td>37000</td>
+<td>Acacia Caffra Tree.  Savannah animals will enjoy the acacia caffra tree.</td>
+</tr>
+<tr>
+<td>37018</td>
+<td>Foxtail Palm Tree.  Rainforest animals will enjoy the foxtail palm tree.</td>
+</tr>
+<tr>
+<td>37042</td>
+<td>Llala Palm Tree.  Rainforest animals will enjoy the llala palm tree.</td>
+</tr>
+<tr>
+<td>37048</td>
+<td>Thorn Bush.  Savannah animals will enjoy the thorn bush.</td>
+</tr>
+<tr>
+<td>37065</td>
+<td>Kapok Tree.  Rainforest animals will enjoy the kapok tree.</td>
+</tr>
+<tr>
+<td>37078</td>
+<td>Purchase a Jack-O'-Lantern. A spooky jack-o'-lantern will give guests a pleasant holiday fright.</td>
+</tr>
+<tr>
+<td>37079</td>
+<td>Purchase a Snowman. A jolly character who prefers to sit in snow whenever possible. Guests will enjoy seeing his festive holiday face.</td>
+</tr>
+<tr>
+<td>37080</td>
+<td>Club Moss Shrub.  Coniferous forest dinosaurs will enjoy the club moss shrub.</td>
+</tr>
+<tr>
+<td>37081</td>
+<td>Walchian Conifer Tree.  Coniferous forest dinosaurs will enjoy the walchian conifer tree.</td>
+</tr>
+<tr>
+<td>37082</td>
+<td>Thouarsus Cycad Tree.  Rainforest dinosaurs will enjoy the thouarsus cycad tree.</td>
+</tr>
+<tr>
+<td>37083</td>
+<td>Bald Cypress Tree.  Aquatic dinosaurs will enjoy the bald cypress tree.</td>
+</tr>
+<tr>
+<td>37084</td>
+<td>Dawn Redwood Tree.  Coniferous dinosaurs will enjoy the dawn redwood tree.</td>
+</tr>
+<tr>
+<td>37085</td>
+<td>Fern Bush.  Rainforest dinosaurs will enjoy the fern bush.</td>
+</tr>
+<tr>
+<td>37086</td>
+<td>Gingko Tree.  Deciduous forest dinosaurs will enjoy the gingko tree.</td>
+</tr>
+<tr>
+<td>37087</td>
+<td>Glossopteris Tree.  Deciduous forest dinosaurs will enjoy the glossopteris tree.</td>
+</tr>
+<tr>
+<td>37088</td>
+<td>Horsetail.  Aquatic dinosaurs will enjoy the horsetail.</td>
+</tr>
+<tr>
+<td>37089</td>
+<td>Lepidodendron Tree.  Coniferous forest dinosaurs will enjoy the lepidodendron tree.</td>
+</tr>
+<tr>
+<td>37090</td>
+<td>Leptocycas Tree.  Rainforest dinosaurs will enjoy the leptocycas tree.</td>
+</tr>
+<tr>
+<td>37091</td>
+<td>Magnolia Tree.  Deciduous forest dinosaurs will enjoy the magnolia tree.</td>
+</tr>
+<tr>
+<td>37092</td>
+<td>Monkey Puzzle Tree.  Grassland dinosaurs will enjoy the monkey puzzle tree.</td>
+</tr>
+<tr>
+<td>37093</td>
+<td>Norfolk Island Pine Tree.  Coniferous forest dinosaurs will enjoy the Norfolk Island pine tree.</td>
+</tr>
+<tr>
+<td>37094</td>
+<td>Sigillaria Tree.  Savannah dinosaurs will enjoy the sigillaria tree.</td>
+</tr>
+<tr>
+<td>37095</td>
+<td>Williamsonia Tree.  Rainforest dinosaurs will enjoy the williamsonia tree.</td>
+</tr>
+<tr>
+<td>37096</td>
+<td>Arctic Birch Tree.  Tundra prehistoric mammals will enjoy the arctic birch tree.</td>
+</tr>
+<tr>
+<td>37097</td>
+<td>Arctic Grass.  Tundra prehistoric mammals will enjoy the arctic grass.</td>
+</tr>
+<tr>
+<td>37098</td>
+<td>Arctic Bush.  Tundra prehistoric mammals will enjoy the arctic bush.</td>
+</tr>
+<tr>
+<td>37124</td>
+<td>Download new Zoo Tycoon items over the Internet or from a local drive.  Be sure you are already connected to the Internet to download new items.</td>
+</tr>
+<tr>
+<td>38015</td>
+<td>Purchase a Reptile House.  All guests, especially children, enjoy getting up close with the exotic reptiles in the Reptile House, which can accommodate medium-sized groups.</td>
+</tr>
+<tr>
+<td>38016</td>
+<td>Purchase an Aviary.  Adult guests really enjoy the sight of beautiful birds of all types soaring throughout the Aviary, which can accommodate large-sized groups.</td>
+</tr>
+<tr>
+<td>38017</td>
+<td>Purchase a Primate House.  All guests, especially children, enjoy the almost human-like actions of the primates on view in the Primate House, which can accommodate medium-sized groups.</td>
+</tr>
+<tr>
+<td>38018</td>
+<td>Purchase an Insect House.  All guests, especially the children, will enjoy the creepy-crawly bugs. Accommodates small sized groups.</td>
+</tr>
+<tr>
+<td>38023</td>
+<td>Purchase a gift shop.  Everyone will want to buy zoo souvenirs from the gift shop, which can accommodate large groups at a time.</td>
+</tr>
+<tr>
+<td>38024</td>
+<td>Purchase a Petting Zoo.  Everyone, especially children, will enjoy the hands-on contact with all manner of farm animals at the Petting Zoo, which can accommodate medium-sized groups.</td>
+</tr>
+<tr>
+<td>38027</td>
+<td>Purchase a Dinosaur Gift Shop.  Everyone will want to buy dinosaur zoo souvenirs from the gift shop, which can accommodate large groups.</td>
+</tr>
+<tr>
+<td>38028</td>
+<td>Purchase a Pteranodon House.  Guests will enjoy seeing the prehistoric flying reptiles.</td>
+</tr>
+<tr>
+<td>38029</td>
+<td>Purchase a Lepospondyl House.  Guests will enjoy seeing the prehistoric amphibians.</td>
+</tr>
+<tr>
+<td>38030</td>
+<td>Purchase a Dinosaur Cinema.  Adults and children alike will enjoy the educational and exciting dinosaur movie at the cinema.</td>
+</tr>
+<tr>
+<td>38031</td>
+<td>Click to hire a Dinosaur Recovery Team.  The DRT will sedate escaped dinosaurs and prehistoric animals so that scientists may safely capture them.</td>
+</tr>
+<tr>
+<td>38032</td>
+<td>Purchase a Dinosaur Gift Stand.  Everyone will want to buy dinosaur zoo souvenirs from the gift stand, but only one person at a time can buy something.</td>
+</tr>
+<tr>
+<td>38033</td>
+<td>Purchase a Dinosaur Bronto Burger Stand.  Guests will fill their bellies with delicious charbroiled hamburgers.</td>
+</tr>
+<tr>
+<td>38034</td>
+<td>Purchase a Stego Putt golf hole.  Guests will love giving their luck a chance at the dinosaur-themed putting green.</td>
+</tr>
+<tr>
+<td>38035</td>
+<td>Purchase a Bouncy Ride.  Children will love bouncing back and forth on the bouncy ride.</td>
+</tr>
+<tr>
+<td>38036</td>
+<td>Purchase a Dino Slide.  Children will love sliding down the back of the brontosaurus.</td>
+</tr>
+<tr>
+<td>38037</td>
+<td>Purchase a Tree Swing.  Children will love swinging in the tree swing.</td>
+</tr>
+<tr>
+<td>38038</td>
+<td>Purchase a Mammoth Cones Stand.  Guests will enjoy the ice cream from the Mammoth Cones ice cream stand.</td>
+</tr>
+<tr>
+<td>38040</td>
+<td>Purchase a fancy burger stand.  Guests will become hungry if they spend much time in the zoo. The burger stand can only sell to a few guests at a time, but it will relieve more hunger than hot dogs.</td>
+</tr>
+<tr>
+<td>38041</td>
+<td>Purchase a fancy drink stand.  Guests will become thirsty if they spend much time in the zoo. Only a moderate number of people can buy drinks at a time, but the sodas will quench more thirst than a can of soda from a vending machine.</td>
+</tr>
+<tr>
+<td>38042</td>
+<td>Purchase a fancy hot dog stand. Hot dogs aren't as filling as hamburgers, but they will still keep guests from being hungry. Only a couple of guests at a time can purchase from the vendor.</td>
+</tr>
+<tr>
+<td>38043</td>
+<td>Purchase a fancy family restroom.  Guests will need to use restrooms if they eat or drink, or if they've been in the zoo for very long. This restroom is larger than the small restroom, but more expensive.</td>
+</tr>
+<tr>
+<td>38044</td>
+<td>Purchase a fancy ice cream stand.  Everyone, especially kids, loves ice cream. Eating it won't relieve much guest hunger, but the building is a lot prettier than a pizza shack.</td>
+</tr>
+<tr>
+<td>38045</td>
+<td>Purchase a fancy pizza stand.  Pizza is more filling than hamburgers or hot dogs, and due to pizza's circular shape, more people will be able to buy pizza at a time.</td>
+</tr>
+<tr>
+<td>38128</td>
+<td>Dinosaur Cave.  Dinosaurs in captivity often need a place for privacy. Some large dinosaurs prefer the dinosaur cave.</td>
+</tr>
+<tr>
+<td>38129</td>
+<td>Dinosaur Burrow.  Dinosaurs in captivity often need a place for privacy. Some small dinosaurs prefer the dinosaur burrow.</td>
+</tr>
+<tr>
+<td>38130</td>
+<td>Ice Age Cave.  Prehistoric animals in captivity often need a place for privacy. Mammoths and other Ice Age animals prefer the ice age cave.</td>
+</tr>
+<tr>
+<td>39205</td>
+<td>Medium Rock.  Animals that enjoy rocks in their exhibit will enjoy this medium rock.</td>
+</tr>
+<tr>
+<td>39218</td>
+<td>Medium Snowy Rock.  Arctic animals that enjoy rocks in their exhibit will enjoy this medium snowy rock.</td>
+</tr>
+<tr>
+<td>39224</td>
+<td>Large Highland Rock.  Highland animals that enjoy rocks in their exhibit will enjoy this large highland rock.</td>
+</tr>
+<tr>
+<td>39230</td>
+<td>Medium Desert Rock.  Desert animals that enjoy rocks in their exhibit will enjoy this medium desert rock.</td>
+</tr>
+<tr>
+<td>39231</td>
+<td>Medium Highland Rock.  Highland animals that enjoy rocks in their exhibit will enjoy this medium highland rock.</td>
+</tr>
+<tr>
+<td>39232</td>
+<td>Medium Savannah Rock.  Savannah animals that enjoy rocks in their exhibit will enjoy this medium savannah rock.</td>
+</tr>
+<tr>
+<td>39233</td>
+<td>Medium Aquatic Rock.  Aquatic animals that enjoy rocks in their exhibit will enjoy this medium aquatic rock.</td>
+</tr>
+<tr>
+<td>39234</td>
+<td>Medium Coniferous Rock.  Coniferous forest animals that enjoy rocks in their exhibit will enjoy this medium coniferous rock.</td>
+</tr>
+<tr>
+<td>39300</td>
+<td>Purchase a plexiglass exhibit fence.  Strong fence. Animals cannot climb out or jump over it.  Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39301</td>
+<td>Purchase a chain-link exhibit fence.  Weak strength. Animals cannot jump over it but may climb out of it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39302</td>
+<td>Purchase a concrete exhibit fence.  Very strong. Animals cannot climb out or jump over it. Does not allow guests to see into an exhibit made only with concrete fencing.</td>
+</tr>
+<tr>
+<td>39303</td>
+<td>Purchase a concrete and chain exhibit fence. Strong fence. Animals cannot climb out or jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39304</td>
+<td>Purchase a rock exhibit fence.  Strong fence. Animals may climb out of it, but cannot jump over it. Does not allow guests to see into an exhibit made only with rock fencing.</td>
+</tr>
+<tr>
+<td>39306</td>
+<td>Purchase a post and rail exhibit fence.  Average strength. Animals may climb out of it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39311</td>
+<td>Purchase a wooden slat exhibit fence.  Average strength. Animals may climb out of it. Does not allow guests to see into an exhibit made only with wooden slat fencing.</td>
+</tr>
+<tr>
+<td>39313</td>
+<td>Purchase a stick pole exhibit fence.  Weak strength. Animals may climb out of it, but cannot jump over it. Does not allow guests to see into an exhibit made only with stick pole fencing.</td>
+</tr>
+<tr>
+<td>39316</td>
+<td>Purchase a low plexiglass exhibit fence.  Strong fence. Animals may climb out or jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39317</td>
+<td>Purchase a low chain-link exhibit fence.  Weak strength. Animals may climb out or jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39318</td>
+<td>Purchase a low concrete exhibit fence. Very strong. Animals may climb out or jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39319</td>
+<td>Purchase a low concrete and chain exhibit fence. Strong fence. Animals may climb out or jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39320</td>
+<td>Purchase a low rock exhibit fence. Strong fence. Animals may climb out or jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39321</td>
+<td>Purchase a low post and rail exhibit fence. Average strength. Animals may climb out or jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39322</td>
+<td>Purchase a low wooden slat exhibit fence. Average strength. Animals may climb out or jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39323</td>
+<td>Purchase a low wooden pole exhibit fence. Weak strength. Animals may climb out or jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39324</td>
+<td>Purchase a low stick pole exhibit fence. Weak strength. Animals may climb out or jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39325</td>
+<td>Purchase a low iron bar exhibit fence. Very strong. Animals may climb out or jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39328</td>
+<td>Purchase a windowed stick pole exhibit fence.  Average strength. Animals may climb out of it, but cannot jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39329</td>
+<td>Purchase a windowed rock exhibit fence.  Strong fence. Animals may climb out of it, but cannot jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39330</td>
+<td>Purchase a windowed wooden slat exhibit fence.  Average strength. Animals may climb out of it, but cannot jump over it. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39331</td>
+<td>Purchase a reinforced concrete and iron bar exhibit fence.  Extremely strong. Useful for containing very large or strong animals, such as dinosaurs. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39332</td>
+<td>Purchase a reinforced concrete exhibit fence. Extremely strong. Useful for containing very large or strong animals, such as dinosaurs. Guests cannot see into an exhibit with only reinforced concrete fencing.</td>
+</tr>
+<tr>
+<td>39333</td>
+<td>Purchase a reinforced concrete and glass exhibit fence. Extremely strong. Useful for containing very large or strong animals, such as dinosaurs. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39334</td>
+<td>Purchase an electrified chain-link exhibit fence. Extremely strong. Electric current running through the fence keeps strong animals such as dinosaurs from breaking out of exhibits. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39335</td>
+<td>Purchase an electrified iron bar exhibit fence. Extremely strong. Electric current running through the fence keeps strong animals such as dinosaurs from breaking out of exhibits. Allows guests to see into an exhibit.</td>
+</tr>
+<tr>
+<td>39551</td>
+<td>Click to hire a scientist.  Scientists are responsible for feeding, healing, and cleaning up after dinosaurs and prehistoric animals.  Without a scientist, your dinosaurs will go hungry.</td>
+</tr>
+<tr>
+<td>39918</td>
+<td>%s prefers an exhibit with more cliffs or hills.</td>
+</tr>
+<tr>
+<td>52200</td>
+<td>Admissions.  Lists number of admissions per month.</td>
+</tr>
+<tr>
+<td>52201</td>
+<td>Admissions Income.  Lists amount of income from admissions per month.</td>
+</tr>
+<tr>
+<td>52202</td>
+<td>Construction Cost.  Lists amount of money spent on construction per month.</td>
+</tr>
+<tr>
+<td>52203</td>
+<td>Animal Cost.  Lists amount of money spent on adopting animals per month.</td>
+</tr>
+<tr>
+<td>52204</td>
+<td>Zoo Upkeep Cost.  Lists amount of money spent on zoo upkeep per month.</td>
+</tr>
+<tr>
+<td>52205</td>
+<td>Concessions Income.  Lists amount of income from food, drink, attractions and souvenir purchases made by guests per month.</td>
+</tr>
+<tr>
+<td>52206</td>
+<td>Wages Cost.  Lists amount of money spent on paying wages to employees per month.</td>
+</tr>
+<tr>
+<td>52207</td>
+<td>Donations Income.  Lists amount of income from guest donations.</td>
+</tr>
+<tr>
+<td>52208</td>
+<td>Refunds Income.  Lists amount of income from recycling garbage, poo and cleared objects per month.</td>
+</tr>
+<tr>
+<td>52209</td>
+<td>Research Cost.  Lists amount of money spent on research and conservation per month.</td>
+</tr>
+<tr>
+<td>52210</td>
+<td>Marketing Cost.  Lists amount of money spent on marketing per month.</td>
+</tr>
+<tr>
+<td>54210</td>
+<td>Dinosaur Houses.  Select this to begin a conservation program to develop Dinosaur Houses for dinosaurs that are not large enough for their own exhibits.</td>
+</tr>
+<tr>
+<td>54211</td>
+<td>Dinosaur Care.  Select this program to research dinosaur inoculation, improved dinosaur food, and improved dinosaur longevity.</td>
+</tr>
+<tr>
+<td>54212</td>
+<td>T. rex Care.  Select this program to research better, more efficient care specifically designed for the Tyrannosaurus rex.</td>
+</tr>
+<tr>
+<td>54213</td>
+<td>Genetic Research.  Select this to begin a conservation program to research ways to genetically engineer dinosaurs from discovered dinosaur DNA.</td>
+</tr>
+<tr>
+<td>54214</td>
+<td>Dinosaur Foliage.  Select this to begin a conservation program to make available more foliage for dinosaur exhibits.</td>
+</tr>
+<tr>
+<td>54215</td>
+<td>Scientist Training.  Select this program to research education programs to improve scientist efficiency and dinosaur care.</td>
+</tr>
+<tr>
+<td>54216</td>
+<td>24216</td>
+</tr>
+<tr>
+<td>54217</td>
+<td>24217</td>
+</tr>
+<tr>
+<td>54218</td>
+<td>24218</td>
+</tr>
+<tr>
+<td>54219</td>
+<td>24219</td>
+</tr>
+<tr>
+<td>54220</td>
+<td>24220</td>
+</tr>
+<tr>
+<td>54285</td>
+<td>Funding this conservation program will allow you to purchase a Pteranodon House.</td>
+</tr>
+<tr>
+<td>54286</td>
+<td>Funding this conservation program will allow you to purchase a Lepospondyl House.</td>
+</tr>
+<tr>
+<td>54287</td>
+<td>Funding this conservation program will allow you to select Pterodactylus of the late Jurassic for the Pteranodon House.</td>
+</tr>
+<tr>
+<td>54288</td>
+<td>Funding this conservation program will allow you to select Ramphorhyncus of the late Jurassic for the Pteranodon House.</td>
+</tr>
+<tr>
+<td>54289</td>
+<td>Funding this conservation program will allow you to select Dimorphodon of the early Jurassic for the Pteranodon House.</td>
+</tr>
+<tr>
+<td>54290</td>
+<td>Funding this conservation program will allow you to select Triadobatrachus of the Triassic for the Lepospondyl House.</td>
+</tr>
+<tr>
+<td>54291</td>
+<td>Funding this conservation program will allow you to select Karaurus of the Jurassic for the Lepospondyl House.</td>
+</tr>
+<tr>
+<td>54292</td>
+<td>Funding this conservation program will allow you to select Diplocaulus of the Permian for the Lepospondyl House.</td>
+</tr>
+<tr>
+<td>54293</td>
+<td>Researching this project will make the food given to dinosaurs more nutritional.</td>
+</tr>
+<tr>
+<td>54294</td>
+<td>Researching this project will reduce the price of food for dinosaurs.</td>
+</tr>
+<tr>
+<td>54295</td>
+<td>Researching this project will introduce an inoculation program for dinosaurs, making them less likely to catch diseases.</td>
+</tr>
+<tr>
+<td>54296</td>
+<td>Researching this project will lengthen the average dinosaur lifespan.</td>
+</tr>
+<tr>
+<td>54297</td>
+<td>Researching this project will make the T. rex happier when a scientist enters its exhibit.</td>
+</tr>
+<tr>
+<td>54298</td>
+<td>Researching this project will introduce an inoculation program for the T. rex, making them less likely to catch diseases.</td>
+</tr>
+<tr>
+<td>54299</td>
+<td>Researching this project will teach the T. rex to be more amicable so they can reproduce.</td>
+</tr>
+<tr>
+<td>54300</td>
+<td>Genetic research advancements will allow you to adopt a Tyrannosaurus rex.</td>
+</tr>
+<tr>
+<td>54301</td>
+<td>Genetic research advancements will allow you to adopt a Spinosaurus.</td>
+</tr>
+<tr>
+<td>54302</td>
+<td>Genetic research advancements will allow you to adopt a Plateosaurus.</td>
+</tr>
+<tr>
+<td>54303</td>
+<td>Genetic research advancements will allow you to adopt a Kentrosaurus.</td>
+</tr>
+<tr>
+<td>54304</td>
+<td>Genetic research advancements will allow you to adopt a Wooly Mammoth.</td>
+</tr>
+<tr>
+<td>54305</td>
+<td>Genetic research advancements will allow you to adopt a Plesiosaurus.</td>
+</tr>
+<tr>
+<td>54306</td>
+<td>Genetic research advancements will allow you to adopt a Velociraptor.</td>
+</tr>
+<tr>
+<td>54307</td>
+<td>Genetic research advancements will allow you to adopt an Ankylosaurus.</td>
+</tr>
+<tr>
+<td>54308</td>
+<td>Genetic research advancements will allow you to adopt a Coelophysis.</td>
+</tr>
+<tr>
+<td>54309</td>
+<td>Genetic research advancements will allow you to adopt an Apatosaurus.</td>
+</tr>
+<tr>
+<td>54310</td>
+<td>Researching this project will allow you to grow a Monkey Puzzle Tree.</td>
+</tr>
+<tr>
+<td>54311</td>
+<td>Researching this project will allow you to grow a Thouarsus Cycad.</td>
+</tr>
+<tr>
+<td>54312</td>
+<td>Researching this project will allow you to grow a Glossopteris Tree.</td>
+</tr>
+<tr>
+<td>54313</td>
+<td>Researching this project will allow you to grow a Club Moss Shrub.</td>
+</tr>
+<tr>
+<td>54314</td>
+<td>Researching this project will allow you to grow a Horsetail.</td>
+</tr>
+<tr>
+<td>54315</td>
+<td>Researching this project will allow you to grow a Bald Cypress Tree.</td>
+</tr>
+<tr>
+<td>54316</td>
+<td>Researching this project will allow you to grow a Dawn Redwood Tree.</td>
+</tr>
+<tr>
+<td>54317</td>
+<td>Researching this project will allow you to grow a Norfolk Island Pine Tree.</td>
+</tr>
+<tr>
+<td>54318</td>
+<td>Researching this project will allow you to grow an Arctic Birch Tree.</td>
+</tr>
+<tr>
+<td>54319</td>
+<td>Scientist Training 1. Dinosaurs will become happier when a scientist enters their exhibit.</td>
+</tr>
+<tr>
+<td>54320</td>
+<td>Scientist Training 2. Scientists will be able to distribute more food upon each exhibit visit.</td>
+</tr>
+<tr>
+<td>54321</td>
+<td>Scientist Training 3. Scientists will be able to walk faster.</td>
+</tr>
+<tr>
+<td>61094</td>
+<td>the Dinosaur poo</td>
+</tr>
+<tr>
+<td>61095</td>
+<td>the Small Dinosaur Poo</td>
+</tr>
+<tr>
+<td>61096</td>
+<td>the Giant Dinosaur Poo</td>
+</tr>
+<tr>
+<td>61161</td>
+<td>the Laboratory</td>
+</tr>
+<tr>
+<td>61162</td>
+<td>the Road Paint</td>
+</tr>
+<tr>
+<td>61163</td>
+<td>the Road Paint</td>
+</tr>
+<tr>
+<td>61164</td>
+<td>the Road Paint</td>
+</tr>
+<tr>
+<td>61165</td>
+<td>the Lava Pit</td>
+</tr>
+<tr>
+<td>61166</td>
+<td>the Airplane</td>
+</tr>
+<tr>
+<td>61167</td>
+<td>the Genetic Laboratory Vehicle</td>
+</tr>
+<tr>
+<td>61168</td>
+<td>the Oil Drum</td>
+</tr>
+<tr>
+<td>61169</td>
+<td>the Large Geyser</td>
+</tr>
+<tr>
+<td>61170</td>
+<td>the Small Geyser</td>
+</tr>
+<tr>
+<td>61171</td>
+<td>the Tar Pit</td>
+</tr>
+<tr>
+<td>61172</td>
+<td>the Volcano</td>
+</tr>
+<tr>
+<td>61173</td>
+<td>the Volcano</td>
+</tr>
+<tr>
+<td>61174</td>
+<td>the Steam Vent</td>
+</tr>
+<tr>
+<td>61175</td>
+<td>the Cliff</td>
+</tr>
+<tr>
+<td>61176</td>
+<td>the Cliff</td>
+</tr>
+<tr>
+<td>61177</td>
+<td>the Cliff</td>
+</tr>
+<tr>
+<td>61178</td>
+<td>the Cliff</td>
+</tr>
+<tr>
+<td>61179</td>
+<td>the Cliff</td>
+</tr>
+<tr>
+<td>61180</td>
+<td>the Cliff</td>
+</tr>
+<tr>
+<td>61181</td>
+<td>the Building</td>
+</tr>
+<tr>
+<td>61182</td>
+<td>the Tent</td>
+</tr>
+<tr>
+<td>61183</td>
+<td>the Parking Meter</td>
+</tr>
+<tr>
+<td>61184</td>
+<td>the Dumpster</td>
+</tr>
+<tr>
+<td>61310</td>
+<td>the piece of trash</td>
+</tr>
+<tr>
+<td>61316</td>
+<td>the Dinosaur Mug</td>
+</tr>
+<tr>
+<td>61317</td>
+<td>the Dinosaur T-shirt</td>
+</tr>
+<tr>
+<td>61318</td>
+<td>the Plastic Dinosaur</td>
+</tr>
+<tr>
+<td>61319</td>
+<td>the Stuffed Dinosaur</td>
+</tr>
+<tr>
+<td>61400</td>
+<td>the Small Torch</td>
+</tr>
+<tr>
+<td>61401</td>
+<td>the T. rex Statue</td>
+</tr>
+<tr>
+<td>61402</td>
+<td>the Velociraptor Statue</td>
+</tr>
+<tr>
+<td>61403</td>
+<td>the Triceratops Statue</td>
+</tr>
+<tr>
+<td>61404</td>
+<td>the Giant Tortoise Fountain</td>
+</tr>
+<tr>
+<td>61405</td>
+<td>the Lava Archway</td>
+</tr>
+<tr>
+<td>61406</td>
+<td>the Stone Archway</td>
+</tr>
+<tr>
+<td>61407</td>
+<td>the Insectivore Chow</td>
+</tr>
+<tr>
+<td>61408</td>
+<td>the Wooly Mammoth Fountain</td>
+</tr>
+<tr>
+<td>61412</td>
+<td>the Wooden Viewing Area</td>
+</tr>
+<tr>
+<td>61415</td>
+<td>the Large Meat Chow</td>
+</tr>
+<tr>
+<td>61416</td>
+<td>the Large Grass and Leaves Chow</td>
+</tr>
+<tr>
+<td>61420</td>
+<td>the Triceratops Skeleton</td>
+</tr>
+<tr>
+<td>61422</td>
+<td>the Small Fossil Wall</td>
+</tr>
+<tr>
+<td>61423</td>
+<td>the Medium Fossil Wall</td>
+</tr>
+<tr>
+<td>61424</td>
+<td>the Large Fossil Wall</td>
+</tr>
+<tr>
+<td>61425</td>
+<td>the T. rex Skeleton</td>
+</tr>
+<tr>
+<td>61426</td>
+<td>the Bone Bed</td>
+</tr>
+<tr>
+<td>61427</td>
+<td>the Large Stone Torch</td>
+</tr>
+<tr>
+<td>61428</td>
+<td>the Stone Bench</td>
+</tr>
+<tr>
+<td>61430</td>
+<td>the Dinosaur Zoo Entrance</td>
+</tr>
+<tr>
+<td>61431</td>
+<td>the Dinosaur Admission Booth</td>
+</tr>
+<tr>
+<td>61432</td>
+<td>the Dinosaur Admission Booth</td>
+</tr>
+<tr>
+<td>61433</td>
+<td>the Dinosaur Zoo Wall</td>
+</tr>
+<tr>
+<td>61434</td>
+<td>the Steam Vent</td>
+</tr>
+<tr>
+<td>61435</td>
+<td>the Tar Pit</td>
+</tr>
+<tr>
+<td>61436</td>
+<td>the Velociraptor Skeleton</td>
+</tr>
+<tr>
+<td>61437</td>
+<td>the Iron Bar Observation Area</td>
+</tr>
+<tr>
+<td>61438</td>
+<td>the Tar Pit</td>
+</tr>
+<tr>
+<td>61439</td>
+<td>the Lava Pit</td>
+</tr>
+<tr>
+<td>61440</td>
+<td>the Reinforced Observation Area</td>
+</tr>
+<tr>
+<td>61441</td>
+<td>the Ice age Observation Area</td>
+</tr>
+<tr>
+<td>61442</td>
+<td>the Marble Observation Area</td>
+</tr>
+<tr>
+<td>61443</td>
+<td>the Small Volcano</td>
+</tr>
+<tr>
+<td>61444</td>
+<td>the Large Volcano</td>
+</tr>
+<tr>
+<td>61445</td>
+<td>the Large Geyser</td>
+</tr>
+<tr>
+<td>61446</td>
+<td>the Small Geyser</td>
+</tr>
+<tr>
+<td>61447</td>
+<td>the Steam Vent</td>
+</tr>
+<tr>
+<td>62080</td>
+<td>the Club Moss Shrub</td>
+</tr>
+<tr>
+<td>62081</td>
+<td>the Walchian Conifer Tree</td>
+</tr>
+<tr>
+<td>62082</td>
+<td>the Thouarsus Cycad Tree</td>
+</tr>
+<tr>
+<td>62083</td>
+<td>the Bald Cypress Tree</td>
+</tr>
+<tr>
+<td>62084</td>
+<td>the Dawn Redwood Tree</td>
+</tr>
+<tr>
+<td>62085</td>
+<td>the Fern Bush</td>
+</tr>
+<tr>
+<td>62086</td>
+<td>the Gingko Tree</td>
+</tr>
+<tr>
+<td>62087</td>
+<td>the Glossopteris Tree</td>
+</tr>
+<tr>
+<td>62088</td>
+<td>the Horsetail</td>
+</tr>
+<tr>
+<td>62089</td>
+<td>the Lepidodendron Tree</td>
+</tr>
+<tr>
+<td>62090</td>
+<td>the Leptocycas Tree</td>
+</tr>
+<tr>
+<td>62091</td>
+<td>the Magnolia Tree</td>
+</tr>
+<tr>
+<td>62092</td>
+<td>the Monkey Puzzle Tree</td>
+</tr>
+<tr>
+<td>62093</td>
+<td>the Norfolk Island Pine Tree</td>
+</tr>
+<tr>
+<td>62094</td>
+<td>the Sigillaria Tree</td>
+</tr>
+<tr>
+<td>62095</td>
+<td>the Williamsonia Tree</td>
+</tr>
+<tr>
+<td>62096</td>
+<td>the Arctic Birch Tree</td>
+</tr>
+<tr>
+<td>62097</td>
+<td>the Arctic Grass</td>
+</tr>
+<tr>
+<td>62098</td>
+<td>the Arctic Bush</td>
+</tr>
+<tr>
+<td>63011</td>
+<td>the Animal Theater</td>
+</tr>
+<tr>
+<td>63027</td>
+<td>the Dinosaur Gift Shop</td>
+</tr>
+<tr>
+<td>63028</td>
+<td>the Pteranodon House</td>
+</tr>
+<tr>
+<td>63029</td>
+<td>the Lepospondyl House</td>
+</tr>
+<tr>
+<td>63030</td>
+<td>the Dinosaur Cinema</td>
+</tr>
+<tr>
+<td>63031</td>
+<td>the DRT Base</td>
+</tr>
+<tr>
+<td>63032</td>
+<td>the Dinosaur Gift Stand</td>
+</tr>
+<tr>
+<td>63033</td>
+<td>the Bronto Burger Stand</td>
+</tr>
+<tr>
+<td>63034</td>
+<td>the Stego Putt</td>
+</tr>
+<tr>
+<td>63035</td>
+<td>the Bouncy Ride</td>
+</tr>
+<tr>
+<td>63036</td>
+<td>the Dino Slide</td>
+</tr>
+<tr>
+<td>63037</td>
+<td>the Tree Swing</td>
+</tr>
+<tr>
+<td>63038</td>
+<td>the Mammoth Cones Stand</td>
+</tr>
+<tr>
+<td>63040</td>
+<td>the Fancy Burger Stand</td>
+</tr>
+<tr>
+<td>63041</td>
+<td>the Fancy Drink Stand</td>
+</tr>
+<tr>
+<td>63042</td>
+<td>the Fancy Hot Dog Stand</td>
+</tr>
+<tr>
+<td>63043</td>
+<td>the Fancy Family Bathroom</td>
+</tr>
+<tr>
+<td>63044</td>
+<td>the Fancy Ice Cream Stand</td>
+</tr>
+<tr>
+<td>63045</td>
+<td>the Fancy Pizza Stand</td>
+</tr>
+<tr>
+<td>63128</td>
+<td>the Dinosaur Cave</td>
+</tr>
+<tr>
+<td>63129</td>
+<td>the Dinosaur Burrow</td>
+</tr>
+<tr>
+<td>63130</td>
+<td>the Ice Age Cave</td>
+</tr>
+<tr>
+<td>64100</td>
+<td>the Asphalt Path</td>
+</tr>
+<tr>
+<td>64101</td>
+<td>the Concrete Path</td>
+</tr>
+<tr>
+<td>64102</td>
+<td>the Dirt Path</td>
+</tr>
+<tr>
+<td>64103</td>
+<td>the Tile Path</td>
+</tr>
+<tr>
+<td>64108</td>
+<td>the Brick Path</td>
+</tr>
+<tr>
+<td>64109</td>
+<td>the Sand Path</td>
+</tr>
+<tr>
+<td>64110</td>
+<td>the Cobblestone Path</td>
+</tr>
+<tr>
+<td>64111</td>
+<td>the Yellow Brick Path</td>
+</tr>
+<tr>
+<td>64215</td>
+<td>the Stone Ruins</td>
+</tr>
+<tr>
+<td>64218</td>
+<td>the Medium Snowy Rock</td>
+</tr>
+<tr>
+<td>64222</td>
+<td>the Desert Rock Formation</td>
+</tr>
+<tr>
+<td>64230</td>
+<td>the Medium Desert Rock</td>
+</tr>
+<tr>
+<td>64231</td>
+<td>the Medium Highland Rock</td>
+</tr>
+<tr>
+<td>64232</td>
+<td>the Medium Savannah Rock</td>
+</tr>
+<tr>
+<td>64233</td>
+<td>the Medium Aquatic Rock</td>
+</tr>
+<tr>
+<td>64234</td>
+<td>the Medium Coniferous Rock</td>
+</tr>
+<tr>
+<td>64309</td>
+<td>the Decorative Hedge</td>
+</tr>
+<tr>
+<td>65512</td>
+<td>the Rubble of %s</td>
+</tr>
+<tr>
+<td>65513</td>
+<td>the Rubble</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2024</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2024</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../lang021/" class="md-footer__link md-footer__link--prev" aria-label="Previous: lang021">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                lang021
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../lang200/" class="md-footer__link md-footer__link--next" aria-label="Next: lang200">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                lang200
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Goosifer.IO
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.tabs", "navigation.expand", "navigation.path", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "content.action.edit", "content.action.view", "content.footnote.tooltips"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../../../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,7673 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.zooberry.org/zt1/Reference/String-Tables/lang200/">
+      
+      
+        <link rel="prev" href="../lang100/">
+      
+      
+        <link rel="next" href="../lang300/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+    
+    
+      
+        <title>lang200 - ZooBerry Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep_orange" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lang200" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="ZooBerry Docs" class="md-header__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ZooBerry Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              lang200
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep_orange" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GoosiferIO/ZooBerry-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GoosiferIO/ZooBerry-Docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../file-formats/" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../emu/getting-started/" class="md-tabs__link">
+          
+  
+  EMU API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../panda/getting_started.md" class="md-tabs__link">
+          
+  
+  PANDA Loader
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="ZooBerry Docs" class="md-nav__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ZooBerry Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GoosiferIO/ZooBerry-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GoosiferIO/ZooBerry-Docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to ZooBerry Docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../attributions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Attributions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Zoo Tycoon 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Zoo Tycoon 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../file-formats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Formats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scenery-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scenery Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scenario-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scenario Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entity-ids/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notable String IDs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mod-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mod Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_6" id="__nav_2_1_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Official String Tables
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            Official String Tables
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang001/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang001
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang002/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang002
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang007/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang007
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang008/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang008
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang009/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang009
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang010/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang010
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang012/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang012
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang013/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang013
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang015/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang015
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang016/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang016
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang017/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang017
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang018/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang018
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang019/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang019
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang020/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang020
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang021/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang021
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang100/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang100
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    lang200
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lang300/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang300
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_7" id="__nav_2_1_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Unofficial String Tables
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            Unofficial String Tables
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--ZTCDD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZTCDD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--ZooTek/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZooTek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--ZKL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZKL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--ZBorsato/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZBorsato
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--Jane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--Jane
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--JBL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--JBL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/LANG--fern-Tek.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--fern-Tek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/langZA01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    langZA01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/langZA02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    langZA02
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../String-Tables-Unofficial/langZA03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    langZA03
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    EMU API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            EMU API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../emu/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../emu/emu-console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EMU Command Console
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../emu/emu-scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lua Scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PANDA Loader
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            PANDA Loader
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../panda/getting_started.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/edit/main/docs/zt1/Reference/String-Tables/lang200.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/raw/main/docs/zt1/Reference/String-Tables/lang200.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="lang200"><code>lang200</code></h1>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>String</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>107</td>
+<td>Zoo Tycoon</td>
+</tr>
+<tr>
+<td>160</td>
+<td>Deleting this wall piece will drain the tank and put any marine animals in boxes. Do you wish to continue?</td>
+</tr>
+<tr>
+<td>161</td>
+<td>The tank cannot be constructed. The deteriorated tank walls must be repaired or replaced.</td>
+</tr>
+<tr>
+<td>162</td>
+<td>Zoo Tycoon has detected that you have user-created objects installed. Some of these may interfere with the proper operation of Zoo Tycoon. If the objects have been updated to function correctly with this version of Zoo Tycoon, please check the box below to prevent this message from appearing again.</td>
+</tr>
+<tr>
+<td>163</td>
+<td>Don't show this message again.</td>
+</tr>
+<tr>
+<td>314</td>
+<td>Zoo Tycoon: Marine Mania CD Required</td>
+</tr>
+<tr>
+<td>315</td>
+<td>Please insert your Zoo Tycoon: Marine Mania CD.</td>
+</tr>
+<tr>
+<td>316</td>
+<td>Incorrect DirectX Version</td>
+</tr>
+<tr>
+<td>317</td>
+<td>You must have DirectX 8.0 or later installed to run Zoo Tycoon.</td>
+</tr>
+<tr>
+<td>318</td>
+<td>File can not be found.</td>
+</tr>
+<tr>
+<td>1065</td>
+<td>Show Foliage</td>
+</tr>
+<tr>
+<td>1066</td>
+<td>Hide Foliage</td>
+</tr>
+<tr>
+<td>1067</td>
+<td>Hide Buildings</td>
+</tr>
+<tr>
+<td>1068</td>
+<td>Hide Guests</td>
+</tr>
+<tr>
+<td>1069</td>
+<td>Show Buildings</td>
+</tr>
+<tr>
+<td>1070</td>
+<td>Show Guests</td>
+</tr>
+<tr>
+<td>1079</td>
+<td>Click and drag, up or down to raise or lower the tank height.</td>
+</tr>
+<tr>
+<td>1080</td>
+<td>This portal allows access to and from the show tank.</td>
+</tr>
+<tr>
+<td>1099</td>
+<td>Take a Screenshot of Game</td>
+</tr>
+<tr>
+<td>1544</td>
+<td>Help/About</td>
+</tr>
+<tr>
+<td>1557</td>
+<td>Display more frames of animation.</td>
+</tr>
+<tr>
+<td>1558</td>
+<td>Display fewer frames of animation.</td>
+</tr>
+<tr>
+<td>1559</td>
+<td>16 bit sound.</td>
+</tr>
+<tr>
+<td>1560</td>
+<td>Load a saved game</td>
+</tr>
+<tr>
+<td>1578</td>
+<td>8 bit sound.</td>
+</tr>
+<tr>
+<td>1579</td>
+<td>Colored mouse cursors.</td>
+</tr>
+<tr>
+<td>1582</td>
+<td>Monochromatic mouse cursors.</td>
+</tr>
+<tr>
+<td>2076</td>
+<td>Show objects</td>
+</tr>
+<tr>
+<td>2077</td>
+<td>Show Objects</td>
+</tr>
+<tr>
+<td>2120</td>
+<td>Cancel download</td>
+</tr>
+<tr>
+<td>2121</td>
+<td>Return to main menu</td>
+</tr>
+<tr>
+<td>2122</td>
+<td>Add new Zoo Tycoon items.</td>
+</tr>
+<tr>
+<td>2125</td>
+<td>Check the Internet for new Zoo Tycoon items.</td>
+</tr>
+<tr>
+<td>2130</td>
+<td>Import files from your Hard Drive or CD-ROM.</td>
+</tr>
+<tr>
+<td>2462</td>
+<td>Flavor</td>
+</tr>
+<tr>
+<td>2463</td>
+<td>Wall</td>
+</tr>
+<tr>
+<td>2464</td>
+<td>Canopy</td>
+</tr>
+<tr>
+<td>2465</td>
+<td>Trim</td>
+</tr>
+<tr>
+<td>2466</td>
+<td>Cart</td>
+</tr>
+<tr>
+<td>2467</td>
+<td>Flags 1</td>
+</tr>
+<tr>
+<td>2468</td>
+<td>Legs</td>
+</tr>
+<tr>
+<td>2469</td>
+<td>Squid</td>
+</tr>
+<tr>
+<td>2470</td>
+<td>Flags 2</td>
+</tr>
+<tr>
+<td>2471</td>
+<td>Wall Orca</td>
+</tr>
+<tr>
+<td>2472</td>
+<td>Flag</td>
+</tr>
+<tr>
+<td>2473</td>
+<td>Stars</td>
+</tr>
+<tr>
+<td>2474</td>
+<td>Curtain</td>
+</tr>
+<tr>
+<td>3125</td>
+<td>Marine Specialist Recommendations</td>
+</tr>
+<tr>
+<td>3240</td>
+<td>Click for Manual Entrance Placement.</td>
+</tr>
+<tr>
+<td>3299</td>
+<td>Show</td>
+</tr>
+<tr>
+<td>3382</td>
+<td>Gunite</td>
+</tr>
+<tr>
+<td>3416</td>
+<td>Move Guest</td>
+</tr>
+<tr>
+<td>3421</td>
+<td>A short time</td>
+</tr>
+<tr>
+<td>3423</td>
+<td>A long time</td>
+</tr>
+<tr>
+<td>3530</td>
+<td>Empty trash</td>
+</tr>
+<tr>
+<td>3531</td>
+<td>Sweep and clean zoo</td>
+</tr>
+<tr>
+<td>3532</td>
+<td>Maintain exhibit fences</td>
+</tr>
+<tr>
+<td>3533</td>
+<td>Maintain tank filters</td>
+</tr>
+<tr>
+<td>3565</td>
+<td>Job Assignment</td>
+</tr>
+<tr>
+<td>3578</td>
+<td>Click to add exhibits to the staff member's schedule.</td>
+</tr>
+<tr>
+<td>3579</td>
+<td>Click to remove selected exhibit from the staff member's schedule.</td>
+</tr>
+<tr>
+<td>3580</td>
+<td>Click to remove all exhibits from the staff member's schedule.</td>
+</tr>
+<tr>
+<td>3590</td>
+<td>Click to add this exhibit to the staff member's schedule.</td>
+</tr>
+<tr>
+<td>3601</td>
+<td>Hire Staff</td>
+</tr>
+<tr>
+<td>3614</td>
+<td>Cares for land animals and cleans their exhibits</td>
+</tr>
+<tr>
+<td>3616</td>
+<td>Cleans zoo grounds, repairs fences and tank filters.</td>
+</tr>
+<tr>
+<td>3620</td>
+<td>Cares for marine animals and cleans their tanks</td>
+</tr>
+<tr>
+<td>3731</td>
+<td>Guests with restroom needs</td>
+</tr>
+<tr>
+<td>3898</td>
+<td>Exhibit Suitability</td>
+</tr>
+<tr>
+<td>3899</td>
+<td>Animal Hunger</td>
+</tr>
+<tr>
+<td>3913</td>
+<td>Show Income:</td>
+</tr>
+<tr>
+<td>3990</td>
+<td>Net Income:</td>
+</tr>
+<tr>
+<td>4163</td>
+<td>Completed Research and Conservation</td>
+</tr>
+<tr>
+<td>4181</td>
+<td>Completed Research and Conservation</td>
+</tr>
+<tr>
+<td>4244</td>
+<td>Show marine specialists in the above list.</td>
+</tr>
+<tr>
+<td>4245</td>
+<td>Marine Specialists</td>
+</tr>
+<tr>
+<td>4301</td>
+<td>Exhibit/Show List</td>
+</tr>
+<tr>
+<td>4365</td>
+<td>Modify Tank</td>
+</tr>
+<tr>
+<td>4621</td>
+<td>Scenery Information</td>
+</tr>
+<tr>
+<td>4866</td>
+<td>Tank Adjustment</td>
+</tr>
+<tr>
+<td>4867</td>
+<td>Salinity</td>
+</tr>
+<tr>
+<td>4869</td>
+<td>Click to change water type to salt water.</td>
+</tr>
+<tr>
+<td>4870</td>
+<td>Click to change water type to fresh water.</td>
+</tr>
+<tr>
+<td>4873</td>
+<td>Adjust Wall</td>
+</tr>
+<tr>
+<td>4874</td>
+<td>Click to adjust wall down.</td>
+</tr>
+<tr>
+<td>4875</td>
+<td>Click to adjust wall up.</td>
+</tr>
+<tr>
+<td>4876</td>
+<td>Cost:</td>
+</tr>
+<tr>
+<td>4878</td>
+<td>Adjust Base</td>
+</tr>
+<tr>
+<td>4879</td>
+<td>Click to recess tank.</td>
+</tr>
+<tr>
+<td>4880</td>
+<td>Click to expose tank.</td>
+</tr>
+<tr>
+<td>4881</td>
+<td>Fill Tank</td>
+</tr>
+<tr>
+<td>4883</td>
+<td>Drain Tank</td>
+</tr>
+<tr>
+<td>4885</td>
+<td>Click to drain tank.</td>
+</tr>
+<tr>
+<td>4886</td>
+<td>Cost:</td>
+</tr>
+<tr>
+<td>4888</td>
+<td>Salt</td>
+</tr>
+<tr>
+<td>4889</td>
+<td>Fresh</td>
+</tr>
+<tr>
+<td>4891</td>
+<td>Salt</td>
+</tr>
+<tr>
+<td>4893</td>
+<td>Fresh</td>
+</tr>
+<tr>
+<td>4902</td>
+<td>Filtration System</td>
+</tr>
+<tr>
+<td>4904</td>
+<td>Filter</td>
+</tr>
+<tr>
+<td>4906</td>
+<td>Sell filter</td>
+</tr>
+<tr>
+<td>4909</td>
+<td>Status</td>
+</tr>
+<tr>
+<td>4910</td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>4912</td>
+<td>Filter status:</td>
+</tr>
+<tr>
+<td>4913</td>
+<td>Maximum efficiency</td>
+</tr>
+<tr>
+<td>4914</td>
+<td>Minimum efficiency</td>
+</tr>
+<tr>
+<td>4915</td>
+<td>Last Filter Service:</td>
+</tr>
+<tr>
+<td>4916</td>
+<td>%s month(s) ago</td>
+</tr>
+<tr>
+<td>4917</td>
+<td>Months in operation:</td>
+</tr>
+<tr>
+<td>4919</td>
+<td>Filter Upkeep</td>
+</tr>
+<tr>
+<td>4920</td>
+<td>Last:</td>
+</tr>
+<tr>
+<td>4922</td>
+<td>Current:</td>
+</tr>
+<tr>
+<td>4924</td>
+<td>Total:</td>
+</tr>
+<tr>
+<td>4999</td>
+<td>Broken Down</td>
+</tr>
+<tr>
+<td>5159</td>
+<td>Orca</td>
+</tr>
+<tr>
+<td>5160</td>
+<td>Great White Shark</td>
+</tr>
+<tr>
+<td>5161</td>
+<td>Bottlenose Dolphin</td>
+</tr>
+<tr>
+<td>5162</td>
+<td>Lion's Mane Jelly</td>
+</tr>
+<tr>
+<td>5163</td>
+<td>Northern Elephant Seal</td>
+</tr>
+<tr>
+<td>5164</td>
+<td>Humpback Whale</td>
+</tr>
+<tr>
+<td>5165</td>
+<td>Sperm Whale</td>
+</tr>
+<tr>
+<td>5166</td>
+<td>Narwhal</td>
+</tr>
+<tr>
+<td>5167</td>
+<td>Harbor Porpoise</td>
+</tr>
+<tr>
+<td>5168</td>
+<td>Great Hammerhead Shark</td>
+</tr>
+<tr>
+<td>5169</td>
+<td>Tiger Shark</td>
+</tr>
+<tr>
+<td>5170</td>
+<td>Shortfin Mako Shark</td>
+</tr>
+<tr>
+<td>5171</td>
+<td>Green Moray Eel</td>
+</tr>
+<tr>
+<td>5172</td>
+<td>Beluga</td>
+</tr>
+<tr>
+<td>5173</td>
+<td>Southern Sea Otter</td>
+</tr>
+<tr>
+<td>5174</td>
+<td>Giant Pacific Octopus</td>
+</tr>
+<tr>
+<td>5175</td>
+<td>West Indian Manatee</td>
+</tr>
+<tr>
+<td>5176</td>
+<td>Pacific Walrus</td>
+</tr>
+<tr>
+<td>5177</td>
+<td>Manta Ray</td>
+</tr>
+<tr>
+<td>5178</td>
+<td>Green Sea Turtle</td>
+</tr>
+<tr>
+<td>5179</td>
+<td>North Atlantic Swordfish</td>
+</tr>
+<tr>
+<td>5180</td>
+<td>Giant Squid</td>
+</tr>
+<tr>
+<td>5181</td>
+<td>Bluefin Tuna</td>
+</tr>
+<tr>
+<td>5182</td>
+<td>Great Barracuda</td>
+</tr>
+<tr>
+<td>5183</td>
+<td>Mermaid</td>
+</tr>
+<tr>
+<td>5218</td>
+<td>Cetacea</td>
+</tr>
+<tr>
+<td>5219</td>
+<td>Lamniformes</td>
+</tr>
+<tr>
+<td>5220</td>
+<td>Invertebrates</td>
+</tr>
+<tr>
+<td>5221</td>
+<td>Carcharhiniformes</td>
+</tr>
+<tr>
+<td>5222</td>
+<td>Anguilliformes</td>
+</tr>
+<tr>
+<td>5223</td>
+<td>Pinniped</td>
+</tr>
+<tr>
+<td>5224</td>
+<td>Sirenia</td>
+</tr>
+<tr>
+<td>5225</td>
+<td>Myliobatidae</td>
+</tr>
+<tr>
+<td>5226</td>
+<td>Testudinae</td>
+</tr>
+<tr>
+<td>5227</td>
+<td>Octopodidae</td>
+</tr>
+<tr>
+<td>5228</td>
+<td>Architeuthidae</td>
+</tr>
+<tr>
+<td>5229</td>
+<td>Perciformes</td>
+</tr>
+<tr>
+<td>5230</td>
+<td>Mustelidae</td>
+</tr>
+<tr>
+<td>5231</td>
+<td>Atlantean</td>
+</tr>
+<tr>
+<td>5400</td>
+<td>Orca</td>
+</tr>
+<tr>
+<td>5401</td>
+<td>Great White Shark</td>
+</tr>
+<tr>
+<td>5402</td>
+<td>Bottlenose Dolphin</td>
+</tr>
+<tr>
+<td>5403</td>
+<td>Lion's Mane Jelly</td>
+</tr>
+<tr>
+<td>5404</td>
+<td>Elephant Seal</td>
+</tr>
+<tr>
+<td>5405</td>
+<td>Humpback Whale</td>
+</tr>
+<tr>
+<td>5406</td>
+<td>Sperm Whale</td>
+</tr>
+<tr>
+<td>5407</td>
+<td>Narwhal</td>
+</tr>
+<tr>
+<td>5408</td>
+<td>Harbor Porpoise</td>
+</tr>
+<tr>
+<td>5409</td>
+<td>Hammerhead Shark</td>
+</tr>
+<tr>
+<td>5410</td>
+<td>Tiger Shark</td>
+</tr>
+<tr>
+<td>5411</td>
+<td>Shortfin Mako Shark</td>
+</tr>
+<tr>
+<td>5412</td>
+<td>Green Moray Eel</td>
+</tr>
+<tr>
+<td>5413</td>
+<td>Beluga</td>
+</tr>
+<tr>
+<td>5414</td>
+<td>Southern Sea Otter</td>
+</tr>
+<tr>
+<td>5415</td>
+<td>Pacific Octopus</td>
+</tr>
+<tr>
+<td>5416</td>
+<td>West Indian Manatee</td>
+</tr>
+<tr>
+<td>5417</td>
+<td>Pacific Walrus</td>
+</tr>
+<tr>
+<td>5418</td>
+<td>Manta Ray</td>
+</tr>
+<tr>
+<td>5419</td>
+<td>Green Sea Turtle</td>
+</tr>
+<tr>
+<td>5420</td>
+<td>Atlantic Swordfish</td>
+</tr>
+<tr>
+<td>5421</td>
+<td>Giant Squid</td>
+</tr>
+<tr>
+<td>5422</td>
+<td>Bluefin Tuna</td>
+</tr>
+<tr>
+<td>5423</td>
+<td>Great Barracuda</td>
+</tr>
+<tr>
+<td>5424</td>
+<td>Mermaid</td>
+</tr>
+<tr>
+<td>6138</td>
+<td>4-wheeler</td>
+</tr>
+<tr>
+<td>6165</td>
+<td>Lighthouse</td>
+</tr>
+<tr>
+<td>6169</td>
+<td>Umbrella</td>
+</tr>
+<tr>
+<td>6170</td>
+<td>Motor Boat</td>
+</tr>
+<tr>
+<td>6171</td>
+<td>Jetty</td>
+</tr>
+<tr>
+<td>6172</td>
+<td>Jetty</td>
+</tr>
+<tr>
+<td>6173</td>
+<td>Jetty</td>
+</tr>
+<tr>
+<td>6174</td>
+<td>Sail Boat</td>
+</tr>
+<tr>
+<td>6185</td>
+<td>Broken Bench</td>
+</tr>
+<tr>
+<td>6186</td>
+<td>Broken Light</td>
+</tr>
+<tr>
+<td>6187</td>
+<td>Dock 4</td>
+</tr>
+<tr>
+<td>6188</td>
+<td>Hotel</td>
+</tr>
+<tr>
+<td>6189</td>
+<td>Lifeguard Station</td>
+</tr>
+<tr>
+<td>6209</td>
+<td>Tank</td>
+</tr>
+<tr>
+<td>6210</td>
+<td>Show Tank</td>
+</tr>
+<tr>
+<td>6303</td>
+<td>Hot dog</td>
+</tr>
+<tr>
+<td>6462</td>
+<td>Aqua Wall</td>
+</tr>
+<tr>
+<td>6463</td>
+<td>Admission Booth</td>
+</tr>
+<tr>
+<td>6464</td>
+<td>Admission Booth</td>
+</tr>
+<tr>
+<td>6465</td>
+<td>Show Grandstand</td>
+</tr>
+<tr>
+<td>6466</td>
+<td>Giant Pacific Clam</td>
+</tr>
+<tr>
+<td>6467</td>
+<td>Mermaid Statue</td>
+</tr>
+<tr>
+<td>6468</td>
+<td>Treasure Chest</td>
+</tr>
+<tr>
+<td>6469</td>
+<td>Drain</td>
+</tr>
+<tr>
+<td>6470</td>
+<td>Deep Sea Diver Statue</td>
+</tr>
+<tr>
+<td>6471</td>
+<td>Tank Filter</td>
+</tr>
+<tr>
+<td>6472</td>
+<td>Dolphin Wishing Fountain</td>
+</tr>
+<tr>
+<td>6473</td>
+<td>Wishing Fountain</td>
+</tr>
+<tr>
+<td>6474</td>
+<td>Wall</td>
+</tr>
+<tr>
+<td>6475</td>
+<td>Curtain</td>
+</tr>
+<tr>
+<td>6476</td>
+<td>Door Frame</td>
+</tr>
+<tr>
+<td>6477</td>
+<td>Black Observation Area</td>
+</tr>
+<tr>
+<td>6478</td>
+<td>White Observation Area</td>
+</tr>
+<tr>
+<td>6479</td>
+<td>Stage Backdrop</td>
+</tr>
+<tr>
+<td>6480</td>
+<td>Stage Door</td>
+</tr>
+<tr>
+<td>6481</td>
+<td>Stage Backdrop End</td>
+</tr>
+<tr>
+<td>6482</td>
+<td>Fancy Backdrop</td>
+</tr>
+<tr>
+<td>6484</td>
+<td>Frozen Yogurt</td>
+</tr>
+<tr>
+<td>6485</td>
+<td>Popcorn</td>
+</tr>
+<tr>
+<td>6486</td>
+<td>Goldfish Bowl</td>
+</tr>
+<tr>
+<td>6487</td>
+<td>Stuffed Orca</td>
+</tr>
+<tr>
+<td>6488</td>
+<td>Stuffed Dolphin</td>
+</tr>
+<tr>
+<td>6489</td>
+<td>Toy Sharks</td>
+</tr>
+<tr>
+<td>6490</td>
+<td>Marine Cap</td>
+</tr>
+<tr>
+<td>6491</td>
+<td>Submarine Sandwich</td>
+</tr>
+<tr>
+<td>6492</td>
+<td>Frozen Lemon Drink</td>
+</tr>
+<tr>
+<td>6493</td>
+<td>Fish n Chips</td>
+</tr>
+<tr>
+<td>6494</td>
+<td>Metal Bench</td>
+</tr>
+<tr>
+<td>6495</td>
+<td>Jumping Fountain</td>
+</tr>
+<tr>
+<td>6496</td>
+<td>Orca Statue</td>
+</tr>
+<tr>
+<td>6497</td>
+<td>Dolphin Statue</td>
+</tr>
+<tr>
+<td>6498</td>
+<td>Sea Lion Statue</td>
+</tr>
+<tr>
+<td>6500</td>
+<td>Advanced Trick Area</td>
+</tr>
+<tr>
+<td>6501</td>
+<td>Dolphin Ball</td>
+</tr>
+<tr>
+<td>6502</td>
+<td>Orca Ball</td>
+</tr>
+<tr>
+<td>6503</td>
+<td>Dolphin Hoop</td>
+</tr>
+<tr>
+<td>6504</td>
+<td>Orca Stage</td>
+</tr>
+<tr>
+<td>6505</td>
+<td>Ice Floe</td>
+</tr>
+<tr>
+<td>6506</td>
+<td>Sea Lion Beach Ball</td>
+</tr>
+<tr>
+<td>6507</td>
+<td>Sea Lion Squeeze Horn</td>
+</tr>
+<tr>
+<td>6508</td>
+<td>Sea Lion Raft</td>
+</tr>
+<tr>
+<td>6509</td>
+<td>Raft</td>
+</tr>
+<tr>
+<td>6510</td>
+<td>Sea Otter Ball</td>
+</tr>
+<tr>
+<td>6511</td>
+<td>Sea Otter Hoop</td>
+</tr>
+<tr>
+<td>6512</td>
+<td>Icy Keg</td>
+</tr>
+<tr>
+<td>6600</td>
+<td>Krill %s</td>
+</tr>
+<tr>
+<td>6601</td>
+<td>Fish %s</td>
+</tr>
+<tr>
+<td>6602</td>
+<td>Chum %s</td>
+</tr>
+<tr>
+<td>6603</td>
+<td>Marine Grass %s</td>
+</tr>
+<tr>
+<td>6604</td>
+<td>Urchin %s</td>
+</tr>
+<tr>
+<td>6800</td>
+<td>Seal Statue</td>
+</tr>
+<tr>
+<td>6801</td>
+<td>Trio Statue</td>
+</tr>
+<tr>
+<td>6802</td>
+<td>Fancy Grandstand</td>
+</tr>
+<tr>
+<td>6803</td>
+<td>Photo Booth</td>
+</tr>
+<tr>
+<td>6804</td>
+<td>Photo</td>
+</tr>
+<tr>
+<td>6806</td>
+<td>Marine Mania T-shirt</td>
+</tr>
+<tr>
+<td>7111</td>
+<td>Play Tutorial &amp; Scenario Game</td>
+</tr>
+<tr>
+<td>7121</td>
+<td>Play Zoo Tycoon tutorials and scenarios</td>
+</tr>
+<tr>
+<td>7127</td>
+<td>Last played game was not saved.</td>
+</tr>
+<tr>
+<td>7400</td>
+<td>Sea Anemone</td>
+</tr>
+<tr>
+<td>7401</td>
+<td>Barnacles</td>
+</tr>
+<tr>
+<td>7402</td>
+<td>Beach Grass</td>
+</tr>
+<tr>
+<td>7403</td>
+<td>Brittle Sea Star</td>
+</tr>
+<tr>
+<td>7404</td>
+<td>Clam Bed</td>
+</tr>
+<tr>
+<td>7405</td>
+<td>Orange Cup Coral</td>
+</tr>
+<tr>
+<td>7406</td>
+<td>Divercate Tree Coral</td>
+</tr>
+<tr>
+<td>7407</td>
+<td>Feather Duster Worm</td>
+</tr>
+<tr>
+<td>7408</td>
+<td>Fire Coral</td>
+</tr>
+<tr>
+<td>7409</td>
+<td>Kelp</td>
+</tr>
+<tr>
+<td>7410</td>
+<td>Sea Lettuce</td>
+</tr>
+<tr>
+<td>7411</td>
+<td>Red Gorgonian</td>
+</tr>
+<tr>
+<td>7412</td>
+<td>Sargassum</td>
+</tr>
+<tr>
+<td>7413</td>
+<td>Sand Dollar</td>
+</tr>
+<tr>
+<td>7414</td>
+<td>Sea Cucumber</td>
+</tr>
+<tr>
+<td>7415</td>
+<td>Sea Star</td>
+</tr>
+<tr>
+<td>7416</td>
+<td>Seaweed</td>
+</tr>
+<tr>
+<td>7417</td>
+<td>Sea Grass</td>
+</tr>
+<tr>
+<td>7418</td>
+<td>Sea Sponge</td>
+</tr>
+<tr>
+<td>7419</td>
+<td>Stove Pipe Sponge</td>
+</tr>
+<tr>
+<td>7420</td>
+<td>Tube Worm</td>
+</tr>
+<tr>
+<td>7421</td>
+<td>Purple Sea Urchin</td>
+</tr>
+<tr>
+<td>8050</td>
+<td>Aquatic Gift Shop</td>
+</tr>
+<tr>
+<td>8051</td>
+<td>Lobby's Restaurant</td>
+</tr>
+<tr>
+<td>8052</td>
+<td>Crustacean House</td>
+</tr>
+<tr>
+<td>8053</td>
+<td>Tropical Aquarium</td>
+</tr>
+<tr>
+<td>8054</td>
+<td>Kneemo's Sub Shop</td>
+</tr>
+<tr>
+<td>8055</td>
+<td>Aquatic Gift Stand</td>
+</tr>
+<tr>
+<td>8056</td>
+<td>Sea Dawgs Stand</td>
+</tr>
+<tr>
+<td>8057</td>
+<td>Crushed Ice Stand</td>
+</tr>
+<tr>
+<td>8058</td>
+<td>Polly's Popcorn Stand</td>
+</tr>
+<tr>
+<td>8059</td>
+<td>Boat Rental Shack</td>
+</tr>
+<tr>
+<td>8060</td>
+<td>Swim with Dolphins</td>
+</tr>
+<tr>
+<td>8061</td>
+<td>Swim Shack</td>
+</tr>
+<tr>
+<td>8062</td>
+<td>Aquatic Restroom</td>
+</tr>
+<tr>
+<td>8063</td>
+<td>Frozen Yogurt Stand</td>
+</tr>
+<tr>
+<td>8064</td>
+<td>Shark Tunnel</td>
+</tr>
+<tr>
+<td>8065</td>
+<td>Orca Bouncy Ride</td>
+</tr>
+<tr>
+<td>8066</td>
+<td>Ring Toss</td>
+</tr>
+<tr>
+<td>8135</td>
+<td>Seafloor Cave</td>
+</tr>
+<tr>
+<td>8136</td>
+<td>Sunken Ship</td>
+</tr>
+<tr>
+<td>8137</td>
+<td>Sunken Log</td>
+</tr>
+<tr>
+<td>9113</td>
+<td>Boardwalk Path</td>
+</tr>
+<tr>
+<td>9235</td>
+<td>Small Ocean Floor Rock</td>
+</tr>
+<tr>
+<td>9236</td>
+<td>Medium Coral Formation</td>
+</tr>
+<tr>
+<td>9237</td>
+<td>Large Ocean Floor Rock</td>
+</tr>
+<tr>
+<td>9238</td>
+<td>Medium Ocean Floor Rock</td>
+</tr>
+<tr>
+<td>9239</td>
+<td>Large Coral Formation</td>
+</tr>
+<tr>
+<td>9240</td>
+<td>Iceberg</td>
+</tr>
+<tr>
+<td>9241</td>
+<td>Isle Rock</td>
+</tr>
+<tr>
+<td>9340</td>
+<td>Black Bar and Glass</td>
+</tr>
+<tr>
+<td>9341</td>
+<td>Concrete Edge and Glass</td>
+</tr>
+<tr>
+<td>9342</td>
+<td>Striped Scooped Edges and Glass</td>
+</tr>
+<tr>
+<td>9343</td>
+<td>Striped Wavy Edges and Glass</td>
+</tr>
+<tr>
+<td>9344</td>
+<td>Solid Concrete</td>
+</tr>
+<tr>
+<td>9345</td>
+<td>Striped Wavy Edges and Gunite</td>
+</tr>
+<tr>
+<td>9346</td>
+<td>Buoy Rope Fence</td>
+</tr>
+<tr>
+<td>9347</td>
+<td>Angled Railing and Glass</td>
+</tr>
+<tr>
+<td>9552</td>
+<td>Marine Specialist</td>
+</tr>
+<tr>
+<td>9625</td>
+<td>Tropical Oceans Worldwide</td>
+</tr>
+<tr>
+<td>9626</td>
+<td>Arctic Ocean</td>
+</tr>
+<tr>
+<td>9627</td>
+<td>Northern Pacific Ocean</td>
+</tr>
+<tr>
+<td>9628</td>
+<td>Northern Atlantic Ocean</td>
+</tr>
+<tr>
+<td>9629</td>
+<td>Atlantic Coast</td>
+</tr>
+<tr>
+<td>9630</td>
+<td>Pacific Ocean</td>
+</tr>
+<tr>
+<td>9631</td>
+<td>Pacific Coast</td>
+</tr>
+<tr>
+<td>9632</td>
+<td>Atlantic Ocean</td>
+</tr>
+<tr>
+<td>9633</td>
+<td>Many Oceans Worldwide</td>
+</tr>
+<tr>
+<td>9909</td>
+<td>This tank is too shallow for %s.</td>
+</tr>
+<tr>
+<td>9910</td>
+<td>This tank is too deep for %s.</td>
+</tr>
+<tr>
+<td>9912</td>
+<td>%s requires different water salinity.</td>
+</tr>
+<tr>
+<td>9940</td>
+<td>There is not enough fresh water in the exhibit for %s.</td>
+</tr>
+<tr>
+<td>9941</td>
+<td>There is too much fresh water in the exhibit for %s.</td>
+</tr>
+<tr>
+<td>9942</td>
+<td>There is not enough salt water in the exhibit for %s.</td>
+</tr>
+<tr>
+<td>9943</td>
+<td>There is too much salt water in the exhibit for %s.</td>
+</tr>
+<tr>
+<td>9956</td>
+<td>This tank is too dirty for %s.</td>
+</tr>
+<tr>
+<td>9964</td>
+<td>%s requires access to land.</td>
+</tr>
+<tr>
+<td>9965</td>
+<td>Note: an egg requires the care of a scientist.</td>
+</tr>
+<tr>
+<td>9991</td>
+<td>%s needs can only be met in an exhibit tank.</td>
+</tr>
+<tr>
+<td>10223</td>
+<td>Look at the duck pond! That's neat!</td>
+</tr>
+<tr>
+<td>10230</td>
+<td>I really like this hot dog.</td>
+</tr>
+<tr>
+<td>10244</td>
+<td>Now that I've seen the zoo map, I know where everything is.</td>
+</tr>
+<tr>
+<td>10251</td>
+<td>%s has drowned!</td>
+</tr>
+<tr>
+<td>10252</td>
+<td>Hmmm... You know, I never knew that before!</td>
+</tr>
+<tr>
+<td>10253</td>
+<td>Hey, nice hedge.</td>
+</tr>
+<tr>
+<td>10254</td>
+<td>That snowman sure does look jolly.</td>
+</tr>
+<tr>
+<td>10255</td>
+<td>Someone did a really nice carving job on that pumpkin.</td>
+</tr>
+<tr>
+<td>10256</td>
+<td>Seeing that Christmas tree really puts me in the spirit.</td>
+</tr>
+<tr>
+<td>10257</td>
+<td>That T. rex statue is so life-like.</td>
+</tr>
+<tr>
+<td>10258</td>
+<td>Look at the claws on that raptor statue!</td>
+</tr>
+<tr>
+<td>10259</td>
+<td>Those horns on that triceratops statue would make a good coat rack.</td>
+</tr>
+<tr>
+<td>10287</td>
+<td>I've never seen such a lousy show!</td>
+</tr>
+<tr>
+<td>10288</td>
+<td>That show was OK.</td>
+</tr>
+<tr>
+<td>10289</td>
+<td>That show was pretty good.</td>
+</tr>
+<tr>
+<td>10290</td>
+<td>Wow! That was a great show!</td>
+</tr>
+<tr>
+<td>10320</td>
+<td>Zookeepers can only be assigned to land exhibits with zoo animals.</td>
+</tr>
+<tr>
+<td>10323</td>
+<td>The exhibit is too small for zoo staff to visit</td>
+</tr>
+<tr>
+<td>10324</td>
+<td>Scientists can only be assigned to land exhibits with dinosaurs.</td>
+</tr>
+<tr>
+<td>10325</td>
+<td>Conducting a show</td>
+</tr>
+<tr>
+<td>10326</td>
+<td>Conducting the %s show</td>
+</tr>
+<tr>
+<td>10327</td>
+<td>Cleaning the tank</td>
+</tr>
+<tr>
+<td>10328</td>
+<td>Marine specialists can only be assigned to tank exhibits with marine animals.</td>
+</tr>
+<tr>
+<td>10329</td>
+<td>Zoo staff cannot be assigned to empty exhibits.</td>
+</tr>
+<tr>
+<td>10504</td>
+<td>Going to clean up</td>
+</tr>
+<tr>
+<td>10505</td>
+<td>Cleaning up</td>
+</tr>
+<tr>
+<td>10515</td>
+<td>Going to service tank filter</td>
+</tr>
+<tr>
+<td>10516</td>
+<td>Servicing tank filter</td>
+</tr>
+<tr>
+<td>10517</td>
+<td>Filters must be placed adjacent to a completed tank. Only one filter can be placed next to a tank.</td>
+</tr>
+<tr>
+<td>10520</td>
+<td>Frozen yogurt is good and good for me!</td>
+</tr>
+<tr>
+<td>10521</td>
+<td>Yummy! I just love popcorn.</td>
+</tr>
+<tr>
+<td>10522</td>
+<td>Look at how cute my new goldfish is.</td>
+</tr>
+<tr>
+<td>10523</td>
+<td>This orca is so soft and cuddly.</td>
+</tr>
+<tr>
+<td>10524</td>
+<td>A stuffed dolphin. Super cool!</td>
+</tr>
+<tr>
+<td>10525</td>
+<td>I can't wait to play with my new toy sharks!</td>
+</tr>
+<tr>
+<td>10526</td>
+<td>I can't wait to show my friends my new cap.</td>
+</tr>
+<tr>
+<td>10527</td>
+<td>Mmm, the fish and chips are good.</td>
+</tr>
+<tr>
+<td>10528</td>
+<td>%s is drowning!</td>
+</tr>
+<tr>
+<td>10529</td>
+<td>That was the best sub I've ever eaten.</td>
+</tr>
+<tr>
+<td>10530</td>
+<td>That frozen drink was refreshing.</td>
+</tr>
+<tr>
+<td>10531</td>
+<td>I bet they have some cool marine gifts at the gift shop.</td>
+</tr>
+<tr>
+<td>10532</td>
+<td>I hope I can get a good meal at Lobby's Restaurant. I'm starving!</td>
+</tr>
+<tr>
+<td>10533</td>
+<td>The crustacean house--that's where they display all of the shellfish.</td>
+</tr>
+<tr>
+<td>10534</td>
+<td>Look at the tropical aquarium! They have all sorts of colorful fish there.</td>
+</tr>
+<tr>
+<td>10535</td>
+<td>Cool! A sub shop. I hope I can get extra HOTS!</td>
+</tr>
+<tr>
+<td>10536</td>
+<td>Hey, an aquatic gift stand. I can pick up a quick gift!</td>
+</tr>
+<tr>
+<td>10537</td>
+<td>They better put some mustard on my hot dog at the Sea Dawgs cart!</td>
+</tr>
+<tr>
+<td>10538</td>
+<td>I'm hot. I think I'll get a frozen drink.</td>
+</tr>
+<tr>
+<td>10539</td>
+<td>A popcorn stand...I hope I can get some extra butter.</td>
+</tr>
+<tr>
+<td>10540</td>
+<td>Neat, a boat rental shack - I can rent a boat there.</td>
+</tr>
+<tr>
+<td>10541</td>
+<td>Wow! I can swim with the dolphins.</td>
+</tr>
+<tr>
+<td>10542</td>
+<td>I hope the swim shack has extra towels.</td>
+</tr>
+<tr>
+<td>10543</td>
+<td>I'm glad they have some low-calorie snacks here.</td>
+</tr>
+<tr>
+<td>10544</td>
+<td>I hope I find a show grandstand seat with a good view.</td>
+</tr>
+<tr>
+<td>10545</td>
+<td>%s seems to be sick.</td>
+</tr>
+<tr>
+<td>10549</td>
+<td>Guests can not see the animals inside %s because the water is too murky.</td>
+</tr>
+<tr>
+<td>10550</td>
+<td>The %s must be removed from the tank before it can be filled with water.</td>
+</tr>
+<tr>
+<td>10551</td>
+<td>The tank can not be drained until the animals are removed.</td>
+</tr>
+<tr>
+<td>10552</td>
+<td>To fill the tank, some objects or animals must be sold or removed from the tank.</td>
+</tr>
+<tr>
+<td>10553</td>
+<td>This animal doesn't swim in tanks and must be placed in a land exhibit.</td>
+</tr>
+<tr>
+<td>10554</td>
+<td>This animal must be placed in a tank with water in it.</td>
+</tr>
+<tr>
+<td>10555</td>
+<td>This object cannot be placed because there is something in the way.</td>
+</tr>
+<tr>
+<td>10556</td>
+<td>The shark tunnel is pretty scary.</td>
+</tr>
+<tr>
+<td>10557</td>
+<td>This bouncy ride squeaks less.</td>
+</tr>
+<tr>
+<td>10558</td>
+<td>Show objects can only be placed in show exhibits.</td>
+</tr>
+<tr>
+<td>10559</td>
+<td>This object can not be placed in a tank.</td>
+</tr>
+<tr>
+<td>10560</td>
+<td>This object must be placed in a deeper tank.</td>
+</tr>
+<tr>
+<td>10561</td>
+<td>Only show toys and animals that can do tricks can be placed in show tanks.</td>
+</tr>
+<tr>
+<td>10562</td>
+<td>Objects cannot be placed too close to the ladder or platform of the tank.</td>
+</tr>
+<tr>
+<td>10563</td>
+<td>This staff member can not be placed in a tank.</td>
+</tr>
+<tr>
+<td>10564</td>
+<td>This object must be placed on water terrain.</td>
+</tr>
+<tr>
+<td>10565</td>
+<td>Hey, a ring toss...I hope I can win a prize!</td>
+</tr>
+<tr>
+<td>10566</td>
+<td>Help! I'm going to drown....</td>
+</tr>
+<tr>
+<td>10567</td>
+<td>Look how dirty that tank is. Yuck!</td>
+</tr>
+<tr>
+<td>10568</td>
+<td>Hey! I don't want to be in the water!</td>
+</tr>
+<tr>
+<td>10570</td>
+<td>Eggs must be placed on land.</td>
+</tr>
+<tr>
+<td>10571</td>
+<td>Show tanks and exhibit tanks cannot be merged.</td>
+</tr>
+<tr>
+<td>10572</td>
+<td>This sea lion statue seems so life-like.</td>
+</tr>
+<tr>
+<td>10573</td>
+<td>The seal statue looks so cool.</td>
+</tr>
+<tr>
+<td>10574</td>
+<td>Wow! Whoever was able to get such a cool statue must be a real Zoo Tycoon!</td>
+</tr>
+<tr>
+<td>10575</td>
+<td>Look how smooth the dolphin statue is.</td>
+</tr>
+<tr>
+<td>10576</td>
+<td>Oh my...the orca statue is beautifully done.</td>
+</tr>
+<tr>
+<td>10578</td>
+<td>I don't photograph that well.</td>
+</tr>
+<tr>
+<td>10579</td>
+<td>This photo came out really well.</td>
+</tr>
+<tr>
+<td>10580</td>
+<td>That T. rex skeleton is huge!</td>
+</tr>
+<tr>
+<td>10581</td>
+<td>So that's what a triceratops skeleton looks like.</td>
+</tr>
+<tr>
+<td>10582</td>
+<td>The velociraptor statues makes them look so nimble.</td>
+</tr>
+<tr>
+<td>10583</td>
+<td>That wooly mammoth fountain sure is pretty.</td>
+</tr>
+<tr>
+<td>10584</td>
+<td>I really like that giant tortoise fountain.</td>
+</tr>
+<tr>
+<td>10585</td>
+<td>That is a huge fossil!</td>
+</tr>
+<tr>
+<td>10586</td>
+<td>Look at that big ol' geyser!</td>
+</tr>
+<tr>
+<td>10587</td>
+<td>Wow, that geyser is neat.</td>
+</tr>
+<tr>
+<td>10588</td>
+<td>Eek! I better not get too close to that lava pit.</td>
+</tr>
+<tr>
+<td>10589</td>
+<td>Man, that tar pit smells horrible!</td>
+</tr>
+<tr>
+<td>10590</td>
+<td>Volcano! Run for your lives!</td>
+</tr>
+<tr>
+<td>10591</td>
+<td>Hey, a steam vent. I'd better not get too close.</td>
+</tr>
+<tr>
+<td>10592</td>
+<td>Whoa. Now that's a big clam.</td>
+</tr>
+<tr>
+<td>10593</td>
+<td>I hope my wish comes true.</td>
+</tr>
+<tr>
+<td>10594</td>
+<td>That mermaid statue sure is pretty.</td>
+</tr>
+<tr>
+<td>10595</td>
+<td>Hey look! An old-fashioned diver statue.</td>
+</tr>
+<tr>
+<td>10596</td>
+<td>Look at all that treasure in the treasure chest.</td>
+</tr>
+<tr>
+<td>10597</td>
+<td>Look at all those flowers!</td>
+</tr>
+<tr>
+<td>10598</td>
+<td>What a nice flowerbed.</td>
+</tr>
+<tr>
+<td>10599</td>
+<td>This object cannot be placed next to a tank wall.</td>
+</tr>
+<tr>
+<td>10610</td>
+<td>What was that supposed to be?</td>
+</tr>
+<tr>
+<td>10611</td>
+<td>I've seen better tricks.</td>
+</tr>
+<tr>
+<td>10612</td>
+<td>That was a cool trick</td>
+</tr>
+<tr>
+<td>10613</td>
+<td>Wow! that trick was unbeleiveable</td>
+</tr>
+<tr>
+<td>10614</td>
+<td>Wow! what a cool t-shirt.</td>
+</tr>
+<tr>
+<td>11000</td>
+<td>%s is inaccessible to zoo staff.</td>
+</tr>
+<tr>
+<td>11001</td>
+<td>The entrance to %s is blocked and is not accessible to zoo staff.</td>
+</tr>
+<tr>
+<td>11004</td>
+<td>%s is having trouble getting to %s.</td>
+</tr>
+<tr>
+<td>11005</td>
+<td>%s is being healed and can't make it to the show in %s.</td>
+</tr>
+<tr>
+<td>11103</td>
+<td>Admission Price:</td>
+</tr>
+<tr>
+<td>11105</td>
+<td>Increase admission price</td>
+</tr>
+<tr>
+<td>11106</td>
+<td>Decrease admission price</td>
+</tr>
+<tr>
+<td>11107</td>
+<td>Show Frequency</td>
+</tr>
+<tr>
+<td>11108</td>
+<td>Adjust show frequency</td>
+</tr>
+<tr>
+<td>11109</td>
+<td>Available Tricks</td>
+</tr>
+<tr>
+<td>11110</td>
+<td>Tricks in Show</td>
+</tr>
+<tr>
+<td>11113</td>
+<td>Add selected trick</td>
+</tr>
+<tr>
+<td>11114</td>
+<td>Remove selected trick</td>
+</tr>
+<tr>
+<td>11117</td>
+<td>Play trick earlier</td>
+</tr>
+<tr>
+<td>11118</td>
+<td>Play trick later</td>
+</tr>
+<tr>
+<td>11119</td>
+<td>Potential Guest Benefit</td>
+</tr>
+<tr>
+<td>11121</td>
+<td>Happiness bonus</td>
+</tr>
+<tr>
+<td>11122</td>
+<td>Species</td>
+</tr>
+<tr>
+<td>11123</td>
+<td>Change species</td>
+</tr>
+<tr>
+<td>11126</td>
+<td>Show Script</td>
+</tr>
+<tr>
+<td>11127</td>
+<td>Show Finances</td>
+</tr>
+<tr>
+<td>11130</td>
+<td>Attendance:</td>
+</tr>
+<tr>
+<td>11131</td>
+<td>Income:</td>
+</tr>
+<tr>
+<td>11132</td>
+<td>Upkeep:</td>
+</tr>
+<tr>
+<td>11133</td>
+<td>Profit:</td>
+</tr>
+<tr>
+<td>11134</td>
+<td>Guest benefit:</td>
+</tr>
+<tr>
+<td>11135</td>
+<td>Current</td>
+</tr>
+<tr>
+<td>11136</td>
+<td>Last</td>
+</tr>
+<tr>
+<td>11137</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>11138</td>
+<td>Total</td>
+</tr>
+<tr>
+<td>11170</td>
+<td>Show Script:</td>
+</tr>
+<tr>
+<td>11171</td>
+<td>Show Finances:</td>
+</tr>
+<tr>
+<td>11172</td>
+<td>Months in operation:</td>
+</tr>
+<tr>
+<td>11173</td>
+<td>delete this</td>
+</tr>
+<tr>
+<td>11192</td>
+<td>Never</td>
+</tr>
+<tr>
+<td>11193</td>
+<td>Infrequent</td>
+</tr>
+<tr>
+<td>11194</td>
+<td>Frequent</td>
+</tr>
+<tr>
+<td>11195</td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td>11200</td>
+<td>Wave to Crowd</td>
+</tr>
+<tr>
+<td>11201</td>
+<td>Play with Ball</td>
+</tr>
+<tr>
+<td>11202</td>
+<td>Sideways Breach</td>
+</tr>
+<tr>
+<td>11203</td>
+<td>Beach on Stage</td>
+</tr>
+<tr>
+<td>11204</td>
+<td>Reverse Tail Walking</td>
+</tr>
+<tr>
+<td>11205</td>
+<td>Reverse Breach</td>
+</tr>
+<tr>
+<td>11206</td>
+<td>Feeding Frenzy</td>
+</tr>
+<tr>
+<td>11207</td>
+<td>Bubble Jump</td>
+</tr>
+<tr>
+<td>11208</td>
+<td>Hoop Jump</td>
+</tr>
+<tr>
+<td>11209</td>
+<td>Tail Walk</td>
+</tr>
+<tr>
+<td>11210</td>
+<td>Play with Ball</td>
+</tr>
+<tr>
+<td>11211</td>
+<td>Belly Flop</td>
+</tr>
+<tr>
+<td>11212</td>
+<td>Flip</td>
+</tr>
+<tr>
+<td>11213</td>
+<td>Jump</td>
+</tr>
+<tr>
+<td>11214</td>
+<td>Spin</td>
+</tr>
+<tr>
+<td>11215</td>
+<td>Breach Attack</td>
+</tr>
+<tr>
+<td>11216</td>
+<td>Spray Water</td>
+</tr>
+<tr>
+<td>11217</td>
+<td>Swim Up</td>
+</tr>
+<tr>
+<td>11218</td>
+<td>Swim Down</td>
+</tr>
+<tr>
+<td>11219</td>
+<td>Wave to Crowd</td>
+</tr>
+<tr>
+<td>11220</td>
+<td>Play with Squeeze Horn</td>
+</tr>
+<tr>
+<td>11221</td>
+<td>Play with Beach Ball</td>
+</tr>
+<tr>
+<td>11222</td>
+<td>Breach</td>
+</tr>
+<tr>
+<td>11223</td>
+<td>Surface Spin</td>
+</tr>
+<tr>
+<td>11224</td>
+<td>Wave to Crowd</td>
+</tr>
+<tr>
+<td>11225</td>
+<td>Back Flip</td>
+</tr>
+<tr>
+<td>11226</td>
+<td>Hoop Jump</td>
+</tr>
+<tr>
+<td>11227</td>
+<td>Slam Dunk</td>
+</tr>
+<tr>
+<td>11228</td>
+<td>Jump</td>
+</tr>
+<tr>
+<td>11229</td>
+<td>Surface Spin</td>
+</tr>
+<tr>
+<td>11230</td>
+<td>Wave to Crowd</td>
+</tr>
+<tr>
+<td>11299</td>
+<td>Return for Treat</td>
+</tr>
+<tr>
+<td>11300</td>
+<td>Requirements: show tank 4 units deep</td>
+</tr>
+<tr>
+<td>11301</td>
+<td>Requirements: orca ball and show tank 8 units deep.</td>
+</tr>
+<tr>
+<td>11302</td>
+<td>Requirements: advanced trick area and show tank 8 units deep.</td>
+</tr>
+<tr>
+<td>11303</td>
+<td>Requirements: orca stage and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11304</td>
+<td>Requirements: research and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11305</td>
+<td>Requirements: research, advanced trick area, and show tank 8 units deep.</td>
+</tr>
+<tr>
+<td>11306</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11307</td>
+<td>Requirements: research, advanced trick area, and show tank 8 units deep.</td>
+</tr>
+<tr>
+<td>11308</td>
+<td>Requirements: dolphin hoop and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11309</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11310</td>
+<td>Requirements: dolphin ball and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11311</td>
+<td>Requirements: research and show tank 8 units deep.</td>
+</tr>
+<tr>
+<td>11312</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11313</td>
+<td>Requirements: show tank 8 units deep.</td>
+</tr>
+<tr>
+<td>11314</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11315</td>
+<td>Requirements: research and show tank 2 units deep.</td>
+</tr>
+<tr>
+<td>11316</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11317</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11318</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11319</td>
+<td>Requirements: sea lion raft and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11320</td>
+<td>Requirements: sea lion squeeze horn and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11321</td>
+<td>Requirements: sea lion beach ball and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11322</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11323</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11324</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11325</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11326</td>
+<td>Requirements: sea otter hoop and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11327</td>
+<td>Requirements: sea otter ball and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11328</td>
+<td>Requirements: research and show tank 2 units deep.</td>
+</tr>
+<tr>
+<td>11329</td>
+<td>Requirements: research and show tank 2 units deep.</td>
+</tr>
+<tr>
+<td>11330</td>
+<td>Requirements: show tank 2 units deep.</td>
+</tr>
+<tr>
+<td>11400</td>
+<td>Requirements: show tank 4 units deep</td>
+</tr>
+<tr>
+<td>11401</td>
+<td>Requirements: orca ball and show tank 8 units deep.</td>
+</tr>
+<tr>
+<td>11402</td>
+<td>Requirements: advanced trick area and show tank 8 units deep.</td>
+</tr>
+<tr>
+<td>11403</td>
+<td>Requirements: orca stage and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11404</td>
+<td>Requirements: research and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11405</td>
+<td>Requirements: research, advanced trick area, and show tank 8 units deep.</td>
+</tr>
+<tr>
+<td>11406</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11407</td>
+<td>Requirements: research, advanced trick area, and show tank 8 units deep.</td>
+</tr>
+<tr>
+<td>11408</td>
+<td>Requirements: dolphin hoop and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11409</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11410</td>
+<td>Requirements: dolphin ball and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11411</td>
+<td>Requirements: research and show tank 8 units deep.</td>
+</tr>
+<tr>
+<td>11412</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11413</td>
+<td>Requirements: show tank 8 units deep.</td>
+</tr>
+<tr>
+<td>11414</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11415</td>
+<td>Requirements: research and show tank 2 units deep.</td>
+</tr>
+<tr>
+<td>11416</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11417</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11418</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11419</td>
+<td>Requirements: sea lion raft and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11420</td>
+<td>Requirements: sea lion squeeze horn and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11421</td>
+<td>Requirements: sea lion beach ball and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11422</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11423</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11424</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11425</td>
+<td>Requirements: show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11426</td>
+<td>Requirements: sea otter hoop and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11427</td>
+<td>Requirements: sea otter ball and show tank 4 units deep.</td>
+</tr>
+<tr>
+<td>11428</td>
+<td>Requirements: research and show tank 2 units deep.</td>
+</tr>
+<tr>
+<td>11429</td>
+<td>Requirements: research and show tank 2 units deep.</td>
+</tr>
+<tr>
+<td>11430</td>
+<td>Requirements: show tank 2 units deep.</td>
+</tr>
+<tr>
+<td>11490</td>
+<td>A marine specialist will be starting a show shortly in %s.</td>
+</tr>
+<tr>
+<td>11491</td>
+<td>A show is starting in %s.</td>
+</tr>
+<tr>
+<td>11492</td>
+<td>The show has ended in %s.</td>
+</tr>
+<tr>
+<td>11493</td>
+<td>You can't add any more tricks to this show.</td>
+</tr>
+<tr>
+<td>11513</td>
+<td>Play selected map.</td>
+</tr>
+<tr>
+<td>11514</td>
+<td>Return to main menu.</td>
+</tr>
+<tr>
+<td>16019</td>
+<td>Dinosaur Digs: TUTORIAL 1 - Dinosaur Digs Tutorial</td>
+</tr>
+<tr>
+<td>16027</td>
+<td>Marine Mania: TUTORIAL 1 - Building exhibits</td>
+</tr>
+<tr>
+<td>16028</td>
+<td>Marine Mania: TUTORIAL 2 - Creating animal shows</td>
+</tr>
+<tr>
+<td>16029</td>
+<td>Marine Mania: Orca Show (Beginner)</td>
+</tr>
+<tr>
+<td>16030</td>
+<td>Marine Mania: Shark World (Beginner)</td>
+</tr>
+<tr>
+<td>16031</td>
+<td>Marine Mania: Seasideville Dolphin Park (Beginner)</td>
+</tr>
+<tr>
+<td>16032</td>
+<td>Marine Mania: Save the Marine Animals (Intermediate)</td>
+</tr>
+<tr>
+<td>16033</td>
+<td>Marine Mania: Aquatic Show Park (Intermediate)</td>
+</tr>
+<tr>
+<td>16034</td>
+<td>Marine Mania: Free Admission (Intermediate)</td>
+</tr>
+<tr>
+<td>16035</td>
+<td>Marine Mania: Marine Conservation (Advanced)</td>
+</tr>
+<tr>
+<td>16036</td>
+<td>Marine Mania: Save the Zoo (Advanced)</td>
+</tr>
+<tr>
+<td>16037</td>
+<td>Marine Mania: Giant Marine Park (Very Advanced)</td>
+</tr>
+<tr>
+<td>16038</td>
+<td>Marine Mania: Super Zoo (Very Advanced)</td>
+</tr>
+<tr>
+<td>16039</td>
+<td>Marine Mania: TUTORIAL 3 - Combined animal exhibits</td>
+</tr>
+<tr>
+<td>16043</td>
+<td>Marine Mania: Oceans of the World (Intermediate)</td>
+</tr>
+<tr>
+<td>17014</td>
+<td>Earn a Net Income of %m.</td>
+</tr>
+<tr>
+<td>17745</td>
+<td>Research Sea Mammal Rescue program.</td>
+</tr>
+<tr>
+<td>17746</td>
+<td>Research Beluga Care program.</td>
+</tr>
+<tr>
+<td>17747</td>
+<td>Research Oil Exposure program.</td>
+</tr>
+<tr>
+<td>17748</td>
+<td>Research Baby Humpback Whale Care program.</td>
+</tr>
+<tr>
+<td>17749</td>
+<td>Improve the exhibit suitability rating of the initial animals to 90.</td>
+</tr>
+<tr>
+<td>17750</td>
+<td>Achieve an average animal happiness rating of 90 for the initial animals in the zoo.</td>
+</tr>
+<tr>
+<td>17751</td>
+<td>Exhibit at least %d zoo animals.</td>
+</tr>
+<tr>
+<td>17752</td>
+<td>Exhibit at least %d dinosaurs.</td>
+</tr>
+<tr>
+<td>17753</td>
+<td>Exhibit at least %d marine animals.</td>
+</tr>
+<tr>
+<td>17754</td>
+<td>Build a dolphin exhibit with tank walls.</td>
+</tr>
+<tr>
+<td>17755</td>
+<td>Change tank water to fresh water then back to salt water.</td>
+</tr>
+<tr>
+<td>17756</td>
+<td>Adopt and place a bottlenose dolphin in the marine exhibit.</td>
+</tr>
+<tr>
+<td>17757</td>
+<td>Hire a marine specialist.</td>
+</tr>
+<tr>
+<td>17758</td>
+<td>Purchase a tank filter.</td>
+</tr>
+<tr>
+<td>17759</td>
+<td>Drain the tank.</td>
+</tr>
+<tr>
+<td>17760</td>
+<td>Filter game content by Marine Mania.</td>
+</tr>
+<tr>
+<td>17761</td>
+<td>Build an orca show exhibit adjacent to the orca exhibit.</td>
+</tr>
+<tr>
+<td>17762</td>
+<td>Adopt and place an orca in the tank exhibit.</td>
+</tr>
+<tr>
+<td>17763</td>
+<td>Purchase a performance area.</td>
+</tr>
+<tr>
+<td>17764</td>
+<td>Purchase an orca ball.</td>
+</tr>
+<tr>
+<td>17765</td>
+<td>Purchase and place 3 grandstands.</td>
+</tr>
+<tr>
+<td>17766</td>
+<td>Create an orca show schedule.</td>
+</tr>
+<tr>
+<td>17767</td>
+<td>Fund research for a trick program.</td>
+</tr>
+<tr>
+<td>17768</td>
+<td>17768</td>
+</tr>
+<tr>
+<td>17769</td>
+<td>Hire a zookeeper.</td>
+</tr>
+<tr>
+<td>17770</td>
+<td>Purchase and place a swim with dolphins building.</td>
+</tr>
+<tr>
+<td>17771</td>
+<td>Make a duplicate of the penguin exhibit.</td>
+</tr>
+<tr>
+<td>17772</td>
+<td>Purchase and place kelp foliage in the dolphin exhibit.</td>
+</tr>
+<tr>
+<td>17773</td>
+<td>Change the orca show frequency to infrequent.</td>
+</tr>
+<tr>
+<td>17774</td>
+<td>Add a trick to the orca's show script.</td>
+</tr>
+<tr>
+<td>17775</td>
+<td>Purchase a tank filter.</td>
+</tr>
+<tr>
+<td>17776</td>
+<td>Raise the exhibit tank base.</td>
+</tr>
+<tr>
+<td>17777</td>
+<td>Raise the exhibit tank walls.</td>
+</tr>
+<tr>
+<td>17778</td>
+<td>Have an income of %m, in the last month, for all animal shows.</td>
+</tr>
+<tr>
+<td>17779</td>
+<td>Earn a total income of %m for all animal shows.</td>
+</tr>
+<tr>
+<td>17780</td>
+<td>Earn a profit of %m, in the last month, for all animal shows.</td>
+</tr>
+<tr>
+<td>17781</td>
+<td>Earn a total profit of %m for all animal shows.</td>
+</tr>
+<tr>
+<td>17782</td>
+<td>Record an attendance of %m for all animal shows.</td>
+</tr>
+<tr>
+<td>17783</td>
+<td>Earn an income of %m, in the last month, for all %r shows.</td>
+</tr>
+<tr>
+<td>17784</td>
+<td>Earn a total income of %m for all %r shows.</td>
+</tr>
+<tr>
+<td>17785</td>
+<td>Earn a profit of %m, in the last month, for all %r shows.</td>
+</tr>
+<tr>
+<td>17786</td>
+<td>Earn a total profit of %m for all %r shows.</td>
+</tr>
+<tr>
+<td>17787</td>
+<td>Record an attendance of %m for all %r shows.</td>
+</tr>
+<tr>
+<td>17788</td>
+<td>Lower the exhibit tank walls.</td>
+</tr>
+<tr>
+<td>17789</td>
+<td>Lower the exhibit tank base.</td>
+</tr>
+<tr>
+<td>17790</td>
+<td>Fill the tank.</td>
+</tr>
+<tr>
+<td>17791</td>
+<td>View the show animals, then filter content by Marine Mania.</td>
+</tr>
+<tr>
+<td>17792</td>
+<td>Add the 'play with ball' trick to the orca's script.</td>
+</tr>
+<tr>
+<td>17793</td>
+<td>Complete the land exhibit next to the walrus tank.</td>
+</tr>
+<tr>
+<td>17794</td>
+<td>Lower the walrus tank to be flush with the land exhibit.</td>
+</tr>
+<tr>
+<td>17795</td>
+<td>Lower the show tank so that the pass-through gate appears.</td>
+</tr>
+<tr>
+<td>17796</td>
+<td>Exhibit at least %d animals from the %r.</td>
+</tr>
+<tr>
+<td>17797</td>
+<td>Earn an exhibit suitability rating of at least 85 for 1 Orca exhibit.</td>
+</tr>
+<tr>
+<td>17798</td>
+<td>Exhibit 2 Hammerhead Shark(s).</td>
+</tr>
+<tr>
+<td>17799</td>
+<td>Exhibit 2 Mako Shark(s).</td>
+</tr>
+<tr>
+<td>17800</td>
+<td>Exhibit 2 Tiger Shark(s).</td>
+</tr>
+<tr>
+<td>17801</td>
+<td>Exhibit 2 Great White Shark(s).</td>
+</tr>
+<tr>
+<td>22026</td>
+<td>Software\Microsoft\Microsoft Games\Zoo Tycoon\1.2</td>
+</tr>
+<tr>
+<td>22027</td>
+<td>EULAXP2.rtf</td>
+</tr>
+<tr>
+<td>22028</td>
+<td>Warranty.rtf</td>
+</tr>
+<tr>
+<td>22029</td>
+<td>Eulaxp2.dll</td>
+</tr>
+<tr>
+<td>22211</td>
+<td>Total Cash</td>
+</tr>
+<tr>
+<td>22212</td>
+<td>Zoo Value</td>
+</tr>
+<tr>
+<td>22213</td>
+<td>Show Income</td>
+</tr>
+<tr>
+<td>22214</td>
+<td>Net Income</td>
+</tr>
+<tr>
+<td>22903</td>
+<td>Marine Mania</td>
+</tr>
+<tr>
+<td>22999</td>
+<td>Click to filter content by Zoo Tycoon, all content or by specific expansion pack.</td>
+</tr>
+<tr>
+<td>23021</td>
+<td>%s: All selected programs have been completed.</td>
+</tr>
+<tr>
+<td>23054</td>
+<td>Research</td>
+</tr>
+<tr>
+<td>23217</td>
+<td>Orca Tricks</td>
+</tr>
+<tr>
+<td>23218</td>
+<td>Great White Shark Tricks</td>
+</tr>
+<tr>
+<td>23219</td>
+<td>B. Dolphin Tricks</td>
+</tr>
+<tr>
+<td>23220</td>
+<td>Aquatic Foliage</td>
+</tr>
+<tr>
+<td>23221</td>
+<td>Aquatic Houses</td>
+</tr>
+<tr>
+<td>23222</td>
+<td>Aquatic Animals</td>
+</tr>
+<tr>
+<td>23223</td>
+<td>Aquatic Animal Care</td>
+</tr>
+<tr>
+<td>23224</td>
+<td>M. Specialist Training</td>
+</tr>
+<tr>
+<td>23225</td>
+<td>Marine Recovery</td>
+</tr>
+<tr>
+<td>23226</td>
+<td>Sea Otter Tricks</td>
+</tr>
+<tr>
+<td>23227</td>
+<td>23227</td>
+</tr>
+<tr>
+<td>23402</td>
+<td>Reverse Tail Walking</td>
+</tr>
+<tr>
+<td>23403</td>
+<td>Reverse Breach</td>
+</tr>
+<tr>
+<td>23404</td>
+<td>Feeding Frenzy</td>
+</tr>
+<tr>
+<td>23405</td>
+<td>Breach Attack</td>
+</tr>
+<tr>
+<td>23406</td>
+<td>Bubble Jump</td>
+</tr>
+<tr>
+<td>23407</td>
+<td>Belly Flop</td>
+</tr>
+<tr>
+<td>23408</td>
+<td>Crustacean House</td>
+</tr>
+<tr>
+<td>23409</td>
+<td>Tropical Aquarium</td>
+</tr>
+<tr>
+<td>23410</td>
+<td>Clownfish of the Pacific</td>
+</tr>
+<tr>
+<td>23411</td>
+<td>Angelfish of the Amazon</td>
+</tr>
+<tr>
+<td>23412</td>
+<td>Blue Tang of Bermuda</td>
+</tr>
+<tr>
+<td>23413</td>
+<td>Crayfish of the Mississippi</td>
+</tr>
+<tr>
+<td>23414</td>
+<td>Horseshoe Crabs of Delaware Bay</td>
+</tr>
+<tr>
+<td>23415</td>
+<td>Spider Crabs of the North Atlantic</td>
+</tr>
+<tr>
+<td>23416</td>
+<td>Narwhal</td>
+</tr>
+<tr>
+<td>23417</td>
+<td>Shortfin Mako Shark</td>
+</tr>
+<tr>
+<td>23418</td>
+<td>Great White Shark</td>
+</tr>
+<tr>
+<td>23419</td>
+<td>Humpback Whale</td>
+</tr>
+<tr>
+<td>23420</td>
+<td>Sea Lettuce</td>
+</tr>
+<tr>
+<td>23421</td>
+<td>Divercate Tree Coral</td>
+</tr>
+<tr>
+<td>23422</td>
+<td>Sea Anemone</td>
+</tr>
+<tr>
+<td>23423</td>
+<td>Sea Star</td>
+</tr>
+<tr>
+<td>23424</td>
+<td>Marine Specialist Training 1</td>
+</tr>
+<tr>
+<td>23425</td>
+<td>Marine Specialist Training 2</td>
+</tr>
+<tr>
+<td>23426</td>
+<td>Maintenance Worker Training 3</td>
+</tr>
+<tr>
+<td>23427</td>
+<td>Aquatic Animal Antibiotics</td>
+</tr>
+<tr>
+<td>23428</td>
+<td>Aquatic Animal Longevity</td>
+</tr>
+<tr>
+<td>23429</td>
+<td>Sea Mammal Rescue</td>
+</tr>
+<tr>
+<td>23430</td>
+<td>Beluga Care</td>
+</tr>
+<tr>
+<td>23431</td>
+<td>Oil Exposure</td>
+</tr>
+<tr>
+<td>23432</td>
+<td>Baby Humpback Whale Care</td>
+</tr>
+<tr>
+<td>23433</td>
+<td>Paddle Boat</td>
+</tr>
+<tr>
+<td>23434</td>
+<td>Kayak</td>
+</tr>
+<tr>
+<td>23435</td>
+<td>Swan Boat</td>
+</tr>
+<tr>
+<td>23436</td>
+<td>Jump</td>
+</tr>
+<tr>
+<td>23437</td>
+<td>Surface Spin</td>
+</tr>
+<tr>
+<td>23445</td>
+<td>Spin</td>
+</tr>
+<tr>
+<td>23446</td>
+<td>Wave to Crowd</td>
+</tr>
+<tr>
+<td>23501</td>
+<td>This program allows you to adopt lowland gorillas.</td>
+</tr>
+<tr>
+<td>23502</td>
+<td>This program allows you to adopt black leopards.</td>
+</tr>
+<tr>
+<td>23503</td>
+<td>This program allows you to adopt white Bengal tigers.</td>
+</tr>
+<tr>
+<td>23504</td>
+<td>This program allows you to adopt snow leopards.</td>
+</tr>
+<tr>
+<td>23505</td>
+<td>This program allows you to adopt giant pandas.</td>
+</tr>
+<tr>
+<td>23506</td>
+<td>This program allows you to adopt okapis.</td>
+</tr>
+<tr>
+<td>23507</td>
+<td>This project allows you to grow thorn acacia trees, which are favored by African savannah animals.</td>
+</tr>
+<tr>
+<td>23508</td>
+<td>This project allows you to grow llala palm trees, which are favored by tropical rainforest animals.</td>
+</tr>
+<tr>
+<td>23509</td>
+<td>This project allows you to grow bamboo, the favorite food of the giant panda.</td>
+</tr>
+<tr>
+<td>23510</td>
+<td>This project allows you to grow acacia caffra trees, which are favored by African savannah animals.</td>
+</tr>
+<tr>
+<td>23511</td>
+<td>This project allows you to grow globe willow trees, which are favored by moose.</td>
+</tr>
+<tr>
+<td>23512</td>
+<td>This project allows you to purchase a small burrow, which is favored by warthogs.</td>
+</tr>
+<tr>
+<td>23513</td>
+<td>This project allows you to purchase a small elephant shelter.</td>
+</tr>
+<tr>
+<td>23514</td>
+<td>This project allows you to purchase a small giraffe shelter.</td>
+</tr>
+<tr>
+<td>23515</td>
+<td>This project allows you to purchase a rock cave, the favorite shelter of big-cats and bears.</td>
+</tr>
+<tr>
+<td>23516</td>
+<td>This project allows you to purchase a snowy rock cave, which is favored by polar bears.</td>
+</tr>
+<tr>
+<td>23517</td>
+<td>This project allows you to purchase a stable, the favorite shelter of large hoofed animals.</td>
+</tr>
+<tr>
+<td>23518</td>
+<td>This program allows you to purchase a Reptile House.</td>
+</tr>
+<tr>
+<td>23519</td>
+<td>This program allows you to purchase an Aviary.</td>
+</tr>
+<tr>
+<td>23520</td>
+<td>This program allows you to purchase a Primate House.</td>
+</tr>
+<tr>
+<td>23521</td>
+<td>Animals will become happier when a zookeeper enters their exhibit.</td>
+</tr>
+<tr>
+<td>23522</td>
+<td>Maintenance workers will be able to clean trash more efficiently.</td>
+</tr>
+<tr>
+<td>23523</td>
+<td>Zookeepers will be able to feed the animals more quickly.</td>
+</tr>
+<tr>
+<td>23524</td>
+<td>Guests will be happier when listening to the tour guides.</td>
+</tr>
+<tr>
+<td>23525</td>
+<td>Zookeepers will save money on the upkeep of the animals.</td>
+</tr>
+<tr>
+<td>23526</td>
+<td>Maintenance workers will be able to repair exhibit fences faster.</td>
+</tr>
+<tr>
+<td>23527</td>
+<td>This project increases the nutritional value of the animal's food.</td>
+</tr>
+<tr>
+<td>23528</td>
+<td>This project increases the reproduction rates of the animals.</td>
+</tr>
+<tr>
+<td>23529</td>
+<td>This project reduces the cost of the animal's food.</td>
+</tr>
+<tr>
+<td>23530</td>
+<td>This project introduces an inoculation program for the animals making them less likely to catch diseases.</td>
+</tr>
+<tr>
+<td>23531</td>
+<td>This project allows you to purchase chimpanzee bars.</td>
+</tr>
+<tr>
+<td>23532</td>
+<td>This project allows you to purchase a lion climbing rock, upon which only lions lounge.</td>
+</tr>
+<tr>
+<td>23533</td>
+<td>This project allows you to purchase a swinging log toy.</td>
+</tr>
+<tr>
+<td>23534</td>
+<td>This project allows you to purchase gorilla climbing bars.</td>
+</tr>
+<tr>
+<td>23535</td>
+<td>This project allows you to purchase a cat climbing tree, which is favored by leopards.</td>
+</tr>
+<tr>
+<td>23536</td>
+<td>This project allows you to purchase large chimpanzee bars.</td>
+</tr>
+<tr>
+<td>23537</td>
+<td>This project allows you to purchase a large ball.</td>
+</tr>
+<tr>
+<td>23538</td>
+<td>This program allows you to select primates of Southeast Asia for the Primate House.</td>
+</tr>
+<tr>
+<td>23539</td>
+<td>This program allows you to select birds of Africa for the Aviary.</td>
+</tr>
+<tr>
+<td>23540</td>
+<td>This program allows you to select deadly snakes of the world for the Reptile House.</td>
+</tr>
+<tr>
+<td>23541</td>
+<td>This program allows you to select raptors of the World for the Aviary.</td>
+</tr>
+<tr>
+<td>23542</td>
+<td>This program allows you to select lemurs of Madagascar for the Primate House.</td>
+</tr>
+<tr>
+<td>23543</td>
+<td>This program allows you to select venomous Spiders for the Insect House.</td>
+</tr>
+<tr>
+<td>23544</td>
+<td>This program allows you to purchase an Insect House.</td>
+</tr>
+<tr>
+<td>23545</td>
+<td>This program allows you to select endangered primates of the world for the Primate House.</td>
+</tr>
+<tr>
+<td>23546</td>
+<td>This program allows you to select birds of the tropical rainforest for the Aviary.</td>
+</tr>
+<tr>
+<td>23547</td>
+<td>This program allows you to select reptiles of the rainforest for the Reptile House.</td>
+</tr>
+<tr>
+<td>23548</td>
+<td>This program allows you to select scorpions of Africa for the Insect House.</td>
+</tr>
+<tr>
+<td>23549</td>
+<td>This project makes the pandas happier when a zookeeper enters their exhibit.</td>
+</tr>
+<tr>
+<td>23550</td>
+<td>This project increases the reproduction rate of the pandas.</td>
+</tr>
+<tr>
+<td>23551</td>
+<td>This project introduces an inoculation program for the pandas, making them less likely to catch diseases.</td>
+</tr>
+<tr>
+<td>23552</td>
+<td>This project allows you to purchase a concrete shelter.</td>
+</tr>
+<tr>
+<td>23553</td>
+<td>This project allows you to purchase a lean-to shelter.</td>
+</tr>
+<tr>
+<td>23554</td>
+<td>This project allows you to purchase a panda cave shelter.</td>
+</tr>
+<tr>
+<td>23555</td>
+<td>This project allows you to purchase a large elephant shelter.</td>
+</tr>
+<tr>
+<td>23556</td>
+<td>This project allows you to purchase a large giraffe shelter.</td>
+</tr>
+<tr>
+<td>23557</td>
+<td>This project allows you to purchase a burrow, which is favored by warthogs.</td>
+</tr>
+<tr>
+<td>23558</td>
+<td>This project allows you to purchase a large lean-to shelter.</td>
+</tr>
+<tr>
+<td>23559</td>
+<td>This project allows you to purchase a large concrete shelter.</td>
+</tr>
+<tr>
+<td>23560</td>
+<td>This project allows you to purchase a wood shelter.</td>
+</tr>
+<tr>
+<td>23561</td>
+<td>This project allows you to purchase a large wood shelter.</td>
+</tr>
+<tr>
+<td>23562</td>
+<td>This project allows you to purchase a large stable, the favorite shelter of large hoofed animals.</td>
+</tr>
+<tr>
+<td>23563</td>
+<td>This project allows you to purchase a large burrow, which is favored by warthogs.</td>
+</tr>
+<tr>
+<td>23565</td>
+<td>This program allows you to purchase a Pteranodon House.</td>
+</tr>
+<tr>
+<td>23566</td>
+<td>This program allows you to purchase a Lepospondyl House.</td>
+</tr>
+<tr>
+<td>23567</td>
+<td>This program allows you to select Pterodactylus of the late Jurassic for the Pteranodon House.</td>
+</tr>
+<tr>
+<td>23568</td>
+<td>This program allows you to select Ramphorhyncus of the late Jurassic for the Pteranodon House.</td>
+</tr>
+<tr>
+<td>23569</td>
+<td>This program allows you to select Dimorphodon of the early Jurassic for the Pteranodon House.</td>
+</tr>
+<tr>
+<td>23570</td>
+<td>This program allows you to select Triadobatrachus of the Triassic for the Lepospondyl House.</td>
+</tr>
+<tr>
+<td>23571</td>
+<td>This program allows you to select Karaurus of the Jurassic for the Lepospondyl House.</td>
+</tr>
+<tr>
+<td>23572</td>
+<td>This program allows you to select Diplocaulus of the Permian for the Lepospondyl House.</td>
+</tr>
+<tr>
+<td>23573</td>
+<td>this project increases the nutritional value of the dinosaur's food.</td>
+</tr>
+<tr>
+<td>23574</td>
+<td>this project reduces the cost of the dinosaurs' food.</td>
+</tr>
+<tr>
+<td>23575</td>
+<td>this project introduces an inoculation program for the dinosaurs making them less likely to catch diseases.</td>
+</tr>
+<tr>
+<td>23576</td>
+<td>this project introduces measures that allow dinosaurs to live longer.</td>
+</tr>
+<tr>
+<td>23577</td>
+<td>Tyrannosaurus rex will become happier when a scientist enters their exhibit.</td>
+</tr>
+<tr>
+<td>23578</td>
+<td>This project introduces an inoculation program for Tyrannosaurus rex, making them less likely to catch diseases.</td>
+</tr>
+<tr>
+<td>23579</td>
+<td>This project makes Tryannosaurus rex tolerant of more T. rex in its exhibit.</td>
+</tr>
+<tr>
+<td>23580</td>
+<td>This project allows you to adopt a tyrannosaurus rex.</td>
+</tr>
+<tr>
+<td>23581</td>
+<td>This project allows you to adopt a spinosaurus.</td>
+</tr>
+<tr>
+<td>23583</td>
+<td>This project allows you to adopt a kentrosaurus.</td>
+</tr>
+<tr>
+<td>23584</td>
+<td>This project allows you to adopt a wooly mammoth.</td>
+</tr>
+<tr>
+<td>23585</td>
+<td>This project allows you to adopt a plesiosaurus.</td>
+</tr>
+<tr>
+<td>23586</td>
+<td>This project allows you to adopt a velociraptor.</td>
+</tr>
+<tr>
+<td>23587</td>
+<td>This project allows you to adopt an ankylosaurus.</td>
+</tr>
+<tr>
+<td>23588</td>
+<td>This project allows you to adopt a coelophysis.</td>
+</tr>
+<tr>
+<td>23589</td>
+<td>This project allows you to adopt an apatosaurus.</td>
+</tr>
+<tr>
+<td>23590</td>
+<td>This project allows you to grow monkey puzzle trees, which are favored by the Tyrannosaurus rex.</td>
+</tr>
+<tr>
+<td>23591</td>
+<td>This project allows you to grow thouarsus cycads, which are favored by the Coelophysis.</td>
+</tr>
+<tr>
+<td>23592</td>
+<td>This project allows you to grow glossopteris trees, which are favored by the Plateosaurus.</td>
+</tr>
+<tr>
+<td>23593</td>
+<td>This project allows you to grow club moss shrubs, which are favored by the Kentrosaurus.</td>
+</tr>
+<tr>
+<td>23594</td>
+<td>This project allows you to grow horsetails, which are favored by the Plesiosaurus.</td>
+</tr>
+<tr>
+<td>23595</td>
+<td>This project allows you to grow bald cypress trees, which are favored by the Ankylosaurus.</td>
+</tr>
+<tr>
+<td>23596</td>
+<td>This project allows you to grow dawn redwood trees, which are favored by Velociraptors.</td>
+</tr>
+<tr>
+<td>23597</td>
+<td>This project allows you to grow Norfolk Island pine trees, which are favored by Spinosaurs.</td>
+</tr>
+<tr>
+<td>23598</td>
+<td>This project allows you to grow arctic birch trees, which are favored by Wooly Mammoths.</td>
+</tr>
+<tr>
+<td>23599</td>
+<td>Dinosaurs will become happier when a scientist enters their exhibit.</td>
+</tr>
+<tr>
+<td>23600</td>
+<td>Scientists will be able to distribute more food upon each exhibit visit.</td>
+</tr>
+<tr>
+<td>23601</td>
+<td>Scientists will be able to walk faster.</td>
+</tr>
+<tr>
+<td>23602</td>
+<td>This program allows the orca to reverse tail walk during performances.</td>
+</tr>
+<tr>
+<td>23603</td>
+<td>This program allows the orca to breach backwards during performances.</td>
+</tr>
+<tr>
+<td>23604</td>
+<td>This program allows the Great White Shark to go into a feeding frenzy during performances.</td>
+</tr>
+<tr>
+<td>23605</td>
+<td>This program allows the Great White Shark to breach attack during performances.</td>
+</tr>
+<tr>
+<td>23606</td>
+<td>This program allows the Bottlenose Dolphin to jump through a bubble during performances.</td>
+</tr>
+<tr>
+<td>23607</td>
+<td>This program allows the Bottlenose Dolphin to belly flop during performances.</td>
+</tr>
+<tr>
+<td>23608</td>
+<td>This program allows you to purchase a Crustacean House.</td>
+</tr>
+<tr>
+<td>23609</td>
+<td>This program allows you to purchase a Tropical Aquarium.</td>
+</tr>
+<tr>
+<td>23610</td>
+<td>This program allows you to select Clownfish of the Pacific for the Tropical Aquarium.</td>
+</tr>
+<tr>
+<td>23611</td>
+<td>This program allows you to select Angelfish of the Amazon for the Tropical Aquarium.</td>
+</tr>
+<tr>
+<td>23612</td>
+<td>This program allows you to select Blue Tang of Bermuda for the Tropical Aquarium.</td>
+</tr>
+<tr>
+<td>23613</td>
+<td>This program allows you to select Crayfish of the Mississippi for the Crustacean House.</td>
+</tr>
+<tr>
+<td>23614</td>
+<td>This program allows you to select Horseshoe Crabs of Delaware Bay for the Crustacean House.</td>
+</tr>
+<tr>
+<td>23615</td>
+<td>This program allows you to select Spider Crabs of the North Atlantic for the Crustacean House.</td>
+</tr>
+<tr>
+<td>23616</td>
+<td>This project allows you to adopt a narwhal.</td>
+</tr>
+<tr>
+<td>23617</td>
+<td>This project allows you to adopt a shortfin mako shark.</td>
+</tr>
+<tr>
+<td>23618</td>
+<td>This project allows you to adopt a great white shark.</td>
+</tr>
+<tr>
+<td>23619</td>
+<td>This project allows you to adopt a humpback whale.</td>
+</tr>
+<tr>
+<td>23620</td>
+<td>This project allows you to purchase sea lettuce, which is favored by narwhals.</td>
+</tr>
+<tr>
+<td>23621</td>
+<td>This project allows you to purchase divercate tree coral, which is favored by mako sharks.</td>
+</tr>
+<tr>
+<td>23622</td>
+<td>This project allows you to purchase sea anemones.</td>
+</tr>
+<tr>
+<td>23623</td>
+<td>This project allows you to purchase sea stars, which are favored by humpback whales.</td>
+</tr>
+<tr>
+<td>23624</td>
+<td>Marine specialists are able to walk and swim faster.</td>
+</tr>
+<tr>
+<td>23625</td>
+<td>Aquatic animal tricks are researched faster.</td>
+</tr>
+<tr>
+<td>23626</td>
+<td>Maintenance workers can fix tank filters so that they remain efficient longer.</td>
+</tr>
+<tr>
+<td>23627</td>
+<td>This project introduces an inoculation program for the aquatic animals making them less likely to catch diseases.</td>
+</tr>
+<tr>
+<td>23628</td>
+<td>This project introduces measures that allow aquatic animals to live longer.</td>
+</tr>
+<tr>
+<td>23629</td>
+<td>This project introduces animal specific medical services to care for manatees.</td>
+</tr>
+<tr>
+<td>23630</td>
+<td>This project introduces animal specific medical services to care for belugas.</td>
+</tr>
+<tr>
+<td>23631</td>
+<td>This project introduces animal specific medical services to care for manta rays.</td>
+</tr>
+<tr>
+<td>23632</td>
+<td>This project introduces animal specific medical services to care for humpback whales.</td>
+</tr>
+<tr>
+<td>23633</td>
+<td>This program allows you to select the paddle boat for the boat rental shack.</td>
+</tr>
+<tr>
+<td>23634</td>
+<td>This program allows you to select the kayak for the boat rental shack.</td>
+</tr>
+<tr>
+<td>23635</td>
+<td>This program allows you to select the swan boat for the boat rental shack.</td>
+</tr>
+<tr>
+<td>23636</td>
+<td>This program allows the southern sea otter to jump during performances.</td>
+</tr>
+<tr>
+<td>23637</td>
+<td>This program allows the southern sea otter to spin at the tank surface during performances.</td>
+</tr>
+<tr>
+<td>23645</td>
+<td>This program allows the bottlenose dolphin to spin at the tank surface during performances.</td>
+</tr>
+<tr>
+<td>23646</td>
+<td>This program allows the bottlenose dolphin to wave to the crowd at the tank surface during performances.</td>
+</tr>
+<tr>
+<td>24217</td>
+<td>Orca Tricks</td>
+</tr>
+<tr>
+<td>24218</td>
+<td>Great White Shark Tricks</td>
+</tr>
+<tr>
+<td>24219</td>
+<td>Bottlenose Dolphin Tricks</td>
+</tr>
+<tr>
+<td>24220</td>
+<td>Aquatic Foliage</td>
+</tr>
+<tr>
+<td>24322</td>
+<td>Reverse Tail Walking</td>
+</tr>
+<tr>
+<td>24323</td>
+<td>Reverse Breach</td>
+</tr>
+<tr>
+<td>24324</td>
+<td>Feeding Frenzy</td>
+</tr>
+<tr>
+<td>24325</td>
+<td>Breach Attack</td>
+</tr>
+<tr>
+<td>24326</td>
+<td>Bubble Jump</td>
+</tr>
+<tr>
+<td>24327</td>
+<td>Belly Flop</td>
+</tr>
+<tr>
+<td>24328</td>
+<td>Crustacean House</td>
+</tr>
+<tr>
+<td>24329</td>
+<td>Tropical Aquarium</td>
+</tr>
+<tr>
+<td>24330</td>
+<td>Clownfish of the Pacific</td>
+</tr>
+<tr>
+<td>24331</td>
+<td>Angelfish of the Amazon</td>
+</tr>
+<tr>
+<td>24332</td>
+<td>Blue Tang of Bermuda</td>
+</tr>
+<tr>
+<td>24333</td>
+<td>Crayfish of the Mississippi</td>
+</tr>
+<tr>
+<td>24334</td>
+<td>Horseshoe Crabs of Delaware Bay</td>
+</tr>
+<tr>
+<td>24335</td>
+<td>Spider Crabs of the North Atlantic</td>
+</tr>
+<tr>
+<td>24336</td>
+<td>Narwhal</td>
+</tr>
+<tr>
+<td>24337</td>
+<td>Shortfin Mako Shark</td>
+</tr>
+<tr>
+<td>24338</td>
+<td>Great White Shark</td>
+</tr>
+<tr>
+<td>24339</td>
+<td>Humpback Whale</td>
+</tr>
+<tr>
+<td>24340</td>
+<td>Sea Lettuce</td>
+</tr>
+<tr>
+<td>24341</td>
+<td>Divercate Tree Coral</td>
+</tr>
+<tr>
+<td>24342</td>
+<td>Sea Anemone</td>
+</tr>
+<tr>
+<td>24343</td>
+<td>Sea Star</td>
+</tr>
+<tr>
+<td>24344</td>
+<td>Marine Specialist Training 1</td>
+</tr>
+<tr>
+<td>24345</td>
+<td>Marine Specialist Training 2</td>
+</tr>
+<tr>
+<td>24346</td>
+<td>Maintenance Worker Training 3</td>
+</tr>
+<tr>
+<td>24347</td>
+<td>Aquatic Animal Antibiotics</td>
+</tr>
+<tr>
+<td>24348</td>
+<td>Aquatic Animal Longevity</td>
+</tr>
+<tr>
+<td>24349</td>
+<td>Sea Mammal Rescue</td>
+</tr>
+<tr>
+<td>24350</td>
+<td>Beluga Care</td>
+</tr>
+<tr>
+<td>24351</td>
+<td>Oil Exposure</td>
+</tr>
+<tr>
+<td>24352</td>
+<td>Baby Humpback Whale Care</td>
+</tr>
+<tr>
+<td>24353</td>
+<td>Paddle Boat</td>
+</tr>
+<tr>
+<td>24354</td>
+<td>Kayak</td>
+</tr>
+<tr>
+<td>24355</td>
+<td>Swan Boat</td>
+</tr>
+<tr>
+<td>24356</td>
+<td>Jump</td>
+</tr>
+<tr>
+<td>24357</td>
+<td>Surface Spin</td>
+</tr>
+<tr>
+<td>24358</td>
+<td>Aquatic Animal Houses</td>
+</tr>
+<tr>
+<td>24359</td>
+<td>Aquatic Animals</td>
+</tr>
+<tr>
+<td>24360</td>
+<td>Aquatic Animal Care</td>
+</tr>
+<tr>
+<td>24361</td>
+<td>Marine Specialist Training</td>
+</tr>
+<tr>
+<td>24362</td>
+<td>Marine Recovery</td>
+</tr>
+<tr>
+<td>24363</td>
+<td>Sea Otter Tricks</td>
+</tr>
+<tr>
+<td>24364</td>
+<td>24364</td>
+</tr>
+<tr>
+<td>24365</td>
+<td>Spin</td>
+</tr>
+<tr>
+<td>24366</td>
+<td>Wave to Crowd</td>
+</tr>
+<tr>
+<td>25099</td>
+<td>Performs In Shows</td>
+</tr>
+<tr>
+<td>26022</td>
+<td>Marine Specialist Recommendations</td>
+</tr>
+<tr>
+<td>27056</td>
+<td>Marine Mania: Basic Map (Small)</td>
+</tr>
+<tr>
+<td>27057</td>
+<td>Marine Mania: Basic Map (Medium)</td>
+</tr>
+<tr>
+<td>27058</td>
+<td>Marine Mania: Rainforest Lake (Small)</td>
+</tr>
+<tr>
+<td>27059</td>
+<td>Marine Mania: Crazy Cliffs (Small)</td>
+</tr>
+<tr>
+<td>27060</td>
+<td>Marine Mania: Crater (Medium)</td>
+</tr>
+<tr>
+<td>27061</td>
+<td>Marine Mania: Lake (Large)</td>
+</tr>
+<tr>
+<td>27062</td>
+<td>Marine Mania: Sandy (Large)</td>
+</tr>
+<tr>
+<td>27063</td>
+<td>Marine Mania: Suburban (Large)</td>
+</tr>
+<tr>
+<td>27064</td>
+<td>Marine Mania: Islands (Medium)</td>
+</tr>
+<tr>
+<td>27065</td>
+<td>Marine Mania: Resort (Medium)</td>
+</tr>
+<tr>
+<td>27066</td>
+<td>Marine Mania: Kids Map (Medium)</td>
+</tr>
+<tr>
+<td>27067</td>
+<td>Marine Mania: Lake Resort (Large)</td>
+</tr>
+<tr>
+<td>27068</td>
+<td>foo</td>
+</tr>
+<tr>
+<td>27069</td>
+<td>foo</td>
+</tr>
+<tr>
+<td>27070</td>
+<td>foo</td>
+</tr>
+<tr>
+<td>28145</td>
+<td>Show exhibits</td>
+</tr>
+<tr>
+<td>28146</td>
+<td>Marine exhibits</td>
+</tr>
+<tr>
+<td>28147</td>
+<td>Combined exhibits</td>
+</tr>
+<tr>
+<td>28148</td>
+<td>Water salinity</td>
+</tr>
+<tr>
+<td>28149</td>
+<td>Water purity</td>
+</tr>
+<tr>
+<td>28150</td>
+<td>Modifying tanks</td>
+</tr>
+<tr>
+<td>28151</td>
+<td>Tank filters</td>
+</tr>
+<tr>
+<td>28152</td>
+<td>Marine toys and shelters</td>
+</tr>
+<tr>
+<td>28153</td>
+<td>Show objects</td>
+</tr>
+<tr>
+<td>28154</td>
+<td>Scheduling shows</td>
+</tr>
+<tr>
+<td>28155</td>
+<td>Grandstands</td>
+</tr>
+<tr>
+<td>28156</td>
+<td>Marine specialist</td>
+</tr>
+<tr>
+<td>28157</td>
+<td>Maintenance worker assignment</td>
+</tr>
+<tr>
+<td>28158</td>
+<td>Picking up guests</td>
+</tr>
+<tr>
+<td>28159</td>
+<td>Water attraction buildings</td>
+</tr>
+<tr>
+<td>28160</td>
+<td>Trick information</td>
+</tr>
+<tr>
+<td>28161</td>
+<td>Expansion pack filter</td>
+</tr>
+<tr>
+<td>28162</td>
+<td>Portal Creation</td>
+</tr>
+<tr>
+<td>29019</td>
+<td>Excellence in Shark Conservation - Bronze Shark Statue</td>
+</tr>
+<tr>
+<td>29020</td>
+<td>Superior Whale Care - Gold Plaque</td>
+</tr>
+<tr>
+<td>29021</td>
+<td>Penguin Colony - Silver Plaque</td>
+</tr>
+<tr>
+<td>29022</td>
+<td>Arctic Aquatic Care</td>
+</tr>
+<tr>
+<td>29023</td>
+<td>Excellence in Arctic Conservation</td>
+</tr>
+<tr>
+<td>29024</td>
+<td>Excellence in Arctic Exhibit Construction</td>
+</tr>
+<tr>
+<td>29025</td>
+<td>Best Zoo in the World</td>
+</tr>
+<tr>
+<td>29026</td>
+<td>Zoo of the Year</td>
+</tr>
+<tr>
+<td>29027</td>
+<td>Best Sea Lion Show in the Country</td>
+</tr>
+<tr>
+<td>29028</td>
+<td>Best Sea Otter Show in the Country</td>
+</tr>
+<tr>
+<td>29029</td>
+<td>Best Orca Show in the Country</td>
+</tr>
+<tr>
+<td>29030</td>
+<td>Best Dolphin Show in the Country</td>
+</tr>
+<tr>
+<td>29031</td>
+<td>Excellence in Savannah Exhibit Construction</td>
+</tr>
+<tr>
+<td>29101</td>
+<td>Excellence in Exhibit Design - Silver Plaque</td>
+</tr>
+<tr>
+<td>29102</td>
+<td>Excellence in Exhibit Design - Gold Plaque</td>
+</tr>
+<tr>
+<td>29103</td>
+<td>Most Popular Zoo - Silver Certificate</td>
+</tr>
+<tr>
+<td>29104</td>
+<td>Most Popular Zoo - Gold Certificate</td>
+</tr>
+<tr>
+<td>29105</td>
+<td>Best Zoo - Silver Trophy</td>
+</tr>
+<tr>
+<td>29106</td>
+<td>Best Zoo - Gold Trophy</td>
+</tr>
+<tr>
+<td>29107</td>
+<td>Highest Customer Satisfaction - Blue Ribbon</td>
+</tr>
+<tr>
+<td>29108</td>
+<td>Quality Animal Care - Blue Ribbon</td>
+</tr>
+<tr>
+<td>29109</td>
+<td>Diverse Species - Silver Plaque</td>
+</tr>
+<tr>
+<td>29110</td>
+<td>Diverse Species - Gold Plaque</td>
+</tr>
+<tr>
+<td>29111</td>
+<td>Highest Quality Exhibits - Silver Certificate</td>
+</tr>
+<tr>
+<td>29112</td>
+<td>Highest Quality Exhibits - Gold Certificate</td>
+</tr>
+<tr>
+<td>29113</td>
+<td>Excellence in Dinosaur Exhibit Design - Gold Cup</td>
+</tr>
+<tr>
+<td>29114</td>
+<td>Complete Ice Age Zoo - Gold Mammoth</td>
+</tr>
+<tr>
+<td>29115</td>
+<td>Quality Dinosaur Care - Blue Ribbon</td>
+</tr>
+<tr>
+<td>29116</td>
+<td>Tyrannosaurus rex Birth - Gold Rex</td>
+</tr>
+<tr>
+<td>29117</td>
+<td>Outstanding Animal Health Plaque</td>
+</tr>
+<tr>
+<td>29118</td>
+<td>Complete Jurassic Zoo - Gold Stegosaurus</td>
+</tr>
+<tr>
+<td>29119</td>
+<td>Excellence in Shark Conservation - Bronze Shark Statue</td>
+</tr>
+<tr>
+<td>29120</td>
+<td>Superior Whale Care - Gold Plaque</td>
+</tr>
+<tr>
+<td>29121</td>
+<td>Penguin Colony - Silver Plaque</td>
+</tr>
+<tr>
+<td>29122</td>
+<td>Arctic Aquatic Care</td>
+</tr>
+<tr>
+<td>29123</td>
+<td>Excellence in Arctic Conservation</td>
+</tr>
+<tr>
+<td>29124</td>
+<td>Excellence in Arctic Exhibit Construction</td>
+</tr>
+<tr>
+<td>29125</td>
+<td>Best Zoo in the World</td>
+</tr>
+<tr>
+<td>29126</td>
+<td>Zoo of the Year</td>
+</tr>
+<tr>
+<td>29127</td>
+<td>Best Sea Lion Show in the Country</td>
+</tr>
+<tr>
+<td>29128</td>
+<td>Best Sea Otter Show in the Country</td>
+</tr>
+<tr>
+<td>29129</td>
+<td>Best Orca Show in the Country</td>
+</tr>
+<tr>
+<td>29130</td>
+<td>Best Dolphin Show in the Country</td>
+</tr>
+<tr>
+<td>29131</td>
+<td>Excellence in Savannah Exhibit Construction</td>
+</tr>
+<tr>
+<td>31002</td>
+<td>Construction. Construct exhibits, modify terrain, purchase paths, or buy foliage and rocks.</td>
+</tr>
+<tr>
+<td>31005</td>
+<td>Hire Staff. Hire maintenance workers, tour guides or any animal care specialists.</td>
+</tr>
+<tr>
+<td>31050</td>
+<td>Exhibit/Show List. View lists of zoo exhibits and shows.</td>
+</tr>
+<tr>
+<td>31078</td>
+<td>Click to place a single path piece, or click and drag to place multiple path pieces.</td>
+</tr>
+<tr>
+<td>31079</td>
+<td>Click and drag, up or down to raise or lower the tank height. Some tricks require a deeper show tank.</td>
+</tr>
+<tr>
+<td>31405</td>
+<td>Track chopper. Click once to follow DRT chopper. Click again to stop following.</td>
+</tr>
+<tr>
+<td>31541</td>
+<td>Click to access file options: save and load games, return to the main menu or exit Zoo Tycoon.</td>
+</tr>
+<tr>
+<td>31544</td>
+<td>Help/About. Click to access the help files.</td>
+</tr>
+<tr>
+<td>31557</td>
+<td>Displays more frames of animation (uses more memory).</td>
+</tr>
+<tr>
+<td>31558</td>
+<td>Displays fewer frames of animation (uses less memory).</td>
+</tr>
+<tr>
+<td>31559</td>
+<td>Play sound at 16-bit.</td>
+</tr>
+<tr>
+<td>31560</td>
+<td>Load. Click to load a saved game.</td>
+</tr>
+<tr>
+<td>31578</td>
+<td>Play sound at 8-bit.</td>
+</tr>
+<tr>
+<td>31579</td>
+<td>Display colored mouse cursors (may cause cursor to blink).</td>
+</tr>
+<tr>
+<td>31582</td>
+<td>Display monochromatic mouse cursors.</td>
+</tr>
+<tr>
+<td>32023</td>
+<td>Animals. Adopt animals for placement in exhibits.</td>
+</tr>
+<tr>
+<td>32024</td>
+<td>Dinosaurs. Adopt dinosaur eggs for placement in exhibits.</td>
+</tr>
+<tr>
+<td>32025</td>
+<td>Creatures. Adopt creatures for placement in exhibits.</td>
+</tr>
+<tr>
+<td>32076</td>
+<td>Show objects. Purchase objects used in animal performances.</td>
+</tr>
+<tr>
+<td>32120</td>
+<td>Click to cancel download.</td>
+</tr>
+<tr>
+<td>32121</td>
+<td>Click to return to the main menu.</td>
+</tr>
+<tr>
+<td>32122</td>
+<td>Click to add new Zoo Tycoon items to your game.</td>
+</tr>
+<tr>
+<td>32125</td>
+<td>Click to check the Internet for new Zoo Tycoon items.</td>
+</tr>
+<tr>
+<td>32130</td>
+<td>Click to import files from your Hard Drive or CD-ROM.</td>
+</tr>
+<tr>
+<td>33125</td>
+<td>Marine Specialist recommendations. Click to view the marine specialist's recommendations on improving exhibit suitability.</td>
+</tr>
+<tr>
+<td>33240</td>
+<td>Click to manually choose where to place the entrance along an exhibit.</td>
+</tr>
+<tr>
+<td>33303</td>
+<td>Undo all terrain changes since opening this menu tab that have not been accepted yet.</td>
+</tr>
+<tr>
+<td>33310</td>
+<td>Increase tool size. The tool is used to apply terrain type or height changes onto land. Click the plus (+) button to increase tool size.</td>
+</tr>
+<tr>
+<td>33314</td>
+<td>Decrease tool size. The tool is used to apply terrain type or height changes onto land. Click the minus (-) button to decrease tool size.</td>
+</tr>
+<tr>
+<td>33374</td>
+<td>Fresh water. Suitable exhibit terrain for animals that require drinking or bathing water. Guests may swim in fresh water.</td>
+</tr>
+<tr>
+<td>33375</td>
+<td>Salt water. Suitable exhibit terrain for animals that live in the ocean. Guests may swim in salt water.</td>
+</tr>
+<tr>
+<td>33382</td>
+<td>Gunnite Terrain. Suitable exhibit terrain for aquatic animals.</td>
+</tr>
+<tr>
+<td>33416</td>
+<td>Move guest. Click once to pickup guest.</td>
+</tr>
+<tr>
+<td>33530</td>
+<td>Click to change whether or not this maintenance worker empties trash cans.</td>
+</tr>
+<tr>
+<td>33531</td>
+<td>Click to change whether or not this maintenance worker sweeps and cleans the zoo.</td>
+</tr>
+<tr>
+<td>33532</td>
+<td>Click to change whether or not this maintenance worker fixes broken fences.</td>
+</tr>
+<tr>
+<td>33533</td>
+<td>Click to change whether or not this maintenance worker maintains tank filters.</td>
+</tr>
+<tr>
+<td>33565</td>
+<td>Job assignment. Lists duties to which staff member is assigned.</td>
+</tr>
+<tr>
+<td>33898</td>
+<td>Exhibit suitability.  Click Marine Specialist Recommendations to get advice on improving exhibit suitability.</td>
+</tr>
+<tr>
+<td>33899</td>
+<td>Animal hunger.  Assign Marine Specialists to exhibits of hungry animals.</td>
+</tr>
+<tr>
+<td>34181</td>
+<td>Completed Research and Conservation. Shows Research and Conservation programs that have already been completed.</td>
+</tr>
+<tr>
+<td>34215</td>
+<td>Show all staff members in the above list. Lists all active staff members working in the zoo.</td>
+</tr>
+<tr>
+<td>34240</td>
+<td>Show scientists in the above list. Lists active scientists working in the zoo.</td>
+</tr>
+<tr>
+<td>34242</td>
+<td>Show DRT choppers in the above list. Lists active DRT choppers working in the zoo.</td>
+</tr>
+<tr>
+<td>34244</td>
+<td>Show marine specialists in the above list.  Lists active marine specialists working in the zoo.</td>
+</tr>
+<tr>
+<td>34365</td>
+<td>Modify tank. Shows buttons for modifying tanks.</td>
+</tr>
+<tr>
+<td>34577</td>
+<td>Change color. Change the color of the building's features.</td>
+</tr>
+<tr>
+<td>34580</td>
+<td>Move cart. Click to pick up the cart so it can be moved to a new location.</td>
+</tr>
+<tr>
+<td>34869</td>
+<td>Click to change water type to salt water. Marine animals prefer salt water in their tanks.</td>
+</tr>
+<tr>
+<td>34870</td>
+<td>Click to change water type to fresh water. Animals that like to swim or drink water prefer fresh water in their tanks.</td>
+</tr>
+<tr>
+<td>34874</td>
+<td>Adjust wall down. Some animals prefer a shallow tank.</td>
+</tr>
+<tr>
+<td>34875</td>
+<td>Adjust wall up. Some animals prefer a deep tank.</td>
+</tr>
+<tr>
+<td>34879</td>
+<td>Recess tank. Tanks can be lowered into the ground so that they aren't fully exposed.</td>
+</tr>
+<tr>
+<td>34880</td>
+<td>Expose tank. Tanks can be raised above ground level so that they are fully exposed.</td>
+</tr>
+<tr>
+<td>34884</td>
+<td>Click to fill tank. Fills tank with current water type.</td>
+</tr>
+<tr>
+<td>34885</td>
+<td>Click to drain tank. Empties all of the water from the tank.</td>
+</tr>
+<tr>
+<td>34906</td>
+<td>Sell tank filter. Click to sell tank filter for a portion of the purchase price.</td>
+</tr>
+<tr>
+<td>34909</td>
+<td>Status. View filter status, last filter service and months in operation.</td>
+</tr>
+<tr>
+<td>34910</td>
+<td>Finance. View last, current and total upkeep for tank filter.</td>
+</tr>
+<tr>
+<td>35017</td>
+<td>Adopt a black bear.  Black bears prefer to live alone or in small groups. Black bears like to sleep in rock caves.</td>
+</tr>
+<tr>
+<td>35040</td>
+<td>Adopt a California sea lion. California sea lions live in large groups. California sea lions need exhibits composed almost entirely of salt water and rocks. California sea lions perform in show tanks.</td>
+</tr>
+<tr>
+<td>35400</td>
+<td>Adopt an orca. Orcas live in small-sized family groups known as pods. Orcas like to have seaweed in their tanks. Orcas perform in show tanks.</td>
+</tr>
+<tr>
+<td>35401</td>
+<td>Adopt a great white shark. Great white sharks are vicious predators that generally live alone and feed on just about anything they can get their teeth on. Great White Sharks enjoy barnacles in their tanks. Great white sharks perform in show tanks.</td>
+</tr>
+<tr>
+<td>35402</td>
+<td>Adopt a bottlenose dolphin. Bottlenose dolphins live in medium-sized family groups known as pods. Bottlenose dolphins enjoy kelp in their tanks. Bottlenose dolphins perform in show tanks.</td>
+</tr>
+<tr>
+<td>35403</td>
+<td>Adopt a lion's mane jelly. Lion's mane jellies free float alone or in small-sized groups. Lion's Mane Jellies enjoy clam beds in their tanks.</td>
+</tr>
+<tr>
+<td>35404</td>
+<td>Adopt an elephant seal. Elephant seals live in small to medium-sized groups. Elephant seals enjoy beach grass in their exhibits.</td>
+</tr>
+<tr>
+<td>35405</td>
+<td>Adopt a humpback whale. Humpback whales live in medium-sized family groups known as pods. Humpback whales need very large tanks.</td>
+</tr>
+<tr>
+<td>35406</td>
+<td>Adopt a sperm whale. Sperm whales live alone or in small-sized family groups. Sperm whales need very deep tanks.</td>
+</tr>
+<tr>
+<td>35407</td>
+<td>Adopt a narwhal. Narwhals live in medium to large-sized family groups known as pods. Narwhals enjoy sea lettuce in their tanks.</td>
+</tr>
+<tr>
+<td>35408</td>
+<td>Adopt a harbor porpoise. Harbor porpoises live in small-sized family groups known as pods. Harbor porpoises enjoy sea sponges in their tanks.</td>
+</tr>
+<tr>
+<td>35409</td>
+<td>Adopt a hammerhead shark.  Hammerhead sharks live alone or in pairs. Hammerhead sharks enjoy sea grass in their tanks.</td>
+</tr>
+<tr>
+<td>35410</td>
+<td>Adopt a tiger shark. Tiger sharks live in small to medium-sized groups. Tiger sharks enjoy feather duster worms in their tanks.</td>
+</tr>
+<tr>
+<td>35411</td>
+<td>Adopt a shortfin mako shark. Shortfin mako sharks live in small groups. Shortfin mako sharks enjoy divercate tree coral in their tanks.</td>
+</tr>
+<tr>
+<td>35412</td>
+<td>Adopt a green moray eel. Green moray eels live in small-sized groups. Green moray eels enjoy sunken logs in their tanks.</td>
+</tr>
+<tr>
+<td>35413</td>
+<td>Adopt a beluga. Belugas live in medium to large-sized groups called pods. Belugas enjoy kelp in their tanks.</td>
+</tr>
+<tr>
+<td>35414</td>
+<td>Adopt a southern sea otter. Southern sea otters live in small-sized family groups called rafts. Southern sea otters enjoy beach grass in their exhibits. Southern sea otters perform in show tanks.</td>
+</tr>
+<tr>
+<td>35415</td>
+<td>Adopt a giant pacific octopus. Giant pacific octopi live in small-sized family groups. Giant pacific octopi enjoy seafloor caves in their tanks.</td>
+</tr>
+<tr>
+<td>35416</td>
+<td>Adopt a West Indian manatee.  West Indian manatees live in small family groups. West Indian manatees enjoy sea grass in their tanks.</td>
+</tr>
+<tr>
+<td>35417</td>
+<td>Adopt a Pacific walrus. Pacific walruses live in small to medium-sized family groups. Pacific walruses enjoy beach grass in their exhibits.</td>
+</tr>
+<tr>
+<td>35418</td>
+<td>Adopt a manta ray. Manta rays live alone or in small-sized family groups. Manta rays enjoy fire coral in their tanks.</td>
+</tr>
+<tr>
+<td>35419</td>
+<td>Adopt a green sea turtle. Green sea turtles live in small-sized family groups. Green sea turtles enjoy sargassum in their tanks.</td>
+</tr>
+<tr>
+<td>35420</td>
+<td>Adopt an Atlantic swordfish. Atlantic swordfish live in small to medium-sized family groups. Atlantic swordfish enjoy red gorgonian in their tanks.</td>
+</tr>
+<tr>
+<td>35421</td>
+<td>Adopt a giant squid. Giant squid live alone or in small family groups. Giant squid enjoy tube worms in their tanks.</td>
+</tr>
+<tr>
+<td>35422</td>
+<td>Adopt a bluefin tuna. Bluefin tuna live in very large family groups called schools. Bluefin tuna enjoy sargassum in their tanks.</td>
+</tr>
+<tr>
+<td>35423</td>
+<td>Adopt a great barracuda. Great barracuda live in large groups called schools. Great barracuda enjoy sea grass in their tanks.</td>
+</tr>
+<tr>
+<td>35424</td>
+<td>Adopt a mermaid. Mermaids live alone or in small groups of other animals. Mermaids enjoy sand dollars in their tanks.</td>
+</tr>
+<tr>
+<td>36075</td>
+<td>Zoo Buildings. Purchase commerce and non-commerce buildings.</td>
+</tr>
+<tr>
+<td>36076</td>
+<td>Fences. Purchase exhibit fences, decorative fences and tank walls.</td>
+</tr>
+<tr>
+<td>36077</td>
+<td>Foliage. Purchase foliage.</td>
+</tr>
+<tr>
+<td>36078</td>
+<td>Zoo Paths. Purchase paths.</td>
+</tr>
+<tr>
+<td>36080</td>
+<td>Zoo Buildings. Purchase commerce and non-commerce buildings.</td>
+</tr>
+<tr>
+<td>36081</td>
+<td>Zoo Scenery. Purchase scenery.</td>
+</tr>
+<tr>
+<td>36165</td>
+<td>Lighthouse</td>
+</tr>
+<tr>
+<td>36200</td>
+<td>Terrain.</td>
+</tr>
+<tr>
+<td>36201</td>
+<td>Foliage. Purchase foliage.</td>
+</tr>
+<tr>
+<td>36202</td>
+<td>Scenery. Purchase scenery.</td>
+</tr>
+<tr>
+<td>36203</td>
+<td>Fences. Purchase exhibit fences, decorative fences and tank walls.</td>
+</tr>
+<tr>
+<td>36204</td>
+<td>Zoo Paths. Purchase paths.</td>
+</tr>
+<tr>
+<td>36205</td>
+<td>Animal Toys. Purchase animal toys.</td>
+</tr>
+<tr>
+<td>36206</td>
+<td>Rocks. Purchase rocks and rock formations.</td>
+</tr>
+<tr>
+<td>36207</td>
+<td>Animal Shelters. Purchase animal shelters.</td>
+</tr>
+<tr>
+<td>36462</td>
+<td>Purchase an Aquatic Zoo Wall. An uninterrupted zoo wall is required for a zoo to be considered a zoo.</td>
+</tr>
+<tr>
+<td>36465</td>
+<td>Purchase a Show Grandstand. Guests will fill up the grandstand to watch animals perform.</td>
+</tr>
+<tr>
+<td>36466</td>
+<td>Purchase a Giant Pacific Clam. Guests will find the beautiful pearl within the giant clam very attractive.</td>
+</tr>
+<tr>
+<td>36467</td>
+<td>Purchase a Mermaid Statue. Guests will find the sculpture of the mermaid beautiful and very lifelike.</td>
+</tr>
+<tr>
+<td>36468</td>
+<td>Purchase a Treasure Chest. Guests will find the pirate's loot amazing.</td>
+</tr>
+<tr>
+<td>36469</td>
+<td>Purchase a Tank Drain. A tank drain sits at the bottom of a tank and makes gurgling noises.</td>
+</tr>
+<tr>
+<td>36470</td>
+<td>Purchase a Deep Sea Diver Statue. Guests will think that the old-fashioned deep sea diver is really cool.</td>
+</tr>
+<tr>
+<td>36471</td>
+<td>Purchase a Tank Filter. Tank filters will keep tank water clean, but they require occasional maintenance.</td>
+</tr>
+<tr>
+<td>36472</td>
+<td>Purchase a Dolphin Wishing Fountain. Guests will love throwing coins into the fountain.</td>
+</tr>
+<tr>
+<td>36473</td>
+<td>Purchase a Wishing Fountain. Guests will love throwing coins into the fountain.</td>
+</tr>
+<tr>
+<td>36477</td>
+<td>Purchase a Black Observation Area. Guests will appreciate the observation areas and walk under them to view exhibits.</td>
+</tr>
+<tr>
+<td>36478</td>
+<td>Purchase a White Observation Area. Guests will appreciate the observation areas and walk under them to view exhibits.</td>
+</tr>
+<tr>
+<td>36479</td>
+<td>Purchase a Stage Backdrop. Guests will enjoy watching shows that feature a backdrop.</td>
+</tr>
+<tr>
+<td>36480</td>
+<td>Purchase a Stage Door. Marine specialists will be able to walk through the doorway to start a show.</td>
+</tr>
+<tr>
+<td>36481</td>
+<td>Purchase a stage end. Stage ends can be placed to cap off the end of a stage backdrop.</td>
+</tr>
+<tr>
+<td>36482</td>
+<td>Purchase a Fancy Backdrop. Guests will enjoy the look of the mural covered backdrop.</td>
+</tr>
+<tr>
+<td>36484</td>
+<td>Frozen yogurt. Nothing is as cool and refreshing on a hot summer day. May be purchased at a frozen yogurt stand.</td>
+</tr>
+<tr>
+<td>36485</td>
+<td>Popcorn. Piping hot pop corn is a traditional favorite, just don't feed any to the animals. May be purchased at a Polly's popcorn stand.</td>
+</tr>
+<tr>
+<td>36486</td>
+<td>Goldfish bowl. Guests can take home their very own little aquatic animal. May be purchased at an Aquatic Gift Shop.</td>
+</tr>
+<tr>
+<td>36487</td>
+<td>Stuffed orca. Guests can take home a lovable and safe little killer whale. May be purchased at an Aquatic Gift Shop or an aquatic gift stand.</td>
+</tr>
+<tr>
+<td>36488</td>
+<td>Stuffed dolphin. Guests can take home a lovable little stuffed dolphin that makes a sound when it is squeezed. May be purchased at an Aquatic Gift Shop.</td>
+</tr>
+<tr>
+<td>36489</td>
+<td>Toy sharks. Guests can take home an entire collection of colorful little sharks. May be purchased at an Aquatic Gift Shop.</td>
+</tr>
+<tr>
+<td>36490</td>
+<td>Marine cap. Guests can take home a souvenir cap of their trip to the zoo. May be purchased at an Aquatic Gift Shop.</td>
+</tr>
+<tr>
+<td>36491</td>
+<td>Submarine Sandwich. Dive! Dive! Dive! This tasty sandwich is heading for the tummy. May be purchased at a Kneemo's sub shop or a Lobby's restaurant.</td>
+</tr>
+<tr>
+<td>36492</td>
+<td>Frozen lemon drink. How cool! How crisp! Guests will definitely have their thirsts quenched with this great tasting drink. May be purchased at a crushed ice stand.</td>
+</tr>
+<tr>
+<td>36493</td>
+<td>Fish 'n chips. Guests will enjoy the crisp, very fresh taste of the fish n chips. May be purchased at a Lobby's restaurant.</td>
+</tr>
+<tr>
+<td>36494</td>
+<td>Purchase a Metal Bench. Guests will enjoy resting on the comfortable bench.</td>
+</tr>
+<tr>
+<td>36495</td>
+<td>Purchase a Jumping Fountain. Guests will enjoy seeing the water playfully dance back and forth.</td>
+</tr>
+<tr>
+<td>36496</td>
+<td>Purchase an Orca Statue. Guests will appreciate the majesty of the orca statue.</td>
+</tr>
+<tr>
+<td>36497</td>
+<td>Purchase a Dolphin Statue. Guests will enjoy seeing the beautiful dolphin statue.</td>
+</tr>
+<tr>
+<td>36498</td>
+<td>Purchase a Sea Lion Statue. Guests will enjoy seeing the mighty sea lion statue.</td>
+</tr>
+<tr>
+<td>36500</td>
+<td>Advanced trick area. Aquatic show animals will perform advanced tricks within this area.</td>
+</tr>
+<tr>
+<td>36501</td>
+<td>Dolphin ball. Bottlenose dolphins will play with the dolphin ball.</td>
+</tr>
+<tr>
+<td>36502</td>
+<td>Orca ball. Orca will play with the orca ball.</td>
+</tr>
+<tr>
+<td>36503</td>
+<td>Dolphin hoop. Bottlenose dolphins will play with the dolphin hoop.</td>
+</tr>
+<tr>
+<td>36504</td>
+<td>Orca stage. Orcas will play with the orca stage.</td>
+</tr>
+<tr>
+<td>36505</td>
+<td>Ice Floe. Penguins, walruses, and elephant seals love to haul out onto the floating pack ice to rest from swimming.</td>
+</tr>
+<tr>
+<td>36506</td>
+<td>Sea lion beach ball. California sea lions will play with the beach ball on the floating raft.</td>
+</tr>
+<tr>
+<td>36507</td>
+<td>Sea lion squeeze horn. California sea lions will play with the noisy squeeze horns on the floating raft.</td>
+</tr>
+<tr>
+<td>36508</td>
+<td>Sea lion raft. California sea lions will climb onto the floating raft to wave to the crowd.</td>
+</tr>
+<tr>
+<td>36509</td>
+<td>Raft. California sea lions, northern elephant seals, and emperor penguins will climb onto the floating raft to rest and relax.</td>
+</tr>
+<tr>
+<td>36510</td>
+<td>Sea otter ball. Southern sea otters will make a slam dunk in the basketball hoop with the sea otter ball.</td>
+</tr>
+<tr>
+<td>36511</td>
+<td>Sea otter hoop. Southern sea otters will jump through the little sea otter hoop.</td>
+</tr>
+<tr>
+<td>36512</td>
+<td>Icy keg. Polar bears love to try to pull the icy keg down into the water, but they never really seem to get it.</td>
+</tr>
+<tr>
+<td>36800</td>
+<td>Purchase a Seal Statue. Guests will be in awe of the huge seal statue.</td>
+</tr>
+<tr>
+<td>36801</td>
+<td>Purchase a Trio Statue. Guests will know that you are truly a Zoo Tycoon when they see your trio statue.</td>
+</tr>
+<tr>
+<td>36802</td>
+<td>Purchase a Fancy Grandstand. Guests will fill up the grandstand to watch animals perform.</td>
+</tr>
+<tr>
+<td>36803</td>
+<td>Purchase a Photo Booth. Guests will enjoy getting their picture taken inside the photo booth.</td>
+</tr>
+<tr>
+<td>36804</td>
+<td>Photo. Guests will have a memento of their trip to your zoo that they can cherish forever. May be purchased at the photo booth.</td>
+</tr>
+<tr>
+<td>36806</td>
+<td>Marine Mania T-shirt. Guests will be able to show all their friends that they went to a Marine Mania zoo and all they got was this lousy T-shirt.</td>
+</tr>
+<tr>
+<td>37096</td>
+<td>Arctic Birch Tree. Tundra prehistoric animals will enjoy the arctic birch tree.</td>
+</tr>
+<tr>
+<td>37097</td>
+<td>Arctic Grass. Tundra prehistoric animals will enjoy the arctic grass.</td>
+</tr>
+<tr>
+<td>37098</td>
+<td>Arctic Bush. Tundra prehistoric animals will enjoy the arctic bush.</td>
+</tr>
+<tr>
+<td>37121</td>
+<td>Play Zoo Tycoon tutorials and scenarios. Learn how to play by playing through the tutorials or try completing the objectives in the scenarios.</td>
+</tr>
+<tr>
+<td>37123</td>
+<td>Continue playing %s. This is your most recently saved game.</td>
+</tr>
+<tr>
+<td>37127</td>
+<td>Last played game was not saved. You may continue after saving a game.</td>
+</tr>
+<tr>
+<td>37400</td>
+<td>Sea Anemone. Aquatic animals will enjoy the sea anemone.</td>
+</tr>
+<tr>
+<td>37401</td>
+<td>Barnacles. Aquatic animals will enjoy the barnacles.</td>
+</tr>
+<tr>
+<td>37402</td>
+<td>Beach Grass. Aquatic animals will enjoy the beach grass.</td>
+</tr>
+<tr>
+<td>37403</td>
+<td>Brittle Sea Star. Aquatic animals will enjoy the brittle sea star.</td>
+</tr>
+<tr>
+<td>37404</td>
+<td>Clam Bed. Aquatic animals will enjoy the clam bed.</td>
+</tr>
+<tr>
+<td>37405</td>
+<td>Orange Cup Coral. Aquatic animals will enjoy the orange cup coral.</td>
+</tr>
+<tr>
+<td>37406</td>
+<td>Divercate Tree Coral. Aquatic animals will enjoy the divercate tree coral.</td>
+</tr>
+<tr>
+<td>37407</td>
+<td>Feather Duster Worm. Aquatic animals will enjoy the feather duster worm.</td>
+</tr>
+<tr>
+<td>37408</td>
+<td>Fire Coral. Aquatic animals will enjoy the fire coral.</td>
+</tr>
+<tr>
+<td>37409</td>
+<td>Kelp. Aquatic animals will enjoy the kelp.</td>
+</tr>
+<tr>
+<td>37410</td>
+<td>Sea Lettuce. Aquatic animals will enjoy the sea lettuce.</td>
+</tr>
+<tr>
+<td>37411</td>
+<td>Red Gorgonian. Aquatic animals will enjoy the red gorgonian.</td>
+</tr>
+<tr>
+<td>37412</td>
+<td>Sargassum. Aquatic animals will enjoy the sargassum.</td>
+</tr>
+<tr>
+<td>37413</td>
+<td>Sand Dollar. Aquatic animals will enjoy the sand dollar.</td>
+</tr>
+<tr>
+<td>37414</td>
+<td>Sea Cucumber. Aquatic animals will enjoy the sea cucumber.</td>
+</tr>
+<tr>
+<td>37415</td>
+<td>Sea Star. Aquatic animals will enjoy the sea star.</td>
+</tr>
+<tr>
+<td>37416</td>
+<td>Seaweed. Aquatic animals will enjoy the seaweed.</td>
+</tr>
+<tr>
+<td>37417</td>
+<td>Sea Grass. Aquatic animals will enjoy the sea grass.</td>
+</tr>
+<tr>
+<td>37418</td>
+<td>Sea Sponge. Aquatic animals will enjoy the sea sponge.</td>
+</tr>
+<tr>
+<td>37419</td>
+<td>Stove Pipe Sponge. Aquatic animals will enjoy the stove pipe sponge.</td>
+</tr>
+<tr>
+<td>37420</td>
+<td>Tube Worm. Aquatic animals will enjoy the tube worm.</td>
+</tr>
+<tr>
+<td>37421</td>
+<td>Purple Sea Urchin. Aquatic animals will enjoy the purple sea urchin.</td>
+</tr>
+<tr>
+<td>38050</td>
+<td>Purchase an Aquatic Gift Shop. Everyone will want to buy aquatic-themed zoo souvenirs from the gift shop, which can accommodate large groups at a time.</td>
+</tr>
+<tr>
+<td>38051</td>
+<td>Purchase Lobby's Restaurant. Lobby's Restaurant is larger and its food more expensive than food stands, but it can fulfill both the hunger and thirst of many guests simultaneously.</td>
+</tr>
+<tr>
+<td>38052</td>
+<td>Purchase a Crustacean House. All guests will enjoy seeing the bizarre-looking crustaceans. Accommodates moderate-sized groups.</td>
+</tr>
+<tr>
+<td>38053</td>
+<td>Purchase a Tropical Aquarium. All guests will enjoy the beautiful, multicolored tropical fish. Accommodates moderate-sized groups.</td>
+</tr>
+<tr>
+<td>38054</td>
+<td>Purchase a Kneemo's Submarine Shop. Kneemo's Submarine Shop sells hearty deli sandwiches that can fill even the hungriest guest's stomach.</td>
+</tr>
+<tr>
+<td>38055</td>
+<td>Purchase an Aquatic Gift Stand. Guests will enjoy purchasing souvenirs from their zoo trip.</td>
+</tr>
+<tr>
+<td>38056</td>
+<td>Purchase a Sea Dawgs Stand. Guests will enjoy purchasing piping hot dogs from the vendor to fill their hungry bellies.</td>
+</tr>
+<tr>
+<td>38057</td>
+<td>Purchase a Crushed Ice Stand. Guests will enjoy the sweet yet tart citrus taste of the crushed ice drink on a warm summer day.</td>
+</tr>
+<tr>
+<td>38058</td>
+<td>Purchase a Polly's Popcorn Stand. Guests will enjoy the fresh, just popped taste of the popcorn, especially with hot butter coating.</td>
+</tr>
+<tr>
+<td>38059</td>
+<td>Purchase a Boat Rental Shack. Guests will enjoy tooling around lakes and rivers on various watercraft. This building must be placed on water terrain.</td>
+</tr>
+<tr>
+<td>38060</td>
+<td>Purchase a Swim with Dolphins Ride. Guests will have a blast swimming with tame dolphins. This building must be placed on water terrain.</td>
+</tr>
+<tr>
+<td>38061</td>
+<td>Purchase a Swim Shack. Guests will change into swimming clothes and then have fun swimming around. This building must be placed on water terrain.</td>
+</tr>
+<tr>
+<td>38062</td>
+<td>Purchase an Aquatic Restroom. Guests that have been in the zoo for a while will need to use the restroom.</td>
+</tr>
+<tr>
+<td>38063</td>
+<td>Purchase a Frozen Yogurt Stand. Guests will enjoy the tasty soft-serve frozen yogurt.</td>
+</tr>
+<tr>
+<td>38064</td>
+<td>Purchase a Shark Tunnel. Guests will love walking through one end of the shark tunnel and out the other side.</td>
+</tr>
+<tr>
+<td>38065</td>
+<td>Purchase an Orca Bouncy Ride. Boys and girls will have a ton of fun bouncing up and down on a wild bucking killer whale.</td>
+</tr>
+<tr>
+<td>38066</td>
+<td>Purchase a Ring Toss. Girls and Boys like to toss a ring at the waiting sea lion statue.</td>
+</tr>
+<tr>
+<td>38135</td>
+<td>Seafloor Cave. Marine animals in captivity often need a place for privacy. Some marine animals prefer the seafloor cave.</td>
+</tr>
+<tr>
+<td>38136</td>
+<td>Sunken Ship. Marine animals in captivity often need a place for privacy. Some marine animals, such as sharks, prefer the sunken ship.</td>
+</tr>
+<tr>
+<td>38137</td>
+<td>Sunken Log. Marine animals in captivity often need a place for privacy. Some smaller marine animals prefer the sunken log.</td>
+</tr>
+<tr>
+<td>39113</td>
+<td>Purchase a boardwalk path. Boardwalk paths indicate to guests where they should walk.</td>
+</tr>
+<tr>
+<td>39235</td>
+<td>Small Ocean Floor Rock. Aquatic animals who enjoy rocks in their exhibit will enjoy the small ocean floor rock.</td>
+</tr>
+<tr>
+<td>39236</td>
+<td>Medium Coral Formation. Aquatic animals who enjoy rocks in their exhibit will enjoy the medium coral rock formation.</td>
+</tr>
+<tr>
+<td>39237</td>
+<td>Large Ocean Floor Rock. Aquatic animals who enjoy rocks in their exhibit will enjoy the large ocean floor rock.</td>
+</tr>
+<tr>
+<td>39238</td>
+<td>Medium Ocean Floor Rock. Aquatic animals who enjoy rocks in their exhibit will enjoy the medium ocean floor rock.</td>
+</tr>
+<tr>
+<td>39239</td>
+<td>Large Coral Formation. Aquatic animals who enjoy rocks in their exhibit will enjoy the large coral rock formation.</td>
+</tr>
+<tr>
+<td>39240</td>
+<td>Iceberg. Aquatic animals who enjoy rocks in their exhibit will enjoy the iceberg.</td>
+</tr>
+<tr>
+<td>39241</td>
+<td>Isle Rock. Aquatic animals who enjoy rocks in their exhibit will enjoy the isle rock.</td>
+</tr>
+<tr>
+<td>39340</td>
+<td>Purchase a black bar and glass tank wall. Can only place swimming animals in tanks. Allows guests to see into the exhibit.</td>
+</tr>
+<tr>
+<td>39341</td>
+<td>Purchase a concrete edge and glass tank wall. Can only place swimming animals in tanks. Allows guests to see into the exhibit.</td>
+</tr>
+<tr>
+<td>39342</td>
+<td>Purchase a striped scooped edges and glass show tank wall. Can only place swimming animals in tanks. Allows guests to see into the exhibit.</td>
+</tr>
+<tr>
+<td>39343</td>
+<td>Purchase a striped wavy edges and glass show tank wall. Can only place swimming animals in tanks. Allows guests to see into the exhibit.</td>
+</tr>
+<tr>
+<td>39344</td>
+<td>Purchase a solid concrete tank wall. Can only place swimming animals in tanks. Guests can’t see through the wall into the exhibit.</td>
+</tr>
+<tr>
+<td>39345</td>
+<td>Purchase a striped wavy edges and gunite show tank wall. Can only place swimming animals in tanks. Guests can’t see through the wall into the exhibit.</td>
+</tr>
+<tr>
+<td>39346</td>
+<td>Purchase a buoy rope decorative fence. Cannot be used to contain animals in an exhibit, but is used to decorate and help create swimming areas for guests on water terrain.</td>
+</tr>
+<tr>
+<td>39347</td>
+<td>Purchase an angled railing and glass show tank wall. Can only place swimming animals in tanks. Allows guests to see into the exhibit.</td>
+</tr>
+<tr>
+<td>39500</td>
+<td>Click to hire a zookeeper. Zookeepers are responsible for feeding, healing, and cleaning up after animals that live in land exhibits. Without a zookeeper, your animals will go hungry.</td>
+</tr>
+<tr>
+<td>39501</td>
+<td>Click to hire a maintenance worker.  Maintenance workers repair broken fences, pick up litter, empty garbage cans, and repair tank filters.</td>
+</tr>
+<tr>
+<td>39552</td>
+<td>Click to hire a marine specialist. Marine specialists are responsible for feeding, healing, training, and cleaning up after animals that live in tanks. Without a marine specialist, your aquatic animals will go hungry.</td>
+</tr>
+<tr>
+<td>39909</td>
+<td>This tank is too shallow for %s.</td>
+</tr>
+<tr>
+<td>39910</td>
+<td>This tank is too deep for %s.</td>
+</tr>
+<tr>
+<td>39912</td>
+<td>%s requires different water salinity.</td>
+</tr>
+<tr>
+<td>39940</td>
+<td>There is not enough fresh water in the exhibit for %s.</td>
+</tr>
+<tr>
+<td>39941</td>
+<td>There is too much fresh water in the exhibit for %s.</td>
+</tr>
+<tr>
+<td>39942</td>
+<td>There is not enough salt water in the exhibit for %s.</td>
+</tr>
+<tr>
+<td>39943</td>
+<td>There is too much salt water in the exhibit for %s.</td>
+</tr>
+<tr>
+<td>39956</td>
+<td>This tank is too dirty for %s.</td>
+</tr>
+<tr>
+<td>39964</td>
+<td>%s requires access to land.</td>
+</tr>
+<tr>
+<td>39991</td>
+<td>%s needs can only be met in an exhibit tank.</td>
+</tr>
+<tr>
+<td>41105</td>
+<td>Click to increase admission price.</td>
+</tr>
+<tr>
+<td>41106</td>
+<td>Click to decrease admission price.</td>
+</tr>
+<tr>
+<td>41108</td>
+<td>Click to adjust how often shows play.</td>
+</tr>
+<tr>
+<td>41113</td>
+<td>Click to add selected trick to tricks in show.</td>
+</tr>
+<tr>
+<td>41114</td>
+<td>Click to remove selected trick from tricks in show.</td>
+</tr>
+<tr>
+<td>41117</td>
+<td>Click to adjust selected trick to play earlier in show.</td>
+</tr>
+<tr>
+<td>41118</td>
+<td>Click to adjust selected trick to play later in show.</td>
+</tr>
+<tr>
+<td>41121</td>
+<td>Happiness bonus given to guests who watch this show</td>
+</tr>
+<tr>
+<td>41123</td>
+<td>Click to change species in show.</td>
+</tr>
+<tr>
+<td>41126</td>
+<td>Show Script. View and modify show trick script.</td>
+</tr>
+<tr>
+<td>41127</td>
+<td>Show Finances. View show income by species.</td>
+</tr>
+<tr>
+<td>41300</td>
+<td>Wave to Crowd. Requirements: show tank 4 units deep. Description: the orca swims slowly along the surface of the water, turns over onto its left side and raises its right flipper out of the water and waves it up and down. Potential benefit: +2.</td>
+</tr>
+<tr>
+<td>41301</td>
+<td>Play with Ball. Requirements: orca ball and show tank 8 units deep. Description: the orca approaches the beach ball, then whacks the ball straight up into the air a few meters. Potential benefit: +6.</td>
+</tr>
+<tr>
+<td>41302</td>
+<td>Sideways Breach. Requirements: advanced trick area and show tank 8 units deep. Description: the orca swims quickly upward launches into the air, its tail fully leaving the water and lands on its side on the water, causing a very big splash. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41303</td>
+<td>Beach on Stage. Requirements: orca stage and show tank 4 units deep. Description: the orca swims to the platform object and beaches itself, then returns to the water. Potential benefit: +6.</td>
+</tr>
+<tr>
+<td>41304</td>
+<td>Reverse Tail Walking. Requirements: research and show tank 4 units deep. This trick starts when the orca swims backwards, halfway up out of the water. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41305</td>
+<td>Reverse Breach. Requirements: research, advanced trick area, and show tank 8 units deep. Description: the orca swims quickly upward, launches into the air, rotates onto its back, smoothly arcs into a headfirst dive back into the water. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41306</td>
+<td>Feeding Frenzy. Requirements: show tank 4 units deep. Description: the great white shark swims ferociously at the surface of the water, thrashing back and forth, its mouth snapping open and shut rapidly. Potential benefit: +5.</td>
+</tr>
+<tr>
+<td>41307</td>
+<td>Bubble Jump. Requirements: research, advanced trick area, and show tank 8 units deep. Description: the dolphin blows two rings of air from its blowhole, and swims and jumps up through them, corkscrewing its way back to the water. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41308</td>
+<td>Hoop Jump. Requirements: dolphin hoop and show tank 4 units deep. Description: the dolphin swims quickly toward the hoop, leaps up out of the water, does a barrel roll in midair as it goes through the hoop and then re-enters the water. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41309</td>
+<td>Tail Walk. Requirements: show tank 4 units deep. Description: the dolphin swims straight up through the surface of the water, strongly jerks backward across the water, eventually slipping back into the water. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41310</td>
+<td>Play with Ball. Requirements: dolphin ball and show tank 4 units deep. Description: the dolphin whacks the ball straight up into the air with its melon. The dolphin returns to surface and swims onward. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41311</td>
+<td>Belly Flop. Requirements: advanced trick area, research and show tank 8 units deep. Description: the dolphin jumps headfirst out of the water and flips forward in a full circle before re-entering the water. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41312</td>
+<td>Flip. Requirements: show tank 4 units deep. Description: the dolphin jumps into the air and does a back flip, rotates its flipper over its head, and then re-enters the water. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41313</td>
+<td>Jump. Requirements: show tank 8 units deep. Description: the dolphin jumps up out of the water and dives back headfirst. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41314</td>
+<td>Spin. Requirements: research and show tank 4 units deep. Description: the dolphin swims while spinning clockwise through the surface of the water. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41315</td>
+<td>Breach Attack. Requirements: research and show tank 4 units deep. Description: the shark quickly shoots straight up through the surface of the water, then curves its head towards the water surface and falls sideways back into the water. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41316</td>
+<td>Spray Water. Requirements: show tank 4 units deep. Description: the orca spits a stream of water from its mouth. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41317</td>
+<td>Swim Up. Requirements: show tank 4 units deep. Description: the jellyfish swims upwards. Potential benefit: +2.</td>
+</tr>
+<tr>
+<td>41318</td>
+<td>Swim Down. Requirements: show tank 4 units deep. Description: the jellyfish drifts downwards. Potential benefit: +2.</td>
+</tr>
+<tr>
+<td>41319</td>
+<td>Wave to Crowd. Requirements: sea lion raft and show tank 4 units deep. Description: the sea lion leans onto its front flipper, raises its other flipper into the air and flaps it up and down. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41320</td>
+<td>Play with Squeeze Horn. Requirements: sea lion squeeze horn and show tank 4 units deep. Description: the sea lion jumps on the raft, where there are three bicycle-style brass horns. The sea lion squeezes the horn with its mouth, making beautiful music. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41321</td>
+<td>Play with Beach Ball. Requirements: sea lion beach ball and show tank 4 units deep. Description: the sea lion jumps up on the raft, pokes its snout under the ball and raises its head up, balancing the ball on its nose. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41322</td>
+<td>Breach. Requirements: show tank 4 units deep. Description: the sea lion dives down, then quickly heads to the surface and rolls over onto its side in mid-air. Potential benefit: +2.</td>
+</tr>
+<tr>
+<td>41323</td>
+<td>Surface Spin. Requirements: show tank 4 units deep. Description: the sea lion performs a barrel-roll style display. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41324</td>
+<td>Wave to Crowd. Requirements: research and show tank 4 units deep. Description: the dolphin swims slowly, turns over onto its side, then raises its flipper out of the water and waves it up and down. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41325</td>
+<td>Back Flip. Requirements: show tank 4 units deep. Description: the sea otter jumps out of the water and does a back flip. Potential benefit: +2.</td>
+</tr>
+<tr>
+<td>41326</td>
+<td>Hoop Jump. Requirements: sea otter hoop and show tank 4 units deep. Description: the sea otter jumps high out of the water, arches its back, sails through the hoop and enters the water on the other side. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41327</td>
+<td>Slam Dunk. Requirements: sea otter ball and show tank 4 units deep. Description: the sea otter grabs the basketball with its front paws and jumps out of the water, slam dunking the basketball through the hoop. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41328</td>
+<td>Jump. Requirements: research and show tank 2 units deep. Description: the sea otter jumps out of the water and re-enters the water head first. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41329</td>
+<td>Surface Spin. Requirements: research and show tank 2 units deep. Description: the sea otter spins along the surface of the water like a corkscrew. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41330</td>
+<td>Wave to Crowd. Requirements: show tank at least 2 units deep. Description: the sea otter moves its paws up and down over its chest, waving to the crowd. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41400</td>
+<td>Wave to Crowd. Requirements: show tank 4 units deep. Description: the orca swims slowly along the surface of the water, turns over onto its left side and raises its right flipper out of the water and waves it up and down. Potential benefit: +2.</td>
+</tr>
+<tr>
+<td>41401</td>
+<td>Play with Ball. Requirements: orca ball and show tank 8 units deep. Description: the orca approaches the beach ball, then whacks the ball straight up into the air a few meters. Potential benefit: +6.</td>
+</tr>
+<tr>
+<td>41402</td>
+<td>Sideways Breach. Requirements: advanced trick area and show tank 8 units deep. Description: the orca swims quickly upward launches into the air, its tail fully leaving the water and lands on its side on the water, causing a very big splash. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41403</td>
+<td>Beach on Stage. Requirements: orca stage and show tank 4 units deep. Description: the orca swims to the platform object and beaches itself, then returns to the water. Potential benefit: +6.</td>
+</tr>
+<tr>
+<td>41404</td>
+<td>Reverse Tail Walking. Requirements: research and show tank 4 units deep. This trick starts when the orca swims backwards, halfway up out of the water. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41405</td>
+<td>Reverse Breach. Requirements: research, advanced trick area, and show tank 8 units deep. Description: the orca swims quickly upward, launches into the air, rotates onto its back, smoothly arcs into a headfirst dive back into the water. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41406</td>
+<td>Feeding Frenzy. Requirements: show tank 4 units deep. Description: the great white shark swims ferociously at the surface of the water, thrashing back and forth, its mouth snapping open and shut rapidly. Potential benefit: +5.</td>
+</tr>
+<tr>
+<td>41407</td>
+<td>Bubble Jump. Requirements: research, advanced trick area, and show tank 8 units deep. Description: the dolphin blows two rings of air from its blowhole, and swims and jumps up through them, corkscrewing its way back to the water. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41408</td>
+<td>Hoop Jump. Requirements: dolphin hoop and show tank 4 units deep. Description: the dolphin swims quickly toward the hoop, leaps up out of the water, does a barrel roll in midair as it goes through the hoop and then re-enters the water. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41409</td>
+<td>Tail Walk. Requirements: show tank 4 units deep. Description: the dolphin swims straight up through the surface of the water, strongly jerks backward across the water, eventually slipping back into the water. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41410</td>
+<td>Play with Ball. Requirements: dolphin ball and show tank 4 units deep. Description: the dolphin whacks the ball straight up into the air with its melon. The dolphin returns to surface and swims onward. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41411</td>
+<td>Belly Flop. Requirements: advanced trick area, research and show tank 8 units deep. Description: the dolphin jumps headfirst out of the water and flips forward in a full circle before re-entering the water. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41412</td>
+<td>Flip. Requirements: show tank 4 units deep. Description: the dolphin jumps into the air and does a back flip, rotates its flipper over its head, and then re-enters the water. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41413</td>
+<td>Jump. Requirements: show tank 8 units deep. Description: the dolphin jumps up out of the water and dives back headfirst. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41414</td>
+<td>Spin. Requirements: research and show tank 4 units deep. Description: the dolphin swims while spinning clockwise through the surface of the water. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41415</td>
+<td>Breach Attack. Requirements: research and show tank 4 units deep. Description: the shark quickly shoots straight up through the surface of the water, then curves its head towards the water surface and falls sideways back into the water. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41416</td>
+<td>Spray Water. Requirements: show tank 4 units deep. Description: the orca spits a stream of water from its mouth. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41417</td>
+<td>Swim Up. Requirements: show tank 4 units deep. Description: the jellyfish swims upwards. Potential benefit: +2.</td>
+</tr>
+<tr>
+<td>41418</td>
+<td>Swim Down. Requirements: show tank 4 units deep. Description: the jellyfish drifts downwards. Potential benefit: +2.</td>
+</tr>
+<tr>
+<td>41419</td>
+<td>Wave to Crowd. Requirements: sea lion raft and show tank 4 units deep. Description: the sea lion leans onto its front flipper, raises its other flipper into the air and flaps it up and down. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41420</td>
+<td>Play with Squeeze Horn. Requirements: sea lion squeeze horn and show tank 4 units deep. Description: the sea lion jumps on the raft, where there are three bicycle-style brass horns. The sea lion squeezes the horn with its mouth, making beautiful music. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41421</td>
+<td>Play with Beach Ball. Requirements: sea lion beach ball and show tank 4 units deep. Description: the sea lion jumps up on the raft, pokes its snout under the ball and raises its head up, balancing the ball on its nose. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41422</td>
+<td>Breach. Requirements: show tank 4 units deep. Description: the sea lion dives down, then quickly heads to the surface and rolls over onto its side in mid-air. Potential benefit: +2.</td>
+</tr>
+<tr>
+<td>41423</td>
+<td>Surface Spin. Requirements: show tank 4 units deep. Description: the sea lion performs a barrel-roll style display. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41424</td>
+<td>Wave to Crowd. Requirements: research and show tank 4 units deep. Description: the dolphin swims slowly, turns over onto its side, then raises its flipper out of the water and waves it up and down. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41425</td>
+<td>Back Flip. Requirements: show tank 4 units deep. Description: the sea otter jumps out of the water and does a back flip. Potential benefit: +2.</td>
+</tr>
+<tr>
+<td>41426</td>
+<td>Hoop Jump. Requirements: sea otter hoop and show tank 4 units deep. Description: the sea otter jumps high out of the water, arches its back, sails through the hoop and enters the water on the other side. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41427</td>
+<td>Slam Dunk. Requirements: sea otter ball and show tank 4 units deep. Description: the sea otter grabs the basketball with its front paws and jumps out of the water, slam dunking the basketball through the hoop. Potential benefit: +4.</td>
+</tr>
+<tr>
+<td>41428</td>
+<td>Jump. Requirements: research and show tank 2 units deep. Description: the sea otter jumps out of the water and re-enters the water head first. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41429</td>
+<td>Surface Spin. Requirements: research and show tank 2 units deep. Description: the sea otter spins along the surface of the water like a corkscrew. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41430</td>
+<td>Wave to Crowd. Requirements: show tank at least 2 units deep. Description: the sea otter moves its paws up and down over its chest, waving to the crowd. Potential benefit: +3.</td>
+</tr>
+<tr>
+<td>41513</td>
+<td>Click to play selected map.</td>
+</tr>
+<tr>
+<td>41514</td>
+<td>Click to return to main menu without playing a freeform map.</td>
+</tr>
+<tr>
+<td>44010</td>
+<td>Click to play selected scenario.</td>
+</tr>
+<tr>
+<td>44011</td>
+<td>Click to return to main menu without playing a scenario.</td>
+</tr>
+<tr>
+<td>52211</td>
+<td>Total Cash. Lists amount of money currently available.</td>
+</tr>
+<tr>
+<td>52212</td>
+<td>Zoo Value. Lists amount of money currently available, plus the value of everything in the zoo.</td>
+</tr>
+<tr>
+<td>52213</td>
+<td>Show Income. Lists amount of income from animal shows.</td>
+</tr>
+<tr>
+<td>52214</td>
+<td>Net Income. Lists amount of income minus expenses.</td>
+</tr>
+<tr>
+<td>54217</td>
+<td>Orca Tricks. Select this program to research new tricks for orcas to perform in shows.</td>
+</tr>
+<tr>
+<td>54218</td>
+<td>Great White Shark Tricks. Select this program to research new tricks for the great white shark to perform in shows.</td>
+</tr>
+<tr>
+<td>54219</td>
+<td>Bottlenose Dolphin Tricks. Select this program to research new tricks for the bottlenose dolphin to perform in shows.</td>
+</tr>
+<tr>
+<td>54220</td>
+<td>Aquatic Foliage. Select this to begin a conservation program to make available more foliage for aquatic animal exhibits.</td>
+</tr>
+<tr>
+<td>54231</td>
+<td>Researching this project will allow you to grow globe willow trees.</td>
+</tr>
+<tr>
+<td>54322</td>
+<td>Reverse Tail Walk. Researching this program will allow the orca to reverse tail walk during performances.</td>
+</tr>
+<tr>
+<td>54323</td>
+<td>Reverse Breach. Researching this program will allow the orca to reverse breach during performances.</td>
+</tr>
+<tr>
+<td>54324</td>
+<td>Feeding Frenzy. Researching this program will allow the great white shark to go into a feeding frenzy during performances.</td>
+</tr>
+<tr>
+<td>54325</td>
+<td>Breach Attack. Researching this program will allow the great white shark to breach attack during performances.</td>
+</tr>
+<tr>
+<td>54326</td>
+<td>Bubble Jump. Researching this program will allow the bottlenose dolphin to jump through a bubble ring during performances.</td>
+</tr>
+<tr>
+<td>54327</td>
+<td>Belly Flop. Researching this program will allow the bottlenose dolphin to belly flop during performances.</td>
+</tr>
+<tr>
+<td>54328</td>
+<td>Crustacean House. Funding this conservation program will allow you to purchase a crustacean house.</td>
+</tr>
+<tr>
+<td>54329</td>
+<td>Tropical Aquarium. Funding this conservation program will allow you to purchase a tropical aquarium.</td>
+</tr>
+<tr>
+<td>54330</td>
+<td>Clownfish of the Pacific.  Funding this conservation program will allow you to select Clownfish of the Pacific for the tropical aquarium.</td>
+</tr>
+<tr>
+<td>54331</td>
+<td>Angelfish of the Amazon. Funding this conservation program will allow you to select Angelfish of the Amazon for the tropical aquarium.</td>
+</tr>
+<tr>
+<td>54332</td>
+<td>Blue Tang of Bermuda. Funding this conservation program will allow you to select Blue Tang of Bermuda for the tropical aquarium.</td>
+</tr>
+<tr>
+<td>54333</td>
+<td>Crayfish of the Mississippi. Funding this conservation program will allow you to select Crayfish of the Mississippi for the crustacean house.</td>
+</tr>
+<tr>
+<td>54334</td>
+<td>Horseshoe Crabs of the Delaware Bay.  Funding this conservation program will allow you to select Horseshoe Crabs of the Delaware Bay for the crustacean house.</td>
+</tr>
+<tr>
+<td>54335</td>
+<td>Spider Crabs of the North Atlantic. Funding this conservation program will allow you to select Spider Crabs of the North Atlantic for the crustacean house.</td>
+</tr>
+<tr>
+<td>54336</td>
+<td>Narwhal. Researching this program will allow you to adopt a narwhal.</td>
+</tr>
+<tr>
+<td>54337</td>
+<td>Shortfin Mako Shark. Researching this program will allow you to adopt a shortfin mako shark.</td>
+</tr>
+<tr>
+<td>54338</td>
+<td>Great White Shark. Researching this program will allow you to adopt a great white shark.</td>
+</tr>
+<tr>
+<td>54339</td>
+<td>Humpback Whale. Researching this program will allow you to adopt a humpback whale.</td>
+</tr>
+<tr>
+<td>54340</td>
+<td>Sea Lettuce. Researching this program will allow you to purchase sea lettuce, which is favored by narwhals.</td>
+</tr>
+<tr>
+<td>54341</td>
+<td>Divercate Tree Coral. Researching this program will allow you to purchase divercate tree coral, which is favored by great white sharks.</td>
+</tr>
+<tr>
+<td>54342</td>
+<td>Sea Anemone. Researching this program will allow you to purchase sea anemones.</td>
+</tr>
+<tr>
+<td>54343</td>
+<td>Sea Star. Researching this program will allow you to purchase sea stars, which are favored by humpback whales.</td>
+</tr>
+<tr>
+<td>54344</td>
+<td>Marine Specialist Training 1. Marine specialists will be able to walk and swim faster.</td>
+</tr>
+<tr>
+<td>54345</td>
+<td>Marine Specialist Training 2. Aquatic animal tricks will be researched faster.</td>
+</tr>
+<tr>
+<td>54346</td>
+<td>Maintenance Worker Training 3. Maintenance workers will be able to repair tank filters faster.</td>
+</tr>
+<tr>
+<td>54347</td>
+<td>Aquatic Animal Antibiotics. Researching this program will introduce an inoculation program for your aquatic animals, making them less likely to catch diseases.</td>
+</tr>
+<tr>
+<td>54348</td>
+<td>Aquatic Animal Longevity. Researching this program will introduce measures that allow aquatic animals to live longer.</td>
+</tr>
+<tr>
+<td>54349</td>
+<td>Sea Mammal Rescue. Researching this program will introduce animal-specific medical services to care for manatees.</td>
+</tr>
+<tr>
+<td>54350</td>
+<td>Beluga Care. Researching this program will introduce animal specific medical services to care for belugas.</td>
+</tr>
+<tr>
+<td>54351</td>
+<td>Oil Exposure. Researching this program will introduce animal specific medical services to care for animals exposed to oil spills.</td>
+</tr>
+<tr>
+<td>54352</td>
+<td>Baby Humpback Whale Care. Researching this program will introduce animal specific medical services to care for humpback whales.</td>
+</tr>
+<tr>
+<td>54353</td>
+<td>Paddle Boat. Funding this conservation program will allow you to select the paddle boat for the boat rental shack.</td>
+</tr>
+<tr>
+<td>54354</td>
+<td>Kayak. Funding this conservation program will allow you to select the kayak for the boat rental shack.</td>
+</tr>
+<tr>
+<td>54355</td>
+<td>Swan Boat. Funding this conservation program will allow you to select the swan boat for the boat rental shack.</td>
+</tr>
+<tr>
+<td>54356</td>
+<td>Jump. Researching this program will allow the southern sea otter to jump during performances.</td>
+</tr>
+<tr>
+<td>54357</td>
+<td>Spin. Researching this program will allow the southern sea otter to spin at the tank surface during performances.</td>
+</tr>
+<tr>
+<td>54358</td>
+<td>Aquatic Animal Houses. Select this to begin a conservation program to develop aquatic animal houses for aquatic animals that are not large enough for their own exhibits.</td>
+</tr>
+<tr>
+<td>54359</td>
+<td>Aquatic Animals. Select this to begin a conservation program to discover new aquatic animals for adoption.</td>
+</tr>
+<tr>
+<td>54360</td>
+<td>Aquatic Animal Care. Select this program to research aquatic animal inoculation and improved aquatic animal longevity.</td>
+</tr>
+<tr>
+<td>54361</td>
+<td>Marine Specialist Training. Select this program to research education programs to speed up marine specialist movement and decrease the amount of time tricks take to research.</td>
+</tr>
+<tr>
+<td>54362</td>
+<td>Marine Recovery. Select this program to research ways to care for injured aquatic animals.</td>
+</tr>
+<tr>
+<td>54363</td>
+<td>Southern Sea Otter Tricks. Select this program to research new tricks for the southern sea otter to perform in shows.</td>
+</tr>
+<tr>
+<td>54364</td>
+<td>54227</td>
+</tr>
+<tr>
+<td>54365</td>
+<td>Spin. Researching this program will allow the bottlenose dolphin to spin at the tank surface during performances.</td>
+</tr>
+<tr>
+<td>54366</td>
+<td>Wave to Crowd. Researching this program will allow the bottlenose dolphin to wave to the crowd at the tank surface during performances.</td>
+</tr>
+<tr>
+<td>59101</td>
+<td>Excellence in Exhibit Design - Silver Plaque. You were given this award for displaying at least one animal in a highly suitable exhibit.</td>
+</tr>
+<tr>
+<td>59102</td>
+<td>Excellence in Exhibit Design - Gold Plaque. You were given this award for displaying at least one animal in a highly suitable exhibit. This award came with a cash bonus of $15,000.</td>
+</tr>
+<tr>
+<td>59103</td>
+<td>Most Popular Zoo - Silver Certificate. You were given this award for reaching the 500th guest milestone.</td>
+</tr>
+<tr>
+<td>59104</td>
+<td>Most Popular Zoo - Gold Certificate. You were given this award for reaching the 1,000th guest milestone. This award came with a cash bonus of $25,000.</td>
+</tr>
+<tr>
+<td>59105</td>
+<td>Best Zoo - Silver Trophy. You were given this award for providing a zoo in which the animals are well cared for and the guests enjoy the experience of visiting the zoo.</td>
+</tr>
+<tr>
+<td>59106</td>
+<td>Best Zoo - Gold Trophy. You were given this award for providing a zoo in which the animals are well cared for and the guests enjoy the experience of visiting the zoo. This award came with a cash bonus of $25,000.</td>
+</tr>
+<tr>
+<td>59107</td>
+<td>Highest Customer Satisfaction - Blue Ribbon. You were given this award for making guests' visits to your zoo memorable. This award came with a cash bonus of $25,000.</td>
+</tr>
+<tr>
+<td>59108</td>
+<td>Quality Animal Care - Blue Ribbon. You were given this award for providing the highest quality care and treatment for the animals in your zoo. This award came with a cash bonus of $5,000.</td>
+</tr>
+<tr>
+<td>59109</td>
+<td>Diverse Species - Silver Plaque. You were given this award for exhibiting over 10 different animal species in your zoo.</td>
+</tr>
+<tr>
+<td>59110</td>
+<td>Diverse Species - Gold Plaque. You were given this award for exhibiting over 30 different animal species in your zoo. This award came with a cash bonus of $30,000.</td>
+</tr>
+<tr>
+<td>59111</td>
+<td>Highest Quality Exhibits - Silver Certificate. You were given this award for providing exhibits of the highest quality for your animals.</td>
+</tr>
+<tr>
+<td>59112</td>
+<td>Highest Quality Exhibits - Gold Certificate. You were given this award for providing exhibits of the highest quality for your animals. This award came with a cash bonus of $40,000.</td>
+</tr>
+<tr>
+<td>59113</td>
+<td>Excellence in Dinosaur Exhibit Design - Gold Cup. You were given this award for exhibiting at least three dinosaurs in suitable exhibits.</td>
+</tr>
+<tr>
+<td>59114</td>
+<td>Complete Ice Age Zoo - Gold Mammoth. You were given this award for exhibiting all four Ice Age animals in your zoo.</td>
+</tr>
+<tr>
+<td>59115</td>
+<td>Quality Dinosaur Care - Blue Ribbon. You were given this award for exhibiting at least ten dinosaurs in suitable exhibits in your zoo. This award came with a cash bonus of $50,000.</td>
+</tr>
+<tr>
+<td>59116</td>
+<td>Tyrannosaurus rex Birth - Gold Rex. You were given this award for having a T. rex egg laid in your zoo. This award came with a cash bonus of $100,000.</td>
+</tr>
+<tr>
+<td>59117</td>
+<td>Outstanding Animal Health Plaque. You were given this award for having less than three sick animals in your zoo at the end of the first year.</td>
+</tr>
+<tr>
+<td>59118</td>
+<td>Complete Jurassic Zoo - Gold Stegosaurus. You were given this award for exhibiting all seven Jurassic dinosaurs in your zoo.</td>
+</tr>
+<tr>
+<td>59119</td>
+<td>Excellence in Shark Conservation - Bronze Shark Statue. You were given this award for displaying at least four different shark species in highly suitable exhibits. This award came with a cash bonus of $10,000.</td>
+</tr>
+<tr>
+<td>59120</td>
+<td>Superior Whale Care - Gold Plaque. You were given this award for displaying at least five different whale species in highly suitable exhibits. This award came with a cash bonus of $20,000.</td>
+</tr>
+<tr>
+<td>59121</td>
+<td>Penguin Colony - Silver Plaque. You were given this award for displaying at least 16 emperor penguins in a highly suitable exhibit. This award came with a cash bonus of $5,000.</td>
+</tr>
+<tr>
+<td>59122</td>
+<td>Arctic Aquatic Care. You were given this award for displaying a beluga whale, walrus and a narwhal in highly suitable exhibits. This award came with a donated pair of emperor penguins.</td>
+</tr>
+<tr>
+<td>59123</td>
+<td>Excellence in Arctic Conservation. You were given this award for displaying a beluga whale, walrus, narwhal, Arctic wolf and a polar bear in highly suitable exhibits. This award came with a cash bonus of $25,000.</td>
+</tr>
+<tr>
+<td>59124</td>
+<td>Excellence in Arctic Exhibit Construction. You were given this award for displaying a beluga whale, walrus, narwhal, Arctic wolf, polar bear, wooly mammoth and a wooly rhino in highly suitable exhibits. This award came with a cash bonus of $50,000, and an iceberg was unlocked.</td>
+</tr>
+<tr>
+<td>59125</td>
+<td>Best Zoo in the World. You were given this award for having received 15 awards. This award came with a cash bonus of $100,000 and a donated baby giant panda.</td>
+</tr>
+<tr>
+<td>59126</td>
+<td>Zoo of the Year. You were given this award for having a large number of exhibits with very happy animals, many happy people and a very valuable zoo overall. This award came with a cash bonus of $150,000, and a northern elephant seal statue was unlocked.</td>
+</tr>
+<tr>
+<td>59127</td>
+<td>Best Sea Lion Show in the Country. You were given this award for having a California sea lion show that has generated $5,000 in revenue. This award unlocked a sea lion statue.</td>
+</tr>
+<tr>
+<td>59128</td>
+<td>Best Sea Otter Show in the Country. You were given this  award for having a sea otter show that has generated $10,000 in revenue. This award came with a cash bonus of $10,000.</td>
+</tr>
+<tr>
+<td>59129</td>
+<td>Best Orca Show in the Country. You were given this award for having an orca show that has generated $15,000 in revenue. This award came with a cash bonus of $5,000, and an orca statue was unlocked.</td>
+</tr>
+<tr>
+<td>59130</td>
+<td>Best Dolphin Show in the Country. You were given this award for having a bottlenose dolphin show that has generated $20,000 in revenue. This award came with a cash bonus of $10,000, and a dolphin statue was unlocked.</td>
+</tr>
+<tr>
+<td>59131</td>
+<td>Excellence in Savannah Exhibit Construction. You were given this award for displaying every savannah animal or dinosaur in highly suitable exhibits. This award came with a cash bonus of $50,000.</td>
+</tr>
+<tr>
+<td>61138</td>
+<td>the 4-wheeler</td>
+</tr>
+<tr>
+<td>61165</td>
+<td>the Lighthouse</td>
+</tr>
+<tr>
+<td>61169</td>
+<td>the Umbrella</td>
+</tr>
+<tr>
+<td>61170</td>
+<td>the Motor Boat</td>
+</tr>
+<tr>
+<td>61171</td>
+<td>the Jetty</td>
+</tr>
+<tr>
+<td>61172</td>
+<td>the Jetty</td>
+</tr>
+<tr>
+<td>61173</td>
+<td>the Jetty</td>
+</tr>
+<tr>
+<td>61174</td>
+<td>the Sail Boat</td>
+</tr>
+<tr>
+<td>61185</td>
+<td>the Broken Bench</td>
+</tr>
+<tr>
+<td>61186</td>
+<td>the Broken Light</td>
+</tr>
+<tr>
+<td>61187</td>
+<td>the Dock 4</td>
+</tr>
+<tr>
+<td>61188</td>
+<td>the Hotel</td>
+</tr>
+<tr>
+<td>61189</td>
+<td>the Lifeguard Station</td>
+</tr>
+<tr>
+<td>61465</td>
+<td>the Show Grandstand</td>
+</tr>
+<tr>
+<td>61466</td>
+<td>the Giant Pacific Clam</td>
+</tr>
+<tr>
+<td>61467</td>
+<td>the Mermaid Statue</td>
+</tr>
+<tr>
+<td>61468</td>
+<td>the Treasure Chest</td>
+</tr>
+<tr>
+<td>61469</td>
+<td>the Drain</td>
+</tr>
+<tr>
+<td>61470</td>
+<td>the Deep Sea Diver Statue</td>
+</tr>
+<tr>
+<td>61471</td>
+<td>the Tank Filter</td>
+</tr>
+<tr>
+<td>61472</td>
+<td>the Dolphin Wishing Fountain</td>
+</tr>
+<tr>
+<td>61473</td>
+<td>the Wishing Fountain</td>
+</tr>
+<tr>
+<td>61474</td>
+<td>the Wall</td>
+</tr>
+<tr>
+<td>61475</td>
+<td>the Curtain</td>
+</tr>
+<tr>
+<td>61476</td>
+<td>the Door Frame</td>
+</tr>
+<tr>
+<td>61477</td>
+<td>the Black Observation Area</td>
+</tr>
+<tr>
+<td>61478</td>
+<td>the White Observation Area</td>
+</tr>
+<tr>
+<td>61479</td>
+<td>the Stage Backdrop</td>
+</tr>
+<tr>
+<td>61480</td>
+<td>the Stage Door</td>
+</tr>
+<tr>
+<td>61481</td>
+<td>the Stage Backdrop Corner</td>
+</tr>
+<tr>
+<td>61482</td>
+<td>the Fancy Backdrop</td>
+</tr>
+<tr>
+<td>61494</td>
+<td>the Metal Bench</td>
+</tr>
+<tr>
+<td>61495</td>
+<td>the Jumping Fountain</td>
+</tr>
+<tr>
+<td>61496</td>
+<td>the Orca Statue</td>
+</tr>
+<tr>
+<td>61497</td>
+<td>the Dolphin Statue</td>
+</tr>
+<tr>
+<td>61498</td>
+<td>the Sea Lion Statue</td>
+</tr>
+<tr>
+<td>61500</td>
+<td>the Advanced Trick Area</td>
+</tr>
+<tr>
+<td>61501</td>
+<td>the Dolphin Ball</td>
+</tr>
+<tr>
+<td>61502</td>
+<td>the Orca Ball</td>
+</tr>
+<tr>
+<td>61503</td>
+<td>the Dolphin Hoop</td>
+</tr>
+<tr>
+<td>61504</td>
+<td>the Orca Stage</td>
+</tr>
+<tr>
+<td>61505</td>
+<td>the Ice Floe</td>
+</tr>
+<tr>
+<td>61506</td>
+<td>the Sea Lion Beach Ball</td>
+</tr>
+<tr>
+<td>61507</td>
+<td>the Sea Lion Squeeze Horn</td>
+</tr>
+<tr>
+<td>61508</td>
+<td>the Sea Lion Raft</td>
+</tr>
+<tr>
+<td>61509</td>
+<td>the Raft</td>
+</tr>
+<tr>
+<td>61510</td>
+<td>the Sea Otter Ball</td>
+</tr>
+<tr>
+<td>61511</td>
+<td>the Sea Otter Hoop</td>
+</tr>
+<tr>
+<td>61512</td>
+<td>the Icy Keg</td>
+</tr>
+<tr>
+<td>61800</td>
+<td>the Seal Statue</td>
+</tr>
+<tr>
+<td>61801</td>
+<td>the Trio Statue</td>
+</tr>
+<tr>
+<td>61802</td>
+<td>the Fancy Grandstand</td>
+</tr>
+<tr>
+<td>61803</td>
+<td>the Photo Booth</td>
+</tr>
+<tr>
+<td>62400</td>
+<td>the Sea Anemone</td>
+</tr>
+<tr>
+<td>62401</td>
+<td>the Barnacles</td>
+</tr>
+<tr>
+<td>62402</td>
+<td>the Beach Grass</td>
+</tr>
+<tr>
+<td>62403</td>
+<td>the Brittle Sea Star</td>
+</tr>
+<tr>
+<td>62404</td>
+<td>the Clam Bed</td>
+</tr>
+<tr>
+<td>62405</td>
+<td>the Orange Cup Coral</td>
+</tr>
+<tr>
+<td>62406</td>
+<td>the Divercate Tree Coral</td>
+</tr>
+<tr>
+<td>62407</td>
+<td>the Feather Duster Worm</td>
+</tr>
+<tr>
+<td>62408</td>
+<td>the Fire Coral</td>
+</tr>
+<tr>
+<td>62409</td>
+<td>the Kelp</td>
+</tr>
+<tr>
+<td>62410</td>
+<td>the Sea Lettuce</td>
+</tr>
+<tr>
+<td>62411</td>
+<td>the Red Gorgonian</td>
+</tr>
+<tr>
+<td>62412</td>
+<td>the Sargassum</td>
+</tr>
+<tr>
+<td>62413</td>
+<td>the Sand Dollar</td>
+</tr>
+<tr>
+<td>62414</td>
+<td>the Sea Cucumber</td>
+</tr>
+<tr>
+<td>62415</td>
+<td>the Sea Star</td>
+</tr>
+<tr>
+<td>62416</td>
+<td>the Seaweed</td>
+</tr>
+<tr>
+<td>62417</td>
+<td>the Sea Grass</td>
+</tr>
+<tr>
+<td>62418</td>
+<td>the Sea Sponge</td>
+</tr>
+<tr>
+<td>62419</td>
+<td>the Stove Pipe Sponge</td>
+</tr>
+<tr>
+<td>62420</td>
+<td>the Tube Worm</td>
+</tr>
+<tr>
+<td>62421</td>
+<td>the Purple Sea Urchin</td>
+</tr>
+<tr>
+<td>63050</td>
+<td>the Aquatic Gift Shop</td>
+</tr>
+<tr>
+<td>63051</td>
+<td>the Lobby's Restaurant</td>
+</tr>
+<tr>
+<td>63052</td>
+<td>the Crustacean House</td>
+</tr>
+<tr>
+<td>63053</td>
+<td>the Tropical Aquarium</td>
+</tr>
+<tr>
+<td>63054</td>
+<td>the Kneemo's Sub Shop</td>
+</tr>
+<tr>
+<td>63055</td>
+<td>the Aquatic Gift Stand</td>
+</tr>
+<tr>
+<td>63056</td>
+<td>the Sea Dawgs Stand</td>
+</tr>
+<tr>
+<td>63057</td>
+<td>the Crushed Ice Stand</td>
+</tr>
+<tr>
+<td>63058</td>
+<td>the Polly's Popcorn Stand</td>
+</tr>
+<tr>
+<td>63059</td>
+<td>the Boat Rental Shack</td>
+</tr>
+<tr>
+<td>63060</td>
+<td>the Tame Dolphin Ride</td>
+</tr>
+<tr>
+<td>63061</td>
+<td>the Swim Shack</td>
+</tr>
+<tr>
+<td>63062</td>
+<td>the Aquatic Restroom</td>
+</tr>
+<tr>
+<td>63063</td>
+<td>the Frozen Yogurt Stand</td>
+</tr>
+<tr>
+<td>63064</td>
+<td>the Shark Tunnel</td>
+</tr>
+<tr>
+<td>63065</td>
+<td>the Orca Bouncy Ride</td>
+</tr>
+<tr>
+<td>63066</td>
+<td>the Ring Toss</td>
+</tr>
+<tr>
+<td>63135</td>
+<td>the Seafloor Cave</td>
+</tr>
+<tr>
+<td>63136</td>
+<td>the Sunken Ship</td>
+</tr>
+<tr>
+<td>63137</td>
+<td>the Sunken Log</td>
+</tr>
+<tr>
+<td>64113</td>
+<td>the Boardwalk Path</td>
+</tr>
+<tr>
+<td>64235</td>
+<td>the Small Ocean Floor Rock</td>
+</tr>
+<tr>
+<td>64236</td>
+<td>the Medium Coral Formation</td>
+</tr>
+<tr>
+<td>64237</td>
+<td>the Large Ocean Floor Rock</td>
+</tr>
+<tr>
+<td>64238</td>
+<td>the Medium Ocean Floor Rock</td>
+</tr>
+<tr>
+<td>64239</td>
+<td>the Large Coral Formation</td>
+</tr>
+<tr>
+<td>64240</td>
+<td>the Iceberg</td>
+</tr>
+<tr>
+<td>64241</td>
+<td>the Isle Rock</td>
+</tr>
+<tr>
+<td>64340</td>
+<td>the Black Bar and Glass</td>
+</tr>
+<tr>
+<td>64341</td>
+<td>the Concrete Edge and Glass</td>
+</tr>
+<tr>
+<td>64342</td>
+<td>the Striped Scooped Edges and Glass</td>
+</tr>
+<tr>
+<td>64343</td>
+<td>the Striped Wavy Edges and Glass</td>
+</tr>
+<tr>
+<td>64344</td>
+<td>the Solid Concrete</td>
+</tr>
+<tr>
+<td>64345</td>
+<td>the Striped Wavy Edges and Gunite</td>
+</tr>
+<tr>
+<td>64346</td>
+<td>the Buoy Rope Fence</td>
+</tr>
+<tr>
+<td>64347</td>
+<td>the Angled Railing and Glass</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2024</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2024</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../lang100/" class="md-footer__link md-footer__link--prev" aria-label="Previous: lang100">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                lang100
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../lang300/" class="md-footer__link md-footer__link--next" aria-label="Next: lang300">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                lang300
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Goosifer.IO
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.tabs", "navigation.expand", "navigation.path", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "content.action.edit", "content.action.view", "content.footnote.tooltips"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../../../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>

@@ -156,6 +156,136 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Santa Claus and Reindeer  | `5083`   |
 | Halloween Witch           | `5084`   |
 
+## Animal Genus
+
+| Entity Name                | ID    |
+|----------------------------|-------|
+| Elephant                   | `5100`|
+| Panda                      | `5101`|
+| Bear                       | `5102`|
+| Ape                        | `5103`|
+| Horse                      | `5104`|
+| Gazelle                    | `5105`|
+| Lion                       | `5106`|
+| Tiger                      | `5107`|
+| Cheetah                    | `5108`|
+| Leopard                    | `5109`|
+| Jaguar                     | `5110`|
+| Wolf                       | `5111`|
+| Bison                      | `5116`|
+| Buffalo                    | `5118`|
+| Camel                      | `5119`|
+| Hippopotamus               | `5120`|
+| Flamingo                   | `5121`|
+| Ostrich                    | `5122`|
+| Crocodile                  | `5123`|
+| Anteater                   | `5124`|
+| Pig                        | `5125`|
+| Penguin                    | `5126`|
+| Sheep                      | `5127`|
+| Goat                       | `5128`|
+| Deer                       | `5129`|
+| Hyena                      | `5130`|
+| Sea Lion                   | `5131`|
+| Antelope                   | `5132`|
+| Monster                    | `5134`|
+| Tyrannosaurus              | `5135`|
+| Saber-toothed Cat          | `5136`|
+| Ankylosaurus               | `5137`|
+| Gallimimus                 | `5138`|
+| Iguanodon                  | `5139`|
+| Lambeosaurus               | `5140`|
+| Spinosaurus                | `5141`|
+| Styracosaurus              | `5142`|
+| Velociraptor               | `5143`|
+| Allosaurus                 | `5144`|
+| Camptosaurus               | `5145`|
+| Caudipteryx                | `5146`|
+| Kentrosaurus               | `5147`|
+| Plesiosaurus               | `5148`|
+| Stegosaurus                | `5149`|
+| Triceratops                | `5157`|
+| Deinosuchus                | `5158`|
+| Orca                       | `5159`|
+| Great White Shark          | `5160`|
+| Bottlenose Dolphin         | `5161`|
+| Lion's Mane Jelly          | `5162`|
+| Elephant Seal              | `5163`|
+| Humpback Whale             | `5164`|
+| Sperm Whale                | `5165`|
+| Great Hammerhead Shark     | `5168`|
+| Tiger Shark                | `5169`|
+| Shortfin Mako Shark        | `5170`|
+| Green Moray Eel            | `5171`|
+| Beluga                     | `5172`|
+| Southern Sea Otter         | `5173`|
+| Giant Pacific Octopus      | `5174`|
+| West Indian Manatee        | `5175`|
+| Pacific Walrus             | `5176`|
+| Manta Ray                  | `5177`|
+| Green Sea Turtle           | `5178`|
+| North Atlantic Swordfish   | `5179`|
+| Giant Squid                | `5180`|
+| Bluefin Tuna               | `5181`|
+| Great Barracuda            | `5182`|
+| Mermaid                    | `5183`|
+| Komodo Dragon              | `5184`|
+| Whale Shark                | `5185`|
+| Macrauchenia               | `5186`|
+| Bowhead Whale              | `5187`|
+| Tapir                      | `5188`|
+| Sawfish                    | `5189`|
+
+## Animal Family
+
+| Entity Name           | ID       |
+|-----------------------|----------|
+| Primitive Ungulate    | `5200`   |
+| Raccoon               | `5201`   |
+| Bear                  | `5202`   |
+| Primate               | `5203`   |
+| Odd-Toed Ungulate     | `5204`   |
+| Even-Toed Ungulate    | `5205`   |
+| Cat                   | `5206`   |
+| Canine                | `5207`   |
+| Hyena	                | `5208`   |
+| Marsupial	            | `5210`   |
+| Bird                  | `5211`   |
+| Crocodile	            | `5213`   |
+| Edentate              | `5214`   |
+| Pig                   | `5215`   |
+| Dinosaur              | `5216`   |
+| Fantastic Creature    | `5217`   |
+| Cetacea               | `5218`   |
+| Lamniformes           | `5219`   |
+| Invertebrates         | `5220`   |
+| Carcharhiniformes     | `5221`   |
+| Anguilliformes        | `5222`   |
+| Pinniped              | `5223`   |
+| Sirenia	            | `5224`   |
+| Myliobatidae          | `5225`   |
+| Testudinae            | `5226`   |
+| Octopodidae	        | `5227`   |
+| Architeuthidae        | `5228`   |
+| Perciformes           | `5229`   |
+| Mustelidae	        | `5230`   |
+| Atlantean             | `5231`   |
+| Monitor Lizard        | `5232`   |
+| Orectolobiformes	    | `5233`   |
+| Tapiridae             | `5234`   |
+| Rajiformes            | `5237`   |
+
+
+## Staff
+
+| Entity Name          | ID       |
+|----------------------|----------|
+| Zookeeper            | `9500`   |
+| Maintenance Worker   | `9501`   |
+| Tour Guide           | `9502`   |
+| Scientist            | `9551`   |
+| Marine Specialist    | `9552`   |
+
 ## Guests
 
 | Entity Name | ID |

@@ -66,6 +66,7 @@ plugins:
   - git-committers:
       repository: GoosiferIO/ZooBerry-Docs
       branch: main
+  - search
 markdown_extensions:
   - admonition
   - pymdownx.details

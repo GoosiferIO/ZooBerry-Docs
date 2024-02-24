@@ -1,7 +1,7 @@
 !!! note "Incomplete"
     This page is incomplete. Pull requests welcome.
 
-# Entity IDs
+# Entity IDs and Codenames
 
 Zoo Tycoon 1 configuration files use integer values to map the game entities to string tables. Animals, buildings, foliage, guests can all be considered an entity--or otherwise anything that might be considered a game asset. Please take a look at the entity list below for a list of all entities and their IDs.
 

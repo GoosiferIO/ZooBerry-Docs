@@ -41,14 +41,15 @@ nav:
     - Attributions: attributions.md
   - Reference:
     - Zoo Tycoon 1:
-        - Configuration Files: zt1/introduction.md
-        - Scenery Configuration: zt1/Reference/scenery_files.md
-        - Scenario Configuration: zt1/Reference/scenario_files.md
-        - Entity IDs: zt1/Reference/entity_ids.md
+        - File Formats: zt1/file-formats.md
+        - Scenery Configuration: zt1/Reference/scenery-files.md
+        - Scenario Configuration: zt1/Reference/scenario-files.md
+        - Entity IDs: zt1/Reference/entity-ids.md
+        - Mod Installation: zt1/Reference/mod-installation.md
   - EMU API:
-      - Getting Started: emu/getting_started.md
-      - EMU Command Console: emu/emu_console.md
-      - Lua Scripts: emu/emu_scripts.md
+      - Getting Started: emu/getting-started.md
+      - EMU Command Console: emu/emu-console.md
+      - Lua Scripts: emu/emu-scripts.md
   - PANDA Loader:
       - Getting Started: panda/getting_started.md
 

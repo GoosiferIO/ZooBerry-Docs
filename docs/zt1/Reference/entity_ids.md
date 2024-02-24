@@ -82,80 +82,80 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 
 ### Dinosaur Digs Animals
 
-| Entity Name        | ID       |
-|--------------------|----------|
-| Tyrannosaurus Rex  | `5085`   |
-| Saber-toothed cat  | `5086`   |
-| Ankylosaurus       | `5087`   |
-| Gallimimus         | `5088`   |
-| Iguanodon          | `5089`   |
-| Lambeosaurus       | `5090`   |
-| Spinosaurus        | `5091`   |
-| Styracosaurus      | `5092`   |
-| Velociraptor       | `5093`   |
-| Allosaurus         | `5094`   |
-| Camptosaurus       | `5095`   |
-| Caudipteryx        | `5096`   |
-| Kentrosaurus       | `5097`   |
-| Plesiosaurus       | `5098`   |
-| Stegosaurus        | `5099`   |
-| Apatosaurus        | `5325`   |
-| Coelophysis        | `5326`   |
-| Herrasaurus        | `5327`   |
-| Plateosaurus       | `5328`   |
-| Wooly Mammoth      | `5329`   |
-| Wooly Rhino        | `5330`   |
-| Giant Tortoise     | `5331`   |
-| Deinosuchus        | `5332`   |
-| Megatherium        | `5501`   |
-| Macrauchenia       | `5505`   |
+| Entity Name        | ID       | Codename  |
+|--------------------|----------|-----------|
+| Tyrannosaurus Rex  | `5085`   | trex      |
+| Saber-toothed cat  | `5086`   | smilo     |
+| Ankylosaurus       | `5087`   | ankylo    |
+| Gallimimus         | `5088`   | gallim    |
+| Iguanodon          | `5089`   | iguano    |
+| Lambeosaurus       | `5090`   | lambeo    |
+| Spinosaurus        | `5091`   | spino     |
+| Styracosaurus      | `5092`   | styraco   |
+| Velociraptor       | `5093`   | velocira  |
+| Allosaurus         | `5094`   | allo      |
+| Camptosaurus       | `5095`   | campto    |
+| Caudipteryx        | `5096`   | caudipt   |
+| Kentrosaurus       | `5097`   | kentro    |
+| Plesiosaurus       | `5098`   | plesio    |
+| Stegosaurus        | `5099`   | stego     |
+| Apatosaurus        | `5325`   | apato     |
+| Coelophysis        | `5326`   | coelo     |
+| Herrasaurus        | `5327`   | herrera   |
+| Plateosaurus       | `5328`   | plateo    |
+| Wooly Mammoth      | `5329`   | wolmam    |
+| Wooly Rhino        | `5330`   | wolrhn    |
+| Giant Tortoise     | `5331`   | meiolan   |
+| Deinosuchus        | `5332`   | deino     |
+| Megatherium        | `5501`   | megath    |
+| Macrauchenia       | `5505`   | macrauch  |
 
 ### Marine Mania Animals
 
-| Entity Name            | ID       |
-|------------------------|----------|
-| Orca                   | `5400`   |
-| Great White Shark      | `5401`   |
-| Bottlenose Dolphin     | `5402`   |
-| Lion’s Mane Jellyfish  | `5403`   |
-| Elephant Seal          | `5404`   |
-| Humpback Whale         | `5405`   |
-| Sperm Whale            | `5406`   |
-| Narwhal                | `5407`   |
-| Harbor Porpoise        | `5408`   |
-| Hammerhead Shark       | `5409`   |
-| Tiger Shark            | `5410`   |
-| Mako Shark             | `5411`   |
-| Green Moray Eel        | `5412`   |
-| Beluga                 | `5413`   |
-| Southern Sea Otter     | `5414`   |
-| Pacific Octopus        | `5415`   |
-| West Indian Manatee    | `5416`   |
-| Pacific Walrus         | `5417`   |
-| Manta Ray              | `5418`   |
-| Green Sea Turtle       | `5419`   |
-| Swordfish              | `5420`   |
-| Giant Squid            | `5421`   |
-| Bluefin Tuna           | `5422`   |
-| Barracuda              | `5423`   |
-| Mermaid                | `5424`   |
-| Whale Shark            | `5504`   |
-| Common Sawfish         | `5510`   |
-| Bowhead Whale          | `5517`   |
+| Entity Name            | ID       | Codename    |
+|------------------------|----------|-------------|
+| Orca                   | `5400`   | orca        |
+| Great White Shark      | `5401`   | gwshark     |
+| Bottlenose Dolphin     | `5402`   | dolphin     |
+| Lion’s Mane Jellyfish  | `5403`   | jellyfsh    |
+| Elephant Seal          | `5404`   | eleseal     |
+| Humpback Whale         | `5405`   | hbackwhl    |
+| Sperm Whale            | `5406`   | spermwhl    |
+| Narwhal                | `5407`   | narwhal     |
+| Harbor Porpoise        | `5408`   | porpoise    |
+| Hammerhead Shark       | `5409`   | hhshark     |
+| Tiger Shark            | `5410`   | tigersh     |
+| Mako Shark             | `5411`   | mako        |
+| Green Moray Eel        | `5412`   | morayeel    |
+| Beluga                 | `5413`   | beluga      |
+| Southern Sea Otter     | `5414`   | seaotter    |
+| Pacific Octopus        | `5415`   | octopus     |
+| West Indian Manatee    | `5416`   | seacow      |
+| Pacific Walrus         | `5417`   | walrus      |
+| Manta Ray              | `5418`   | mantaray    |
+| Green Sea Turtle       | `5419`   | seaturt     |
+| Swordfish              | `5420`   | marlin      |
+| Giant Squid            | `5421`   | gsquid      |
+| Bluefin Tuna           | `5422`   | tuna        |
+| Barracuda              | `5423`   | baracuda    |
+| Mermaid                | `5424`   | mmaid       |
+| Whale Shark            | `5504`   | whleshrk    |
+| Common Sawfish         | `5510`   | sawfish     |
+| Bowhead Whale          | `5517`   | bowhead     |
 
 ### Ambient Animals
 
-| Entity Name               | ID       |
-|---------------------------|----------|
-| Hawk                      | `5050`   |
-| Blue Jay                  | `5051`   |
-| Crow                      | `5052`   |
-| Seagull                   | `5053`   |
-| Parrot                    | `5054`   |
-| Vulture                   | `5055`   |
-| Blue Fang Biplane         | `5082`   |
-| Santa Claus and Reindeer  | `5083`   |
-| Halloween Witch           | `5084`   |
+| Entity Name               | ID       | Codename    |
+|---------------------------|----------|-------------|
+| Hawk                      | `5050`   |             |
+| Blue Jay                  | `5051`   |             |
+| Crow                      | `5052`   |             |
+| Seagull                   | `5053`   |             |
+| Parrot                    | `5054`   |             |
+| Vulture                   | `5055`   |             |
+| Blue Fang Biplane         | `5082`   |             |
+| Santa Claus and Reindeer  | `5083`   |             |
+| Halloween Witch           | `5084`   |             |
 
 ## Categorical
 
@@ -823,8 +823,3 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Rubble                                  | `10513`| bstump1   |
 | Small Poo                               | `6093` | smzoodoo  |
 | Urchin %s                               | `6604` | urchin    |
-
-
-## Attributions:
-
-[^1]: Thank you to Khaydar for his contributions to the animal entity list.

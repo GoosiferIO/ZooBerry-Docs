@@ -109,7 +109,7 @@ cSwims = 1
 | Key                  | Value | Description|
 |----------------------|------|-----|
 | `idle` | `idle` | Idle defines your entity as having graphics without animation. |
-| `used` | `used` | Used defines youru entity as having graphics with animation. |
+| `used` | `used` | Used defines your entity as having graphics with animation. |
 
 ```INI
 [Animations]

@@ -37,8 +37,8 @@ This isn't comprehensive, but here are a few:
 | `cNameID`            | `<int>` | Integer key associated with a string that gives the entity its name. Value of `19000`means the string is defined inside of the `.ucb` file. If it's a 4-digit number it's a key associated with a string in a `.dll` lang file. |
 | `cHelpID` | `<int>` | Same concept as `cNameID`: keys for strings, but this one is for tooltips. If `cNameID` is set to `19000`, ZT ignores `cHelpID`. |
 |`cPurchaseCost` | `<int>` | Price of entity |
-| `cFootprintX` | `<int>` | Size of entity footprint in X direction. Must be even number. |
-| `cFootprintY` | `<int>` | Size of entity footprint in Y direction. Must be even number. |
+| `cFootprintX` | `<int>` | Size of entity footprint in X direction. Value of `1` can be used for `1/4` or `1/2` tiles, otherwise must be an even integer. |
+| `cFootprintY` | `<int>` | Size of entity footprint in Y direction. Value of `1` can be used for `1/4` or `1/2` tiles, otherwise must be an even integer. |
 | `cHeight` | `<int>` | Height of entity. Consistent with construction tool height. |
 | `cSelectable` | `<0/1>` | Can the entity be selected. |
 | `cNeedsConfirm` | `<0/1>` | Does entity need confirmation window when bulldozed. |
@@ -99,7 +99,7 @@ building
 fun
 ```
 
-# `[UseSound]`
+## `[UseSound]`
 
 Defines a playable sound for the entity.
 

@@ -22,8 +22,8 @@ theme:
     - navigation.instant.progress
     - navigation.instant.preview
     - navigation.tracking
-    # - navigation.tabs
-    - navigation.tabs.sticky
+    - navigation.tabs
+    # - navigation.tabs.sticky
     - navigation.expand
     - navigation.path
     - toc.follow
@@ -31,15 +31,23 @@ theme:
     - search.suggest
     - navigation.footer
     - content.action.edit
+    - content.footnote.tooltips
     # - search.highlight
 nav:
-  - Home: index.md
-  - Zoo Tycoon 1: 
-      Reference:
-        - Introduction: zt1/introduction.md
+  - Home: 
+    - index.md
+    - Attributions: attributions.md
+  - Reference:
+    - Zoo Tycoon 1:
+        - Configuration Files: zt1/introduction.md
         - .ucb and .ai Files: zt1/Reference/ucb_ai_files.md
         - Entity IDs: zt1/Reference/entity_ids.md
-  - EMU API: emu/introduction.md
+  - EMU API:
+      - Getting Started: emu/getting_started.md
+      - EMU Command Console: emu/emu_console.md
+      - Lua Scripts: emu/emu_scripts.md
+  - PANDA Loader:
+      - Getting Started: panda/getting_started.md
 
 extra:
   social:

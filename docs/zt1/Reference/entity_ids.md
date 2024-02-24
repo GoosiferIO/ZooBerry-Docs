@@ -186,4 +186,6 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Aquatic | `9413` |
 | Bad-Habitat | `9414` |
 
-Thank you to Khaydar for his contributions to the animal entity list.
+## Attributions:
+
+[^1]: Thank you to Khaydar for his contributions to the animal entity list.

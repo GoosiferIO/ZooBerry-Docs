@@ -47,12 +47,11 @@ This isn't comprehensive, but here are a few:
 | `cMoveable` | `<0/1>` | Can the entity be moved after placed. |
 | `cAdultChange` | `<int>` | How happy a guest is after using the entity. Negative values are possible if you want them to hate it. | 
 | `cChildChange` | `<int>` | Same as above but specifically child guests. |
-| `cUpkeep` | `<int>` | Upkeep cost per month. |
 | `cCommerce` | `<int>` | Does a user need to pay to use this entity? |
 | `cHabitat` | `<int>` | What habitat the entity belongs to. Below are possible values. `9414` makes entities unplaceable in exhibits. `9411` allows entities placeable in all exhibits. For a full list of possible values, please see [Entity IDs](./entity_ids.md#terrain)|
 | `cHideBuilding` | `<0/1>` | Hide building or show? |
 | `cUsersStayOutside` | `<0/1>` | Prevent a user from entering entity? |
-| `cTimeInside` | `<int>` | How long should a user be inside of a building? |
+| `cTimeInside` | `<int>` | How long should a user be inside of a building. It mmight make sense to match this value with length of sound file if provided. 
 | `cUsedThought` | `<int>` | A user's thought after using the entity. Works similar in concept to other key/value strings above. |   
 | `cHideUser` | `<0/1>` | Should a user be hidden when using entity? |
 

@@ -7,7 +7,7 @@ This page assumes the game directory definition of what a 'scenery' item entails
 
 The main configuration for these files are in `.ucb`, `.ucs`, or `.ai` format, but they are really `.INI` files. The following tables describe attributes that can  be given to the entities mentioned. Example files can be found in a respective `/scenery` directory.
 
-Please note that this guide is meant for reference only and is not in any way meant to imply the use of every attribute or section to make a specific kind of scenery or building entity. Instead, please refer to either official files or available mods to spin off into your own.
+Please note that this guide is meant for reference only and is not in any way meant to imply the use of every attribute or section to make a specific kind of scenery or building entity. Instead, please refer to either official files or available mods for ideas. Use this guide to then experiment and create a derivative work.
 
 ## `[<Codename>]`
 
@@ -19,7 +19,7 @@ Scenery configuration files require a unique 8-character codename that will be u
 - `F5DAD057`
 - `blnstngs`
 
-For personal use a unique codename might not matter so much, but if you'd like to minimize compatibility clashes with other mods due to codename conflicts, it might be a good idea to 
+For personal use a unique codename might not matter so much, but if you'd like to minimize compatibility clashes with other mods due to codename conflicts, it might be a good idea to pick a non-generalized name.
 
 ## `[Icon]`
 

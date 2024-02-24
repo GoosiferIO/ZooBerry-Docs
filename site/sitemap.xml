@@ -56,6 +56,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/string-tables/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.zooberry.org/zt1/Reference/String-Tables/lang0/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>
@@ -147,6 +152,61 @@
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/Reference/String-Tables/lang300/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables-Unofficial/LANG--JBL/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables-Unofficial/LANG--Jane/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables-Unofficial/LANG--ZBorsato/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables-Unofficial/LANG--ZKL/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables-Unofficial/LANG--ZTCDD/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables-Unofficial/LANG--ZooTek/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables-Unofficial/LANG--fern-tek/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables-Unofficial/lang--TKZTUFcombin/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables-Unofficial/langZA01/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables-Unofficial/langZA02/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables-Unofficial/langZA03/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -165,7 +165,7 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Boy guest | `9505` |
 | Girl guest | `9506` |
 
-## Terrain
+## Habitat
 
 | Entity Name | ID |
 | ----------- | -- |
@@ -182,7 +182,6 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Non-Habitat | `9410` |
 | Many | `9411` |
 | Null Habitat | `9412` |
-| Poo | `6062` |
 | Aquatic | `9413` |
 | Bad-Habitat | `9414` |
 

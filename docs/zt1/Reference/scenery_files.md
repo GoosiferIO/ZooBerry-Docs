@@ -3,9 +3,9 @@
 
 # Scenery Documentation
 
-Scenery includes buildings, foliage, rocks, terrain, toys, zoos, and other zoo utilities.
+This page assumes the game directory definition of what a 'scenery' item entails. Under the 'scenery' folder under the game's assets, it includes buildings, foliage, rocks, terrain, toys, zoos, and other zoo utilities.
 
-Usually found inside an entity's `.ucb` or `.ai` file, the following tables describe attributes that can  be given to the entities mentioned. Example files can be found in a respective `/scenery` directory.
+The main configuration for these files are in `.ucb` or `.ai` format, but they are really `.INI` files. The following tables describe attributes that can  be given to the entities mentioned. Example files can be found in a respective `/scenery` directory.
 
 ## `[Icon]`
 

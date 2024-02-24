@@ -9,75 +9,76 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 
 ### Base Game Animals 
 
-| Entity Name            | ID           |
-|------------------------|--------------|
-| African Elephant       | `5000`       |
-| Giant Panda            | `5001`       |
-| Polar Bear             | `5002`       |
-| Chimpanzee             | `5003`       |
-| Plains Zebra           | `5004`       |
-| Thompson's Gazelle     | `5005`       |
-| Lion                   | `5006`       |
-| Bengal Tiger           | `5007`       |
-| Siberian Tiger         | `5008`       |
-| Cheetah                | `5009`       |
-| Leopard                | `5010`       |
-| Black Leopard          | `5011`       |
-| Snow Leopard           | `5012`       |
-| Clouded Leopard        | `5013`       |
-| Jaguar                 | `5014`       |
-| Gray Wolf              | `5015`       |
-| Grizzly Bear           | `5016`       |
-| American Black Bear    | `5017`       |
-| Spotted Hyena          | `5018`       |
-| Olive Baboon           | `5019`       |
-| Mandrill               | `5020`       |
-| Lowland Gorilla        | `5021`       |
-| Red Kangaroo           | `5023`       |
-| Black Rhinoceros       | `5024`       |
-| Common Wildebeest      | `5025`       |
-| American Bison         | `5026`       |
-| Ibex                   | `5027`       |
-| Okapi                  | `5028`       |
-| Moose                  | `5029`       |
-| African Buffalo        | `5030`       |
-| Gemsbok                | `5031`       |
-| American Bighorn       | `5032`       |
-| Giraffe                | `5033`       |
-| Dromedary Camel        | `5034`       |
-| Hippopotamus           | `5035`       |
-| Markhor                | `5036`       |
-| Greater Flamingo       | `5037`       |
-| Ostrich                | `5038`       |
-| Emperor Penguin        | `5039`       |
-| California Sea Lion    | `5040`       |
-| Saltwater Crocodile    | `5041`       |
-| Giant Anteater         | `5042`       |
-| African Warthog        | `5043`       |
-| White Siberian Tiger   | `5045`       |
-| Triceratops               | `5046`           |
-| Arctic Wolf               | `5048`           |
-| Unicorn                   | `5049`           |
-| Black Buck                | `5076`           |
-| Bongo                     | `5077`           |
-| Mountain Lion             | `5078`           |
-| Sable Antelope            | `5079`           |
-| Asian Black Bear          | `5080`           |
-| Asian Elephant            | `5081`           |
-| African Wild Dog          | `5500`           |
-| Llama                     | `5502`           |
-| Komodo Dragon             | `5503`           |
-| Orangutan                 | `5506`           |
-| Malayan Tapir             | `5507`           |
-| Japanese Serow            | `5508`           |
-| Przewalski’s Horse        | `5509`           |
-| Javan rhino               | `5511`           |
-| Bigfoot                   | `5514`           |
-| Loch Ness Monster         | `5515`           |
-| Mexican Gray Wolf         | `5516`           |
-| Yeti | `B101B026`    |
-| Reindeer                  | `5300`           |
-| Magnet                    | `5340`           |
+| Entity Name            | ID           | Codename  |
+|------------------------|--------------|-----------|
+| African Elephant       | `5000`       | elephant  |
+| Giant Panda            | `5001`       | panda     |
+| Polar Bear             | `5002`       | polarbr   |
+| Chimpanzee             | `5003`       | chimp     |
+| Plains Zebra           | `5004`       | zebra     |
+| Thompson's Gazelle     | `5005`       | gazelle   |
+| Lion                   | `5006`       | lion      |
+| Bengal Tiger           | `5007`       | tiger     |
+| Siberian Tiger         | `5008`       | stiger    |
+| Cheetah                | `5009`       | cheetah   |
+| Leopard                | `5010`       | leopard   |
+| Black Leopard          | `5011`       | blacklep  |
+| Snow Leopard           | `5012`       | snowlep   |
+| Clouded Leopard        | `5013`       | cloulep   |
+| Jaguar                 | `5014`       | jaguar    |
+| Gray Wolf              | `5015`       | graywolf  |
+| Grizzly Bear           | `5016`       | grizzly   |
+| American Black Bear    | `5017`       | blackbr   |
+| Spotted Hyena          | `5018`       | hyena     |
+| Olive Baboon           | `5019`       | baboon    |
+| Mandrill               | `5020`       | mandrill  |
+| Lowland Gorilla        | `5021`       | gorilla   |
+| Red Kangaroo           | `5023`       | kangaroo  |
+| Black Rhinoceros       | `5024`       | brhino    |
+| Common Wildebeest      | `5025`       | wildebst  |
+| American Bison         | `5026`       | bison     |
+| Ibex                   | `5027`       | ibex      |
+| Okapi                  | `5028`       | okapi     |
+| Moose                  | `5029`       | moose     |
+| African Buffalo        | `5030`       | afrbuf    |
+| Gemsbok                | `5031`       | gemsbok   |
+| American Bighorn       | `5032`       | bighorn   |
+| Giraffe                | `5033`       | giraffe   |
+| Dromedary Camel        | `5034`       | dromcaml  |
+| Hippopotamus           | `5035`       | hippo     |
+| Markhor                | `5036`       | markhor   |
+| Greater Flamingo       | `5037`       | flamingo  |
+| Ostrich                | `5038`       | ostrich   |
+| Emperor Penguin        | `5039`       | emppeng   |
+| California Sea Lion    | `5040`       | sealion   |
+| Saltwater Crocodile    | `5041`       | swcroc    |
+| Giant Anteater         | `5042`       | anteater  |
+| African Warthog        | `5043`       | warthog   |
+| White Siberian Tiger   | `5045`       | wtiger    |
+| Triceratops            | `5046`       | tritops   |
+| Arctic Wolf            | `5048`       | arcwolf   |
+| Unicorn                | `5049`       | unicorn   |
+| Black Buck             | `5076`       | blckbuck  |
+| Bongo                  | `5077`       | bongo     |
+| Mountain Lion          | `5078`       | mntnlion  |
+| Sable Antelope         | `5079`       | sablea    |
+| Asian Black Bear       | `5080`       | asblckbr  |
+| Asian Elephant         | `5081`       | asianele  |
+| African Wild Dog       | `5500`       | wilddog   |
+| Llama                  | `5502`       | llama     |
+| Komodo Dragon          | `5503`       | komodo    |
+| Orangutan              | `5506`       | orngutan  |
+| Malayan Tapir          | `5507`       | tapir     |
+| Japanese Serow         | `5508`       | serow     |
+| Przewalski’s Horse     | `5509`       | przewals  |
+| Javan rhino            | `5511`       | javrhino  |
+| Bigfoot                | `5514`       | bigfoot   |
+| Loch Ness Monster      | `5515`       | lochness  |
+| Mexican Gray Wolf      | `5516`       | mexwolf   |
+| Yeti                   | `B101B026`   | B101B026  |
+| Reindeer               | `5300`       | reindeer  |
+| Magnet                 | `5340`       | magnet    |
+
 
 ### Dinosaur Digs Animals
 
@@ -156,7 +157,9 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Santa Claus and Reindeer  | `5083`   |
 | Halloween Witch           | `5084`   |
 
-## Animal Genus
+## Categorical
+
+### Animal Genus
 
 | Entity Name                | ID    |
 |----------------------------|-------|
@@ -236,7 +239,7 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Tapir                      | `5188`|
 | Sawfish                    | `5189`|
 
-## Animal Family
+### Animal Family
 
 | Entity Name           | ID       |
 |-----------------------|----------|
@@ -275,7 +278,43 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Tapiridae             | `5234`   |
 | Rajiformes            | `5237`   |
 
-## Foliage
+## Scenery
+
+### Show Toys
+
+| Entity Name                | ID     | Codename   |
+|----------------------------|--------|------------|
+| Advanced Trick Area        | `6500` | showarea   |
+| Dolphin Ball               | `6501` | dolball    |
+| Orca Ball                  | `6502` | orcaball   |
+| Dolphin Hoop               | `6503` | showhoop   |
+| Orca Stage                 | `6504` | stage      |
+| Sea Lion Beach Ball        | `6506` | sealball   |
+| Sea Lion Squeeze Horn      | `6507` | sealhorn   |
+| Sea Lion Raft              | `6508` | sealwav    |
+| Sea Otter Ball             | `6510` | ottball    |
+| Sea Otter Hoop             | `6511` | otthoop    |
+
+
+### Land Toys
+
+| Entity Name                | ID     | Codename   |
+|----------------------------|--------|------------|
+| Swinging Log               | `6100` | swnglog    |
+| Small Chimpanzee Bars      | `6101` | monkbar1   |
+| Gorilla Climbing Bars      | `6102` | monkbar2   |
+| Large Chimpanzee Bars      | `6103` | monkbar3   |
+| Cat Climbing Tree          | `6106` | brnchtoy   |
+| Small Lion Rock            | `6108` | lionrck1   |
+| Large Lion Rock            | `6109` | lionrck3   |
+| Orangutan Jungle Gym       | `6110` | asibars    |
+| Orangutan Rope Swing       | `6111` | asirope    |
+| Ice Floe                   | `6505` | icefloe    |
+| Raft                       | `6509` | rockraft   |
+| Icy Keg                    | `6512` | icekeg     |
+| Sunken Log                 | `8137` | aqdrift    |
+
+### Foliage
 
 | Entity Name                | ID     |
 |----------------------------|--------|
@@ -370,7 +409,7 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Purple Sea Urchin          | `7421` |
 | Agave Cactus               | `7436` |
 
-## Shelters
+### Shelters
 
 | Entity Name                | ID     | Codename   |
 |----------------------------|--------|------------|
@@ -406,7 +445,7 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Atlantean Undersea Ruin    | `6703` | atlruin3   |
 
 
-## Habitat
+### Habitat
 
 | Entity Name | ID |
 | ----------- | -- |
@@ -426,7 +465,249 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Aquatic | `9413` |
 | Bad-Habitat | `9414` |
 
-## Staff
+### Rocks
+
+| Entity Name                        | ID     | Codename    |
+|-----------------------------------|--------|-------------|
+| Atlantean Undersea Ruin           | `6701` | atlruin1    |
+| Atlantean Undersea Ruin           | `6702` | atlruin2    |
+| Atlantean Undersea Ruin           | `6703` | atlruin3    |
+| Desert Rock Formation             | `9222` | srckfrm1    |
+| Desert Rock                       | `6457` | sandrock    |
+| Medium Desert Rock                | `9230` | drock1      |
+| Small Desert Rock                 | `9247` | mexrock     |
+| Deciduous Forest Rock Formation   | `9223` | srckfrm2    |
+| Large Snowy Rock                  | `9220` | lrocka1     |
+| Large Snowy Rock                  | `9221` | lrocka2     |
+| Small Snowy Rock                  | `9219` | srocka2     |
+| Snowy Rock Formation              | `9211` | bwallsnw    |
+| Medium Snowy Rock                 | `9218` | srocka1     |
+| Highland Rock Formation           | `9210` | bwallmtn    |
+| Large Highland Rock               | `9224` | srckfrm3    |
+| Medium Highland Rock              | `9231` | drock2      |
+| Highland Rock                     | `9245` | japrock     |
+| Coniferous Forest Rock Formation  | `9225` | srckfrm4    |
+| Medium Coniferous Rock            | `9234` | drock5      |
+| Rainforest Rock Formation         | `9226` | srckfrm5    |
+| Jungle Rock Formation             | `9217` | bwalljun    |
+| Mossy Rainforest Rock             | `9244` | junrock     |
+| Limestone Rock                    | `9246` | asirock     |
+| Stone Ruins                       | `9215` | rstone      |
+| Waterfall Rock Formation          | `9213` | watfall1    |
+| Large Rock                        | `9200` | lrock1      |
+| Large Rock                        | `9201` | lrock2      |
+| Medium Rock                       | `9205` | srock1      |
+| Small Rock                        | `9206` | srock2      |
+| Arctic Rock                       | `9242` | icerock     |
+| Iceberg                           | `9240` | iceberg     |
+| Isle Rock                         | `9241` | islerock    |
+| Medium Aquatic Rock               | `9233` | drock4      |
+| Medium Coral Formation            | `9236` | aqrock4     |
+| Medium Ocean Floor Rock           | `9238` | aqrock2     |
+| Small Ocean Floor Rock            | `9235` | aqrock1     |
+| Large Coral Formation             | `9239` | aqrock5     |
+| Large Ocean Floor Rock            | `9237` | aqrock3     |
+| Medium Savannah Rock              | `9232` | drock3      |
+| Termite Mound                     | `9243` | aftmound    |
+
+### Scenery (Objects)
+
+| Entity Name                        | ID     | Codename    |
+|-----------------------------------|--------|-------------|
+| Advanced Trick Area               | `6499` | testbox     |
+| Amphora Clay Pot                  | `6453` | amphora     |
+| Asian Elephant Statue             | `6729` | asistatu    |
+| Atlantean Archway                 | `6700` | atlarch     |
+| Atlantean Statue                  | `6705` | atstatue    |
+| Atlantean Urn                     | `6704` | atlurn      |
+| Bighorn Statue                    | `6042` | statue5     |
+| Binocular Stand                   | `6027` | binoc       |
+| Black Observation Area            | `6477` | aqview1     |
+| Bone Bed                          | `6426` | bonebed1    |
+| Campfire                          | `6709` | campfire    |
+| Cloth Observation Area            | `6458` | sandview    |
+| Concrete Observation Area         | `6088` | view2rc     |
+| Deep Sea Diver Statue             | `6470` | statdive    |
+| Dolphin Statue                    | `6497` | statdolp    |
+| Dolphin Wishing Fountain          | `6472` | wishwell    |
+| Duck Pond                         | `6044` | duckpond    |
+| Elephant Fountain                 | `6035` | fount3      |
+| Elephant Statue                   | `6039` | statue2     |
+| Exhibit Sign                      | `6084` | habsign     |
+| Fancy Backdrop                    | `6482` | bckdrop1    |
+| Fountain                          | `6024` | fountain    |
+| Giant Pacific Clam                | `6466` | fakeclam    |
+| Giant Tortoise Fountain           | `6404` | dfnt1       |
+| Ice Age Observation Area          | `6441` | dview4      |
+| Ice Archway                       | `6710` | icearch     |
+| Iron Bar Observation Area         | `6437` | dview2      |
+| Jack-O'-Lantern                   | `7078` | pumpkin     |
+| Japanese Archway                  | `6722` | japarch     |
+| Japanese Koi Pond                 | `6725` | jappond     |
+| Japanese Rock Garden              | `6727` | japzen      |
+| Japanese Stone Lantern            | `6724` | japlant     |
+| Japanese Urn                      | `6726` | japurn      |
+| Jumping Fountain                  | `6495` | jmpfount    |
+| Lamp                              | `6032` | lamp        |
+| Large Bench                       | `6025` | bench       |
+| Large Fossil Wall                 | `6424` | fossil3     |
+| Large Geyser                      | `6445` | geyser1     |
+| Large Stone Torch                 | `6427` | storch2     |
+| Large Volcano                     | `6444` | volcano2    |
+| Lava Archway                      | `6405` | darch1      |
+| Lava Pit                          | `6439` | lavapit     |
+| Lion Statue                       | `6038` | statue1     |
+| Marble Observation Area           | `6442` | dview5      |
+| Masai Warrior Statue              | `6715` | afstatue    |
+| Medium Fossil Wall                | `6423` | fossil2     |
+| Mermaid Statue                    | `6467` | statmerm    |
+| Metal Bench                       | `6494` | aqbench     |
+| Metal Grate Observation Area      | `6087` | view1lc     |
+| Metal Observation Area            | `6053` | view1       |
+| Metal Picnic Table                | `6092` | picnic2     |
+| Mexican Archway                   | `6731` | mexarch     |
+| Mexican Observation Area          | `6733` | mexview     |
+| Mexican Statue                    | `6732` | mexserpt    |
+| Orca Statue                       | `6496` | statorca    |
+| Picnic Table                      | `6085` | picnic      |
+| Playful Bronto Statue             | `6707` | dkbronto    |
+| Playful Dino Archway              | `6706` | dkarch      |
+| Playful T. rex Statue             | `6708` | dktrex      |
+| Rainforest Archway                | `6717` | junarch     |
+| Rainforest Pond                   | `6718` | junpond     |
+| Rainforest Statue                 | `6719` | junstat     |
+| Rainforest Torch                  | `6720` | juntorch    |
+| Rainforest Vase                   | `6721` | junvase     |
+| Reinforced Observation Area       | `6440` | dview3      |
+| Rock Observation Area             | `6089` | view2lc     |
+| Sand Archway                      | `6455` | sandarch    |
+| Sea Lion Statue                   | `6498` | statslio    |
+| Seal Statue                       | `6800` | statseal    |
+| Small Fossil Wall                 | `6422` | fossil1     |
+| Small Geyser                      | `6446` | geyser2     |
+| Small Torch                       | `6400` | storch      |
+| Small Volcano                     | `6443` | volcano     |
+| Snake Pit                         | `6460` | snakepit    |
+| Snowman                           | `7079` | snowman     |
+| Southeast Asian Archway           | `6728` | asiarch     |
+| Southeast Asian Observation Area  | `6730` | asiview     |
+| Sphinx Statue                     | `6461` | sphinx      |
+| Stage Backdrop End                | `6481` | stgecorn    |
+| Stage Backdrop                    | `6479` | stgeback    |
+| Stage Door                        | `6480` | stgedoor    |
+| Steam Vent                        | `6447` | vent1       |
+| Stick Pole Observation Area       | `6054` | view2       |
+| Stone Archway                     | `6406` | darch2      |
+| Stone Bench                       | `6428` | sbench      |
+| Stone Obelisk                     | `6454` | obelisk     |
+| T. rex Skeleton                   | `6425` | skeltrex    |
+| T. rex Statue                     | `6401` | stattrex    |
+| Tall Torch                        | `6716` | aftorch     |
+| Tar Pit                           | `6438` | tarpit      |
+| Thatched Grass Archway            | `6713` | afarch      |
+| Trash Can                         | `6009` | trshcan     |
+| Treasure Chest                    | `6468` | trchest     |
+| Tribal Mask                       | `6714` | afmask      |
+| Triceratops Skeleton              | `6420` | skeltric    |
+| Triceratops Statue                | `6403` | stattops    |
+| Trio Statue                       | `6801` | stattrio    |
+| Turtle Fountain                   | `6034` | fount2      |
+| Umbrella Table                    | `6010` | umbtable    |
+| United States Flag                | `19000`| f554b047    |
+| Velociraptor Skeleton             | `6436` | skelvelo    |
+| Velociraptor Statue               | `6402` | statvelo    |
+| Water Well                        | `6459` | sandwell    |
+| White Observation Area            | `6478` | aqview2     |
+| Wishing Fountain                  | `6473` | wishw2      |
+| Wood Observation Area             | `6086` | view1rc     |
+| Wooden Observation Area           | `6412` | dview1      |
+| Wooly Mammoth Fountain            | `6408` | dfnt2       |
+| Worn Cart                         | `6456` | sandcart    |
+| Woven Flower Basket               | `6712` | wvbasket    |
+| Zoo Map                           | `6043` | parkmap     |
+
+### Paths
+
+| Entity Name                     | ID     | Codename |
+|---------------------------------|--------|----------|
+| Asphalt Path                    | `9100` | asphpath |
+| Concrete Path                   | `9101` | path     |
+| Dirt Path                       | `9102` | dirtpath |
+| Brick Path                      | `9108` | brkpath  |
+| Sand Path                       | `9109` | sandpath |
+| Cobblestone Path                | `9110` | stnepath |
+| Yellow Brick Path               | `9111` | yellpath |
+| Desert Trail                    | `9112` | strail   |
+| Boardwalk Path                  | `9113` | bluepath |
+| Atlantean Path                  | `9114` | atlpath  |
+| Dino Footprint Path             | `9115` | dkpath   |
+| Ice Path                        | `9116` | icepath  |
+| Thatched Grass Mat Path         | `9117` | afpath   |
+| Rainforest Rock Path            | `9118` | junpath  |
+| Stepping Stone Path             | `9119` | jappath  |
+| Southeast Asian Stone Path      | `9120` | asipath  |
+| Mexican Stone Path              | `9121` | mexpath  |
+
+### Fences
+
+| Entity Name                          | ID     | Codename  |
+|--------------------------------------|--------|-----------|
+| Plexiglass Fence                     | `9300` | glass     |
+| Chain-link Fence                     | `9301` | chainlnk  |
+| Concrete Fence                       | `9302` | concrete  |
+| Concrete Chain Fence                 | `9303` | chaincon  |
+| Rock Wall Fence                      | `9304` | rockwall  |
+| Cast-Iron Fence                      | `9305` | castiron  |
+| Post and Rail Fence                  | `9306` | postrail  |
+| Brick Wall Fence                     | `9307` | bricklow  |
+| Picket Fence                         | `9308` | wpicket   |
+| Low Hedge Fence                      | `9310` | lwhedge   |
+| Wooden Slat Fence                    | `9311` | woodslat  |
+| Zookeeper Gate                       | `9314` | gate01    |
+| Wooden Curb                          | `9315` | curbwd    |
+| Low Plexiglass Fence                 | `9316` | smglass   |
+| Low Chain-link Fence                 | `9317` | smchain   |
+| Low Concrete Fence                   | `9318` | smconcre  |
+| Low Concrete Chain Fence             | `9319` | smchacon  |
+| Low Rock Wall Fence                  | `9320` | smrock    |
+| Low Post and Rail Fence              | `9321` | smrail    |
+| Low Wooden Slat Fence                | `9322` | smwdslat  |
+| Low Stick Pole Fence                 | `9324` | smstkfen  |
+| Low Iron Bar Fence                   | `9325` | smzoobar  |
+| Post and Rope Fence                  | `9326` | postrope  |
+| White Fence                          | `9327` | wrail     |
+| Stick Pole Window Fence              | `9328` | stickwin  |
+| Rock Window Fence                    | `9329` | rockwin   |
+| Wooden Slat Window Fence             | `9330` | woodwin   |
+| Concrete and Iron Bar Fence          | `9331` | dbar      |
+| Reinforced Concrete Fence            | `9332` | dconc     |
+| Reinforced Concrete and Glass Fence  | `9333` | dglas     |
+| Electrified Chain-link Fence         | `9334` | dzchn     |
+| Electrified Iron Bar Fence           | `9335` | dzbar     |
+| Low Sand Wall                        | `9336` | sandwall  |
+| Angled Railing and Glass             | `9347` | tankwal7  |
+| Black Bar and Glass                  | `9340` | tankwall  |
+| Concrete Edge and Glass              | `9341` | tankwal2  |
+| Striped Scooped Edges and Glass      | `9342` | tankwal3  |
+| Striped Wavy Edges and Glass         | `9343` | tankwal4  |
+| Solid Concrete                       | `9344` | tankwal5  |
+| Striped Wavy Edges and Gunite        | `9345` | tankwal6  |
+| Buoy Rope Fence                      | `9346` | buoyrope  |
+| Atlantean Tank Wall                  | `9350` | atltank   |
+| Thick Atlantean Wall                 | `9348` | atlfenc1  |
+| Thin Atlantean Wall                  | `9349` | atlfenc2  |
+| Kids Bronto Fence                    | `9351` | dkfence1  |
+| Kids Stego Fence                     | `9352` | dkfence2  |
+| Snowy Rock Wall                      | `9353` | snowrock  |
+| Thatched Grass Fence                 | `9354` | affence   |
+| Rainforest Rock Wall                 | `9355` | junwall   |
+| Japanese Wooden Fence                | `9356` | japfence  |
+| Southeast Asian Stone Fence          | `9357` | asifence  |
+| Mexican Fence                        | `9358` | mexfence  |
+
+## People
+
+### Staff
 
 | Entity Name          | ID       |
 |----------------------|----------|
@@ -436,7 +717,7 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Scientist            | `9551`   |
 | Marine Specialist    | `9552`   |
 
-## Guests
+### Guests
 
 | Entity Name | ID |
 | ----------- | -- |
@@ -445,50 +726,104 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Boy guest | `9505` |
 | Girl guest | `9506` |
 
-## Rocks
+## Other
 
-| Entity Name                        | ID     |
-|-----------------------------------|--------|
-| Atlantean Undersea Ruin           | `6701` |
-| Atlantean Undersea Ruin           | `6702` |
-| Atlantean Undersea Ruin           | `6703` |
-| Large Rock                        | `9200` |
-| Large Rock                        | `9201` |
-| Medium Rock                       | `9205` |
-| Small Rock                        | `9206` |
-| Highland Rock Formation           | `9210` |
-| Snowy Rock Formation              | `9211` |
-| Waterfall Rock Formation          | `9213` |
-| Stone Ruins                       | `9215` |
-| Jungle Rock Formation             | `9217` |
-| Medium Snowy Rock                 | `9218` |
-| Small Snowy Rock                  | `9219` |
-| Large Snowy Rock                  | `9220` |
-| Large Snowy Rock                  | `9221` |
-| Desert Rock Formation             | `9222` |
-| Deciduous Forest Rock Formation   | `9223` |
-| Large Highland Rock               | `9224` |
-| Coniferous Forest Rock Formation  | `9225` |
-| Rainforest Rock Formation         | `9226` |
-| Desert Rock                       | `6457` |
-| Medium Desert Rock                | `9230` |
-| Medium Highland Rock              | `9231` |
-| Medium Savannah Rock              | `9232` |
-| Medium Aquatic Rock               | `9233` |
-| Medium Coniferous Rock            | `9234` |
-| Small Ocean Floor Rock            | `9235` |
-| Medium Coral Formation            | `9236` |
-| Large Ocean Floor Rock            | `9237` |
-| Medium Ocean Floor Rock           | `9238` |
-| Large Coral Formation             | `9239` |
-| Iceberg                           | `9240` |
-| Isle Rock                         | `9241` |
-| Arctic Rock                       | `9242` |
-| Termite Mound                     | `9243` |
-| Mossy Rainforest Rock             | `9244` |
-| Highland Rock                     | `9245` |
-| Limestone Rock                    | `9246` |
-| Small Desert Rock                 | `9247` |
+### Developer Items
+
+| Entity Name                      | ID     | Codename   |
+|---------------------------------|--------|------------|
+| 4-wheeler                        | `6138` | jeep1      |
+| Building                         | `6130` | build1     |
+| Building                         | `6131` | lab1       |
+| Building                         | `6132` | build3     |
+| Building                         | `6133` | build4     |
+| Building                         | `6134` | build5     |
+| Dock                             | `6135` | dock1      |
+| Dock                             | `6136` | dock2      |
+| Dock                             | `6137` | dock3      |
+| Sedan                            | `6139` | sedan1     |
+| Tractor trailer                  | `6140` | semi1      |
+| Street light                     | `6141` | streetlt   |
+| SUV                              | `6142` | suv1       |
+| Telephone Pole                   | `6143` | telegrnd   |
+| Telephone Pole                   | `6144` | telepole   |
+| Van                              | `6145` | van1       |
+| Water Tower                      | `6146` | watertwr   |
+| Buoy                             | `6147` | buoy       |
+| Airplane                         | `6166` | cessna1    |
+| Genetic Laboratory Vehicle       | `6167` | labjeep    |
+| Oil Drum                         | `6168` | oildrum1   |
+| Umbrella                         | `6169` | umbrella   |
+| Motor Boat                       | `6170` | mtrboat    |
+| Jetty                            | `6171` | jetty1     |
+| Jetty                            | `6172` | jetty2     |
+| Jetty                            | `6173` | jetty3     |
+| Sail Boat                        | `6174` | sailboat   |
+| Cliff                            | `6175` | cliff1     |
+| Cliff                            | `6176` | cliff2     |
+| Cliff                            | `6177` | cliff3     |
+| Cliff                            | `6178` | cliff4     |
+| Cliff                            | `6179` | cliff5     |
+| Cliff                            | `6180` | cliff6     |
+| Building                         | `6181` | build6     |
+| Tent                             | `6182` | tent       |
+| Parking Meter                    | `6183` | meter      |
+| Dumpster                         | `6184` | dumpster   |
+| Broken Bench                     | `6185` | bkbench    |
+| Broken Light                     | `6186` | bklamp     |
+| Dock 4                           | `6187` | dock1new   |
+| Hotel                            | `6188` | hotel      |
+| Lifeguard Station                | `6189` | lifechr    |
+| Road Paint                       | `6162` | road1      |
+| Road Paint                       | `6163` | road2      |
+| Road Paint                       | `6164` | road3      |
+
+### Misc
+
+| Entity Name                             | ID     | Codename  |
+|-----------------------------------------|--------|-----------|
+| Unknown Foliage                         |        | foliage   |
+| Unknown Other                           |        | other     |
+| Unknown Fresh Water Wave                | `0`    | frshwav   |
+| Unknown Tank Bubbles                    | `0`    | tankbub1  |
+| Unknown Tank Ripple                     | `0`    | tankripl  |
+| Unknown Tank Water Wave                 | `0`    | twaterwv  |
+| Unknown Water Wave                      | `0`    | waterwv1  |
+| 1/2 Full Hay                            | `6065` | hchwmid   |
+| 1/2 Full Meat                           | `6064` | cchwmid   |
+| Bamboo Shoots %s                        | `6314` | bambchow  |
+| Chum %s                                 | `6602` | chum      |
+| Dinosaur Poo                            | `6094` | dinopoo   |
+| Empty Hay                               | `6061` | hchwemp   |
+| Empty Meat                              | `6059` | cchwemp   |
+| Fish %s                                 | `6313` | fishchow  |
+| Fish %s                                 | `6601` | fish      |
+| Fruits and Vegetables %s                | `6312` | fruichow  |
+| Grass and Branches %s                   | `6315` | graschow  |
+| Hay %s                                  | `6060` | hchwfull  |
+| Hay %s                                  | `6060` | herbchow  |
+| Hedge Arch                              | `6020` | arch1     |
+| Insectivore Chow %s                     | `6407` | inschow   |
+| Krill %s                                | `6600` | krill     |
+| Large Grass and Leaves Chow %s          | `6416` | dinogras  |
+| Large Meat Chow %s                      | `6415` | dinocarn  |
+| Large Poo                               | `6062` | poo       |
+| Man                                     | `9503` | guests    |
+| Marine Grass %s                         | `6603` | seagrass  |
+| Meat %s                                 | `6058` | carnchow  |
+| Meat %s                                 | `6058` | cchwfull  |
+| Medium Rock                             | `9205` | brubble   |
+| Piece of Trash                          | `6310` | trash     |
+| Rubble                                  | `10513`| bathrubl  |
+| Rubble                                  | `10513`| brubble1  |
+| Rubble                                  | `10513`| brubble2  |
+| Rubble                                  | `10513`| brubble3  |
+| Rubble                                  | `10513`| brubble4  |
+| Rubble                                  | `10513`| brubls1   |
+| Rubble                                  | `10513`| bstump1   |
+| Small Poo                               | `6093` | smzoodoo  |
+| Urchin %s                               | `6604` | urchin    |
+
 
 ## Attributions:
 

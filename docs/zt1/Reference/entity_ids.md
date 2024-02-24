@@ -275,25 +275,136 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Tapiridae             | `5234`   |
 | Rajiformes            | `5237`   |
 
+## Foliage
 
-## Staff
+| Entity Name                | ID     |
+|----------------------------|--------|
+| Acacia Caffra Tree         | `7000` |
+| Thorn Acacia Tree          | `7001` |
+| Wild Olive Tree            | `7004` |
+| Ulmo Tree                  | `7005` |
+| Elm Tree                   | `7006` |
+| Pacific Dogwood Tree       | `7007` |
+| Cherry Tree                | `7008` |
+| Lodgepole Pine Tree        | `7009` |
+| Palm Tree                  | `7010` |
+| Maple Tree                 | `7011` |
+| Fir Tree                   | `7012` |
+| Pine Tree                  | `7013` |
+| Mangrove Tree              | `7014` |
+| Elephant Ear Tree          | `7015` |
+| Bamboo                     | `7016` |
+| Eucalyptus Tree            | `7017` |
+| Foxtail Palm Tree          | `7018` |
+| Hard Quandong Tree         | `7019` |
+| Thornless Mesquite Tree    | `7020` |
+| Yew Tree                   | `7021` |
+| Birch Tree                 | `7022` |
+| Spruce Tree                | `7023` |
+| Yellow Cedar Tree          | `7024` |
+| Western Larch Tree         | `7025` |
+| Trembling Aspen Tree       | `7026` |
+| Globe Willow Tree          | `7028` |
+| Joshua Tree                | `7029` |
+| Red Gum Tree               | `7030` |
+| Quiver Tree                | `7033` |
+| Japanese Maple Tree        | `7035` |
+| Grass Tree                 | `7063` |
+| Paper Birch Tree           | `7064` |
+| Kapok Tree                 | `7065` |
+| Weeping Willow Tree        | `7066` |
+| White Oak Tree             | `7067` |
+| Western Red Cedar Tree     | `7068` |
+| Chinese Fir Tree           | `7069` |
+| Himalayan Birch Tree       | `7070` |
+| Western Juniper Tree       | `7071` |
+| Himalayan Pine Tree        | `7072` |
+| Sage Bush                  | `7073` |
+| Broadleaf Bush             | `7074` |
+| Pine Bush                  | `7075` |
+| Khejri Tree                | `7076` |
+| Holiday Tree               | `7077` |
+| Club Moss Shrub            | `7080` |
+| Walchian Conifer Tree      | `7081` |
+| Thouarsus Cycad Tree       | `7082` |
+| Bald Cypress Tree          | `7083` |
+| Dawn Redwood Tree          | `7084` |
+| Fern Bush                  | `7085` |
+| Gingko Tree                | `7086` |
+| Glossopteris Tree          | `7087` |
+| Horsetail                  | `7088` |
+| Lepidodendron Tree         | `7089` |
+| Tube Worm                  | `7420` |
+| Stove Pipe Sponge          | `7419` |
+| Sea Sponge                 | `7418` |
+| Sea Star                   | `7415` |
+| Sea Cucumber               | `7414` |
+| Sea Anemone                | `7400` |
+| Sand Dollar                | `7413` |
+| Sargassum                  | `7412` |
+| Red Gorgonian              | `7411` |
+| Sea Lettuce                | `7410` |
+| Kelp                       | `7409` |
+| Fire Coral                 | `7408` |
+| Feather Duster Worm        | `7407` |
+| Divercate Tree Coral       | `7406` |
+| Orange Cup Coral           | `7405` |
+| Clam Bed                   | `7404` |
+| Brittle Sea Star           | `7403` |
+| Beach Grass                | `7402` |
+| Barnacles                  | `7401` |
+| Yucca Tree                 | `7435` |
+| Durian Tree                | `7434` |
+| Giant Ficus Tree           | `7433` |
+| Rafflesia                  | `7432` |
+| Snowbell Tree              | `7431` |
+| Bonsai                     | `7430` |
+| Rainforest Stump           | `7429` |
+| Rainforest Flowers         | `7428` |
+| Fallen Rainforest Tree     | `7427` |
+| Senegal Date Palm          | `7426` |
+| Savannah Flowers           | `7425` |
+| Snowy Grass                | `7424` |
+| Snowy Bush                 | `7423` |
+| Snowy Tree                 | `7422` |
+| Purple Sea Urchin          | `7421` |
+| Agave Cactus               | `7436` |
 
-| Entity Name          | ID       |
-|----------------------|----------|
-| Zookeeper            | `9500`   |
-| Maintenance Worker   | `9501`   |
-| Tour Guide           | `9502`   |
-| Scientist            | `9551`   |
-| Marine Specialist    | `9552`   |
+## Shelters
 
-## Guests
+| Entity Name                | ID     | Codename   |
+|----------------------------|--------|------------|
+| Rock Cave                  | `8100` | rckcave1   |
+| Snowy Rock Cave            | `8102` | rckcave2   |
+| Panda Rock Cave            | `8103` | pancave    |
+| Small Lean-to              | `8104` | leanto1    |
+| Lean-to                    | `8105` | leanto2    |
+| Large Lean-to              | `8106` | leanto3    |
+| Small Concrete Shelter     | `8107` | conhous1   |
+| Concrete Shelter           | `8108` | conhous2   |
+| Large Concrete Shelter     | `8109` | conhous3   |
+| Small Wood Shelter         | `8110` | wodhous1   |
+| Wood Shelter               | `8111` | wodhous2   |
+| Large Wood Shelter         | `8112` | wodhous3   |
+| Small Stable               | `8113` | stable1    |
+| Stable                     | `8114` | stable2    |
+| Large Stable               | `8115` | stable3    |
+| Small Elephant Shelter     | `8116` | elehous1   |
+| Large Elephant Shelter     | `8117` | elehous2   |
+| Small Giraffe Shelter      | `8118` | girhous1   |
+| Large Giraffe Shelter      | `8119` | girhous2   |
+| Small Burrow               | `8120` | burrow1    |
+| Burrow                     | `8121` | burrow2    |
+| Large Burrow               | `8122` | burrow3    |
+| Dinosaur Burrow            | `8129` | dnest1     |
+| Dinosaur Cave              | `8128` | dinocave   |
+| Ice Age Cave               | `8130` | icecave    |
+| Seafloor Cave              | `8135` | aqcave     |
+| Sunken Ship                | `8136` | sunkship   |
+| Atlantean Undersea Ruin    | `6701` | atlruin1   |
+| Atlantean Undersea Ruin    | `6702` | atlruin2   |
+| Atlantean Undersea Ruin    | `6703` | atlruin3   |
 
-| Entity Name | ID |
-| ----------- | -- |
-| Male guest | `9503` |
-| Female guest | `9504` |
-| Boy guest | `9505` |
-| Girl guest | `9506` |
 
 ## Habitat
 
@@ -314,6 +425,70 @@ Zoo Tycoon 1 configuration files use integer values to map the game entities to 
 | Null Habitat | `9412` |
 | Aquatic | `9413` |
 | Bad-Habitat | `9414` |
+
+## Staff
+
+| Entity Name          | ID       |
+|----------------------|----------|
+| Zookeeper            | `9500`   |
+| Maintenance Worker   | `9501`   |
+| Tour Guide           | `9502`   |
+| Scientist            | `9551`   |
+| Marine Specialist    | `9552`   |
+
+## Guests
+
+| Entity Name | ID |
+| ----------- | -- |
+| Male guest | `9503` |
+| Female guest | `9504` |
+| Boy guest | `9505` |
+| Girl guest | `9506` |
+
+## Rocks
+
+| Entity Name                        | ID     |
+|-----------------------------------|--------|
+| Atlantean Undersea Ruin           | `6701` |
+| Atlantean Undersea Ruin           | `6702` |
+| Atlantean Undersea Ruin           | `6703` |
+| Large Rock                        | `9200` |
+| Large Rock                        | `9201` |
+| Medium Rock                       | `9205` |
+| Small Rock                        | `9206` |
+| Highland Rock Formation           | `9210` |
+| Snowy Rock Formation              | `9211` |
+| Waterfall Rock Formation          | `9213` |
+| Stone Ruins                       | `9215` |
+| Jungle Rock Formation             | `9217` |
+| Medium Snowy Rock                 | `9218` |
+| Small Snowy Rock                  | `9219` |
+| Large Snowy Rock                  | `9220` |
+| Large Snowy Rock                  | `9221` |
+| Desert Rock Formation             | `9222` |
+| Deciduous Forest Rock Formation   | `9223` |
+| Large Highland Rock               | `9224` |
+| Coniferous Forest Rock Formation  | `9225` |
+| Rainforest Rock Formation         | `9226` |
+| Desert Rock                       | `6457` |
+| Medium Desert Rock                | `9230` |
+| Medium Highland Rock              | `9231` |
+| Medium Savannah Rock              | `9232` |
+| Medium Aquatic Rock               | `9233` |
+| Medium Coniferous Rock            | `9234` |
+| Small Ocean Floor Rock            | `9235` |
+| Medium Coral Formation            | `9236` |
+| Large Ocean Floor Rock            | `9237` |
+| Medium Ocean Floor Rock           | `9238` |
+| Large Coral Formation             | `9239` |
+| Iceberg                           | `9240` |
+| Isle Rock                         | `9241` |
+| Arctic Rock                       | `9242` |
+| Termite Mound                     | `9243` |
+| Mossy Rainforest Rock             | `9244` |
+| Highland Rock                     | `9245` |
+| Limestone Rock                    | `9246` |
+| Small Desert Rock                 | `9247` |
 
 ## Attributions:
 

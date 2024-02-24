@@ -5,7 +5,9 @@
 
 This page assumes the game directory definition of what a 'scenery' item entails. Under the 'scenery' folder under the game's assets, it includes buildings, foliage, rocks, terrain, toys, zoos, and other zoo utilities.
 
-The main configuration for these files are in `.ucb` or `.ai` format, but they are really `.INI` files. The following tables describe attributes that can  be given to the entities mentioned. Example files can be found in a respective `/scenery` directory.
+The main configuration for these files are in `.ucb`, `.ucs`, or `.ai` format, but they are really `.INI` files. The following tables describe attributes that can  be given to the entities mentioned. Example files can be found in a respective `/scenery` directory.
+
+Please note that this guide is meant for reference only and is not in any way meant to imply the use of every attribute or section to make a specific kind of mod. Instead, please refer to either official files available to spin off into your own mod or mods made by others for guidance.
 
 ## `[Icon]`
 
@@ -26,6 +28,9 @@ Icon = objects/uforidgs/NE/NE
 ```
 
 ## `[Characteristics/Integers]`
+
+!!! note "Incomplete"
+    This section is incomplete. Needs remaining characteristics defined.
 
 This defines misc. characteristics about an entity. 
 
@@ -48,12 +53,17 @@ This isn't comprehensive, but here are a few:
 | `cAdultChange` | `<int>` | How happy a guest is after using the entity. Negative values are possible if you want them to hate it. | 
 | `cChildChange` | `<int>` | Same as above but specifically child guests. |
 | `cCommerce` | `<int>` | Does a user need to pay to use this entity? |
-| `cHabitat` | `<int>` | What habitat the entity belongs to. Below are possible values. `9414` makes entities unplaceable in exhibits. `9411` allows entities placeable in all exhibits. For a full list of possible values, please see [Entity IDs](./entity_ids.md#terrain)|
+| `cHabitat` | `<int>` | What habitat the entity belongs to. `9414` makes entities unplaceable in exhibits. `9411` allows entities placeable in all exhibits. For a full list of possible values, please see [Entity IDs](./entity-ids.md#habitat)|
 | `cHideBuilding` | `<0/1>` | Hide building or show? |
 | `cUsersStayOutside` | `<0/1>` | Prevent a user from entering entity? |
 | `cTimeInside` | `<int>` | How long should a user be inside of a building. It mmight make sense to match this value with length of sound file if provided. 
 | `cUsedThought` | `<int>` | A user's thought after using the entity. Works similar in concept to other key/value strings above. |   
-| `cHideUser` | `<0/1>` | Should a user be hidden when using entity? |
+| `cHideUser` | `<int>` | Setting this to `1` hides the user while using the entity. Set to `0` or delete line to exclude this configuration. |
+| `cAutoRotate` | `<int>` | Setting this to `1` automatically rotates the object on placement. Set to `0` or delete line to exclude this configuration. |
+| `cSwims` | `<int>` | Setting this to `1` allows the object to be placed on water. Set to `0` or delete line to exclude this configuration. |
+| `cOnlySwims` | `<int>` | Setting this to `1` makes it so the object is only placeable on water and not on land. Set to `0` or delete line to exclude this configuration. |
+| `walkable` | `<int>` | Setting this to `1` allows guests and animals to walk through the object. Set to `0` or delete line to exclude this configuration. |
+| `cFoliage` | `<int>` | Should this foliage count toward exhibit suitability? `0` for no, `1` for yes. As the name implies, usually used for foliage. |
 
 <h3>Example</h3>
 ```INI
@@ -110,7 +120,10 @@ v = 20
 
 ## `[Satisfies]`
 
-This section might need another look. This category possibly assigns the entity to a subcategory type in Zoo Tycoon for various stat checks.
+!!! note "Incomplete"
+    This section is incomplete. Needs remaining subcategories.
+
+This category assigns the entity to a subcategory type in Zoo Tycoon for various stat checks.
 
 An (incomplete) list of possible values:
 

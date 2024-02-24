@@ -147,57 +147,60 @@ icon = ui/scenario/clock/clock
 
 Any name works above in the brackets, just add it to the `[goals]` block.
 
-`rulea = # ` | Pick a value for one of the rules listed below.  
-`ruleb = #` | Pick a value that makes sense for rulea.  
-`arga = #` | Optional value that depends on rulea.  
-`argb=#` | Optional value that depends on rulea.  
-`type = #` | Pick the type of comparison to be applied.  
-`value = #`| Pick the value to compare the rule against.  
-`text = #` | Insert the string ID for the rule.  
-`sticky = #` | Pick either 0 or 1.  
-`hidden = #` | Pick either 0 or 1.  
-`optional = #` | Pick either 0 or 1.   
-`trulea = #` | Pick a value for one of the triggers.  
-`truleb = #` | Pick a value that makes sense for trulea.  
-`targa = #` | Optional argument for the trigger.  
-`targb = #` | Optional argument for the trigger.  
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `rulea` | `<int>` | Pick a value for one of the rules listed below. |
+| `ruleb` | `<int>` | Pick a value that makes sense for rulea. |
+| `arga` | `<int>` | Optional value that depends on rulea. | 
+| `argb` | `<int>` | Optional value that depends on rulea. | 
+| `type` | `<int>` | Pick the type of comparison to be applied. | 
+| `value` | `<int>`| Pick the value to compare the rule against. | 
+| `text` | `<int>` | Insert the string ID for the rule. | 
+| `sticky` | `<int>` | Pick either 0 or 1. | 
+| `hidden` | `<int>` | Pick either 0 or 1. | 
+| `optional` | `<int>` | Pick either 0 or 1. |   
+| `trulea` | `<int>` | Pick a value for one of the triggers. |
+| `truleb` | `<int>` | Pick a value that makes sense for trulea. |
+| `targa` | `<int>` | Optional argument for the trigger. | 
+| `targb` | `<int>` | Optional argument for the trigger. | 
 
-```INI
-;; Rule 0 (rulea = 0)
-;; arga (Period) - 0 monthly, 1 yearly, 2 total
-;; argb (Unused)
-; 0 food cost
-; 1 healing cost
-; 2 purchase cost
-; 3 construction cost
-; 4 admissions
-; 5 admissions income
-; 6 food income
-; 7 drink income
-; 8 donations income
-; 9 construction refund
-; 10 animal refund
-; 11 keeper wages
-; 12 guide wages
-; 13 maint wages
-; 14 net income
-; 15 zoo value
-```
+### Rule 0 (rulea = 0): Costs and profits
 
-```INI
-;; Rule 1 (rulea = 1)
-;; arga (Month)
-;; argb (Unused)
-; The value returned is clamped to 0 until the month is after 'arga'.
-; 0 animal rating
-; 1 guest rating
-; 2 zoo rating
-; 3 num guests
-; 4 num animals
-; 5 num sick animals
-; 6 num species
-; 7 available cash
-```
+When `rulea == 0` then `ruleb` is defined as one of the following values:
+
+ 
+- `arga` (Period) - `0` monthly, `1` yearly, `2` total
+- `argb` (Unused)
+- Possible `ruleb` values:
+    - `0` food cost
+    - `1` healing cost
+    - `2` purchase cost
+    - `3` construction cost
+    - `4` admissions
+    - `5` admissions income
+    - `6` food income
+    - `7` drink income
+    - `8` donations income
+    - `9` construction refund
+    - `10` animal refund
+    - `11` keeper wages
+    - `12` guide wages
+    - `13` maint wages
+    - `14` net income
+    - `15` zoo value
+
+### Rule 1 (rulea = 1): Counts and ratings
+- `arga` (Month)
+- `argb` (Unused)
+- The value returned is clamped to `0` until the month is after `arga`.
+    - `0` animal rating
+    - `1` guest rating
+    - `2` zoo rating
+    - `3` num guests
+    - `4` num animals
+    - `5` num sick animals
+    - `6` num species
+    - `7` available cash
 
 ```INI
 ;; Rule 2 (rulea = 2)

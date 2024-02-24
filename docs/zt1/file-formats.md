@@ -10,7 +10,8 @@ Blue Fang used a custom `.INI` file implementation to handle the game's entity a
 | `*.cfg`             | Configuration | Game systems configuration | Any text editor |
 | `*.ani`             | Animation | Animation configuration | Any text editor |
 | `*.scn`             | Scenario | Scenario configuration | Any text editor |
-| `*.ucb`             | User-Created Building | Scenery configuration | Any text editor |
+| `*.ucb`             | User-Created Building | Building configuration | Any text editor |
+| `*.ucs`             | User-Created Scenery | Scenery configuration | Any text editor |
 | `*.uca`             | User-Created Animal | Animal configuration | Any text editor |
 | `*.ai`              | Unknown | Official entity configuration | Any text editor |
 | `*.pal`             | Pallette | Color palette                | ZooT, APExp, ZT Studio |

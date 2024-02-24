@@ -1,0 +1,7 @@
+site_name: ZooBerry Docs
+theme:
+  name: readthedocs
+nav:
+  - Home: index.md
+  - ucb: about.md
+  - Contact: contact.md

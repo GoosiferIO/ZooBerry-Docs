@@ -42,42 +42,42 @@ nav:
   - Reference:
     - Zoo Tycoon 1:
         - File Formats: zt1/file-formats.md
-        - Scenery Configuration: zt1/reference/scenery-files.md
-        - Scenario Configuration: zt1/reference/scenario-files.md
-        - Notable String IDs: zt1/reference/entity-ids.md
-        - Mod Installation: zt1/reference/mod-installation.md
-        #- string Table Master List: zt1/reference/string-tables.md
+        - Scenery Configuration: zt1/Reference/scenery-files.md
+        - Scenario Configuration: zt1/Reference/scenario-files.md
+        - Notable String IDs: zt1/Reference/entity-ids.md
+        - Mod Installation: zt1/Reference/mod-installation.md
+        #- string Table Master List: zt1/Reference/String-Tables.md
         - Official String Tables:
-          - lang0: zt1/reference/string-tables/lang0.md
-          - lang001: zt1/reference/string-tables/lang001.md
-          - lang002: zt1/reference/string-tables/lang002.md
-          - lang007: zt1/reference/string-tables/lang007.md
-          - lang008: zt1/reference/string-tables/lang008.md
-          - lang009: zt1/reference/string-tables/lang009.md
-          - lang010: zt1/reference/string-tables/lang010.md
-          - lang012: zt1/reference/string-tables/lang012.md
-          - lang013: zt1/reference/string-tables/lang013.md
-          - lang015: zt1/reference/string-tables/lang015.md
-          - lang016: zt1/reference/string-tables/lang016.md
-          - lang017: zt1/reference/string-tables/lang017.md
-          - lang018: zt1/reference/string-tables/lang018.md
-          - lang019: zt1/reference/string-tables/lang019.md
-          - lang020: zt1/reference/string-tables/lang020.md
-          - lang021: zt1/reference/string-tables/lang021.md
-          - lang100: zt1/reference/string-tables/lang100.md
-          - lang200: zt1/reference/string-tables/lang200.md
-          - lang300: zt1/reference/string-tables/lang300.md
+          - lang0: zt1/Reference/String-Tables/lang0.md
+          - lang001: zt1/Reference/String-Tables/lang001.md
+          - lang002: zt1/Reference/String-Tables/lang002.md
+          - lang007: zt1/Reference/String-Tables/lang007.md
+          - lang008: zt1/Reference/String-Tables/lang008.md
+          - lang009: zt1/Reference/String-Tables/lang009.md
+          - lang010: zt1/Reference/String-Tables/lang010.md
+          - lang012: zt1/Reference/String-Tables/lang012.md
+          - lang013: zt1/Reference/String-Tables/lang013.md
+          - lang015: zt1/Reference/String-Tables/lang015.md
+          - lang016: zt1/Reference/String-Tables/lang016.md
+          - lang017: zt1/Reference/String-Tables/lang017.md
+          - lang018: zt1/Reference/String-Tables/lang018.md
+          - lang019: zt1/Reference/String-Tables/lang019.md
+          - lang020: zt1/Reference/String-Tables/lang020.md
+          - lang021: zt1/Reference/String-Tables/lang021.md
+          - lang100: zt1/Reference/String-Tables/lang100.md
+          - lang200: zt1/Reference/String-Tables/lang200.md
+          - lang300: zt1/Reference/String-Tables/lang300.md
         - Unofficial String Tables:
-          - LANG--ZTCDD: zt1/reference/string-tables-unofficial/LANG--ZTCDD.md
-          - LANG--ZooTek: zt1/reference/string-tables-unofficial/LANG--ZooTek.md
-          - LANG--ZKL: zt1/reference/string-tables-unofficial/LANG--ZKL.md
-          - LANG--ZBorsato: zt1/reference/string-tables-unofficial/LANG--ZBorsato.md
-          - LANG--Jane: zt1/reference/string-tables-unofficial/LANG--Jane.md
-          - LANG--JBL: zt1/reference/string-tables-unofficial/LANG--JBL.md
-          - LANG--fern-Tek: zt1/reference/string-tables-unofficial/LANG--fern-Tek.md
-          - langZA01: zt1/reference/string-tables-unofficial/langZA01.md
-          - langZA02: zt1/reference/string-tables-unofficial/langZA02.md
-          - langZA03: zt1/reference/string-tables-unofficial/langZA03.md
+          - LANG--ZTCDD: zt1/Reference/String-Tables-Unofficial/LANG--ZTCDD.md
+          - LANG--ZooTek: zt1/Reference/String-Tables-Unofficial/LANG--ZooTek.md
+          - LANG--ZKL: zt1/Reference/String-Tables-Unofficial/LANG--ZKL.md
+          - LANG--ZBorsato: zt1/Reference/String-Tables-Unofficial/LANG--ZBorsato.md
+          - LANG--Jane: zt1/Reference/String-Tables-Unofficial/LANG--Jane.md
+          - LANG--JBL: zt1/Reference/String-Tables-Unofficial/LANG--JBL.md
+          - LANG--fern-Tek: zt1/Reference/String-Tables-Unofficial/LANG--fern-Tek.md
+          - langZA01: zt1/Reference/String-Tables-Unofficial/langZA01.md
+          - langZA02: zt1/Reference/String-Tables-Unofficial/langZA02.md
+          - langZA03: zt1/Reference/String-Tables-Unofficial/langZA03.md
   - EMU API:
       - Getting Started: emu/getting-started.md
       - EMU Command Console: emu/emu-console.md

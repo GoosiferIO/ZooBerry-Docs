@@ -36,6 +36,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.zooberry.org/zt1/getting-started/</loc>
+         <lastmod>2024-02-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.zooberry.org/zt1/Reference/entity-ids/</loc>
          <lastmod>2024-02-25</lastmod>
          <changefreq>daily</changefreq>
@@ -46,12 +51,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/modding-tools/</loc>
+         <lastmod>2024-02-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.zooberry.org/zt1/Reference/scenario-files/</loc>
          <lastmod>2024-02-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/Reference/scenery-files/</loc>
+         <lastmod>2024-02-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/web-resources/</loc>
          <lastmod>2024-02-25</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -170,27 +170,27 @@ When `rulea == 0`:
 
 - `arga` (Period) - `0` monthly, `1` yearly, `2` total
 - `argb` (Unused)
-- `0` food cost
-- `1` healing cost
-- `2` purchase cost
-- `3` construction cost
-- `4` admissions
-- `5` admissions income
-- `6` food income
-- `7` drink income
-- `8` donations income
-- `9` construction refund
-- `10` animal refund
-- `11` keeper wages
-- `12` guide wages
-- `13` maint wages
-- `14` net income
-- `15` zoo value
+  - `0` food cost
+  - `1` healing cost
+  - `2` purchase cost
+  - `3` construction cost
+  - `4` admissions
+  - `5` admissions income
+  - `6` food income
+  - `7` drink income
+  - `8` donations income
+  - `9` construction refund
+  - `10` animal refund
+  - `11` keeper wages
+  - `12` guide wages
+  - `13` maint wages
+  - `14` net income
+  - `15` zoo value
 
 ### Rule 1 (rulea = 1): Counts and ratings
 - `arga` (Month)
 - `argb` (Unused)
-- The value returned is clamped to `0` until the month is after `arga`.
+- The `value` returned is clamped to `0` until the month is after `arga`.
     - `0` animal rating
     - `1` guest rating
     - `2` zoo rating
@@ -200,57 +200,53 @@ When `rulea == 0`:
     - `6` num species
     - `7` available cash
 
-```INI
-;; Rule 2 (rulea = 2)
-;; arga (Animal Name ID)
-;; argb (Subtype) - 0 male, 1 female, 3 young (2, pregnant is obsolete)
-;; value - number
-; 0 match type
-; 1 match subtype
-; 2 match type and subtype
-; 3 match type or subtype
-```
 
-```INI
-;; Rule 3 (rulea = 3)
-;; arga (Unused or Habitat Rating)
-;; argb (Unused or Animal Name ID)
-; 0 num habitats
-; 1 num non-empty habitats
-```
+### Rule 2 (rulea = 2)
+- `arga` (Animal Name ID)
+- `argb` (Subtype) - 0 male, 1 female, 3 young (2, pregnant is obsolete)
+- `value` - `number`
+  - 0 match type
+  - 1 match subtype
+  - 2 match type and subtype
+  - 3 match type or subtype
 
-```INI
-;; Rule 4 (rulea = 4)
-;; arga (ID)
-;; argb (ID or Unused)
-;; 0 Family
-;; 1 Genus
-;; 2 Species
-;; 3 Location
-;; 4 Habitat Type
-;; 5 Family (arga) and Location (argb)
-;; 6 Genus (arga) and Location (argb)
-;; 7 Family (arga) and Habitat Type (argb)
-;; 8 Genus (arga) and Habitat Type (argb)
-;; 9 Habitat Type (arga) and Location (argb)
-;; 10 Number of boxed animals
-```
 
-```INI
-;; Rule 5 (rulea = 5)
-;; arga (ID or Unused)
-;; argb (Unused)
-; 0 Have a rating of 'value' for all habitats.
-; 1 Have a rating of 'value' for all family 'arga' habitats.
-; 2 Have a rating of 'value' for all genus 'arga' habitats.
-; 3 Have a rating of 'value' for all species 'arga' habitats.
-; 4 Have a rating of 'value' for all location 'arga' habitats.
-; 5 Have a rating of 'value' for all era 'arga' habitats.
-; 6 Have a rating of 'value' for all habitat type 'arga' habitats.
-```
+### Rule 3 (rulea = 3)
+- `arga` (Unused or Habitat Rating)
+- `argb` (Unused or Animal Name ID)
+  - 0 num habitats
+  - 1 num non-empty habitats
 
+
+### Rule 4 (rulea = 4)
+- `arga` (ID)
+- `argb` (ID or Unused)
+  - 0 Family
+  - 1 Genus
+  - 2 Species
+  - 3 Location
+  - 4 Habitat Type
+  - 5 Family (`arga`) and Location (`argb`)
+  - 6 Genus (`arga`) and Location (`argb`)
+  - 7 Family (`arga`) and Habitat Type (`argb`)
+  - 8 Genus (`arga`) and Habitat Type (`argb`)
+  - 9 Habitat Type (`arga`) and Location (`argb`)
+  - 10 Number of boxed animals
+
+
+### Rule 5 (rulea = 5)
+- `arga` (ID or Unused)
+- `argb` (Unused)
+  - 0 Have a rating of '`value`' for all habitats.
+  - 1 Have a rating of '`value`' for all family '`arga`' habitats.
+  - 2 Have a rating of '`value`' for all genus '`arga`' habitats.
+  - 3 Have a rating of '`value`' for all species '`arga`' habitats.
+  - 4 Have a rating of '`value`' for all location '`arga`' habitats.
+  - 5 Have a rating of '`value`' for all era '`arga`' habitats.
+  - 6 Have a rating of '`value`' for all habitat type '`arga`' habitats.
+
+### Rule 6 (rulea = 6)
 ```INI
-;; Rule 6 (rulea = 6)
 ;; arga (Number of Habitats)
 ;; argb (ID or Unused)
 ; 0 Have a rating of 'value' for 'arga' habitats.
@@ -262,8 +258,8 @@ When `rulea == 0`:
 ; 6 Have a rating of 'value' for 'arga' habitat type 'argb' habitats.
 ```
 
+### Rule 7 (rulea = 7)
 ```INI
-;; Rule 7 (rulea = 7)
 ;; arga (Unused)
 ;; argb (Unused)
 ; 0 Current month value (0 is beginning of the game, 1-12)
@@ -271,15 +267,15 @@ When `rulea == 0`:
 ; 2 Number of months that have passed ((12 * year) + month)
 ```
 
+### Rule 8 (rulea = 8)
 ```INI
-;; Rule 8 (rulea = 8)
 ;; arga (ID)
 ;; argb (Unused)
 ; 0 Returns value if entity type arga is available.
 ```
 
+### Rule 9 (rulea = 9)
 ```INI
-;; Rule 9 (rulea = 9)
 ;; arga (Unused)
 ;; argb (Unused)
 ;; 0 Returns number of goals in progress.
@@ -287,67 +283,55 @@ When `rulea == 0`:
 ;; 2 Returns number of goals failed.
 ```
 
+### Rule 10 (rulea = 10)
 ```INI
-;; Rule 10 (rulea = 10)
 ;; arga (ID of UI element)
 ;; 0 Returns value if the element is currently shown.
 ;; 1 Returns value if the element is triggered.
 ```
 
+### Rule 11 (rulea = 11)
 ```INI
-;; Rule 11 (rulea = 11)
 ;; arga (ID of listbox UI element)
 ;; value = 0 (1st listbox element)
 ;; value = 1 (2nd listbox element), etc.
 ;; type = 2
 ```
 
-```INI
-; Types - Determines how the rule and value are compared.
-; 0 Goal completed when rule >= value.
-; 1 Goal completed when rule <  value.
-; 2 Goal completed when rule == value.
-; 3 Goal failed when rule >= value.
-; 4 Goal failed when rule <  value.
-; 5 Goal failed when rule == value.
-; 6 Goal completed when rule >= value, else failed.
-; 7 Goal completed when rule <  value, else failed.
-; 8 Goal completed when rule == value, else failed.
-```
+### Types - Determines how the rule and value are compared.
+- 0 Goal completed when rule >= value.
+- 1 Goal completed when rule <  value.
+- 2 Goal completed when rule == value.
+- 3 Goal failed when rule >= value.
+- 4 Goal failed when rule <  value.
+- 5 Goal failed when rule == value.
+- 6 Goal completed when rule >= value, else failed.
+- 7 Goal completed when rule <  value, else failed.
+- 8 Goal completed when rule == value, else failed.
 
-```INI
-; Sticky - Determines if the rule stays completed or failed once there.
-; 0 - Can be completed or failed at times, but can slip back to in progress.
-; 1 - Once completed or failed, is always completed or failed.
-```
+### Sticky - Determines if the rule stays completed or failed once there.
+- 0 - Can be completed or failed at times, but can slip back to in progress.
+- 1 - Once completed or failed, is always completed or failed.
 
-```INI
-; Hidden - Determines if the goal is displayed to the player.
-; 0 - Shown to the player.
-; 1 - Not shown to the player.
-```
+### Hidden - Determines if the goal is displayed to the player.
+- 0 - Shown to the player.
+- 1 - Not shown to the player.
 
-```INI
-; Optional - Determines if the goal must be met to complete the scenario.
-; 0 - Not optional, goal must be met.
-; 1 - Optional, goal can be failed or completed without affecting scenario.
-```
+### Optional - Determines if the goal must be met to complete the scenario.
+- 0 - Not optional, goal must be met.
+- 1 - Optional, goal can be failed or completed without affecting scenario.
 
-```INI
-; Trigger 0 (trulea = 0)
-; targa (Unused)
-; targb (Unused)
-; 0 Do nothing.
-```
+### Trigger 0 (trulea = 0)
+- targa (Unused)
+- targb (Unused)
+- 0 Do nothing.
 
-```INI
-; Trigger 1 (trulea = 1)
-; targa (Resource ID of message)
-; targb (Arg passed to the message.)
-; 0 Send info message.
-; 1 Send good message.
-; 2 Send high priority message.
-```
+### Trigger 1 (trulea = 1)
+- targa (Resource ID of message)
+- targb (Arg passed to the message.)
+- 0 Send info message.
+- 1 Send good message.
+- 2 Send high priority message.
 
 ```INI
 ; Trigger 2 (trulea = 2)

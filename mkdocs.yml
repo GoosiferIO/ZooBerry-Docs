@@ -41,11 +41,12 @@ nav:
       - 'Attributions': 'attributions.md'
   - Reference:
       - 'Zoo Tycoon 1':
-          - 'Configuration Guides':
-              - 'File Formats': 'zt1/file-formats.md'
-              - 'Scenery': 'zt1/Reference/scenery-files.md'
-              - 'Scenarios': 'zt1/Reference/scenario-files.md'
+          - 'Getting Started': 
+              - 'Getting Started': 'zt1/getting-started.md'
               - 'Mod Installation': 'zt1/Reference/mod-installation.md'
+              - 'Modding Tools': 'zt1/Reference/modding-tools.md'
+              - 'File Formats': 'zt1/file-formats.md'
+              - 'Web Resources': 'zt1/Reference/web-resources.md'
           - 'Entity and ID References':
               - 'Notable String IDs': 'zt1/Reference/entity-ids.md'
               - 'Official String Tables':

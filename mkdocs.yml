@@ -46,7 +46,6 @@ nav:
         - Scenario Configuration: zt1/Reference/scenario-files.md
         - Notable String IDs: zt1/Reference/entity-ids.md
         - Mod Installation: zt1/Reference/mod-installation.md
-        #- string Table Master List: zt1/Reference/String-Tables.md
         - Official String Tables:
           - lang0: zt1/Reference/String-Tables/lang0.md
           - lang001: zt1/Reference/String-Tables/lang001.md

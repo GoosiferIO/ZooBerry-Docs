@@ -61,6 +61,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables/</loc>
+         <lastmod>2024-02-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.zooberry.org/zt1/Reference/String-Tables/lang0/</loc>
          <lastmod>2024-02-25</lastmod>
          <changefreq>daily</changefreq>
@@ -152,6 +157,11 @@
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/Reference/String-Tables/lang300/</loc>
+         <lastmod>2024-02-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/Reference/String-Tables-Unofficial/</loc>
          <lastmod>2024-02-25</lastmod>
          <changefreq>daily</changefreq>
     </url>

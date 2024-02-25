@@ -664,6 +664,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#characteristicsfloats" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Characteristics/Floats]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#animations" class="md-nav__link">
     <span class="md-ellipsis">
       [Animations]
@@ -1784,6 +1793,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#characteristicsfloats" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Characteristics/Floats]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#animations" class="md-nav__link">
     <span class="md-ellipsis">
       [Animations]
@@ -2041,6 +2059,211 @@
 <td><code>&lt;int&gt;</code></td>
 <td>Should this foliage count toward exhibit suitability? <code>0</code> for no, <code>1</code> for yes. As the name implies, usually used for foliage.</td>
 </tr>
+<tr>
+<td><code>cPurchaseCost</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Price of the entity.</td>
+</tr>
+<tr>
+<td><code>cCapacity</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>How many users may use entity at a time. It is recommended to match this value with <code>capacity</code> under <code>[slot]</code></td>
+</tr>
+<tr>
+<td><code>cBathroomChange</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td><code>cAngryBathroomChange</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td><code>cHideBuilding</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> hides the building while in use. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cRock</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>walkableByTall</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cExplosionSound</code></td>
+<td><code>&lt;string dir&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cExplosionSoundAtten</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cRubbleable</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cShelter</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> designates the entity as a shelter. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cEnergyChange</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cUserUsesExit</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cIsColorReplaced</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows the entity to be color-replaced. Needs to pair with a respective <code>[colorrep]</code> section with additional configuration settings in the same file. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cUseNumbersInName</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> enumerates entity name. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cDeletable</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows entity to be deleted. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cRandomUse</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> enables random interaction with entity. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cMinUsePeriod</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>If used, define minimum use period.</td>
+</tr>
+<tr>
+<td><code>cMaxUsePeriod</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>If used, define maximum use period.</td>
+</tr>
+<tr>
+<td><code>cUnderwater</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows an entity to be placed underwater. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cDeadOnLand</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows a 'dead on land' status. If the entity is placed on land, a 'dead' graphic is displayed. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cDeadUnderwater</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows a 'dead underwater' status. If the entity is placed underwater, a 'dead' graphic is displayed. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cLand</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cDepth</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cSurface</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows an entity to be placed on water surface. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cUsesRealShadows</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cHasShadowImages</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cHasUnderwaterSection</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cDeadStateHeight</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cLocation</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cBlocksLOS</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cToySatisfaction</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cDirectEntrance</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Moves user toward entity more quickly</td>
+</tr>
+<tr>
+<td><code>cShow</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cAvoidEdges</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> prevents entity to be placed next to fences or tank walls. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cUserTeleportsInside</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cFoliage</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cUsesTreeRubble</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cEstheticWeight</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cGawkOnlyFromFront</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cExpansionID</code></td>
+<td></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <h3>Example</h3>
@@ -2068,7 +2291,28 @@
 <span class="na">cMoveable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
 <span class="na">cSwims</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
 </code></pre></div>
+<h2 id="characteristicsfloats"><code>[Characteristics/Floats]</code></h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cUpkeep</code></td>
+<td><code>&lt;float&gt;</code></td>
+<td>How much it costs per month to upkeep entity.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="animations"><code>[Animations]</code></h2>
+<div class="admonition note">
+<p class="admonition-title">Incomplete</p>
+<p>This section is incomplete. Needs missing definitions.</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -2081,20 +2325,62 @@
 <tr>
 <td><code>idle</code></td>
 <td><code>idle</code></td>
-<td>Idle defines your entity as having graphics without animation.</td>
+<td>Idle defines your entity as having graphics without animation. Can sometimes be a directory to a <code>.ani</code> file.</td>
 </tr>
 <tr>
 <td><code>used</code></td>
 <td><code>used</code></td>
 <td>Used defines your entity as having graphics with animation.</td>
 </tr>
+<tr>
+<td><code>explode</code></td>
+<td><code>&lt;string dir&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>giant</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>small</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>idledead</code></td>
+<td><code>dead</code></td>
+<td>Idle dead graphic</td>
+</tr>
+<tr>
+<td><code>shadowidle</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>underidle</code></td>
+<td></td>
+<td></td>
+</tr>
 </tbody>
 </table>
+<h3>Example 1</h3>
 <div class="highlight"><pre><span></span><code><span class="k">[Animations]</span>
 <span class="na">idle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">idle</span>
 </code></pre></div>
+<h3>Example 2</h3>
+<div class="highlight"><pre><span></span><code><span class="k">[Animations]</span>
+<span class="na">idle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">idle</span>
+<span class="na">used</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">used</span>
+</code></pre></div>
+<h3>Example 3</h3>
+<div class="highlight"><pre><span></span><code><span class="k">[Animations]</span>
+<span class="na">idle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">idle</span>
+<span class="na">used</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">idle</span>
+<span class="na">idledead</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">dead</span>
+</code></pre></div>
 <h2 id="estheticbonus"><code>[EstheticBonus]</code></h2>
-<p><code>[EstheticBonus]</code> defines how much a guest will enjoy looking at an entity. There's a different value for each type of guest. Every value maps a guest entity type with an esthetic bonus value. Please see <a href="./entity_ids.md#guests">Entity IDs</a> for guest entity definitions.</p>
+<p><code>[EstheticBonus]</code> defines how much a guest will enjoy looking at an entity. There's a different value for each type of guest. Every value maps a guest entity type with an esthetic bonus value. Please see <a href="../entity-ids/#guests">Entity IDs</a> for guest entity definitions.</p>
 <h3 id="usage">Usage</h3>
 <p>Simply tweak the second <code>v</code> attribute for each to your preference.</p>
 <h3>Example (from `carousal.ai`)</h3>
@@ -2125,6 +2411,9 @@
 <li><code>familybathroom</code></li>
 <li><code>bathroom</code></li>
 <li><code>fun</code></li>
+<li><code>animalrest</code></li>
+<li><code>animalsex</code></li>
+<li><code>showtrick</code></li>
 </ul>
 <h3>Example (from `carousal.ai`):</h3>
 
@@ -2210,6 +2499,29 @@
 
     
     
+    
+      
+  <span class="md-source-file__fact">
+    
+      
+  <span class="md-icon" title="Contributors">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </span>
+  <span>GitHub</span>
+
+    
+    <nav>
+      
+        <a href="https://github.com/GoosiferIO" class="md-author" title="@GoosiferIO">
+          
+          <img src="https://avatars.githubusercontent.com/u/35750901?v=4&size=72" alt="GoosiferIO">
+        </a>
+      
+      
+      
+    </nav>
+  </span>
+
     
   </aside>
 

@@ -76,6 +76,48 @@ This isn't comprehensive, but here are a few:
 | `cOnlySwims` | `<int>` | Setting this to `1` makes it so the object is only placeable on water and not on land. Set to `0` or delete line to exclude this configuration. |
 | `walkable` | `<int>` | Setting this to `1` allows guests and animals to walk through the object. Set to `0` or delete line to exclude this configuration. |
 | `cFoliage` | `<int>` | Should this foliage count toward exhibit suitability? `0` for no, `1` for yes. As the name implies, usually used for foliage. |
+| `cPurchaseCost` | `<int>` | Price of the entity. |
+| `cCapacity` | `<int>` | How many users may use entity at a time. It is recommended to match this value with `capacity` under `[slot]`|
+| `cBathroomChange` | `<int>` | Unknown |
+| `cAngryBathroomChange` | `<int>` | Unknown |
+| `cHideBuilding` | `<int>` | Setting this to `1` hides the building while in use. Set to `0` or delete line to exclude this configuration. |
+| `cRock` | `<int>` | |
+| `walkableByTall` | `<int>` |  |
+| `cExplosionSound` | `<string dir>` |  |
+| `cExplosionSoundAtten` | `<int>` |  |
+| `cRubbleable` | `<int>` |  |
+| `cShelter` | `<int>` | Setting this to `1` designates the entity as a shelter. Set to `0` or delete line to exclude this configuration. |
+| `cEnergyChange` | `<int>` | |
+| `cUserUsesExit` | `<int>` | |
+| `cIsColorReplaced` | `<int>` | Setting this to `1` allows the entity to be color-replaced. Needs to pair with a respective `[colorrep]` section with additional configuration settings in the same file. Set to `0` or delete line to exclude this configuration. |
+| `cUseNumbersInName` | `<int>` | Setting this to `1` enumerates entity name. Set to `0` or delete line to exclude this configuration. |
+| `cDeletable` | `<int>` | Setting this to `1` allows entity to be deleted. Set to `0` or delete line to exclude this configuration. | 
+| `cRandomUse` | `<int>` | Setting this to `1` enables random interaction with entity. Set to `0` or delete line to exclude this configuration. |
+| `cMinUsePeriod` | `<int>` | If used, define minimum use period. |
+| `cMaxUsePeriod` | `<int>` | If used, define maximum use period. |
+| `cUnderwater` | `<int>` | Setting this to `1` allows an entity to be placed underwater. Set to `0` or delete line to exclude this configuration. |
+| `cDeadOnLand` | `<int>` | Setting this to `1` allows a 'dead on land' status. If the entity is placed on land, a 'dead' graphic is displayed. Set to `0` or delete line to exclude this configuration. |
+| `cDeadUnderwater` | `<int>` | Setting this to `1` allows a 'dead underwater' status. If the entity is placed underwater, a 'dead' graphic is displayed. Set to `0` or delete line to exclude this configuration. |
+| `cLand` | `<int>` | |
+| `cDepth` | `<int>` | |
+| `cSurface` | `<int>` | Setting this to `1` allows an entity to be placed on water surface. Set to `0` or delete line to exclude this configuration. |
+| `cUsesRealShadows` | `<int>` | |
+| `cHasShadowImages` | `<int>` | |
+| `cHasUnderwaterSection` | `<int>` | |
+| `cDeadStateHeight` | `<int>` | |
+| `cLocation` | `<int>` | |
+| `cBlocksLOS` | `<int>` | |
+| `cToySatisfaction` | `<int>` | |
+| `cDirectEntrance` | `<int>` | Moves user toward entity more quickly |
+| `cShow` | `<int>` | |
+| `cAvoidEdges` | `<int>` | Setting this to `1` prevents entity to be placed next to fences or tank walls. Set to `0` or delete line to exclude this configuration. |
+| `cUserTeleportsInside` | `<int>` | |
+| `cFoliage` | | |
+| `cUsesTreeRubble` | | |
+| `cEstheticWeight` | | |
+| `cGawkOnlyFromFront` | | |
+| `cExpansionID` | | |
+
 
 <h3>Example</h3>
 ```INI
@@ -104,21 +146,53 @@ cMoveable = 1
 cSwims = 1
 ```
 
-## `[Animations]`
+## `[Characteristics/Floats]`
 
 | Key                  | Value | Description|
 |----------------------|------|-----|
-| `idle` | `idle` | Idle defines your entity as having graphics without animation. |
-| `used` | `used` | Used defines your entity as having graphics with animation. |
+| `cUpkeep` | `<float>` | How much it costs per month to upkeep entity. |
 
+
+## `[Animations]`
+
+!!! note "Incomplete"
+    This section is incomplete. Needs missing definitions.
+
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `idle` | `idle` | Idle defines your entity as having graphics without animation. Can sometimes be a directory to a `.ani` file. |
+| `used` | `used` | Used defines your entity as having graphics with animation. |
+| `explode` | `<string dir>` | |
+| `giant` | | |
+| `small` | | |
+| `idledead` | `dead` | Idle dead graphic |
+| `shadowidle` | | |
+| `underidle` | | |
+
+<h3>Example 1</h3>
 ```INI
 [Animations]
 idle = idle
 ```
 
+<h3>Example 2</h3>
+```INI
+[Animations]
+idle = idle
+used = used
+```
+
+<h3>Example 3</h3>
+```INI
+[Animations]
+idle = idle
+used = idle
+idledead = dead
+```
+
 ## `[EstheticBonus]`
 
-`[EstheticBonus]` defines how much a guest will enjoy looking at an entity. There's a different value for each type of guest. Every value maps a guest entity type with an esthetic bonus value. Please see [Entity IDs](./entity_ids.md#guests) for guest entity definitions.
+`[EstheticBonus]` defines how much a guest will enjoy looking at an entity. There's a different value for each type of guest. Every value maps a guest entity type with an esthetic bonus value. Please see [Entity IDs](./entity-ids.md#guests) for guest entity definitions.
 
 ### Usage 
 
@@ -155,6 +229,9 @@ An (incomplete) list of possible values:
 - `familybathroom`
 - `bathroom`
 - `fun`
+- `animalrest`
+- `animalsex`
+- `showtrick`
 
 <h3>Example (from `carousal.ai`):</h3>
 

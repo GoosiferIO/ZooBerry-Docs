@@ -99,7 +99,7 @@ triggers = trigger0
 
 ## `[completion]`  
 
-On successful completion of the scenario unlock these entities. Can be a list of entities to unlock. For a full list of entity values, please see [Entity IDs](./entity_ids.md).
+On successful completion of the scenario unlock these entities. Can be a list of entities to unlock. For a full list of entity values, please see [Entity IDs](./entity-ids.md).
 
 | Key                  | Value | Description|
 |----------------------|------|-----|
@@ -166,28 +166,26 @@ Any name works above in the brackets, just add it to the `[goals]` block.
 
 ### Rule 0 (rulea = 0): Costs and profits
 
-When `rulea == 0` then `ruleb` is defined as one of the following values:
+When `rulea == 0`:
 
- 
 - `arga` (Period) - `0` monthly, `1` yearly, `2` total
 - `argb` (Unused)
-- Possible `ruleb` values:
-    - `0` food cost
-    - `1` healing cost
-    - `2` purchase cost
-    - `3` construction cost
-    - `4` admissions
-    - `5` admissions income
-    - `6` food income
-    - `7` drink income
-    - `8` donations income
-    - `9` construction refund
-    - `10` animal refund
-    - `11` keeper wages
-    - `12` guide wages
-    - `13` maint wages
-    - `14` net income
-    - `15` zoo value
+- `0` food cost
+- `1` healing cost
+- `2` purchase cost
+- `3` construction cost
+- `4` admissions
+- `5` admissions income
+- `6` food income
+- `7` drink income
+- `8` donations income
+- `9` construction refund
+- `10` animal refund
+- `11` keeper wages
+- `12` guide wages
+- `13` maint wages
+- `14` net income
+- `15` zoo value
 
 ### Rule 1 (rulea = 1): Counts and ratings
 - `arga` (Month)

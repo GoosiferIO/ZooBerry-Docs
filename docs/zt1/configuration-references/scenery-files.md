@@ -7,7 +7,7 @@ This page assumes the game directory definition of what a 'scenery' item entails
 
 The main configuration for these files are in `.ucb`, `.ucs`, or `.ai` format, but they are really `.INI` files. The following tables describe attributes that can  be given to the entities mentioned. Example files can be found in a respective `/scenery` directory.
 
-Please note that this guide is meant for reference only and is not in any way meant to imply the use of every attribute or section to make a specific kind of scenery or building entity. Instead, please refer to either official files or available mods for ideas. Use this guide to then experiment and create a derivative work.
+Please note that this guide is meant for reference only and is not in any way meant to imply that every attribute listed on this page must be included for a successful mod to work. Instead, please only use this guide to inform your decision to include or test any attributes for your mod in production.
 
 ## `[<Codename>]`
 
@@ -65,7 +65,7 @@ This isn't comprehensive, but here are a few:
 | `cAdultChange` | `<int>` | How happy a guest is after using the entity. Negative values are possible if you want them to hate it. | 
 | `cChildChange` | `<int>` | Same as above but specifically child guests. |
 | `cCommerce` | `<int>` | Does a user need to pay to use this entity? |
-| `cHabitat` | `<int>` | What habitat the entity belongs to. `9414` makes entities unplaceable in exhibits. `9411` allows entities placeable in all exhibits. For a full list of possible values, please see [Entity IDs](./entity-ids.md#habitat)|
+| `cHabitat` | `<int>` | What habitat the entity belongs to. `9414` makes entities unplaceable in exhibits. `9411` allows entities placeable in all exhibits. For a full list of possible values, please see [Entity IDs](./entity-ids.md#habitat) |
 | `cHideBuilding` | `<0/1>` | Hide building or show? |
 | `cUsersStayOutside` | `<0/1>` | Prevent a user from entering entity? |
 | `cTimeInside` | `<int>` | How long should a user be inside of a building. It mmight make sense to match this value with length of sound file if provided. 

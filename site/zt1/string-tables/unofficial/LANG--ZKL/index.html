@@ -1,0 +1,5782 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.zooberry.org/zt1/string-tables/unofficial/LANG--ZKL/">
+      
+      
+        <link rel="prev" href="../LANG--ZooTek/">
+      
+      
+        <link rel="next" href="../LANG--ZBorsato/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+    
+    
+      
+        <title>LANG--ZKL - ZooBerry Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep_orange" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lang-zkl" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="ZooBerry Docs" class="md-header__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ZooBerry Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              LANG--ZKL
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep_orange" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GoosiferIO/ZooBerry-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GoosiferIO/ZooBerry-Docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../getting-started/" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../emu/getting-started/" class="md-tabs__link">
+          
+  
+    
+  
+  EMU API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../panda/getting_started.md" class="md-tabs__link">
+          
+  
+    
+  
+  PANDA Loader
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="ZooBerry Docs" class="md-nav__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ZooBerry Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GoosiferIO/ZooBerry-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GoosiferIO/ZooBerry-Docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../attributions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Attributions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Zoo Tycoon 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Zoo Tycoon 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../getting-started/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/mod-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mod Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/modding-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modding Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/file-formats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Formats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Configuration References
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Configuration References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../configuration-references/scenery-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scenery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../configuration-references/scenario-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scenarios
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_3" id="__nav_2_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    String Table References
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            String Table References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entity-ids/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notable String IDs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_3_2" id="__nav_2_1_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Official String Tables
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Official String Tables
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang001/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang001
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang002/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang002
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang007/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang007
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang008/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang008
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang009/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang009
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang010/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang010
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang012/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang012
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang013/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang013
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang015/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang015
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang016/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang016
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang017/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang017
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang018/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang018
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang019/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang019
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang020/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang020
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang021/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang021
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang100/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang100
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang200/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang200
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../official/lang300/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang300
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_3_3" id="__nav_2_1_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Unofficial String Tables
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Unofficial String Tables
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LANG--ZTCDD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZTCDD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LANG--ZooTek/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZooTek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZKL
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LANG--ZBorsato/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZBorsato
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LANG--Jane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--Jane
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LANG--JBL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--JBL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LANG--fern-tek/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--fern-Tek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../langZA01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    langZA01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../langZA02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    langZA02
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../langZA03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    langZA03
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/web-resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    EMU API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            EMU API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../emu/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../emu/emu-console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EMU Command Console
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../emu/emu-scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lua Scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PANDA Loader
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            PANDA Loader
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../panda/getting_started.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/edit/main/docs/zt1/string-tables/unofficial/LANG--ZKL.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/raw/main/docs/zt1/string-tables/unofficial/LANG--ZKL.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="lang-zkl"><code>LANG--ZKL</code></h1>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>String</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>202</td>
+<td>Chicken Stand</td>
+</tr>
+<tr>
+<td>205</td>
+<td>Waffle Stand</td>
+</tr>
+<tr>
+<td>1100</td>
+<td>Animal Adoption Center</td>
+</tr>
+<tr>
+<td>1101</td>
+<td>Adoption Certificate</td>
+</tr>
+<tr>
+<td>1102</td>
+<td>Wow! I adopted an animal! Let's go look for it in the zoo.</td>
+</tr>
+<tr>
+<td>1103</td>
+<td>Purchase an Animal Adoption Center. Guests will enjoy looking for their adopted animal in your zoo.</td>
+</tr>
+<tr>
+<td>2842</td>
+<td>Haunted House Of Trepidation</td>
+</tr>
+<tr>
+<td>2843</td>
+<td>Platy</td>
+</tr>
+<tr>
+<td>2844</td>
+<td>Guppy</td>
+</tr>
+<tr>
+<td>2845</td>
+<td>Double-tailed Goldfish</td>
+</tr>
+<tr>
+<td>2846</td>
+<td>Betta</td>
+</tr>
+<tr>
+<td>2847</td>
+<td>Tropic Shoppe</td>
+</tr>
+<tr>
+<td>2986</td>
+<td>Low Decorative Wall</td>
+</tr>
+<tr>
+<td>4030</td>
+<td>Purchase a Chick-fil-A Fence. It will go great with the Chick-fil-A Stand.</td>
+</tr>
+<tr>
+<td>4031</td>
+<td>Chick-fil-A Fence</td>
+</tr>
+<tr>
+<td>6190</td>
+<td>Invisible Fence</td>
+</tr>
+<tr>
+<td>6709</td>
+<td>Campfire</td>
+</tr>
+<tr>
+<td>6712</td>
+<td>Woven Flower Basket</td>
+</tr>
+<tr>
+<td>6807</td>
+<td>Cotton candy</td>
+</tr>
+<tr>
+<td>7776</td>
+<td>Umbreon Figurine</td>
+</tr>
+<tr>
+<td>7777</td>
+<td>Chimecho Chime</td>
+</tr>
+<tr>
+<td>7778</td>
+<td>Pokemon Cards</td>
+</tr>
+<tr>
+<td>7779</td>
+<td>Mew Plushie</td>
+</tr>
+<tr>
+<td>7780</td>
+<td>Pokemon Center</td>
+</tr>
+<tr>
+<td>7781</td>
+<td>Oxnard Stuffed Toy</td>
+</tr>
+<tr>
+<td>7782</td>
+<td>Panda Stuffed Toy</td>
+</tr>
+<tr>
+<td>7783</td>
+<td>Hamtaro Stuffed Toy</td>
+</tr>
+<tr>
+<td>7784</td>
+<td>Bijou Stuffed Toy</td>
+</tr>
+<tr>
+<td>7785</td>
+<td>Hamtaro Shop</td>
+</tr>
+<tr>
+<td>7786</td>
+<td>Baby Lupe Plushie</td>
+</tr>
+<tr>
+<td>7787</td>
+<td>Spotted Uni Plushie</td>
+</tr>
+<tr>
+<td>7788</td>
+<td>Baby Kougra Plushie</td>
+</tr>
+<tr>
+<td>7789</td>
+<td>Eyrie Plushie</td>
+</tr>
+<tr>
+<td>7790</td>
+<td>Neopets Stand</td>
+</tr>
+<tr>
+<td>7791</td>
+<td>Dig Setup</td>
+</tr>
+<tr>
+<td>7834</td>
+<td>Chick-fil-A Picnic Table</td>
+</tr>
+<tr>
+<td>7835</td>
+<td>Chick-fil-A Stand</td>
+</tr>
+<tr>
+<td>7836</td>
+<td>Chicken Sandwich</td>
+</tr>
+<tr>
+<td>7837</td>
+<td>Waffle Fries</td>
+</tr>
+<tr>
+<td>7838</td>
+<td>Waterfall Fence</td>
+</tr>
+<tr>
+<td>7839</td>
+<td>Stew Of Knowledge</td>
+</tr>
+<tr>
+<td>7856</td>
+<td>Healing Potion</td>
+</tr>
+<tr>
+<td>7857</td>
+<td>Luck Potion</td>
+</tr>
+<tr>
+<td>7858</td>
+<td>Love Potion</td>
+</tr>
+<tr>
+<td>7859</td>
+<td>Witch's Brew Stand</td>
+</tr>
+<tr>
+<td>7860</td>
+<td>My favorite of the old games was the 1970s Apollo pinball with countdowns, launches, + score wheels &amp; relays instead of electronics.</td>
+</tr>
+<tr>
+<td>7861</td>
+<td>Antique Arcade</td>
+</tr>
+<tr>
+<td>7862</td>
+<td>Orca Show With Jumping Orca</td>
+</tr>
+<tr>
+<td>7863</td>
+<td>Orca Show</td>
+</tr>
+<tr>
+<td>7864</td>
+<td>Fortune: Help! I'm being held prisoner in a fortune cookie factory!</td>
+</tr>
+<tr>
+<td>7865</td>
+<td>Cyclops</td>
+</tr>
+<tr>
+<td>7866</td>
+<td>Fortune: Animals go crazy by placing many in too small a pen. Homo sapiens is the only animal that voluntarily does this to himself.</td>
+</tr>
+<tr>
+<td>7867</td>
+<td>Fortune Cookie</td>
+</tr>
+<tr>
+<td>7868</td>
+<td>Fortune Teller</td>
+</tr>
+<tr>
+<td>7869</td>
+<td>Hans Christian Andersen and the Grimm brothers sure did write exciting stories. And they teach such great lessons too.</td>
+</tr>
+<tr>
+<td>7870</td>
+<td>Fairy Tale Castle</td>
+</tr>
+<tr>
+<td>7871</td>
+<td>Tiger Show</td>
+</tr>
+<tr>
+<td>7876</td>
+<td>Bandaid</td>
+</tr>
+<tr>
+<td>7877</td>
+<td>First Aid Stand</td>
+</tr>
+<tr>
+<td>7878</td>
+<td>Fireworks</td>
+</tr>
+<tr>
+<td>7879</td>
+<td>Firework Shop</td>
+</tr>
+<tr>
+<td>7880</td>
+<td>Applebee's Restaurant</td>
+</tr>
+<tr>
+<td>7881</td>
+<td>Flowers</td>
+</tr>
+<tr>
+<td>7882</td>
+<td>Flower Shop</td>
+</tr>
+<tr>
+<td>7883</td>
+<td>Jungle Themed Small Bathroom</td>
+</tr>
+<tr>
+<td>7884</td>
+<td>Snow Themed Small Bathroom</td>
+</tr>
+<tr>
+<td>7885</td>
+<td>Savannah Themed Small Bathroom</td>
+</tr>
+<tr>
+<td>7886</td>
+<td>Not only are the people at the wild looking Lounge among the nicest in the world, they could answer all of my APE questions too.</td>
+</tr>
+<tr>
+<td>7887</td>
+<td>Zookeeper's Lounge</td>
+</tr>
+<tr>
+<td>7888</td>
+<td>Cirque De La Mer Show</td>
+</tr>
+<tr>
+<td>7889</td>
+<td>Zoo Tycoon</td>
+</tr>
+<tr>
+<td>7890</td>
+<td>Zoo Map And Guide</td>
+</tr>
+<tr>
+<td>7891</td>
+<td>Zoo Animals Book</td>
+</tr>
+<tr>
+<td>7892</td>
+<td>Animal Information Souvenir Center</td>
+</tr>
+<tr>
+<td>7893</td>
+<td>Caramel Sundae</td>
+</tr>
+<tr>
+<td>7894</td>
+<td>Hot Apple Pie</td>
+</tr>
+<tr>
+<td>7895</td>
+<td>French Fries</td>
+</tr>
+<tr>
+<td>7896</td>
+<td>Big Mac</td>
+</tr>
+<tr>
+<td>7897</td>
+<td>Grog</td>
+</tr>
+<tr>
+<td>7898</td>
+<td>Neptune's Nectar Stand</td>
+</tr>
+<tr>
+<td>7899</td>
+<td>Moon Cake</td>
+</tr>
+<tr>
+<td>7900</td>
+<td>Moon Juice</td>
+</tr>
+<tr>
+<td>7901</td>
+<td>Moon Juice Stand</td>
+</tr>
+<tr>
+<td>7902</td>
+<td>That was fun bouncing off the wall.</td>
+</tr>
+<tr>
+<td>7903</td>
+<td>Foam Play Area</td>
+</tr>
+<tr>
+<td>7920</td>
+<td>Applebee's Fence</td>
+</tr>
+<tr>
+<td>7921</td>
+<td>Female Bathroom</td>
+</tr>
+<tr>
+<td>7922</td>
+<td>Male Bathroom</td>
+</tr>
+<tr>
+<td>7923</td>
+<td>Chuck E. Cheese Doll</td>
+</tr>
+<tr>
+<td>7924</td>
+<td>Chuck E. Cheese's Restaurant</td>
+</tr>
+<tr>
+<td>7925</td>
+<td>Dinner</td>
+</tr>
+<tr>
+<td>7926</td>
+<td>Rainforest Cafe</td>
+</tr>
+<tr>
+<td>7927</td>
+<td>That Drop Zone Ride was cool. I have got to ride that again!!</td>
+</tr>
+<tr>
+<td>7928</td>
+<td>Ball Pit</td>
+</tr>
+<tr>
+<td>7929</td>
+<td>Log Flume Ride</td>
+</tr>
+<tr>
+<td>7930</td>
+<td>Drop Zone Ride</td>
+</tr>
+<tr>
+<td>7931</td>
+<td>Space Needle Ride</td>
+</tr>
+<tr>
+<td>7932</td>
+<td>This Velociraptor Pit is really cool.</td>
+</tr>
+<tr>
+<td>7933</td>
+<td>Velociraptor Pit</td>
+</tr>
+<tr>
+<td>7934</td>
+<td>Top brand soda cans</td>
+</tr>
+<tr>
+<td>7935</td>
+<td>Coca-Cola Machine</td>
+</tr>
+<tr>
+<td>7936</td>
+<td>Salmon Roe</td>
+</tr>
+<tr>
+<td>7937</td>
+<td>Cucumber Roll</td>
+</tr>
+<tr>
+<td>7938</td>
+<td>Sea Water Eel</td>
+</tr>
+<tr>
+<td>7939</td>
+<td>Crab Sushi</td>
+</tr>
+<tr>
+<td>7940</td>
+<td>Open Arms Sushi Stand</td>
+</tr>
+<tr>
+<td>7941</td>
+<td>Flower Bus Simulator Ride</td>
+</tr>
+<tr>
+<td>7942</td>
+<td>Tiger Glasses</td>
+</tr>
+<tr>
+<td>7943</td>
+<td>Elephant Glasses</td>
+</tr>
+<tr>
+<td>7944</td>
+<td>Sunglasses</td>
+</tr>
+<tr>
+<td>7945</td>
+<td>Sunglass Hut</td>
+</tr>
+<tr>
+<td>7946</td>
+<td>Tree Trunk Shelter</td>
+</tr>
+<tr>
+<td>7947</td>
+<td>Wow! It was unbelievable how the water seemed to run uphill in the Crooked House.</td>
+</tr>
+<tr>
+<td>7948</td>
+<td>Crooked House</td>
+</tr>
+<tr>
+<td>7949</td>
+<td>Shelter For Small Animals</td>
+</tr>
+<tr>
+<td>7950</td>
+<td>Ride On Air</td>
+</tr>
+<tr>
+<td>7951</td>
+<td>Pet Show</td>
+</tr>
+<tr>
+<td>8046</td>
+<td>McDonald's Food Stand</td>
+</tr>
+<tr>
+<td>8072</td>
+<td>Cotton Candy Stand</td>
+</tr>
+<tr>
+<td>8304</td>
+<td>Gravel Path</td>
+</tr>
+<tr>
+<td>8305</td>
+<td>Purchase a Gravel Path. Gravel paths indicate to guests where they should walk.</td>
+</tr>
+<tr>
+<td>8306</td>
+<td>Ice Path</td>
+</tr>
+<tr>
+<td>8307</td>
+<td>Purchase an Ice Path. Ice paths indicate to guests where they should walk, and it fits great in your snowy themed zoo.</td>
+</tr>
+<tr>
+<td>8309</td>
+<td>Igloo Shelter</td>
+</tr>
+<tr>
+<td>8310</td>
+<td>Igloo Shelter. Animals in captivity often need a place for privacy. Animals such as the Polar Bear, Emperor Penguin, Magnet, and Reindeer prefer this Igloo Shelter.</td>
+</tr>
+<tr>
+<td>8311</td>
+<td>DeepSea Restaurant</td>
+</tr>
+<tr>
+<td>8312</td>
+<td>Purchase a DeepSea Restaurant. Guests love the seafood that this restaurant sells. Guests will never go hungry again c'',)</td>
+</tr>
+<tr>
+<td>8313</td>
+<td>Salmon Plate</td>
+</tr>
+<tr>
+<td>8314</td>
+<td>Fried Shrimps</td>
+</tr>
+<tr>
+<td>8315</td>
+<td>Roasted Halibut</td>
+</tr>
+<tr>
+<td>8316</td>
+<td>Cranberry Juice</td>
+</tr>
+<tr>
+<td>8317</td>
+<td>Cranberry juice.. ooh.. tastes good!!</td>
+</tr>
+<tr>
+<td>8318</td>
+<td>Oh boy.. fried shrimps. These taste great.. oops.. forgot that I'm allergic to shrimps!!</td>
+</tr>
+<tr>
+<td>8319</td>
+<td>Mmm.. Roasted Halibut.. tastes just like grandma's!!</td>
+</tr>
+<tr>
+<td>8320</td>
+<td>A Salmon Plate.. hmm.. what kind of weird name is that.. salmon plate.. couldnt u come up with a better name dj_pluffs.. eeh!?</td>
+</tr>
+<tr>
+<td>8371</td>
+<td>Purchase a Zoo Admin Invisible Fence to give your exhibits a more open and natural look.</td>
+</tr>
+<tr>
+<td>8372</td>
+<td>Purchase an Invisible Fence Guide to plan where your invisible fences will go - just replace them with the invisible fence when you're happy with their placement.</td>
+</tr>
+<tr>
+<td>8373</td>
+<td>ZA Invisible Fence Guide</td>
+</tr>
+<tr>
+<td>8374</td>
+<td>ZA Invisible Savannah Fence</td>
+</tr>
+<tr>
+<td>8375</td>
+<td>ZA Invisible Grassland Fence</td>
+</tr>
+<tr>
+<td>8376</td>
+<td>ZA Invisible Sand Fence</td>
+</tr>
+<tr>
+<td>8377</td>
+<td>ZA Invisible Dirt Fence</td>
+</tr>
+<tr>
+<td>8378</td>
+<td>ZA Invisible Rainforest Fence</td>
+</tr>
+<tr>
+<td>8379</td>
+<td>ZA Invisible Fresh Water Fence</td>
+</tr>
+<tr>
+<td>8380</td>
+<td>ZA Invisible Salt Water Fence</td>
+</tr>
+<tr>
+<td>8381</td>
+<td>ZA Invisible Brown Rock Fence</td>
+</tr>
+<tr>
+<td>8382</td>
+<td>ZA Invisible Gray Rock Fence</td>
+</tr>
+<tr>
+<td>8383</td>
+<td>ZA Invisible Snow Fence</td>
+</tr>
+<tr>
+<td>8384</td>
+<td>ZA Invisible Deciduous Fence</td>
+</tr>
+<tr>
+<td>8385</td>
+<td>ZA Invisible Coniferous Fence</td>
+</tr>
+<tr>
+<td>8386</td>
+<td>The Alpha</td>
+</tr>
+<tr>
+<td>8387</td>
+<td>The Seer</td>
+</tr>
+<tr>
+<td>8388</td>
+<td>The Store</td>
+</tr>
+<tr>
+<td>8389</td>
+<td>The Citadel</td>
+</tr>
+<tr>
+<td>8390</td>
+<td>The Maroon</td>
+</tr>
+<tr>
+<td>8391</td>
+<td>The Stretch</td>
+</tr>
+<tr>
+<td>8392</td>
+<td>The Lagoona</td>
+</tr>
+<tr>
+<td>8393</td>
+<td>Woah! This is going to be In Tents! Hope I can find somewhere to put my sleeping bag.</td>
+</tr>
+<tr>
+<td>8394</td>
+<td>The view should be wonderful from my room as I eat my supper!</td>
+</tr>
+<tr>
+<td>8395</td>
+<td>I should be able to buy loads of goodies from here after dinner!</td>
+</tr>
+<tr>
+<td>8396</td>
+<td>All those entrances make my head spin! Still, a good rest and meal should sort that out!</td>
+</tr>
+<tr>
+<td>8397</td>
+<td>It's a good job; I like the colour red! Just hope the food and my room aren't the same colour!</td>
+</tr>
+<tr>
+<td>8398</td>
+<td>This hotel seems to stretch for miles! I'll need a good long rest and several meals just to cope with it!</td>
+</tr>
+<tr>
+<td>8399</td>
+<td>This is so much better than the Alpha! Now this is what a Hotel should look like!</td>
+</tr>
+<tr>
+<td>8400</td>
+<td>Blue Brick Exhibit Fence</td>
+</tr>
+<tr>
+<td>8401</td>
+<td>Blue Brick Decorative Fence</td>
+</tr>
+<tr>
+<td>8402</td>
+<td>Blue Picket Fence</td>
+</tr>
+<tr>
+<td>8403</td>
+<td>White Brick Decorative Fence</td>
+</tr>
+<tr>
+<td>8404</td>
+<td>Blue PnR Fence</td>
+</tr>
+<tr>
+<td>8405</td>
+<td>Blue PnR Exhibit Fence</td>
+</tr>
+<tr>
+<td>8406</td>
+<td>White PnR Fence</td>
+</tr>
+<tr>
+<td>8407</td>
+<td>White PnR Exhibit Fence</td>
+</tr>
+<tr>
+<td>8408</td>
+<td>Blue Brick Exhibit Fence. Very, very strong fence. Allows guests to see through.</td>
+</tr>
+<tr>
+<td>8409</td>
+<td>Blue Brick Decorative Fence. Guests love it!</td>
+</tr>
+<tr>
+<td>8410</td>
+<td>Blue Picket Fence. Guests love this decorative fence!</td>
+</tr>
+<tr>
+<td>8411</td>
+<td>White Brick Decorative Fence. Good for landscaping.</td>
+</tr>
+<tr>
+<td>8412</td>
+<td>Blue PnR Fence. Another good choice for landscaping.</td>
+</tr>
+<tr>
+<td>8413</td>
+<td>Blue PnR Exhibit Fence. Strong fence for strong animals.</td>
+</tr>
+<tr>
+<td>8414</td>
+<td>White PnR Fence. Decorative fencing for your zoo.</td>
+</tr>
+<tr>
+<td>8415</td>
+<td>White PnR Exhibit Fence. Another Strong Fence. Allows guests to see into the exhibit.</td>
+</tr>
+<tr>
+<td>8480</td>
+<td>Money</td>
+</tr>
+<tr>
+<td>8481</td>
+<td>ATM Machine</td>
+</tr>
+<tr>
+<td>8482</td>
+<td>Basketball Game</td>
+</tr>
+<tr>
+<td>8483</td>
+<td>Basketball</td>
+</tr>
+<tr>
+<td>8484</td>
+<td>Stuffed Beluga</td>
+</tr>
+<tr>
+<td>8485</td>
+<td>Stuffed Manatee</td>
+</tr>
+<tr>
+<td>8486</td>
+<td>Fish Gift Stand</td>
+</tr>
+<tr>
+<td>8487</td>
+<td>Coral Reef Painting</td>
+</tr>
+<tr>
+<td>8488</td>
+<td>Stuffed Stingray</td>
+</tr>
+<tr>
+<td>8489</td>
+<td>I love candy apples!!</td>
+</tr>
+<tr>
+<td>8490</td>
+<td>Candy Apple</td>
+</tr>
+<tr>
+<td>8491</td>
+<td>Park Grill</td>
+</tr>
+<tr>
+<td>8492</td>
+<td>Candy Apple Stand</td>
+</tr>
+<tr>
+<td>8493</td>
+<td>Candyland Ball Pit</td>
+</tr>
+<tr>
+<td>8494</td>
+<td>It is nice of the zoo to provide these park grills. The meat is done.</td>
+</tr>
+<tr>
+<td>8495</td>
+<td>Aliens Attack Arcade Game</td>
+</tr>
+<tr>
+<td>8560</td>
+<td>Refreshments Machine</td>
+</tr>
+<tr>
+<td>8561</td>
+<td>Purchase a Refreshments Machine. If guests are hungry or thirsty then they can fill up on some candy and soda at this rainforest looking machine.</td>
+</tr>
+<tr>
+<td>8562</td>
+<td>That refreshments machine is really good value!</td>
+</tr>
+<tr>
+<td>8563</td>
+<td>Sweets Stand</td>
+</tr>
+<tr>
+<td>8564</td>
+<td>Purchase a Sweets Stand. Every one has a sweet tooth and now they can buy what sweets they want in your zoo.</td>
+</tr>
+<tr>
+<td>8565</td>
+<td>Man, that sweet stand has everything and they are all my favourites too!</td>
+</tr>
+<tr>
+<td>8566</td>
+<td>Chocolates</td>
+</tr>
+<tr>
+<td>8567</td>
+<td>Ummmmmm, these chocolates are the best; so creamy and smooth!</td>
+</tr>
+<tr>
+<td>8568</td>
+<td>Primate XP</td>
+</tr>
+<tr>
+<td>8569</td>
+<td>Rainbow Slushie</td>
+</tr>
+<tr>
+<td>8570</td>
+<td>Hey, this Rainbow Slushie tastes great. It also makes my tongue look funny!</td>
+</tr>
+<tr>
+<td>8676</td>
+<td>Wreath</td>
+</tr>
+<tr>
+<td>8677</td>
+<td>Garland</td>
+</tr>
+<tr>
+<td>8678</td>
+<td>This Christmas Store will really put your guests in the holiday spirit.</td>
+</tr>
+<tr>
+<td>8679</td>
+<td>Christmas Store</td>
+</tr>
+<tr>
+<td>8680</td>
+<td>Snowy Gift Shop</td>
+</tr>
+<tr>
+<td>8681</td>
+<td>Purchase a Snowy Gift Shop. Everyone will want to buy snow themed souvenirs to remember their visit to your zoo.</td>
+</tr>
+<tr>
+<td>8682</td>
+<td>The Snowy Gift Shop has some great souvenirs!</td>
+</tr>
+<tr>
+<td>8683</td>
+<td>Plush Fancy Bear</td>
+</tr>
+<tr>
+<td>8684</td>
+<td>This bear is so soft and cuddly.</td>
+</tr>
+<tr>
+<td>8685</td>
+<td>Toboggan Cap</td>
+</tr>
+<tr>
+<td>8686</td>
+<td>This cap will keep my head nice and warm.</td>
+</tr>
+<tr>
+<td>8687</td>
+<td>Bear T-shirt</td>
+</tr>
+<tr>
+<td>8688</td>
+<td>This T-shirt is really cool!</td>
+</tr>
+<tr>
+<td>8689</td>
+<td>Polar Bear Snowglobe</td>
+</tr>
+<tr>
+<td>8690</td>
+<td>Oh, that's a pretty snowglobe!</td>
+</tr>
+<tr>
+<td>8691</td>
+<td>Snowman Baseball Hat</td>
+</tr>
+<tr>
+<td>8692</td>
+<td>I love the snowman baseball hat!</td>
+</tr>
+<tr>
+<td>8701</td>
+<td>Carnivorous Plant House</td>
+</tr>
+<tr>
+<td>8703</td>
+<td>Wow! Look at the Venus Flytrap! I love Pitcher Plants!</td>
+</tr>
+<tr>
+<td>8704</td>
+<td>Deserterrium</td>
+</tr>
+<tr>
+<td>8705</td>
+<td>Deserterrium. Guest will love the natural-looking desert habitat and its many inhabitants.</td>
+</tr>
+<tr>
+<td>8706</td>
+<td>I really liked the Deserterrium!</td>
+</tr>
+<tr>
+<td>8707</td>
+<td>Cave Man Stand</td>
+</tr>
+<tr>
+<td>8708</td>
+<td>Purchase a Cave Man Stand. Guests will love to eat Raptor Beef or T-Rex Nuggets!</td>
+</tr>
+<tr>
+<td>8709</td>
+<td>T-Rex Nuggets</td>
+</tr>
+<tr>
+<td>8710</td>
+<td>Raptor Beef</td>
+</tr>
+<tr>
+<td>8711</td>
+<td>I like the taste of T-Rex Nuggets.</td>
+</tr>
+<tr>
+<td>8712</td>
+<td>Raptor beef tastes really good!</td>
+</tr>
+<tr>
+<td>8750</td>
+<td>Rainforest Gift Stand</td>
+</tr>
+<tr>
+<td>8751</td>
+<td>Purchase a Rainforest Gift Stand. Guests will love to buy an Orangutan Coloring Book or a Lowland Gorilla Plushie.</td>
+</tr>
+<tr>
+<td>8752</td>
+<td>Orangutan Coloring Book</td>
+</tr>
+<tr>
+<td>8753</td>
+<td>Kids will love to color the Orangutan pictures.</td>
+</tr>
+<tr>
+<td>8754</td>
+<td>Lowland Gorilla Plushie</td>
+</tr>
+<tr>
+<td>8755</td>
+<td>Kids will love to play with the Lowland Gorilla Plushie.</td>
+</tr>
+<tr>
+<td>8759</td>
+<td>Novelty Food Dispenser</td>
+</tr>
+<tr>
+<td>8760</td>
+<td>Spinning Snow Cups</td>
+</tr>
+<tr>
+<td>8761</td>
+<td>Whoa! Whoa! Whoa! That makes me dizzy!</td>
+</tr>
+<tr>
+<td>8762</td>
+<td>Haunted Prison</td>
+</tr>
+<tr>
+<td>8763</td>
+<td>Hall Of Mirrors</td>
+</tr>
+<tr>
+<td>8764</td>
+<td>Fun House</td>
+</tr>
+<tr>
+<td>8765</td>
+<td>This was great fun!</td>
+</tr>
+<tr>
+<td>8766</td>
+<td>This was fun!</td>
+</tr>
+<tr>
+<td>8767</td>
+<td>Sleigh Ride</td>
+</tr>
+<tr>
+<td>8768</td>
+<td>Candy Shop</td>
+</tr>
+<tr>
+<td>8769</td>
+<td>Purchase a Candy Shop. Guests will enjoy the sweet taste of candies.</td>
+</tr>
+<tr>
+<td>8770</td>
+<td>I need sugar to boost my hyperactivity!</td>
+</tr>
+<tr>
+<td>8771</td>
+<td>Candies And Chocolates</td>
+</tr>
+<tr>
+<td>8772</td>
+<td>This chocolate is so delicious!</td>
+</tr>
+<tr>
+<td>8773</td>
+<td>Tower Cafe</td>
+</tr>
+<tr>
+<td>8774</td>
+<td>Down Under Grill</td>
+</tr>
+<tr>
+<td>8775</td>
+<td>Olive Garden</td>
+</tr>
+<tr>
+<td>8776</td>
+<td>Mmm, what a great meal!</td>
+</tr>
+<tr>
+<td>8777</td>
+<td>Wine</td>
+</tr>
+<tr>
+<td>8778</td>
+<td>Chicken Wrap</td>
+</tr>
+<tr>
+<td>8779</td>
+<td>Baked Potato</td>
+</tr>
+<tr>
+<td>8780</td>
+<td>Pasta</td>
+</tr>
+<tr>
+<td>8781</td>
+<td>Raspberry lemonade. Delicious!</td>
+</tr>
+<tr>
+<td>8782</td>
+<td>That was tasty.</td>
+</tr>
+<tr>
+<td>8783</td>
+<td>Breadsticks</td>
+</tr>
+<tr>
+<td>8784</td>
+<td>Christmas Tree Sale</td>
+</tr>
+<tr>
+<td>8785</td>
+<td>Cool! A Christmas Tree Sale! Those trees sure look great!</td>
+</tr>
+<tr>
+<td>8786</td>
+<td>Snowy Christmas Tree</td>
+</tr>
+<tr>
+<td>8787</td>
+<td>This is so cool! I cannot wait to decorate it!</td>
+</tr>
+<tr>
+<td>8788</td>
+<td>Christmas Tree</td>
+</tr>
+<tr>
+<td>8789</td>
+<td>This tree is beautiful! It will look great at home!</td>
+</tr>
+<tr>
+<td>8790</td>
+<td>Primeval Abyssal Aquarium</td>
+</tr>
+<tr>
+<td>8791</td>
+<td>Wow! This is a great ice cream sundae.</td>
+</tr>
+<tr>
+<td>8792</td>
+<td>Ice Cream Sundae</td>
+</tr>
+<tr>
+<td>8793</td>
+<td>This milkshake is really great! Yummy!</td>
+</tr>
+<tr>
+<td>8794</td>
+<td>Milkshake</td>
+</tr>
+<tr>
+<td>8795</td>
+<td>Mmm... These candy canes are delicious!</td>
+</tr>
+<tr>
+<td>8796</td>
+<td>Candy Cane</td>
+</tr>
+<tr>
+<td>8797</td>
+<td>A Snack Shack. I love candies!</td>
+</tr>
+<tr>
+<td>8798</td>
+<td>Logcabin Snack Shack</td>
+</tr>
+<tr>
+<td>8799</td>
+<td>Logcabin Restroom</td>
+</tr>
+<tr>
+<td>8800</td>
+<td>Popcorn Stand</td>
+</tr>
+<tr>
+<td>8801</td>
+<td>Old Boardwalk Path</td>
+</tr>
+<tr>
+<td>8802</td>
+<td>That Popcorn in that stand looks alright!</td>
+</tr>
+<tr>
+<td>8803</td>
+<td>Sugar Popcorn</td>
+</tr>
+<tr>
+<td>8804</td>
+<td>Salt Popcorn</td>
+</tr>
+<tr>
+<td>8805</td>
+<td>This Sugar Popcorn is nice and sweet.</td>
+</tr>
+<tr>
+<td>8806</td>
+<td>This Salt Popcorn is nice and salty.</td>
+</tr>
+<tr>
+<td>8814</td>
+<td>Rainforest House</td>
+</tr>
+<tr>
+<td>8815</td>
+<td>Bird Hatchery</td>
+</tr>
+<tr>
+<td>8816</td>
+<td>Fish Hatchery</td>
+</tr>
+<tr>
+<td>8817</td>
+<td>Dinosaur Hatchery</td>
+</tr>
+<tr>
+<td>8818</td>
+<td>Bird Hatchery</td>
+</tr>
+<tr>
+<td>8819</td>
+<td>Fish Hatchery</td>
+</tr>
+<tr>
+<td>8820</td>
+<td>Dinosaur Hatchery</td>
+</tr>
+<tr>
+<td>8821</td>
+<td>Hatchery</td>
+</tr>
+<tr>
+<td>8822</td>
+<td>Purchase a Hatchery. Guests can observe the birth of birds, fish, and dinosaurs.</td>
+</tr>
+<tr>
+<td>8823</td>
+<td>Great View! You gotta love that ride.</td>
+</tr>
+<tr>
+<td>8824</td>
+<td>Ferris Wheel</td>
+</tr>
+<tr>
+<td>8825</td>
+<td>Purchase a Ferris Wheel. Guests will have a bird's eye view of the zoo.</td>
+</tr>
+<tr>
+<td>8826</td>
+<td>That was the jolliest place ever! Even Santa was there!</td>
+</tr>
+<tr>
+<td>8827</td>
+<td>Santa's Giftshop</td>
+</tr>
+<tr>
+<td>8828</td>
+<td>Purchase a Santa's Giftshop. This is an amazing shop, that will stun your guests.</td>
+</tr>
+<tr>
+<td>8829</td>
+<td>Virginia Wheel Coaster</td>
+</tr>
+<tr>
+<td>8830</td>
+<td>Purchase a Virginia Wheel Rollercoaster. Your guests will love it.</td>
+</tr>
+<tr>
+<td>8831</td>
+<td>I never had such an exciting ride.</td>
+</tr>
+<tr>
+<td>8832</td>
+<td>Endangered Species Art Gallery</td>
+</tr>
+<tr>
+<td>8833</td>
+<td>Purchase an Endangered Species Art Gallery. Guests can admire and buy art inspired by animals in your zoo.</td>
+</tr>
+<tr>
+<td>8834</td>
+<td>An art gallery. That's unusual. Let's have a look.</td>
+</tr>
+<tr>
+<td>8835</td>
+<td>Handmade Jewelry</td>
+</tr>
+<tr>
+<td>8836</td>
+<td>I love this dolphin necklace.</td>
+</tr>
+<tr>
+<td>8837</td>
+<td>Print</td>
+</tr>
+<tr>
+<td>8838</td>
+<td>This print is signed by the artist!</td>
+</tr>
+<tr>
+<td>8839</td>
+<td>Sketchbook</td>
+</tr>
+<tr>
+<td>8840</td>
+<td>Now I can sketch my favorite animal!</td>
+</tr>
+<tr>
+<td>8841</td>
+<td>Wood Carving</td>
+</tr>
+<tr>
+<td>8842</td>
+<td>This carving is cool.</td>
+</tr>
+<tr>
+<td>8843</td>
+<td>Caricature Stand</td>
+</tr>
+<tr>
+<td>8844</td>
+<td>Purchase a Caricature Stand. Guests like to have a funny portrait of themselves.</td>
+</tr>
+<tr>
+<td>8845</td>
+<td>Oh look, a caricature artist. Let's have our pictures drawn.</td>
+</tr>
+<tr>
+<td>8846</td>
+<td>Caricature</td>
+</tr>
+<tr>
+<td>8847</td>
+<td>That artist made me look like an orangutan!</td>
+</tr>
+<tr>
+<td>8848</td>
+<td>Ice Skating Rink</td>
+</tr>
+<tr>
+<td>8849</td>
+<td>Purchase an Ice Skating Rink. Guests will have a great time as they slide and skate in the ice skating rink.</td>
+</tr>
+<tr>
+<td>8850</td>
+<td>That was great... I had a splendid time.</td>
+</tr>
+<tr>
+<td>8852</td>
+<td>Amazon House</td>
+</tr>
+<tr>
+<td>8853</td>
+<td>Purchase an Amazon House. Guests can see plants and observe small animals from the upper Amazon rainforest like birds, monkeys, and lizards.</td>
+</tr>
+<tr>
+<td>8854</td>
+<td>I really liked the free flying birds in the Amazon House.</td>
+</tr>
+<tr>
+<td>8855</td>
+<td>The special effects were awesome in this movie.</td>
+</tr>
+<tr>
+<td>8856</td>
+<td>IMAX Theatre</td>
+</tr>
+<tr>
+<td>8857</td>
+<td>Guests will enjoy watching a movie in this IMAX Theatre.</td>
+</tr>
+<tr>
+<td>8861</td>
+<td>That spooky ghost is so creepy.</td>
+</tr>
+<tr>
+<td>8862</td>
+<td>Haunted House</td>
+</tr>
+<tr>
+<td>8863</td>
+<td>Purchase a Haunted House. Your guests will watch the special effects while screaming in awe.</td>
+</tr>
+<tr>
+<td>8865</td>
+<td>The Black Pearl</td>
+</tr>
+<tr>
+<td>8866</td>
+<td>Purchase The Black Pearl. Guests can climb in the rigging or go below to enjoy the Caribbean Tide Pool exhibit. There's even a small gift shop.</td>
+</tr>
+<tr>
+<td>8867</td>
+<td>Wow, look! A pirate ship!</td>
+</tr>
+<tr>
+<td>8868</td>
+<td>Plastic Swords</td>
+</tr>
+<tr>
+<td>8869</td>
+<td>I'm a swashbuckling pirate captain! Have at you, scurvy landlubber!</td>
+</tr>
+<tr>
+<td>8870</td>
+<td>Treasure Map</td>
+</tr>
+<tr>
+<td>8871</td>
+<td>X marks the spot. Cool!</td>
+</tr>
+<tr>
+<td>8872</td>
+<td>Zoo Bookstore</td>
+</tr>
+<tr>
+<td>8873</td>
+<td>Let's go in the bookstore!</td>
+</tr>
+<tr>
+<td>8874</td>
+<td>Zoos Around The World</td>
+</tr>
+<tr>
+<td>8875</td>
+<td>This zoo is listed as one of the world's greatest zoos!</td>
+</tr>
+<tr>
+<td>8876</td>
+<td>Sounds Of Nature CD</td>
+</tr>
+<tr>
+<td>8877</td>
+<td>I really like the birdsong recordings on this CD.</td>
+</tr>
+<tr>
+<td>8878</td>
+<td>Zoo Tycoon</td>
+</tr>
+<tr>
+<td>8879</td>
+<td>I can't wait to play Zoo Tycoon! I wonder if there are any cool Zoo Tycoon websites. . .</td>
+</tr>
+<tr>
+<td>8880</td>
+<td>Purchase a Zoo Bookstore. Guests can buy books and other gifts at the bookstore.</td>
+</tr>
+<tr>
+<td>8881</td>
+<td>Rustic Bistro</td>
+</tr>
+<tr>
+<td>8882</td>
+<td>Purchase a Rustic Bistro. Guests will enjoy a relaxing meal on the patio.</td>
+</tr>
+<tr>
+<td>8883</td>
+<td>The Bistro looks like a good place to have lunch.</td>
+</tr>
+<tr>
+<td>8884</td>
+<td>Soup Of The Day</td>
+</tr>
+<tr>
+<td>8885</td>
+<td>This soup is delicious!</td>
+</tr>
+<tr>
+<td>8886</td>
+<td>House Salad</td>
+</tr>
+<tr>
+<td>8887</td>
+<td>This is a really fresh salad. Yum!</td>
+</tr>
+<tr>
+<td>8888</td>
+<td>Snow Castle Buffet</td>
+</tr>
+<tr>
+<td>8889</td>
+<td>Purchase a snow-themed restaurant. Guests will find it more interesting than a plain one. Guests will be happier when they eat in what appears to be a castle formed completely out of snow!</td>
+</tr>
+<tr>
+<td>8892</td>
+<td>Model Ship</td>
+</tr>
+<tr>
+<td>8893</td>
+<td>The detail on this model ship is amazing.</td>
+</tr>
+<tr>
+<td>8894</td>
+<td>Hermit Crab</td>
+</tr>
+<tr>
+<td>8895</td>
+<td>This hermit crab looks just like the one in the touch tank. . . Ouch!</td>
+</tr>
+<tr>
+<td>8904</td>
+<td>I love Olive Garden breadsticks!</td>
+</tr>
+<tr>
+<td>8905</td>
+<td>Fruit Salad</td>
+</tr>
+<tr>
+<td>8906</td>
+<td>This fruit salad is really good!</td>
+</tr>
+<tr>
+<td>8917</td>
+<td>Oh gross, the soup is looking at me!</td>
+</tr>
+<tr>
+<td>8918</td>
+<td>Eyeball Soup</td>
+</tr>
+<tr>
+<td>8919</td>
+<td>This cola looks awful.</td>
+</tr>
+<tr>
+<td>8920</td>
+<td>Dracula Cola</td>
+</tr>
+<tr>
+<td>8921</td>
+<td>Look, a Spooky Restaurant. I love scary places!</td>
+</tr>
+<tr>
+<td>8922</td>
+<td>Purchase a Spooky Halloween Restaurant. Your Guests will be scared out of their wits at Halloween.</td>
+</tr>
+<tr>
+<td>8923</td>
+<td>Spooky Restaurant</td>
+</tr>
+<tr>
+<td>8924</td>
+<td>A pina colada, just what I needed on a hot day.</td>
+</tr>
+<tr>
+<td>8925</td>
+<td>Boy, that rice was so sticky!</td>
+</tr>
+<tr>
+<td>8926</td>
+<td>Pina Colada</td>
+</tr>
+<tr>
+<td>8927</td>
+<td>Rice And Stir Fried Veggies</td>
+</tr>
+<tr>
+<td>8928</td>
+<td>Bamboo Hut Bistro</td>
+</tr>
+<tr>
+<td>8929</td>
+<td>I feel like I just stepped out of the tropics!</td>
+</tr>
+<tr>
+<td>8930</td>
+<td>Purchase a Bamboo Hut Bistro. Give your zoo a tropical flair.</td>
+</tr>
+<tr>
+<td>8931</td>
+<td>This is the best ice cream ever.</td>
+</tr>
+<tr>
+<td>8932</td>
+<td>This hot chocolate tastes great.</td>
+</tr>
+<tr>
+<td>8933</td>
+<td>I love Ben &amp; Jerry's!</td>
+</tr>
+<tr>
+<td>8934</td>
+<td>Cherry Garcia Ice Cream</td>
+</tr>
+<tr>
+<td>8935</td>
+<td>Hot Chocolate</td>
+</tr>
+<tr>
+<td>8941</td>
+<td>Ben &amp; Jerry's</td>
+</tr>
+<tr>
+<td>8942</td>
+<td>Purchase a Ben &amp; Jerry's Ice Cream Scoop Shop! Guests will appreciate the fun atmosphere and the super premium ice cream.</td>
+</tr>
+<tr>
+<td>8981</td>
+<td>Merry-Go-Round</td>
+</tr>
+<tr>
+<td>8982</td>
+<td>Yahoo! This'll be fun!</td>
+</tr>
+<tr>
+<td>8993</td>
+<td>Sekhmet's Grill</td>
+</tr>
+<tr>
+<td>8994</td>
+<td>Purchase Sekhmet's Grill. Guests will love the authentic Egyptian food.</td>
+</tr>
+<tr>
+<td>8995</td>
+<td>Shish Kebab. Grilled meat on a stick.</td>
+</tr>
+<tr>
+<td>8996</td>
+<td>Hibiscus Tea. Sweet Egyptian Beverage.</td>
+</tr>
+<tr>
+<td>8997</td>
+<td>Wow, look at that pyramid. It's a restaurant!</td>
+</tr>
+<tr>
+<td>8998</td>
+<td>Those Shish Kebabs sure were spicy.</td>
+</tr>
+<tr>
+<td>8999</td>
+<td>I really liked that Hibiscus Tea.</td>
+</tr>
+<tr>
+<td>9017</td>
+<td>Fancy Post And Rope Fence</td>
+</tr>
+<tr>
+<td>10622</td>
+<td>Ahh, it's nice to warm my hands by the campfire.</td>
+</tr>
+<tr>
+<td>10624</td>
+<td>Nice craftsmanship on that woven flower basket!</td>
+</tr>
+<tr>
+<td>10631</td>
+<td>Mmm. This cotton candy sure is tasty.</td>
+</tr>
+<tr>
+<td>12032</td>
+<td>Chick-fil-A Picnic Table</td>
+</tr>
+<tr>
+<td>12033</td>
+<td>The Chick-fil-A Picnic Table is a great place to eat your food.</td>
+</tr>
+<tr>
+<td>12034</td>
+<td>I love the Chick-fil-A Picnic Table!</td>
+</tr>
+<tr>
+<td>13959</td>
+<td>Leopard Fence</td>
+</tr>
+<tr>
+<td>13960</td>
+<td>Purchase a Leopard Fence. It is not strong enough to hold animals in, but great for decorating your zoo.</td>
+</tr>
+<tr>
+<td>13961</td>
+<td>Tiger Fence</td>
+</tr>
+<tr>
+<td>13962</td>
+<td>Purchase a Tiger Fence. It is not strong enough to hold animals in, but great for decorating your zoo.</td>
+</tr>
+<tr>
+<td>13963</td>
+<td>Zebra Fence</td>
+</tr>
+<tr>
+<td>13964</td>
+<td>Purchase a Zebra Fence. It is not strong enough to hold animals in, but great for decorating your zoo.</td>
+</tr>
+<tr>
+<td>13965</td>
+<td>Purchase a Giraffe Fence. It is not strong enough to hold animals in, but great for decorating your zoo.</td>
+</tr>
+<tr>
+<td>13967</td>
+<td>Giraffe Fence</td>
+</tr>
+<tr>
+<td>15344</td>
+<td>Pizza Hut</td>
+</tr>
+<tr>
+<td>15345</td>
+<td>Guests love dining out at Pizza Hut.</td>
+</tr>
+<tr>
+<td>15346</td>
+<td>Pizza Hut Bench</td>
+</tr>
+<tr>
+<td>15360</td>
+<td>Dairy Queen Ice Cream Stand</td>
+</tr>
+<tr>
+<td>15361</td>
+<td>Purchase a Dairy Queen Ice Cream Stand. Guests will really like purchasing the best ice cream in town.</td>
+</tr>
+<tr>
+<td>15362</td>
+<td>Dairy Queen Picnic Table</td>
+</tr>
+<tr>
+<td>15376</td>
+<td>Baskin-Robbins Restaurant</td>
+</tr>
+<tr>
+<td>15377</td>
+<td>Purchase a Baskin-Robbins Restaurant.</td>
+</tr>
+<tr>
+<td>15378</td>
+<td>Baskin-Robbins Picnic Table</td>
+</tr>
+<tr>
+<td>15379</td>
+<td>Purchase a Baskin-Robbins Picnic Table. Guests will love sitting at this picnic table.</td>
+</tr>
+<tr>
+<td>15424</td>
+<td>Matchbox Toy Shop</td>
+</tr>
+<tr>
+<td>15425</td>
+<td>Purchase a Matchbox Toy Shop. Children will really love these miniature cars.</td>
+</tr>
+<tr>
+<td>15426</td>
+<td>I have to have a Matchbox Car.</td>
+</tr>
+<tr>
+<td>15427</td>
+<td>Matchbox Toy Car</td>
+</tr>
+<tr>
+<td>15428</td>
+<td>I love this Matchbox Car.</td>
+</tr>
+<tr>
+<td>15432</td>
+<td>RCT Information Booth</td>
+</tr>
+<tr>
+<td>15433</td>
+<td>Purchase an RCT Information Booth so that guests can navigate your extensive zoo.</td>
+</tr>
+<tr>
+<td>15434</td>
+<td>Good. Somewhere I can buy a map so I won't get lost.</td>
+</tr>
+<tr>
+<td>15435</td>
+<td>Map</td>
+</tr>
+<tr>
+<td>15436</td>
+<td>I won't get lost now I have this map. I hope!!!</td>
+</tr>
+<tr>
+<td>15440</td>
+<td>Taco Bell Stand</td>
+</tr>
+<tr>
+<td>15441</td>
+<td>Purchase a Taco Bell Stand. Guests will love the burritos and tacos from Taco Bell.</td>
+</tr>
+<tr>
+<td>15442</td>
+<td>A Taco sounds pretty good to me.</td>
+</tr>
+<tr>
+<td>15443</td>
+<td>Tacos</td>
+</tr>
+<tr>
+<td>15444</td>
+<td>I love this taco. Nice and hot!</td>
+</tr>
+<tr>
+<td>15445</td>
+<td>Balloon Stand</td>
+</tr>
+<tr>
+<td>15446</td>
+<td>For greater happiness, guests will purchase these helium inflated balloons.</td>
+</tr>
+<tr>
+<td>15447</td>
+<td>A Balloon Stand. Cool.</td>
+</tr>
+<tr>
+<td>15448</td>
+<td>Balloons</td>
+</tr>
+<tr>
+<td>15449</td>
+<td>These balloons are cool, man.</td>
+</tr>
+<tr>
+<td>15450</td>
+<td>Bubblegum Machine</td>
+</tr>
+<tr>
+<td>15451</td>
+<td>Purchase a Bubblegum Machine. Guests love bubblegum.</td>
+</tr>
+<tr>
+<td>15452</td>
+<td>Hey look, a Bubblegum Dispenser!</td>
+</tr>
+<tr>
+<td>15453</td>
+<td>Bubblegum</td>
+</tr>
+<tr>
+<td>15454</td>
+<td>Cool, now I can blow bubbles with this bubblegum.</td>
+</tr>
+<tr>
+<td>15456</td>
+<td>Cotton Candy Stand</td>
+</tr>
+<tr>
+<td>15457</td>
+<td>Purchase a Cotton Candy Stand.</td>
+</tr>
+<tr>
+<td>15458</td>
+<td>Just what I need for my sweet tooth! Cotton Candy.</td>
+</tr>
+<tr>
+<td>15459</td>
+<td>Cotton Candy</td>
+</tr>
+<tr>
+<td>15460</td>
+<td>This Cotton Candy melts just nice in my mouth.</td>
+</tr>
+<tr>
+<td>15461</td>
+<td>Beanie Baby Shop</td>
+</tr>
+<tr>
+<td>15462</td>
+<td>Purchase a Beanie Baby Shop. All kids have to have a Beanie Baby!</td>
+</tr>
+<tr>
+<td>15463</td>
+<td>I have to have a Beanie Baby.</td>
+</tr>
+<tr>
+<td>15464</td>
+<td>Beanie Baby</td>
+</tr>
+<tr>
+<td>15465</td>
+<td>I love this Beanie Baby.</td>
+</tr>
+<tr>
+<td>15466</td>
+<td>Photo Booth</td>
+</tr>
+<tr>
+<td>15467</td>
+<td>Purchase a Photo Booth so guests have a memory of your zoo.</td>
+</tr>
+<tr>
+<td>15468</td>
+<td>Photos will look good in my album.</td>
+</tr>
+<tr>
+<td>15469</td>
+<td>Photo</td>
+</tr>
+<tr>
+<td>15470</td>
+<td>This photo will give me a good memory of this zoo.</td>
+</tr>
+<tr>
+<td>15472</td>
+<td>Icee Stand</td>
+</tr>
+<tr>
+<td>15473</td>
+<td>Purchase an Icee Stand. Walking around your zoo is hot business!</td>
+</tr>
+<tr>
+<td>15474</td>
+<td>I'm just starting to feel a bit hot. An Icee will go down fine.</td>
+</tr>
+<tr>
+<td>15475</td>
+<td>Icee</td>
+</tr>
+<tr>
+<td>15476</td>
+<td>This Icee is nice and cool.</td>
+</tr>
+<tr>
+<td>15477</td>
+<td>Coffee Stand</td>
+</tr>
+<tr>
+<td>15478</td>
+<td>Purchase a Coffee Stand. Guests will appreciate a great cup of coffee.</td>
+</tr>
+<tr>
+<td>15479</td>
+<td>A nice hot cup of coffee sounds nice to me.</td>
+</tr>
+<tr>
+<td>15480</td>
+<td>Coffee</td>
+</tr>
+<tr>
+<td>15481</td>
+<td>I have soooo much energy I could tackle a Rhino!</td>
+</tr>
+<tr>
+<td>15482</td>
+<td>Sno Cone Stand</td>
+</tr>
+<tr>
+<td>15483</td>
+<td>Purchase a Sno Cone Stand. Guests will appreciate a nice cool treat.</td>
+</tr>
+<tr>
+<td>15484</td>
+<td>I'm just starting to feel a bit hot. A Sno Cone will go down fine.</td>
+</tr>
+<tr>
+<td>15485</td>
+<td>Sno Cone</td>
+</tr>
+<tr>
+<td>15486</td>
+<td>This sno cone is nice and cool. Walking around your zoo is hot business!</td>
+</tr>
+<tr>
+<td>15491</td>
+<td>Camel Ride</td>
+</tr>
+<tr>
+<td>15492</td>
+<td>Purchase a Camel Ride. Guests will enjoy being able to ride a live camel!</td>
+</tr>
+<tr>
+<td>15493</td>
+<td>I loved that Camel. I want one for a pet!</td>
+</tr>
+<tr>
+<td>15504</td>
+<td>Chicken Stand</td>
+</tr>
+<tr>
+<td>15505</td>
+<td>Purchase a Chicken Stand. Guests will love eating this crunchy chicken.</td>
+</tr>
+<tr>
+<td>15506</td>
+<td>That Chicken in that shop looks alright.</td>
+</tr>
+<tr>
+<td>15507</td>
+<td>Chicken</td>
+</tr>
+<tr>
+<td>15508</td>
+<td>This chicken is nice and crispy.</td>
+</tr>
+<tr>
+<td>15509</td>
+<td>Waffle Stand</td>
+</tr>
+<tr>
+<td>15510</td>
+<td>Purchase a Waffle Stand. These waffles will be nice and crunchy.</td>
+</tr>
+<tr>
+<td>15511</td>
+<td>These Waffles look absolutely delicious!</td>
+</tr>
+<tr>
+<td>15512</td>
+<td>Waffles</td>
+</tr>
+<tr>
+<td>15513</td>
+<td>This Waffle is beautiful.</td>
+</tr>
+<tr>
+<td>15514</td>
+<td>Tavern</td>
+</tr>
+<tr>
+<td>15515</td>
+<td>Purchase a Tavern. Guests will appreciate the chance to purchase an ice-cold beer.</td>
+</tr>
+<tr>
+<td>15516</td>
+<td>I could do with a nice long slurp of beer.</td>
+</tr>
+<tr>
+<td>15517</td>
+<td>Beer</td>
+</tr>
+<tr>
+<td>15518</td>
+<td>This beer is nice and cold.</td>
+</tr>
+<tr>
+<td>15520</td>
+<td>Donut Stand</td>
+</tr>
+<tr>
+<td>15521</td>
+<td>Purchase a Donut Stand. Guests will like these sugary treats.</td>
+</tr>
+<tr>
+<td>15522</td>
+<td>I love Donuts.</td>
+</tr>
+<tr>
+<td>15523</td>
+<td>Donut</td>
+</tr>
+<tr>
+<td>15524</td>
+<td>This Donut is nice and yummy.</td>
+</tr>
+<tr>
+<td>15525</td>
+<td>Pretzel Stand</td>
+</tr>
+<tr>
+<td>15526</td>
+<td>Purchase a Pretzel Stand. Pretzels are a low-fat snack for guests to munch on.</td>
+</tr>
+<tr>
+<td>15527</td>
+<td>I could do with a small snack and these Pretzels will do just nicely.</td>
+</tr>
+<tr>
+<td>15528</td>
+<td>Pretzels</td>
+</tr>
+<tr>
+<td>15529</td>
+<td>I love these crunchy pretzels.</td>
+</tr>
+<tr>
+<td>15536</td>
+<td>Walk-through Aquarium</td>
+</tr>
+<tr>
+<td>15537</td>
+<td>Purchase a Walk-through Aquarium made by JParkZT. Guests will love being able to see marine animals in your zoo.</td>
+</tr>
+<tr>
+<td>15538</td>
+<td>I love this Aquarium. Especially love the seahorses.</td>
+</tr>
+<tr>
+<td>15542</td>
+<td>Bat Cave</td>
+</tr>
+<tr>
+<td>15543</td>
+<td>Buy a Bat Cave. This Bat Cave is fun for the whole family.</td>
+</tr>
+<tr>
+<td>15544</td>
+<td>I loved watching those bats flying around my head.</td>
+</tr>
+<tr>
+<td>15545</td>
+<td>Gazza's McDonald's Restaurant</td>
+</tr>
+<tr>
+<td>15546</td>
+<td>Purchase a McDonald's made by Gazza. McDonald's food has its own distinctive taste.</td>
+</tr>
+<tr>
+<td>15547</td>
+<td>A McDonald's! Just what I need; I'm hungry.</td>
+</tr>
+<tr>
+<td>15548</td>
+<td>McDonald's Food</td>
+</tr>
+<tr>
+<td>15549</td>
+<td>McDonald's food is just sooo tasty.</td>
+</tr>
+<tr>
+<td>15550</td>
+<td>Candy Apple Stand</td>
+</tr>
+<tr>
+<td>15551</td>
+<td>Purchase a Candy Apple Stand made by Katie. Guests will love the sticky taste of Candy Apples.</td>
+</tr>
+<tr>
+<td>15552</td>
+<td>Oh, Candy Apples. I must buy one.</td>
+</tr>
+<tr>
+<td>15553</td>
+<td>Candy Apples</td>
+</tr>
+<tr>
+<td>15554</td>
+<td>That Candy Apple was very sticky!</td>
+</tr>
+<tr>
+<td>15555</td>
+<td>Seafood Stand.</td>
+</tr>
+<tr>
+<td>15556</td>
+<td>Purchase a Seafood Stand made by zoomaster3. Yummy seafood sold here.</td>
+</tr>
+<tr>
+<td>15557</td>
+<td>Oh look, some yummy seafood.</td>
+</tr>
+<tr>
+<td>15558</td>
+<td>Seafood</td>
+</tr>
+<tr>
+<td>15559</td>
+<td>That yummy seafood was delicious.</td>
+</tr>
+<tr>
+<td>15560</td>
+<td>Souvenir Shop</td>
+</tr>
+<tr>
+<td>15561</td>
+<td>Purchase a Souvenir Shop made by zoomaster3. Let your guests buy some souvenirs from this wonderful zoo. Umbrellas, Toys, and beautifully sculpted Lions. Kids and Adults enjoy this wonderful shop.</td>
+</tr>
+<tr>
+<td>15562</td>
+<td>I need a souvenir to take home.</td>
+</tr>
+<tr>
+<td>15563</td>
+<td>Toys</td>
+</tr>
+<tr>
+<td>15564</td>
+<td>This souvenir will look good on the mantelpiece at home!</td>
+</tr>
+<tr>
+<td>15565</td>
+<td>IMAX Theatre</td>
+</tr>
+<tr>
+<td>15566</td>
+<td>Purchase an IMAX Theatre made by zoomaster3. IMAX. IMAX. Guests will LOVE this 3D movie theater.</td>
+</tr>
+<tr>
+<td>15567</td>
+<td>A 3D movie looks like it would be cool to watch.</td>
+</tr>
+<tr>
+<td>15568</td>
+<td>IMAX Ticket</td>
+</tr>
+<tr>
+<td>15569</td>
+<td>That IMAX movie was very, very cool.</td>
+</tr>
+<tr>
+<td>15570</td>
+<td>Toy Lion</td>
+</tr>
+<tr>
+<td>15571</td>
+<td>This souvenir will look good on the mantelpiece at home!</td>
+</tr>
+<tr>
+<td>15572</td>
+<td>Toy Umbrella</td>
+</tr>
+<tr>
+<td>15573</td>
+<td>This souvenir will look good on the mantelpiece at home!</td>
+</tr>
+<tr>
+<td>15578</td>
+<td>Hedge Fence</td>
+</tr>
+<tr>
+<td>15579</td>
+<td>Hot Air Balloon</td>
+</tr>
+<tr>
+<td>15580</td>
+<td>Purchase a Hot Air Balloon. Guests will enjoy taking a Hot Air Balloon ride.</td>
+</tr>
+<tr>
+<td>15581</td>
+<td>That Hot Air Balloon ride was very exhilarating!!</td>
+</tr>
+<tr>
+<td>15584</td>
+<td>Purple Fence</td>
+</tr>
+<tr>
+<td>15585</td>
+<td>Purchase a Purple Fence. These fences are very strong and are not climbable or jumpable.</td>
+</tr>
+<tr>
+<td>15586</td>
+<td>Baskin-Robbins Path</td>
+</tr>
+<tr>
+<td>15587</td>
+<td>Purchase a Baskin-Robbins Path. This will go well with the Baskin-Robbins Restaurant.</td>
+</tr>
+<tr>
+<td>15588</td>
+<td>Flashing Path</td>
+</tr>
+<tr>
+<td>15589</td>
+<td>Purchase a Flashing Path. This path produces a colorful effect for your zoo.</td>
+</tr>
+<tr>
+<td>15590</td>
+<td>Hardee's Path</td>
+</tr>
+<tr>
+<td>15591</td>
+<td>Purchase a Hardee's Path. This path will go well with the Hardee's Stand.</td>
+</tr>
+<tr>
+<td>15592</td>
+<td>Great! An Applebee's Restaurant. I'm starving.</td>
+</tr>
+<tr>
+<td>15593</td>
+<td>Strawberry Daiquiri</td>
+</tr>
+<tr>
+<td>15594</td>
+<td>Strawberry Daiquiri, my favorite drink!</td>
+</tr>
+<tr>
+<td>15595</td>
+<td>Beer</td>
+</tr>
+<tr>
+<td>15596</td>
+<td>Great, a nice glass of frosty beer will hit the spot!</td>
+</tr>
+<tr>
+<td>15597</td>
+<td>Mudslide</td>
+</tr>
+<tr>
+<td>15598</td>
+<td>Great, a mudslide. An alcoholic dessert is perfect!</td>
+</tr>
+<tr>
+<td>15599</td>
+<td>Applebee's Ribs</td>
+</tr>
+<tr>
+<td>15600</td>
+<td>Applebee's Ribs, mmmmmmmmm, my favorite!</td>
+</tr>
+<tr>
+<td>15601</td>
+<td>Applebee's Steak</td>
+</tr>
+<tr>
+<td>15602</td>
+<td>Just what I needed, a tasty Applebee's steak.</td>
+</tr>
+<tr>
+<td>15603</td>
+<td>Applebee's Restaurant</td>
+</tr>
+<tr>
+<td>15604</td>
+<td>Purchase an Applebee's Restaurant. Guests will enjoy the ribs, steaks, frosty glass of beer, and all the other great food Applebee's has.</td>
+</tr>
+<tr>
+<td>15605</td>
+<td>Applebee's Cinnamon Apple Crisp</td>
+</tr>
+<tr>
+<td>15606</td>
+<td>After this tasty cinnamon apple crisp, I will have to go on a diet.</td>
+</tr>
+<tr>
+<td>15607</td>
+<td>Applebee's Path</td>
+</tr>
+<tr>
+<td>15608</td>
+<td>Purchase an Applebee's Path. This path will go well with the Applebee's Restaurant.</td>
+</tr>
+<tr>
+<td>15611</td>
+<td>Purchase a Hedge Fence. These fences are very appealing to guests. Animals cannot climb or jump over them.</td>
+</tr>
+<tr>
+<td>15613</td>
+<td>Wild Wings</td>
+</tr>
+<tr>
+<td>15621</td>
+<td>Road Block</td>
+</tr>
+<tr>
+<td>15622</td>
+<td>Purchase a Road Block. Road blocks control which direction your guests can move in.</td>
+</tr>
+<tr>
+<td>15623</td>
+<td>I love these road blocks.</td>
+</tr>
+<tr>
+<td>15624</td>
+<td>Atlantean Bathroom</td>
+</tr>
+<tr>
+<td>15625</td>
+<td>Purchase an Atlantean Bathroom. It will match perfectly with the theme pack from Microsoft.</td>
+</tr>
+<tr>
+<td>15626</td>
+<td>The Atlantean Bathroom was very nice.</td>
+</tr>
+<tr>
+<td>17111</td>
+<td>Purchase an Applebee's Fence. It will go great with the Applebee's Restaurant.</td>
+</tr>
+<tr>
+<td>17112</td>
+<td>Applebee's Fence</td>
+</tr>
+<tr>
+<td>30202</td>
+<td>Purchase a Chicken Stand. Guests will love eating this crunchy chicken.</td>
+</tr>
+<tr>
+<td>30205</td>
+<td>Purchase a Waffle Stand. These waffles will be nice and crunchy.</td>
+</tr>
+<tr>
+<td>31100</td>
+<td>Purchase an Animal Adoption Center. Guests will enjoy looking for their adopted animal in your zoo.</td>
+</tr>
+<tr>
+<td>31101</td>
+<td>Adoption Certificate. Information about the adopted animal.</td>
+</tr>
+<tr>
+<td>32842</td>
+<td>Guests might get such a shiver visiting this Haunted House that they might need to go to a restroom soon.</td>
+</tr>
+<tr>
+<td>32843</td>
+<td>Platy. This is a peaceful fish with a wide range of colors and shapes that is perfect for a beginner.</td>
+</tr>
+<tr>
+<td>32844</td>
+<td>Guppy. This is a common but beautiful fish that's easy to care for and has lots of babies.</td>
+</tr>
+<tr>
+<td>32845</td>
+<td>Double-tailed Goldfish. This is a brightly colored goldfish with a unique tail to go with its unique personality.</td>
+</tr>
+<tr>
+<td>32846</td>
+<td>Betta. Also known as the Siamese Fighting Fish, this is a beautifully colored fish with a dislike for its brothers.</td>
+</tr>
+<tr>
+<td>32847</td>
+<td>Guests will not want to wait to buy an aquatic friend from this fancy tropic shop.</td>
+</tr>
+<tr>
+<td>32986</td>
+<td>Purchase a low decorative wall to enhance your zoo.</td>
+</tr>
+<tr>
+<td>34031</td>
+<td>Purchase a Chick-fil-A Fence. It will go great with the Chick-fil-A Stand.</td>
+</tr>
+<tr>
+<td>36190</td>
+<td>Purchase an invisible exhibit fence. Strongest fence. Animals cannot climb out or jump over it, but it is expensive. Allows guests to see into the exhibit.</td>
+</tr>
+<tr>
+<td>36709</td>
+<td>Purchase a Campfire. Guests will stop to warm themselves near the campfire.</td>
+</tr>
+<tr>
+<td>36712</td>
+<td>Purchase a Woven Flower Basket. Guests will enjoy seeing the hand-crafted basket filled with flowers.</td>
+</tr>
+<tr>
+<td>36807</td>
+<td>Cotton candy. Guests love to eat the sticky sweet cotton candy. Cotton candy can be purchased at a cotton candy stand.</td>
+</tr>
+<tr>
+<td>37776</td>
+<td>Umbreon Figurine. Guests will love this nice statuette of the rare Pokemon.</td>
+</tr>
+<tr>
+<td>37777</td>
+<td>Chimecho Chime. Guests will love the sound and shape of this cute wind chime done in the form of a Chimecho.</td>
+</tr>
+<tr>
+<td>37778</td>
+<td>Pokemon Cards. Guests will love this random collection of Pokemon cards in a shiny foil pack!</td>
+</tr>
+<tr>
+<td>37779</td>
+<td>Mew Plushie. Guests will love this adorable little Mew Plushie that squeaks when you huggle it.</td>
+</tr>
+<tr>
+<td>37780</td>
+<td>Purchase a Pokemon Center. Guests will love to buy merchandise featuring their favorite monsters from Pokemon!</td>
+</tr>
+<tr>
+<td>37781</td>
+<td>Oxnard Stuffed Toy. Guests, especially children, will love this larger, cute hamster doll.</td>
+</tr>
+<tr>
+<td>37782</td>
+<td>Panda Stuffed Toy. Double the cuteness, a hamster with the cute markings of a panda!</td>
+</tr>
+<tr>
+<td>37783</td>
+<td>Hamtaro Stuffed Toy. Who doesn't love the cute star of the Hamtaro show?</td>
+</tr>
+<tr>
+<td>37784</td>
+<td>Bijou Stuffed Toy. Guests, especially children, will love this cute hamster doll.</td>
+</tr>
+<tr>
+<td>37785</td>
+<td>Purchase a Hamtaro Shop. Guests will love the cute rodent figures from the Hamtaro show.</td>
+</tr>
+<tr>
+<td>37786</td>
+<td>Baby Lupe Plushie. Guests, especially children, will love this dog plushie.</td>
+</tr>
+<tr>
+<td>37787</td>
+<td>Spotted Uni Plushie. Guests, especially children, will love this painted winged horse plushie.</td>
+</tr>
+<tr>
+<td>37788</td>
+<td>Baby Kougra Plushie. Guests, especially children, will love this beige tiger plushie.</td>
+</tr>
+<tr>
+<td>37789</td>
+<td>Eyrie Plushie. Guests, especially children, will love this red gryphon plushie.</td>
+</tr>
+<tr>
+<td>37790</td>
+<td>Purchase a Neopets Stand. Guests will love the cute plushie Neopets.</td>
+</tr>
+<tr>
+<td>37791</td>
+<td>Guests will enjoy seeing how a dig site has been prepared for excavation.</td>
+</tr>
+<tr>
+<td>37834</td>
+<td>The Chick-fil-A Picnic Table is a great place to eat your food.</td>
+</tr>
+<tr>
+<td>37835</td>
+<td>Purchase a Chick-fil-A Stand. Guests will enjoy eating more chicken.</td>
+</tr>
+<tr>
+<td>37836</td>
+<td>Chicken Sandwich. Guests Love chicken sandwiches.</td>
+</tr>
+<tr>
+<td>37837</td>
+<td>Waffle Fries. Guests Love Chick-fil-A waffle fries.</td>
+</tr>
+<tr>
+<td>37838</td>
+<td>The Waterfall Fence can be used as a decorative fence or to add a waterfall to the side of a short cliff.</td>
+</tr>
+<tr>
+<td>37839</td>
+<td>Stew Of Knowledge. Everyone loves to be able to learn and recall more.</td>
+</tr>
+<tr>
+<td>37856</td>
+<td>Healing Potion. Everyone wants to be healthy enough to enjoy the wonderful things in life.</td>
+</tr>
+<tr>
+<td>37857</td>
+<td>Luck Potion. Everyone hopes for good luck and to keep bad luck away.</td>
+</tr>
+<tr>
+<td>37858</td>
+<td>Love Potion. Everyone hopes to enhance and keep their feelings of love strong.</td>
+</tr>
+<tr>
+<td>37859</td>
+<td>Guests can purchase unusual gifts to enhance their lives via herbal concoctions.</td>
+</tr>
+<tr>
+<td>37861</td>
+<td>Males will enjoy playing the arcade games from yesteryear: boys because these are new to them, men because these bring back such fond memories.</td>
+</tr>
+<tr>
+<td>37862</td>
+<td>Guests will enjoy the orca stunts performed live, as well as the large screen showing live closeups and video comparing the stunts to killer whale activities in the world's oceans.</td>
+</tr>
+<tr>
+<td>37863</td>
+<td>Guests will enjoy the orca stunts performed live, as well as the large screen showing live closeups and video comparing the stunts to killer whale activities in the world's oceans.</td>
+</tr>
+<tr>
+<td>37864</td>
+<td>Fortune: Of all the animals, the boy is the most unmanageable. - Plato</td>
+</tr>
+<tr>
+<td>37865</td>
+<td>Guests will satisfy some of their hunger after eating cookies from the Cyclops. The guests will enjoy getting and reading a fortune as well.</td>
+</tr>
+<tr>
+<td>37866</td>
+<td>Fortune: Originality usually comes to those who are thinking about something different. - Jay</td>
+</tr>
+<tr>
+<td>37867</td>
+<td>Fortune Cookie. Guests will satisfy some hunger as they enjoy the enclosed fortune.</td>
+</tr>
+<tr>
+<td>37868</td>
+<td>Guests will satisfy some of their hunger after eating cookies from the Fortune Teller. The guests will enjoy getting and reading a fortune as well.</td>
+</tr>
+<tr>
+<td>37869</td>
+<td>Fortune: Love is the anesthetic by which we endure the operation of life. - Jay</td>
+</tr>
+<tr>
+<td>37870</td>
+<td>Children will be captivated as storytellers recite fairy tales with intense emotion.</td>
+</tr>
+<tr>
+<td>37871</td>
+<td>Guests will enjoy this tiger show, which is part exciting and part educational.</td>
+</tr>
+<tr>
+<td>37876</td>
+<td>Bandaid. Guests can use a bandaid to cover a small cut.</td>
+</tr>
+<tr>
+<td>37877</td>
+<td>Guests can get some first aid equipment from here.</td>
+</tr>
+<tr>
+<td>37878</td>
+<td>Fireworks. Guests can take these home and use them.</td>
+</tr>
+<tr>
+<td>37879</td>
+<td>Guests can purchase fireworks to use at their homes.</td>
+</tr>
+<tr>
+<td>37880</td>
+<td>Purchase an Applebee's Restaurant. Guests will enjoy the ribs, steaks, and all the other great food Applebee's has.</td>
+</tr>
+<tr>
+<td>37881</td>
+<td>Flowers. Guests can take some flowers home to brighten up their place.</td>
+</tr>
+<tr>
+<td>37882</td>
+<td>Guests can purchase flowers to brighten up their homes.</td>
+</tr>
+<tr>
+<td>37883</td>
+<td>Purchase a Jungle Themed Small Bathroom. This bathroom will blend in nicely to a jungle area of your zoo.</td>
+</tr>
+<tr>
+<td>37884</td>
+<td>Purchase a Snow Themed Small Bathroom. This bathroom will blend in nicely to a wintery or ice age zoo.</td>
+</tr>
+<tr>
+<td>37885</td>
+<td>Purchase a Savannah Themed Small Bathroom. This bathroom will blend in nicely to a savannah area of your zoo.</td>
+</tr>
+<tr>
+<td>37887</td>
+<td>A place where guests are always welcome to relax, have the opportunity to get their questions answered, or just have a chance to share their love for animals during discussions.</td>
+</tr>
+<tr>
+<td>37888</td>
+<td>Guests will enjoy the troupe of acrobats, dancers, and comic as they perform a series of acts flavored with a South American folklore theme, along with some special effects.</td>
+</tr>
+<tr>
+<td>37889</td>
+<td>Zoo Tycoon. Guests will enjoy this entertaining way to learn about zoo animals.</td>
+</tr>
+<tr>
+<td>37890</td>
+<td>Zoo Map And Guide. Guests will enjoy reading about the animals that they see in the zoo as they follow along in this map and guide.</td>
+</tr>
+<tr>
+<td>37891</td>
+<td>Zoo Animals Book. Guests will enjoy reading fun and unusual animal facts as they learn about various zoo animals.</td>
+</tr>
+<tr>
+<td>37892</td>
+<td>Guests will enjoy using the educational gifts that they buy at the Animal Information Souvenir Center.</td>
+</tr>
+<tr>
+<td>37893</td>
+<td>Caramel Sundae. Guests love eating this sticky and sweet treat.</td>
+</tr>
+<tr>
+<td>37894</td>
+<td>Hot Apple Pie. Guests love to warm their tummies by eating hot apple pies.</td>
+</tr>
+<tr>
+<td>37895</td>
+<td>French Fries. Guests love these crispy french fries.</td>
+</tr>
+<tr>
+<td>37896</td>
+<td>Big Mac. Guests love the taste of a Big Mac.</td>
+</tr>
+<tr>
+<td>37897</td>
+<td>Grog. This rum drink is diluted with water, but will give adults energy.</td>
+</tr>
+<tr>
+<td>37898</td>
+<td>Adults will satisfy their thirst and energy needs after drinking Neptune's Nectar. However, being mere mortals, they will soon need to use a restroom.</td>
+</tr>
+<tr>
+<td>37899</td>
+<td>Moon Cake. Guests will satisfy a little hunger and a little thirst with this out of this world dessert.</td>
+</tr>
+<tr>
+<td>37900</td>
+<td>Moon Juice. Guests will satisfy a little thirst and a little hunger with this out of this world drink.</td>
+</tr>
+<tr>
+<td>37901</td>
+<td>Guests can satisfy a little hunger and a little thirst at the same time with items from the Moon Juice Stand.</td>
+</tr>
+<tr>
+<td>37902</td>
+<td>The tapestry acrobatics, fire twirler, &amp; body lifting were interesting; but the funny, fake boxing was the best Cirque de la Mer act.</td>
+</tr>
+<tr>
+<td>37903</td>
+<td>Children will enjoy tumbling safely inside the Foam Play Area.</td>
+</tr>
+<tr>
+<td>37920</td>
+<td>Purchase an Applebee's Fence. It will go great with the Applebee's Restaurant.</td>
+</tr>
+<tr>
+<td>37921</td>
+<td>Purchase a Female Bathroom. Female guests will enjoy having a separate bathroom from the male guests.</td>
+</tr>
+<tr>
+<td>37922</td>
+<td>Purchase a Male Bathroom. Male guests will enjoy having a separate bathroom from the female guests.</td>
+</tr>
+<tr>
+<td>37923</td>
+<td>Chuck E. Cheese Doll. Guests Love winning Chuck E. Cheese dolls.</td>
+</tr>
+<tr>
+<td>37924</td>
+<td>Purchase a Chuck E. Cheese's Restaurant. Guests will enjoy the pizza and games.</td>
+</tr>
+<tr>
+<td>37925</td>
+<td>Dinner. Adults and kids alike enjoy the fine dining experience at Rainforest Cafe.</td>
+</tr>
+<tr>
+<td>37926</td>
+<td>Purchase a Rainforest Cafe. Guests will love dining in this Jungle Themed Restaurant. It's a Wild Place to shop and eat!</td>
+</tr>
+<tr>
+<td>37927</td>
+<td>I could almost see the whole zoo from the Space Needle!</td>
+</tr>
+<tr>
+<td>37928</td>
+<td>Purchase a Ball Pit. Your younger guests will love it.</td>
+</tr>
+<tr>
+<td>37929</td>
+<td>Purchase a Log Flume Ride. Guests will enjoy cooling off on this ride.</td>
+</tr>
+<tr>
+<td>37930</td>
+<td>Purchase a Drop Zone Ride. Guests will enjoy taking a straight plunge down the drop zone!</td>
+</tr>
+<tr>
+<td>37931</td>
+<td>Purchase a Space Needle Ride. Guests will enjoy getting a great view of the zoo from the Space Needle.</td>
+</tr>
+<tr>
+<td>37932</td>
+<td>Wow, I got soaking wet on the Log Flume Ride!!</td>
+</tr>
+<tr>
+<td>37933</td>
+<td>Purchase a Velociraptor Pit. Guests will love walking around this velociraptor pit.</td>
+</tr>
+<tr>
+<td>37934</td>
+<td>Top brand cans of soda like Coca-Cola, Fanta, and Sprite. This can of soda is really full of taste and gives lots of energy.</td>
+</tr>
+<tr>
+<td>37935</td>
+<td>Purchase a Coca-Cola Machine by Martijn Aikema. Get rid of the cheap and tasteless sodas. This Coca-Cola Vending Machine gives your guests some true pleasure with only the top brands like Coca-Cola, Fanta, and Sprite.</td>
+</tr>
+<tr>
+<td>37936</td>
+<td>Salmon Roe. Salmon roe eaters love its delectable taste.</td>
+</tr>
+<tr>
+<td>37937</td>
+<td>Cucumber Roll. Cucumber roll eaters love its succulent taste.</td>
+</tr>
+<tr>
+<td>37938</td>
+<td>Sea Water Eel. Sea water eel eaters love its invigorating taste.</td>
+</tr>
+<tr>
+<td>37939</td>
+<td>Crab Sushi. Crab sushi eaters love its pure taste.</td>
+</tr>
+<tr>
+<td>37940</td>
+<td>Guests that love eating sushi will enjoy the variety at the Open Arms Sushi Stand.</td>
+</tr>
+<tr>
+<td>37941</td>
+<td>Guests will be thrilled when they go on a wild ride in the Flower Bus Simulator.</td>
+</tr>
+<tr>
+<td>37942</td>
+<td>Tiger Glasses. Tiger loving guests will enjoy the look of these glasses.</td>
+</tr>
+<tr>
+<td>37943</td>
+<td>Elephant Glasses. Elephant loving guests will enjoy the look of these glasses.</td>
+</tr>
+<tr>
+<td>37944</td>
+<td>Sunglasses. Guests can see the animals better when they are not squinting from the sun.</td>
+</tr>
+<tr>
+<td>37945</td>
+<td>Guests can get various types of glasses from the Sunglass Hut to help protect their eyes from the sun.</td>
+</tr>
+<tr>
+<td>37946</td>
+<td>Animals in captivity often need a place for privacy. Small woodland animals will feel comfortable with the tree trunk facade of this shelter.</td>
+</tr>
+<tr>
+<td>37947</td>
+<td>My, oh, my... It actually seemed like the Flower Bus jumped a canyon.</td>
+</tr>
+<tr>
+<td>37948</td>
+<td>Guests will be amazed with things appearing to defy gravity in the Crooked House.</td>
+</tr>
+<tr>
+<td>37949</td>
+<td>Animals in captivity often need a place for privacy. Small animals will enjoy the coziness of this shelter.</td>
+</tr>
+<tr>
+<td>37950</td>
+<td>Guests, especially kids, will enjoy the feeling of riding on air.</td>
+</tr>
+<tr>
+<td>37951</td>
+<td>Guests love watching the hilarious show featuring talents of dogs, cats, birds, rats, pigs, ponies, and skunks, most of which were rescued from animal shelters.</td>
+</tr>
+<tr>
+<td>38046</td>
+<td>Purchase a McDonald's Food Stand. Guests love to eat McDonald's food.</td>
+</tr>
+<tr>
+<td>38072</td>
+<td>Purchase a Cotton Candy Stand. Guests love the sticky sweet treat of cotton candy.</td>
+</tr>
+<tr>
+<td>38304</td>
+<td>Purchase a Gravel Path. Gravel paths indicate to guests where they should walk.</td>
+</tr>
+<tr>
+<td>38306</td>
+<td>Purchase an Ice Path. Ice paths indicate to guests where they should walk, and it fits great in your snowy themed zoo.</td>
+</tr>
+<tr>
+<td>38309</td>
+<td>Igloo Shelter. Animals in captivity often need a place for privacy. Animals such as the Polar Bear, Emperor Penguin, Magnet, and Reindeer prefer this Igloo Shelter.</td>
+</tr>
+<tr>
+<td>38400</td>
+<td>Blue Brick Exhibit Fence. Very, very strong fence. Allows guests to see through.</td>
+</tr>
+<tr>
+<td>38402</td>
+<td>Blue Picket Fence. Guests love this decorative fence!</td>
+</tr>
+<tr>
+<td>38480</td>
+<td>Money, just what guests need to have more fun.</td>
+</tr>
+<tr>
+<td>38481</td>
+<td>For a service charge, guests will enjoy the convenience of an ATM Machine.</td>
+</tr>
+<tr>
+<td>38482</td>
+<td>Men just have to show how macho they are (or, rather, think they are) by shooting hoops. They might even win a basketball.</td>
+</tr>
+<tr>
+<td>38483</td>
+<td>Basketball. It is fun to play with basketballs.</td>
+</tr>
+<tr>
+<td>38484</td>
+<td>Stuffed Beluga. Guests, particularly children, love the stuffed beluga whale.</td>
+</tr>
+<tr>
+<td>38485</td>
+<td>Stuffed Manatee. Guests, particularly children, love the stuffed manatee.</td>
+</tr>
+<tr>
+<td>38486</td>
+<td>Guests can get ocean related souvenirs at the Fish Gift Stand.</td>
+</tr>
+<tr>
+<td>38487</td>
+<td>Coral Reef Painting. Guests will enjoy looking at the scene.</td>
+</tr>
+<tr>
+<td>38488</td>
+<td>Stuffed Stingray. Guests, particularly children, love the stuffed stingray.</td>
+</tr>
+<tr>
+<td>38489</td>
+<td>That was fun, even though I got hit by a ball!!</td>
+</tr>
+<tr>
+<td>38490</td>
+<td>Candy Apple. Kids love the sweet taste of candy apples.</td>
+</tr>
+<tr>
+<td>38491</td>
+<td>Adults, especially men, will enjoy grilling their own food on the Park Grill.</td>
+</tr>
+<tr>
+<td>38492</td>
+<td>Purchase a Candy Apple Stand. Kids LOVE them.</td>
+</tr>
+<tr>
+<td>38493</td>
+<td>Children will love playing in the Candyland Ball Pit.</td>
+</tr>
+<tr>
+<td>38494</td>
+<td>As awesome as at SeaWorld, I loved the long finale: different animals moving around the theater in interesting ways without trainers.</td>
+</tr>
+<tr>
+<td>38495</td>
+<td>Guests, especially kids, love the fast action of the Aliens Attack Arcade Game.</td>
+</tr>
+<tr>
+<td>38560</td>
+<td>Purchase a Refreshments Machine. If guests are hungry or thirsty then they can fill up on some candy and soda at this rainforest looking machine.</td>
+</tr>
+<tr>
+<td>38563</td>
+<td>Purchase a Sweets Stand. Every one has a sweet tooth and now they can buy what sweets they want in your zoo.</td>
+</tr>
+<tr>
+<td>38566</td>
+<td>Chocolates. Your guests will love these smooth and creamy chocolates to snack on.</td>
+</tr>
+<tr>
+<td>38569</td>
+<td>Rainbow Slushie. Your guests will love these multiflavored slushie drinks to satisfy their thirst.</td>
+</tr>
+<tr>
+<td>38701</td>
+<td>Carnivorous Plant House. Guests will love looking at the exotic carnivorous plants that grow inside.</td>
+</tr>
+<tr>
+<td>38750</td>
+<td>Purchase a Rainforest Gift Stand. Guests will love to buy an Orangutan Coloring Book or a Lowland Gorilla Plushie.</td>
+</tr>
+<tr>
+<td>38764</td>
+<td>Purchase a Fun House. Guests will have a ball over it.</td>
+</tr>
+<tr>
+<td>38768</td>
+<td>Purchase a Candy Shop. Guests will enjoy the sweet taste of candies.</td>
+</tr>
+<tr>
+<td>38771</td>
+<td>Candies And Chocolates. Guests appreciate the rich flavor of sweets.</td>
+</tr>
+<tr>
+<td>38777</td>
+<td>Wine. Guests enjoy having wine with their meal.</td>
+</tr>
+<tr>
+<td>38778</td>
+<td>Chicken Wrap. Guests love these rolled up sandwiches.</td>
+</tr>
+<tr>
+<td>38779</td>
+<td>Baked Potato. Guests like baked potatoes loaded with toppings.</td>
+</tr>
+<tr>
+<td>38780</td>
+<td>Pasta. A guest favorite.</td>
+</tr>
+<tr>
+<td>38783</td>
+<td>Breadsticks. Wonderful, warm, all-you-can-eat breadsticks!</td>
+</tr>
+<tr>
+<td>38803</td>
+<td>Sugar Popcorn. Guests will love eating this sweet Popcorn.</td>
+</tr>
+<tr>
+<td>38804</td>
+<td>Salt Popcorn. Guests will love eating this salty Popcorn.</td>
+</tr>
+<tr>
+<td>38835</td>
+<td>Handmade Jewelry. Perfect for a souvenir or a special gift.</td>
+</tr>
+<tr>
+<td>38837</td>
+<td>Print. Guests like to take home a copy of their favorite paintings.</td>
+</tr>
+<tr>
+<td>38839</td>
+<td>Sketchbook. Guests will enjoy expressing their own artistic talent.</td>
+</tr>
+<tr>
+<td>38841</td>
+<td>Wood Carving. Guests think these hand carved pieces are cool.</td>
+</tr>
+<tr>
+<td>38846</td>
+<td>Caricature. Guests love these silly cartoon portraits.</td>
+</tr>
+<tr>
+<td>38856</td>
+<td>Guests will enjoy watching a movie in this IMAX Theatre.</td>
+</tr>
+<tr>
+<td>38862</td>
+<td>Purchase a Haunted House. Your guests will watch the special effects while screaming in awe.</td>
+</tr>
+<tr>
+<td>38865</td>
+<td>Purchase The Black Pearl. Guests can climb in the rigging or go below to enjoy the Caribbean Tide Pool exhibit. There's even a small gift shop.</td>
+</tr>
+<tr>
+<td>38868</td>
+<td>Plastic Swords. Kids like to play pirate with these plastic swords.</td>
+</tr>
+<tr>
+<td>38870</td>
+<td>Treasure Map. Everyone loves a treasure map.</td>
+</tr>
+<tr>
+<td>38874</td>
+<td>Zoos Around The World. This book explores the best zoos in the world.</td>
+</tr>
+<tr>
+<td>38876</td>
+<td>Sounds Of Nature CD. Guests enjoy listening to relaxing sounds of the natural world.</td>
+</tr>
+<tr>
+<td>38878</td>
+<td>Zoo Tycoon. Guests are delighted with the game that allows them to build the ultimate zoo!</td>
+</tr>
+<tr>
+<td>38884</td>
+<td>Soup Of The Day. Guests love to warm up with a bowl of soup.</td>
+</tr>
+<tr>
+<td>38886</td>
+<td>House Salad. Guests appreciate a light, refreshing salad.</td>
+</tr>
+<tr>
+<td>38892</td>
+<td>Model Ship. Guests like to take home their own pirate ship.</td>
+</tr>
+<tr>
+<td>38894</td>
+<td>Hermit Crab. Guests can take home their own pet hermit crab.</td>
+</tr>
+<tr>
+<td>38905</td>
+<td>Fruit Salad. A mix of fresh fruit served in a coconut shell.</td>
+</tr>
+<tr>
+<td>38928</td>
+<td>Purchase a Bamboo Hut Bistro. Give your zoo a tropical flair.</td>
+</tr>
+<tr>
+<td>38993</td>
+<td>Purchase Sekhmet's Grill. Guests will love the authentic Egyptian food.</td>
+</tr>
+<tr>
+<td>38995</td>
+<td>Shish Kebab. Grilled meat on a stick.</td>
+</tr>
+<tr>
+<td>39017</td>
+<td>Purchase a Fancy Post And Rope decorative fence. Cannot be used to contain animals in an exhibit, but guests will enjoy it when it's used in landscaping.</td>
+</tr>
+<tr>
+<td>45427</td>
+<td>Matchbox Toy Car. Children really love these miniature cars.</td>
+</tr>
+<tr>
+<td>45435</td>
+<td>Map. Guests need a bit of help navigating your extensive zoo.</td>
+</tr>
+<tr>
+<td>45443</td>
+<td>Tacos. Guests will love these burritos and tacos.</td>
+</tr>
+<tr>
+<td>45448</td>
+<td>Balloons. Guest happiness will increase with each balloon sold.</td>
+</tr>
+<tr>
+<td>45453</td>
+<td>Bubblegum. Guests, particularly kids, will love these bubblegums.</td>
+</tr>
+<tr>
+<td>45459</td>
+<td>Cotton Candy. A nice sugary treat for the guests.</td>
+</tr>
+<tr>
+<td>45464</td>
+<td>Beanie Baby. Guests will appreciate finding their favorite beanie baby at the zoo!</td>
+</tr>
+<tr>
+<td>45469</td>
+<td>Photo. As an everlasting memory of their trip to the zoo, guests will love these photos.</td>
+</tr>
+<tr>
+<td>45475</td>
+<td>Icee. Guests will appreciate a nice cool treat.</td>
+</tr>
+<tr>
+<td>45480</td>
+<td>Coffee. Gives guests their energy back.</td>
+</tr>
+<tr>
+<td>45485</td>
+<td>Sno Cone. Guests will appreciate a nice cool treat.</td>
+</tr>
+<tr>
+<td>45507</td>
+<td>Chicken. Guests will love eating this crunchy chicken.</td>
+</tr>
+<tr>
+<td>45512</td>
+<td>Waffles. Guests will love eating these waffles.</td>
+</tr>
+<tr>
+<td>45517</td>
+<td>Beer. Your guests will love to wet their whistles with a nice ice-cold beer.</td>
+</tr>
+<tr>
+<td>45523</td>
+<td>Donut. Guests love eating a nice sugary treat.</td>
+</tr>
+<tr>
+<td>45528</td>
+<td>Pretzels. A nice snack for the guests to munch on.</td>
+</tr>
+<tr>
+<td>45548</td>
+<td>McDonald's Food. Hot, tasty, and salted.</td>
+</tr>
+<tr>
+<td>45553</td>
+<td>Candy Apples. Guests will love the sticky taste of them.</td>
+</tr>
+<tr>
+<td>45558</td>
+<td>Seafood. Guests will love this yummy seafood.</td>
+</tr>
+<tr>
+<td>45563</td>
+<td>Toys. Guests will like to have a reminder of their trip to your zoo.</td>
+</tr>
+<tr>
+<td>45568</td>
+<td>IMAX Ticket. Guests need this to view an IMAX movie.</td>
+</tr>
+<tr>
+<td>45570</td>
+<td>Toy Lion. Guests will like to have a reminder of their trip to your zoo.</td>
+</tr>
+<tr>
+<td>45572</td>
+<td>Toy Umbrella. Guests will like to have a reminder of their trip to your zoo.</td>
+</tr>
+<tr>
+<td>45593</td>
+<td>Strawberry Daiquiri. Guests Love Strawberry Daiquiris.</td>
+</tr>
+<tr>
+<td>45595</td>
+<td>Beer. Guests enjoy a glass of nice frosty beer.</td>
+</tr>
+<tr>
+<td>45597</td>
+<td>Mudslide. Guests will love the mudslide.</td>
+</tr>
+<tr>
+<td>45599</td>
+<td>Applebee's Ribs. Guests love Applebee's Ribs.</td>
+</tr>
+<tr>
+<td>45601</td>
+<td>Applebee's Steak. Guests will love an Applebee's steak.</td>
+</tr>
+<tr>
+<td>45605</td>
+<td>Applebee's Cinnamon Apple Crisp. Guests will enjoy finishing their dinner off with this great dessert.</td>
+</tr>
+<tr>
+<td>55202</td>
+<td>the Chicken Stand</td>
+</tr>
+<tr>
+<td>55205</td>
+<td>the Waffle Stand</td>
+</tr>
+<tr>
+<td>56100</td>
+<td>the Animal Adoption Center</td>
+</tr>
+<tr>
+<td>57842</td>
+<td>the Haunted House Of Trepidation</td>
+</tr>
+<tr>
+<td>57843</td>
+<td>My Platy is going to love his new home!</td>
+</tr>
+<tr>
+<td>57844</td>
+<td>I think he just stuck his tongue out at me!</td>
+</tr>
+<tr>
+<td>57845</td>
+<td>My goldfish's little tail and big eyes are so cute!</td>
+</tr>
+<tr>
+<td>57846</td>
+<td>Hope my Betta is a lover, not a fighter.</td>
+</tr>
+<tr>
+<td>57847</td>
+<td>the Tropic Shoppe</td>
+</tr>
+<tr>
+<td>57986</td>
+<td>the Low Decorative Wall</td>
+</tr>
+<tr>
+<td>59031</td>
+<td>the Chick-fil-A Fence</td>
+</tr>
+<tr>
+<td>61077</td>
+<td>Chick-fil-A Stand</td>
+</tr>
+<tr>
+<td>61078</td>
+<td>Great! A Chick-fil-A Stand. I'm starving.</td>
+</tr>
+<tr>
+<td>61079</td>
+<td>Chicken Sandwich. Guests Love chicken sandwiches.</td>
+</tr>
+<tr>
+<td>61080</td>
+<td>Waffle Fries. Guests Love Chick-fil-A waffle fries.</td>
+</tr>
+<tr>
+<td>61081</td>
+<td>Mmmmmmmmm. This chicken sandwich is great.</td>
+</tr>
+<tr>
+<td>61082</td>
+<td>These waffle fries are tasty.</td>
+</tr>
+<tr>
+<td>61083</td>
+<td>Purchase a Chick-fil-A Stand. Guests will enjoy eating more chicken.</td>
+</tr>
+<tr>
+<td>61709</td>
+<td>the Campfire</td>
+</tr>
+<tr>
+<td>61712</td>
+<td>the Woven Flower Basket</td>
+</tr>
+<tr>
+<td>62776</td>
+<td>This figurine of Umbreon is very detailed.</td>
+</tr>
+<tr>
+<td>62777</td>
+<td>This chime makes a really soothing sound.</td>
+</tr>
+<tr>
+<td>62778</td>
+<td>I hope I get some new Pokemon in this pack!</td>
+</tr>
+<tr>
+<td>62779</td>
+<td>I love the cute sound this makes! Mew!</td>
+</tr>
+<tr>
+<td>62780</td>
+<td>the Pokemon Center</td>
+</tr>
+<tr>
+<td>62781</td>
+<td>He looks odd without his sunflower seed.</td>
+</tr>
+<tr>
+<td>62782</td>
+<td>I love his panda markings!</td>
+</tr>
+<tr>
+<td>62783</td>
+<td>Little hamster, big adventures! Go Hamtaro!</td>
+</tr>
+<tr>
+<td>62784</td>
+<td>Bijou is so cute with her little ribbon.</td>
+</tr>
+<tr>
+<td>62785</td>
+<td>the Hamtaro Shop</td>
+</tr>
+<tr>
+<td>62788</td>
+<td>Ewww! This giant spider really creeps me out! But I guess zoos should show all kinds of critters.</td>
+</tr>
+<tr>
+<td>62789</td>
+<td>I love my Neopet plushie. It is sooo cuddly.</td>
+</tr>
+<tr>
+<td>62790</td>
+<td>the Neopets Stand</td>
+</tr>
+<tr>
+<td>62791</td>
+<td>the Dig Setup</td>
+</tr>
+<tr>
+<td>62834</td>
+<td>the Chick-fil-A Picnic Table</td>
+</tr>
+<tr>
+<td>62835</td>
+<td>the Chick-fil-A Stand</td>
+</tr>
+<tr>
+<td>62838</td>
+<td>the Waterfall Fence</td>
+</tr>
+<tr>
+<td>62839</td>
+<td>I can't wait to use this herbal mixture to gain insight in picking up and remembering facts faster and easier.</td>
+</tr>
+<tr>
+<td>62856</td>
+<td>With this healing potion, I don't have to worry about bad health, although it wouldn't help me against dangerous animals.</td>
+</tr>
+<tr>
+<td>62857</td>
+<td>Today is my lucky day, now that I have this luck potion. I'm glad it is herbal and not made from rabbits' feet.</td>
+</tr>
+<tr>
+<td>62858</td>
+<td>I hope this potion will bring my soul mate and me even closer together than we are now, especially when we share our love of animals.</td>
+</tr>
+<tr>
+<td>62859</td>
+<td>the Witch's Brew Stand</td>
+</tr>
+<tr>
+<td>62861</td>
+<td>the Antique Arcade</td>
+</tr>
+<tr>
+<td>62862</td>
+<td>the Orca Show With Jumping Orca</td>
+</tr>
+<tr>
+<td>62863</td>
+<td>the Orca Show</td>
+</tr>
+<tr>
+<td>62864</td>
+<td>I got soaked with cold salt water from the splashes of those whales, just like at SeaWorld. I'll treasure both experiences forever!</td>
+</tr>
+<tr>
+<td>62865</td>
+<td>the Cyclops</td>
+</tr>
+<tr>
+<td>62866</td>
+<td>Fortune: Life moves pretty fast. If you don't stop to look at it once in a while, you could miss it. - Ferris Bueller (M. Broderick)</td>
+</tr>
+<tr>
+<td>62867</td>
+<td>Fortune: Confucius say, 'Is stuffy inside fortune cookie.'</td>
+</tr>
+<tr>
+<td>62868</td>
+<td>the Fortune Teller</td>
+</tr>
+<tr>
+<td>62869</td>
+<td>Fortune: Life is to you a dashing and bold adventure.</td>
+</tr>
+<tr>
+<td>62870</td>
+<td>the Fairy Tale Castle</td>
+</tr>
+<tr>
+<td>62871</td>
+<td>the Tiger Show</td>
+</tr>
+<tr>
+<td>62876</td>
+<td>Good, now I stop this bleeding.</td>
+</tr>
+<tr>
+<td>62877</td>
+<td>the First Aid Stand</td>
+</tr>
+<tr>
+<td>62878</td>
+<td>I can't wait to get home and light the sky up with these.</td>
+</tr>
+<tr>
+<td>62879</td>
+<td>the Firework Shop</td>
+</tr>
+<tr>
+<td>62880</td>
+<td>the Applebee's Restaurant</td>
+</tr>
+<tr>
+<td>62881</td>
+<td>These flowers are really colourful and beautiful!</td>
+</tr>
+<tr>
+<td>62882</td>
+<td>the Flower Shop</td>
+</tr>
+<tr>
+<td>62883</td>
+<td>the Jungle Themed Small Bathroom</td>
+</tr>
+<tr>
+<td>62884</td>
+<td>the Snow Themed Small Bathroom</td>
+</tr>
+<tr>
+<td>62885</td>
+<td>the Savannah Themed Small Bathroom</td>
+</tr>
+<tr>
+<td>62886</td>
+<td>That dig area makes me wish I was married to an archeologist, someone that would be even more interested in me as I grow older.</td>
+</tr>
+<tr>
+<td>62887</td>
+<td>the Zookeeper's Lounge</td>
+</tr>
+<tr>
+<td>62888</td>
+<td>the Cirque De La Mer Show</td>
+</tr>
+<tr>
+<td>62889</td>
+<td>Wow, what a great idea! I can't wait to learn about animals as I have fun building my own zoos in Zoo Tycoon.</td>
+</tr>
+<tr>
+<td>62890</td>
+<td>This zoo map and guide will make this zoo trip even more fun than it has been already.</td>
+</tr>
+<tr>
+<td>62891</td>
+<td>Now that I have seen so many interesting animals, I can't wait to get home and read about them in this book.</td>
+</tr>
+<tr>
+<td>62892</td>
+<td>the Animal Information Souvenir Center</td>
+</tr>
+<tr>
+<td>62893</td>
+<td>I overheard that someone named Katja loves these caramel sundaes. I see why. I love it, too, with the caramel on the top AND bottom!</td>
+</tr>
+<tr>
+<td>62894</td>
+<td>This delicious, hot apple pie makes me feel warm all over.</td>
+</tr>
+<tr>
+<td>62895</td>
+<td>Mmm. Aaah. These fries are really good!!</td>
+</tr>
+<tr>
+<td>62896</td>
+<td>This Big Mac tastes really good! Man... I love McDonald's!!</td>
+</tr>
+<tr>
+<td>62897</td>
+<td>Drinking that Grog makes me feel full of life... but my bladder is feeling somewhat full as well.</td>
+</tr>
+<tr>
+<td>62898</td>
+<td>the Neptune's Nectar Stand</td>
+</tr>
+<tr>
+<td>62899</td>
+<td>My stomach is a little fuller and my throat is less dry after eating that Moon Cake. Yet I actually feel lighter.</td>
+</tr>
+<tr>
+<td>62900</td>
+<td>I'm not as thirsty or hungry after drinking that Moon Juice. And I feel like I can walk on air.</td>
+</tr>
+<tr>
+<td>62901</td>
+<td>the Moon Juice Stand</td>
+</tr>
+<tr>
+<td>62902</td>
+<td>The tiger show was great. I even learned Siberian tigers can eat bones, pulverizing them to dust, &amp; their tongues are like sandpaper.</td>
+</tr>
+<tr>
+<td>62903</td>
+<td>the Foam Play Area</td>
+</tr>
+<tr>
+<td>62920</td>
+<td>the Applebee's Fence</td>
+</tr>
+<tr>
+<td>62921</td>
+<td>the Female Bathroom</td>
+</tr>
+<tr>
+<td>62922</td>
+<td>the Male Bathroom</td>
+</tr>
+<tr>
+<td>62923</td>
+<td>Chuck E. Cheese Doll, he is sooooooo cute!</td>
+</tr>
+<tr>
+<td>62924</td>
+<td>the Chuck E. Cheese's Restaurant</td>
+</tr>
+<tr>
+<td>62925</td>
+<td>I really love eating at the Rainforest Cafe. It's FUN!</td>
+</tr>
+<tr>
+<td>62926</td>
+<td>the Rainforest Cafe</td>
+</tr>
+<tr>
+<td>62927</td>
+<td>Oh, boy!!! A Chuck E. Cheese's Restaurant!</td>
+</tr>
+<tr>
+<td>62928</td>
+<td>the Ball Pit</td>
+</tr>
+<tr>
+<td>62929</td>
+<td>the Log Flume Ride</td>
+</tr>
+<tr>
+<td>62930</td>
+<td>the Drop Zone Ride</td>
+</tr>
+<tr>
+<td>62931</td>
+<td>the Space Needle Ride</td>
+</tr>
+<tr>
+<td>62932</td>
+<td>Somebody threw a ball at my head in the ball pit, but that was sooooooooo much fun!</td>
+</tr>
+<tr>
+<td>62933</td>
+<td>the Velociraptor Pit</td>
+</tr>
+<tr>
+<td>62934</td>
+<td>This can of soda tastes really great! Cold and a rich taste!</td>
+</tr>
+<tr>
+<td>62935</td>
+<td>the Coca-Cola Machine</td>
+</tr>
+<tr>
+<td>62936</td>
+<td>The salmon roe has a delightfully soft taste.</td>
+</tr>
+<tr>
+<td>62937</td>
+<td>The cucumber roll is so refreshing and juicy.</td>
+</tr>
+<tr>
+<td>62938</td>
+<td>The seawater eel makes me feel full, but not overstuffed. Fortunately, I will not feel full in 10 minutes. Other foods take forever.</td>
+</tr>
+<tr>
+<td>62939</td>
+<td>Mmmmmmmmmmmm, delicious. The crab sushi is very fresh.</td>
+</tr>
+<tr>
+<td>62940</td>
+<td>the Open Arms Sushi Stand</td>
+</tr>
+<tr>
+<td>62941</td>
+<td>the Flower Bus Simulator Ride</td>
+</tr>
+<tr>
+<td>62942</td>
+<td>Aren't these tiger glasses simply wild!</td>
+</tr>
+<tr>
+<td>62943</td>
+<td>Maybe these elephant glasses will make me like an elephant and never forget, so I don't leave my sunglasses at home again.</td>
+</tr>
+<tr>
+<td>62944</td>
+<td>These sunglasses are not the most stylish, but this sunlight was hurting my eyes.</td>
+</tr>
+<tr>
+<td>62945</td>
+<td>the Sunglass Hut</td>
+</tr>
+<tr>
+<td>62946</td>
+<td>the Tree Trunk Shelter</td>
+</tr>
+<tr>
+<td>62947</td>
+<td>Oh, look ... a sushi stand! I love sushi!</td>
+</tr>
+<tr>
+<td>62948</td>
+<td>the Crooked House</td>
+</tr>
+<tr>
+<td>62949</td>
+<td>the Shelter For Small Animals</td>
+</tr>
+<tr>
+<td>62950</td>
+<td>the Ride On Air</td>
+</tr>
+<tr>
+<td>62951</td>
+<td>the Pet Show</td>
+</tr>
+<tr>
+<td>63046</td>
+<td>the McDonald's Food Stand</td>
+</tr>
+<tr>
+<td>63072</td>
+<td>the Cotton Candy Stand</td>
+</tr>
+<tr>
+<td>63304</td>
+<td>the Gravel Path</td>
+</tr>
+<tr>
+<td>63306</td>
+<td>the Ice Path</td>
+</tr>
+<tr>
+<td>63309</td>
+<td>the Igloo Shelter</td>
+</tr>
+<tr>
+<td>63311</td>
+<td>the DeepSea Restaurant</td>
+</tr>
+<tr>
+<td>63373</td>
+<td>the ZA Invisible Fence Guide</td>
+</tr>
+<tr>
+<td>63401</td>
+<td>the Blue Brick Decorative Fence</td>
+</tr>
+<tr>
+<td>63402</td>
+<td>the Blue Picket Fence</td>
+</tr>
+<tr>
+<td>63403</td>
+<td>the White Brick Decorative Fence</td>
+</tr>
+<tr>
+<td>63404</td>
+<td>the Blue PnR Fence</td>
+</tr>
+<tr>
+<td>63406</td>
+<td>the White PnR Fence</td>
+</tr>
+<tr>
+<td>63480</td>
+<td>Now that I have more money, I can do more fun things!</td>
+</tr>
+<tr>
+<td>63481</td>
+<td>the ATM Machine</td>
+</tr>
+<tr>
+<td>63482</td>
+<td>the Basketball Game</td>
+</tr>
+<tr>
+<td>63483</td>
+<td>I love basketballs! They are so much fun to dribble!</td>
+</tr>
+<tr>
+<td>63484</td>
+<td>I love the stuffed beluga whale. It looks so happy, just like a real one.</td>
+</tr>
+<tr>
+<td>63485</td>
+<td>Manatees may be endangered, but it will exist forever in my home.</td>
+</tr>
+<tr>
+<td>63486</td>
+<td>the Fish Gift Stand</td>
+</tr>
+<tr>
+<td>63487</td>
+<td>Look at the spectacular colors in the coral reef painting.</td>
+</tr>
+<tr>
+<td>63488</td>
+<td>This stingray has eyes on top and a mouth underneath, just like a real one.</td>
+</tr>
+<tr>
+<td>63489</td>
+<td>Wow, this game is cool, even though the aliens got me!!</td>
+</tr>
+<tr>
+<td>63490</td>
+<td>Yummmm. Hard, sweet candy; soft, refreshing apple.</td>
+</tr>
+<tr>
+<td>63491</td>
+<td>the Park Grill</td>
+</tr>
+<tr>
+<td>63492</td>
+<td>the Candy Apple Stand</td>
+</tr>
+<tr>
+<td>63493</td>
+<td>the Candyland Ball Pit</td>
+</tr>
+<tr>
+<td>63494</td>
+<td>What a sensation... moving just by leaning while riding on air.</td>
+</tr>
+<tr>
+<td>63495</td>
+<td>the Aliens Attack Arcade Game</td>
+</tr>
+<tr>
+<td>63560</td>
+<td>the Refreshments Machine</td>
+</tr>
+<tr>
+<td>63563</td>
+<td>the Sweets Stand</td>
+</tr>
+<tr>
+<td>63701</td>
+<td>the Carnivorous Plant House</td>
+</tr>
+<tr>
+<td>63704</td>
+<td>the Deserterrium</td>
+</tr>
+<tr>
+<td>63707</td>
+<td>the Cave Man Stand</td>
+</tr>
+<tr>
+<td>63750</td>
+<td>the Rainforest Gift Stand</td>
+</tr>
+<tr>
+<td>63764</td>
+<td>the Fun House</td>
+</tr>
+<tr>
+<td>64017</td>
+<td>the Fancy Post And Rope Fence</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 26, 2024</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 26, 2024</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../LANG--ZooTek/" class="md-footer__link md-footer__link--prev" aria-label="Previous: LANG--ZooTek">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                LANG--ZooTek
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../LANG--ZBorsato/" class="md-footer__link md-footer__link--next" aria-label="Next: LANG--ZBorsato">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                LANG--ZBorsato
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Goosifer.IO
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.path", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "navigation.footer", "content.action.edit", "content.action.view", "content.footnote.tooltips"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../../../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>

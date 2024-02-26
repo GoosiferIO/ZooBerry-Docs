@@ -629,6 +629,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="File Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-packs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asset Packs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphics-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphics Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc-binary-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misc Binary Files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1780,6 +1822,11 @@
 <h1 id="zoo-tycoon-1-file-formats">Zoo Tycoon 1 File Formats</h1>
 <h2 id="file-formats">File Formats</h2>
 <p>Blue Fang used a custom <code>.INI</code> file implementation to handle the game's entity and system configuration. Making copies of asset directories containing these configuration files allowed for modders to create their own expansive content for the game. The game also has its own set of proprietary graphics formats that require other tools to extract. Below are common file formats relevant to modders interested in making their own content for the game:</p>
+<h3 id="configuration-files">Configuration Files</h3>
+<div class="admonition note">
+<p class="admonition-title">*Text Editors</p>
+<p>Any text editor that can handle line endings that have 1 or 2 control characters. This includes WordPad that comes with MS Windows, but not Notepad because Notepad understands only 1 type of line ending. VS Code in particular is a fantastic option.</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -1790,12 +1837,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>lang*.dll</code></td>
-<td>Dynamically-linked library</td>
-<td>Data serialization</td>
-<td>Resource Hacker, Risoh Editor</td>
-</tr>
 <tr>
 <td><code>*.cfg</code></td>
 <td>Configuration</td>
@@ -1839,40 +1880,58 @@
 <td>Any text editor*</td>
 </tr>
 <tr>
-<td><code>*.pal</code></td>
-<td>Pallette</td>
-<td>Color palette</td>
-<td>ZooT, APExp, ZT Studio</td>
-</tr>
-<tr>
-<td>No extension</td>
-<td>None</td>
-<td>Graphics file</td>
-<td>ZooT, APExp, ZT Studio</td>
-</tr>
-<tr>
-<td><code>*.wav</code></td>
-<td>Wave Sound File</td>
-<td>Sounds</td>
-<td>Audacity, Audition, Tenacity</td>
-</tr>
-<tr>
-<td><code>*.zoo</code></td>
-<td>Zoo</td>
-<td>Zoo Tycoon save</td>
+<td><code>*.lyt</code></td>
+<td>Layout</td>
+<td>Layout configuration</td>
 <td>Any text editor*</td>
 </tr>
+<tr>
+<td><code>*.txt</code></td>
+<td>Text</td>
+<td>Non-localized text and user-made animal info</td>
+<td>Any text editor*</td>
+</tr>
+</tbody>
+</table>
+<h3 id="asset-packs">Asset Packs</h3>
+<div class="admonition note">
+<p class="admonition-title"><code>*.ztd</code> Files</p>
+<p><code>*.ztd</code> files are just zip files and can be opened with any zip utility. 7zip is a known quantity and easily-accessible, but chances are you probably have a similar utility installed already.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>File Extension</th>
+<th>Implied Monikor</th>
+<th>Purpose</th>
+<th>Suggested Tools to Open</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td><code>*.ztd</code></td>
 <td>Zoo Tycoon Data</td>
 <td>Packaged assets</td>
 <td>7zip</td>
 </tr>
+</tbody>
+</table>
+<h3 id="graphics-files">Graphics Files</h3>
+<table>
+<thead>
 <tr>
-<td><code>*.lyt</code></td>
-<td>Layout</td>
-<td>Layout configuration</td>
-<td>Any text editor*</td>
+<th>File Extension</th>
+<th>Implied Monikor</th>
+<th>Purpose</th>
+<th>Suggested Tools to Open</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No extension</td>
+<td>None</td>
+<td>Graphics file</td>
+<td>ZooT, APExp, ZT Studio</td>
 </tr>
 <tr>
 <td><code>*.bmp</code></td>
@@ -1893,25 +1952,48 @@
 <td>GIMP, any graphics editor</td>
 </tr>
 <tr>
-<td><code>*.txt</code></td>
-<td>Text</td>
-<td>Non-localized text and user-made animal info</td>
-<td>Any text editor*</td>
+<td><code>*.pal</code></td>
+<td>Pallette</td>
+<td>Color palette</td>
+<td>ZooT, APExp, ZT Studio</td>
 </tr>
 </tbody>
 </table>
+<h3 id="misc-binary-files">Misc Binary Files</h3>
 <div class="admonition note">
 <p class="admonition-title">*<code>lang*.dll</code></p>
 <p>Contains Zoo Tycoon Localizable Resources using TEXT, BITMAP, MENU, DIALOG, STRINGTABLE, and ACCELERATORS blocks.</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">*Text Editors</p>
-<p>Any text editor that can handle line endings that have 1 or 2 control characters. This includes WordPad that comes with MS Windows, but not Notepad because Notepad understands only 1 type of line ending. VS Code in particular is a fantastic option.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title"><code>*.ztd</code> Files</p>
-<p><code>*.ztd</code> files are just zip files and can be opened with any zip utility. 7zip is a known quantity and easily-accessible, but chances are you probably have a similar utility installed already.</p>
-</div>
+<table>
+<thead>
+<tr>
+<th>File Extension</th>
+<th>Implied Monikor</th>
+<th>Purpose</th>
+<th>Suggested Tools to Open</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lang*.dll</code></td>
+<td>Dynamic Link Library</td>
+<td>Localizable resources</td>
+<td>Resource Hacker, Risoh Editor</td>
+</tr>
+<tr>
+<td><code>*.zoo</code></td>
+<td>Zoo</td>
+<td>Zoo Tycoon save</td>
+<td>Zoo Tycoon 1, Any hex editor</td>
+</tr>
+<tr>
+<td><code>*.wav</code></td>
+<td>Wave Sound File</td>
+<td>Sounds</td>
+<td>Audacity, Audition, Tenacity</td>
+</tr>
+</tbody>
+</table>
 <p>These files can all be found inside of the game's default install directory at <code>C:\Program Files (x86)\Microsoft Games\Zoo Tycoon</code>.</p>
 
 

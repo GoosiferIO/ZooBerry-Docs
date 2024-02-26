@@ -18,7 +18,7 @@ Blue Fang used a custom `.INI` file implementation to handle the game's entity a
 | No extension        | None | Graphics file | ZooT, APExp, ZT Studio  |
 | `*.wav`             | Wave Sound File | Sounds | Audacity, Audition, Tenacity |
 | `*.zoo`             | Zoo | Zoo Tycoon save | Any text editor* |
-| `*.ztd`            | Zoo Tycoon Data | Packaged assets  | 7zip |
+| `*.ztd`             | Zoo Tycoon Data | Packaged assets  | 7zip |
 | `*.lyt`             | Layout | Layout configuration | Any text editor* |
 | `*.bmp`             | Bitmap | Fring and grid graphics | GIMP, any graphics editor |
 | `*.lle`             | Unknown | Pre-rendered terrain blending graphics | Unknown |

@@ -41,7 +41,6 @@ theme:
 nav:
   - Home:
       - Index: index.md
-      - Attributions: attributions.md
   - Modding Tutorials:
     - Getting Started: 
         - zt1/getting-started/index.md
@@ -87,7 +86,8 @@ nav:
               - langZA02: zt1/string-tables/unofficial/langZA02.md
               - langZA03: zt1/string-tables/unofficial/langZA03.md
               - lang--TKZTUFcombin.md: zt1/string-tables/unofficial/lang--TKZTUFcombin.md
-      - Web Resources: zt1/getting-started/web-resources.md
+  - Web Resources: zt1/getting-started/web-resources.md
+  - Attributions: attributions.md
 
   # - 'EMU API':
   #     - 'Getting Started': 'emu/getting-started.md'

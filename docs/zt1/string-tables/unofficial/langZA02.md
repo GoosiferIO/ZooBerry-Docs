@@ -1,5 +1,7 @@
 # `langZA02`
 
+This custom string table can be downloaded at [ZooAdmin](https://zooadmin.org/ZT1/index.php?topic=70.0). Must be registered to download.
+
 | ID | String |
 | -- | ------ |
 | 15424 | Matchbox Toy Shop |

@@ -1,5 +1,7 @@
 # `langZA01`
 
+This custom string table can be downloaded at [ZooAdmin](https://zooadmin.org/ZT1/index.php?topic=71.0). Must be registered to access.
+
 | ID | String |
 | -- | ------ |
 | 8758 | Snowmobile Ride |

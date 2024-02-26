@@ -42,57 +42,59 @@ nav:
   - Home:
       - Index: index.md
       - Attributions: attributions.md
+  - Modding Tutorials:
+    - Getting Started: 
+        - zt1/getting-started/index.md
+        - Modding Tools: zt1/getting-started/modding-tools.md
+        - File Formats: zt1/getting-started/file-formats.md
+        - Mod Installation: zt1/getting-started/mod-installation.md
   - Reference:
-      - Zoo Tycoon 1:
-          - Getting Started: 
-              - zt1/getting-started/index.md
-              - Mod Installation: zt1/getting-started/mod-installation.md
-              - Modding Tools: zt1/getting-started/modding-tools.md
-              - File Formats: zt1/getting-started/file-formats.md
-          - Configuration References:
-              - Scenery : zt1/configuration-references/scenery-files.md
-              - Scenarios : zt1/configuration-references/scenario-files.md
-          - String Table References:
-              - Notable String IDs: zt1/string-tables/entity-ids.md
-              - Official String Tables:
-                  - lang0: zt1/string-tables/official/lang0.md
-                  - lang001: zt1/string-tables/official/lang001.md
-                  - lang002: zt1/string-tables/official/lang002.md
-                  - lang007: zt1/string-tables/official/lang007.md
-                  - lang008: zt1/string-tables/official/lang008.md
-                  - lang009: zt1/string-tables/official/lang009.md
-                  - lang010: zt1/string-tables/official/lang010.md
-                  - lang012: zt1/string-tables/official/lang012.md
-                  - lang013: zt1/string-tables/official/lang013.md
-                  - lang015: zt1/string-tables/official/lang015.md
-                  - lang016: zt1/string-tables/official/lang016.md
-                  - lang017: zt1/string-tables/official/lang017.md
-                  - lang018: zt1/string-tables/official/lang018.md
-                  - lang019: zt1/string-tables/official/lang019.md
-                  - lang020: zt1/string-tables/official/lang020.md
-                  - lang021: zt1/string-tables/official/lang021.md
-                  - lang100: zt1/string-tables/official/lang100.md
-                  - lang200: zt1/string-tables/official/lang200.md
-                  - lang300: zt1/string-tables/official/lang300.md
-              - Unofficial String Tables:
-                  - LANG--ZTCDD: zt1/string-tables/unofficial/LANG--ZTCDD.md
-                  - LANG--ZooTek: zt1/string-tables/unofficial/LANG--ZooTek.md
-                  - LANG--ZKL: zt1/string-tables/unofficial/LANG--ZKL.md
-                  - LANG--ZBorsato: zt1/string-tables/unofficial/LANG--ZBorsato.md
-                  - LANG--Jane: zt1/string-tables/unofficial/LANG--Jane.md
-                  - LANG--JBL: zt1/string-tables/unofficial/LANG--JBL.md
-                  - LANG--fern-Tek: zt1/string-tables/unofficial/LANG--fern-tek.md
-                  - langZA01: zt1/string-tables/unofficial/langZA01.md
-                  - langZA02: zt1/string-tables/unofficial/langZA02.md
-                  - langZA03: zt1/string-tables/unofficial/langZA03.md
-              - Web Resources: zt1/getting-started/web-resources.md
+      - Configuration References:
+          - zt1/configuration-references/index.md
+          - Scenery : zt1/configuration-references/scenery-files.md
+          - Scenarios : zt1/configuration-references/scenario-files.md
+      - String Table References:
+          - Notable String IDs: zt1/string-tables/entity-ids.md
+          - Official String Tables:
+              - lang0: zt1/string-tables/official/lang0.md
+              - lang001: zt1/string-tables/official/lang001.md
+              - lang002: zt1/string-tables/official/lang002.md
+              - lang007: zt1/string-tables/official/lang007.md
+              - lang008: zt1/string-tables/official/lang008.md
+              - lang009: zt1/string-tables/official/lang009.md
+              - lang010: zt1/string-tables/official/lang010.md
+              - lang012: zt1/string-tables/official/lang012.md
+              - lang013: zt1/string-tables/official/lang013.md
+              - lang015: zt1/string-tables/official/lang015.md
+              - lang016: zt1/string-tables/official/lang016.md
+              - lang017: zt1/string-tables/official/lang017.md
+              - lang018: zt1/string-tables/official/lang018.md
+              - lang019: zt1/string-tables/official/lang019.md
+              - lang020: zt1/string-tables/official/lang020.md
+              - lang021: zt1/string-tables/official/lang021.md
+              - lang100: zt1/string-tables/official/lang100.md
+              - lang200: zt1/string-tables/official/lang200.md
+              - lang300: zt1/string-tables/official/lang300.md
+          - Unofficial String Tables:
+              - LANG--ZTCDD: zt1/string-tables/unofficial/LANG--ZTCDD.md
+              - LANG--ZooTek: zt1/string-tables/unofficial/LANG--ZooTek.md
+              - LANG--ZKL: zt1/string-tables/unofficial/LANG--ZKL.md
+              - LANG--ZBorsato: zt1/string-tables/unofficial/LANG--ZBorsato.md
+              - LANG--Jane: zt1/string-tables/unofficial/LANG--Jane.md
+              - LANG--JBL: zt1/string-tables/unofficial/LANG--JBL.md
+              - LANG--fern-Tek: zt1/string-tables/unofficial/LANG--fern-tek.md
+              - langZA01: zt1/string-tables/unofficial/langZA01.md
+              - langZA02: zt1/string-tables/unofficial/langZA02.md
+              - langZA03: zt1/string-tables/unofficial/langZA03.md
+              - lang--TKZTUFcombin.md: zt1/string-tables/unofficial/lang--TKZTUFcombin.md
+      - Web Resources: zt1/getting-started/web-resources.md
 
-  - 'EMU API':
-      - 'Getting Started': 'emu/getting-started.md'
-      - 'EMU Command Console': 'emu/emu-console.md'
-      - 'Lua Scripts': 'emu/emu-scripts.md'
-  - 'PANDA Loader':
-      - 'Getting Started': 'panda/getting_started.md'
+  # - 'EMU API':
+  #     - 'Getting Started': 'emu/getting-started.md'
+  #     - 'EMU Command Console': 'emu/emu-console.md'
+  #     - 'Lua Scripts': 'emu/emu-scripts.md'
+  # - 'PANDA Loader':
+  #     - 'Getting Started': 'panda/getting_started.md'
 extra:
   social:
     - icon: material/github

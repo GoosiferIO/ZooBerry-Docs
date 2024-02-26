@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Welcome to ZooBerry Docs
 
 ![title](./assets/titlecard_.jpg)

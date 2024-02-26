@@ -99,7 +99,7 @@ triggers = trigger0
 
 ## `[completion]`  
 
-On successful completion of the scenario unlock these entities. Can be a list of entities to unlock. For a full list of entity values, please see [Entity IDs](./entity-ids.md).
+On successful completion of the scenario unlock these entities. Can be a list of entities to unlock. For a full list of entity values, please see [Entity IDs](../string-tables/entity-ids.md).
 
 | Key                  | Value | Description|
 |----------------------|------|-----|

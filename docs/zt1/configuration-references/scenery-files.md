@@ -7,8 +7,6 @@ This page assumes the game directory definition of what a 'scenery' item entails
 
 The main configuration for these files are in `.ucb`, `.ucs`, or `.ai` format, but they are really `.INI` files. The following tables describe attributes that can  be given to the entities mentioned. Example files can be found in a respective `/scenery` directory.
 
-Please note that this guide is meant for reference only and is not in any way meant to imply that every attribute listed on this page must be included for a successful mod to work. Instead, please only use this guide to inform your decision to include or test any attributes for your mod in production.
-
 ## `[<Codename>]`
 
 Scenery configuration files require a unique 8-character codename that will be used across the project.
@@ -44,80 +42,123 @@ Icon = objects/<Codename>/NE/NE
 !!! note "Incomplete"
     This section is incomplete. Needs remaining characteristics defined.
 
-This defines misc. characteristics about an entity. 
+These characteristics usually require an integer value to be set. They are used to define the entity's behavior and appearance.
 
-Usually found inside an entity's `.ucb` or `.ai` file. Can be found in a respective /scenery/other directory.
+### Standard Characteristics
 
-This isn't comprehensive, but here are a few:
-
+These characteristics are standard across most scenery.
 
 | Key                  | Value | Description|
 |----------------------|------|-----|
 | `cNameID`            | `<int>` | Integer key associated with a string that gives the entity its name. Value of `19000`means the string is defined inside of the `.ucb` file. If it's a 4-digit number it's a key associated with a string in a `.dll` lang file. |
 | `cHelpID` | `<int>` | Same concept as `cNameID`: keys for strings, but this one is for tooltips. If `cNameID` is set to `19000`, ZT ignores `cHelpID`. |
-|`cPurchaseCost` | `<int>` | Price of entity |
 | `cFootprintX` | `<int>` | Size of entity footprint in X direction. Value of `1` can be used for `1/4` or `1/2` tiles, otherwise must be an even integer. |
 | `cFootprintY` | `<int>` | Size of entity footprint in Y direction. Value of `1` can be used for `1/4` or `1/2` tiles, otherwise must be an even integer. |
+|`cPurchaseCost` | `<int>` | Price of entity |
 | `cHeight` | `<int>` | Height of entity. Consistent with construction tool height. |
-| `cSelectable` | `<0/1>` | Can the entity be selected. |
-| `cNeedsConfirm` | `<0/1>` | Does entity need confirmation window when bulldozed. |
-| `cMoveable` | `<0/1>` | Can the entity be moved after placed. |
+
+### Designation Characteristics
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `cCommerce` | `<int>` | Setting this to `1` designates the entity as a commerce entity, enabling the entity to sell goods. Set to `0` or delete line to exclude this configuration. |
+| `cFoliage` | `<int>` | Setting this to `1` designates the entity as foliage. Also allows it to count toward exhibit suitability. Set to `0` or delete line to exclude this configuration. |
+| `cShelter` | `<int>` | Setting this to `1` designates the entity as a shelter. Set to `0` or delete line to exclude this configuration. |
+| `cRock` | `<int>` | Setting this to `1` designates the entity as a rock. Set to `0` or delete line to exclude this configuration. |
+| `cFood` | `<int>` | Setting this to `1` designates the entity as animal food. Set to `0` or delete line to exclude this configuration. |
+
+### Terrain Placement Characteristics
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `cSwims` | `<int>` | Setting this to `1` allows the object to be placed on water. Set to `0` or delete line to exclude this configuration. |
+| `cUnderwater` | `<int>` | Setting this to `1` allows an entity to be placed underwater. Set to `0` or delete line to exclude this configuration. |
+| `cHabitat` | `<int>` | What habitat the entity belongs to. `9414` makes entities unplaceable in exhibits. `9411` allows entities placeable in all exhibits. For a full list of possible values, please see [Entity IDs](../string-tables/entity-ids.md#habitat) |
+| `cOnlySwims` | `<int>` | Setting this to `1` makes it so the object is only placeable on water and not on land. Set to `0` or delete line to exclude this configuration. |
+| `cSurface` | `<int>` | Setting this to `1` allows an entity to be placed on water surface. Set to `0` or delete line to exclude this configuration. |
+| `cLand` | `<int>` | |
+
+### Misc String Characteristics
+
+`cNameID` and `cHelpID` are a couple already described under [Standard Characteristics](#standard-characteristics). Here are a few more:
+
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `cUsedThought` | `<int>` | A user's thought after using the entity. Works similar in concept to other key/value strings above. |   
+| `cLocation` | `<int>` | Assigns a location to the entity. For a list of locations and their respective values, please see [Entity IDs](../string-tables/entity-ids.md#locations) |
+
+### Graphics Characteristics
+
+These characteristics influence the appearance of the entity.
+
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `cIsColorReplaced` | `<int>` | Setting this to `1` allows the entity to be color-replaced. Needs to pair with a respective `[colorrep]` section with additional configuration settings in the same file. Set to `0` or delete line to exclude this configuration. |
+| `cDeadOnLand` | `<int>` | Setting this to `1` allows a 'dead on land' status. If the entity is placed on land, a 'dead' graphic is displayed. Set to `0` or delete line to exclude this configuration. |
+| `cDeadUnderwater` | `<int>` | Setting this to `1` allows a 'dead underwater' status. If the entity is placed underwater, a 'dead' graphic is displayed. Set to `0` or delete line to exclude this configuration. |
+| `cUsesRealShadows` | `<int>` | |
+| `cHasShadowImages` | `<int>` | |
+
+### User Interaction Characteristics
+
+These characteristics influence how the user interacts with the entity. A user can be a guest or an animal.
+
+| Key                  | Value | Description|
+|----------------------|------|-----|
 | `cAdultChange` | `<int>` | How happy a guest is after using the entity. Negative values are possible if you want them to hate it. | 
 | `cChildChange` | `<int>` | Same as above but specifically child guests. |
-| `cCommerce` | `<int>` | Does a user need to pay to use this entity? |
-| `cHabitat` | `<int>` | What habitat the entity belongs to. `9414` makes entities unplaceable in exhibits. `9411` allows entities placeable in all exhibits. For a full list of possible values, please see [Entity IDs](./entity-ids.md#habitat) |
-| `cHideBuilding` | `<0/1>` | Hide building or show? |
-| `cUsersStayOutside` | `<0/1>` | Prevent a user from entering entity? |
-| `cTimeInside` | `<int>` | How long should a user be inside of a building. It mmight make sense to match this value with length of sound file if provided. 
-| `cUsedThought` | `<int>` | A user's thought after using the entity. Works similar in concept to other key/value strings above. |   
 | `cHideUser` | `<int>` | Setting this to `1` hides the user while using the entity. Set to `0` or delete line to exclude this configuration. |
-| `cAutoRotate` | `<int>` | Setting this to `1` automatically rotates the object on placement. Set to `0` or delete line to exclude this configuration. |
-| `cSwims` | `<int>` | Setting this to `1` allows the object to be placed on water. Set to `0` or delete line to exclude this configuration. |
-| `cOnlySwims` | `<int>` | Setting this to `1` makes it so the object is only placeable on water and not on land. Set to `0` or delete line to exclude this configuration. |
 | `walkable` | `<int>` | Setting this to `1` allows guests and animals to walk through the object. Set to `0` or delete line to exclude this configuration. |
-| `cFoliage` | `<int>` | Should this foliage count toward exhibit suitability? `0` for no, `1` for yes. As the name implies, usually used for foliage. |
-| `cPurchaseCost` | `<int>` | Price of the entity. |
 | `cCapacity` | `<int>` | How many users may use entity at a time. It is recommended to match this value with `capacity` under `[slot]`|
 | `cBathroomChange` | `<int>` | Unknown |
 | `cAngryBathroomChange` | `<int>` | Unknown |
-| `cHideBuilding` | `<int>` | Setting this to `1` hides the building while in use. Set to `0` or delete line to exclude this configuration. |
-| `cRock` | `<int>` | |
-| `walkableByTall` | `<int>` |  |
-| `cExplosionSound` | `<string dir>` |  |
-| `cExplosionSoundAtten` | `<int>` |  |
-| `cRubbleable` | `<int>` |  |
-| `cShelter` | `<int>` | Setting this to `1` designates the entity as a shelter. Set to `0` or delete line to exclude this configuration. |
+| `cUsersStayOutside` | `<int>` | Setting this to `1` makes it so the user stays outside of the entity. Set to `0` or delete line to exclude this configuration. |
 | `cEnergyChange` | `<int>` | |
 | `cUserUsesExit` | `<int>` | |
-| `cIsColorReplaced` | `<int>` | Setting this to `1` allows the entity to be color-replaced. Needs to pair with a respective `[colorrep]` section with additional configuration settings in the same file. Set to `0` or delete line to exclude this configuration. |
-| `cUseNumbersInName` | `<int>` | Setting this to `1` enumerates entity name. Set to `0` or delete line to exclude this configuration. |
-| `cDeletable` | `<int>` | Setting this to `1` allows entity to be deleted. Set to `0` or delete line to exclude this configuration. | 
 | `cRandomUse` | `<int>` | Setting this to `1` enables random interaction with entity. Set to `0` or delete line to exclude this configuration. |
 | `cMinUsePeriod` | `<int>` | If used, define minimum use period. |
 | `cMaxUsePeriod` | `<int>` | If used, define maximum use period. |
-| `cUnderwater` | `<int>` | Setting this to `1` allows an entity to be placed underwater. Set to `0` or delete line to exclude this configuration. |
-| `cDeadOnLand` | `<int>` | Setting this to `1` allows a 'dead on land' status. If the entity is placed on land, a 'dead' graphic is displayed. Set to `0` or delete line to exclude this configuration. |
-| `cDeadUnderwater` | `<int>` | Setting this to `1` allows a 'dead underwater' status. If the entity is placed underwater, a 'dead' graphic is displayed. Set to `0` or delete line to exclude this configuration. |
-| `cLand` | `<int>` | |
+| `cToySatisfaction` | `<int>` | |
+| `cUserTeleportsInside` | `<int>` | |
+| `cTimeInside` | `<int>` | How long should a user be inside of a building. It mmight make sense to match this value with length of sound file if provided. 
+| `cHideBuilding` | `<int>` | Setting this to `1` hides the building while in use. Set to `0` or delete line to exclude this configuration. |
+| `cUserUsesEntranceAsEmergencyExit` | `<int>` | Setting this to `1` makes it so the user uses the entrance as an emergency exit. Set to `0` or delete line to exclude this configuration. |
+| `cUserUsesExit` | `<int>` | Setting this to `1` makes it so the user uses the exit. Set to `0` or delete line to exclude this configuration. |
+
+### I/O Characteristics
+
+These characteristics influence how the player interacts with the entity.
+
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `cNeedsConfirm` | `<int>` | Setting this to `1` makes it so the entity needs confirmation window when bulldozed. Set to `0` or delete line to exclude this configuration. |
+| `cDeletable` | `<int>` | Setting this to `1` allows the entity to be deleted by the player after placement or spawn. Set to `0` or delete line to exclude this configuration. |
+| `cUseNumbersInName` | `<int>` | Setting this to `1` enumerates entity name in the UI. Set to `0` or delete line to exclude this configuration. |
+| `cMoveable` | `<int>` | Setting this to `1` allows the entity to be moved by the player. Set to `0` or delete line to exclude this configuration. |
+| `cAutoRotate` | `<int>` | Setting this to `1` automatically rotates the object on placement. Set to `0` or delete line to exclude this configuration. |
+| `cSelectable` | `<int>` | Setting this to `1` allows the entity to be selected. Set to `0` or delete line to exclude this configuration. |
+
+### Misc Characteristics
+
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `walkableByTall` | `<int>` |  |
+| `cExplosionSound` | `<string dir>` | Directory to sound file to play on explosion. |
+| `cExplosionSoundAtten` | `<int>` | Volume of explosion sound. |
+| `cRubbleable` | `<int>` |  |
 | `cDepth` | `<int>` | |
-| `cSurface` | `<int>` | Setting this to `1` allows an entity to be placed on water surface. Set to `0` or delete line to exclude this configuration. |
-| `cUsesRealShadows` | `<int>` | |
-| `cHasShadowImages` | `<int>` | |
 | `cHasUnderwaterSection` | `<int>` | |
 | `cDeadStateHeight` | `<int>` | |
-| `cLocation` | `<int>` | |
 | `cBlocksLOS` | `<int>` | |
-| `cToySatisfaction` | `<int>` | |
 | `cDirectEntrance` | `<int>` | Moves user toward entity more quickly |
 | `cShow` | `<int>` | |
-| `cAvoidEdges` | `<int>` | Setting this to `1` prevents entity to be placed next to fences or tank walls. Set to `0` or delete line to exclude this configuration. |
-| `cUserTeleportsInside` | `<int>` | |
-| `cFoliage` | | |
 | `cUsesTreeRubble` | | |
 | `cEstheticWeight` | | |
 | `cGawkOnlyFromFront` | | |
 | `cExpansionID` | | |
-
+| `cAvoidEdges` | `<int>` | Setting this to `1` prevents entity to be placed next to fences or tank walls. Set to `0` or delete line to exclude this configuration. |
+| `cFoodUnits` | `<int>` | How much food the entity provides until it's empty. |
+| `cMaxFoodUnits` | `<int>` | Maximum food units the entity can hold. |
+| `cFoodCategory` | `<int>` | Category of food the entity provides. |
+| `cKeeperFoodType` | `<int>` | |
 
 <h3>Example</h3>
 ```INI
@@ -148,6 +189,12 @@ cSwims = 1
 
 ## `[Characteristics/Floats]`
 
+!!! note "Incomplete"
+    This section is incomplete. Needs remaining characteristics defined.
+
+These characteristics usually require a float value to be set. Since floats are decimal numbers, these characteristics are usually used to
+set prices for things such as upkeep and other costs.
+
 | Key                  | Value | Description|
 |----------------------|------|-----|
 | `cUpkeep` | `<float>` | How much it costs per month to upkeep entity. |
@@ -164,8 +211,11 @@ cSwims = 1
 | `used` | `used` | Used defines your entity as having graphics with animation. |
 | `explode` | `<string dir>` | |
 | `giant` | | |
-| `small` | | |
-| `idledead` | `dead` | Idle dead graphic |
+| `small` | `small` | Usually a graphic that displays a low quantity of the entity it represents. Typically used in animal food. |
+| `mid` | `mid` | Usually a graphic that displays a medium quantity of the entity it represents. Typically used in animal food. |   
+| `full` | `full` | Usually a graphic that displays a high quantity of the entity it represents. Typically used in animal food. | 
+| `empty` | `empty` | Usually a graphic that displays an empty quantity of the entity it represents. Typically used in animal food. |  
+| `idledead` | `dead` | Graphics for when the entity is dead. | 
 | `shadowidle` | | |
 | `underidle` | | |
 
@@ -261,3 +311,60 @@ loops = 1
 name = scenery/building/carousel.wav
 attenuation = 1500
 ```
+
+## `[slots]`
+
+This category defines the slots for the entity. Slots are used to define where animals or guests can interact with the entity. Typically this should only be necessary for entities where guests or animals require a specific spot to interact with the entity, such as buildings, shelters, picnic tables, etc.
+
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `name` | `<string name>` | Name of the slot. There should be as many of this attribute as there are slots. |
+
+<h3>Example</h3>
+
+From `picnic.ai`.
+
+```INI
+[slots]
+name=slot0
+name=slot1
+name=slot2
+name=slot3
+```
+
+For each slot there should then be a `[slot]` section with the same name. For the purpose of this reference guide, we'll define the attributes for such slots below under the `[slot#]` section.
+
+### `[slot#]`
+
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `slotpos` | `<int>` | Position of the slot. This can also be defined as the spot in the entity where the user will begin its 'used' animation. |
+| `entrpos` | `<int>` | Position of the entrance. This is the spot outside of the entity where the user paths to. |
+| `exitpos` | `<int>` | Position of the exit. This is the spot where the user will appear once they've used the entity. |
+| `capacity` | `<int>` | How many users may use entity at a time. It is recommended to match this value with `cCapacity` under `[Characteristics/Integers]`|
+| `facing` | `<int>` | Direction the user is facing while using the entity. |
+
+!!! warning 
+    If you have issue with a user leaving the entity facing the wrong direction, removing `cUserUsesEntranceAsEmergencyExit = 1` and `cUserUsesExit = 1` from `[Characteristics/Integers]` might fix it.
+
+Example:
+
+```INI
+[slot0]
+slotpos=-16
+slotpos=16
+
+entrpos=-16
+entrpos=48
+
+exitpos=-16
+exitpos=48
+
+capacity=1
+facing=7
+```
+
+!!! note "Slots and Coordinates"
+    Notice that each `slotpos`, `entrpos`, and `exitpos` attribute has two values. This is because they are world coordinates. The first value is the X coordinate and the second value is the Y coordinate. The X coordinate is the horizontal axis and the Y coordinate is the vertical axis. Both are needed to define a position in the game world. The game will crash if you only define one of the two.
+
+    For a guided tutorial on slots, please read Jay's [Slot Information Guide](http://www.ztcdd.org/DG/index.php?topic=4202.0) at the Zoo Tycoon Community Download Directory.

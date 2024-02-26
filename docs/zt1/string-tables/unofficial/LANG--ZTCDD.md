@@ -1,6 +1,6 @@
 # `LANG--ZTCDD`
 
-This custom string table can be downloaded at the [Zoo Tycoon Designer Guild](http://www.ztcdd.org/DG/index.php?topic=3734.0)
+This custom string table can be downloaded at the [Zoo Tycoon Designer Guild](http://www.ztcdd.org/DG/index.php?topic=3734.0).
 
 | ID | String |
 | -- | ------ |

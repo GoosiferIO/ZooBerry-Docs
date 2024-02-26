@@ -1,6 +1,6 @@
 # `langZA03`
 
-This custom string table can be downloaded at [ZooTek Phoenix](https://zootekphoenix.com/forums/files/file/4863-langza03dll/)
+This custom string table can be downloaded at [ZooTek Phoenix](https://zootekphoenix.com/forums/files/file/4863-langza03dll/). Must be registered to download.
 
 | ID | String |
 | -- | ------ |

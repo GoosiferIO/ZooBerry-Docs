@@ -1,6 +1,6 @@
 # `LANG--ZooTek`
 
-This custom string table can be downloaded at [ZooTek Phoenix](https://zootekphoenix.com/forums/files/file/4750-lang-zootekdll-zoo-tek-language-file/)
+This custom string table can be downloaded at [ZooTek Phoenix](https://zootekphoenix.com/forums/files/file/4750-lang-zootekdll-zoo-tek-language-file/). Must be registered to download.
 
 | ID | String |
 | -- | ------ |

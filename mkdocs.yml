@@ -44,8 +44,7 @@ nav:
   - Modding Tutorials:
     - Getting Started: 
         - zt1/getting-started/index.md
-        - Modding Tools: zt1/getting-started/modding-tools.md
-        - File Formats: zt1/getting-started/file-formats.md
+        - File Formats and Tools: zt1/getting-started/file-formats-and-tools.md
         - Mod Installation: zt1/getting-started/mod-installation.md
   - Reference:
       - Configuration References:

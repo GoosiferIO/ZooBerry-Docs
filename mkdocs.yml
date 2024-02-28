@@ -30,13 +30,14 @@ theme:
     - navigation.indexes
     - navigation.path
     - toc.follow
-    - toc.integrate
+    # - toc.integrate
     - navigation.top
     - search.suggest
     - navigation.footer
     - content.action.edit
     - content.action.view
     - content.footnote.tooltips
+    - content.tabs
     # - search.highlight
 nav:
   - Home:
@@ -114,6 +115,8 @@ plugins:
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.superfences:
       custom_fences:
           - name: mermaid

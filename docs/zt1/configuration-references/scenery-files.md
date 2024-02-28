@@ -37,6 +37,47 @@ Icon = objects/<Codename>/NW/NW
 Icon = objects/<Codename>/NE/NE
 ```
 
+## `[Member]`
+
+Assigns the entity to a group. This is used to define the group of entities that the entity belongs to. This is used for the game's UI and for the game's internal logic.
+
+!!! note "Incomplete"
+    This section is incomplete. Needs remaining members.
+
+- developer
+- fence
+- foliage
+- habitatfence
+- habitatfoliage
+- highfence
+- lowfence
+- rocks
+- scenery
+- shelters
+- structures
+- toys
+- zoofences
+- zoogate
+
+=== "Decorative Fence"
+    From `castiron.ai`
+
+    ```INI
+    [Member]
+    zoofences
+    lowfence
+    fence
+    ```
+=== "Habitat Fence"
+    From `rockwall.ai`
+
+    ```INI
+    [Member]
+    zoofences
+    habitatfence
+    fence
+    ```
+
 ## `[Characteristics/Integers]`
 
 !!! note "Incomplete"
@@ -105,13 +146,15 @@ These characteristics influence how the user interacts with the entity. A user c
 |----------------------|------|-----|
 | `cAdultChange` | `<int>` | How happy a guest is after using the entity. Negative values are possible if you want them to hate it. | 
 | `cChildChange` | `<int>` | Same as above but specifically child guests. |
+| `cHungerChange` | `<int>` | How much hunger is satisfied after using the entity. |
+| `cThirstChange` | `<int>` | How much thirst is satisfied after using the entity. |
+| `cEnergyChange` | `<int>` | How much energy is satisfied after using the entity. |
+| `cBathroomChange` | `<int>` | How much bathroom need is satisfied after using the entity. |
+| `cAngryBathroomChange` | `<int>` | Unknown |
 | `cHideUser` | `<int>` | Setting this to `1` hides the user while using the entity. Set to `0` or delete line to exclude this configuration. |
 | `walkable` | `<int>` | Setting this to `1` allows guests and animals to walk through the object. Set to `0` or delete line to exclude this configuration. |
 | `cCapacity` | `<int>` | How many users may use entity at a time. It is recommended to match this value with `capacity` under `[slot]`|
-| `cBathroomChange` | `<int>` | Unknown |
-| `cAngryBathroomChange` | `<int>` | Unknown |
 | `cUsersStayOutside` | `<int>` | Setting this to `1` makes it so the user stays outside of the entity. Set to `0` or delete line to exclude this configuration. |
-| `cEnergyChange` | `<int>` | |
 | `cUserUsesExit` | `<int>` | |
 | `cRandomUse` | `<int>` | Setting this to `1` enables random interaction with entity. Set to `0` or delete line to exclude this configuration. |
 | `cMinUsePeriod` | `<int>` | If used, define minimum use period. |
@@ -160,32 +203,78 @@ These characteristics influence how the player interacts with the entity.
 | `cFoodCategory` | `<int>` | Category of food the entity provides. |
 | `cKeeperFoodType` | `<int>` | |
 
-<h3>Example</h3>
-```INI
-[Characteristics/Integers]
-cPurchaseCost = 2000
-cFootprintX = 12
-cFootprintY = 6
-cHabitat = 9414
-cHeight = 3
-cHelpID = 32610
-cNameID = 2610
-cCommerce = 1
-cSelectable = 1
-cNeedsConfirm = 1
-cAdultChange = 10
-cChildChange = 15
-cEnergyChange = -100
-cHideUser = 1
-cHideBuilding = 0
-cUserStaysOutside = 0
-cCapacity = 10
-cTimeInside = 12
-cUsedThought = 8761
-cIsColorReplaced = 0
-cMoveable = 1
-cSwims = 1
-```
+### Examples
+
+=== "Attraction"
+    From `carousal.ai`
+
+    ```INI
+    [Characteristics/Integers]
+    cPurchaseCost = 800
+    cNameID = 8001
+    cHelpID = 8001
+    ;Bad Habitat Type
+    cHabitat = 9414
+    cFootprintX = 8
+    cFootprintY = 10
+    cCommerce = 1
+    cSelectable = 1
+    cNeedsConfirm = 1
+    cAdultChange = 0
+    cChildChange = 12
+    cHideUser = 1
+    cUserStaysOutside = 0
+    cHideBuilding = 0
+    cCapacity = 12
+    cTimeInside = 12
+    cUsedThought=10114
+    cHeight = 3
+
+    cIsColorReplaced = 1
+    ```
+=== "Foliage"
+    From `acacia.ai`
+
+    ```INI
+    [Characteristics/Integers]
+    cPurchaseCost = 125
+    cNameID = 7000
+    cHelpID = 7000
+    cHabitat = 9400
+    cLocation = 9600
+    cHeight = 3
+    cFoliage = 1
+    cAutoRotate = 1
+    cUseNumbersInName=0
+    ```
+=== "Scenery"
+    From `lamp.ai`
+
+    ```INI
+    [Characteristics/Integers]
+    cPurchaseCost = 65
+    cNameID = 6032
+    cHelpID = 6032
+    cFootprintX = 1
+    cFootprintY = 1
+    cUserStaysOutside = 1
+    cTimeInside = 0
+    cUsedThought= 0
+    cHeight = 1
+    ;Bad Habitat Type
+    cHabitat = 9414
+    cUseNumbersInName=0
+    ```
+=== "Low Fence"
+    From `castiron.ai`
+
+    ```INI
+    [Characteristics/Integers]
+    cPurchaseCost = 65
+    cNameID = 9305
+    cHelpID = 9305
+    cHeight = 1
+    ```
 
 ## `[Characteristics/Floats]`
 
@@ -197,7 +286,17 @@ set prices for things such as upkeep and other costs.
 
 | Key                  | Value | Description|
 |----------------------|------|-----|
-| `cUpkeep` | `<float>` | How much it costs per month to upkeep entity. |
+| `cDefaultCost` | `<float>` | |
+| `cUpkeep` | `<float>` | How much it costs per month to upkeep entity. | 
+| `cLowCost` | `<float>` | |
+| `cMedCost` | `<float>` | |
+| `cHighCost` | `<float>` | |
+| `cPriceFactor` | `<float>` | |
+
+## `[Characteristics/Strings]`
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `cInfoImageName` | `<string dir>` | |
 
 
 ## `[Animations]`
@@ -219,25 +318,64 @@ set prices for things such as upkeep and other costs.
 | `shadowidle` | | |
 | `underidle` | | |
 
-<h3>Example 1</h3>
-```INI
-[Animations]
-idle = idle
-```
+Examples
 
-<h3>Example 2</h3>
-```INI
-[Animations]
-idle = idle
-used = used
-```
+=== "Inanimate"
+    From `lrock1.ai`
 
-<h3>Example 3</h3>
+    ```INI
+    [Animations]
+    idle = idle
+    ```
+
+=== "Animated"
+    From `carousal.ai`
+
+    ```INI
+    [Animations]
+    idle = idle
+    used = used
+    ```
+=== "Animal Food"
+    From `graschow.ai`
+
+    ```INI
+    [Animations]
+    full = full
+    half = mid
+    empty = small
+    ```
+
+## `[Sells]`
+
+Used to define what the entity sells. This is used for commerce entities. There are not any key/value attributes under this section. Instead, simply list the items the entity sells. Below are possible values for this section.
+
+=== "Zoo Tycoon 1 "
+
+    | Codename | Description |
+    |----------|-------------|
+    | `burger` | Burger |
+    | `candy` | Candy |
+    | `clrbook` | Coloring Book |
+    | `hotdog` | Hot Dog |
+    | `icecream` | Ice Cream |
+    | `pizza` | Pizza |
+    | `plasanim` | Plastic Animal |
+    | `soda` | Soda |
+    | `sodacan` | Soda Can |
+    | `stufpanda` | Stuffed Panda |
+    | `trash` | Trash |
+    | `tshirt` | T-Shirt |
+    | `rburger` | |
+    | `rsoda` | |
+    | `rhotdog` | |
+    | `rpizza` | |
+
+If you want your entity to sell a custom item, must include an accompanying `*.cfg` file with the name `items-<Codename>.cfg` at the base directory of the mod. This file should contain the following:
+
 ```INI
-[Animations]
-idle = idle
-used = idle
-idledead = dead
+[items]
+<item_codename> = items/<item_codename>.cfg
 ```
 
 ## `[EstheticBonus]`
@@ -275,21 +413,63 @@ This category assigns the entity to a subcategory type in Zoo Tycoon for various
 
 An (incomplete) list of possible values:
 
-- `building`
-- `familybathroom`
-- `bathroom`
-- `fun`
 - `animalrest`
 - `animalsex`
+- `bathroom`
+- `building`
+- `drink`
+- `energy`
+- `familybathroom`
+- `food`
+- `fun`
+- `gift`
 - `showtrick`
 
-<h3>Example (from `carousal.ai`):</h3>
+<h3>Examples</h3>
 
-```INI
-[Satisfies]
-building
-fun
-```
+=== "Attraction"
+    From `carousal.ai`
+
+    ```INI
+    [Satisfies]
+    building
+    fun
+    ```
+
+=== "Bathroom"
+    From `bathroom.ai`
+
+    ```INI
+    [Satisfies]
+    building
+    bathroom
+    ```
+=== "Food Stand"
+    From `bgrstnd.ai`
+    
+    ```INI
+    [Satisfies]
+    building
+    food
+    ```
+=== "Shelter"
+    From `burrow1.ai`
+    
+    ```INI
+    [Satisfies]
+    building
+    animalrest
+    animalsex
+    ```
+
+=== "Gift Shop"
+    From `giftshp.ai`
+
+    ```INI
+    [Satisfies]
+    building
+    gift
+    ```
 
 ## `[UseSound]`
 
@@ -338,6 +518,8 @@ For each slot there should then be a `[slot]` section with the same name. For th
 
 | Key                  | Value | Description|
 |----------------------|------|-----|
+| `id` | `<int>` | This key is optional and can be omitted. By setting the value to a designated entity string ID, you can define a slot as a specific entity. It can be used multiple times if you want to restrict the slot to multiple entities. Omit this key if you want the slot to be open to all entities. |
+| `filter` | `<char>` | Observed in some toys such as `lionrck1.ai` with a value of `y`. Not seen in most slot sections. Unknown purpose. |
 | `slotpos` | `<int>` | Position of the slot. This can also be defined as the spot in the entity where the user will begin its 'used' animation. |
 | `entrpos` | `<int>` | Position of the entrance. This is the spot outside of the entity where the user paths to. |
 | `exitpos` | `<int>` | Position of the exit. This is the spot where the user will appear once they've used the entity. |
@@ -347,24 +529,121 @@ For each slot there should then be a `[slot]` section with the same name. For th
 !!! warning 
     If you have issue with a user leaving the entity facing the wrong direction, removing `cUserUsesEntranceAsEmergencyExit = 1` and `cUserUsesExit = 1` from `[Characteristics/Integers]` might fix it.
 
-Example:
+<h3>Examples</h3>
+=== "Building"
+    ```INI
+    [slot0]
+    slotpos=-16
+    slotpos=16
 
-```INI
-[slot0]
-slotpos=-16
-slotpos=16
+    entrpos=-16
+    entrpos=48
 
-entrpos=-16
-entrpos=48
+    exitpos=-16
+    exitpos=48
 
-exitpos=-16
-exitpos=48
+    capacity=1
+    facing=7
+    ```
 
-capacity=1
-facing=7
-```
+=== "Shelter"
+    ```INI
+    From `leanto2.ai`.
+    ```INI
+    [slots]
+    name=slot
+
+    [slot]
+    ; Animals which can use this shelter
+    ;PLAINS_ZEBRA		
+    id=5004
+    ;THOMSONS_GAZELLE		
+    id=5005
+    ;RED_KANGAROO		
+    id=5023
+    ;COMMON_WILDEBEEST	    	
+    id=5025
+    ;IBEX			
+    id=5027
+    ;OKAPI			
+    id=5028
+    ;AMERICAN_BIGHORN		
+    id=5032
+    ;MARKHOR			
+    id=5036
+    ;OSTRICH			
+    id=5038
+    ;GIANT_ANTEATER		
+    id=5042
+
+    ; spot in the building where animal would play animation if didn't disappear
+    ; (in world coordinates, relative to building center; 16 per half-subtile)
+    slotpos=0
+    slotpos=0
+
+    ; spots outside the building where animal paths to
+    entrpos=0
+    entrpos=64
+
+    ; spot to place animal in once they've used the building
+    exitpos=0
+    exitpos=64
+
+    ; 1000 = essentially infinite capacity
+    capacity=4
+    facing=0
+    ```
+
 
 !!! note "Slots and Coordinates"
     Notice that each `slotpos`, `entrpos`, and `exitpos` attribute has two values. This is because they are world coordinates. The first value is the X coordinate and the second value is the Y coordinate. The X coordinate is the horizontal axis and the Y coordinate is the vertical axis. Both are needed to define a position in the game world. The game will crash if you only define one of the two.
 
     For a guided tutorial on slots, please read Jay's [Slot Information Guide](http://www.ztcdd.org/DG/index.php?topic=4202.0) at the Zoo Tycoon Community Download Directory.
+
+## `[colorrep]`
+
+!!! info "Color Replacement"
+    Must define `cIsColorReplaced` under `[Characteristics/Integers]` to `1` to use this section.
+
+!!! warning "Color Replacement"
+    This section is not yet checked for accuracy. When using this section, please verify the results in-game.
+
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `color` | `<string cr_color>` | Main color to replace. Requires a section definition with the same name as the value. See example below. |
+| `replace` | `<string>` | Replacement color. |
+| `defaultpal` | `<string>` | Default palette. |
+
+### `[cr_color]`
+
+| Key                  | Value | Description|
+|----------------------|------|-----|
+| `ncolors` | `<int>` | Number of colors in .pal file. |
+| `fullpal` | `<string dir>` | Directory to .pal file. |
+| `colorpal` | `<string dir>` | Directory to .pal file. |
+
+<h3>Example</h3>
+
+From `carousal.ai`.
+
+```INI
+[colorrep]
+
+; cr_color is listed below
+color = cr_color
+
+; cr_part1 is listed in building.ai
+replace = cr_part1
+title = 2300
+defaultpal = scenery/building/pals/sky16.pal
+
+; cr_part2 is listed in building.ai
+replace = cr_part2
+title = 2301
+defaultpal = scenery/building/pals/pink8.pal
+
+[cr_color]
+ncolors = 232
+fullpal = objects/carousal/carousal.pal
+colorpal = objects/carousal/color.pal
+```

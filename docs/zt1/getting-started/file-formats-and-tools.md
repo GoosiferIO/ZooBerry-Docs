@@ -1,4 +1,4 @@
-# Zoo Tycoon 1 File Formats and Tools to Open Themm
+# Zoo Tycoon 1 File Formats and Tools to Open Them
 
 ## File Formats
 

@@ -1,16 +1,17 @@
-This website does not intend to offer exhaustive coverage over Zoo Tycoon 1 modding. However, since the game is over 20 years old, there are many resources available on the internet that can be useful for modding the game. Below is a curated list of resources that are particularly useful for the ZT1 community. If you have a resource that you think should be added to this list, please let us know by creating an issue on the GitHub repository.
+This website does not intend to offer exhaustive coverage on the subject of Zoo Tycoon 1 modding. However, since the game is over 20 years old, there are many resources available on the internet that can still be helpful. If you have a resource that you think should be added to this list, please let us know by creating an issue on the GitHub repository.
 
 !!! note
     Some of these resources are hosted on forums that require registration to access. If you are unable to access a resource, you may need to create an account on the forum to access the resource.
 
 !!! info
-    Links to ztcdd.org/DD, ztcdd.org/DG, and lunamanar.com do go down on occasion. If you are unable to access the links, you might need to wait a few days for it to come back up due to server issues.
+    Links to zooadmin.org, ztcdd.org/DD, ztcdd.org/DG, and lunamanar.com do go down on occasion. If you are unable to access the links, they're usually back up within hours or just a few days.
 
 ## Making Animals
 | Resource Name and Location | Mirror(s) | Author | Requires Registration? | Description |
 | -------------------------- | --------- | ------ | ----------- | ----------- |
 | [Jordan's Animal-Making Uber Tutorial](https://zootekphoenix.com/forums/topic/1623-jordans-animal-making-%C3%BCber-tutorial/?do=getNewComment)|  | Jordan | Yes | A comprehensive guide to making animals for Zoo Tycoon 1. |
 | [Explanation of the Suitability Guide in Many Animal Listings](http://www.ztcdd.org/DD/index.php?topic=9318.0) |  | fern | No | |
+| [UCA Editing Guide (User Created Animals)](http://www.lunamanar.com/zklounge/viewtopic.php?f=52&t=116) |  | Sundance300 | No | |
 
 ## Making Scenery (Buildings, Foliage, etc.)
 | Resource Name and Location | Mirror(s) | Author | Requires Registration? | Description |
@@ -22,6 +23,7 @@ This website does not intend to offer exhaustive coverage over Zoo Tycoon 1 modd
 | [Genki's Path Tutorial](https://zootekphoenix.com/forums/topic/44-genkis-zt1-path-tutorial/?do=getNewComment) |  | genkicoll | Yes | |
 | [Genki's Path Tutorial (Downloadable version)](https://zootekphoenix.com/forums/topic/11877-genkis-path-tutorial-in-downloadable-zip-file/?do=getNewComment) |  | genkicoll | Yes | |
 | [How-to: Create Tank Filters](https://zootekphoenix.com/forums/topic/11006-how-to-create-tank-filters/?do=getNewComment) |  | jbl99 | Yes | |
+| [Main Characteristic List for Ingame Structures](http://www.lunamanar.com/zklounge/viewtopic.php?f=57&t=1976) |  | Jay | No | |
 
 ## String Tables, IDs, and Codenames
 | Resource Name and Location | Mirror(s) | Author | Requires Registration? | Description |
@@ -34,6 +36,9 @@ This website does not intend to offer exhaustive coverage over Zoo Tycoon 1 modd
 | [Bathroom IDs Suitable for Reuse](http://www.ztcdd.org/DG/index.php?topic=4151.0) | | fern | No | |
 | [Decorative Fence IDs Suitable for Reuse](http://www.ztcdd.org/DG/index.php?board=306.0) | | fern | No | |
 | [List of .dll Files With Unique Messages for Zoo Tycoon](http://www.ztcdd.org/DG/index.php?topic=4408.0) | | Jay | No | |
+| [String ID Reservations](http://www.lunamanar.com/zklounge/viewtopic.php?f=55&t=1870) | | Jay | No | |
+| [IDs of Ingame Researched Objects to Avoid](http://www.lunamanar.com/zklounge/viewtopic.php?f=55&t=1982) | | Jay | No | |
+
 
 ## Footprints and Slots
 | Resource Name and Location | Mirror(s) | Author | Requires Registration? | Description |
@@ -49,7 +54,7 @@ This website does not intend to offer exhaustive coverage over Zoo Tycoon 1 modd
 ## ZT1 Graphics
 | Resource Name and Location | Mirror(s) | Author | Requires Registration? | Description |
 | -------------------------- | --------- | ------ | ----------- | ----------- |
-| [Animal Recouloring - Enhancemments of Devona's Method](http://www.ztcdd.org/DG/index.php?topic=4202.0) | | dr rick | No | |
+| [Animal Recouloring - Enhancements of Devona's Method](http://www.ztcdd.org/DG/index.php?topic=4202.0) | | dr rick | No | |
 | [Trying to Work Out How `*.pal` Files Work for Scenery Objects](http://www.ztcdd.org/DG/index.php?topic=5461.0) | | dr rick | No | |
 | [How to Render Animamls with Hendrix Sprite Rendering Script](https://zootekphoenix.com/forums/topic/11680-how-to-render-animals-with-hendrix-sprite-rendering-script/?do=getNewComment) | | Khaydar | Yes | |
 | [Making Nice Textures Looking Great, using Hendrix's Script](https://zootekphoenix.com/forums/topic/40677-making-nice-textures-looking-great-using-hendrixs-script/?do=getNewComment) | | Khaydar | Yes | |
@@ -76,6 +81,7 @@ This website does not intend to offer exhaustive coverage over Zoo Tycoon 1 modd
 | [How to Combine ZTD's Using WinZip](https://zootekphoenix.com/forums/topic/2365-how-to-combine-ztds-using-winzip/) | | ZooGrammmy | Yes | |
 | [Combining ZTD Files (Youtube Video)](https://www.youtube.com/watch?v=HOoJ1S9sevc) | | Yellowrose | No | |
 | [First Steps in Creation - Introduction](https://zooadmin.org/DesignersTreehouse/index.php?topic=75.0) | | Yellowrose | No | |
+| [Zipping/Unzipping Guides](http://www.lunamanar.com/zklounge/viewtopic.php?f=48&t=1983) | | Jay | No | |
 
 ## Gameplay Mechanics
 | Resource Name and Location | Mirror(s) | Author | Requires Registration? | Description |

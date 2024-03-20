@@ -1,19 +1,30 @@
-# EMU | Extensible Modding Utility
+<h1 align="center">EMU | Extensible Modding Utility</h1>
 
-## A Zoo Tycoon Complete Collection API Utility for Modders
+<h3 align="center"> A Zoo Tycoon 1 Scripting API for Modders</h3>
 
-Zoo Tycoon initially offered limited modding tools, leading modders to heavily depend on the game's INI configuration for modifications. This project aims to enhance modding accessibility by introducing embedded Lua scripting and expanded access to game resources that were previously unavailable.
+Vanilla Zoo Tycoon 1 has over a 20 year history of modding but users have only been able to modify the game through editing of INI configuration files. This project enhances modding capabilities by giving modders Lua scripting support so that they can create more complex and interesting mods.
 
-## Compatibility
+### Download
 
-This API requires the Zoo Tycoon Complete Collection, including both expansions, and a Windows XP or newer operating system with the Microsoft Visual C++ 2008 Redistributable installed.
+[Download the latest release on Github](https://github.com/openztcc/EMU/releases/latest)
 
-If you do not own the Complete Collection but own the base game and have the two expansions installed, that should work as well.
+### Compatibility
 
-## Build from Source
+To use this API, you must:
 
-The .sln file has been included for the option to build from source. This requires Microsoft Visual C++ 2008 in order to compile. Express Edition should be fine.
+- Own the Zoo Tycoon Complete Collection, or the base game with both expansions installed.
+- Have a Windows 7 or newer operating system.
+- Install the [Microsoft Visual C++ 2017 Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
-## Installation
+### Build from Source
+
+The .sln file has been included for the option to build from source. The project is build with Visual Studio 2022.
+
+### Installation
 
 Drop the res-EMU.dll binary directly into your `C:\Program Files (x86)\Microsoft Games\Zoo Tycoon` game directory.
+
+### References
+
+[Console Documentation](./emu-console.md)  
+[Scripting API Documentation](./api/index.md)

@@ -11,7 +11,7 @@ Example Script:
 function emu_run()
     local selected_entitytype = ztUIGeneral.getSelectedEntityType()
     local buildingtype = ZTBuildingType.new(selected_entity)
-    io.write("Selected building purchase cost: " .. guesttype:cPurchaseCost())
+    io.write("Selected building purchase cost: " .. buildingtype:cPurchaseCost())
 end
 ```
 

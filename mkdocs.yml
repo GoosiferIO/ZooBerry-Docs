@@ -64,8 +64,11 @@ nav:
           - Command Console: zt1/reference/emu/emu-console.md
           - Scripting API: 
             - zt1/reference/emu/api/index.md
+            - Entities: zt1/reference/emu/api/entities.md
             - Entity Types: zt1/reference/emu/api/entitytypes.md
             - Game Manager: zt1/reference/emu/api/gamemanager.md
+            - UI General: zt1/reference/emu/api/uigeneral.md
+            - World Manager: zt1/reference/emu/api/worldmanager.md
       - String Table References:
           - zt1/reference/string-tables/index.md
           - Notable String IDs: zt1/reference/string-tables/entity-ids.md

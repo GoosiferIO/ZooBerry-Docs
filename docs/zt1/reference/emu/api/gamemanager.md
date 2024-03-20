@@ -25,6 +25,7 @@ end
 | `addCash(float deposit)` | Deposit a discrete amount of cash into your zoo budget. |
 | `setCash(float new_budget)` | Set your current budget to a new amount. |
 | `getCash()` | Returns the current budget. |
+| `subtractCash(float withdrawal)` | Withdraw a discrete amount of cash from your zoo budget. |
 | `pauseGame()` | Pause the game. |
 | `isGamePaused()` | Is the game currently paused? Returns a boolean value. |
 | `freezeGameState()` | Freeze the game state. |

@@ -1136,6 +1136,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Game Manager
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1145,6 +1156,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2146,6 +2203,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2176,7 +2268,19 @@
 
 
 <h1 id="game-manager-api">Game Manager API</h1>
+<h2 id="overview">Overview</h2>
 <p>The Game Manager API is a collection of functions that allow you to interact with the game's state and control the generalized state of the game. This includes functions to interact with the zoo's budget, pause and resume the game, and retrieve information about the zoo's guests and animals.</p>
+<h2 id="usage">Usage</h2>
+<p>All commands in this API are static functions and the Game Manager object is available as a global variable called <code>ztGameMgr</code> in the Lua scripting environment.</p>
+<p>Example Script:<br />
+<em>bonuscash.emu</em>
+<div class="highlight"><pre><span></span><code><span class="kr">function</span> <span class="nf">emu_run</span><span class="p">()</span>
+    <span class="kr">if</span> <span class="n">ztGameMgr</span><span class="p">.</span><span class="n">isZooLoaded</span><span class="p">()</span> <span class="kr">then</span>
+        <span class="n">ztGameMgr</span><span class="p">.</span><span class="n">addCash</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+</code></pre></div></p>
+<h2 id="definitions">Definitions</h2>
 <table>
 <thead>
 <tr>
@@ -2186,108 +2290,88 @@
 </thead>
 <tbody>
 <tr>
-<td><code>AddToZooBudget(float deposit)</code></td>
-<td>Deposit a discrete amount of cash into your zoo budget. Takes a float as an argument.</td>
+<td><code>addCash(float deposit)</code></td>
+<td>Deposit a discrete amount of cash into your zoo budget.</td>
 </tr>
 <tr>
-<td><code>GetZooBudget()</code></td>
-<td>Returns the current budget as a float.</td>
+<td><code>setCash(float new_budget)</code></td>
+<td>Set your current budget to a new amount.</td>
 </tr>
 <tr>
-<td><code>SetZooBudget(float new_budget)</code></td>
-<td>Set your current budget to a new amount. Takes a float as an argument.</td>
+<td><code>getCash()</code></td>
+<td>Returns the current budget.</td>
 </tr>
 <tr>
-<td><code>IsZooLoaded()</code></td>
-<td>Is a zoo currently open? Returns a boolean value.</td>
-</tr>
-<tr>
-<td><code>PauseGame()</code></td>
+<td><code>pauseGame()</code></td>
 <td>Pause the game.</td>
 </tr>
 <tr>
-<td><code>IsGamePaused()</code></td>
+<td><code>isGamePaused()</code></td>
 <td>Is the game currently paused? Returns a boolean value.</td>
 </tr>
 <tr>
-<td><code>NumAnimals()</code></td>
+<td><code>freezeGameState()</code></td>
+<td>Freeze the game state.</td>
+</tr>
+<tr>
+<td><code>isZooLoaded()</code></td>
+<td>Is a zoo currently open? Returns a boolean value.</td>
+</tr>
+<tr>
+<td><code>numAnimals()</code></td>
 <td>Return the current number of animals in your zoo. Returns an integer.</td>
 </tr>
 <tr>
-<td><code>NumSpecies()</code></td>
+<td><code>numSpecies()</code></td>
 <td>Return the current number of animal species in your zoo. Returns an integer.</td>
 </tr>
 <tr>
-<td><code>NumGuests()</code></td>
+<td><code>numGuests()</code></td>
 <td>Return the current number of guests in your zoo. Returns an integer.</td>
 </tr>
 <tr>
-<td><code>NumTiredGuests()</code></td>
-<td>Return the current number of tired guests in your zoo. Returns an integer.</td>
-</tr>
-<tr>
-<td><code>NumHungryGuests()</code></td>
-<td>Return the current number of hungry guests in your zoo. Returns an integer.</td>
-</tr>
-<tr>
-<td><code>NumThirstyGuests()</code></td>
-<td>Return the current number of thirsty guests in your zoo. Returns an integer.</td>
-</tr>
-<tr>
-<td><code>NumGuestsNeedRestrm()</code></td>
-<td>Return the current number of guests that need to use the restroom. Returns an integer.</td>
-</tr>
-<tr>
-<td><code>NumGuestsInFilter()</code></td>
-<td>Return the current number of guests in the guest filter. Returns an integer.</td>
-</tr>
-<tr>
-<td><code>GetZooAdmissionCost()</code></td>
-<td>Return the current admission cost to your zoo. Note: this is the adult ticket value. The child ticket value is not stored in memory as it is automatically calculated from the adult price divided by 2. Returns a float.</td>
-</tr>
-<tr>
-<td><code>SetZooAdmissionCost(float new_adm)</code></td>
-<td>Set the current admission cost to your zoo. See the above limitation about child ticket prices. Takes one float as an argument.</td>
-</tr>
-<tr>
-<td><code>AdmissionsIncomeByMonth()</code></td>
+<td><code>admissionsIncomeByMonth()</code></td>
 <td>Retrieve an array containing 12 elements, each representing admissions income for a specific month.</td>
 </tr>
 <tr>
-<td><code>ConcessionsBenefitByMonth()</code></td>
+<td><code>concessionsBenefitByMonth()</code></td>
 <td>Retrieve an array containing 12 elements, each representing the concessions benefit for a specific month.</td>
 </tr>
 <tr>
-<td><code>ZooValueByMonth()</code></td>
-<td>Retrieve an array containing 12 elements, each representing the zoo value for a specific month.</td>
+<td><code>zooProfitOverTime()</code></td>
+<td>Retrieve an array containing 12 elements, each representing the zoo profit for a specific month.</td>
 </tr>
 <tr>
-<td><code>PrivateDonationsByMonth()</code></td>
+<td><code>privateDonationsByMonth()</code></td>
 <td>Retrieve an array containing 12 elements, each representing the private donations for a specific month.</td>
 </tr>
 <tr>
-<td><code>ZooRatingByMonth()</code></td>
+<td><code>zooRatingByMonth()</code></td>
 <td>Retrieve an array containing 12 elements, each representing the zoo rating for a specific month.</td>
 </tr>
 <tr>
-<td><code>ConstructionCostByMonth()</code></td>
+<td><code>constructionCostByMonth()</code></td>
 <td>Retrieve an array containing 12 elements, each representing the construction costs for a specific month.</td>
 </tr>
 <tr>
-<td><code>AnimalPurchaseCostsByMonth()</code></td>
+<td><code>animalPurchaseCostsByMonth()</code></td>
 <td>Retrieve an array containing 12 elements, each representing the animal adoption costs for a specific month.</td>
 </tr>
 <tr>
-<td><code>_globalAnimalRating</code></td>
-<td>Global variable. Sets the animal rating per update.</td>
+<td><code>researchCostsByMonth()</code></td>
+<td>Retrieve an array containing 12 elements, each representing the research costs for a specific month.</td>
 </tr>
 <tr>
-<td><code>_globalZooRating</code></td>
-<td>Global variable. Sets the zoo rating per update.</td>
+<td><code>zooValueByMonth()</code></td>
+<td>Retrieve an array containing 12 elements, each representing the zoo value for a specific month.</td>
 </tr>
 <tr>
-<td><code>_globalGuestRating</code></td>
-<td>Global variable. Sets the guest rating per update.</td>
+<td><code>enableDevMode()</code></td>
+<td>Enable developer mode.</td>
+</tr>
+<tr>
+<td><code>isDevModeEnabled()</code></td>
+<td>Is developer mode enabled? Returns a boolean value.</td>
 </tr>
 </tbody>
 </table>
@@ -2328,6 +2412,29 @@
 
     
     
+    
+      
+  <span class="md-source-file__fact">
+    
+      
+  <span class="md-icon" title="Contributors">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </span>
+  <span>GitHub</span>
+
+    
+    <nav>
+      
+        <a href="https://github.com/GoosiferIO" class="md-author" title="@GoosiferIO">
+          
+          <img src="https://avatars.githubusercontent.com/u/35750901?v=4&size=72" alt="GoosiferIO">
+        </a>
+      
+      
+      
+    </nav>
+  </span>
+
     
   </aside>
 

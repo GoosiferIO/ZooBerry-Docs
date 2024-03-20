@@ -3,17 +3,19 @@
 
 # Lua Scripting in ZT1: A Brief Primer
 
-[Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)) is a lightweight, high-level, programming language designed to be embedded in other applications. It's a popular choice for game scripting because it's easy to learn and use, and it's fast. In fact, Zoo Tycoon 2 uses Lua for its scripting, but Zoo Tycoon 1 did not come with Lua support. With EMU API however, we can now use Lua to script our own custom easter eggs.
+[Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)) is a lightweight, high-level, programming language designed to be embedded in other applications and is usually a popular choice for game scripting because it's easy to learn and use. In fact, Zoo Tycoon 2, which came out only a few years after Zoo Tycoon 1, uses Lua for its scripting, but Zoo Tycoon 1 did not come with Lua support. [EMU API](/docs/zt1/reference/emu/index.md) is a tool that gives us scripting capabilities for Zoo Tycoon 1, which means we can make the game do things that it wasn't originally designed to do. This guide will serve as a brief primer for Lua and how to use it in Zoo Tycoon 1.
 
 ## What is Scripting?
 
-[Scripting](https://en.wikipedia.org/wiki/Scripting_language) is a way to give the game new behaviors without having to touch the game's original code. In fact, there is no way to modify the game's original code because it's not available. The only thing that Blue Fang (the game's original developer) gave us was the ability to see and edit the configuration files, and that's it. Although editing configuration files is powerful, it's not enough to make the game do everything we want it to do. This is where scripting comes in because we can puppeteer the game's behavior to our liking.
+[Scripting](https://en.wikipedia.org/wiki/Scripting_language) is a way to give the game new behaviors without having to touch the game's internal machinations. As far as modding goes, the only thing that Blue Fang (the game's original developer) gave us was the ability to read and edit the configuration files, and that's it. Although editing configuration files is powerful, it's not enough to make the game do everything we want it to do. This is where scripting comes in because we can puppeteer the game's behavior to our liking.
 
 ## Programming Languages
 
-There are many [programing languages](https://en.wikipedia.org/wiki/Programming_language) out there. They are languages in the sense that we as programmmers use them to communicate with the computer. However, it's not a conversation like we can have with each other. Instead, we have to be very specific and precise with our instructions. Following a recipe is a good analogy for programming. If you miss a step, the computer will not understand what you want it to do. Unless we're talking artificial intelligence, but that's a whole other can of worms we won't get into.
+There are many [programing languages](https://en.wikipedia.org/wiki/Programming_language) out there. They are languages in the sense that we as programmmers use them to communicate with the computer. However, it's not a conversation like we can have with each other. Instead, we have to be very specific and precise with our instructions. Following a recipe is a good analogy for programming because like in cooking, if you miss a step, the computer will not understand what you want it to do and the end result isn't so tasty. I mean, functional. Unless we're talking artificial intelligence, but that's a whole other can of worms we won't get into.
 
-In fact, Zoo Tycoon 1 and EMU API were written in a popular programmming called C++. C++ is a powerful language, but it's also very complex and difficult to learn. Lua on the other hand is much simpler and easier to learn, and it's also very fast. Here is an example of a simple C++ program that prints "Hello, World!" to the console:
+In fact, Zoo Tycoon 1 and EMU API were written in a popular programmming called C++. C++ is a powerful language, but it can also be very complex and difficult to learn. Lua on the other hand is much simpler and easier to learn, and it's also very fast. It's great for modding enthusiasts because though it's still programming, a lot has been abstracted away behind the scenes to make it easier to work with.
+
+Here is an example of a simple C++ program that prints "Hello, World!" to the console:
 
 ```cpp
 #include <iostream>
@@ -30,9 +32,9 @@ And here is the same program written in Lua:
 print("Hello, World!")
 ```
 
-As you can see, the Lua program is much simpler and easier to understand, and makes it a great choice for scripting in games. 
+As you can see, the Lua program is much simpler and easier to understand, so it makes it a great choice for scripting in games. 
 
-What EMU API does is it does something called abstraction. This means it takes the complex C++ code and packages it up in a way that users can interact with it using Lua. This is a very powerful concept and it's what makes Lua scripting in Zoo Tycoon 1 possible.
+I sort of touched on this just now, but what EMU API does is it does something called abstraction. This means it takes the complex C++ code and packages it up in a way that users can interact with it using Lua. This is a very powerful concept and it's what makes Lua scripting in Zoo Tycoon 1 possible.
 
 When we use Lua scripts in Zoo Tycoon 1, we are essentially calling the complicated C++ code that has been hidden away from us. This is why we need EMU API to use Lua in Zoo Tycoon 1. It's the bridge that connects the two languages, and in turn, it's the bridge that connects us to the game.
 

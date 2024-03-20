@@ -672,9 +672,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#possible-errors" class="md-nav__link">
+  <a href="#debugging-and-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Possible Errors
+      Debugging and Questions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-this-script-your-own" class="md-nav__link">
+    <span class="md-ellipsis">
+      Making this Script Your Own
     </span>
   </a>
   
@@ -1162,6 +1171,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
       
@@ -1212,6 +1227,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../reference/emu/api/entities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../reference/emu/api/entitytypes/" class="md-nav__link">
         
   
@@ -1238,6 +1274,48 @@
   
   <span class="md-ellipsis">
     Game Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/emu/api/uigeneral/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UI General
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/emu/api/worldmanager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    World Manager
   </span>
   
 
@@ -2306,9 +2384,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#possible-errors" class="md-nav__link">
+  <a href="#debugging-and-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Possible Errors
+      Debugging and Questions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-this-script-your-own" class="md-nav__link">
+    <span class="md-ellipsis">
+      Making this Script Your Own
     </span>
   </a>
   
@@ -2366,16 +2453,16 @@
 <h2 id="the-easter-egg-template-script">The Easter Egg Template Script</h2>
 <div class="highlight"><pre><span></span><code><span class="kr">function</span> <span class="nf">emu_run</span><span class="p">()</span>
     <span class="c1">-- Get the selected entity</span>
-    <span class="n">entity</span> <span class="o">=</span> <span class="n">general</span><span class="p">.</span><span class="n">getSelectedEntity</span><span class="p">()</span>
+    <span class="kd">local</span> <span class="n">entity</span> <span class="o">=</span> <span class="n">ztUIGeneral</span><span class="p">.</span><span class="n">getSelectedEntity</span><span class="p">()</span>
 
     <span class="c1">-- Only run if entity is selected.</span>
-    <span class="kr">if</span> <span class="ow">not</span> <span class="n">general</span><span class="p">.</span><span class="n">IsEntityNull</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span> <span class="kr">then</span>
+    <span class="kr">if</span> <span class="ow">not</span> <span class="n">ztWorldMgr</span><span class="p">.</span><span class="n">isEntityNull</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span> <span class="kr">then</span>
 
         <span class="c1">-- Create the ZTGuest object</span>
         <span class="n">guest</span> <span class="o">=</span> <span class="n">ZTGuest</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span>
 
         <span class="c1">-- Set all entities to invisible if guest name</span>
-        <span class="kr">if</span> <span class="n">guest</span><span class="p">:</span><span class="n">GetSelectedGuestName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;&lt;GUEST-NAME&gt;&quot;</span> <span class="kr">then</span>
+        <span class="kr">if</span> <span class="n">guest</span><span class="p">:</span><span class="n">name</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;&lt;GUEST-NAME&gt;&quot;</span> <span class="kr">then</span>
             <span class="c1">-- &lt;DO SOMETHING&gt;</span>
         <span class="kr">end</span>
     <span class="kr">end</span>
@@ -2390,26 +2477,26 @@
 </li>
 <li>
 <p>We get the selected entity from the game. An entity is anything in the game that can be placed from the purchase menu, such as animals, guests, staff, buildings, foliage, and scenery.</p>
-<div class="highlight"><pre><span></span><code><span class="n">entity</span> <span class="o">=</span> <span class="n">general</span><span class="p">.</span><span class="n">getSelectedEntity</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">entity</span> <span class="o">=</span> <span class="n">ztUIGeneral</span><span class="p">.</span><span class="n">getSelectedEntity</span><span class="p">()</span>
 </code></pre></div>
-<p>The <code>GetSelectedEntity</code> function belongs to the <code>general</code> object, which is a global object that EMU API provides for us to interact with the game and is required. The <code>GetSelectedEntity</code> function returns the entity that is currently selected in the game, or <code>Null</code> if nothing is selected. We then store this result in a variable called <code>entity</code>.</p>
+<p>The <code>getSelectedEntity</code> function belongs to the <code>ztUIGeneral</code> object, which is a global object that EMU API provides for us to interact with the game and is required. The <code>getSelectedEntity</code> function returns the entity that is currently selected in the game, or <code>Null</code> if nothing is selected. We then store this result in a variable called <code>entity</code>.</p>
 </li>
 <li>
 <p>The next line checks if the entity is not <code>Null</code>. If it is <code>Null</code>, then we don't want to run the rest of the script because there is nothing selected in the game.</p>
-<div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="ow">not</span> <span class="n">general</span><span class="p">.</span><span class="n">IsEntityNull</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span> <span class="kr">then</span>
+<div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="ow">not</span> <span class="n">ztWorldMgr</span><span class="p">.</span><span class="n">isEntityNull</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span> <span class="kr">then</span>
 </code></pre></div>
-<p>Like the <code>GetSelectedEntity</code> function, the <code>IsEntityNull</code> function also belongs to the <code>general</code> object. It returns <code>true</code> if the entity is <code>Null</code>, and <code>false</code> if it is not.</p>
+<p>Like the <code>getSelectedEntity</code> function, the <code>isEntityNull</code> function also belongs to the <code>ztUIGeneral</code> object. It returns <code>true</code> if the entity is <code>Null</code>, and <code>false</code> if it is not.</p>
 </li>
 <li>
 <p>We then create a <code>ZTGuest</code> object from the <code>entity</code> variable. This is a custom object that EMU API provides for us to interact with guests in the game. We then store this result in a variable called <code>guest</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">guest</span> <span class="o">=</span> <span class="n">ZTGuest</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">guest</span> <span class="o">=</span> <span class="n">ZTGuest</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span>
 </code></pre></div>
 <p>Once we have a guest object, we can start operating on it with functions that EMU API provides. For example, we can now get the guest's name.</p>
 </li>
 <li>
-<p>The next line checks if the selected guest's name is equal to the string <code>"&lt;GUEST-NAME&gt;"</code> using the <code>GetSelectedGuestName</code> function. Note that <code>GetSelectedGuestName</code> belongs to the <code>ZTGuest</code> object, and since we have a <code>ZTGuest</code> object stored in the <code>guest</code> variable, we can call this function on it.</p>
+<p>The next line checks if the selected guest's name is equal to the string <code>"&lt;GUEST-NAME&gt;"</code> using the <code>name</code> function. Note that <code>name</code> belongs to the <code>ZTGuest</code> object, and since we have a <code>ZTGuest</code> object stored in the <code>guest</code> variable, we can call this function on it.</p>
 <p>The syntax for calling a function on an object is <code>object:function()</code>. The <code>:</code> is used to call a function on an object, and the <code>.</code> is used to access a property of an object. This is a common pattern in Lua.</p>
-<div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="n">guest</span><span class="p">:</span><span class="n">GetSelectedGuestName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;&lt;GUEST-NAME&gt;&quot;</span> <span class="kr">then</span>
+<div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="n">guest</span><span class="p">:</span><span class="n">name</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;&lt;GUEST-NAME&gt;&quot;</span> <span class="kr">then</span>
     <span class="c1">-- rest of code</span>
 <span class="kr">end</span>
 </code></pre></div>
@@ -2421,50 +2508,52 @@
 <p>We will need the following functions:</p>
 <ul>
 <li>
-<p><code>ZTWorldMgr.GetAllEntitiesOfType(table)</code> - This function returns a table of all entities currently on the map. To find them, it takes in a table of integers that represent the entity type IDs. If you remember from other tutorials, IDs in Zoo Tycoon 1 are used to tie entities to the strings they display in the game, but also to the game's internal logic so that it can find those entities.</p>
+<p><code>ztWorldMgr.getAllEntitiesOfType(table)</code> - This function returns a table of all entities currently on the map. To find them, it takes in a table of integers that represent the entity type IDs. If you remember from other tutorials, IDs in Zoo Tycoon 1 are used to tie entities to the strings they display in the game, but also to the game's internal logic so that it can find those entities.</p>
 <p>For example, the game recognizes the ID number for the stick pole fence as <code>9313</code>, so when we feed this number into the function, it will return all of the stick pole fences on the map.</p>
 </li>
 <li>
-<p><code>ZTFenceType.SetVanishGuard(bool)</code> - This function sets the visibility of the fence and also makes it indestructible. If we set the argument to <code>true</code>, the fence will be invisible and indestructible. If we set the argument to <code>false</code>, the fence will be visible and destructible.</p>
-<p>This function belongs to the <code>ZTFenceType</code> object, which is an object that EMU API provides for us to interact with fences in the game.</p>
+<p><code>setVanishGuard(bool)</code> - This function sets the visibility of the fence and also makes it indestructible. If we set the argument to <code>true</code>, the fence will be invisible and indestructible. If we set the argument to <code>false</code>, the fence will be visible and destructible.</p>
+<p>This function belongs to the <code>ztWorldMgr</code> object, which is an object that EMU API provides for us to interact with entities on the map.</p>
 </li>
 </ul>
 <h3 id="implementing-the-changes">Implementing the Changes</h3>
 <div class="highlight"><pre><span></span><code><span class="kr">function</span> <span class="nf">emu_run</span><span class="p">()</span>
-<span class="c1">--  Add additional ids here if needed. Last id must be 0.</span>
-<span class="n">cNames</span> <span class="o">=</span> <span class="p">{</span><span class="mi">9313</span><span class="p">,</span> <span class="mi">9314</span><span class="p">}</span>
+    <span class="c1">--  Add additional ids here if needed. Last id must be 0.</span>
+    <span class="kd">local</span> <span class="n">cNames</span> <span class="o">=</span> <span class="p">{</span><span class="mi">9313</span><span class="p">,</span> <span class="mi">9314</span><span class="p">}</span>
 
-<span class="c1">-- Get the selected entity</span>
-<span class="n">entity</span> <span class="o">=</span> <span class="n">general</span><span class="p">.</span><span class="n">getSelectedEntity</span><span class="p">()</span>
+    <span class="c1">-- Get the selected entity</span>
+    <span class="kd">local</span> <span class="n">entity</span> <span class="o">=</span> <span class="n">ztUIGeneral</span><span class="p">.</span><span class="n">getSelectedEntity</span><span class="p">()</span>
 
-<span class="c1">-- Only run if entity is selected.</span>
-<span class="kr">if</span> <span class="ow">not</span> <span class="n">general</span><span class="p">.</span><span class="n">IsEntityNull</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span> <span class="kr">then</span>
+    <span class="c1">-- Only run if entity is selected.</span>
+    <span class="kr">if</span> <span class="ow">not</span> <span class="n">ztWorldMgr</span><span class="p">.</span><span class="n">isEntityNull</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span> <span class="kr">then</span>
 
-    <span class="c1">-- Create the ZTGuest object</span>
-    <span class="n">guest</span> <span class="o">=</span> <span class="n">ZTGuest</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span>
+        <span class="c1">-- Create the ZTGuest object</span>
+        <span class="kd">local</span> <span class="n">guest</span> <span class="o">=</span> <span class="n">ZTGuest</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span>
 
-    <span class="c1">-- Set all entities to invisible if guest name</span>
-    <span class="kr">if</span> <span class="n">guest</span><span class="p">:</span><span class="n">GetSelectedGuestName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Mrs. Invis&quot;</span> <span class="kr">then</span>
-        <span class="n">entities</span> <span class="o">=</span> <span class="n">ZTWorldMgr</span><span class="p">.</span><span class="n">GetAllEntitiesOfType</span><span class="p">(</span><span class="n">cNames</span><span class="p">)</span>
-        <span class="n">ZTWorldMgr</span><span class="p">.</span><span class="n">MakeInvisible</span><span class="p">(</span><span class="n">entities</span><span class="p">,</span> <span class="kc">false</span><span class="p">)</span>
+        <span class="c1">-- Set all entities to invisible if guest name</span>
+        <span class="kr">if</span> <span class="n">guest</span><span class="p">:</span><span class="n">name</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Mrs. Invis&quot;</span> <span class="kr">then</span>
+            <span class="kd">local</span> <span class="n">entities</span> <span class="o">=</span> <span class="n">ztWorldMgr</span><span class="p">.</span><span class="n">getAllEntitiesOfType</span><span class="p">(</span><span class="n">cNames</span><span class="p">)</span>
+            <span class="n">ztWorldMgr</span><span class="p">.</span><span class="n">setVanishGuard</span><span class="p">(</span><span class="n">entities</span><span class="p">,</span> <span class="kc">false</span><span class="p">)</span>
 
-    <span class="c1">-- Set all entities to visible if guest name</span>
-    <span class="kr">elseif</span> <span class="n">guest</span><span class="p">:</span><span class="n">GetSelectedGuestName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Mr. Show&quot;</span> <span class="kr">then</span>
-        <span class="n">entities</span> <span class="o">=</span> <span class="n">ZTWorldMgr</span><span class="p">.</span><span class="n">GetAllEntitiesOfType</span><span class="p">(</span><span class="n">cNames</span><span class="p">)</span>
-        <span class="n">ZTWorldMgr</span><span class="p">.</span><span class="n">MakeInvisible</span><span class="p">(</span><span class="n">entities</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
+        <span class="c1">-- Set all entities to visible if guest name</span>
+        <span class="kr">elseif</span> <span class="n">guest</span><span class="p">:</span><span class="n">name</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Mr. Show&quot;</span> <span class="kr">then</span>
+            <span class="kd">local</span> <span class="n">entities</span> <span class="o">=</span> <span class="n">ztWorldMgr</span><span class="p">.</span><span class="n">getAllEntitiesOfType</span><span class="p">(</span><span class="n">cNames</span><span class="p">)</span>
+            <span class="n">ztWorldMgr</span><span class="p">.</span><span class="n">setVanishGuard</span><span class="p">(</span><span class="n">entities</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
         <span class="kr">end</span>
     <span class="kr">end</span>
 <span class="kr">end</span>
 </code></pre></div>
-<p>The <code>emu_run</code> function now has a new line at the top that creates a table called <code>cNames</code> that contains the IDs of the stick pole fence and the stick pole fence gate. We need to do this because the <code>GetAllEntitiesOfType</code> function requires a table of IDs to find the entities we want to operate on. If we really wanted to, we could add more IDs to this table to make more fences invisible, but for now we only need these two.</p>
+<p>The <code>emu_run</code> function now has a new line at the top that creates a table called <code>cNames</code> that contains the IDs of the stick pole fence and the stick pole fence gate. We need to do this because the <code>getAllEntitiesOfType</code> function requires a table of IDs to find the entities we want to operate on. If we really wanted to, we could add more IDs to this table to make more fences invisible, but for now we only need these two.</p>
 <p>The <code>emu_run</code> function now has two new <code>if</code> blocks that check if the selected guest's name is equal to the string <code>"Mrs. Invis"</code> or <code>"Mr. Show"</code>. If the condition is <code>true</code>, then we run the code inside of the <code>if</code> block. If the condition is <code>false</code>, then we skip the code inside of the <code>if</code> block.</p>
 <p>If the selected guest's name is equal to <code>"Mrs. Invis"</code>, then we get all of the stick pole fences and stick pole fence gates on the map and make them invisible. If the selected guest's name is equal to <code>"Mr. Show"</code>, then we get all of the stick pole fences and stick pole fence gates on the map and make them visible.</p>
 <h2 id="installing-the-easter-egg-script">Installing the Easter Egg Script</h2>
 <p>Once you have finished customizing the script, save it and remember that it needs to be in the <code>scripts</code> directory in the game's main install directory located at <code>C:\Program Files (x86)\Microsoft Games\Zoo Tycoon</code>.</p>
 <p>Boot up the game and select a guest. Change their name to "Mrs. Invis" and you should see all of the stick pole fences and stick pole fence gates in the zoo disappear. Change the guest's name to "Mr. Show" and you should see all of the stick pole fences and stick pole fence gates reappear.</p>
 <p><img alt="Invisible Fences" src="../images/invis-script.gif" /></p>
-<h2 id="possible-errors">Possible Errors</h2>
+<h2 id="debugging-and-questions">Debugging and Questions</h2>
 <p>Since this tutorial is very specific to one possible application of this template script, there are many things that can wrong. Issues can be due to the game, the EMU API, or incorrect Lua syntax or EMU API function usage. If you need help diagnosing an issue, feel free to ask for help in the <a href="https://discord.gg/KcpedmghWm">OpenZT Discord server</a>.</p>
+<h2 id="making-this-script-your-own">Making this Script Your Own</h2>
+<p>You can use this template script to create any easter egg you want. You can make a guest say something funny, make an animal do a trick, or even make a building explode. The possibilities are endless. Of course, your mileage may vary depending on what is currently supported in EMU API, but it's worth experimenting with with all of the functions detailed in the <a href="/docs/zt1/reference/emu/api/index.md">EMU API documentation</a>. If you need a primer on Lua scripting to get the logic just right, I recommend reading the <a href="../lua-scripting-in-zt1/">Scripting in Zoo Tycoon 1</a> guide.</p>
 
 
 

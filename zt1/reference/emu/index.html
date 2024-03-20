@@ -22,7 +22,7 @@
     
     
       
-        <title>EMU | Extensible Modding Utility - ZooBerry Docs</title>
+        <title>Index - ZooBerry Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#emu-extensible-modding-utility" class="md-skip">
+        <a href="#download" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              EMU | Extensible Modding Utility
+              Index
             
           </span>
         </div>
@@ -1054,6 +1054,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
       
@@ -1104,6 +1110,27 @@
   
   
     <li class="md-nav__item">
+      <a href="api/entities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="api/entitytypes/" class="md-nav__link">
         
   
@@ -1130,6 +1157,48 @@
   
   <span class="md-ellipsis">
     Game Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/uigeneral/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UI General
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/worldmanager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    World Manager
   </span>
   
 
@@ -2131,8 +2200,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2141,9 +2208,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#a-zoo-tycoon-complete-collection-api-utility-for-modders" class="md-nav__link">
+  <a href="#download" class="md-nav__link">
     <span class="md-ellipsis">
-      A Zoo Tycoon Complete Collection API Utility for Modders
+      Download
     </span>
   </a>
   
@@ -2171,6 +2238,15 @@
   <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
     </span>
   </a>
   
@@ -2207,16 +2283,27 @@
   
 
 
-<h1 id="emu-extensible-modding-utility">EMU | Extensible Modding Utility</h1>
-<h2 id="a-zoo-tycoon-complete-collection-api-utility-for-modders">A Zoo Tycoon Complete Collection API Utility for Modders</h2>
-<p>Zoo Tycoon initially offered limited modding tools, leading modders to heavily depend on the game's INI configuration for modifications. This project aims to enhance modding accessibility by introducing embedded Lua scripting and expanded access to game resources that were previously unavailable.</p>
-<h2 id="compatibility">Compatibility</h2>
-<p>This API requires the Zoo Tycoon Complete Collection, including both expansions, and a Windows XP or newer operating system with the Microsoft Visual C++ 2008 Redistributable installed.</p>
-<p>If you do not own the Complete Collection but own the base game and have the two expansions installed, that should work as well.</p>
-<h2 id="build-from-source">Build from Source</h2>
-<p>The .sln file has been included for the option to build from source. This requires Microsoft Visual C++ 2008 in order to compile. Express Edition should be fine.</p>
-<h2 id="installation">Installation</h2>
+<h1 align="center">EMU | Extensible Modding Utility</h1>
+
+<h3 align="center"> A Zoo Tycoon 1 Scripting API for Modders</h3>
+
+<p>Vanilla Zoo Tycoon 1 has over a 20 year history of modding but users have only been able to modify the game through editing of INI configuration files. This project enhances modding capabilities by giving modders Lua scripting support so that they can create more complex and interesting mods.</p>
+<h3 id="download">Download</h3>
+<p><a href="https://github.com/openztcc/EMU/releases/latest">Download the latest release on Github</a></p>
+<h3 id="compatibility">Compatibility</h3>
+<p>To use this API, you must:</p>
+<ul>
+<li>Own the Zoo Tycoon Complete Collection, or the base game with both expansions installed.</li>
+<li>Have a Windows 7 or newer operating system.</li>
+<li>Install the <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170">Microsoft Visual C++ 2017 Redistributable</a>.</li>
+</ul>
+<h3 id="build-from-source">Build from Source</h3>
+<p>The .sln file has been included for the option to build from source. The project is build with Visual Studio 2022.</p>
+<h3 id="installation">Installation</h3>
 <p>Drop the res-EMU.dll binary directly into your <code>C:\Program Files (x86)\Microsoft Games\Zoo Tycoon</code> game directory.</p>
+<h3 id="references">References</h3>
+<p><a href="emu-console/">Console Documentation</a><br />
+<a href="api/">Scripting API Documentation</a></p>
 
 
 

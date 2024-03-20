@@ -8,4 +8,5 @@ If you have any questions or need help with any of the tutorials in this section
 
 ## Scripting in Zoo Tycoon 1
 - [Lua Scripting in ZT1: A Brief Primer](./lua-scripting-in-zt1.md)
+- [Operating on Entities](./operating-on-entities.md)
 - [Making an Easter Egg Mod](./making-an-easter-egg.md)

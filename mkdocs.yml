@@ -46,6 +46,7 @@ nav:
     - Advanced Modding:
         - zt1/advanced/index.md
         - Lua Scripting - A Brief Primer: zt1/advanced/lua-scripting-in-zt1.md
+        - Operating on Entities: zt1/advanced/operating-on-entities.md
         - Making an Easter Egg: zt1/advanced/making-an-easter-egg.md
     - Tool Guides:
         - Visual Studio Code: zt1/tool-guides/visual-studio-code.md

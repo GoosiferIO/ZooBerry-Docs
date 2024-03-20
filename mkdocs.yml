@@ -43,11 +43,18 @@ nav:
   - Home:
       - Index: index.md
   - Modding Tutorials:
-    - Getting Started: 
-        - zt1/getting-started/index.md
-        - File Formats and Tools: zt1/getting-started/file-formats-and-tools.md
-        - Mod Installation: zt1/getting-started/mod-installation.md
+    # - Getting Started: 
+    #     - zt1/getting-started/index.md
+    - Advanced Modding:
+        - zt1/advanced/index.md
+        - Lua Scripting - A Brief Primer: zt1/advanced/lua-scripting-in-zt1.md
+        - Making an Easter Egg: zt1/advanced/making-an-easter-egg.md
+    - Tool Guides:
+        - Visual Studio Code: zt1/tool-guides/visual-studio-code.md
   - Reference:
+      - Basic References:
+          - File Formats and Tools: zt1/basic-reference/file-formats-and-tools.md
+          - Mod Installation: zt1/basic-reference/mod-installation.md
       - Configuration References:
           - zt1/configuration-references/index.md
           - Scenery : zt1/configuration-references/scenery-files.md

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.zooberry.org/zt1/getting-started/file-formats-and-tools/">
+        <link rel="canonical" href="https://docs.zooberry.org/zt1/advanced/making-an-easter-egg/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../lua-scripting-in-zt1/">
       
       
-        <link rel="next" href="../mod-installation/">
+        <link rel="next" href="../../tool-guides/visual-studio-code/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>File Formats and Tools - ZooBerry Docs</title>
+        <title>Making an Easter Egg - ZooBerry Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#zoo-tycoon-1-file-formats-and-tools-to-open-them" class="md-skip">
+        <a href="#making-an-easter-egg-mod" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              File Formats and Tools
+              Making an Easter Egg
             
           </span>
         </div>
@@ -278,7 +278,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../configuration-references/" class="md-tabs__link">
+        <a href="../../basic-reference/file-formats-and-tools/" class="md-tabs__link">
           
   
     
@@ -299,7 +299,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../web-resources/" class="md-tabs__link">
+      <a href="../../getting-started/web-resources/" class="md-tabs__link">
         
   
     
@@ -444,6 +444,8 @@
       
         
       
+        
+      
     
     
       
@@ -523,7 +525,7 @@
               
   
   <span class="md-ellipsis">
-    Getting Started
+    Advanced Modding
   </span>
   
 
@@ -539,10 +541,31 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
-            Getting Started
+            Advanced Modding
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lua-scripting-in-zt1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lua Scripting - A Brief Primer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -565,7 +588,7 @@
           
   
   <span class="md-ellipsis">
-    File Formats and Tools
+    Making an Easter Egg
   </span>
   
 
@@ -576,7 +599,7 @@
         
   
   <span class="md-ellipsis">
-    File Formats and Tools
+    Making an Easter Egg
   </span>
   
 
@@ -598,46 +621,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#file-formats" class="md-nav__link">
+  <a href="#tools-required" class="md-nav__link">
     <span class="md-ellipsis">
-      File Formats
+      Tools Required
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="File Formats">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-our-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Our Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-easter-egg-template-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Easter Egg Template Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-the-easter-egg-template-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing the Easter Egg Template Script
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Customizing the Easter Egg Template Script">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuration-files" class="md-nav__link">
+  <a href="#implementing-the-changes" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration Files
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#asset-packs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Asset Packs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#graphics-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Graphics Files
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#misc-binary-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Misc Binary Files
+      Implementing the Changes
     </span>
   </a>
   
@@ -645,6 +668,24 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-easter-egg-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing the Easter Egg Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#possible-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possible Errors
+    </span>
+  </a>
   
 </li>
       
@@ -657,6 +698,61 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tool Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tool Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -664,11 +760,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../mod-installation/" class="md-nav__link">
+      <a href="../../tool-guides/visual-studio-code/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Mod Installation
+    Visual Studio Code
   </span>
   
 
@@ -701,6 +797,8 @@
   
     
     
+      
+        
       
         
       
@@ -749,6 +847,102 @@
     
       
         
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basic References
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Basic References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-reference/file-formats-and-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Formats and Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-reference/mod-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mod Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
           
         
       
@@ -768,7 +962,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           
@@ -784,14 +978,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Configuration References
           </label>
@@ -876,10 +1070,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -890,8 +1084,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             String Table References
           </label>
@@ -977,10 +1171,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -991,8 +1185,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_2">
             <span class="md-nav__icon md-icon"></span>
             Official String Tables
           </label>
@@ -1448,10 +1642,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1462,8 +1656,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_3">
             <span class="md-nav__icon md-icon"></span>
             Unofficial String Tables
           </label>
@@ -1730,7 +1924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../web-resources/" class="md-nav__link">
+      <a href="../../getting-started/web-resources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1790,46 +1984,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#file-formats" class="md-nav__link">
+  <a href="#tools-required" class="md-nav__link">
     <span class="md-ellipsis">
-      File Formats
+      Tools Required
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="File Formats">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-our-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Our Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-easter-egg-template-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Easter Egg Template Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-the-easter-egg-template-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing the Easter Egg Template Script
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Customizing the Easter Egg Template Script">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuration-files" class="md-nav__link">
+  <a href="#implementing-the-changes" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration Files
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#asset-packs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Asset Packs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#graphics-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Graphics Files
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#misc-binary-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Misc Binary Files
+      Implementing the Changes
     </span>
   </a>
   
@@ -1837,6 +2031,24 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-easter-egg-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing the Easter Egg Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#possible-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possible Errors
+    </span>
+  </a>
   
 </li>
       
@@ -1855,7 +2067,7 @@
                   
 
   
-    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/edit/main/docs/zt1/getting-started/file-formats-and-tools.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/edit/main/docs/zt1/advanced/making-an-easter-egg.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1864,343 +2076,133 @@
     
       
     
-    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/raw/main/docs/zt1/getting-started/file-formats-and-tools.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/raw/main/docs/zt1/advanced/making-an-easter-egg.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="zoo-tycoon-1-file-formats-and-tools-to-open-them">Zoo Tycoon 1 File Formats and Tools to Open Them</h1>
-<h2 id="file-formats">File Formats</h2>
-<p>Blue Fang used a custom <code>.INI</code> file implementation to handle the game's entity and system configuration. Making copies of asset directories containing these configuration files allowed for modders to create their own expansive content for the game. The game also has its own set of proprietary graphics formats that require other tools to extract. Below are common file formats relevant to modders interested in making their own content for the game:</p>
-<h3 id="configuration-files">Configuration Files</h3>
-<div class="admonition info">
-<p class="admonition-title">*Text Editors</p>
-<p>Any text editor that can handle line endings that have 1 or 2 control characters. This includes WordPad that comes with MS Windows, but not Notepad because Notepad understands only 1 type of line ending. VS Code in particular is a fantastic option.</p>
+<h1 id="making-an-easter-egg-mod">Making an Easter Egg Mod</h1>
+<div class="admonition warning">
+<p class="admonition-title">Difficulty: Advanced</p>
 </div>
-<table>
-<thead>
-<tr>
-<th>File Extension</th>
-<th>Implied Monikor</th>
-<th>Purpose</th>
-<th>Suggested Tools to Open</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>*.cfg</code></td>
-<td>Configuration</td>
-<td>Game systems configuration</td>
-<td>Any text editor*</td>
-</tr>
-<tr>
-<td><code>*.ani</code></td>
-<td>Animation</td>
-<td>Animation configuration</td>
-<td>Any text editor*</td>
-</tr>
-<tr>
-<td><code>*.scn</code></td>
-<td>Scenario</td>
-<td>Scenario configuration</td>
-<td>Any text editor*</td>
-</tr>
-<tr>
-<td><code>*.ucb</code></td>
-<td>User-Created Building</td>
-<td>Building configuration</td>
-<td>Any text editor*</td>
-</tr>
-<tr>
-<td><code>*.ucs</code></td>
-<td>User-Created Scenery</td>
-<td>Scenery configuration</td>
-<td>Any text editor*</td>
-</tr>
-<tr>
-<td><code>*.uca</code></td>
-<td>User-Created Animal</td>
-<td>Animal configuration</td>
-<td>Any text editor*</td>
-</tr>
-<tr>
-<td><code>*.ai</code></td>
-<td>Artificial Intelligence</td>
-<td>Official entity (AI) configuration</td>
-<td>Any text editor*</td>
-</tr>
-<tr>
-<td><code>*.lyt</code></td>
-<td>Layout</td>
-<td>Layout configuration</td>
-<td>Any text editor*</td>
-</tr>
-<tr>
-<td><code>*.txt</code></td>
-<td>Text</td>
-<td>Non-localized text and user-made animal info</td>
-<td>Any text editor*</td>
-</tr>
-</tbody>
-</table>
-<details>
-<summary>Recommended tools to edit configuration files</summary>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Where to Find</th>
-<th>Relevent File Types it Opens</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Notepad++</td>
-<td><a href="https://notepad-plus-plus.org/">Notepad++</a></td>
-<td><code>.txt</code>, <code>.ucs</code>, <code>.ai</code>, <code>.scn</code>, <code>.ani</code>, <code>.cfg</code>, <code>.ucb</code>, <code>.uca</code>, <code>.pal</code>, <code>.lyt</code>, <code>.txt</code></td>
-<td>Notepad++ is a free and open-source text editor. It can be used to edit many of the text-based files found in the game.</td>
-</tr>
-<tr>
-<td>VS Code</td>
-<td><a href="https://code.visualstudio.com/">Visual Studio Code</a></td>
-<td><code>.txt</code>, <code>.ucs</code>, <code>.ai</code>, <code>.scn</code>, <code>.ani</code>, <code>.cfg</code>, <code>.ucb</code>, <code>.uca</code>, <code>.pal</code>, <code>.lyt</code>, <code>.txt</code></td>
-<td>Visual Studio Code is a free and open-source text editor. It can be used to edit many of the text-based files found in the game.</td>
-</tr>
-</tbody>
-</table>
-</details>
-<h3 id="asset-packs">Asset Packs</h3>
-<div class="admonition info">
-<p class="admonition-title"><code>*.ztd</code> Files</p>
-<p><code>*.ztd</code> files are just zip files and can be opened with any zip utility. 7zip is a known quantity and easily-accessible, but chances are you probably have a similar utility installed already.</p>
-</div>
-<table>
-<thead>
-<tr>
-<th>File Extension</th>
-<th>Implied Monikor</th>
-<th>Purpose</th>
-<th>Suggested Tools to Open</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>*.ztd</code></td>
-<td>Zoo Tycoon Data</td>
-<td>Packaged assets</td>
-<td>7zip</td>
-</tr>
-</tbody>
-</table>
-<details>
-<summary>Recommended tools to open <code>*.ztd</code> files</summary>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Where to Find</th>
-<th>Relevent File Types it Opens</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>7-Zip</td>
-<td><a href="https://www.7-zip.org/">7-Zip</a></td>
-<td><code>.ztd</code></td>
-<td>7-Zip is a free and open-source file archiver. It can be used to extract and compress <code>*.ztd</code> files.</td>
-</tr>
-</tbody>
-</table>
-</details>
-<h3 id="graphics-files">Graphics Files</h3>
-<table>
-<thead>
-<tr>
-<th>File Extension</th>
-<th>Implied Monikor</th>
-<th>Purpose</th>
-<th>Suggested Tools to Open</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>No extension</td>
-<td>None</td>
-<td>Graphics file</td>
-<td>ZooT, APExp, ZT Studio</td>
-</tr>
-<tr>
-<td><code>*.bmp</code></td>
-<td>Bitmap</td>
-<td>Fring and grid graphics</td>
-<td>GIMP, any graphics editor</td>
-</tr>
-<tr>
-<td><code>*.lle</code></td>
-<td>Unknown</td>
-<td>Pre-rendered terrain blending graphics</td>
-<td>Unknown</td>
-</tr>
-<tr>
-<td><code>*.tga</code></td>
-<td>Targa</td>
-<td>Award, terrain, and user interface graphics</td>
-<td>GIMP, any graphics editor</td>
-</tr>
-<tr>
-<td><code>*.pal</code></td>
-<td>Pallette</td>
-<td>Color palette</td>
-<td>ZooT, APExp, ZT Studio</td>
-</tr>
-</tbody>
-</table>
-<details>
-<summary>Recommended tools to open terrain graphic files</summary>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Where to Find</th>
-<th>Relevent File Types it Opens</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GIMP</td>
-<td><a href="https://www.gimp.org/">GIMP</a></td>
-<td><code>.bmp</code>, <code>.tga</code></td>
-<td>GIMP is a free and open-source raster graphics editor. It can be used to create and edit <code>*.bmp</code> and <code>*.tga</code> files found in the game.</td>
-</tr>
-</tbody>
-</table>
-</details>
-<details>
-<summary>Recommended tools to open the proprietary graphics files</summary>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>The link to Zoot 1.1 goes down on occasion. If you are unable to access the link, you might need to wait a few days for it to come back up due to server issues.</p>
-</div>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Where to Find</th>
-<th>Relevent File Types it Opens</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Zoot 1.1</td>
-<td><a href="http://www.ztcdd.org/DG/index.php?topic=4773.0">Zoot 1.1</a></td>
-<td>Proprietary graphics files for the game do not have an extension, <code>*.pal</code></td>
-<td>Zoot 1.1 is a modding tool that can be used to create and edit ZT1 proprietary graphics files. Note: Zoot 1.1 is found in the second comment.</td>
-</tr>
-<tr>
-<td>ZT Studio</td>
-<td><a href="https://github.com/jbostoen/ZTStudio">ZT Studio</a></td>
-<td>Proprietary graphics files for the game do not have an extension, <code>*.pal</code></td>
-<td>ZT Studio is a modding tool that can be used to create and edit ZT1 proprietary graphics files.</td>
-</tr>
-</tbody>
-</table>
-</details>
-<h3 id="misc-binary-files">Misc Binary Files</h3>
-<div class="admonition info">
-<p class="admonition-title"><code>lang*.dll</code></p>
-<p>Contains Zoo Tycoon Localizable Resources using TEXT, BITMAP, MENU, DIALOG, STRINGTABLE, and ACCELERATORS blocks.</p>
-</div>
-<table>
-<thead>
-<tr>
-<th>File Extension</th>
-<th>Implied Monikor</th>
-<th>Purpose</th>
-<th>Suggested Tools to Open</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>lang*.dll</code></td>
-<td>Dynamic Link Library</td>
-<td>Localizable resources</td>
-<td>Resource Hacker, Risoh Editor</td>
-</tr>
-<tr>
-<td><code>*.zoo</code></td>
-<td>Zoo</td>
-<td>Zoo Tycoon save</td>
-<td>Zoo Tycoon 1, Any hex editor</td>
-</tr>
-<tr>
-<td><code>*.wav</code></td>
-<td>Wave Sound File</td>
-<td>Sounds</td>
-<td>Audacity, Audition, Tenacity</td>
-</tr>
-</tbody>
-</table>
-<details>
-<summary>Recommended tools to open <code>lang*.dll</code> files</summary>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Where to Find</th>
-<th>Relevent File Types it Opens</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Resource Hacker</td>
-<td><a href="http://www.angusj.com/resourcehacker/">Resource Hacker</a></td>
-<td><code>lang*.dll</code></td>
-<td>Resource Hacker is a free and open-source resource editor for Windows applications. It can be used to edit the game string tables.</td>
-</tr>
-<tr>
-<td>Risoh Editor</td>
-<td><a href="https://github.com/katahiromz/RisohEditor">Risoh Editor</a></td>
-<td><code>lang*.dll</code></td>
-<td>Risoh Editor is a free and open-source resource editor for Windows applications. It can be used to edit the game string tables.</td>
-</tr>
-</tbody>
-</table>
-</details>
-<details>
-<summary>Recommended tools to open <code>*.wav</code> files</summary>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Where to Find</th>
-<th>Relevent File Types it Opens</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Audacity</td>
-<td><a href="https://www.audacityteam.org/">Audacity</a></td>
-<td><code>.wav</code></td>
-<td>Audacity is a free and open-source digital audio editor and recording application. It can be used to edit and create <code>.wav</code> files.</td>
-</tr>
-<tr>
-<td>Tenacity</td>
-<td><a href="https://tenacityaudio.org/">Tenacity</a></td>
-<td><code>.wav</code></td>
-<td>Tenacity is a free and open-source digital audio editor and recording application. It can be used to edit and create <code>.wav</code> files.</td>
-</tr>
-</tbody>
-</table>
-</details>
-<p>These files can all be found inside of the game's default install directory at <code>C:\Program Files (x86)\Microsoft Games\Zoo Tycoon</code>.</p>
+<p>Easter eggs in Zoo Tycoon 1 were a fun way to add a little bit of humor to the game, or even to cheat your way to a better zoo. To activate an easter egg, you would click on a guest, staff member, animal, or exhibit and then change their name to a specific string. This would trigger the easter egg and give you a special effect.</p>
+<p><img alt="Easter Egg" src="../images/mr-orange.png" /></p>
+<h2 id="tools-required">Tools Required</h2>
+<ul>
+<li>Text Editor</li>
+<li>EMU API</li>
+</ul>
+<p>We will need EMU API to create our easter egg, a tool that gives us scripting capabilities for Zoo Tycoon 1. You can download the latest version on its <a href="https://github.com/openztcc/EMU">GitHub page</a>. Make sure to follow the installation instructions on the GitHub page before continuing.</p>
+<p>We will also need a text editor to write our script. Any text editor will do, but I recommend using <a href="https://code.visualstudio.com/">Visual Studio Code</a>. Check out the <a href="../../tool-guides/visual-studio-code/">Using Visual Studio Code</a> guide for more information.</p>
+<p>If you're new to scripting, Lua, or programming in general, I recommend reading the <a href="../lua-scripting-in-zt1/">Scripting in Zoo Tycoon 1</a> guide before continuing.</p>
+<h2 id="creating-our-script">Creating Our Script</h2>
+<p>EMU API reads Lua scripts from a directory called <code>scripts</code> in the game's main install directory located at <code>C:\Program Files (x86)\Microsoft Games\Zoo Tycoon</code>. If you don't have a <code>scripts</code> directory, you will want to create one for this to work.</p>
+<p><img alt="Scripts Directory" src="../images/scripts-dir.png" /></p>
+<p>Inside of the <code>scripts</code> directory, create a new file called <code>easteregg.emu</code>. This is the Lua file that will contain our easter egg script. Open this file in your text editor.</p>
+<h2 id="the-easter-egg-template-script">The Easter Egg Template Script</h2>
+<div class="highlight"><pre><span></span><code><span class="kr">function</span> <span class="nf">emu_run</span><span class="p">()</span>
+    <span class="c1">-- Get the selected entity</span>
+    <span class="n">entity</span> <span class="o">=</span> <span class="n">general</span><span class="p">.</span><span class="n">getSelectedEntity</span><span class="p">()</span>
+
+    <span class="c1">-- Only run if entity is selected.</span>
+    <span class="kr">if</span> <span class="ow">not</span> <span class="n">general</span><span class="p">.</span><span class="n">IsEntityNull</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span> <span class="kr">then</span>
+
+        <span class="c1">-- Create the ZTGuest object</span>
+        <span class="n">guest</span> <span class="o">=</span> <span class="n">ZTGuest</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span>
+
+        <span class="c1">-- Set all entities to invisible if guest name</span>
+        <span class="kr">if</span> <span class="n">guest</span><span class="p">:</span><span class="n">GetSelectedGuestName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;&lt;GUEST-NAME&gt;&quot;</span> <span class="kr">then</span>
+            <span class="c1">-- &lt;DO SOMETHING&gt;</span>
+        <span class="kr">end</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+</code></pre></div>
+<p>You will only need to modify the <code>&lt;GUEST-NAME&gt;</code> and <code>&lt;DO SOMETHING&gt;</code> placeholders to create your easter egg. The <code>&lt;GUEST-NAME&gt;</code> placeholder should be replaced with the name of the guest that will trigger the easter egg, and the <code>&lt;DO SOMETHING&gt;</code> placeholder should be replaced with the action you want to perform.</p>
+<p>For this tutorial, I'm going to use the Invisible Fences Easter Egg as an example. Please make sure to uninstall the Invisible Fences Easter Egg script if you already have it installed before continuing because we will be recreating it, and you'll want to know if your work isn't in conflict with the existing script.</p>
+<p>First, let's walk through what the template script is doing:</p>
+<ol>
+<li>
+<p>The <code>emu_run</code> function is called by EMU API when the game is running. Anything inside will run in sync with the game loop. (that means it will run every frame)</p>
+</li>
+<li>
+<p>We get the selected entity from the game. An entity is anything in the game that can be placed from the purchase menu, such as animals, guests, staff, buildings, foliage, and scenery.</p>
+<div class="highlight"><pre><span></span><code><span class="n">entity</span> <span class="o">=</span> <span class="n">general</span><span class="p">.</span><span class="n">getSelectedEntity</span><span class="p">()</span>
+</code></pre></div>
+<p>The <code>GetSelectedEntity</code> function belongs to the <code>general</code> object, which is a global object that EMU API provides for us to interact with the game and is required. The <code>GetSelectedEntity</code> function returns the entity that is currently selected in the game, or <code>Null</code> if nothing is selected. We then store this result in a variable called <code>entity</code>.</p>
+</li>
+<li>
+<p>The next line checks if the entity is not <code>Null</code>. If it is <code>Null</code>, then we don't want to run the rest of the script because there is nothing selected in the game.</p>
+<div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="ow">not</span> <span class="n">general</span><span class="p">.</span><span class="n">IsEntityNull</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span> <span class="kr">then</span>
+</code></pre></div>
+<p>Like the <code>GetSelectedEntity</code> function, the <code>IsEntityNull</code> function also belongs to the <code>general</code> object. It returns <code>true</code> if the entity is <code>Null</code>, and <code>false</code> if it is not.</p>
+</li>
+<li>
+<p>We then create a <code>ZTGuest</code> object from the <code>entity</code> variable. This is a custom object that EMU API provides for us to interact with guests in the game. We then store this result in a variable called <code>guest</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">guest</span> <span class="o">=</span> <span class="n">ZTGuest</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span>
+</code></pre></div>
+<p>Once we have a guest object, we can start operating on it with functions that EMU API provides. For example, we can now get the guest's name.</p>
+</li>
+<li>
+<p>The next line checks if the selected guest's name is equal to the string <code>"&lt;GUEST-NAME&gt;"</code> using the <code>GetSelectedGuestName</code> function. Note that <code>GetSelectedGuestName</code> belongs to the <code>ZTGuest</code> object, and since we have a <code>ZTGuest</code> object stored in the <code>guest</code> variable, we can call this function on it.</p>
+<p>The syntax for calling a function on an object is <code>object:function()</code>. The <code>:</code> is used to call a function on an object, and the <code>.</code> is used to access a property of an object. This is a common pattern in Lua.</p>
+<div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="n">guest</span><span class="p">:</span><span class="n">GetSelectedGuestName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;&lt;GUEST-NAME&gt;&quot;</span> <span class="kr">then</span>
+    <span class="c1">-- rest of code</span>
+<span class="kr">end</span>
+</code></pre></div>
+<p>If the condition is <code>true</code>, then we run the code inside of the <code>if</code> block. If the condition is <code>false</code>, then we skip the code inside of the <code>if</code> block.</p>
+</li>
+</ol>
+<h2 id="customizing-the-easter-egg-template-script">Customizing the Easter Egg Template Script</h2>
+<p>Now that we understand the template script, let's customize it for our Invisible Fences Easter Egg. We want to make all of the fences in the zoo invisible when a guest with the name "Mrs. Invis" is selected.</p>
+<p>We will need the following functions:</p>
+<ul>
+<li>
+<p><code>ZTWorldMgr.GetAllEntitiesOfType(table)</code> - This function returns a table of all entities currently on the map. To find them, it takes in a table of integers that represent the entity type IDs. If you remember from other tutorials, IDs in Zoo Tycoon 1 are used to tie entities to the strings they display in the game, but also to the game's internal logic so that it can find those entities.</p>
+<p>For example, the game recognizes the ID number for the stick pole fence as <code>9313</code>, so when we feed this number into the function, it will return all of the stick pole fences on the map.</p>
+</li>
+<li>
+<p><code>ZTFenceType.SetVanishGuard(bool)</code> - This function sets the visibility of the fence and also makes it indestructible. If we set the argument to <code>true</code>, the fence will be invisible and indestructible. If we set the argument to <code>false</code>, the fence will be visible and destructible.</p>
+<p>This function belongs to the <code>ZTFenceType</code> object, which is an object that EMU API provides for us to interact with fences in the game.</p>
+</li>
+</ul>
+<h3 id="implementing-the-changes">Implementing the Changes</h3>
+<div class="highlight"><pre><span></span><code><span class="kr">function</span> <span class="nf">emu_run</span><span class="p">()</span>
+<span class="c1">--  Add additional ids here if needed. Last id must be 0.</span>
+<span class="n">cNames</span> <span class="o">=</span> <span class="p">{</span><span class="mi">9313</span><span class="p">,</span> <span class="mi">9314</span><span class="p">}</span>
+
+<span class="c1">-- Get the selected entity</span>
+<span class="n">entity</span> <span class="o">=</span> <span class="n">general</span><span class="p">.</span><span class="n">getSelectedEntity</span><span class="p">()</span>
+
+<span class="c1">-- Only run if entity is selected.</span>
+<span class="kr">if</span> <span class="ow">not</span> <span class="n">general</span><span class="p">.</span><span class="n">IsEntityNull</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span> <span class="kr">then</span>
+
+    <span class="c1">-- Create the ZTGuest object</span>
+    <span class="n">guest</span> <span class="o">=</span> <span class="n">ZTGuest</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span>
+
+    <span class="c1">-- Set all entities to invisible if guest name</span>
+    <span class="kr">if</span> <span class="n">guest</span><span class="p">:</span><span class="n">GetSelectedGuestName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Mrs. Invis&quot;</span> <span class="kr">then</span>
+        <span class="n">entities</span> <span class="o">=</span> <span class="n">ZTWorldMgr</span><span class="p">.</span><span class="n">GetAllEntitiesOfType</span><span class="p">(</span><span class="n">cNames</span><span class="p">)</span>
+        <span class="n">ZTWorldMgr</span><span class="p">.</span><span class="n">MakeInvisible</span><span class="p">(</span><span class="n">entities</span><span class="p">,</span> <span class="kc">false</span><span class="p">)</span>
+
+    <span class="c1">-- Set all entities to visible if guest name</span>
+    <span class="kr">elseif</span> <span class="n">guest</span><span class="p">:</span><span class="n">GetSelectedGuestName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Mr. Show&quot;</span> <span class="kr">then</span>
+        <span class="n">entities</span> <span class="o">=</span> <span class="n">ZTWorldMgr</span><span class="p">.</span><span class="n">GetAllEntitiesOfType</span><span class="p">(</span><span class="n">cNames</span><span class="p">)</span>
+        <span class="n">ZTWorldMgr</span><span class="p">.</span><span class="n">MakeInvisible</span><span class="p">(</span><span class="n">entities</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
+        <span class="kr">end</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+</code></pre></div>
+<p>The <code>emu_run</code> function now has a new line at the top that creates a table called <code>cNames</code> that contains the IDs of the stick pole fence and the stick pole fence gate. We need to do this because the <code>GetAllEntitiesOfType</code> function requires a table of IDs to find the entities we want to operate on. If we really wanted to, we could add more IDs to this table to make more fences invisible, but for now we only need these two.</p>
+<p>The <code>emu_run</code> function now has two new <code>if</code> blocks that check if the selected guest's name is equal to the string <code>"Mrs. Invis"</code> or <code>"Mr. Show"</code>. If the condition is <code>true</code>, then we run the code inside of the <code>if</code> block. If the condition is <code>false</code>, then we skip the code inside of the <code>if</code> block.</p>
+<p>If the selected guest's name is equal to <code>"Mrs. Invis"</code>, then we get all of the stick pole fences and stick pole fence gates on the map and make them invisible. If the selected guest's name is equal to <code>"Mr. Show"</code>, then we get all of the stick pole fences and stick pole fence gates on the map and make them visible.</p>
+<h2 id="installing-the-easter-egg-script">Installing the Easter Egg Script</h2>
+<p>Once you have finished customizing the script, save it and remember that it needs to be in the <code>scripts</code> directory in the game's main install directory located at <code>C:\Program Files (x86)\Microsoft Games\Zoo Tycoon</code>.</p>
+<p>Boot up the game and select a guest. Change their name to "Mrs. Invis" and you should see all of the stick pole fences and stick pole fence gates in the zoo disappear. Change the guest's name to "Mr. Show" and you should see all of the stick pole fences and stick pole fence gates reappear.</p>
+<p><img alt="Invisible Fences" src="../images/invis-script.gif" /></p>
+<h2 id="possible-errors">Possible Errors</h2>
+<p>Since this tutorial is very specific to one possible application of this template script, there are many things that can wrong. Issues can be due to the game, the EMU API, or incorrect Lua syntax or EMU API function usage. If you need help diagnosing an issue, feel free to ask for help in the <a href="https://discord.gg/KcpedmghWm">OpenZT Discord server</a>.</p>
 
 
 
@@ -2223,7 +2225,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 2, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 20, 2024</span>
   </span>
 
     
@@ -2233,7 +2235,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 28, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 20, 2024</span>
   </span>
 
     
@@ -2291,7 +2293,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Started">
+          <a href="../lua-scripting-in-zt1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Lua Scripting - A Brief Primer">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2301,20 +2303,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Getting Started
+                Lua Scripting - A Brief Primer
               </div>
             </div>
           </a>
         
         
           
-          <a href="../mod-installation/" class="md-footer__link md-footer__link--next" aria-label="Next: Mod Installation">
+          <a href="../../tool-guides/visual-studio-code/" class="md-footer__link md-footer__link--next" aria-label="Next: Visual Studio Code">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Mod Installation
+                Visual Studio Code
               </div>
             </div>
             <div class="md-footer__button md-icon">

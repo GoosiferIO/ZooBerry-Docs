@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.zooberry.org/zt1/advanced/operating-on-entities/</loc>
+         <lastmod>2024-03-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.zooberry.org/zt1/getting-started/</loc>
          <lastmod>2024-03-20</lastmod>
          <changefreq>daily</changefreq>
@@ -91,12 +96,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.zooberry.org/zt1/reference/emu/api/emuconsole-api/</loc>
+         <lastmod>2024-03-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/reference/emu/api/entities/</loc>
+         <lastmod>2024-03-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.zooberry.org/zt1/reference/emu/api/entitytypes/</loc>
          <lastmod>2024-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/emu/api/gamemanager/</loc>
+         <lastmod>2024-03-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/reference/emu/api/uigeneral/</loc>
+         <lastmod>2024-03-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/reference/emu/api/worldmanager/</loc>
          <lastmod>2024-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://docs.zooberry.org/zt1/reference/emu/emu-scripts/">
+        <link rel="canonical" href="https://docs.zooberry.org/zt1/reference/emu/api/entitytypes/">
       
       
-        <link rel="prev" href="../emu-console/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../string-tables/">
+        <link rel="next" href="../gamemanager/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
       
-        <title>Lua Scripts - ZooBerry Docs</title>
+        <title>Entity Types - ZooBerry Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lua-scripting" class="md-skip">
+        <a href="#entity-types-api" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="ZooBerry Docs" class="md-header__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
+    <a href="../../../../.." title="ZooBerry Docs" class="md-header__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lua Scripts
+              Entity Types
             
           </span>
         </div>
@@ -219,7 +219,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../.." class="md-tabs__link">
+        <a href="../../../../.." class="md-tabs__link">
           
   
     
@@ -245,7 +245,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../advanced/" class="md-tabs__link">
+        <a href="../../../../advanced/" class="md-tabs__link">
           
   
     
@@ -270,7 +270,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+        <a href="../../../" class="md-tabs__link">
           
   
     
@@ -288,7 +288,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../getting-started/web-resources/" class="md-tabs__link">
+      <a href="../../../../getting-started/web-resources/" class="md-tabs__link">
         
   
     
@@ -305,7 +305,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../attributions/" class="md-tabs__link">
+      <a href="../../../../../attributions/" class="md-tabs__link">
         
   
     
@@ -339,7 +339,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="ZooBerry Docs" class="md-nav__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
+    <a href="../../../../.." title="ZooBerry Docs" class="md-nav__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -392,7 +392,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../.." class="md-nav__link ">
+            <a href="../../../../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -500,7 +500,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../advanced/" class="md-nav__link ">
+            <a href="../../../../advanced/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -533,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/lua-scripting-in-zt1/" class="md-nav__link">
+      <a href="../../../../advanced/lua-scripting-in-zt1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -554,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/making-an-easter-egg/" class="md-nav__link">
+      <a href="../../../../advanced/making-an-easter-egg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -627,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tool-guides/visual-studio-code/" class="md-nav__link">
+      <a href="../../../../tool-guides/visual-studio-code/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -699,7 +699,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -762,7 +762,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../basic-reference/" class="md-nav__link ">
+            <a href="../../../basic-reference/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -795,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic-reference/file-formats-and-tools/" class="md-nav__link">
+      <a href="../../../basic-reference/file-formats-and-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -816,7 +816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic-reference/mod-installation/" class="md-nav__link">
+      <a href="../../../basic-reference/mod-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -875,7 +875,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../configuration-references/" class="md-nav__link ">
+            <a href="../../../configuration-references/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -908,7 +908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configuration-references/scenery-files/" class="md-nav__link">
+      <a href="../../../configuration-references/scenery-files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -929,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configuration-references/scenario-files/" class="md-nav__link">
+      <a href="../../../configuration-references/scenario-files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -990,7 +990,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1023,11 +1023,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../emu-console/" class="md-nav__link">
+      <a href="../../emu-console/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    EMU Command Console
+    Command Console
   </span>
   
 
@@ -1035,6 +1035,68 @@
     </li>
   
 
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Scripting API
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Scripting API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
             
               
@@ -1057,7 +1119,7 @@
           
   
   <span class="md-ellipsis">
-    Lua Scripts
+    Entity Types
   </span>
   
 
@@ -1068,7 +1130,7 @@
         
   
   <span class="md-ellipsis">
-    Lua Scripts
+    Entity Types
   </span>
   
 
@@ -1090,26 +1152,85 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#supported-api-calls" class="md-nav__link">
+  <a href="#bfentitytype" class="md-nav__link">
     <span class="md-ellipsis">
-      Supported API Calls
+      BFEntityType
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BFEntityType">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ztscenerytype" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZTSceneryType
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ZTSceneryType">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ztbuildingtype" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZTBuildingType
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-install-emu-scripts" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#ztfencetype" class="md-nav__link">
     <span class="md-ellipsis">
-      How to Install EMU Scripts
+      ZTFenceType
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gamemanager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Game Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -1163,7 +1284,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../string-tables/" class="md-nav__link ">
+            <a href="../../../string-tables/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1196,7 +1317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/entity-ids/" class="md-nav__link">
+      <a href="../../../string-tables/entity-ids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1278,7 +1399,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../string-tables/official/" class="md-nav__link ">
+            <a href="../../../string-tables/official/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1311,7 +1432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang0/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1332,7 +1453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang001/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang001/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1353,7 +1474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang002/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang002/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1374,7 +1495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang007/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang007/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1395,7 +1516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang008/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang008/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1416,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang009/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang009/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1437,7 +1558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang010/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang010/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1458,7 +1579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang012/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang012/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1479,7 +1600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang013/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang013/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1500,7 +1621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang015/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang015/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1521,7 +1642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang016/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang016/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1542,7 +1663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang017/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang017/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1563,7 +1684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang018/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang018/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1584,7 +1705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang019/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang019/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1605,7 +1726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang020/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang020/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1626,7 +1747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang021/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang021/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1647,7 +1768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang100/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang100/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1668,7 +1789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang200/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang200/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1689,7 +1810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/official/lang300/" class="md-nav__link">
+      <a href="../../../string-tables/official/lang300/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1763,7 +1884,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../string-tables/unofficial/" class="md-nav__link ">
+            <a href="../../../string-tables/unofficial/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1796,7 +1917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/unofficial/LANG--ZTCDD/" class="md-nav__link">
+      <a href="../../../string-tables/unofficial/LANG--ZTCDD/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1817,7 +1938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/unofficial/LANG--ZooTek/" class="md-nav__link">
+      <a href="../../../string-tables/unofficial/LANG--ZooTek/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1838,7 +1959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/unofficial/LANG--ZKL/" class="md-nav__link">
+      <a href="../../../string-tables/unofficial/LANG--ZKL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1859,7 +1980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/unofficial/LANG--ZBorsato/" class="md-nav__link">
+      <a href="../../../string-tables/unofficial/LANG--ZBorsato/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1880,7 +2001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/unofficial/LANG--Jane/" class="md-nav__link">
+      <a href="../../../string-tables/unofficial/LANG--Jane/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1901,7 +2022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/unofficial/LANG--JBL/" class="md-nav__link">
+      <a href="../../../string-tables/unofficial/LANG--JBL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1922,7 +2043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/unofficial/LANG--fern-tek/" class="md-nav__link">
+      <a href="../../../string-tables/unofficial/LANG--fern-tek/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1943,7 +2064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/unofficial/langZA01/" class="md-nav__link">
+      <a href="../../../string-tables/unofficial/langZA01/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1964,7 +2085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/unofficial/langZA02/" class="md-nav__link">
+      <a href="../../../string-tables/unofficial/langZA02/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1985,7 +2106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/unofficial/langZA03/" class="md-nav__link">
+      <a href="../../../string-tables/unofficial/langZA03/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2006,7 +2127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string-tables/unofficial/lang--TKZTUFcombin/" class="md-nav__link">
+      <a href="../../../string-tables/unofficial/lang--TKZTUFcombin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2050,7 +2171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/web-resources/" class="md-nav__link">
+      <a href="../../../../getting-started/web-resources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2070,7 +2191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../attributions/" class="md-nav__link">
+      <a href="../../../../../attributions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2110,20 +2231,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#supported-api-calls" class="md-nav__link">
+  <a href="#bfentitytype" class="md-nav__link">
     <span class="md-ellipsis">
-      Supported API Calls
+      BFEntityType
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BFEntityType">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ztscenerytype" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZTSceneryType
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ZTSceneryType">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ztbuildingtype" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZTBuildingType
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-install-emu-scripts" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#ztfencetype" class="md-nav__link">
     <span class="md-ellipsis">
-      How to Install EMU Scripts
+      ZTFenceType
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2142,7 +2293,7 @@
                   
 
   
-    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/edit/main/docs/zt1/reference/emu/emu-scripts.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/edit/main/docs/zt1/reference/emu/api/entitytypes.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -2151,155 +2302,897 @@
     
       
     
-    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/raw/main/docs/zt1/reference/emu/emu-scripts.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/raw/main/docs/zt1/reference/emu/api/entitytypes.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="lua-scripting">Lua Scripting</h1>
-<p>Lua scripting was introduced in <strong>EMU v1.0.0-alpha.3</strong>.</p>
-<h2 id="supported-api-calls">Supported API Calls</h2>
-<p>EMU adds scripting support to Zoo Tycoon 1. Currently scripting is limited to the following API calls:</p>
+<h1 id="entity-types-api">Entity Types API</h1>
+<p>The game has generalized descriptions of entities which it calls "entity types". You can think of them as blueprints for the game's major objects, such as animals, guests, staff, and scenery. Generally speaking, any functions that operate on an entity function can be mapped to the configuration most Zoo Tycoon 1 modders are familiar with. When we change <code>cSelectable</code> to <code>1</code>, we are changing the <code>cSelectable</code> property of the entity type.</p>
+<p>Note however that entity types are built on several levels of inheritance, and the entity type's behabior is determined by the properties of its parent entity types. For example, all functions available to the core entity type <code>BFEntityType</code> are also available to all of its children objects and their children, but not the other way around. This means that if you want to operate on a specific entity type, you need to make sure that the function you are calling is available to that entity type or else it will not work and may cause undefined behavior.</p>
+<p>To make sense of this reference section, please refer to the following graph of inheritence as you read through the documentation:</p>
+<figure>
+<img alt="Entity Type Inheritance" src="../images/entitytypes.png" />
+<figcaption>Credit: Finn from the OpenZT project</figcaption>
+</figure>
+<h2 id="bfentitytype">BFEntityType</h2>
 <table>
 <thead>
 <tr>
-<th>Command</th>
+<th>Function Signature</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>AddToZooBudget(float deposit)</td>
-<td>Deposit a discrete amount of cash into your zoo budget. Takes a float as an argument.</td>
+<td><code>int ncolors()</code></td>
+<td>Returns the number of colors in a <code>pal</code> file.</td>
 </tr>
 <tr>
-<td>GetZooBudget()</td>
-<td>Returns the current budget as a float.</td>
+<td><code>int ncolors(int input)</code></td>
+<td>Sets the number of colors in a <code>pal</code> file.</td>
 </tr>
 <tr>
-<td>SetZooBudget(float new_budget)</td>
-<td>Set your current budget to a new amount. Takes a float as an argument.</td>
+<td><code>bool cIconZoom()</code></td>
+<td>Returns whether the icon zooms.</td>
 </tr>
 <tr>
-<td>IsZooLoaded()</td>
-<td>Is a zoo currently open? Returns a boolean value.</td>
+<td><code>bool cIconZoom(bool input)</code></td>
+<td>Sets whether the icon zooms.</td>
 </tr>
 <tr>
-<td>PauseGame()</td>
-<td>Pause the game.</td>
+<td><code>bool cExpansionID()</code></td>
+<td></td>
 </tr>
 <tr>
-<td>IsGamePaused()</td>
-<td>Is the game currently paused? Returns a boolean value.</td>
+<td><code>bool cExpansionID(bool input)</code></td>
+<td></td>
 </tr>
 <tr>
-<td>NumAnimals()</td>
-<td>Return the current number of animals in your zoo. Returns an integer.</td>
+<td><code>bool cMovable()</code></td>
+<td>Returns whether the entity is movable.</td>
 </tr>
 <tr>
-<td>NumSpecies()</td>
-<td>Return the current number of animal species in your zoo. Returns an integer.</td>
+<td><code>bool cMovable(bool input)</code></td>
+<td>Sets whether the entity is movable.</td>
 </tr>
 <tr>
-<td>NumGuests()</td>
-<td>Return the current number of guests in your zoo. Returns an integer.</td>
+<td><code>bool walkable()</code></td>
+<td>Returns whether the entity can be walked through by guests, staff, animals.</td>
 </tr>
 <tr>
-<td>NumTiredGuests()</td>
-<td>Return the current number of tired guests in your zoo. Returns an integer.</td>
+<td><code>bool walkable(bool input)</code></td>
+<td>Sets whether the entity can be walked through by guests, staff, animals.</td>
 </tr>
 <tr>
-<td>NumHungryGuests()</td>
-<td>Return the current number of hungry guests in your zoo. Returns an integer.</td>
+<td><code>bool walkableByTall()</code></td>
+<td></td>
 </tr>
 <tr>
-<td>NumThirstyGuests()</td>
-<td>Return the current number of thirsty guests in your zoo. Returns an integer.</td>
+<td><code>bool walkableByTall(bool input)</code></td>
+<td></td>
 </tr>
 <tr>
-<td>NumGuestsNeedRestrm()</td>
-<td>Return the current number of guests that need to use the restroom. Returns an integer.</td>
+<td><code>bool cRubbleable()</code></td>
+<td></td>
 </tr>
 <tr>
-<td>NumGuestsInFilter()</td>
-<td>Return the current number of guests in the guest filter. Returns an integer.</td>
+<td><code>bool cRubbleable(bool input)</code></td>
+<td></td>
 </tr>
 <tr>
-<td>GetZooAdmissionCost()</td>
-<td>Return the current admission cost to your zoo. Note: this is the adult ticket value. The child ticket value is not stored in memory as it is automatically calculated from the adult price divided by 2. Returns a float.</td>
+<td><code>bool cUseNumbersInName()</code></td>
+<td>Returns whether the entity uses numbers in its name. i.e. "Guest 1", "Guest 2", etc.</td>
 </tr>
 <tr>
-<td>SetZooAdmissionCost(float new_adm)</td>
-<td>Set the current admission cost to your zoo. See the above limitation about child ticket prices. Takes one float as an argument.</td>
+<td><code>bool cUseNumbersInName(bool input)</code></td>
+<td>Sets whether the entity uses numbers in its name. i.e. "Guest 1", "Guest 2", etc.</td>
 </tr>
 <tr>
-<td>AdmissionsIncomeByMonth()</td>
-<td>Retrieve an array containing 12 elements, each representing admissions income for a specific month.</td>
+<td><code>bool cUsesRealShadows()</code></td>
+<td></td>
 </tr>
 <tr>
-<td>ConcessionsBenefitByMonth()</td>
-<td>Retrieve an array containing 12 elements, each representing the concessions benefit for a specific month.</td>
+<td><code>bool cUsesRealShadows(bool input)</code></td>
+<td></td>
 </tr>
 <tr>
-<td>ZooValueByMonth()</td>
-<td>Retrieve an array containing 12 elements, each representing the zoo value for a specific month.</td>
+<td><code>bool cHasShadowImages()</code></td>
+<td></td>
 </tr>
 <tr>
-<td>PrivateDonationsByMonth()</td>
-<td>Retrieve an array containing 12 elements, each representing the private donations for a specific month.</td>
+<td><code>bool cHasShadowImages(bool input)</code></td>
+<td></td>
 </tr>
 <tr>
-<td>ZooRatingByMonth()</td>
-<td>Retrieve an array containing 12 elements, each representing the zoo rating for a specific month.</td>
+<td><code>bool cForceShadowBlack()</code></td>
+<td></td>
 </tr>
 <tr>
-<td>ConstructionCostByMonth()</td>
-<td>Retrieve an array containing 12 elements, each representing the construction costs for a specific month.</td>
+<td><code>bool cForceShadowBlack(bool input)</code></td>
+<td></td>
 </tr>
 <tr>
-<td>AnimalPurchaseCostsByMonth()</td>
-<td>Retrieve an array containing 12 elements, each representing the animal adoption costs for a specific month.</td>
+<td><code>bool cDrawsLate()</code></td>
+<td></td>
 </tr>
 <tr>
-<td>_globalAnimalRating</td>
-<td>Global variable. Sets the animal rating per update.</td>
+<td><code>bool cDrawsLate(bool input)</code></td>
+<td></td>
 </tr>
 <tr>
-<td>_globalZooRating</td>
-<td>Global variable. Sets the zoo rating per update.</td>
+<td><code>int cHeight()</code></td>
+<td>Returns the height of the entity.</td>
 </tr>
 <tr>
-<td>_globalGuestRating</td>
-<td>Global variable. Sets the guest rating per update.</td>
+<td><code>int cHeight(int input)</code></td>
+<td>Sets the height of the entity.</td>
+</tr>
+<tr>
+<td><code>int cDepth()</code></td>
+<td>Returns the depth of the entity.</td>
+</tr>
+<tr>
+<td><code>int cDepth(int input)</code></td>
+<td>Sets the depth of the entity.</td>
+</tr>
+<tr>
+<td><code>bool cHasUnderwaterSection()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cHasUnderwaterSection(bool input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cIsTransient()</code></td>
+<td>Returns whether the entity can be placed on paths.</td>
+</tr>
+<tr>
+<td><code>bool cIsTransient(bool input)</code></td>
+<td>Sets whether the entity can be placed on paths. Warning: This property has shown to cause crashes. Possible bug with game.</td>
+</tr>
+<tr>
+<td><code>bool cUsesPlacementCube()</code></td>
+<td>Returns whether the entity has a rectangular placement cube surrounding it.</td>
+</tr>
+<tr>
+<td><code>bool cUsesPlacementCube(bool input)</code></td>
+<td>Setting this to true will make the entity have a rectangular placement cube surrounding it.</td>
+</tr>
+<tr>
+<td><code>bool cShow()</code></td>
+<td>Returns whether the entity is a show entity.</td>
+</tr>
+<tr>
+<td><code>bool cShow(bool input)</code></td>
+<td>Sets whether the entity is a show entity.</td>
+</tr>
+<tr>
+<td><code>int cHitThreshold()</code></td>
+<td>Returns the hit threshold of the entity.</td>
+</tr>
+<tr>
+<td><code>int cHitThreshold(int input)</code></td>
+<td>Sets the hit threshold of the entity.</td>
+</tr>
+<tr>
+<td><code>bool cAvoidEdges()</code></td>
+<td>Returns whether the entity avoids edges.</td>
+</tr>
+<tr>
+<td><code>bool cAvoidEdges(bool input)</code></td>
+<td>Sets whether the entity avoids edges.</td>
+</tr>
+<tr>
+<td><code>std::string typeName()</code></td>
+<td>Returns the name of the entity type.</td>
+</tr>
+<tr>
+<td><code>std::string typeName(std::string input)</code></td>
+<td>Sets the name of the entity type.</td>
+</tr>
+<tr>
+<td><code>std::string codename()</code></td>
+<td>Returns the codename of the entity type.</td>
+</tr>
+<tr>
+<td><code>std::string codename(std::string input)</code></td>
+<td>Sets the codename of the entity type.</td>
+</tr>
+<tr>
+<td><code>int cFootprintX()</code></td>
+<td>Returns the footprint x of the entity.</td>
+</tr>
+<tr>
+<td><code>int cFootprintX(int input)</code></td>
+<td>Sets the footprint x of the entity.</td>
+</tr>
+<tr>
+<td><code>int cFootprintY()</code></td>
+<td>Returns the footprint y of the entity.</td>
+</tr>
+<tr>
+<td><code>int cFootprintY(int input)</code></td>
+<td>Sets the footprint y of the entity.</td>
+</tr>
+<tr>
+<td><code>int cFootprintZ()</code></td>
+<td>Returns the footprint z of the entity.</td>
+</tr>
+<tr>
+<td><code>int cFootprintZ(int input)</code></td>
+<td>Sets the footprint z of the entity.</td>
+</tr>
+<tr>
+<td><code>int cPlacementFootprintX()</code></td>
+<td>Returns the placement footprint x of the entity.</td>
+</tr>
+<tr>
+<td><code>int cPlacementFootprintX(int input)</code></td>
+<td>Sets the placement footprint x of the entity.</td>
+</tr>
+<tr>
+<td><code>int cPlacementFootprintY()</code></td>
+<td>Returns the placement footprint y of the entity.</td>
+</tr>
+<tr>
+<td><code>int cPlacementFootprintY(int input)</code></td>
+<td>Sets the placement footprint y of the entity.</td>
+</tr>
+<tr>
+<td><code>int cPlacementFootprintZ()</code></td>
+<td>Returns the placement footprint z of the entity.</td>
+</tr>
+<tr>
+<td><code>int cPlacementFootprintZ(int input)</code></td>
+<td>Sets the placement footprint z of the entity.</td>
+</tr>
+<tr>
+<td><code>bool availableAtStartup()</code></td>
+<td>Returns whether the entity is unlocked to purchase.</td>
+</tr>
+<tr>
+<td><code>bool availableAtStartup(bool input)</code></td>
+<td>Sets whether the entity is unlocked to purchase.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="how-to-install-emu-scripts">How to Install EMU Scripts</h2>
-<p>Create a new folder called <code>scripts</code> inside of your main Zoo Tycoon directory: <code>C:\Program Files (x86)\Microsoft Games\Zoo Tycoon</code>. Drop scripts inside of the scripts folder.</p>
-<p>Scripting info:</p>
-<ul>
-<li>All Lua standard libraries as of Lua 5.3 are made available for your use.  </li>
-<li>Lua scripts must have the <code>.emu</code> extension.  </li>
-<li>As of the latest <strong>EMU v1.0.0-alpha.4</strong>, EMU can load any lua scripts inside of a <code>/scripts</code> folder inside of the root Zoo Tycoon 1 folder.  </li>
-<li>Lua support is designed for modders to take control of the game logic by having individual scripts run on the main EMU loop. If/then statements are obviously encouraged, but be conservative with your own loops unless they are predictable and efficient. Global variables might not be effective.  </li>
-<li>All executing code must live inside of an <code>emu_run</code> function.  </li>
-</ul>
-<p><strong>Example Lua Script:</strong>
-<em>playground.emu</em>
-<div class="highlight"><pre><span></span><code><span class="kr">function</span> <span class="nf">emu_run</span><span class="p">()</span>
-    <span class="c1">-- pause the game if the budget goes above $400,000</span>
-    <span class="kr">if</span> <span class="n">GetZooBudget</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">400000</span> <span class="ow">and</span> <span class="n">IsGamePaused</span><span class="p">()</span> <span class="o">==</span> <span class="kc">false</span> <span class="kr">then</span>
-        <span class="nb">io.write</span><span class="p">(</span><span class="s2">&quot;Pausing the game&quot;</span><span class="p">)</span>
-        <span class="n">PauseGame</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
-    <span class="c1">-- resume game if budget dips below $400,000 (maybe the console can save us here?)</span>
-    <span class="kr">elseif</span> <span class="n">GetZooBudget</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mi">400000</span> <span class="ow">and</span> <span class="n">IsGamePaused</span><span class="p">()</span> <span class="o">==</span> <span class="kc">true</span> <span class="kr">then</span>
-        <span class="nb">io.write</span><span class="p">(</span><span class="s2">&quot;Resuming the game&quot;</span><span class="p">)</span>
-        <span class="n">PauseGame</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
-    <span class="kr">end</span>
-<span class="kr">end</span>
-</code></pre></div></p>
+<h3 id="ztscenerytype">ZTSceneryType</h3>
+<table>
+<thead>
+<tr>
+<th>Function Signature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>int cPurchaseCost()</code></td>
+<td>Returns the purchase cost of the entity.</td>
+</tr>
+<tr>
+<td><code>int cPurchaseCost(int input)</code></td>
+<td>Sets the purchase cost of the entity.</td>
+</tr>
+<tr>
+<td><code>int cNameID()</code></td>
+<td>Returns the ID of the entity tied to its string name. i.e. 9313 is the ID for "Stick Pole Fence". For a list of string IDs, see <a href="/docs/zt1/reference/string-tables/entity-ids.md">Notable String IDs</a> or for a more complete list, <a href="/docs/zt1/reference/string-tables/index.md">String Tables</a></td>
+</tr>
+<tr>
+<td><code>int cNameID(int input)</code></td>
+<td>Sets the string ID of the entity tied to its name. For a list of string IDs, see <a href="/docs/zt1/reference/string-tables/entity-ids.md">Notable String IDs</a> or for a more complete list, <a href="/docs/zt1/reference/string-tables/index.md">String Tables</a></td>
+</tr>
+<tr>
+<td><code>int cHelpID()</code></td>
+<td>Returns the help ID of the entity. For a list of possible IDs that might correspond to cHelpID, see <a href="/docs/zt1/reference/string-tables/index.md">String Tables</a></td>
+</tr>
+<tr>
+<td><code>int cHelpID(int input)</code></td>
+<td>Sets the help ID of the entity. For a list of possible IDs that might correspond to a cHelpID, see <a href="/docs/zt1/reference/string-tables/index.md">String Tables</a></td>
+</tr>
+<tr>
+<td><code>int cHabitat()</code></td>
+<td>Returns the habitat of the entity. For a list of possible habitat IDs, see the habitat section in <a href="/docs/zt1/reference/string-tables/entity-ids.md#habitat">Notable String IDs</a></td>
+</tr>
+<tr>
+<td><code>int cHabitat(int input)</code></td>
+<td>Sets the habitat of the entity. For a list of possible habitat IDs, see the habitat section in <a href="/docs/zt1/reference/string-tables/entity-ids.md#habitat">Notable String IDs</a></td>
+</tr>
+<tr>
+<td><code>int cLocation()</code></td>
+<td>Returns the location of the entity. For a list of possible location IDs, see the location section in <a href="/docs/zt1/reference/string-tables/entity-ids.md#location">Notable String IDs</a></td>
+</tr>
+<tr>
+<td><code>int cLocation(int input)</code></td>
+<td>Sets the location of the entity. For a list of possible location IDs, see the location section in <a href="/docs/zt1/reference/string-tables/entity-ids.md#location">Notable String IDs</a></td>
+</tr>
+<tr>
+<td><code>int cEra()</code></td>
+<td>Returns the era of the entity. For a list of possible era IDs, see the era section in <a href="/docs/zt1/reference/string-tables/entity-ids.md#era">Notable String IDs</a></td>
+</tr>
+<tr>
+<td><code>int cEra(int input)</code></td>
+<td>Sets the era of the entity. For a list of possible era IDs, see the era section in <a href="/docs/zt1/reference/string-tables/entity-ids.md#era">Notable String IDs</a></td>
+</tr>
+<tr>
+<td><code>int cMaxFoodUnits()</code></td>
+<td>Returns the maximum food units the entity can hold.</td>
+</tr>
+<tr>
+<td><code>int cMaxFoodUnits(int input)</code></td>
+<td>Sets the maximum food units the entity can hold.</td>
+</tr>
+<tr>
+<td><code>bool cDeletable()</code></td>
+<td>Returns whether the entity is deletable.</td>
+</tr>
+<tr>
+<td><code>bool cDeletable(bool input)</code></td>
+<td>Sets whether the entity is deletable.</td>
+</tr>
+<tr>
+<td><code>bool cStink()</code></td>
+<td>Returns whether the entity stinks.</td>
+</tr>
+<tr>
+<td><code>bool cStink(bool input)</code></td>
+<td>Sets whether the entity stinks.</td>
+</tr>
+<tr>
+<td><code>int cEstheticWeight()</code></td>
+<td>Returns the esthetic weight of the entity.</td>
+</tr>
+<tr>
+<td><code>int cEstheticWeight(int input)</code></td>
+<td>Sets the esthetic weight of the entity.</td>
+</tr>
+<tr>
+<td><code>bool cSelectable()</code></td>
+<td>Returns whether the entity is selectable.</td>
+</tr>
+<tr>
+<td><code>bool cSelectable(bool input)</code></td>
+<td>Sets whether the entity is selectable.</td>
+</tr>
+<tr>
+<td><code>bool cFoliage()</code></td>
+<td>Returns whether the entity is foliage.</td>
+</tr>
+<tr>
+<td><code>bool cFoliage(bool input)</code></td>
+<td>Sets whether the entity is foliage.</td>
+</tr>
+<tr>
+<td><code>bool cAutoRotate()</code></td>
+<td>Returns whether the entity auto-rotates.</td>
+</tr>
+<tr>
+<td><code>bool cAutoRotate(bool input)</code></td>
+<td>Sets whether the entity auto-rotates.</td>
+</tr>
+<tr>
+<td><code>bool cLand()</code></td>
+<td>Returns whether the entity can be placed on land.</td>
+</tr>
+<tr>
+<td><code>bool cLand(bool input)</code></td>
+<td>Sets whether the entity can be placed on land.</td>
+</tr>
+<tr>
+<td><code>bool cSwims()</code></td>
+<td>Sets whether the entity can be placed on non-tank water surfaces.</td>
+</tr>
+<tr>
+<td><code>bool cSwims(bool input)</code></td>
+<td>Sets whether the entity can be placed on non-tank water surfaces.</td>
+</tr>
+<tr>
+<td><code>bool cUnderwater()</code></td>
+<td>Returns whether the entity can be placed inside of a filled tank.</td>
+</tr>
+<tr>
+<td><code>bool cUnderwater(bool input)</code></td>
+<td>Sets whether the entity can be placed inside of a filled tank.</td>
+</tr>
+<tr>
+<td><code>bool cSurface()</code></td>
+<td>Returns whether the entity can be placed on the surface of a tank.</td>
+</tr>
+<tr>
+<td><code>bool cSurface(bool input)</code></td>
+<td>Sets whether the entity can be placed on the surface of a tank.</td>
+</tr>
+<tr>
+<td><code>bool cSubmerge()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cSubmerge(bool input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cOnlySwims()</code></td>
+<td>Returns whether the entity can only be placed on water surfaces. Note: When entity type first loads, this is autoset to 1 if cSwims and cUnderwater are set to 1 and if cLand is set to 0.</td>
+</tr>
+<tr>
+<td><code>bool cOnlySwims(bool input)</code></td>
+<td>Sets whether the entity can only be placed on water surfaces. Note: When entity type first loads, this is autoset to 1 if cSwims and cUnderwater are set to 1 and if cLand is set to 0.</td>
+</tr>
+<tr>
+<td><code>bool cNeedsConfirm()</code></td>
+<td>Returns whether the entity needs confirmation to be deleted.</td>
+</tr>
+<tr>
+<td><code>bool cNeedsConfirm(bool input)</code></td>
+<td>Sets whether the entity needs confirmation to be deleted.</td>
+</tr>
+<tr>
+<td><code>bool cGawkOnlyFromFront()</code></td>
+<td>Returns whether the entity can only be gawked at from the front.</td>
+</tr>
+<tr>
+<td><code>bool cGawkOnlyFromFront(bool input)</code></td>
+<td>Sets whether the entity can only be gawked at from the front.</td>
+</tr>
+<tr>
+<td><code>bool cDeadOnLand()</code></td>
+<td>Returns whether the entity dies on land.</td>
+</tr>
+<tr>
+<td><code>bool cDeadOnLand(bool input)</code></td>
+<td>Sets whether the entity dies on land.</td>
+</tr>
+<tr>
+<td><code>bool cDeadOnFlatWater()</code></td>
+<td>Returns whether the entity dies on flat water.</td>
+</tr>
+<tr>
+<td><code>bool cDeadOnFlatWater(bool input)</code></td>
+<td>Sets whether the entity dies on flat water.</td>
+</tr>
+<tr>
+<td><code>bool cDeadUnderwater()</code></td>
+<td>Returns whether the entity dies underwater.</td>
+</tr>
+<tr>
+<td><code>bool cDeadUnderwater(bool input)</code></td>
+<td>Sets whether the entity dies underwater.</td>
+</tr>
+<tr>
+<td><code>bool cUsesTreeRubble()</code></td>
+<td>Returns whether the entity uses tree rubble.</td>
+</tr>
+<tr>
+<td><code>bool cUsesTreeRubble(bool input)</code></td>
+<td>Sets whether the entity uses tree rubble.</td>
+</tr>
+<tr>
+<td><code>bool cForcesSceneryRubble()</code></td>
+<td>Returns whether the entity forces scenery rubble.</td>
+</tr>
+<tr>
+<td><code>bool cForcesSceneryRubble(bool input)</code></td>
+<td>Sets whether the entity forces scenery rubble.</td>
+</tr>
+<tr>
+<td><code>bool cBlocksLOS()</code></td>
+<td>Returns whether the entity blocks line of sight.</td>
+</tr>
+<tr>
+<td><code>bool cBlocksLOS(bool input)</code></td>
+<td>Sets whether the entity blocks line of sight.</td>
+</tr>
+<tr>
+<td><code>std::string cInfoImageName()</code></td>
+<td>Returns the name of the image file used for the entity's information window.</td>
+</tr>
+<tr>
+<td><code>std::string cInfoImageName(std::string input)</code></td>
+<td>Sets the name of the image file used for the entity's information window.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ztbuildingtype">ZTBuildingType</h4>
+<table>
+<thead>
+<tr>
+<th>Function Signature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>int cCapacity()</code></td>
+<td>Returns the capacity of users the building can hold.</td>
+</tr>
+<tr>
+<td><code>int cCapacity(int input)</code></td>
+<td>Sets the capacity of users the building can hold.</td>
+</tr>
+<tr>
+<td><code>int cToySatisfaction()</code></td>
+<td>Returns the toy satisfaction gives to users.</td>
+</tr>
+<tr>
+<td><code>int cToySatisfaction(int input)</code></td>
+<td>Sets the toy satisfaction gives to users.</td>
+</tr>
+<tr>
+<td><code>int cTimeInside()</code></td>
+<td>Returns the time users spend inside the building.</td>
+</tr>
+<tr>
+<td><code>int cTimeInside(int input)</code></td>
+<td>Sets the time users spend inside the building.</td>
+</tr>
+<tr>
+<td><code>int cDefaultCost()</code></td>
+<td>Returns the default cost of the building.</td>
+</tr>
+<tr>
+<td><code>int cDefaultCost(int input)</code></td>
+<td>Sets the default cost of the building.</td>
+</tr>
+<tr>
+<td><code>int cLowCost()</code></td>
+<td>Returns the low cost of the building.</td>
+</tr>
+<tr>
+<td><code>int cLowCost(int input)</code></td>
+<td>Sets the low cost of the building.</td>
+</tr>
+<tr>
+<td><code>int cMedCost()</code></td>
+<td>Returns the medium cost of the building.</td>
+</tr>
+<tr>
+<td><code>int cMedCost(int input)</code></td>
+<td>Sets the medium cost of the building.</td>
+</tr>
+<tr>
+<td><code>int cHighCost()</code></td>
+<td>Returns the high cost of the building.</td>
+</tr>
+<tr>
+<td><code>int cHighCost(int input)</code></td>
+<td>Sets the high cost of the building.</td>
+</tr>
+<tr>
+<td><code>int cPriceFactor()</code></td>
+<td>Returns the price factor of the building.</td>
+</tr>
+<tr>
+<td><code>int cPriceFactor(int input)</code></td>
+<td>Sets the price factor of the building.</td>
+</tr>
+<tr>
+<td><code>int cUpkeep()</code></td>
+<td>Returns the upkeep of the building.</td>
+</tr>
+<tr>
+<td><code>int cUpkeep(int input)</code></td>
+<td>Sets the upkeep of the building.</td>
+</tr>
+<tr>
+<td><code>bool cHideUser()</code></td>
+<td>Returns whether the user that enters the building should be hidden.</td>
+</tr>
+<tr>
+<td><code>bool cHideUser(bool input)</code></td>
+<td>Sets whether the user that enters the building should be hidden.</td>
+</tr>
+<tr>
+<td><code>bool cSetLetterFacing()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cSetLetterFacing(bool input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cDrawUser()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cDrawUser(bool input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cHideCostChange()</code></td>
+<td>Returns whether the set price widget for the building should be hidden.</td>
+</tr>
+<tr>
+<td><code>bool cHideCostChange(bool input)</code></td>
+<td>Sets whether the set price widget for the building should be hidden.</td>
+</tr>
+<tr>
+<td><code>bool cHideCommerceInfo()</code></td>
+<td>Returns whether the commerce info widget for the building should be hidden.</td>
+</tr>
+<tr>
+<td><code>bool cHideCommerceInfo(bool input)</code></td>
+<td>Sets whether the commerce info widget for the building should be hidden.</td>
+</tr>
+<tr>
+<td><code>bool cHideRegularInfo()</code></td>
+<td>Returns whether the regular info widget for the building should be hidden.</td>
+</tr>
+<tr>
+<td><code>bool cHideRegularInfo(bool input)</code></td>
+<td>Sets whether the regular info widget for the building should be hidden.</td>
+</tr>
+<tr>
+<td><code>bool cHoldsOntoUser()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cHoldsOntoUser(bool input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cUserTracker()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cUserTracker(bool input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cIdler()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cIdler(bool input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cExhibitViewer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cExhibitViewer(bool input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cAlternatePanelTitle()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cAlternatePanelTitle(int input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cDirectEntrance()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cDirectEntrance(bool input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cHideBuilding()</code></td>
+<td>Returns whether the building should be hidden while in use.</td>
+</tr>
+<tr>
+<td><code>bool cHideBuilding(bool input)</code></td>
+<td>Sets whether the building should be hidden while in use.</td>
+</tr>
+<tr>
+<td><code>bool cUserStaysOutside()</code></td>
+<td>Returns whether the user should stay outside of the building while in use.</td>
+</tr>
+<tr>
+<td><code>bool cUserStaysOutside(bool input)</code></td>
+<td>Sets whether the user should stay outside of the building while in use.</td>
+</tr>
+<tr>
+<td><code>bool cUserTeleportsInside()</code></td>
+<td>Returns whether the user should teleport inside of the building while in use.</td>
+</tr>
+<tr>
+<td><code>bool cUserTeleportsInside(bool input)</code></td>
+<td>Sets whether the user should teleport inside of the building while in use.</td>
+</tr>
+<tr>
+<td><code>bool cUserUsesExit()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cUserUsesExit(bool input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cUserUsesEntranceAsEmergencyExit()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bool cUserUsesEntranceAsEmergencyExit(bool input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cAdultChange()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cAdultChange(int input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cChildChange()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cChildChange(int input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cHungerChange()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cHungerChange(int input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cThirstChange()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cThirstChange(int input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cBathroomChange()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cBathroomChange(int input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cEnergyChange()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>int cEnergyChange(int input)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="ztfencetype">ZTFenceType</h4>
+<table>
+<thead>
+<tr>
+<th>Function Signature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bool cIsShowFence()</code></td>
+<td>Returns whether the fence is a decorative fence.</td>
+</tr>
+<tr>
+<td><code>bool cIsShowFence(bool input)</code></td>
+<td>Sets whether the fence is a decorative fence.</td>
+</tr>
+<tr>
+<td><code>int cStrength()</code></td>
+<td>Returns the strength of the fence.</td>
+</tr>
+<tr>
+<td><code>int cStrength(int input)</code></td>
+<td>Sets the strength of the fence.</td>
+</tr>
+<tr>
+<td><code>int cLife()</code></td>
+<td>Returns the life value of the fence.</td>
+</tr>
+<tr>
+<td><code>int cLife(int input)</code></td>
+<td>Sets the life value of the fence.</td>
+</tr>
+<tr>
+<td><code>int cDecayedLife()</code></td>
+<td>Returns the decayed life value of the fence.</td>
+</tr>
+<tr>
+<td><code>int cDecayedLife(int input)</code></td>
+<td>Sets the decayed life value of the fence.</td>
+</tr>
+<tr>
+<td><code>int cDecayedDelta()</code></td>
+<td>Returns the decayed delta value of the fence.</td>
+</tr>
+<tr>
+<td><code>int cDecayedDelta(int input)</code></td>
+<td>Sets the decayed delta value of the fence.</td>
+</tr>
+<tr>
+<td><code>int cBreakSoundAtten()</code></td>
+<td>Returns the break sound attenuation (volume) of the fence.</td>
+</tr>
+<tr>
+<td><code>int cBreakSoundAtten(int input)</code></td>
+<td>Sets the break sound attenuation (volume) of the fence.</td>
+</tr>
+<tr>
+<td><code>int cOpenSoundAtten()</code></td>
+<td>Returns the open sound attenuation (volume) of the fence.</td>
+</tr>
+<tr>
+<td><code>int cOpenSoundAtten(int input)</code></td>
+<td>Sets the open sound attenuation (volume) of the fence.</td>
+</tr>
+<tr>
+<td><code>std::string cBreakSound()</code></td>
+<td>Returns the directory of the sound file used for the fence breaking.</td>
+</tr>
+<tr>
+<td><code>std::string cBreakSound(std::string input)</code></td>
+<td>Sets the directory of the sound file used for the fence breaking.</td>
+</tr>
+<tr>
+<td><code>std::string cOpenSound()</code></td>
+<td>Returns the directory of the sound file used for the fence opening.</td>
+</tr>
+<tr>
+<td><code>std::string cOpenSound(std::string input)</code></td>
+<td>Sets the directory of the sound file used for the fence opening.</td>
+</tr>
+<tr>
+<td><code>bool cSeeThrough()</code></td>
+<td>Returns whether the fence can be seen-through by guests.</td>
+</tr>
+<tr>
+<td><code>bool cSeeThrough(bool input)</code></td>
+<td>Sets whether the fence can be seen-through by guests.</td>
+</tr>
+<tr>
+<td><code>bool cIsJumpable()</code></td>
+<td>Returns whether the fence can be jumped over by animals.</td>
+</tr>
+<tr>
+<td><code>bool cIsJumpable(bool input)</code></td>
+<td>Sets whether the fence can be jumped over by animals.</td>
+</tr>
+<tr>
+<td><code>bool cIsClimbable()</code></td>
+<td>Returns whether the fence can be climbed over by animals.</td>
+</tr>
+<tr>
+<td><code>bool cIsClimbable(bool input)</code></td>
+<td>Sets whether the fence can be climbed over by animals.</td>
+</tr>
+<tr>
+<td><code>bool cIndestructable()</code></td>
+<td>Returns whether the fence is indestructable. Note: Despite the name, this property does not seem to work.</td>
+</tr>
+<tr>
+<td><code>bool cIndestructable(bool input)</code></td>
+<td>Sets whether the fence is indestructable. Note: Despite the name, this property does not seem to work.</td>
+</tr>
+<tr>
+<td><code>bool cIsElectrified()</code></td>
+<td>Returns whether the fence is electrified.</td>
+</tr>
+<tr>
+<td><code>bool cIsElectrified(bool input)</code></td>
+<td>Sets whether the fence is electrified.</td>
+</tr>
+<tr>
+<td><code>bool cNoDrawWater()</code></td>
+<td>Returns whether the fence does not draw water.</td>
+</tr>
+<tr>
+<td><code>bool cNoDrawWater(bool input)</code></td>
+<td>Sets whether the fence does not draw water.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -2332,7 +3225,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 20, 2024</span>
   </span>
 
     
@@ -2367,7 +3260,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../emu-console/" class="md-footer__link md-footer__link--prev" aria-label="Previous: EMU Command Console">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Scripting API">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2377,20 +3270,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                EMU Command Console
+                Scripting API
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../string-tables/" class="md-footer__link md-footer__link--next" aria-label="Next: String Table References">
+          <a href="../gamemanager/" class="md-footer__link md-footer__link--next" aria-label="Next: Game Manager">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                String Table References
+                Game Manager
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2440,14 +3333,14 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.path", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "content.action.edit", "content.action.view", "content.footnote.tooltips", "content.tabs"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.path", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "content.action.edit", "content.action.view", "content.footnote.tooltips", "content.tabs"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
         <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
       
-        <script src="../../../../javascripts/tablesort.js"></script>
+        <script src="../../../../../javascripts/tablesort.js"></script>
       
     
   </body>

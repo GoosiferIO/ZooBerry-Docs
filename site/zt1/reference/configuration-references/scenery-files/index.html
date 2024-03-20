@@ -1,0 +1,3994 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.zooberry.org/zt1/reference/configuration-references/scenery-files/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../scenario-files/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+    
+    
+      
+        <title>Scenery - ZooBerry Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep_orange" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#scenery-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="ZooBerry Docs" class="md-header__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ZooBerry Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Scenery
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep_orange" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GoosiferIO/ZooBerry-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GoosiferIO/ZooBerry-Docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../advanced/" class="md-tabs__link">
+          
+  
+    
+  
+  Modding Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../getting-started/web-resources/" class="md-tabs__link">
+        
+  
+    
+  
+  Web Resources
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../attributions/" class="md-tabs__link">
+        
+  
+    
+  
+  Attributions
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="ZooBerry Docs" class="md-nav__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ZooBerry Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GoosiferIO/ZooBerry-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GoosiferIO/ZooBerry-Docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Modding Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Modding Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../advanced/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Advanced Modding
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Modding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../advanced/lua-scripting-in-zt1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lua Scripting - A Brief Primer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../advanced/making-an-easter-egg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Making an Easter Egg
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tool Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tool Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tool-guides/visual-studio-code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visual Studio Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../basic-reference/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Basic References
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Basic References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-reference/file-formats-and-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Formats and Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-reference/mod-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mod Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Configuration References
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Configuration References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Scenery
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Scenery
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#codename" class="md-nav__link">
+    <span class="md-ellipsis">
+      [&lt;Codename&gt;]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#icon" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Icon]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#member" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Member]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#characteristicsintegers" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Characteristics/Integers]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[Characteristics/Integers]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#designation-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Designation Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terrain-placement-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terrain Placement Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc-string-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misc String Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphics-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphics Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-interaction-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Interaction Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#io-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misc Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#characteristicsfloats" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Characteristics/Floats]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#characteristicsstrings" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Characteristics/Strings]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Animations]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sells" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Sells]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estheticbonus" class="md-nav__link">
+    <span class="md-ellipsis">
+      [EstheticBonus]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[EstheticBonus]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#satisfies" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Satisfies]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usesound" class="md-nav__link">
+    <span class="md-ellipsis">
+      [UseSound]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    <span class="md-ellipsis">
+      [slots]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[slots]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slot" class="md-nav__link">
+    <span class="md-ellipsis">
+      [slot#]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colorrep" class="md-nav__link">
+    <span class="md-ellipsis">
+      [colorrep]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[colorrep]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cr_color" class="md-nav__link">
+    <span class="md-ellipsis">
+      [cr_color]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scenarios
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../emu/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    EMU API Reference
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            EMU API Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../emu/emu-console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EMU Command Console
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../emu/emu-scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lua Scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../string-tables/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    String Table References
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            String Table References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/entity-ids/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notable String IDs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../string-tables/official/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Official String Tables
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Official String Tables
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang001/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang001
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang002/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang002
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang007/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang007
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang008/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang008
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang009/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang009
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang010/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang010
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang012/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang012
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang013/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang013
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang015/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang015
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang016/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang016
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang017/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang017
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang018/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang018
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang019/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang019
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang020/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang020
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang021/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang021
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang100/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang100
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang200/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang200
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/official/lang300/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang300
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../string-tables/unofficial/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Unofficial String Tables
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5_4" id="__nav_3_5_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Unofficial String Tables
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/unofficial/LANG--ZTCDD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZTCDD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/unofficial/LANG--ZooTek/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZooTek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/unofficial/LANG--ZKL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZKL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/unofficial/LANG--ZBorsato/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--ZBorsato
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/unofficial/LANG--Jane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--Jane
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/unofficial/LANG--JBL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--JBL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/unofficial/LANG--fern-tek/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LANG--fern-Tek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/unofficial/langZA01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    langZA01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/unofficial/langZA02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    langZA02
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/unofficial/langZA03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    langZA03
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string-tables/unofficial/lang--TKZTUFcombin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lang--TKZTUFcombin.md
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/web-resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../attributions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Attributions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#codename" class="md-nav__link">
+    <span class="md-ellipsis">
+      [&lt;Codename&gt;]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#icon" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Icon]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#member" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Member]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#characteristicsintegers" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Characteristics/Integers]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[Characteristics/Integers]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#designation-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Designation Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terrain-placement-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terrain Placement Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc-string-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misc String Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphics-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphics Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-interaction-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Interaction Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#io-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misc Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#characteristicsfloats" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Characteristics/Floats]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#characteristicsstrings" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Characteristics/Strings]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Animations]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sells" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Sells]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estheticbonus" class="md-nav__link">
+    <span class="md-ellipsis">
+      [EstheticBonus]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[EstheticBonus]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#satisfies" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Satisfies]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usesound" class="md-nav__link">
+    <span class="md-ellipsis">
+      [UseSound]
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    <span class="md-ellipsis">
+      [slots]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[slots]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slot" class="md-nav__link">
+    <span class="md-ellipsis">
+      [slot#]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colorrep" class="md-nav__link">
+    <span class="md-ellipsis">
+      [colorrep]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[colorrep]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cr_color" class="md-nav__link">
+    <span class="md-ellipsis">
+      [cr_color]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/edit/main/docs/zt1/reference/configuration-references/scenery-files.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/raw/main/docs/zt1/reference/configuration-references/scenery-files.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<div class="admonition note">
+<p class="admonition-title">Incomplete</p>
+<p>This page is incomplete. Pull requests welcome.</p>
+</div>
+<h1 id="scenery-documentation">Scenery Documentation</h1>
+<p>This page assumes the game directory definition of what a 'scenery' item entails. Under the 'scenery' folder under the game's assets, it includes buildings, foliage, rocks, terrain, toys, zoos, and other zoo utilities.</p>
+<p>The main configuration for these files are in <code>.ucb</code>, <code>.ucs</code>, or <code>.ai</code> format, but they are really <code>.INI</code> files. The following tables describe attributes that can  be given to the entities mentioned. Example files can be found in a respective <code>/scenery</code> directory.</p>
+<h2 id="codename"><code>[&lt;Codename&gt;]</code></h2>
+<p>Scenery configuration files require a unique 8-character codename that will be used across the project.</p>
+<h3>Example codenames</h3>
+
+<ul>
+<li><code>uforidgs</code></li>
+<li><code>F5DAD057</code></li>
+<li><code>blnstngs</code></li>
+</ul>
+<p>For personal use a unique codename might not matter so much, but if you'd like to minimize compatibility clashes with other mods due to codename conflicts, it might be a good idea to pick a non-generalized name.</p>
+<h2 id="icon"><code>[Icon]</code></h2>
+<p><code>[Icon]</code> defines the directory for that entity's four icons.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Icon</code></td>
+<td><code>&lt;dir&gt;</code></td>
+<td>Directory to the icon graphic</td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+
+<div class="highlight"><pre><span></span><code><span class="k">[Icon]</span>
+<span class="na">Icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">objects/&lt;Codename&gt;/SE/SE</span>
+<span class="na">Icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">objects/&lt;Codename&gt;/SW/SW</span>
+<span class="na">Icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">objects/&lt;Codename&gt;/NW/NW</span>
+<span class="na">Icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">objects/&lt;Codename&gt;/NE/NE</span>
+</code></pre></div>
+<h2 id="member"><code>[Member]</code></h2>
+<p>Assigns the entity to a group. This is used to define the group of entities that the entity belongs to. This is used for the game's UI and for the game's internal logic.</p>
+<div class="admonition note">
+<p class="admonition-title">Incomplete</p>
+<p>This section is incomplete. Needs remaining members.</p>
+</div>
+<ul>
+<li>developer</li>
+<li>fence</li>
+<li>foliage</li>
+<li>habitatfence</li>
+<li>habitatfoliage</li>
+<li>highfence</li>
+<li>lowfence</li>
+<li>rocks</li>
+<li>scenery</li>
+<li>shelters</li>
+<li>structures</li>
+<li>toys</li>
+<li>zoofences</li>
+<li>zoogate</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Decorative Fence</label><label for="__tabbed_1_2">Habitat Fence</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>From <code>castiron.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Member]</span>
+<span class="na">zoofences</span>
+<span class="na">lowfence</span>
+<span class="na">fence</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>From <code>rockwall.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Member]</span>
+<span class="na">zoofences</span>
+<span class="na">habitatfence</span>
+<span class="na">fence</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="characteristicsintegers"><code>[Characteristics/Integers]</code></h2>
+<div class="admonition note">
+<p class="admonition-title">Incomplete</p>
+<p>This section is incomplete. Needs remaining characteristics defined.</p>
+</div>
+<p>These characteristics usually require an integer value to be set. They are used to define the entity's behavior and appearance.</p>
+<h3 id="standard-characteristics">Standard Characteristics</h3>
+<p>These characteristics are standard across most scenery.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cNameID</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Integer key associated with a string that gives the entity its name. Value of <code>19000</code>means the string is defined inside of the <code>.ucb</code> file. If it's a 4-digit number it's a key associated with a string in a <code>.dll</code> lang file.</td>
+</tr>
+<tr>
+<td><code>cHelpID</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Same concept as <code>cNameID</code>: keys for strings, but this one is for tooltips. If <code>cNameID</code> is set to <code>19000</code>, ZT ignores <code>cHelpID</code>.</td>
+</tr>
+<tr>
+<td><code>cFootprintX</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Size of entity footprint in X direction. Value of <code>1</code> can be used for <code>1/4</code> or <code>1/2</code> tiles, otherwise must be an even integer.</td>
+</tr>
+<tr>
+<td><code>cFootprintY</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Size of entity footprint in Y direction. Value of <code>1</code> can be used for <code>1/4</code> or <code>1/2</code> tiles, otherwise must be an even integer.</td>
+</tr>
+<tr>
+<td><code>cPurchaseCost</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Price of entity</td>
+</tr>
+<tr>
+<td><code>cHeight</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Height of entity. Consistent with construction tool height.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="designation-characteristics">Designation Characteristics</h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cCommerce</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> designates the entity as a commerce entity, enabling the entity to sell goods. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cFoliage</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> designates the entity as foliage. Also allows it to count toward exhibit suitability. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cShelter</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> designates the entity as a shelter. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cRock</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> designates the entity as a rock. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cFood</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> designates the entity as animal food. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="terrain-placement-characteristics">Terrain Placement Characteristics</h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cSwims</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows the object to be placed on water. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cUnderwater</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows an entity to be placed underwater. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cHabitat</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>What habitat the entity belongs to. <code>9414</code> makes entities unplaceable in exhibits. <code>9411</code> allows entities placeable in all exhibits. For a full list of possible values, please see <a href="../../string-tables/entity-ids/#habitat">Entity IDs</a></td>
+</tr>
+<tr>
+<td><code>cOnlySwims</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> makes it so the object is only placeable on water and not on land. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cSurface</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows an entity to be placed on water surface. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cLand</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="misc-string-characteristics">Misc String Characteristics</h3>
+<p><code>cNameID</code> and <code>cHelpID</code> are a couple already described under <a href="#standard-characteristics">Standard Characteristics</a>. Here are a few more:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cUsedThought</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>A user's thought after using the entity. Works similar in concept to other key/value strings above.</td>
+</tr>
+<tr>
+<td><code>cLocation</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Assigns a location to the entity. For a list of locations and their respective values, please see <a href="../../string-tables/entity-ids/#locations">Entity IDs</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="graphics-characteristics">Graphics Characteristics</h3>
+<p>These characteristics influence the appearance of the entity.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cIsColorReplaced</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows the entity to be color-replaced. Needs to pair with a respective <code>[colorrep]</code> section with additional configuration settings in the same file. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cDeadOnLand</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows a 'dead on land' status. If the entity is placed on land, a 'dead' graphic is displayed. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cDeadUnderwater</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows a 'dead underwater' status. If the entity is placed underwater, a 'dead' graphic is displayed. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cUsesRealShadows</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cHasShadowImages</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="user-interaction-characteristics">User Interaction Characteristics</h3>
+<p>These characteristics influence how the user interacts with the entity. A user can be a guest or an animal.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cAdultChange</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>How happy a guest is after using the entity. Negative values are possible if you want them to hate it.</td>
+</tr>
+<tr>
+<td><code>cChildChange</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Same as above but specifically child guests.</td>
+</tr>
+<tr>
+<td><code>cHungerChange</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>How much hunger is satisfied after using the entity.</td>
+</tr>
+<tr>
+<td><code>cThirstChange</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>How much thirst is satisfied after using the entity.</td>
+</tr>
+<tr>
+<td><code>cEnergyChange</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>How much energy is satisfied after using the entity.</td>
+</tr>
+<tr>
+<td><code>cBathroomChange</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>How much bathroom need is satisfied after using the entity.</td>
+</tr>
+<tr>
+<td><code>cAngryBathroomChange</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td><code>cHideUser</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> hides the user while using the entity. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>walkable</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows guests and animals to walk through the object. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cCapacity</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>How many users may use entity at a time. It is recommended to match this value with <code>capacity</code> under <code>[slot]</code></td>
+</tr>
+<tr>
+<td><code>cUsersStayOutside</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> makes it so the user stays outside of the entity. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cUserUsesExit</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cRandomUse</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> enables random interaction with entity. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cMinUsePeriod</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>If used, define minimum use period.</td>
+</tr>
+<tr>
+<td><code>cMaxUsePeriod</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>If used, define maximum use period.</td>
+</tr>
+<tr>
+<td><code>cToySatisfaction</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cUserTeleportsInside</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cTimeInside</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>How long should a user be inside of a building. It mmight make sense to match this value with length of sound file if provided.</td>
+</tr>
+<tr>
+<td><code>cHideBuilding</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> hides the building while in use. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cUserUsesEntranceAsEmergencyExit</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> makes it so the user uses the entrance as an emergency exit. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cUserUsesExit</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> makes it so the user uses the exit. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="io-characteristics">I/O Characteristics</h3>
+<p>These characteristics influence how the player interacts with the entity.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cNeedsConfirm</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> makes it so the entity needs confirmation window when bulldozed. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cDeletable</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows the entity to be deleted by the player after placement or spawn. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cUseNumbersInName</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> enumerates entity name in the UI. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cMoveable</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows the entity to be moved by the player. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cAutoRotate</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> automatically rotates the object on placement. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cSelectable</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> allows the entity to be selected. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="misc-characteristics">Misc Characteristics</h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>walkableByTall</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cExplosionSound</code></td>
+<td><code>&lt;string dir&gt;</code></td>
+<td>Directory to sound file to play on explosion.</td>
+</tr>
+<tr>
+<td><code>cExplosionSoundAtten</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Volume of explosion sound.</td>
+</tr>
+<tr>
+<td><code>cRubbleable</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cDepth</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cHasUnderwaterSection</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cDeadStateHeight</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cBlocksLOS</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cDirectEntrance</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Moves user toward entity more quickly</td>
+</tr>
+<tr>
+<td><code>cShow</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cUsesTreeRubble</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cEstheticWeight</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cGawkOnlyFromFront</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cExpansionID</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cAvoidEdges</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Setting this to <code>1</code> prevents entity to be placed next to fences or tank walls. Set to <code>0</code> or delete line to exclude this configuration.</td>
+</tr>
+<tr>
+<td><code>cFoodUnits</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>How much food the entity provides until it's empty.</td>
+</tr>
+<tr>
+<td><code>cMaxFoodUnits</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Maximum food units the entity can hold.</td>
+</tr>
+<tr>
+<td><code>cFoodCategory</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Category of food the entity provides.</td>
+</tr>
+<tr>
+<td><code>cKeeperFoodType</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="examples">Examples</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Attraction</label><label for="__tabbed_2_2">Foliage</label><label for="__tabbed_2_3">Scenery</label><label for="__tabbed_2_4">Low Fence</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>From <code>carousal.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Characteristics/Integers]</span>
+<span class="na">cPurchaseCost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">800</span>
+<span class="na">cNameID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">8001</span>
+<span class="na">cHelpID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">8001</span>
+<span class="c1">;Bad Habitat Type</span>
+<span class="na">cHabitat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9414</span>
+<span class="na">cFootprintX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">8</span>
+<span class="na">cFootprintY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">10</span>
+<span class="na">cCommerce</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="na">cSelectable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="na">cNeedsConfirm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="na">cAdultChange</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0</span>
+<span class="na">cChildChange</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">12</span>
+<span class="na">cHideUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="na">cUserStaysOutside</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0</span>
+<span class="na">cHideBuilding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0</span>
+<span class="na">cCapacity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">12</span>
+<span class="na">cTimeInside</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">12</span>
+<span class="na">cUsedThought</span><span class="o">=</span><span class="s">10114</span>
+<span class="na">cHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">3</span>
+
+<span class="na">cIsColorReplaced</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>From <code>acacia.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Characteristics/Integers]</span>
+<span class="na">cPurchaseCost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">125</span>
+<span class="na">cNameID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">7000</span>
+<span class="na">cHelpID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">7000</span>
+<span class="na">cHabitat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9400</span>
+<span class="na">cLocation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9600</span>
+<span class="na">cHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">3</span>
+<span class="na">cFoliage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="na">cAutoRotate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="na">cUseNumbersInName</span><span class="o">=</span><span class="s">0</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>From <code>lamp.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Characteristics/Integers]</span>
+<span class="na">cPurchaseCost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">65</span>
+<span class="na">cNameID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">6032</span>
+<span class="na">cHelpID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">6032</span>
+<span class="na">cFootprintX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="na">cFootprintY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="na">cUserStaysOutside</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="na">cTimeInside</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0</span>
+<span class="na">cUsedThought</span><span class="o">=</span><span class="w"> </span><span class="s">0</span>
+<span class="na">cHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="c1">;Bad Habitat Type</span>
+<span class="na">cHabitat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9414</span>
+<span class="na">cUseNumbersInName</span><span class="o">=</span><span class="s">0</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>From <code>castiron.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Characteristics/Integers]</span>
+<span class="na">cPurchaseCost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">65</span>
+<span class="na">cNameID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9305</span>
+<span class="na">cHelpID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9305</span>
+<span class="na">cHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="characteristicsfloats"><code>[Characteristics/Floats]</code></h2>
+<div class="admonition note">
+<p class="admonition-title">Incomplete</p>
+<p>This section is incomplete. Needs remaining characteristics defined.</p>
+</div>
+<p>These characteristics usually require a float value to be set. Since floats are decimal numbers, these characteristics are usually used to
+set prices for things such as upkeep and other costs.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cDefaultCost</code></td>
+<td><code>&lt;float&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cUpkeep</code></td>
+<td><code>&lt;float&gt;</code></td>
+<td>How much it costs per month to upkeep entity.</td>
+</tr>
+<tr>
+<td><code>cLowCost</code></td>
+<td><code>&lt;float&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cMedCost</code></td>
+<td><code>&lt;float&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cHighCost</code></td>
+<td><code>&lt;float&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cPriceFactor</code></td>
+<td><code>&lt;float&gt;</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="characteristicsstrings"><code>[Characteristics/Strings]</code></h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cInfoImageName</code></td>
+<td><code>&lt;string dir&gt;</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="animations"><code>[Animations]</code></h2>
+<div class="admonition note">
+<p class="admonition-title">Incomplete</p>
+<p>This section is incomplete. Needs missing definitions.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>idle</code></td>
+<td><code>idle</code></td>
+<td>Idle defines your entity as having graphics without animation. Can sometimes be a directory to a <code>.ani</code> file.</td>
+</tr>
+<tr>
+<td><code>used</code></td>
+<td><code>used</code></td>
+<td>Used defines your entity as having graphics with animation.</td>
+</tr>
+<tr>
+<td><code>explode</code></td>
+<td><code>&lt;string dir&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>giant</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>small</code></td>
+<td><code>small</code></td>
+<td>Usually a graphic that displays a low quantity of the entity it represents. Typically used in animal food.</td>
+</tr>
+<tr>
+<td><code>mid</code></td>
+<td><code>mid</code></td>
+<td>Usually a graphic that displays a medium quantity of the entity it represents. Typically used in animal food.</td>
+</tr>
+<tr>
+<td><code>full</code></td>
+<td><code>full</code></td>
+<td>Usually a graphic that displays a high quantity of the entity it represents. Typically used in animal food.</td>
+</tr>
+<tr>
+<td><code>empty</code></td>
+<td><code>empty</code></td>
+<td>Usually a graphic that displays an empty quantity of the entity it represents. Typically used in animal food.</td>
+</tr>
+<tr>
+<td><code>idledead</code></td>
+<td><code>dead</code></td>
+<td>Graphics for when the entity is dead.</td>
+</tr>
+<tr>
+<td><code>shadowidle</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>underidle</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Examples</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Inanimate</label><label for="__tabbed_3_2">Animated</label><label for="__tabbed_3_3">Animal Food</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>From <code>lrock1.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Animations]</span>
+<span class="na">idle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">idle</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>From <code>carousal.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Animations]</span>
+<span class="na">idle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">idle</span>
+<span class="na">used</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">used</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>From <code>graschow.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Animations]</span>
+<span class="na">full</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">full</span>
+<span class="na">half</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mid</span>
+<span class="na">empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">small</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="sells"><code>[Sells]</code></h2>
+<p>Used to define what the entity sells. This is used for commerce entities. There are not any key/value attributes under this section. Instead, simply list the items the entity sells. Below are possible values for this section.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Zoo Tycoon 1 </label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Codename</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>burger</code></td>
+<td>Burger</td>
+</tr>
+<tr>
+<td><code>candy</code></td>
+<td>Candy</td>
+</tr>
+<tr>
+<td><code>clrbook</code></td>
+<td>Coloring Book</td>
+</tr>
+<tr>
+<td><code>hotdog</code></td>
+<td>Hot Dog</td>
+</tr>
+<tr>
+<td><code>icecream</code></td>
+<td>Ice Cream</td>
+</tr>
+<tr>
+<td><code>pizza</code></td>
+<td>Pizza</td>
+</tr>
+<tr>
+<td><code>plasanim</code></td>
+<td>Plastic Animal</td>
+</tr>
+<tr>
+<td><code>soda</code></td>
+<td>Soda</td>
+</tr>
+<tr>
+<td><code>sodacan</code></td>
+<td>Soda Can</td>
+</tr>
+<tr>
+<td><code>stufpanda</code></td>
+<td>Stuffed Panda</td>
+</tr>
+<tr>
+<td><code>trash</code></td>
+<td>Trash</td>
+</tr>
+<tr>
+<td><code>tshirt</code></td>
+<td>T-Shirt</td>
+</tr>
+<tr>
+<td><code>rburger</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>rsoda</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>rhotdog</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>rpizza</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>If you want your entity to sell a custom item, must include an accompanying <code>*.cfg</code> file with the name <code>items-&lt;Codename&gt;.cfg</code> at the base directory of the mod. This file should contain the following:</p>
+<div class="highlight"><pre><span></span><code><span class="k">[items]</span>
+<span class="na">&lt;item_codename&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">items/&lt;item_codename&gt;.cfg</span>
+</code></pre></div>
+<h2 id="estheticbonus"><code>[EstheticBonus]</code></h2>
+<p><code>[EstheticBonus]</code> defines how much a guest will enjoy looking at an entity. There's a different value for each type of guest. Every value maps a guest entity type with an esthetic bonus value. Please see <a href="./entity-ids.md#guests">Entity IDs</a> for guest entity definitions.</p>
+<h3 id="usage">Usage</h3>
+<p>Simply tweak the second <code>v</code> attribute for each to your preference.</p>
+<h3>Example (from `carousal.ai`)</h3>
+
+<div class="highlight"><pre><span></span><code><span class="k">[EstheticBonus]</span>
+<span class="c1">; man</span>
+<span class="na">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9503</span>
+<span class="na">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">10</span>
+<span class="c1">; woman</span>
+<span class="na">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9504</span>
+<span class="na">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">10</span>
+<span class="c1">; boy</span>
+<span class="na">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9505</span>
+<span class="na">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">20</span>
+<span class="c1">; girl</span>
+<span class="na">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9506</span>
+<span class="na">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">20</span>
+</code></pre></div>
+<h2 id="satisfies"><code>[Satisfies]</code></h2>
+<div class="admonition note">
+<p class="admonition-title">Incomplete</p>
+<p>This section is incomplete. Needs remaining subcategories.</p>
+</div>
+<p>This category assigns the entity to a subcategory type in Zoo Tycoon for various stat checks.</p>
+<p>An (incomplete) list of possible values:</p>
+<ul>
+<li><code>animalrest</code></li>
+<li><code>animalsex</code></li>
+<li><code>bathroom</code></li>
+<li><code>building</code></li>
+<li><code>drink</code></li>
+<li><code>energy</code></li>
+<li><code>familybathroom</code></li>
+<li><code>food</code></li>
+<li><code>fun</code></li>
+<li><code>gift</code></li>
+<li><code>showtrick</code></li>
+</ul>
+<h3>Examples</h3>
+
+<div class="tabbed-set tabbed-alternate" data-tabs="5:5"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><input id="__tabbed_5_4" name="__tabbed_5" type="radio" /><input id="__tabbed_5_5" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Attraction</label><label for="__tabbed_5_2">Bathroom</label><label for="__tabbed_5_3">Food Stand</label><label for="__tabbed_5_4">Shelter</label><label for="__tabbed_5_5">Gift Shop</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>From <code>carousal.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Satisfies]</span>
+<span class="na">building</span>
+<span class="na">fun</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>From <code>bathroom.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Satisfies]</span>
+<span class="na">building</span>
+<span class="na">bathroom</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>From <code>bgrstnd.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Satisfies]</span>
+<span class="na">building</span>
+<span class="na">food</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>From <code>burrow1.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Satisfies]</span>
+<span class="na">building</span>
+<span class="na">animalrest</span>
+<span class="na">animalsex</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>From <code>giftshp.ai</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[Satisfies]</span>
+<span class="na">building</span>
+<span class="na">gift</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="usesound"><code>[UseSound]</code></h2>
+<p>Defines a playable sound for the entity.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>alwayson</code></td>
+<td><code>&lt;0/1&gt;</code></td>
+<td>Is the sound always playing?</td>
+</tr>
+<tr>
+<td><code>loops</code></td>
+<td><code>&lt;0/1&gt;</code></td>
+<td>Does the sound loop on playback.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>&lt;string dir&gt;</code></td>
+<td>Directory of sound file to play.</td>
+</tr>
+<tr>
+<td><code>attenuation</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Volume of sound.</td>
+</tr>
+</tbody>
+</table>
+<h3>Example (from `carousal.ai`)</h3>
+
+<div class="highlight"><pre><span></span><code><span class="k">[UseSound]</span>
+<span class="na">alwayson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0</span>
+<span class="na">loops</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">scenery/building/carousel.wav</span>
+<span class="na">attenuation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1500</span>
+</code></pre></div>
+<h2 id="slots"><code>[slots]</code></h2>
+<p>This category defines the slots for the entity. Slots are used to define where animals or guests can interact with the entity. Typically this should only be necessary for entities where guests or animals require a specific spot to interact with the entity, such as buildings, shelters, picnic tables, etc.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><code>&lt;string name&gt;</code></td>
+<td>Name of the slot. There should be as many of this attribute as there are slots.</td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+
+<p>From <code>picnic.ai</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="k">[slots]</span>
+<span class="na">name</span><span class="o">=</span><span class="s">slot0</span>
+<span class="na">name</span><span class="o">=</span><span class="s">slot1</span>
+<span class="na">name</span><span class="o">=</span><span class="s">slot2</span>
+<span class="na">name</span><span class="o">=</span><span class="s">slot3</span>
+</code></pre></div>
+<p>For each slot there should then be a <code>[slot]</code> section with the same name. For the purpose of this reference guide, we'll define the attributes for such slots below under the <code>[slot#]</code> section.</p>
+<h3 id="slot"><code>[slot#]</code></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>This key is optional and can be omitted. By setting the value to a designated entity string ID, you can define a slot as a specific entity. It can be used multiple times if you want to restrict the slot to multiple entities. Omit this key if you want the slot to be open to all entities.</td>
+</tr>
+<tr>
+<td><code>filter</code></td>
+<td><code>&lt;char&gt;</code></td>
+<td>Observed in some toys such as <code>lionrck1.ai</code> with a value of <code>y</code>. Not seen in most slot sections. Unknown purpose.</td>
+</tr>
+<tr>
+<td><code>slotpos</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Position of the slot. This can also be defined as the spot in the entity where the user will begin its 'used' animation.</td>
+</tr>
+<tr>
+<td><code>entrpos</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Position of the entrance. This is the spot outside of the entity where the user paths to.</td>
+</tr>
+<tr>
+<td><code>exitpos</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Position of the exit. This is the spot where the user will appear once they've used the entity.</td>
+</tr>
+<tr>
+<td><code>capacity</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>How many users may use entity at a time. It is recommended to match this value with <code>cCapacity</code> under <code>[Characteristics/Integers]</code></td>
+</tr>
+<tr>
+<td><code>facing</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Direction the user is facing while using the entity.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you have issue with a user leaving the entity facing the wrong direction, removing <code>cUserUsesEntranceAsEmergencyExit = 1</code> and <code>cUserUsesExit = 1</code> from <code>[Characteristics/Integers]</code> might fix it.</p>
+</div>
+<h3>Examples</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Building</label><label for="__tabbed_6_2">Shelter</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">[slot0]</span>
+<span class="na">slotpos</span><span class="o">=</span><span class="s">-16</span>
+<span class="na">slotpos</span><span class="o">=</span><span class="s">16</span>
+
+<span class="na">entrpos</span><span class="o">=</span><span class="s">-16</span>
+<span class="na">entrpos</span><span class="o">=</span><span class="s">48</span>
+
+<span class="na">exitpos</span><span class="o">=</span><span class="s">-16</span>
+<span class="na">exitpos</span><span class="o">=</span><span class="s">48</span>
+
+<span class="na">capacity</span><span class="o">=</span><span class="s">1</span>
+<span class="na">facing</span><span class="o">=</span><span class="s">7</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="na">From `leanto2.ai`.</span>
+<span class="na">```INI</span>
+<span class="k">[slots]</span>
+<span class="na">name</span><span class="o">=</span><span class="s">slot</span>
+
+<span class="k">[slot]</span>
+<span class="c1">; Animals which can use this shelter</span>
+<span class="c1">;PLAINS_ZEBRA       </span>
+<span class="na">id</span><span class="o">=</span><span class="s">5004</span>
+<span class="c1">;THOMSONS_GAZELLE       </span>
+<span class="na">id</span><span class="o">=</span><span class="s">5005</span>
+<span class="c1">;RED_KANGAROO       </span>
+<span class="na">id</span><span class="o">=</span><span class="s">5023</span>
+<span class="c1">;COMMON_WILDEBEEST          </span>
+<span class="na">id</span><span class="o">=</span><span class="s">5025</span>
+<span class="c1">;IBEX           </span>
+<span class="na">id</span><span class="o">=</span><span class="s">5027</span>
+<span class="c1">;OKAPI          </span>
+<span class="na">id</span><span class="o">=</span><span class="s">5028</span>
+<span class="c1">;AMERICAN_BIGHORN       </span>
+<span class="na">id</span><span class="o">=</span><span class="s">5032</span>
+<span class="c1">;MARKHOR            </span>
+<span class="na">id</span><span class="o">=</span><span class="s">5036</span>
+<span class="c1">;OSTRICH            </span>
+<span class="na">id</span><span class="o">=</span><span class="s">5038</span>
+<span class="c1">;GIANT_ANTEATER     </span>
+<span class="na">id</span><span class="o">=</span><span class="s">5042</span>
+
+<span class="c1">; spot in the building where animal would play animation if didn&#39;t disappear</span>
+<span class="c1">; (in world coordinates, relative to building center; 16 per half-subtile)</span>
+<span class="na">slotpos</span><span class="o">=</span><span class="s">0</span>
+<span class="na">slotpos</span><span class="o">=</span><span class="s">0</span>
+
+<span class="c1">; spots outside the building where animal paths to</span>
+<span class="na">entrpos</span><span class="o">=</span><span class="s">0</span>
+<span class="na">entrpos</span><span class="o">=</span><span class="s">64</span>
+
+<span class="c1">; spot to place animal in once they&#39;ve used the building</span>
+<span class="na">exitpos</span><span class="o">=</span><span class="s">0</span>
+<span class="na">exitpos</span><span class="o">=</span><span class="s">64</span>
+
+<span class="c1">; 1000 = essentially infinite capacity</span>
+<span class="na">capacity</span><span class="o">=</span><span class="s">4</span>
+<span class="na">facing</span><span class="o">=</span><span class="s">0</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Slots and Coordinates</p>
+<p>Notice that each <code>slotpos</code>, <code>entrpos</code>, and <code>exitpos</code> attribute has two values. This is because they are world coordinates. The first value is the X coordinate and the second value is the Y coordinate. The X coordinate is the horizontal axis and the Y coordinate is the vertical axis. Both are needed to define a position in the game world. The game will crash if you only define one of the two.</p>
+<p>For a guided tutorial on slots, please read Jay's <a href="http://www.ztcdd.org/DG/index.php?topic=4202.0">Slot Information Guide</a> at the Zoo Tycoon Community Download Directory.</p>
+</div>
+<h2 id="colorrep"><code>[colorrep]</code></h2>
+<div class="admonition info">
+<p class="admonition-title">Color Replacement</p>
+<p>Must define <code>cIsColorReplaced</code> under <code>[Characteristics/Integers]</code> to <code>1</code> to use this section.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Color Replacement</p>
+<p>This section is not yet checked for accuracy. When using this section, please verify the results in-game.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>color</code></td>
+<td><code>&lt;string cr_color&gt;</code></td>
+<td>Main color to replace. Requires a section definition with the same name as the value. See example below.</td>
+</tr>
+<tr>
+<td><code>replace</code></td>
+<td><code>&lt;string&gt;</code></td>
+<td>Replacement color.</td>
+</tr>
+<tr>
+<td><code>defaultpal</code></td>
+<td><code>&lt;string&gt;</code></td>
+<td>Default palette.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cr_color"><code>[cr_color]</code></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ncolors</code></td>
+<td><code>&lt;int&gt;</code></td>
+<td>Number of colors in .pal file.</td>
+</tr>
+<tr>
+<td><code>fullpal</code></td>
+<td><code>&lt;string dir&gt;</code></td>
+<td>Directory to .pal file.</td>
+</tr>
+<tr>
+<td><code>colorpal</code></td>
+<td><code>&lt;string dir&gt;</code></td>
+<td>Directory to .pal file.</td>
+</tr>
+</tbody>
+</table>
+<h3>Example</h3>
+
+<p>From <code>carousal.ai</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="k">[colorrep]</span>
+
+<span class="c1">; cr_color is listed below</span>
+<span class="na">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cr_color</span>
+
+<span class="c1">; cr_part1 is listed in building.ai</span>
+<span class="na">replace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cr_part1</span>
+<span class="na">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">2300</span>
+<span class="na">defaultpal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">scenery/building/pals/sky16.pal</span>
+
+<span class="c1">; cr_part2 is listed in building.ai</span>
+<span class="na">replace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cr_part2</span>
+<span class="na">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">2301</span>
+<span class="na">defaultpal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">scenery/building/pals/pink8.pal</span>
+
+<span class="k">[cr_color]</span>
+<span class="na">ncolors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">232</span>
+<span class="na">fullpal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">objects/carousal/carousal.pal</span>
+<span class="na">colorpal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">objects/carousal/color.pal</span>
+</code></pre></div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 20, 2024</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2024</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Configuration References">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Configuration References
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../scenario-files/" class="md-footer__link md-footer__link--next" aria-label="Next: Scenarios">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Scenarios
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Goosifer.IO
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.path", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "content.action.edit", "content.action.view", "content.footnote.tooltips", "content.tabs"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../../../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>

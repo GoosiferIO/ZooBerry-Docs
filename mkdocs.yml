@@ -61,8 +61,11 @@ nav:
           - Scenarios : zt1/reference/configuration-references/scenario-files.md
       - EMU API Reference:
           - zt1/reference/emu/index.md
-          - EMU Command Console: zt1/reference/emu/emu-console.md
-          - Lua Scripts: zt1/reference/emu/emu-scripts.md
+          - Command Console: zt1/reference/emu/emu-console.md
+          - Scripting API: 
+            - zt1/reference/emu/api/index.md
+            - Entity Types: zt1/reference/emu/api/entitytypes.md
+            - Game Manager: zt1/reference/emu/api/gamemanager.md
       - String Table References:
           - zt1/reference/string-tables/index.md
           - Notable String IDs: zt1/reference/string-tables/entity-ids.md
@@ -136,6 +139,7 @@ markdown_extensions:
           - name: mermaid
             class: mermaid
             format: !!python/name:pymdownx.superfences.fence_code_format
+  - md_in_html
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js

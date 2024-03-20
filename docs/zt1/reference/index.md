@@ -6,13 +6,13 @@ Please note that these aren't guided tutorials, but rather information you can u
 
 ## Basic References
 
-- [File Types and Tools](./file-types.md)
-- [Mod Installation](./mod-installation.md)
+- [File Types and Tools](./basic-reference/file-formats-and-tools.md)
+- [Mod Installation](./basic-reference/mod-installation.md)
 
 ## Configuration References
 
-- [Scenery Configuration](../configuration-references/scenery-files.md)
-- [Scenario Configuration](../configuration-references/scenario-files.md)
+- [Scenery Configuration](./configuration-references/scenery-files.md)
+- [Scenario Configuration](./configuration-references//scenario-files.md)
   
 ## EMU API Referece
 

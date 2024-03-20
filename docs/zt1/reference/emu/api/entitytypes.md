@@ -22,8 +22,9 @@ Example Lua Script:
 
 ```lua
 function emu_run()
-    local elephant = GetEntityType("elephant")
-    elephant:visible(false) -- hides all elephants
+    local entitytype_instance = ztUIGeneral.getSelectedEntityType()
+    local maleguest = ZTGuestType.new(entitytype_instance)
+    maleguest:visible(false) -- hides all male guests
 end
 ```
 

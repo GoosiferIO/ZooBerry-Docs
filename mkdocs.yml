@@ -43,8 +43,6 @@ nav:
   - Home:
       - Index: index.md
   - Modding Tutorials:
-    # - Getting Started: 
-    #     - zt1/getting-started/index.md
     - Advanced Modding:
         - zt1/advanced/index.md
         - Lua Scripting - A Brief Primer: zt1/advanced/lua-scripting-in-zt1.md
@@ -52,47 +50,56 @@ nav:
     - Tool Guides:
         - Visual Studio Code: zt1/tool-guides/visual-studio-code.md
   - Reference:
+      - zt1/reference/index.md
       - Basic References:
-          - File Formats and Tools: zt1/basic-reference/file-formats-and-tools.md
-          - Mod Installation: zt1/basic-reference/mod-installation.md
+          - zt1/reference/basic-reference/index.md
+          - File Formats and Tools: zt1/reference/basic-reference/file-formats-and-tools.md
+          - Mod Installation: zt1/reference/basic-reference/mod-installation.md
       - Configuration References:
-          - zt1/configuration-references/index.md
-          - Scenery : zt1/configuration-references/scenery-files.md
-          - Scenarios : zt1/configuration-references/scenario-files.md
+          - zt1/reference/configuration-references/index.md
+          - Scenery : zt1/reference/configuration-references/scenery-files.md
+          - Scenarios : zt1/reference/configuration-references/scenario-files.md
+      - EMU API Reference:
+          - zt1/reference/emu/index.md
+          - EMU Command Console: zt1/reference/emu/emu-console.md
+          - Lua Scripts: zt1/reference/emu/emu-scripts.md
       - String Table References:
-          - Notable String IDs: zt1/string-tables/entity-ids.md
+          - zt1/reference/string-tables/index.md
+          - Notable String IDs: zt1/reference/string-tables/entity-ids.md
           - Official String Tables:
-              - lang0: zt1/string-tables/official/lang0.md
-              - lang001: zt1/string-tables/official/lang001.md
-              - lang002: zt1/string-tables/official/lang002.md
-              - lang007: zt1/string-tables/official/lang007.md
-              - lang008: zt1/string-tables/official/lang008.md
-              - lang009: zt1/string-tables/official/lang009.md
-              - lang010: zt1/string-tables/official/lang010.md
-              - lang012: zt1/string-tables/official/lang012.md
-              - lang013: zt1/string-tables/official/lang013.md
-              - lang015: zt1/string-tables/official/lang015.md
-              - lang016: zt1/string-tables/official/lang016.md
-              - lang017: zt1/string-tables/official/lang017.md
-              - lang018: zt1/string-tables/official/lang018.md
-              - lang019: zt1/string-tables/official/lang019.md
-              - lang020: zt1/string-tables/official/lang020.md
-              - lang021: zt1/string-tables/official/lang021.md
-              - lang100: zt1/string-tables/official/lang100.md
-              - lang200: zt1/string-tables/official/lang200.md
-              - lang300: zt1/string-tables/official/lang300.md
+              - zt1/reference/string-tables/official/index.md
+              - lang0: zt1/reference/string-tables/official/lang0.md
+              - lang001: zt1/reference/string-tables/official/lang001.md
+              - lang002: zt1/reference/string-tables/official/lang002.md
+              - lang007: zt1/reference/string-tables/official/lang007.md
+              - lang008: zt1/reference/string-tables/official/lang008.md
+              - lang009: zt1/reference/string-tables/official/lang009.md
+              - lang010: zt1/reference/string-tables/official/lang010.md
+              - lang012: zt1/reference/string-tables/official/lang012.md
+              - lang013: zt1/reference/string-tables/official/lang013.md
+              - lang015: zt1/reference/string-tables/official/lang015.md
+              - lang016: zt1/reference/string-tables/official/lang016.md
+              - lang017: zt1/reference/string-tables/official/lang017.md
+              - lang018: zt1/reference/string-tables/official/lang018.md
+              - lang019: zt1/reference/string-tables/official/lang019.md
+              - lang020: zt1/reference/string-tables/official/lang020.md
+              - lang021: zt1/reference/string-tables/official/lang021.md
+              - lang100: zt1/reference/string-tables/official/lang100.md
+              - lang200: zt1/reference/string-tables/official/lang200.md
+              - lang300: zt1/reference/string-tables/official/lang300.md
           - Unofficial String Tables:
-              - LANG--ZTCDD: zt1/string-tables/unofficial/LANG--ZTCDD.md
-              - LANG--ZooTek: zt1/string-tables/unofficial/LANG--ZooTek.md
-              - LANG--ZKL: zt1/string-tables/unofficial/LANG--ZKL.md
-              - LANG--ZBorsato: zt1/string-tables/unofficial/LANG--ZBorsato.md
-              - LANG--Jane: zt1/string-tables/unofficial/LANG--Jane.md
-              - LANG--JBL: zt1/string-tables/unofficial/LANG--JBL.md
-              - LANG--fern-Tek: zt1/string-tables/unofficial/LANG--fern-tek.md
-              - langZA01: zt1/string-tables/unofficial/langZA01.md
-              - langZA02: zt1/string-tables/unofficial/langZA02.md
-              - langZA03: zt1/string-tables/unofficial/langZA03.md
-              - lang--TKZTUFcombin.md: zt1/string-tables/unofficial/lang--TKZTUFcombin.md
+              - zt1/reference/string-tables/unofficial/index.md
+              - LANG--ZTCDD: zt1/reference/string-tables/unofficial/LANG--ZTCDD.md
+              - LANG--ZooTek: zt1/reference/string-tables/unofficial/LANG--ZooTek.md
+              - LANG--ZKL: zt1/reference/string-tables/unofficial/LANG--ZKL.md
+              - LANG--ZBorsato: zt1/reference/string-tables/unofficial/LANG--ZBorsato.md
+              - LANG--Jane: zt1/reference/string-tables/unofficial/LANG--Jane.md
+              - LANG--JBL: zt1/reference/string-tables/unofficial/LANG--JBL.md
+              - LANG--fern-Tek: zt1/reference/string-tables/unofficial/LANG--fern-tek.md
+              - langZA01: zt1/reference/string-tables/unofficial/langZA01.md
+              - langZA02: zt1/reference/string-tables/unofficial/langZA02.md
+              - langZA03: zt1/reference/string-tables/unofficial/langZA03.md
+              - lang--TKZTUFcombin.md: zt1/reference/string-tables/unofficial/lang--TKZTUFcombin.md
   - Web Resources: zt1/getting-started/web-resources.md
   - Attributions: attributions.md
 

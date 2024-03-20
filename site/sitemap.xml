@@ -86,12 +86,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.zooberry.org/zt1/reference/emu/emu-scripts/</loc>
+         <loc>https://docs.zooberry.org/zt1/reference/emu/api/</loc>
          <lastmod>2024-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.zooberry.org/zt1/reference/emu/introduction/</loc>
+         <loc>https://docs.zooberry.org/zt1/reference/emu/api/entitytypes/</loc>
+         <lastmod>2024-03-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/reference/emu/api/gamemanager/</loc>
          <lastmod>2024-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>

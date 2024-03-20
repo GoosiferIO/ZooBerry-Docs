@@ -1,5 +1,7 @@
 # Entity Types API
 
+## Description of Entity Types
+
 The game has generalized descriptions of entities which it calls "entity types". You can think of them as blueprints for the game's major objects, such as animals, guests, staff, and scenery. Generally speaking, any functions that operate on an entity function can be mapped to the configuration most Zoo Tycoon 1 modders are familiar with. When we change `cSelectable` to `1`, we are changing the `cSelectable` property of the entity type.
 
 Note however that entity types are built on several levels of inheritance, and the entity type's behabior is determined by the properties of its parent entity types. For example, all functions available to the core entity type `BFEntityType` are also available to all of its children objects and their children, but not the other way around. This means that if you want to operate on a specific entity type, you need to make sure that the function you are calling is available to that entity type or else it will not work and may cause undefined behavior.
@@ -10,6 +12,20 @@ To make sense of this reference section, please refer to the following graph of 
 ![Entity Type Inheritance](./images/entitytypes.png)
 <figcaption>Credit: Finn from the OpenZT project</figcaption>
 </figure>
+
+## Example Usage
+
+This API relies on the programmer to obtain an entity type object from the game's memory in order to make use of any of the following functions. Here's an example of how you might obtain an entity type and change one of its properties:
+
+Example Lua Script:  
+*hideelephants.emu*
+
+```lua
+function emu_run()
+    local elephant = GetEntityType("elephant")
+    elephant:visible(false) -- hides all elephants
+end
+```
 
 ## BFEntityType
 

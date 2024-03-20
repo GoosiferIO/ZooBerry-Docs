@@ -10,8 +10,8 @@ Example Script:
 ```Lua
 function emu_run()
     local selected_entitytype = ztUIGeneral.getSelectedEntityType()
-    local guesttype = ZTGuestType.new(selected_entity)
-    io.write("Selected guest name: " .. guesttype:cPurchaseCost())
+    local buildingtype = ZTBuildingType.new(selected_entity)
+    io.write("Selected building purchase cost: " .. guesttype:cPurchaseCost())
 end
 ```
 

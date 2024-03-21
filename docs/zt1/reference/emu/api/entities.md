@@ -2,11 +2,11 @@
 
 ## Overview
 
-The Entity API contains functions for interacting with entities in the game. Please note that there is a fundamental difference between an entity and an entity type. An entity is an instance of an entity type, and an entity type is a template for an entity. For more information on entities and entity types, see [Operating on Entities](/docs/zt1/advanced/operating-on-entities.md).
+The Entity API contains functions for interacting with entities in the game. Please note that there is a fundamental difference between an entity and an entity type. An entity is an instance of an entity type, and an entity type is a template for an entity. For more information on entities and entity types, see [Operating on Entities](/zt1/advanced/operating-on-entities/).
 
 ## Usage
 
-This API requires an instance of an entity to be passed as an argument to a `BFEntity` object or one of its subclasses. For example, to obtain an instance of an entity, you might use the `getAllEntitiesOfType` function in the [World Manager API](/docs/zt1/reference/emu/api/worldmanager.md).
+This API requires an instance of an entity to be passed as an argument to a `BFEntity` object or one of its subclasses. For example, to obtain an instance of an entity, you might use the `getAllEntitiesOfType` function in the [World Manager API](/zt1/reference/emu/api/worldmanager/).
 
 Example Script:
 ```lua
@@ -20,7 +20,7 @@ end
 ```
 
 !!! info "Note"
-    The `ZTEntity` API is not yet implemented in EMU API. This is a hypothetical example, but can be reproduced successfully with any of the EntityType APIs documented at [Entity Types](/docs/zt1/reference/emu/api/entitytypes.md).
+    The `ZTEntity` API is not yet implemented in EMU API. This is a hypothetical example, but can be reproduced successfully with any of the EntityType APIs documented at [Entity Types](/zt1/reference/emu/api/entitytypes/).
 
 It's worth noting that as of this writing, the `BFEntity` API is not yet fully implemented in EMU API. There is simple access to some of the entity's functions and properties, but not all. This is a work in progress. Only the `BFEntity` class is documented here, but because it's a chain of inheritance, you can technically use any of the subclasses detailed below as the class for the `BFEntity` object.
 

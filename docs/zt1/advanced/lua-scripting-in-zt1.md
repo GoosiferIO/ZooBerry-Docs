@@ -3,7 +3,7 @@
 
 # Lua Scripting in ZT1: A Brief Primer
 
-[Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)) is a lightweight, high-level, programming language designed to be embedded in other applications and is usually a popular choice for game scripting because it's easy to learn and use. In fact, Zoo Tycoon 2, which came out only a few years after Zoo Tycoon 1, uses Lua for its scripting, but Zoo Tycoon 1 did not come with Lua support. [EMU API](/docs/zt1/reference/emu/index.md) is a tool that gives us scripting capabilities for Zoo Tycoon 1, which means we can make the game do things that it wasn't originally designed to do. This guide will serve as a brief primer for Lua and how to use it in Zoo Tycoon 1.
+[Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)) is a lightweight, high-level, programming language designed to be embedded in other applications and is usually a popular choice for game scripting because it's easy to learn and use. In fact, Zoo Tycoon 2, which came out only a few years after Zoo Tycoon 1, uses Lua for its scripting, but Zoo Tycoon 1 did not come with Lua support. [EMU API](../reference/emu/api/entities.md) is a tool that gives us scripting capabilities for Zoo Tycoon 1, which means we can make the game do things that it wasn't originally designed to do. This guide will serve as a brief primer for Lua and how to use it in Zoo Tycoon 1.
 
 ## What is Scripting?
 

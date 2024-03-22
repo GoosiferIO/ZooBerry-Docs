@@ -28,3 +28,11 @@ Drop the res-EMU.dll binary directly into your `C:\Program Files (x86)\Microsoft
 
 [Console Documentation](./emu-console.md)  
 [Scripting API Documentation](./api/index.md)
+
+### Potential Issues
+
+Due to the nature of how the API runs by injecting code into the running game process and dynamic script execution, your anti-virus software may flag the API as a false positive. This is common with modding tools and is generally safe to ignore.
+
+This API is and will always be open source. If you have any concerns about the safety of the API, you are welcome to inspect the source code yourself or build the API from source.
+
+https://github.com/openztcc/EMU/

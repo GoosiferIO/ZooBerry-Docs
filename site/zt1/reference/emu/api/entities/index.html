@@ -2361,9 +2361,9 @@
 
 <h1 id="entity-api">Entity API</h1>
 <h2 id="overview">Overview</h2>
-<p>The Entity API contains functions for interacting with entities in the game. Please note that there is a fundamental difference between an entity and an entity type. An entity is an instance of an entity type, and an entity type is a template for an entity. For more information on entities and entity types, see <a href="/docs/zt1/advanced/operating-on-entities.md">Operating on Entities</a>.</p>
+<p>The Entity API contains functions for interacting with entities in the game. Please note that there is a fundamental difference between an entity and an entity type. An entity is an instance of an entity type, and an entity type is a template for an entity. For more information on entities and entity types, see <a href="/zt1/advanced/operating-on-entities/">Operating on Entities</a>.</p>
 <h2 id="usage">Usage</h2>
-<p>This API requires an instance of an entity to be passed as an argument to a <code>BFEntity</code> object or one of its subclasses. For example, to obtain an instance of an entity, you might use the <code>getAllEntitiesOfType</code> function in the <a href="/docs/zt1/reference/emu/api/worldmanager.md">World Manager API</a>.</p>
+<p>This API requires an instance of an entity to be passed as an argument to a <code>BFEntity</code> object or one of its subclasses. For example, to obtain an instance of an entity, you might use the <code>getAllEntitiesOfType</code> function in the <a href="/zt1/reference/emu/api/worldmanager/">World Manager API</a>.</p>
 <p>Example Script:
 <div class="highlight"><pre><span></span><code><span class="kr">function</span> <span class="nf">emu_run</span> <span class="p">()</span>
     <span class="kd">local</span> <span class="n">all_animals</span> <span class="o">=</span> <span class="n">ztWorldMgr</span><span class="p">.</span><span class="n">getAllEntitiesOfType</span><span class="p">({</span><span class="mi">5012</span><span class="p">,</span> <span class="mi">5013</span><span class="p">})</span>
@@ -2375,7 +2375,7 @@
 </code></pre></div></p>
 <div class="admonition info">
 <p class="admonition-title">Note</p>
-<p>The <code>ZTEntity</code> API is not yet implemented in EMU API. This is a hypothetical example, but can be reproduced successfully with any of the EntityType APIs documented at <a href="/docs/zt1/reference/emu/api/entitytypes.md">Entity Types</a>.</p>
+<p>The <code>ZTEntity</code> API is not yet implemented in EMU API. This is a hypothetical example, but can be reproduced successfully with any of the EntityType APIs documented at <a href="/zt1/reference/emu/api/entitytypes/">Entity Types</a>.</p>
 </div>
 <p>It's worth noting that as of this writing, the <code>BFEntity</code> API is not yet fully implemented in EMU API. There is simple access to some of the entity's functions and properties, but not all. This is a work in progress. Only the <code>BFEntity</code> class is documented here, but because it's a chain of inheritance, you can technically use any of the subclasses detailed below as the class for the <code>BFEntity</code> object.</p>
 <h2 id="bfentity">BFEntity</h2>
@@ -2424,7 +2424,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 20, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 21, 2024</span>
   </span>
 
     
@@ -2439,29 +2439,6 @@
 
     
     
-    
-      
-  <span class="md-source-file__fact">
-    
-      
-  <span class="md-icon" title="Contributors">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-  </span>
-  <span>GitHub</span>
-
-    
-    <nav>
-      
-        <a href="https://github.com/GoosiferIO" class="md-author" title="@GoosiferIO">
-          
-          <img src="https://avatars.githubusercontent.com/u/35750901?v=4&size=72" alt="GoosiferIO">
-        </a>
-      
-      
-      
-    </nav>
-  </span>
-
     
   </aside>
 

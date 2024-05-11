@@ -2,302 +2,302 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.zooberry.org/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/attributions/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/advanced/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/advanced/lua-scripting-in-zt1/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/advanced/making-an-easter-egg/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/advanced/operating-on-entities/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/getting-started/</loc>
-         <lastmod>2024-03-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.zooberry.org/zt1/getting-started/making-a-rock/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/getting-started/web-resources/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/basic-reference/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/basic-reference/file-formats-and-tools/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/basic-reference/mod-installation/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/configuration-references/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/configuration-references/scenario-files/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/configuration-references/scenery-files/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/emu/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/emu/emu-console/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/emu/api/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/emu/api/emuconsole-api/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/emu/api/entities/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/emu/api/entitytypes/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/emu/api/gamemanager/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/emu/api/uigeneral/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/emu/api/worldmanager/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/entity-ids/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang0/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang001/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang002/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang007/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang008/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang009/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang010/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang012/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang013/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang015/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang016/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang017/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang018/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang019/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang020/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang021/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang100/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang200/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/official/lang300/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/unofficial/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/unofficial/LANG--JBL/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/unofficial/LANG--Jane/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/unofficial/LANG--ZBorsato/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/unofficial/LANG--ZKL/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/unofficial/LANG--ZTCDD/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/unofficial/LANG--ZooTek/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/unofficial/LANG--fern-tek/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/unofficial/lang--TKZTUFcombin/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/unofficial/langZA01/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/unofficial/langZA02/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/reference/string-tables/unofficial/langZA03/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.zooberry.org/zt1/tool-guides/gimp-batch-processing/</loc>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.zooberry.org/zt1/tool-guides/visual-studio-code/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

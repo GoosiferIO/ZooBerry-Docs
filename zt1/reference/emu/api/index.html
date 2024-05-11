@@ -610,6 +610,8 @@
       
         
       
+        
+      
     
     
       
@@ -655,6 +657,27 @@
   
   <span class="md-ellipsis">
     Visual Studio Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tool-guides/gimp-batch-processing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reducing Colors in GIMP
   </span>
   
 
@@ -2304,20 +2327,7 @@
 </ul>
 <h2 id="writing-lua-scripts">Writing Lua Scripts</h2>
 <p>Files must carry the <code>.emu</code> extension and placed in the <code>/scripts</code> folder inside of the root Zoo Tycoon 1 folder. All Lua code must be inside of an <code>emu_run</code> function to be executed. Any code inside of the <code>emu_run</code> function will be executed on the main EMU loop.</p>
-<p><strong>Example Lua Script:</strong><br />
-<em>moneypause.emu</em>
-<div class="highlight"><pre><span></span><code><span class="kr">function</span> <span class="nf">emu_run</span><span class="p">()</span>
-    <span class="c1">-- pause the game if the budget goes above $400,000</span>
-    <span class="kr">if</span> <span class="n">GetZooBudget</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">400000</span> <span class="ow">and</span> <span class="n">IsGamePaused</span><span class="p">()</span> <span class="o">==</span> <span class="kc">false</span> <span class="kr">then</span>
-        <span class="nb">io.write</span><span class="p">(</span><span class="s2">&quot;Pausing the game&quot;</span><span class="p">)</span>
-        <span class="n">PauseGame</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
-    <span class="c1">-- resume game if budget dips below $400,000 (maybe the console can save us here?)</span>
-    <span class="kr">elseif</span> <span class="n">GetZooBudget</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mi">400000</span> <span class="ow">and</span> <span class="n">IsGamePaused</span><span class="p">()</span> <span class="o">==</span> <span class="kc">true</span> <span class="kr">then</span>
-        <span class="nb">io.write</span><span class="p">(</span><span class="s2">&quot;Resuming the game&quot;</span><span class="p">)</span>
-        <span class="n">PauseGame</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
-    <span class="kr">end</span>
-<span class="kr">end</span>
-</code></pre></div></p>
+<p>Please check out the <a href="/zt1/advanced/">Advanced Modding Tutorials</a> section for guided tutorials on how to write Lua scripts for Zoo Tycoon 1.</p>
 <h2 id="supported-api-calls">Supported API Calls</h2>
 <p>EMU adds scripting support to Zoo Tycoon 1. The following sections detail the available API calls you can use in your Lua scripts.</p>
 <p><a href="gamemanager/">Game Manager API</a><br />

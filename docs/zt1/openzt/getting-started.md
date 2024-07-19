@@ -36,7 +36,7 @@ dependencies=[
 
 Lets break this file down
 
-#### meta.json
+#### meta.toml
 
 | Field Name   | Purpose                                                                                                                                                                                                         | Example                          | Mandatory                                          |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|----------------------------------------------------|
@@ -58,3 +58,9 @@ Lets break this file down
 | optional    | Whether the dependency is required for this mod to function                                                                          | true                | No, defaults to false                 |
 | ordering    | Indicates whether the dependency should be loaded before or after the current mod, acceptable values are "Before" "After" and "None" | "Before"            | No, defaults to "None"                |
 
+
+### Defs
+Defs are where Mod definitions go, these are `.toml`` files organised however you want, in as many subfolders as you want. Types of definitions can be mixed within the same file, partitioned into seperate files, however you wish, OpenZT does not care.
+
+### Resources
+Similar to the `defs` folder, you may organise resources however you please, the filepath is taken from the `.toml` file in `defs` that is using the resource. There is also no restriction on how many `.toml` files in `defs` can reference a specific resource.

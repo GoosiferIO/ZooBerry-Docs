@@ -50,6 +50,7 @@ nav:
         - Making an Easter Egg: zt1/advanced/making-an-easter-egg.md
     - Tool Guides:
         - Visual Studio Code: zt1/tool-guides/visual-studio-code.md
+        - Reducing Colors in GIMP: zt1/tool-guides/gimp-batch-processing.md
   - Reference:
       - zt1/reference/index.md
       - Basic References:
@@ -147,3 +148,4 @@ markdown_extensions:
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js
+

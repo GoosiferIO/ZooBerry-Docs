@@ -31,8 +31,10 @@ Drop the res-EMU.dll binary directly into your `C:\Program Files (x86)\Microsoft
 
 ### Potential Issues
 
-Due to the nature of how the API runs by injecting code into the running game process and dynamic script execution, your anti-virus software may flag the API as a false positive. This is common with modding tools and is generally safe to ignore.
+Due to the nature of how the API runs by injecting code into the running game process and dynamic script execution, your anti-virus software may flag the API as a false positive due to this behavior. This is common with modding tools and is generally safe to ignore.
 
 This API is and will always be open source. If you have any concerns about the safety of the API, you are welcome to inspect the source code yourself or build the API from source.
 
 https://github.com/openztcc/EMU/
+
+It's possible you might need to add the `res-EMU.dll` to your anti-virus software's exclusion list to prevent it from being flagged as a false positive.

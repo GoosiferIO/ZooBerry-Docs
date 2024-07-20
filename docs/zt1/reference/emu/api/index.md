@@ -15,21 +15,7 @@ Scripting details:
 
 Files must carry the `.emu` extension and placed in the `/scripts` folder inside of the root Zoo Tycoon 1 folder. All Lua code must be inside of an `emu_run` function to be executed. Any code inside of the `emu_run` function will be executed on the main EMU loop.
 
-**Example Lua Script:**  
-_moneypause.emu_
-```Lua
-function emu_run()
-    -- pause the game if the budget goes above $400,000
-    if GetZooBudget() > 400000 and IsGamePaused() == false then
-        io.write("Pausing the game")
-        PauseGame(true)
-    -- resume game if budget dips below $400,000 (maybe the console can save us here?)
-    elseif GetZooBudget() <= 400000 and IsGamePaused() == true then
-        io.write("Resuming the game")
-        PauseGame(false)
-    end
-end
-```
+Please check out the [Advanced Modding Tutorials](/zt1/advanced/) section for guided tutorials on how to write Lua scripts for Zoo Tycoon 1.
 
 ## Supported API Calls
 

@@ -17,7 +17,7 @@ Please note that these aren't guided tutorials, but rather information you can u
 ## EMU API Referece
 
 - [EMU Command Console](../reference/emu/emu-console.md)
-- [Lua Script API](../reference/emu/emu-scripts.md)
+- [Lua Script API](./emu/api/index.md)
 
 ## String Table References
 

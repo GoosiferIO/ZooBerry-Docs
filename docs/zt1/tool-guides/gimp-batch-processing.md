@@ -55,17 +55,17 @@ You might notice that Zoo Tycoon graphics tend to have a posterized look to them
 
    - First, create a new layer and fill it with the color you want to use as the background. This will be the color that the game will treat as transparent. In reality, it's looking for the top-left pixel color to be transparent, but we'll just make it all one color for simplicity. Make sure this color is not used in your image.
 
-        ![Solid Background](./images/colors4.png)
+<img src="../images/colors4.png" alt="Solid Background" style="margin-left: 1rem;">
 
-    - Make sure the background layer is at the top of the layer stack and that is the active layer. Run the Multi-Layers Merger script by going to `Layer > Multi-Layers Merger`. Deselect all options except `Use only active layer`. Click `OK`.
+   - Make sure the background layer is at the top of the layer stack and that is the active layer. Run the Multi-Layers Merger script by going to `Layer > Multi-Layers Merger`. Deselect all options except `Use only active layer`. Click `OK`.
 
-        ![Multi-Layers Merger](./images/colors5.png)
+<img src="../images/colors5.png" alt="Multi-Layers Merger" style="margin-left: 1rem;">
 
-        Every layer should now have a solid background. Note that this leaves behind the layer with the solid background. Don't forget to delete it.
+> Every layer should now have a solid background. Note that this leaves behind the layer with the solid background. Don't forget to delete it.
 
-        ![Solid Background Layers](./images/colors6.png)
+<img src="../images/colors6.png" alt="Solid Background Layers" style="margin-left: 1rem;">
 
-3. Now that you have all of your frames with solid backgrounds, you can go to `Image > Mode > Indexed...` and set the number of colors to 255. Click `Convert`. Remember that you can experiment with the number of colors to get the desired effect to get that posterized look most Zoo Tycoon graphics have.
+1. Now that you have all of your frames with solid backgrounds, you can go to `Image > Mode > Indexed...` and set the number of colors to 255. Click `Convert`. Remember that you can experiment with the number of colors to get the desired effect to get that posterized look most Zoo Tycoon graphics have.
 
 ## Exporting Frames
 

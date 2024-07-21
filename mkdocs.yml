@@ -48,6 +48,10 @@ nav:
         - Lua Scripting - A Brief Primer: zt1/advanced/lua-scripting-in-zt1.md
         - Operating on Entities: zt1/advanced/operating-on-entities.md
         - Making an Easter Egg: zt1/advanced/making-an-easter-egg.md
+    - OpenZT Modding:
+        - zt1/openzt/index.md
+        - Getting Started: zt1/openzt/getting-started.md
+        - Habitats and Locations: zt1/openzt/habitats_and_locations.md
     - Tool Guides:
         - Visual Studio Code: zt1/tool-guides/visual-studio-code.md
         - Reducing Colors in GIMP: zt1/tool-guides/gimp-batch-processing.md

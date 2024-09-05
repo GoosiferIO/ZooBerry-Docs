@@ -24,7 +24,7 @@ All values are mandatory here. The type is dicated by having the `locations` or 
 
 `icon_path` is the path (within the resources) filepath to the icon file (in the ZT animation format) is located.
 
-`icon_pallette_path` is the path to the pallette (`.pal`) file for the icon. 
+`icon_palette_path` is the path to the palette (`.pal`) file for the icon. 
 !!! info 
     Vanilla ZT uses the `.pal` file referenced within the animation file, OpenZT ignores it and uses the file specified here.
 

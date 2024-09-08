@@ -29,6 +29,7 @@ authors=["Finn"]
 mod_id="finn.my_example_mod"
 version="1.0.0"
 link="https://myexamplewebsite.com/myexamplemod"
+ztd_type="openzt"
 dependencies=[
     {mod_id="finn.my_other_example_mod", name="my example mod", min_version="1.1.2", optional=true, ordering="before"}
 ]
@@ -46,6 +47,7 @@ Lets break this file down
 | mod_id       | A short unique string for your mod, generally in the form "author.mod_name" or "author.project.mod_name", used to make sure two versions of the same mod aren't loaded and to resolve dependencies between mods | "finn.my_mod"                    | Yes, cannot be empty or contain spaces             |
 | version      | Used to differentiate different versions of the same mod, must be 3 numbers separated by periods                                                                                                                | "1.0.4"                          | Yes, cannot be empty, must contain a valid version |
 | link         | An optional link for the author to advertise themselves                                                                                                                                                         | "https://www.mywebsite.com/mods" | No                                                 |
+| ztd_type     | The type of mod, can be "legacy" for a vanilla Zoo Tycoon mod, "openzt" for an OpenZT mod or "combined" if it contains files from both vanilla Zoo Tycoon and OpenZT | "combined"| No, defaults to "openzt" if left empty |
 | dependencies | A list of dependencies that this mod requires or is usually used with.                                                                                                                                          |                                  | No                                                 |
 
 ##### Dependencies
@@ -56,7 +58,7 @@ Lets break this file down
 | name        | Name of the dependency                                                                                                               | "My other mod"      | Yes                                   |
 | min_version | Minimum version of the dependency if required                                                                                        | "1.1.4"             | No, must be valid version if supplied |
 | optional    | Whether the dependency is required for this mod to function                                                                          | true                | No, defaults to false                 |
-| ordering    | Indicates whether the dependency should be loaded before or after the current mod, acceptable values are "Before" "After" and "None" | "Before"            | No, defaults to "None"                |
+| ordering    | Indicates whether the dependency should be loaded before or after the current mod, acceptable values are "before" "after" and "none" | "before"            | No, defaults to "none"                |
 
 
 ### Defs

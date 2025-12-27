@@ -307,11 +307,45 @@ on_error = "continue"  # "continue", "abort", "abort_mod"
 
 **Error modes:**
 - `continue` (default): Log error, continue to next patch
-- `abort`: Stop processing this patch file, continue loading mod
-- `abort_mod`: Stop loading this mod entirely
+- `abort`: Stop processing this patch file, continue loading mod (with rollback)
+- `abort_mod`: Stop loading this mod entirely (with rollback)
 
-!!! warning "Current Limitation"
-    Only `on_error = "continue"` is currently supported. `abort` and `abort_mod` require snapshot/rollback functionality (coming in future update).
+### Rollback Behavior
+
+When using `abort` or `abort_mod`, OpenZT uses a **shadow-based rollback system** that ensures patch failures don't leave files in a partially modified state:
+
+**How it works:**
+1. OpenZT creates shadow copies of all files that will be modified by the patch batch
+2. Patches are applied to the shadow copies, not the live resource system
+3. On success: Shadow changes are committed to the resource system
+4. On failure: Shadow is discarded, leaving original files unchanged (automatic rollback)
+
+**Performance:**
+- Memory efficient: Only affected files are cloned
+- No explicit restore logic needed (drop shadow = rollback)
+- Minimal overhead: Shadow creation + commit typically adds <200ms
+
+**Example:**
+```toml
+[patch_meta]
+on_error = "abort"  # If any patch fails, rollback all changes in this file
+
+[patches.modify_elephant]
+operation = "set_key"
+target = "animals/elephant.ai"
+section = "Stats"
+key = "Speed"
+value = "15"
+
+[patches.modify_tiger]
+operation = "set_key"
+target = "animals/tiger.ai"
+section = "Stats"
+key = "Speed"
+value = "20"
+```
+
+If `modify_tiger` fails (e.g., file not found), the changes to `elephant.ai` are rolled back automatically.
 
 ## Execution Order
 
@@ -357,6 +391,62 @@ Patches target the **cumulative state** of files (base game + all previously loa
 - "Undefined variable": habitat/location/string doesn't exist in mod or referenced mod
 - "Mod not loaded": Cross-mod reference to mod that isn't loaded or loads after yours
 - "Invalid syntax": Check `{variable}` syntax for typos or unclosed braces
+
+**Patches not applying with abort/abort_mod:**
+- Ensure all patches in the file are valid before rollback occurs
+- Check OpenZT logs for specific error that triggered rollback
+- Verify patches are in same `patch.toml` file (rollback scope is per-file)
+- Test with `on_error = "continue"` first to identify which patch is failing
+
+## Best Practices
+
+**Developing patch mods:**
+
+1. **Start with `continue` mode** - Use `on_error = "continue"` during development to see all errors at once
+2. **Check the logs** - Review `openzt.log` in Zoo Tycoon directory for detailed patch application messages
+3. **Test incrementally** - Add a few patches at a time, test, then add more
+4. **Use descriptive names** - Name patches clearly (e.g., `increase_elephant_speed` not `patch1`)
+5. **Add comments** - Use TOML comments to document what patches do and why
+6. **Switch to abort mode** - Once patches work reliably, use `on_error = "abort"` for automatic rollback
+7. **Test with other mods** - Verify your patches work alongside popular mods
+8. **Document dependencies** - If your patches require other mods, use `mod_loaded` conditions AND declare them in `meta.toml`
+
+**Example well-structured patch file:**
+```toml
+# Patch metadata
+[patch_meta]
+on_error = "abort"  # Rollback all changes if any patch fails
+
+# Only apply if HD Texture Pack is loaded
+[patch_meta.condition]
+mod_loaded = "HDTexturePack"
+
+# Update elephant to use HD textures
+[patches.elephant_hd_palette]
+operation = "set_palette"
+target = "animals/elephant/adult/male/n"
+palette = "animals/elephant/hd.pal"
+
+# Increase elephant visibility with HD textures
+[patches.elephant_visibility]
+operation = "set_key"
+target = "animals/elephant.ai"
+section = "Graphics"
+key = "Brightness"
+value = "1.2"
+```
+
+**Corresponding meta.toml:**
+```toml
+id = "ElephantHDCompat"
+name = "Elephant HD Compatibility"
+version = "1.0.0"
+author = "YourName"
+description = "Compatibility patches for elephants with HD Texture Pack"
+
+[dependencies]
+HDTexturePack = ">=1.0.0"
+```
 
 ## See Also
 

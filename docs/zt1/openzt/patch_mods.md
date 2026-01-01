@@ -349,13 +349,97 @@ If `modify_tiger` fails (e.g., file not found), the changes to `elephant.ai` are
 
 ## Execution Order
 
+### Inter-Mod Execution Order
+
 1. Patches execute during mod loading at game startup
 2. Mods load in order specified in `zoo.ini`
 3. Each mod's patches run when that mod loads
-4. Patches within a mod execute in order they appear in `patch.toml`
-5. Later mods can patch files from earlier mods or base game
+4. Later mods can patch files from earlier mods or base game
 
 Patches target the **cumulative state** of files (base game + all previously loaded mods).
+
+### Intra-Mod Definition File Loading Order
+
+Within a single mod, definition files (`.toml` files in `defs/` directory) are loaded in a **deterministic order** to ensure patches can reliably reference habitats and locations defined earlier in the same mod.
+
+**Category-Based Loading:**
+
+Definition files are categorized based on their contents:
+
+1. **NoPatch** - Files with only habitats/locations, no patches
+2. **Mixed** - Files with both habitats/locations AND patches
+3. **PatchOnly** - Files with only patches, no habitats/locations
+
+**Loading Order Within a Mod:**
+
+```
+1. All NoPatch files (alphabetically)
+   ├─ 00-habitats.toml
+   ├─ 01-locations.toml
+   └─ Animals-Only.toml      (case-insensitive sort)
+
+2. All Mixed files (alphabetically)
+   ├─ 50-mixed-content.toml
+   └─ 51-more-mixed.toml
+
+3. All PatchOnly files (alphabetically)
+   ├─ 98-patches.toml
+   └─ 99-more-patches.toml
+```
+
+**Why This Matters:**
+
+- **Habitats/locations are registered before patches that use them** - NoPatch and Mixed files define habitats/locations first, ensuring PatchOnly files can reference them
+- **Predictable execution** - Alphabetical sorting within categories means `01-*.toml` always loads before `02-*.toml`
+- **Cross-file references work** - A PatchOnly file can use `{habitat.swamp}` if any NoPatch or Mixed file defines `swamp`
+- **Self-references work** - A Mixed file can define a habitat and immediately patch it in the same file
+
+**Example Structure:**
+```
+your-mod/
+├── meta.toml
+└── defs/
+    ├── 00-habitats.toml      # NoPatch - defines swamp, desert habitats
+    ├── 01-locations.toml     # NoPatch - defines africa, asia locations
+    ├── 50-mixed.toml         # Mixed - defines ocean habitat + patches using it
+    └── 99-patches.toml       # PatchOnly - patches using swamp, desert, ocean
+```
+
+**Important Notes:**
+
+- **Use identifiers, not display names** - Variable substitution uses the TOML key identifier:
+  ```toml
+  # In 00-habitats.toml
+  [habitats.swamp_habitat]  # ← This is the identifier
+  name = "Swamp Habitat"    # ← This is the display name
+
+  # In 99-patches.toml - Use the identifier!
+  value = "{habitat.swamp_habitat}"  # ✓ Correct
+  value = "{habitat.Swamp Habitat}"  # ✗ Wrong - will fail
+  ```
+- **Alphabetical sorting is case-insensitive** - `Animals.toml` and `animals.toml` sort the same
+- **Numeric prefixes control order** - Use `00-`, `01-`, `02-` etc. to control loading sequence
+- **Within-file patch order** - Patches within a single file execute in the order they appear
+
+### Patch Execution Order Within Files
+
+Patches within a single definition file execute in the order they appear:
+
+```toml
+[patches.first]
+operation = "set_key"
+# ...
+
+[patches.second]
+operation = "set_key"
+# ... (executes after 'first')
+
+[patches.third]
+operation = "set_key"
+# ... (executes after 'second')
+```
+
+This matters when multiple patches modify the same file or key - later patches override earlier ones.
 
 ## Technical Notes
 

@@ -18,7 +18,23 @@ icon_path="resources/swamp/N"
 icon_palette_path="resources/swamp/swamp.pal"
 ```
 
-All values are mandatory here. The type is dicated by having the `locations` or `habitats` prefix in the section header. The suffix in the section headers (`moon` and `swamp` in this example) must be unique for each definition type within your mod, eg you can only have one `locations.moon` but you can have a `habitats.moon` too. You could have another `habitats.moon` in a separate mod, these will not conflict.
+All values are mandatory here. The type is dictated by having the `locations` or `habitats` prefix in the section header. The suffix in the section headers (`moon` and `swamp` in this example) must be unique for each definition type within your mod, eg you can only have one `locations.moon` but you can have a `habitats.moon` too. You could have another `habitats.moon` in a separate mod, these will not conflict.
+
+### Identifier vs Display Name
+
+**Important:** The section header suffix is the **identifier** used in variable substitution, while `name` is the **display name** shown to players:
+
+```toml
+[habitats.swamp_habitat]  # ← "swamp_habitat" is the identifier
+name = "Swamp Habitat"    # ← "Swamp Habitat" is the display name
+
+# In patch.toml - Use the identifier!
+value = "{habitat.swamp_habitat}"  # ✓ Correct
+value = "{habitat.Swamp Habitat}"  # ✗ Wrong - will fail
+```
+
+- **Identifier** (section suffix): Used in code, patches, and variable substitution. Must be unique within your mod.
+- **Display name** (`name` field): Shown to players as a tooltip when hovering over the icon.
 
 `name` is displayed as a tooltip when the player hovers over the habitat/location image in game.
 

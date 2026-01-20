@@ -28,10 +28,10 @@ mod_loaded = "RequiredMod"
 # Individual patches
 [patches.patch_name]
 operation = "set_key"
-target = "animals/elephant.ai"
-section = "Stats"
-key = "Speed"
-value = "15"
+target = "economy"
+section = "checks"
+key = "newguest"
+value = "1"
 ```
 
 Each patch has a unique name and specifies an operation. Patches execute in order of appearance.
@@ -54,8 +54,8 @@ Merge INI files together.
 ```toml
 [patches.merge_configs]
 operation = "merge"
-target = "config/settings.ini"
-source = "patches/settings.ini"
+target = "animals/elephant.ai"
+source = "patches/elephant.ai"
 merge_mode = "patch_priority"  # or "base_priority" (default: patch_priority)
 ```
 
@@ -67,9 +67,9 @@ merge_mode = "patch_priority"  # or "base_priority" (default: patch_priority)
 Remove a file from the game.
 
 ```toml
-[patches.remove_old_animal]
+[patches.remove_anteater]
 operation = "delete"
-target = "animals/oldanimal.ai"
+target = "animals/anteater.ai"
 ```
 
 ### Set Palette
@@ -78,8 +78,8 @@ Change animation palette reference (for texture mods).
 ```toml
 [patches.hd_palette]
 operation = "set_palette"
-target = "animals/elephant/adult/male/n"  # No extension
-palette = "animals/elephant/hd.pal"
+target = "animals/tiger/pltiger/N"
+palette = "patches/bengal.pal"
 ```
 
 ## Element-Level Operations (INI Files)
@@ -88,21 +88,21 @@ Work on specific sections and keys within INI files (`.ini`, `.ai`, `.cfg`, `.uc
 
 ### Set Single Key
 ```toml
-[patches.set_resolution]
+[patches.set_newguest_chance]
 operation = "set_key"
-target = "config/settings.ini"
-section = "Graphics"
-key = "Resolution"
-value = "1920x1080"
+target = "economy"
+section = "checks"
+key = "newguest"
+value = "1"
 ```
 
 ### Set Multiple Keys
 ```toml
-[patches.configure_audio]
+[patches.zoo_test_hacl]
 operation = "set_keys"
-target = "config/settings.ini"
-section = "Audio"
-keys = { Volume = "100", Enabled = "true", MusicVolume = "80" }
+target = "economy"
+section = "characteristic"
+keys = {cCreateGuestChangeVeryLow = 100, cCreateGuestChangeLow = 100, cCreateGuestChangeMed = 100, cCreateGuestChangeHigh = 100, cCreateGuestChangeVeryHigh = 100}
 ```
 
 ### Append Single Value
@@ -112,9 +112,9 @@ Add to array (repeated keys). **Always use for arrays, not `set_key`**.
 [patches.add_behavior]
 operation = "append_value"
 target = "animals/elephant.ai"
-section = "Behaviors"
-key = "Action"
-value = "swim"
+section = "m/Characteristics/Integers"
+key = "cPrey"
+value = "5015"
 ```
 
 ### Append Multiple Values
@@ -122,9 +122,9 @@ value = "swim"
 [patches.add_behaviors]
 operation = "append_values"
 target = "animals/elephant.ai"
-section = "Behaviors"
-key = "Action"
-values = ["climb", "jump", "run"]
+section = "m/Characteristics/Integers"
+key = "cPrey"
+values = ["5015", "5041", "5045"]
 ```
 
 ### Remove Single Key
@@ -232,8 +232,48 @@ operation = "set_key"
 target = "animals/elephant.ai"
 section = "Info"
 key = "Description"
-value = "Lives in {habitat.savanna} regions"
+value = "Lives in {string.10500} regions"
 ```
+
+### Legacy Entity Variables
+
+Reference vanilla Zoo Tycoon entities from the original game using `{legacy.entity_type.entity_name}` syntax.
+
+**Syntax patterns:**
+- Basic: `{legacy.entity_type.entity_name}` (uses default subtype if applicable)
+- With attribute: `{legacy.entity_type.entity_name.attribute}`
+- With subtype: `{legacy.entity_type.entity_name.subtype.attribute}`
+
+**Entity types with subtypes** (use default when not specified):
+| Entity Type | Default Subtype | Available Subtypes |
+|-------------|-----------------|-------------------|
+| animals | m (male) | m, f (female), y (young) |
+| staff | m (male) | m, f (female) |
+| fences | f (fence) | f, g (gate) |
+| walls | f (wall) | f, g (gate) |
+
+**Entity types without subtypes:**
+- buildings, food, guests, items, paths, scenery
+
+**Examples:**
+```toml
+# Animals with subtypes (uses default "m")
+value = "{legacy.animals.elephant}"        # Male elephant name ID
+value = "{legacy.animals.elephant.f.name_id}"  # Female elephant name ID
+
+# Buildings without subtypes
+value = "{legacy.buildings.restroom}"       # Restroom name ID
+value = "{legacy.buildings.restroom.name_id}"  # Same as above
+
+# Fences with subtypes
+value = "{legacy.fences.atltank}"           # Default fence type
+value = "{legacy.fences.atltank.g.name_id}" # Gate fence type
+
+# Guests (entity name is section)
+value = "{legacy.guests.adult}"             # Adult guest name ID
+```
+
+**Note:** Legacy entity types correspond to Zoo Tycoon's original config files (e.g., `animals/` → `.ai` files, `buildings/` → `.bld` files).
 
 ## Conditional Patching
 

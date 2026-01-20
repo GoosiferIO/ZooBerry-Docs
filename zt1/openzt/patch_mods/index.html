@@ -1,0 +1,3836 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.zooberry.org/zt1/openzt/patch_mods/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Patch Mods Reference - ZooBerry Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep_orange" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#patch-mods-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="ZooBerry Docs" class="md-header__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ZooBerry Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Patch Mods Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep_orange" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GoosiferIO/ZooBerry-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GoosiferIO/ZooBerry-Docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../advanced/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Modding Tutorials
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/web-resources/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Web Resources
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../attributions/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Attributions
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ZooBerry Docs" class="md-nav__button md-logo" aria-label="ZooBerry Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ZooBerry Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GoosiferIO/ZooBerry-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GoosiferIO/ZooBerry-Docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modding Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modding Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../advanced/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Modding
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced Modding
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/lua-scripting-in-zt1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lua Scripting - A Brief Primer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/operating-on-entities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operating on Entities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/making-an-easter-egg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Making an Easter Egg
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenZT Modding
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    OpenZT Modding
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../habitats_and_locations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Habitats and Locations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tool Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool-guides/visual-studio-code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Studio Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool-guides/gimp-batch-processing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reducing Colors in GIMP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/basic-reference/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic References
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Basic References
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/basic-reference/file-formats-and-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    File Formats and Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/basic-reference/mod-installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mod Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/configuration-references/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration References
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Configuration References
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/configuration-references/scenery-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/configuration-references/scenario-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/emu/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EMU API Reference
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    EMU API Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/emu/emu-console/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command Console
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/emu/api/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scripting API
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Scripting API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/emu/api/entities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/emu/api/entitytypes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entity Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/emu/api/gamemanager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Game Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/emu/api/uigeneral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UI General
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/emu/api/worldmanager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    World Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/string-tables/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    String Table References
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    String Table References
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/entity-ids/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notable String IDs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/string-tables/official/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Official String Tables
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Official String Tables
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang001
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang002/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang002
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang007/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang007
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang008/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang008
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang009/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang009
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang010/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang010
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang012
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang013/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang013
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang015/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang015
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang016/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang016
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang017/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang017
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang018/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang018
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang019/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang019
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang020/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang020
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang021/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang021
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang100/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang100
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang200/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang200
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/official/lang300/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang300
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/string-tables/unofficial/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unofficial String Tables
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5_4" id="__nav_3_5_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unofficial String Tables
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/unofficial/LANG--ZTCDD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LANG--ZTCDD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/unofficial/LANG--ZooTek/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LANG--ZooTek
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/unofficial/LANG--ZKL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LANG--ZKL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/unofficial/LANG--ZBorsato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LANG--ZBorsato
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/unofficial/LANG--Jane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LANG--Jane
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/unofficial/LANG--JBL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LANG--JBL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/unofficial/LANG--fern-tek/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LANG--fern-Tek
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/unofficial/langZA01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    langZA01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/unofficial/langZA02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    langZA02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/unofficial/langZA03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    langZA03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/string-tables/unofficial/lang--TKZTUFcombin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lang--TKZTUFcombin.md
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/web-resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../attributions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attributions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-level-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File-Level Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File-Level Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Replace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-palette" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set Palette
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#element-level-operations-ini-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Element-Level Operations (INI Files)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Element-Level Operations (INI Files)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-single-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set Single Key
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-multiple-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set Multiple Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#append-single-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Append Single Value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#append-multiple-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Append Multiple Values
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-single-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remove Single Key
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-multiple-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remove Multiple Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clear-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clear Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remove Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-substitution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variable Substitution
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Substitution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#legacy-entity-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legacy Entity Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-patching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conditional Patching
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Handling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rollback-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rollback Behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execution-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Execution Order
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Execution Order">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inter-mod-execution-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inter-Mod Execution Order
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intra-mod-definition-file-loading-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intra-Mod Definition File Loading Order
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patch-execution-order-within-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Patch Execution Order Within Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See Also
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/edit/main/docs/zt1/openzt/patch_mods.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs/raw/main/docs/zt1/openzt/patch_mods.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="patch-mods-reference">Patch Mods Reference</h1>
+<p>Patch mods allow you to modify existing game files without replacing them entirely, enabling multiple mods to alter the same files and coexist peacefully.</p>
+<h2 id="overview">Overview</h2>
+<p>Traditional mods work by replacing entire files. Patch mods define <strong>specific changes</strong> to files rather than replacing them completely. This allows Mod A to increase the elephant's speed while Mod B adds new behaviors to the same elephant - both changes will be applied.</p>
+<p><strong>Benefits:</strong>
+- Multiple mods can modify the same files without conflicts
+- Change only what you need (precision)
+- Enhance or tweak content from other mods (cross-mod support)
+- Easier to maintain than full file replacements</p>
+<h2 id="file-structure">File Structure</h2>
+<p>Patches are defined in <code>patch.toml</code> in your mod's root directory (alongside <code>meta.toml</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Optional metadata</span>
+<span class="k">[patch_meta]</span>
+<span class="n">on_error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;continue&quot;</span><span class="w">  </span><span class="c1"># &quot;continue&quot;, &quot;abort&quot;, &quot;abort_mod&quot;</span>
+
+<span class="c1"># Optional file-level conditions (skip entire file if conditions fail)</span>
+<span class="k">[patch_meta.condition]</span>
+<span class="n">mod_loaded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;RequiredMod&quot;</span>
+
+<span class="c1"># Individual patches</span>
+<span class="k">[patches.patch_name]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;economy&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;checks&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;newguest&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1&quot;</span>
+</code></pre></div>
+<p>Each patch has a unique name and specifies an operation. Patches execute in order of appearance.</p>
+<h2 id="file-level-operations">File-Level Operations</h2>
+<h3 id="replace">Replace</h3>
+<p>Replace entire file with your version.</p>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.replace_animal]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;replace&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/elephant.ai&quot;</span>
+<span class="n">source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;patches/elephant.ai&quot;</span>
+</code></pre></div>
+<h3 id="merge">Merge</h3>
+<p>Merge INI files together.</p>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.merge_configs]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;merge&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/elephant.ai&quot;</span>
+<span class="n">source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;patches/elephant.ai&quot;</span>
+<span class="n">merge_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;patch_priority&quot;</span><span class="w">  </span><span class="c1"># or &quot;base_priority&quot; (default: patch_priority)</span>
+</code></pre></div>
+<p><strong>Merge modes:</strong>
+- <code>patch_priority</code>: Your values overwrite existing values when keys conflict
+- <code>base_priority</code>: Existing values preserved; patch only adds new keys</p>
+<h3 id="delete">Delete</h3>
+<p>Remove a file from the game.</p>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.remove_anteater]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;delete&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/anteater.ai&quot;</span>
+</code></pre></div>
+<h3 id="set-palette">Set Palette</h3>
+<p>Change animation palette reference (for texture mods).</p>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.hd_palette]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_palette&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/tiger/pltiger/N&quot;</span>
+<span class="n">palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;patches/bengal.pal&quot;</span>
+</code></pre></div>
+<h2 id="element-level-operations-ini-files">Element-Level Operations (INI Files)</h2>
+<p>Work on specific sections and keys within INI files (<code>.ini</code>, <code>.ai</code>, <code>.cfg</code>, <code>.uca</code>, <code>.ucs</code>, <code>.ucb</code>, <code>.scn</code>, <code>.lyt</code>).</p>
+<h3 id="set-single-key">Set Single Key</h3>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.set_newguest_chance]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;economy&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;checks&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;newguest&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1&quot;</span>
+</code></pre></div>
+<h3 id="set-multiple-keys">Set Multiple Keys</h3>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.zoo_test_hacl]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_keys&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;economy&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;characteristic&quot;</span>
+<span class="n">keys</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">cCreateGuestChangeVeryLow</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="n">cCreateGuestChangeLow</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="n">cCreateGuestChangeMed</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="n">cCreateGuestChangeHigh</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="n">cCreateGuestChangeVeryHigh</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">100</span><span class="p">}</span>
+</code></pre></div>
+<h3 id="append-single-value">Append Single Value</h3>
+<p>Add to array (repeated keys). <strong>Always use for arrays, not <code>set_key</code></strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.add_behavior]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;append_value&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/elephant.ai&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;m/Characteristics/Integers&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;cPrey&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;5015&quot;</span>
+</code></pre></div>
+<h3 id="append-multiple-values">Append Multiple Values</h3>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.add_behaviors]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;append_values&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/elephant.ai&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;m/Characteristics/Integers&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;cPrey&quot;</span>
+<span class="n">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;5015&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;5041&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;5045&quot;</span><span class="p">]</span>
+</code></pre></div>
+<h3 id="remove-single-key">Remove Single Key</h3>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.remove_setting]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;remove_key&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;config/settings.ini&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Debug&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;LogLevel&quot;</span>
+</code></pre></div>
+<h3 id="remove-multiple-keys">Remove Multiple Keys</h3>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.cleanup_debug]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;remove_keys&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;config/settings.ini&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Debug&quot;</span>
+<span class="n">keys</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;LogLevel&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DebugMode&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Verbose&quot;</span><span class="p">]</span>
+</code></pre></div>
+<h3 id="add-section">Add Section</h3>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.add_section]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;add_section&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;config/settings.ini&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;NewFeature&quot;</span>
+<span class="n">keys</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Enabled</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;true&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Value</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;100&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="n">on_exists</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="w">  </span><span class="c1"># &quot;error&quot;, &quot;merge&quot;, &quot;skip&quot;, &quot;replace&quot; (default: error)</span>
+</code></pre></div>
+<p><strong>on_exists modes:</strong>
+- <code>error</code>: Fail if section exists
+- <code>merge</code>: Merge keys with existing section (your keys overwrite on conflict)
+- <code>skip</code>: Skip if section exists
+- <code>replace</code>: Delete existing section and create new one</p>
+<h3 id="clear-section">Clear Section</h3>
+<p>Remove all keys from section (keeps section).</p>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.reset_cache]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;clear_section&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;config/settings.ini&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Cache&quot;</span>
+</code></pre></div>
+<h3 id="remove-section">Remove Section</h3>
+<p>Delete entire section.</p>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.remove_deprecated]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;remove_section&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;config/settings.ini&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Deprecated&quot;</span>
+</code></pre></div>
+<h2 id="variable-substitution">Variable Substitution</h2>
+<p>Reference dynamic values from your mod or other mods using <code>{variable}</code> syntax.</p>
+<p><strong>Syntax:</strong>
+- Current mod: <code>{type.name}</code> (e.g., <code>{habitat.swamp}</code>)
+- Cross-mod: <code>{mod.type.name}</code> (e.g., <code>{lunar.habitat.crater}</code>)</p>
+<p><strong>Variable types:</strong>
+<div class="highlight"><pre><span></span><code><span class="c1"># Habitat - resolves to habitat string ID</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitat.swamp}&quot;</span><span class="w">           </span><span class="c1"># Your mod&#39;s habitat</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{lunar.habitat.crater}&quot;</span><span class="w">    </span><span class="c1"># Another mod&#39;s habitat</span>
+
+<span class="c1"># Location - resolves to location string ID</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{location.moon}&quot;</span><span class="w">           </span><span class="c1"># Your mod&#39;s location</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{lunar.location.base}&quot;</span><span class="w">     </span><span class="c1"># Another mod&#39;s location</span>
+
+<span class="c1"># String - resolves to string content from registry</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{string.9500}&quot;</span><span class="w">             </span><span class="c1"># String by ID</span>
+</code></pre></div></p>
+<p><strong>Supported operations:</strong> <code>set_key</code>, <code>set_keys</code>, <code>append_value</code>, <code>append_values</code>, <code>add_section</code></p>
+<p><strong>Examples:</strong>
+<div class="highlight"><pre><span></span><code><span class="c1"># Single variable</span>
+<span class="k">[patches.assign_habitat]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/crocodile.ai&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Habitat&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;cHabitat&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitat.swamp}&quot;</span>
+
+<span class="c1"># Multiple variables</span>
+<span class="k">[patches.configure_exhibit]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_keys&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;exhibits/moon.cfg&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Config&quot;</span>
+<span class="n">keys</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cHabitat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitat.lunar}&quot;</span><span class="err">,</span>
+<span class="w">    </span><span class="n">cLocation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{location.moon}&quot;</span><span class="err">,</span>
+<span class="w">    </span><span class="n">NameID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{string.10500}&quot;</span>
+<span class="err">}</span>
+
+<span class="c1"># Mixed with text</span>
+<span class="k">[patches.set_description]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/elephant.ai&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Info&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Description&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Lives in {string.10500} regions&quot;</span>
+</code></pre></div></p>
+<h3 id="legacy-entity-variables">Legacy Entity Variables</h3>
+<p>Reference vanilla Zoo Tycoon entities from the original game using <code>{legacy.entity_type.entity_name}</code> syntax.</p>
+<p><strong>Syntax patterns:</strong>
+- Basic: <code>{legacy.entity_type.entity_name}</code> (uses default subtype if applicable)
+- With attribute: <code>{legacy.entity_type.entity_name.attribute}</code>
+- With subtype: <code>{legacy.entity_type.entity_name.subtype.attribute}</code></p>
+<p><strong>Entity types with subtypes</strong> (use default when not specified):
+| Entity Type | Default Subtype | Available Subtypes |
+|-------------|-----------------|-------------------|
+| animals | m (male) | m, f (female), y (young) |
+| staff | m (male) | m, f (female) |
+| fences | f (fence) | f, g (gate) |
+| walls | f (wall) | f, g (gate) |</p>
+<p><strong>Entity types without subtypes:</strong>
+- buildings, food, guests, items, paths, scenery</p>
+<p><strong>Examples:</strong>
+<div class="highlight"><pre><span></span><code><span class="c1"># Animals with subtypes (uses default &quot;m&quot;)</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{legacy.animals.elephant}&quot;</span><span class="w">        </span><span class="c1"># Male elephant name ID</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{legacy.animals.elephant.f.name_id}&quot;</span><span class="w">  </span><span class="c1"># Female elephant name ID</span>
+
+<span class="c1"># Buildings without subtypes</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{legacy.buildings.restroom}&quot;</span><span class="w">       </span><span class="c1"># Restroom name ID</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{legacy.buildings.restroom.name_id}&quot;</span><span class="w">  </span><span class="c1"># Same as above</span>
+
+<span class="c1"># Fences with subtypes</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{legacy.fences.atltank}&quot;</span><span class="w">           </span><span class="c1"># Default fence type</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{legacy.fences.atltank.g.name_id}&quot;</span><span class="w"> </span><span class="c1"># Gate fence type</span>
+
+<span class="c1"># Guests (entity name is section)</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{legacy.guests.adult}&quot;</span><span class="w">             </span><span class="c1"># Adult guest name ID</span>
+</code></pre></div></p>
+<p><strong>Note:</strong> Legacy entity types correspond to Zoo Tycoon's original config files (e.g., <code>animals/</code> → <code>.ai</code> files, <code>buildings/</code> → <code>.bld</code> files).</p>
+<h2 id="conditional-patching">Conditional Patching</h2>
+<p>Apply patches only when conditions are met.</p>
+<p><strong>Condition types:</strong>
+- <code>mod_loaded</code>: Check if mod ID is loaded (string)
+- <code>key_exists</code>: Check if section and key exist (table with <code>section</code> and <code>key</code>)
+- <code>value_equals</code>: Check if key has specific value (table with <code>section</code>, <code>key</code>, and <code>value</code>)</p>
+<p>All conditions must pass (AND logic).</p>
+<p><strong>Patch-level conditions:</strong>
+<div class="highlight"><pre><span></span><code><span class="c1"># Mod loaded</span>
+<span class="k">[patches.dolphin_compat]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/dolphin.ai&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Habitat&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;WaterDepth&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;10&quot;</span>
+<span class="n">condition</span><span class="p">.</span><span class="n">mod_loaded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;DolphinExpansion&quot;</span>
+
+<span class="c1"># Key exists</span>
+<span class="k">[patches.upgrade_setting]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;config/settings.ini&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Graphics&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;AntiAliasing&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;4x&quot;</span>
+<span class="n">condition</span><span class="p">.</span><span class="n">key_exists</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">section</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Graphics&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;AntiAliasing&quot;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="c1"># Value equals</span>
+<span class="k">[patches.upgrade_quality]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;config/settings.ini&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Graphics&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;TextureQuality&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;high&quot;</span>
+<span class="n">condition</span><span class="p">.</span><span class="n">value_equals</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">section</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Graphics&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;TextureQuality&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;medium&quot;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="c1"># Multiple conditions</span>
+<span class="k">[patches.advanced_ai]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;merge&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/elephant.ai&quot;</span>
+<span class="n">source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;patches/elephant_ai.ai&quot;</span>
+<span class="n">condition</span><span class="p">.</span><span class="n">mod_loaded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;AdvancedAI&quot;</span>
+<span class="n">condition</span><span class="p">.</span><span class="n">key_exists</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">section</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;AI&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;AdvancedMode&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="n">condition</span><span class="p">.</span><span class="n">value_equals</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">section</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;AI&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;AdvancedMode&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;true&quot;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div></p>
+<p><strong>File-level conditions:</strong>
+Skip entire patch file if conditions fail.</p>
+<div class="highlight"><pre><span></span><code><span class="k">[patch_meta.condition]</span>
+<span class="n">mod_loaded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;RequiredExpansion&quot;</span>
+
+<span class="c1"># For key_exists/value_equals, specify target</span>
+<span class="k">[patch_meta.condition]</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;config/settings.ini&quot;</span>
+<span class="n">key_exists</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">section</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Graphics&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;HDTextures&quot;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h2 id="error-handling">Error Handling</h2>
+<div class="highlight"><pre><span></span><code><span class="k">[patch_meta]</span>
+<span class="n">on_error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;continue&quot;</span><span class="w">  </span><span class="c1"># &quot;continue&quot;, &quot;abort&quot;, &quot;abort_mod&quot;</span>
+</code></pre></div>
+<p><strong>Error modes:</strong>
+- <code>continue</code> (default): Log error, continue to next patch
+- <code>abort</code>: Stop processing this patch file, continue loading mod (with rollback)
+- <code>abort_mod</code>: Stop loading this mod entirely (with rollback)</p>
+<h3 id="rollback-behavior">Rollback Behavior</h3>
+<p>When using <code>abort</code> or <code>abort_mod</code>, OpenZT uses a <strong>shadow-based rollback system</strong> that ensures patch failures don't leave files in a partially modified state:</p>
+<p><strong>How it works:</strong>
+1. OpenZT creates shadow copies of all files that will be modified by the patch batch
+2. Patches are applied to the shadow copies, not the live resource system
+3. On success: Shadow changes are committed to the resource system
+4. On failure: Shadow is discarded, leaving original files unchanged (automatic rollback)</p>
+<p><strong>Performance:</strong>
+- Memory efficient: Only affected files are cloned
+- No explicit restore logic needed (drop shadow = rollback)
+- Minimal overhead: Shadow creation + commit typically adds &lt;200ms</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="k">[patch_meta]</span>
+<span class="n">on_error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;abort&quot;</span><span class="w">  </span><span class="c1"># If any patch fails, rollback all changes in this file</span>
+
+<span class="k">[patches.modify_elephant]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/elephant.ai&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Stats&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Speed&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;15&quot;</span>
+
+<span class="k">[patches.modify_tiger]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/tiger.ai&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Stats&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Speed&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;20&quot;</span>
+</code></pre></div></p>
+<p>If <code>modify_tiger</code> fails (e.g., file not found), the changes to <code>elephant.ai</code> are rolled back automatically.</p>
+<h2 id="execution-order">Execution Order</h2>
+<h3 id="inter-mod-execution-order">Inter-Mod Execution Order</h3>
+<ol>
+<li>Patches execute during mod loading at game startup</li>
+<li>Mods load in order specified in <code>zoo.ini</code></li>
+<li>Each mod's patches run when that mod loads</li>
+<li>Later mods can patch files from earlier mods or base game</li>
+</ol>
+<p>Patches target the <strong>cumulative state</strong> of files (base game + all previously loaded mods).</p>
+<h3 id="intra-mod-definition-file-loading-order">Intra-Mod Definition File Loading Order</h3>
+<p>Within a single mod, definition files (<code>.toml</code> files in <code>defs/</code> directory) are loaded in a <strong>deterministic order</strong> to ensure patches can reliably reference habitats and locations defined earlier in the same mod.</p>
+<p><strong>Category-Based Loading:</strong></p>
+<p>Definition files are categorized based on their contents:</p>
+<ol>
+<li><strong>NoPatch</strong> - Files with only habitats/locations, no patches</li>
+<li><strong>Mixed</strong> - Files with both habitats/locations AND patches</li>
+<li><strong>PatchOnly</strong> - Files with only patches, no habitats/locations</li>
+</ol>
+<p><strong>Loading Order Within a Mod:</strong></p>
+<div class="highlight"><pre><span></span><code>1. All NoPatch files (alphabetically)
+   ├─ 00-habitats.toml
+   ├─ 01-locations.toml
+   └─ Animals-Only.toml      (case-insensitive sort)
+
+2. All Mixed files (alphabetically)
+   ├─ 50-mixed-content.toml
+   └─ 51-more-mixed.toml
+
+3. All PatchOnly files (alphabetically)
+   ├─ 98-patches.toml
+   └─ 99-more-patches.toml
+</code></pre></div>
+<p><strong>Why This Matters:</strong></p>
+<ul>
+<li><strong>Habitats/locations are registered before patches that use them</strong> - NoPatch and Mixed files define habitats/locations first, ensuring PatchOnly files can reference them</li>
+<li><strong>Predictable execution</strong> - Alphabetical sorting within categories means <code>01-*.toml</code> always loads before <code>02-*.toml</code></li>
+<li><strong>Cross-file references work</strong> - A PatchOnly file can use <code>{habitat.swamp}</code> if any NoPatch or Mixed file defines <code>swamp</code></li>
+<li><strong>Self-references work</strong> - A Mixed file can define a habitat and immediately patch it in the same file</li>
+</ul>
+<p><strong>Example Structure:</strong>
+<div class="highlight"><pre><span></span><code>your-mod/
+├── meta.toml
+└── defs/
+    ├── 00-habitats.toml      # NoPatch - defines swamp, desert habitats
+    ├── 01-locations.toml     # NoPatch - defines africa, asia locations
+    ├── 50-mixed.toml         # Mixed - defines ocean habitat + patches using it
+    └── 99-patches.toml       # PatchOnly - patches using swamp, desert, ocean
+</code></pre></div></p>
+<p><strong>Important Notes:</strong></p>
+<ul>
+<li><strong>Use identifiers, not display names</strong> - Variable substitution uses the TOML key identifier:
+  <div class="highlight"><pre><span></span><code><span class="c1"># In 00-habitats.toml</span>
+<span class="k">[habitats.swamp_habitat]</span><span class="w">  </span><span class="c1"># ← This is the identifier</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Swamp Habitat&quot;</span><span class="w">    </span><span class="c1"># ← This is the display name</span>
+
+<span class="c1"># In 99-patches.toml - Use the identifier!</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitat.swamp_habitat}&quot;</span><span class="w">  </span><span class="c1"># ✓ Correct</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitat.Swamp Habitat}&quot;</span><span class="w">  </span><span class="c1"># ✗ Wrong - will fail</span>
+</code></pre></div></li>
+<li><strong>Alphabetical sorting is case-insensitive</strong> - <code>Animals.toml</code> and <code>animals.toml</code> sort the same</li>
+<li><strong>Numeric prefixes control order</strong> - Use <code>00-</code>, <code>01-</code>, <code>02-</code> etc. to control loading sequence</li>
+<li><strong>Within-file patch order</strong> - Patches within a single file execute in the order they appear</li>
+</ul>
+<h3 id="patch-execution-order-within-files">Patch Execution Order Within Files</h3>
+<p>Patches within a single definition file execute in the order they appear:</p>
+<div class="highlight"><pre><span></span><code><span class="k">[patches.first]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="c1"># ...</span>
+
+<span class="k">[patches.second]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="c1"># ... (executes after &#39;first&#39;)</span>
+
+<span class="k">[patches.third]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="c1"># ... (executes after &#39;second&#39;)</span>
+</code></pre></div>
+<p>This matters when multiple patches modify the same file or key - later patches override earlier ones.</p>
+<h2 id="technical-notes">Technical Notes</h2>
+<p><strong>Case Sensitivity:</strong>
+- Section and key names are case-insensitive (matching Zoo Tycoon's INI behavior)
+- File paths are case-insensitive
+- Variable names are case-sensitive</p>
+<p><strong>File Format Support:</strong>
+- Element operations: Only INI-like files (<code>.ini</code>, <code>.ai</code>, <code>.cfg</code>, <code>.uca</code>, <code>.ucs</code>, <code>.ucb</code>, <code>.scn</code>, <code>.lyt</code>)
+- File operations: Any file type (<code>replace</code>, <code>delete</code>, <code>set_palette</code>)</p>
+<p><strong>Array Handling:</strong>
+- Zoo Tycoon uses repeated keys for arrays
+- <code>append_value</code>/<code>append_values</code>: Add to arrays
+- <code>set_key</code>/<code>set_keys</code>: Replace entire value (destroys array if used on array key)
+- <code>remove_key</code>: Removes all instances (entire array)</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p><strong>"Target file not found":</strong>
+- Check file path spelling and case
+- Verify file exists in base game or previously loaded mod
+- Check mod load order (if patching another mod's file)</p>
+<p><strong>"Section not found" (for remove operations):</strong>
+- Warning only; operation is skipped</p>
+<p><strong>"Invalid file type for element operation":</strong>
+- Element operations only work on INI-like files (<code>.ini</code>, <code>.ai</code>, <code>.cfg</code>, <code>.uca</code>, <code>.ucs</code>, <code>.ucb</code>, <code>.scn</code>, <code>.lyt</code>)</p>
+<p><strong>Variable resolution errors:</strong>
+- "Undefined variable": habitat/location/string doesn't exist in mod or referenced mod
+- "Mod not loaded": Cross-mod reference to mod that isn't loaded or loads after yours
+- "Invalid syntax": Check <code>{variable}</code> syntax for typos or unclosed braces</p>
+<p><strong>Patches not applying with abort/abort_mod:</strong>
+- Ensure all patches in the file are valid before rollback occurs
+- Check OpenZT logs for specific error that triggered rollback
+- Verify patches are in same <code>patch.toml</code> file (rollback scope is per-file)
+- Test with <code>on_error = "continue"</code> first to identify which patch is failing</p>
+<h2 id="best-practices">Best Practices</h2>
+<p><strong>Developing patch mods:</strong></p>
+<ol>
+<li><strong>Start with <code>continue</code> mode</strong> - Use <code>on_error = "continue"</code> during development to see all errors at once</li>
+<li><strong>Check the logs</strong> - Review <code>openzt.log</code> in Zoo Tycoon directory for detailed patch application messages</li>
+<li><strong>Test incrementally</strong> - Add a few patches at a time, test, then add more</li>
+<li><strong>Use descriptive names</strong> - Name patches clearly (e.g., <code>increase_elephant_speed</code> not <code>patch1</code>)</li>
+<li><strong>Add comments</strong> - Use TOML comments to document what patches do and why</li>
+<li><strong>Switch to abort mode</strong> - Once patches work reliably, use <code>on_error = "abort"</code> for automatic rollback</li>
+<li><strong>Test with other mods</strong> - Verify your patches work alongside popular mods</li>
+<li><strong>Document dependencies</strong> - If your patches require other mods, use <code>mod_loaded</code> conditions AND declare them in <code>meta.toml</code></li>
+</ol>
+<p><strong>Example well-structured patch file:</strong>
+<div class="highlight"><pre><span></span><code><span class="c1"># Patch metadata</span>
+<span class="k">[patch_meta]</span>
+<span class="n">on_error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;abort&quot;</span><span class="w">  </span><span class="c1"># Rollback all changes if any patch fails</span>
+
+<span class="c1"># Only apply if HD Texture Pack is loaded</span>
+<span class="k">[patch_meta.condition]</span>
+<span class="n">mod_loaded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;HDTexturePack&quot;</span>
+
+<span class="c1"># Update elephant to use HD textures</span>
+<span class="k">[patches.elephant_hd_palette]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_palette&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/elephant/adult/male/n&quot;</span>
+<span class="n">palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/elephant/hd.pal&quot;</span>
+
+<span class="c1"># Increase elephant visibility with HD textures</span>
+<span class="k">[patches.elephant_visibility]</span>
+<span class="n">operation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;set_key&quot;</span>
+<span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/elephant.ai&quot;</span>
+<span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Graphics&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Brightness&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1.2&quot;</span>
+</code></pre></div></p>
+<p><strong>Corresponding meta.toml:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;ElephantHDCompat&quot;</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Elephant HD Compatibility&quot;</span>
+<span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span>
+<span class="n">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourName&quot;</span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Compatibility patches for elephants with HD Texture Pack&quot;</span>
+
+<span class="k">[dependencies]</span>
+<span class="n">HDTexturePack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&gt;=1.0.0&quot;</span>
+</code></pre></div></p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><strong><a href="PATCH_SCHEMA.md">PATCH_SCHEMA.md</a></strong>: Complete technical schema documentation</li>
+<li><strong><a href="../habitats_and_locations/">Habitats and Locations</a></strong>: Define custom habitats and locations</li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 20, 2026 06:05:05 UTC">January 20, 2026</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 27, 2025 10:46:20 UTC">December 27, 2025</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Goosifer.IO
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/GoosiferIO/ZooBerry-Docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.path", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "content.action.edit", "content.action.view", "content.footnote.tooltips", "content.tabs"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>

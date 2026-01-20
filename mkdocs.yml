@@ -52,6 +52,7 @@ nav:
         - zt1/openzt/index.md
         - Getting Started: zt1/openzt/getting-started.md
         - Habitats and Locations: zt1/openzt/habitats_and_locations.md
+        - Patch Mods: zt1/openzt/patch_mods.md
     - Tool Guides:
         - Visual Studio Code: zt1/tool-guides/visual-studio-code.md
         - Reducing Colors in GIMP: zt1/tool-guides/gimp-batch-processing.md

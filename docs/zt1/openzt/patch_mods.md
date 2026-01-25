@@ -14,7 +14,7 @@ Traditional mods work by replacing entire files. Patch mods define **specific ch
 
 ## File Structure
 
-Patches are defined in `patch.toml` in your mod's root directory (alongside `meta.toml`):
+Patches are defined in `.toml` files in the `defs/` directory of your mod's `.ztd` archive
 
 ```toml
 # Optional metadata
@@ -574,5 +574,4 @@ HDTexturePack = ">=1.0.0"
 
 ## See Also
 
-- **[PATCH_SCHEMA.md](PATCH_SCHEMA.md)**: Complete technical schema documentation
 - **[Habitats and Locations](habitats_and_locations.md)**: Define custom habitats and locations

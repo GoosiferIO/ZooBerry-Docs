@@ -28,7 +28,7 @@ All values are mandatory here. The type is dictated by having the `locations` or
 [habitats.swamp_habitat]  # ← "swamp_habitat" is the identifier
 name = "Swamp Habitat"    # ← "Swamp Habitat" is the display name
 
-# In patch.toml - Use the identifier!
+# In a [patches.swap_gazelle] section - Use the identifier!
 value = "{habitat.swamp_habitat}"  # ✓ Correct
 value = "{habitat.Swamp Habitat}"  # ✗ Wrong - will fail
 ```

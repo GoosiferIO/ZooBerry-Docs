@@ -131,7 +131,7 @@ To find the correct base string for an entity:
 3. **Check entity files**: Look at the entity's `.cfg` file in the game resources
 4. **For UCA, UCS and UCB files**: Use the UCA/UCS/UCB filename without the extensions so `vogrhrf1.ucs` becomes `legacy.scenery.vogrhrf1`
 
-Example from a animal `.cfg` file (`animal01.cfg`):
+Example from an animal `.cfg` file (`animal01.cfg`):
 ```ini
 [animals]
 blckbuck = animals/blckbuck.ai

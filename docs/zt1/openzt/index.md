@@ -18,6 +18,7 @@ All directory paths are unique to your mod, you don't need to worry about clashe
 ## New Types of Mods
 
 - [Habitats and Locations](./habitats_and_locations.md)
+- [Extensions](./extensions.md)
 
 ## Future Plans
 

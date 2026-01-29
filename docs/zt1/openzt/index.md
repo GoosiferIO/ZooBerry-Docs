@@ -19,6 +19,7 @@ All directory paths are unique to your mod, you don't need to worry about clashe
 
 - [Habitats and Locations](./habitats_and_locations.md)
 - [Patch Mods](./patch_mods.md)
+- [Extensions](./extensions.md)
 
 ## Future Plans
 

@@ -31,7 +31,9 @@ version="1.0.0"
 link="https://myexamplewebsite.com/myexamplemod"
 ztd_type="openzt"
 dependencies=[
-    {mod_id="finn.my_other_example_mod", name="my example mod", min_version="1.1.2", optional=true, ordering="before"}
+    {mod_id="finn.my_other_example_mod", name="My Example Mod", min_version="1.1.2", optional=true, ordering="before"},
+    {ztd_name="traditional_scenery.ztd", name="Traditional Scenery", ordering="after"},
+    {dll_name="langusa.dll", name="English Language", optional=true}
 ]
 ```
 
@@ -52,13 +54,35 @@ Lets break this file down
 
 ##### Dependencies
 
-| Field Name  | Purpose                                                                                                                              | Example             | Mandatory                             |
-|-------------|--------------------------------------------------------------------------------------------------------------------------------------|---------------------|---------------------------------------|
-| mod_id      | mod_id of the dependency                                                                                                             | "finn.my_other_mod" | Yes                                   |
-| name        | Name of the dependency                                                                                                               | "My other mod"      | Yes                                   |
-| min_version | Minimum version of the dependency if required                                                                                        | "1.1.4"             | No, must be valid version if supplied |
-| optional    | Whether the dependency is required for this mod to function                                                                          | true                | No, defaults to false                 |
-| ordering    | Indicates whether the dependency should be loaded before or after the current mod, acceptable values are "before" "after" and "none" | "before"            | No, defaults to "none"                |
+| Field Name   | Purpose                                                                                                                              | Example                  | Mandatory                             |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------|--------------------------|---------------------------------------|
+| (identifier) | One of: `mod_id`, `ztd_name`, or `dll_name` (exactly one required)                                                               | See below                | Yes (one of the three)                |
+| name         | Human-readable name of the dependency                                                                                               | "My other mod"           | Yes                                   |
+| min_version  | Minimum version (ONLY works with `mod_id`, ignored for `ztd_name`/`dll_name`)                                                     | "1.1.4"                  | No, must be valid version if supplied |
+| optional     | Whether the dependency is required                                                                                                   | true                     | No, defaults to false                 |
+| ordering     | Indicates whether the dependency should be loaded before or after the current mod ("before", "after", or "none")                    | "before"                 | No, defaults to "none"                |
+
+###### Dependency Identifier Types
+
+Choose **ONE** identifier type per dependency:
+
+**`mod_id`** (Recommended for OpenZT mods)
+- References another OpenZT mod by its unique `mod_id`
+- Supports version checking with `min_version`
+- Most reliable for OpenZT mods
+- Example: `{ mod_id = "finn.animals", name = "Animal Pack", min_version = "2.0.0" }`
+
+**`ztd_name`** (For traditional mods)
+- References a mod by its `.ztd` filename (e.g., `"my_mod.ztd"`)
+- Does NOT support `min_version` (will be ignored with a warning)
+- Use when depending on mods that don't have OpenZT metadata
+- Example: `{ ztd_name = "scenery_pack.ztd", name = "Scenery Pack" }`
+
+**`dll_name`** (For game language DLLs)
+- References Zoo Tycoon language DLLs (must end with `.dll`)
+- Only validates against language DLLs matching `lang*.dll` pattern
+- Does NOT support `min_version` (will be ignored with a warning)
+- Example: `{ dll_name = "langusa.dll", name = "English Language", optional = true }`
 
 
 ### Defs

@@ -29,8 +29,8 @@ All values are mandatory here. The type is dictated by having the `locations` or
 name = "Swamp Habitat"    # ← "Swamp Habitat" is the display name
 
 # In a [patches.swap_gazelle] section - Use the identifier!
-value = "{habitat.swamp_habitat}"  # ✓ Correct
-value = "{habitat.Swamp Habitat}"  # ✗ Wrong - will fail
+value = "{habitats.swamp_habitat}"  # ✓ Correct
+value = "{habitats.Swamp Habitat}"  # ✗ Wrong - will fail
 ```
 
 - **Identifier** (section suffix): Used in code, patches, and variable substitution. Must be unique within your mod.
@@ -59,10 +59,10 @@ operation = "append_value"
 target = "animals/crocodile.ai"
 section = "Habitat"
 key = "cHabitat"
-value = "{habitat.swamp}"
+value = "{habitats.swamp}"
 ```
 
-The `{habitat.swamp}` variable automatically resolves to the correct habitat ID from your mod's habitat definition. You can similarly add locations:
+The `{habitats.swamp}` variable automatically resolves to the correct habitat ID from your mod's habitat definition. You can similarly add locations:
 
 ```toml
 [patches.add_swamp_location_to_crocodile]
@@ -84,7 +84,7 @@ operation = "append_value"
 target = "animals/crocodile.ai"
 section = "Habitat"
 key = "cHabitat"
-value = "{habitat.swamp}"
+value = "{habitats.swamp}"
 
 # Add swamp habitat to hippo
 [patches.hippo_swamp]
@@ -92,7 +92,7 @@ operation = "append_value"
 target = "animals/hippo.ai"
 section = "Habitat"
 key = "cHabitat"
-value = "{habitat.swamp}"
+value = "{habitats.swamp}"
 
 # Add swamp habitat to alligator
 [patches.alligator_swamp]
@@ -100,7 +100,7 @@ operation = "append_value"
 target = "animals/alligator.ai"
 section = "Habitat"
 key = "cHabitat"
-value = "{habitat.swamp}"
+value = "{habitats.swamp}"
 ```
 
 ### Cross-Mod References
@@ -113,10 +113,10 @@ operation = "append_value"
 target = "animals/elephant.ai"
 section = "Habitat"
 key = "cHabitat"
-value = "{lunar.habitat.crater}"  # References the "lunar" mod's "crater" habitat
+value = "{lunar.habitats.crater}"  # References the "lunar" mod's "crater" habitat
 ```
 
 !!! note
-    For cross-mod references to work, the referenced mod must be loaded before your mod (earlier in the zoo.ini mod list).
+    For cross-mod references to work, the referenced mod must be loaded before your mod (earlier in the openzt.toml mod list).
 
 For complete details on the patch system including conditional patching, error handling, and all available operations, see the **[Patch Mods Guide](patch_mods.md)**.

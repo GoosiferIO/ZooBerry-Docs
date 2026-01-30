@@ -186,21 +186,21 @@ section = "Deprecated"
 Reference dynamic values from your mod or other mods using `{variable}` syntax.
 
 **Syntax:**
-- Current mod: `{type.name}` (e.g., `{habitat.swamp}`)
-- Cross-mod: `{mod.type.name}` (e.g., `{lunar.habitat.crater}`)
+- Current mod: `{type.name}` (e.g., `{habitats.swamp}`)
+- Cross-mod: `{mod.type.name}` (e.g., `{lunar.habitats.crater}`)
 
 **Variable types:**
 ```toml
 # Habitat - resolves to habitat string ID
-value = "{habitat.swamp}"           # Your mod's habitat
-value = "{lunar.habitat.crater}"    # Another mod's habitat
+value = "{habitats.swamp}"           # Your mod's habitat
+value = "{lunar.habitats.crater}"    # Another mod's habitat
 
 # Location - resolves to location string ID
-value = "{location.moon}"           # Your mod's location
-value = "{lunar.location.base}"     # Another mod's location
+value = "{locations.moon}"           # Your mod's location
+value = "{lunar.locations.base}"     # Another mod's location
 
 # String - resolves to string content from registry
-value = "{string.9500}"             # String by ID
+value = "{strings.9500}"             # String by ID
 ```
 
 **Supported operations:** `set_key`, `set_keys`, `append_value`, `append_values`, `add_section`
@@ -213,7 +213,7 @@ operation = "set_key"
 target = "animals/crocodile.ai"
 section = "Habitat"
 key = "cHabitat"
-value = "{habitat.swamp}"
+value = "{habitats.swamp}"
 
 # Multiple variables
 [patches.configure_exhibit]
@@ -221,9 +221,9 @@ operation = "set_keys"
 target = "exhibits/moon.cfg"
 section = "Config"
 keys = {
-    cHabitat = "{habitat.lunar}",
-    cLocation = "{location.moon}",
-    NameID = "{string.10500}"
+    cHabitat = "{habitats.lunar}",
+    cLocation = "{locations.moon}",
+    NameID = "{strings.10500}"
 }
 
 # Mixed with text
@@ -232,7 +232,7 @@ operation = "set_key"
 target = "animals/elephant.ai"
 section = "Info"
 key = "Description"
-value = "Lives in {string.10500} regions"
+value = "Lives in {strings.10500} regions"
 ```
 
 ### Legacy Entity Variables
@@ -431,7 +431,7 @@ Definition files are categorized based on their contents:
 
 - **Habitats/locations are registered before patches that use them** - NoPatch and Mixed files define habitats/locations first, ensuring PatchOnly files can reference them
 - **Predictable execution** - Alphabetical sorting within categories means `01-*.toml` always loads before `02-*.toml`
-- **Cross-file references work** - A PatchOnly file can use `{habitat.swamp}` if any NoPatch or Mixed file defines `swamp`
+- **Cross-file references work** - A PatchOnly file can use `{habitats.swamp}` if any NoPatch or Mixed file defines `swamp`
 - **Self-references work** - A Mixed file can define a habitat and immediately patch it in the same file
 
 **Example Structure:**
@@ -454,8 +454,8 @@ your-mod/
   name = "Swamp Habitat"    # ← This is the display name
 
   # In 99-patches.toml - Use the identifier!
-  value = "{habitat.swamp_habitat}"  # ✓ Correct
-  value = "{habitat.Swamp Habitat}"  # ✗ Wrong - will fail
+  value = "{habitats.swamp_habitat}"  # ✓ Correct
+  value = "{habitats.Swamp Habitat}"  # ✗ Wrong - will fail
   ```
 - **Alphabetical sorting is case-insensitive** - `Animals.toml` and `animals.toml` sort the same
 - **Numeric prefixes control order** - Use `00-`, `01-`, `02-` etc. to control loading sequence

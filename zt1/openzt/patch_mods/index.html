@@ -14,7 +14,7 @@
         <link rel="prev" href="../habitats_and_locations/">
       
       
-        <link rel="next" href="../../tool-guides/visual-studio-code/">
+        <link rel="next" href="../extensions/">
       
       
         
@@ -703,6 +703,8 @@
       
         
       
+        
+      
     
     
     
@@ -1246,6 +1248,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extensions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extension Mods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -3902,19 +3932,19 @@
 <h2 id="variable-substitution">Variable Substitution</h2>
 <p>Reference dynamic values from your mod or other mods using <code>{variable}</code> syntax.</p>
 <p><strong>Syntax:</strong>
-- Current mod: <code>{type.name}</code> (e.g., <code>{habitat.swamp}</code>)
-- Cross-mod: <code>{mod.type.name}</code> (e.g., <code>{lunar.habitat.crater}</code>)</p>
+- Current mod: <code>{type.name}</code> (e.g., <code>{habitats.swamp}</code>)
+- Cross-mod: <code>{mod.type.name}</code> (e.g., <code>{lunar.habitats.crater}</code>)</p>
 <p><strong>Variable types:</strong>
 <div class="highlight"><pre><span></span><code><span class="c1"># Habitat - resolves to habitat string ID</span>
-<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitat.swamp}&quot;</span><span class="w">           </span><span class="c1"># Your mod&#39;s habitat</span>
-<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{lunar.habitat.crater}&quot;</span><span class="w">    </span><span class="c1"># Another mod&#39;s habitat</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitats.swamp}&quot;</span><span class="w">           </span><span class="c1"># Your mod&#39;s habitat</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{lunar.habitats.crater}&quot;</span><span class="w">    </span><span class="c1"># Another mod&#39;s habitat</span>
 
 <span class="c1"># Location - resolves to location string ID</span>
-<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{location.moon}&quot;</span><span class="w">           </span><span class="c1"># Your mod&#39;s location</span>
-<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{lunar.location.base}&quot;</span><span class="w">     </span><span class="c1"># Another mod&#39;s location</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{locations.moon}&quot;</span><span class="w">           </span><span class="c1"># Your mod&#39;s location</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{lunar.locations.base}&quot;</span><span class="w">     </span><span class="c1"># Another mod&#39;s location</span>
 
 <span class="c1"># String - resolves to string content from registry</span>
-<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{string.9500}&quot;</span><span class="w">             </span><span class="c1"># String by ID</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{strings.9500}&quot;</span><span class="w">             </span><span class="c1"># String by ID</span>
 </code></pre></div></p>
 <p><strong>Supported operations:</strong> <code>set_key</code>, <code>set_keys</code>, <code>append_value</code>, <code>append_values</code>, <code>add_section</code></p>
 <p><strong>Examples:</strong>
@@ -3924,7 +3954,7 @@
 <span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/crocodile.ai&quot;</span>
 <span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Habitat&quot;</span>
 <span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;cHabitat&quot;</span>
-<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitat.swamp}&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitats.swamp}&quot;</span>
 
 <span class="c1"># Multiple variables</span>
 <span class="k">[patches.configure_exhibit]</span>
@@ -3932,9 +3962,9 @@
 <span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;exhibits/moon.cfg&quot;</span>
 <span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Config&quot;</span>
 <span class="n">keys</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">cHabitat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitat.lunar}&quot;</span><span class="err">,</span>
-<span class="w">    </span><span class="n">cLocation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{location.moon}&quot;</span><span class="err">,</span>
-<span class="w">    </span><span class="n">NameID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{string.10500}&quot;</span>
+<span class="w">    </span><span class="n">cHabitat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitats.lunar}&quot;</span><span class="err">,</span>
+<span class="w">    </span><span class="n">cLocation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{locations.moon}&quot;</span><span class="err">,</span>
+<span class="w">    </span><span class="n">NameID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{strings.10500}&quot;</span>
 <span class="err">}</span>
 
 <span class="c1"># Mixed with text</span>
@@ -3943,7 +3973,7 @@
 <span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;animals/elephant.ai&quot;</span>
 <span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Info&quot;</span>
 <span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Description&quot;</span>
-<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Lives in {string.10500} regions&quot;</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Lives in {strings.10500} regions&quot;</span>
 </code></pre></div></p>
 <h3 id="legacy-entity-variables">Legacy Entity Variables</h3>
 <p>Reference vanilla Zoo Tycoon entities from the original game using <code>{legacy.entity_type.entity_name}</code> syntax.</p>
@@ -4105,7 +4135,7 @@ Skip entire patch file if conditions fail.</p>
 <ul>
 <li><strong>Habitats/locations are registered before patches that use them</strong> - NoPatch and Mixed files define habitats/locations first, ensuring PatchOnly files can reference them</li>
 <li><strong>Predictable execution</strong> - Alphabetical sorting within categories means <code>01-*.toml</code> always loads before <code>02-*.toml</code></li>
-<li><strong>Cross-file references work</strong> - A PatchOnly file can use <code>{habitat.swamp}</code> if any NoPatch or Mixed file defines <code>swamp</code></li>
+<li><strong>Cross-file references work</strong> - A PatchOnly file can use <code>{habitats.swamp}</code> if any NoPatch or Mixed file defines <code>swamp</code></li>
 <li><strong>Self-references work</strong> - A Mixed file can define a habitat and immediately patch it in the same file</li>
 </ul>
 <p><strong>Example Structure:</strong>
@@ -4125,8 +4155,8 @@ Skip entire patch file if conditions fail.</p>
 <span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Swamp Habitat&quot;</span><span class="w">    </span><span class="c1"># ← This is the display name</span>
 
 <span class="c1"># In 99-patches.toml - Use the identifier!</span>
-<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitat.swamp_habitat}&quot;</span><span class="w">  </span><span class="c1"># ✓ Correct</span>
-<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitat.Swamp Habitat}&quot;</span><span class="w">  </span><span class="c1"># ✗ Wrong - will fail</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitats.swamp_habitat}&quot;</span><span class="w">  </span><span class="c1"># ✓ Correct</span>
+<span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{habitats.Swamp Habitat}&quot;</span><span class="w">  </span><span class="c1"># ✗ Wrong - will fail</span>
 </code></pre></div></li>
 <li><strong>Alphabetical sorting is case-insensitive</strong> - <code>Animals.toml</code> and <code>animals.toml</code> sort the same</li>
 <li><strong>Numeric prefixes control order</strong> - Use <code>00-</code>, <code>01-</code>, <code>02-</code> etc. to control loading sequence</li>
@@ -4249,7 +4279,7 @@ Skip entire patch file if conditions fail.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 22, 2026 01:08:14 UTC">January 22, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 30, 2026 07:40:03 UTC">January 30, 2026</span>
   </span>
 
     
@@ -4311,13 +4341,13 @@ Skip entire patch file if conditions fail.</p>
         
         
           
-          <a href="../../tool-guides/visual-studio-code/" class="md-footer__link md-footer__link--next" aria-label="Next: Visual Studio Code">
+          <a href="../extensions/" class="md-footer__link md-footer__link--next" aria-label="Next: Extension Mods">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Visual Studio Code
+                Extension Mods
               </div>
             </div>
             <div class="md-footer__button md-icon">

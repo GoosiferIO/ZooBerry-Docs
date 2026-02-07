@@ -15,6 +15,10 @@ DLL strings are not required or supported in OpenZT mods
 ### Directory names length and clashes
 All directory paths are unique to your mod, you don't need to worry about clashes
 
+### Getting started
+
+For an overview of the `meta.toml` file and details on how to structure your mod please read our [Getting Started Guide](./getting-started.md)
+
 ## New Types of Mods
 
 - [Habitats and Locations](./habitats_and_locations.md)
